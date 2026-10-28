@@ -34,7 +34,7 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 ## 5. Recognition
 
-- **On the phone**: Gemma 3n E2B through LiteRT-LM (decision D13). Nothing leaves the phone.
+- **On the phone**: Gemma 3n E2B through LiteRT-LM (decision D13). Photos and meals never leave the phone; only technical crash reports go to Sentry (D18).
 - The model names each food in English with grams (`food | grams` lines); code maps the names onto the
   food list (the MacroTrack spreadsheet), D14. Chosen by the benchmark in `bench/README.md`: about 55–58 %
   of foods found, 2–3 fixes per plate, a quarter of plates right first time.

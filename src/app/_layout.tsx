@@ -1,12 +1,32 @@
 import { Rubik_400Regular, Rubik_500Medium, Rubik_600SemiBold, useFonts } from "@expo-google-fonts/rubik";
-import { Stack } from "expo-router";
-import React from "react";
+import { Stack, type ErrorBoundaryProps } from "expo-router";
+import React, { useEffect } from "react";
 import { ActivityIndicator, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { PrimaryButton, T } from "../components/ui";
+import { reportError, Sentry, startDiagnostics } from "../diag/diagnostics";
 import { StoreProvider, useStore } from "../store/store";
 import { C } from "../theme";
+
+// Before the first render, so a crash while starting up is reported too.
+startDiagnostics();
+
+/** A screen crashed: report it and offer to try again (shown in place of the whole app). */
+export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
+  useEffect(() => reportError(error, "render"), [error]);
+  return (
+    <View style={{ flex: 1, backgroundColor: C.bg, justifyContent: "center", padding: 24, gap: 18 }}>
+      <T w="m" size={22}>
+        Щось пішло не так.
+      </T>
+      <T size={17} color={C.muted}>
+        Записи не загублені. Спробуйте ще раз.
+      </T>
+      <PrimaryButton label="Спробувати ще раз" onPress={() => void retry()} />
+    </View>
+  );
+}
 
 function Gate({ children }: { children: React.ReactNode }) {
   const { hydrated, loadFailed, retryLoad } = useStore();
@@ -33,7 +53,7 @@ function Gate({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function RootLayout() {
+function RootLayout() {
   const [fontsLoaded] = useFonts({ Rubik_400Regular, Rubik_500Medium, Rubik_600SemiBold });
 
   return (
@@ -52,6 +72,7 @@ export default function RootLayout() {
               <Stack.Screen name="camera" options={{ animation: "fade", contentStyle: { backgroundColor: C.camera } }} />
               <Stack.Screen name="analyzing" options={{ animation: "fade" }} />
               <Stack.Screen name="review" />
+              <Stack.Screen name="sentry-test" />
             </Stack>
           </Gate>
         ) : (
@@ -61,3 +82,5 @@ export default function RootLayout() {
     </SafeAreaProvider>
   );
 }
+
+export default Sentry.wrap(RootLayout);

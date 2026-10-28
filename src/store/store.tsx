@@ -3,6 +3,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 import { AppState } from "react-native";
 
 import { FOODS } from "../data/foods";
+import { record, reportError } from "../diag/diagnostics";
 import { timeHM, todayISO, fmt } from "../lib/format";
 import { activeCorrections, learnFromMeal, type Correction } from "../lib/learn";
 import { Matcher } from "../lib/match";
@@ -111,9 +112,11 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     setLoadFailed(false);
     const res = await loadState();
     if (res.kind === "failed") {
+      reportError(new Error("Saved meals could not be read"), "store.load");
       setLoadFailed(true);
       return;
     }
+    record("store.loaded", { kind: res.kind, meals: res.kind === "ok" ? res.data.meals.length : 0 });
     const meals = res.kind === "ok" ? res.data.meals : [];
     if (res.kind === "ok") {
       setData({ meals, customFoods: res.data.customFoods, settings: res.data.settings, learned: res.data.learned });
@@ -140,6 +143,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           await saveState(shape);
         } catch (e2) {
           console.error("[MamaKcal] save failed", e2 || e);
+          reportError(e2 || e, "store.save");
         }
       }
     });
@@ -210,7 +214,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         let photo: PreparedPhoto;
         try {
           photo = await preparePhoto(src, width, height);
-        } catch {
+        } catch (e) {
+          reportError(e, "photo.prepare", { width, height });
           if (run.current?.id === id) setAnalysis((a) => (a?.id === id ? { ...a, status: "failed" } : a));
           return;
         }

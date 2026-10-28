@@ -65,10 +65,17 @@ recognition on the S21 itself (Samsung ships OpenCL); check `adb logcat | grep -
 Release builds are signed by `plugins/withReleaseSigning.js` with the keystore at `~/.android/mamakcal-release.jks`; its passwords are in `~/.gradle/gradle.properties` (`MAMAKCAL_*`). **Back up both.** Without them no update can ever be installed over her copy.
 
 ```bash
-CI=1 npx expo prebuild --platform android
-cd android && ./gradlew assembleRelease
+pnpm release:android   # prebuild + arm64 release APK, source maps uploaded to Sentry
 # → android/app/build/outputs/apk/release/app-release.apk
 adb install -r android/app/build/outputs/apk/release/app-release.apk   # over USB
 ```
 
 Or send her the APK file. On the S21: allow **Install unknown apps** for the app that opens the file, and switch off **Auto Blocker** (Settings → Security and privacy) for the install. Always sign with the same keystore, or an update will refuse to install over the old version and her data would be lost.
+
+## Crash reports
+
+Release builds send crash reports to Sentry (EU region, org `mykyta-krasnytskyi`, project `mamakcal`; decision D18). Technical data only: no photos, food names, weights, screenshots or touch breadcrumbs. The IP isn't stored (project setting "Prevent Storing of IP Addresses"); Sentry still derives an approximate city from it. `src/diag/` holds the setup and a black box that, on the next start, reports a kill in the middle of loading or running the photo model (likely out of memory); model load/run times show up as `model.load` / `model.describe` spans.
+
+- DSN: `.env.production` (a DSN can only send events, so it's committed).
+- Source maps: `pnpm release:android` reads `SENTRY_AUTH_TOKEN` from the git-ignored `.env.sentry-build-plugin`. Without that file it builds without uploading.
+- Check that reporting works: `adb shell am start -a android.intent.action.VIEW -d mamakcal://sentry-test` throws "MamaKcal Sentry verification error".

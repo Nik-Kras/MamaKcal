@@ -1,4 +1,5 @@
 import { LiteRtLm } from "../../modules/litert-lm";
+import { record, reportError, risky, span } from "../diag/diagnostics";
 import type { Food } from "../types";
 import type { Matcher } from "./match";
 import { PROMPT, toItems, type Recognition } from "./recognition";
@@ -35,7 +36,11 @@ const DEMO = "Fried potatoes | 200g\nFried eggs | 100g\nPork chop | 150g\nCucumb
 
 /** Load the model ahead of the first photo (call when the camera opens). Errors surface later, on use. */
 export function warmUp(): void {
-  if (modelReady()) LiteRtLm?.warmUp().catch(() => {});
+  const native = LiteRtLm;
+  if (!native || !modelReady()) return;
+  void risky("model.load", () => span("model.load", "ai.load", () => native.warmUp())).catch((e) =>
+    reportError(e, "model.load"),
+  );
 }
 
 let keySeq = 0;
@@ -52,23 +57,41 @@ export async function recognizeMeal(photoUri: string, foods: Food[], matcher: Ma
   if (!native || !modelReady()) throw new RecognizeFailure("nomodel");
 
   const requestId = ++requestSeq;
+  const started = Date.now();
   const onAbort = () => native.cancel(requestId);
   signal.addEventListener("abort", onAbort);
   let timer: ReturnType<typeof setTimeout> | undefined;
   try {
-    const raw = await Promise.race([
-      native.describe(requestId, photoUri.replace(/^file:\/\//, ""), PROMPT),
-      new Promise<never>((_, reject) => {
-        timer = setTimeout(() => {
-          native.cancel(requestId);
-          reject(new RecognizeFailure("failed"));
-        }, TIMEOUT_MS);
-      }),
-    ]);
-    return toItems(raw, foods, matcher, makeKey);
+    const raw = await risky("model.describe", () =>
+      span("model.describe", "ai.run", () =>
+        Promise.race([
+          native.describe(requestId, photoUri.replace(/^file:\/\//, ""), PROMPT),
+          new Promise<never>((_, reject) => {
+            timer = setTimeout(() => {
+              native.cancel(requestId);
+              reject(new Error(`model.describe timed out after ${TIMEOUT_MS / 1000} s`));
+            }, TIMEOUT_MS);
+          }),
+        ]),
+      ),
+    );
+    const r = toItems(raw, foods, matcher, makeKey);
+    // Counts only: the food names stay on the phone.
+    record("model.describe.done", {
+      ms: Date.now() - started,
+      lines: r.items.length,
+      unknown: r.items.filter((it) => it.unknown).length,
+      food: r.isFood,
+    });
+    return r;
   } catch (e) {
     if (e instanceof RecognizeFailure) throw e;
-    console.warn("[MamaKcal] on-device model failed", e);
+    if (signal.aborted) {
+      record("model.describe.cancelled");
+    } else {
+      console.warn("[MamaKcal] on-device model failed", e);
+      reportError(e, "model.describe", { ms: Date.now() - started });
+    }
     throw new RecognizeFailure("failed");
   } finally {
     clearTimeout(timer);

@@ -60,7 +60,15 @@
       ],
       "expo-sqlite",
       "expo-font",
-      "./plugins/withReleaseSigning"
+      "./plugins/withReleaseSigning",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://de.sentry.io/",
+          "organization": "mykyta-krasnytskyi",
+          "project": "mamakcal"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

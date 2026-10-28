@@ -50,3 +50,6 @@ bench/.venv/
 # build output of local native modules, Python caches
 modules/*/android/build/
 __pycache__/
+
+# Sentry upload token (organization token) — never commit
+.env.sentry-build-plugin
