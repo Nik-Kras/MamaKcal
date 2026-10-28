@@ -1,0 +1,21 @@
+# Decision log
+
+| # | Date | Decision | Alternatives | Why |
+|---|---|---|---|---|
+| D1 | 2026-10-28 | **Expo SDK 54 + React Native**, Android only | Kotlin/Compose; PWA like RHP | Same stack as MacroTrack, which already builds on this Mac; a real APK has a reliable camera on Android |
+| D2 | 2026-10-28 | **Expo Router** with 4 routes (index, camera, analyzing, review) | Hand-rolled screen state like MacroTrack | The project's AGENTS.md requires it; Android Back works on every screen for free |
+| D3 | 2026-10-28 | ~~Recognition through a **Cloudflare Worker**~~ (replaced by D13) that holds the API key | Call the API from the app | A key inside an APK can be extracted; the worker lets the key rotate without reinstalling |
+| D4 | 2026-10-28 | ~~Model **claude-opus-5-5**~~ (replaced by D13) at effort **low**, structured JSON output, `fallbacks: "default"` | Higher effort; a smaller model | Default current model; low effort keeps the wait short. Both are worker vars (`MODEL`, `EFFORT`) so they can change without a new APK |
+| D5 | 2026-10-28 | App's own kcal table wins over the AI's for known foods | Always use the AI's numbers | The same food always counts the same; the AI's numbers drift |
+| D6 | 2026-10-28 | **Calories only**, today only | Macros, history, stats (as in MacroTrack / RHP) | Her request: as simple as possible |
+| D7 | 2026-10-28 | In-app camera (expo-camera) with Галерея and Без фото beside the shutter | System camera intent | Matches the approved prototype; one tap from the main screen to the shutter |
+| D8 | 2026-10-28 | Undo toasts (10 s) instead of confirmation dialogs; one dialog when leaving unsaved changes | Confirm every delete | RHP audit #10; older users dismiss confirmations by habit |
+| D9 | 2026-10-28 | App name on the home screen: **«Калорії»**; repo `MamaKcal`, package `com.nikkras.mamakcal` | Other names | Plain and obvious for her; easy to rename later in `app.json` |
+| D10 | 2026-10-28 | Daily target **1 800 kcal** by default, changed by tapping the number on the main screen | Onboarding with a formula | No set-up screens; to be set with her |
+| D11 | 2026-10-28 | Release APK signed with its own keystore (`~/.android/mamakcal-release.jks`, passwords in `~/.gradle/gradle.properties`), applied by a config plugin | Expo's shared debug key; EAS-managed credentials | Same key for every update, kept off GitHub and off third-party services |
+| D12 | 2026-10-28 | ~~Worker capped~~ (worker removed, D13); was: Worker capped at **8 recognitions a minute**; key comparison constant-time; body must declare its length (≤ 4 MB) | No limit | The app key ships inside the APK, so the URL can't be treated as secret |
+| D13 | 2026-10-28 | Recognition **on the phone**: Gemma 3n E2B (int4, 3.7 GB) with Google's LiteRT-LM, image encoder on the GPU. Replaces D3/D4 (cloud worker) | Gemini Nano (S21 not on Google's device list); Gemma 3n E4B; cloud Claude | User's requirement: a local model. E4B was no better at finding foods (bench/README.md) and is 1.3× bigger |
+| D14 | 2026-10-28 | The model names foods in free text ("food \| grams"); code maps names onto the food list | Food list in the prompt; constrained JSON | Benchmark: list in prompt found 40 % of foods with 11 edits per plate; name → map 55–58 % with 2.3–2.7 edits, 4× faster |
+| D15 | 2026-10-28 | Fixing the model's mistakes is part of the check screen: swap (similar + recent first), × with undo, add (recent first), unrecognised lines must be resolved, corrections learned after the same fix twice | Trust the model; learn from one fix | Benchmark: ~2–3 fixes per plate. One fix of a generic name ("chicken" → pork) must not change every future chicken |
+| D16 | 2026-10-28 | App food list = the MacroTrack spreadsheet (202 foods, `pnpm foods`); a few foods keep a weight per piece | MamaKcal's own 75-food list | Same list the benchmark mapped onto; the spreadsheet stays the one source of truth |
+| D17 | 2026-10-28 | Android uses **LiteRT-LM 0.16.1** with the app's Kotlin raised to **2.2.20** (`expo-build-properties`) | LiteRT-LM 0.18.1 (as benchmarked on desktop); skipping Kotlin's metadata check | 0.17+ are compiled with Kotlin 2.4; Expo SDK 54 supports Kotlin up to 2.2.20, which reads libraries up to 2.3 (0.16.1). Same model file and API. Revisit when Expo moves to Kotlin 2.4 |

@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <!-- LiteRT-LM's GPU backend; the photo model's image encoder only runs on the GPU. -->
+    <uses-native-library android:name="libOpenCL.so" android:required="false" />
+    <uses-native-library android:name="libvndksupport.so" android:required="false" />
+  </application>
+</manifest>

@@ -1,0 +1,22 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'expo.modules.litertlm'
+version = '0.1.0'
+
+android {
+  namespace "expo.modules.litertlm"
+  defaultConfig {
+    versionCode 1
+    versionName '0.1.0'
+  }
+}
+
+dependencies {
+  // 0.16.1: the newest release Kotlin 2.2 can read (0.17+ are built with Kotlin 2.4, and
+  // Expo SDK 54 goes up to Kotlin 2.2.20, set in app.json). The benchmark ran 0.18.1 on desktop;
+  // same model file and API.
+  implementation "com.google.ai.edge.litertlm:litertlm-android:0.16.1"
+}

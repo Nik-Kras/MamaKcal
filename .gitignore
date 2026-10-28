@@ -39,3 +39,14 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local config
+.env
+
+# benchmark downloads and results
+bench/data/
+bench/.venv/
+
+# build output of local native modules, Python caches
+modules/*/android/build/
+__pycache__/

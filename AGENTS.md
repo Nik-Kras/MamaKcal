@@ -39,3 +39,11 @@ Docs: https://docs.expo.dev/eas/index.md
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
 - Expo Go only includes its bundled native modules. After adding a library with native code, the app needs a development build: `npx expo run:ios|android` locally, or `eas build --profile development`.
 - Prefer recommended Expo modules over third-party libraries, and check your available skills before adding dependencies. Docs: https://docs.expo.dev/versions/latest/index.md
+
+## This project (MamaKcal)
+
+- Ukrainian-only calorie tracker for one user on a Samsung Galaxy S21. Scope: `docs/PRD.md`; decisions: `docs/decisions.md`. Keep it minimal: no new screens, settings or options without the user's OK.
+- All UI text is Ukrainian. Numbers use `fmt()` from `src/lib/format.ts` (non-breaking-space thousands).
+- `src/lib/` is pure and unit-tested (`pnpm test`); keep logic there, not in screens.
+- The recognition response is untrusted: change `src/lib/recognition.ts` and its tests together.
+- Emulator loop: `adb shell wm density 480` (360 dp like the S21), `npx expo run:android --port 8083` with JDK 17, screenshots via `adb exec-out screencap -p`.

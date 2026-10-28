@@ -1,0 +1,4185 @@
+[
+ {
+  "id": "borscht",
+  "kind": "DISH",
+  "name": "Borscht",
+  "name_ua": "Борщ",
+  "aliases": [
+   "borshch",
+   "borsch",
+   "beet soup",
+   "red borscht",
+   "Ukrainian beet soup"
+  ],
+  "aliases_ua": [
+   "борщик",
+   "червоний борщ",
+   "буряковий суп"
+  ],
+  "kcal100": 49.0,
+  "protein100": 2.5,
+  "fat100": 1.5,
+  "carbs100": 6.0
+ },
+ {
+  "id": "green-borscht",
+  "kind": "DISH",
+  "name": "Green Borscht",
+  "name_ua": "Зелений борщ",
+  "aliases": [
+   "sorrel soup",
+   "shchavel soup",
+   "green borshch",
+   "spring borscht"
+  ],
+  "aliases_ua": [
+   "щавлевий борщ",
+   "зелений суп",
+   "щавлевий суп"
+  ],
+  "kcal100": 40.0,
+  "protein100": 3.0,
+  "fat100": 1.5,
+  "carbs100": 4.0
+ },
+ {
+  "id": "varenyky-potato",
+  "kind": "DISH",
+  "name": "Varenyky (Potato)",
+  "name_ua": "Вареники (з картоплею)",
+  "aliases": [
+   "pierogi",
+   "pyrohy",
+   "potato dumplings",
+   "varenyky z kartoplieiu"
+  ],
+  "aliases_ua": [
+   "вареники з бульбою",
+   "пироги з картоплею",
+   "вареники картопляні"
+  ],
+  "kcal100": 190.0,
+  "protein100": 5.0,
+  "fat100": 4.0,
+  "carbs100": 33.0
+ },
+ {
+  "id": "varenyky-cottage-cheese",
+  "kind": "DISH",
+  "name": "Varenyky (Cottage Cheese)",
+  "name_ua": "Вареники (з сиром)",
+  "aliases": [
+   "pierogi",
+   "pyrohy",
+   "varenyky z syrom",
+   "cheese dumplings"
+  ],
+  "aliases_ua": [
+   "вареники з творогом",
+   "вареники сирні"
+  ],
+  "kcal100": 200.0,
+  "protein100": 9.0,
+  "fat100": 5.0,
+  "carbs100": 30.0
+ },
+ {
+  "id": "varenyky-cherry",
+  "kind": "DISH",
+  "name": "Varenyky (Cherry)",
+  "name_ua": "Вареники (з вишнею)",
+  "aliases": [
+   "pierogi",
+   "pyrohy",
+   "varenyky z vyshneiu",
+   "cherry dumplings"
+  ],
+  "aliases_ua": [
+   "вареники з вишнями",
+   "вареники вишневі",
+   "солодкі вареники"
+  ],
+  "kcal100": 180.0,
+  "protein100": 4.0,
+  "fat100": 3.0,
+  "carbs100": 34.0
+ },
+ {
+  "id": "salo",
+  "kind": "PRODUCT",
+  "name": "Salo",
+  "name_ua": "Сало",
+  "aliases": [
+   "cured pork fat",
+   "pork fatback",
+   "Ukrainian lard",
+   "smoked salo"
+  ],
+  "aliases_ua": [
+   "шпик",
+   "сальце",
+   "смалець",
+   "копчене сало",
+   "солоне сало"
+  ],
+  "kcal100": 797.0,
+  "protein100": 1.4,
+  "fat100": 89.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "holubtsi",
+  "kind": "DISH",
+  "name": "Holubtsi",
+  "name_ua": "Голубці",
+  "aliases": [
+   "stuffed cabbage rolls",
+   "golubtsi",
+   "cabbage rolls",
+   "holubci"
+  ],
+  "aliases_ua": [
+   "голубчики",
+   "капустяні рулети",
+   "фаршировані голубці"
+  ],
+  "kcal100": 95.0,
+  "protein100": 6.0,
+  "fat100": 4.0,
+  "carbs100": 9.0
+ },
+ {
+  "id": "deruny",
+  "kind": "DISH",
+  "name": "Deruny",
+  "name_ua": "Деруни",
+  "aliases": [
+   "potato pancakes",
+   "draniki",
+   "kartoplianyky",
+   "hash browns UA"
+  ],
+  "aliases_ua": [
+   "картопляники",
+   "картопляні млинці",
+   "дерунчики"
+  ],
+  "kcal100": 180.0,
+  "protein100": 3.0,
+  "fat100": 8.0,
+  "carbs100": 24.0
+ },
+ {
+  "id": "syrnyky",
+  "kind": "DISH",
+  "name": "Syrnyky",
+  "name_ua": "Сирники",
+  "aliases": [
+   "cottage cheese pancakes",
+   "tvorozhniki",
+   "curd fritters",
+   "cheese fritters"
+  ],
+  "aliases_ua": [
+   "сирнички",
+   "творожники",
+   "сирні оладки"
+  ],
+  "kcal100": 200.0,
+  "protein100": 12.0,
+  "fat100": 7.0,
+  "carbs100": 22.0
+ },
+ {
+  "id": "chicken-kyiv",
+  "kind": "DISH",
+  "name": "Chicken Kyiv",
+  "name_ua": "Котлета по-київськи",
+  "aliases": [
+   "chicken kiev",
+   "kiev cutlet",
+   "kotleta po-kyivsky"
+  ],
+  "aliases_ua": [
+   "курка по-київськи",
+   "київська котлета"
+  ],
+  "kcal100": 250.0,
+  "protein100": 18.0,
+  "fat100": 16.0,
+  "carbs100": 10.0
+ },
+ {
+  "id": "pampushky",
+  "kind": "DISH",
+  "name": "Pampushky",
+  "name_ua": "Пампушки",
+  "aliases": [
+   "garlic bread rolls",
+   "Ukrainian garlic buns",
+   "garlic pampushky"
+  ],
+  "aliases_ua": [
+   "пампушечки",
+   "часникові пампушки",
+   "булочки з часником"
+  ],
+  "kcal100": 300.0,
+  "protein100": 7.0,
+  "fat100": 8.0,
+  "carbs100": 50.0
+ },
+ {
+  "id": "kutia",
+  "kind": "DISH",
+  "name": "Kutia",
+  "name_ua": "Кутя",
+  "aliases": [
+   "wheat berry pudding",
+   "kutya",
+   "Christmas wheat",
+   "kolivo"
+  ],
+  "aliases_ua": [
+   "кутя різдвяна",
+   "коливо",
+   "кутя з маком"
+  ],
+  "kcal100": 150.0,
+  "protein100": 4.0,
+  "fat100": 3.0,
+  "carbs100": 27.0
+ },
+ {
+  "id": "okroshka",
+  "kind": "DISH",
+  "name": "Okroshka",
+  "name_ua": "Окрошка",
+  "aliases": [
+   "cold soup",
+   "kvas soup",
+   "summer cold soup"
+  ],
+  "aliases_ua": [
+   "холодний суп",
+   "квасний суп",
+   "літня окрошка"
+  ],
+  "kcal100": 60.0,
+  "protein100": 3.0,
+  "fat100": 2.5,
+  "carbs100": 5.0
+ },
+ {
+  "id": "solyanka",
+  "kind": "DISH",
+  "name": "Solyanka",
+  "name_ua": "Солянка",
+  "aliases": [
+   "solianka",
+   "sour soup",
+   "mixed meat soup"
+  ],
+  "aliases_ua": [
+   "солянка м'ясна",
+   "кисла солянка",
+   "суп солянка"
+  ],
+  "kcal100": 70.0,
+  "protein100": 5.0,
+  "fat100": 4.0,
+  "carbs100": 3.0
+ },
+ {
+  "id": "kapusniak",
+  "kind": "DISH",
+  "name": "Kapusniak",
+  "name_ua": "Капусняк",
+  "aliases": [
+   "cabbage soup",
+   "sauerkraut soup",
+   "kapustniak"
+  ],
+  "aliases_ua": [
+   "капустяний суп",
+   "суп з кислою капустою"
+  ],
+  "kcal100": 35.0,
+  "protein100": 2.0,
+  "fat100": 1.0,
+  "carbs100": 5.0
+ },
+ {
+  "id": "olivier-salad",
+  "kind": "DISH",
+  "name": "Olivier Salad",
+  "name_ua": "Салат Олів'є",
+  "aliases": [
+   "olivie",
+   "Russian salad",
+   "potato salad with mayo",
+   "stolichny"
+  ],
+  "aliases_ua": [
+   "олів'є",
+   "столичний салат",
+   "зимовий салат"
+  ],
+  "kcal100": 150.0,
+  "protein100": 5.0,
+  "fat100": 10.0,
+  "carbs100": 10.0
+ },
+ {
+  "id": "shuba",
+  "kind": "DISH",
+  "name": "Shuba",
+  "name_ua": "Шуба",
+  "aliases": [
+   "herring under fur coat",
+   "dressed herring",
+   "seledka pod shuboi"
+  ],
+  "aliases_ua": [
+   "оселедець під шубою",
+   "селедка під шубою"
+  ],
+  "kcal100": 180.0,
+  "protein100": 6.0,
+  "fat100": 12.0,
+  "carbs100": 12.0
+ },
+ {
+  "id": "vinaigrette-salad",
+  "kind": "DISH",
+  "name": "Vinaigrette Salad",
+  "name_ua": "Вінегрет",
+  "aliases": [
+   "vinegret",
+   "beet salad",
+   "Ukrainian vinaigrette"
+  ],
+  "aliases_ua": [
+   "буряковий салат",
+   "овочевий вінегрет"
+  ],
+  "kcal100": 130.0,
+  "protein100": 2.0,
+  "fat100": 8.0,
+  "carbs100": 13.0
+ },
+ {
+  "id": "mlyntsi",
+  "kind": "DISH",
+  "name": "Mlyntsi",
+  "name_ua": "Млинці",
+  "aliases": [
+   "crepes",
+   "bliny",
+   "thin pancakes",
+   "nalysnyky"
+  ],
+  "aliases_ua": [
+   "млинчики",
+   "налисники",
+   "тонкі млинці",
+   "блинчики"
+  ],
+  "kcal100": 190.0,
+  "protein100": 5.5,
+  "fat100": 5.0,
+  "carbs100": 30.0
+ },
+ {
+  "id": "halushky",
+  "kind": "DISH",
+  "name": "Halushky",
+  "name_ua": "Галушки",
+  "aliases": [
+   "Ukrainian dumplings",
+   "dough dumplings",
+   "flour dumplings"
+  ],
+  "aliases_ua": [
+   "галушечки",
+   "кльоцки",
+   "борошняні галушки"
+  ],
+  "kcal100": 130.0,
+  "protein100": 4.0,
+  "fat100": 3.0,
+  "carbs100": 22.0
+ },
+ {
+  "id": "banosh",
+  "kind": "DISH",
+  "name": "Banosh",
+  "name_ua": "Банош",
+  "aliases": [
+   "cornmeal with smetana",
+   "Hutsul cornmeal",
+   "banush"
+  ],
+  "aliases_ua": [
+   "кулеша",
+   "гуцульський банош",
+   "каша зі сметаною"
+  ],
+  "kcal100": 150.0,
+  "protein100": 4.0,
+  "fat100": 6.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "kovbasa",
+  "kind": "PRODUCT",
+  "name": "Kovbasa",
+  "name_ua": "Ковбаса",
+  "aliases": [
+   "Ukrainian sausage",
+   "kolbasa",
+   "kielbasa",
+   "smoked sausage UA"
+  ],
+  "aliases_ua": [
+   "домашня ковбаса",
+   "копчена ковбаса",
+   "українська ковбаса"
+  ],
+  "kcal100": 280.0,
+  "protein100": 14.0,
+  "fat100": 24.0,
+  "carbs100": 2.0
+ },
+ {
+  "id": "kotlety",
+  "kind": "DISH",
+  "name": "Kotlety",
+  "name_ua": "Котлети",
+  "aliases": [
+   "meat patties",
+   "cutlets",
+   "meatballs",
+   "kotleta"
+  ],
+  "aliases_ua": [
+   "котлетки",
+   "м'ясні котлети",
+   "биточки",
+   "зрази"
+  ],
+  "kcal100": 220.0,
+  "protein100": 16.0,
+  "fat100": 14.0,
+  "carbs100": 8.0
+ },
+ {
+  "id": "holodets",
+  "kind": "DISH",
+  "name": "Holodets",
+  "name_ua": "Холодець",
+  "aliases": [
+   "meat jelly",
+   "aspic",
+   "kholodets",
+   "studen",
+   "cold meat jelly"
+  ],
+  "aliases_ua": [
+   "студень",
+   "холодне",
+   "м'ясне желе",
+   "драглі"
+  ],
+  "kcal100": 80.0,
+  "protein100": 8.0,
+  "fat100": 5.0,
+  "carbs100": 0.5
+ },
+ {
+  "id": "plov",
+  "kind": "DISH",
+  "name": "Plov",
+  "name_ua": "Плов",
+  "aliases": [
+   "pilaf",
+   "rice pilaf",
+   "Ukrainian pilaf",
+   "plov with pork"
+  ],
+  "aliases_ua": [
+   "плов з м'ясом",
+   "рисова каша з м'ясом"
+  ],
+  "kcal100": 150.0,
+  "protein100": 7.0,
+  "fat100": 5.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "buckwheat-cooked",
+  "kind": "PRODUCT",
+  "name": "Buckwheat (Cooked)",
+  "name_ua": "Гречка (варена)",
+  "aliases": [
+   "grechka",
+   "kasha",
+   "buckwheat porridge",
+   "cooked buckwheat"
+  ],
+  "aliases_ua": [
+   "гречана каша",
+   "каша гречана",
+   "відварна гречка"
+  ],
+  "kcal100": 92.0,
+  "protein100": 3.4,
+  "fat100": 0.6,
+  "carbs100": 19.9
+ },
+ {
+  "id": "smetana-20",
+  "kind": "PRODUCT",
+  "name": "Smetana 20%",
+  "name_ua": "Сметана 20%",
+  "aliases": [
+   "sour cream",
+   "smetana",
+   "sour cream 20% fat"
+  ],
+  "aliases_ua": [
+   "сметанка",
+   "кисла сметана",
+   "домашня сметана"
+  ],
+  "kcal100": 206.0,
+  "protein100": 2.8,
+  "fat100": 20.0,
+  "carbs100": 3.2
+ },
+ {
+  "id": "tvorog-9",
+  "kind": "PRODUCT",
+  "name": "Tvorog 9%",
+  "name_ua": "Сир кисломолочний 9%",
+  "aliases": [
+   "cottage cheese",
+   "syr kyslomolochnyi",
+   "farmer cheese",
+   "quark"
+  ],
+  "aliases_ua": [
+   "домашній сир",
+   "творог",
+   "кисляк",
+   "селянський сир"
+  ],
+  "kcal100": 159.0,
+  "protein100": 16.7,
+  "fat100": 9.0,
+  "carbs100": 2.0
+ },
+ {
+  "id": "kvass",
+  "kind": "PRODUCT",
+  "name": "Kvass",
+  "name_ua": "Квас",
+  "aliases": [
+   "kvas",
+   "bread drink",
+   "fermented rye drink",
+   "homemade kvass"
+  ],
+  "aliases_ua": [
+   "хлібний квас",
+   "домашній квас",
+   "живий квас"
+  ],
+  "kcal100": 27.0,
+  "protein100": 0.2,
+  "fat100": 0.0,
+  "carbs100": 5.0
+ },
+ {
+  "id": "uzvar",
+  "kind": "DISH",
+  "name": "Uzvar",
+  "name_ua": "Узвар",
+  "aliases": [
+   "dried fruit compote",
+   "kompot",
+   "stewed fruit drink",
+   "uzvar"
+  ],
+  "aliases_ua": [
+   "компот з сухофруктів",
+   "різдвяний узвар",
+   "компот"
+  ],
+  "kcal100": 30.0,
+  "protein100": 0.2,
+  "fat100": 0.0,
+  "carbs100": 7.0
+ },
+ {
+  "id": "kefir",
+  "kind": "PRODUCT",
+  "name": "Kefir",
+  "name_ua": "Кефір",
+  "aliases": [
+   "fermented milk",
+   "kefir drink",
+   "kefir 2.5%"
+  ],
+  "aliases_ua": [
+   "кефірчик",
+   "кисляк",
+   "кефір 2.5%"
+  ],
+  "kcal100": 56.0,
+  "protein100": 3.3,
+  "fat100": 2.0,
+  "carbs100": 4.7
+ },
+ {
+  "id": "ryazhenka",
+  "kind": "PRODUCT",
+  "name": "Ryazhenka",
+  "name_ua": "Ряжанка",
+  "aliases": [
+   "baked fermented milk",
+   "ryazhanka",
+   "fermented baked milk"
+  ],
+  "aliases_ua": [
+   "ряженка",
+   "топлене молоко кисле",
+   "ряжаночка"
+  ],
+  "kcal100": 67.0,
+  "protein100": 2.8,
+  "fat100": 4.0,
+  "carbs100": 4.2
+ },
+ {
+  "id": "fish-and-chips",
+  "kind": "DISH",
+  "name": "Fish And Chips",
+  "name_ua": "Риба з картоплею фрі",
+  "aliases": [
+   "fish & chips",
+   "chippy",
+   "battered cod and chips",
+   "chippy tea"
+  ],
+  "aliases_ua": [
+   "фіш енд чіпс",
+   "смажена риба з картоплею"
+  ],
+  "kcal100": 230.0,
+  "protein100": 12.0,
+  "fat100": 12.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "full-english-breakfast",
+  "kind": "DISH",
+  "name": "Full English Breakfast",
+  "name_ua": "Повний англійський сніданок",
+  "aliases": [
+   "fry-up",
+   "English breakfast",
+   "cooked breakfast",
+   "full English",
+   "fry up"
+  ],
+  "aliases_ua": [
+   "англійський сніданок",
+   "фрай-ап",
+   "повний сніданок"
+  ],
+  "kcal100": 180.0,
+  "protein100": 12.0,
+  "fat100": 11.0,
+  "carbs100": 8.0
+ },
+ {
+  "id": "shepherd-s-pie",
+  "kind": "DISH",
+  "name": "Shepherd's Pie",
+  "name_ua": "Пастуший пиріг",
+  "aliases": [
+   "cottage pie",
+   "shepherds pie",
+   "lamb mince pie"
+  ],
+  "aliases_ua": [
+   "котедж пай",
+   "пиріг з бараниною",
+   "картопляна запіканка"
+  ],
+  "kcal100": 120.0,
+  "protein100": 8.0,
+  "fat100": 5.0,
+  "carbs100": 11.0
+ },
+ {
+  "id": "bangers-and-mash",
+  "kind": "DISH",
+  "name": "Bangers And Mash",
+  "name_ua": "Сосиски з пюре",
+  "aliases": [
+   "sausage and mash",
+   "sausages with mashed potato",
+   "bangers & mash"
+  ],
+  "aliases_ua": [
+   "бенгерс енд меш",
+   "ковбаски з картопляним пюре"
+  ],
+  "kcal100": 140.0,
+  "protein100": 7.0,
+  "fat100": 7.0,
+  "carbs100": 12.0
+ },
+ {
+  "id": "cornish-pasty",
+  "kind": "DISH",
+  "name": "Cornish Pasty",
+  "name_ua": "Корнуельський пиріжок",
+  "aliases": [
+   "pasty",
+   "meat pasty",
+   "Cornish pastie"
+  ],
+  "aliases_ua": [
+   "пасті",
+   "м'ясний пиріжок",
+   "корніш пасті"
+  ],
+  "kcal100": 265.0,
+  "protein100": 8.0,
+  "fat100": 14.0,
+  "carbs100": 28.0
+ },
+ {
+  "id": "scotch-egg",
+  "kind": "DISH",
+  "name": "Scotch Egg",
+  "name_ua": "Шотландське яйце",
+  "aliases": [
+   "scotch eggs",
+   "breaded egg",
+   "picnic egg"
+  ],
+  "aliases_ua": [
+   "яйце в м'ясі",
+   "скотч ег",
+   "паніроване яйце"
+  ],
+  "kcal100": 240.0,
+  "protein100": 13.0,
+  "fat100": 15.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "yorkshire-pudding",
+  "kind": "DISH",
+  "name": "Yorkshire Pudding",
+  "name_ua": "Йоркширський пудинг",
+  "aliases": [
+   "yorkie pud",
+   "Yorkshire pud",
+   "batter pudding"
+  ],
+  "aliases_ua": [
+   "йоркшир пуд",
+   "тісто-пудинг"
+  ],
+  "kcal100": 180.0,
+  "protein100": 6.0,
+  "fat100": 5.0,
+  "carbs100": 26.0
+ },
+ {
+  "id": "beef-wellington",
+  "kind": "DISH",
+  "name": "Beef Wellington",
+  "name_ua": "Біф Веллінгтон",
+  "aliases": [
+   "Wellington",
+   "beef en croute",
+   "beef in pastry"
+  ],
+  "aliases_ua": [
+   "яловичина у тісті",
+   "м'ясо Веллінгтон"
+  ],
+  "kcal100": 260.0,
+  "protein100": 15.0,
+  "fat100": 16.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "toad-in-the-hole",
+  "kind": "DISH",
+  "name": "Toad In The Hole",
+  "name_ua": "Сосиски в тісті",
+  "aliases": [
+   "sausage in batter",
+   "toad-in-the-hole"
+  ],
+  "aliases_ua": [
+   "тоуд ін зе хоул",
+   "ковбаски в тісті"
+  ],
+  "kcal100": 190.0,
+  "protein100": 8.0,
+  "fat100": 10.0,
+  "carbs100": 16.0
+ },
+ {
+  "id": "beans-on-toast",
+  "kind": "DISH",
+  "name": "Beans On Toast",
+  "name_ua": "Квасоля на тості",
+  "aliases": [
+   "baked beans on toast",
+   "beans & toast",
+   "beans on bread"
+  ],
+  "aliases_ua": [
+   "бінс он тоуст",
+   "квасоля з хлібом"
+  ],
+  "kcal100": 130.0,
+  "protein100": 6.0,
+  "fat100": 2.0,
+  "carbs100": 22.0
+ },
+ {
+  "id": "jacket-potato-with-beans",
+  "kind": "DISH",
+  "name": "Jacket Potato With Beans",
+  "name_ua": "Печена картопля з квасолею",
+  "aliases": [
+   "baked potato with beans",
+   "jacket spud",
+   "baked potato"
+  ],
+  "aliases_ua": [
+   "жакет потейто",
+   "картопля в мундирі",
+   "печена бульба"
+  ],
+  "kcal100": 100.0,
+  "protein100": 4.0,
+  "fat100": 0.5,
+  "carbs100": 20.0
+ },
+ {
+  "id": "chicken-tikka-masala",
+  "kind": "DISH",
+  "name": "Chicken Tikka Masala",
+  "name_ua": "Курка тікка масала",
+  "aliases": [
+   "tikka masala",
+   "CTM",
+   "chicken tikka",
+   "curry chicken"
+  ],
+  "aliases_ua": [
+   "тікка масала",
+   "курячий каррі",
+   "індійська курка"
+  ],
+  "kcal100": 150.0,
+  "protein100": 13.0,
+  "fat100": 8.0,
+  "carbs100": 6.0
+ },
+ {
+  "id": "sunday-roast",
+  "kind": "DISH",
+  "name": "Sunday Roast",
+  "name_ua": "Недільний обід",
+  "aliases": [
+   "roast dinner",
+   "Sunday lunch",
+   "roast carvery",
+   "Sunday roast dinner"
+  ],
+  "aliases_ua": [
+   "ростбіф",
+   "недільне запечене",
+   "роздінер"
+  ],
+  "kcal100": 170.0,
+  "protein100": 15.0,
+  "fat100": 8.0,
+  "carbs100": 10.0
+ },
+ {
+  "id": "pork-pie",
+  "kind": "DISH",
+  "name": "Pork Pie",
+  "name_ua": "Свинячий пиріг",
+  "aliases": [
+   "pork pie",
+   "Melton Mowbray",
+   "raised pork pie"
+  ],
+  "aliases_ua": [
+   "порк пай",
+   "пиріг зі свининою"
+  ],
+  "kcal100": 350.0,
+  "protein100": 10.0,
+  "fat100": 24.0,
+  "carbs100": 24.0
+ },
+ {
+  "id": "haggis",
+  "kind": "DISH",
+  "name": "Haggis",
+  "name_ua": "Хагіс",
+  "aliases": [
+   "Scottish haggis",
+   "haggis neeps and tatties"
+  ],
+  "aliases_ua": [
+   "шотландський хагіс",
+   "хагіс з ріпою"
+  ],
+  "kcal100": 180.0,
+  "protein100": 10.0,
+  "fat100": 11.0,
+  "carbs100": 9.0
+ },
+ {
+  "id": "black-pudding",
+  "kind": "PRODUCT",
+  "name": "Black Pudding",
+  "name_ua": "Кров'яна ковбаса",
+  "aliases": [
+   "blood sausage",
+   "blood pudding",
+   "black pud"
+  ],
+  "aliases_ua": [
+   "кров'янка",
+   "блад пудинг",
+   "чорний пудинг"
+  ],
+  "kcal100": 297.0,
+  "protein100": 13.0,
+  "fat100": 22.0,
+  "carbs100": 12.0
+ },
+ {
+  "id": "sticky-toffee-pudding",
+  "kind": "DISH",
+  "name": "Sticky Toffee Pudding",
+  "name_ua": "Тофі пудинг",
+  "aliases": [
+   "toffee pudding",
+   "sticky toffee",
+   "STP",
+   "toffee cake"
+  ],
+  "aliases_ua": [
+   "стікі тофі пудинг",
+   "карамельний пудинг"
+  ],
+  "kcal100": 340.0,
+  "protein100": 3.0,
+  "fat100": 12.0,
+  "carbs100": 55.0
+ },
+ {
+  "id": "scones",
+  "kind": "DISH",
+  "name": "Scones",
+  "name_ua": "Сконси",
+  "aliases": [
+   "scone",
+   "English scone",
+   "cream tea scone",
+   "fruit scone"
+  ],
+  "aliases_ua": [
+   "англійські сконси",
+   "сконс",
+   "булочки до чаю"
+  ],
+  "kcal100": 360.0,
+  "protein100": 7.0,
+  "fat100": 14.0,
+  "carbs100": 52.0
+ },
+ {
+  "id": "crumpets",
+  "kind": "PRODUCT",
+  "name": "Crumpets",
+  "name_ua": "Крампети",
+  "aliases": [
+   "crumpet",
+   "English crumpet",
+   "pikelets",
+   "toasting crumpet"
+  ],
+  "aliases_ua": [
+   "англійські крампети",
+   "крампет",
+   "тостові крампети"
+  ],
+  "kcal100": 190.0,
+  "protein100": 6.0,
+  "fat100": 1.0,
+  "carbs100": 38.0
+ },
+ {
+  "id": "ploughman-s-lunch",
+  "kind": "DISH",
+  "name": "Ploughman's Lunch",
+  "name_ua": "Фермерський обід",
+  "aliases": [
+   "ploughmans",
+   "cheese and pickle",
+   "ploughman's"
+  ],
+  "aliases_ua": [
+   "плаумен",
+   "сир з маринованими овочами"
+  ],
+  "kcal100": 200.0,
+  "protein100": 10.0,
+  "fat100": 12.0,
+  "carbs100": 12.0
+ },
+ {
+  "id": "cheeseburger",
+  "kind": "DISH",
+  "name": "Cheeseburger",
+  "name_ua": "Чізбургер",
+  "aliases": [
+   "burger",
+   "hamburger with cheese",
+   "cheese burger",
+   "quarter pounder"
+  ],
+  "aliases_ua": [
+   "бургер з сиром",
+   "гамбургер з сиром",
+   "бургер"
+  ],
+  "kcal100": 270.0,
+  "protein100": 15.0,
+  "fat100": 14.0,
+  "carbs100": 22.0
+ },
+ {
+  "id": "hot-dog",
+  "kind": "DISH",
+  "name": "Hot Dog",
+  "name_ua": "Хот-дог",
+  "aliases": [
+   "hotdog",
+   "frankfurter",
+   "wiener",
+   "frank",
+   "sausage in bun"
+  ],
+  "aliases_ua": [
+   "сосиска в булці",
+   "хот дог",
+   "гарячий пес"
+  ],
+  "kcal100": 250.0,
+  "protein100": 10.0,
+  "fat100": 15.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "mac-and-cheese",
+  "kind": "DISH",
+  "name": "Mac And Cheese",
+  "name_ua": "Макарони з сиром",
+  "aliases": [
+   "macaroni and cheese",
+   "mac n cheese",
+   "mac & cheese"
+  ],
+  "aliases_ua": [
+   "мак енд чіз",
+   "сирні макарони",
+   "паста з сиром"
+  ],
+  "kcal100": 160.0,
+  "protein100": 7.0,
+  "fat100": 7.0,
+  "carbs100": 17.0
+ },
+ {
+  "id": "bbq-pulled-pork",
+  "kind": "DISH",
+  "name": "BBQ Pulled Pork",
+  "name_ua": "Тушена свинина BBQ",
+  "aliases": [
+   "pulled pork",
+   "BBQ pork",
+   "barbecue pulled pork",
+   "slow cooked pork"
+  ],
+  "aliases_ua": [
+   "тягнута свинина",
+   "барбекю свинина",
+   "пулд порк"
+  ],
+  "kcal100": 210.0,
+  "protein100": 20.0,
+  "fat100": 10.0,
+  "carbs100": 10.0
+ },
+ {
+  "id": "buffalo-wings",
+  "kind": "DISH",
+  "name": "Buffalo Wings",
+  "name_ua": "Крильця Баффало",
+  "aliases": [
+   "buffalo chicken wings",
+   "hot wings",
+   "chicken wings",
+   "wing night"
+  ],
+  "aliases_ua": [
+   "гострі крильця",
+   "курячі крильця",
+   "крильця у соусі"
+  ],
+  "kcal100": 190.0,
+  "protein100": 17.0,
+  "fat100": 13.0,
+  "carbs100": 1.0
+ },
+ {
+  "id": "clam-chowder",
+  "kind": "DISH",
+  "name": "Clam Chowder",
+  "name_ua": "Суп з молюсками",
+  "aliases": [
+   "New England clam chowder",
+   "chowder",
+   "cream clam soup"
+  ],
+  "aliases_ua": [
+   "клем чаудер",
+   "вершковий суп з молюсками"
+  ],
+  "kcal100": 90.0,
+  "protein100": 4.0,
+  "fat100": 5.0,
+  "carbs100": 8.0
+ },
+ {
+  "id": "american-pancakes",
+  "kind": "DISH",
+  "name": "American Pancakes",
+  "name_ua": "Американські млинці",
+  "aliases": [
+   "pancakes",
+   "flapjacks",
+   "hotcakes",
+   "griddle cakes",
+   "stack"
+  ],
+  "aliases_ua": [
+   "панкейки",
+   "товсті млинці",
+   "оладки американські"
+  ],
+  "kcal100": 230.0,
+  "protein100": 6.0,
+  "fat100": 5.0,
+  "carbs100": 40.0
+ },
+ {
+  "id": "pb-j-sandwich",
+  "kind": "DISH",
+  "name": "PB&J Sandwich",
+  "name_ua": "Сендвіч з арахісовою пастою",
+  "aliases": [
+   "peanut butter and jelly",
+   "PBJ",
+   "peanut butter sandwich"
+  ],
+  "aliases_ua": [
+   "PBJ сендвіч",
+   "сендвіч з джемом і арахісом"
+  ],
+  "kcal100": 340.0,
+  "protein100": 10.0,
+  "fat100": 14.0,
+  "carbs100": 45.0
+ },
+ {
+  "id": "meatloaf",
+  "kind": "DISH",
+  "name": "Meatloaf",
+  "name_ua": "М'ясний рулет",
+  "aliases": [
+   "meat loaf",
+   "American meatloaf",
+   "ground beef loaf"
+  ],
+  "aliases_ua": [
+   "мітлоуф",
+   "запечений фарш",
+   "м'ясна буханка"
+  ],
+  "kcal100": 170.0,
+  "protein100": 14.0,
+  "fat100": 10.0,
+  "carbs100": 6.0
+ },
+ {
+  "id": "caesar-salad",
+  "kind": "DISH",
+  "name": "Caesar Salad",
+  "name_ua": "Салат Цезар",
+  "aliases": [
+   "caesar",
+   "chicken caesar salad",
+   "Caesar with croutons"
+  ],
+  "aliases_ua": [
+   "цезар",
+   "курячий цезар",
+   "салат з крутонами"
+  ],
+  "kcal100": 120.0,
+  "protein100": 7.0,
+  "fat100": 8.0,
+  "carbs100": 5.0
+ },
+ {
+  "id": "roast-turkey",
+  "kind": "DISH",
+  "name": "Roast Turkey",
+  "name_ua": "Запечена індичка",
+  "aliases": [
+   "turkey",
+   "Thanksgiving turkey",
+   "roasted turkey breast",
+   "turkey breast"
+  ],
+  "aliases_ua": [
+   "індичка",
+   "різдвяна індичка",
+   "індича грудка"
+  ],
+  "kcal100": 170.0,
+  "protein100": 29.0,
+  "fat100": 5.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "cornbread",
+  "kind": "DISH",
+  "name": "Cornbread",
+  "name_ua": "Кукурудзяний хліб",
+  "aliases": [
+   "corn bread",
+   "Southern cornbread",
+   "johnnycake",
+   "corn muffin"
+  ],
+  "aliases_ua": [
+   "корнбред",
+   "кукурудзяна булка",
+   "кукурудзяний мафін"
+  ],
+  "kcal100": 250.0,
+  "protein100": 5.0,
+  "fat100": 8.0,
+  "carbs100": 38.0
+ },
+ {
+  "id": "cobb-salad",
+  "kind": "DISH",
+  "name": "Cobb Salad",
+  "name_ua": "Салат Кобб",
+  "aliases": [
+   "cobb",
+   "Cobb salad with chicken",
+   "American Cobb"
+  ],
+  "aliases_ua": [
+   "кобб",
+   "американський кобб",
+   "салат з куркою та беконом"
+  ],
+  "kcal100": 130.0,
+  "protein100": 10.0,
+  "fat100": 9.0,
+  "carbs100": 3.0
+ },
+ {
+  "id": "philly-cheesesteak",
+  "kind": "DISH",
+  "name": "Philly Cheesesteak",
+  "name_ua": "Філадельфійський чізстейк",
+  "aliases": [
+   "cheesesteak",
+   "Philly steak",
+   "cheese steak sandwich",
+   "Philly"
+  ],
+  "aliases_ua": [
+   "чізстейк",
+   "філлі стейк",
+   "стейк сендвіч"
+  ],
+  "kcal100": 230.0,
+  "protein100": 15.0,
+  "fat100": 12.0,
+  "carbs100": 16.0
+ },
+ {
+  "id": "jambalaya",
+  "kind": "DISH",
+  "name": "Jambalaya",
+  "name_ua": "Джамбалайя",
+  "aliases": [
+   "Cajun jambalaya",
+   "Creole jambalaya",
+   "Louisiana rice dish"
+  ],
+  "aliases_ua": [
+   "каджунська джамбалайя",
+   "креольський рис"
+  ],
+  "kcal100": 130.0,
+  "protein100": 8.0,
+  "fat100": 4.0,
+  "carbs100": 16.0
+ },
+ {
+  "id": "burrito",
+  "kind": "DISH",
+  "name": "Burrito",
+  "name_ua": "Буріто",
+  "aliases": [
+   "Mexican burrito",
+   "beef burrito",
+   "bean burrito",
+   "wrap burrito"
+  ],
+  "aliases_ua": [
+   "мексиканське буріто",
+   "рол з квасолею"
+  ],
+  "kcal100": 165.0,
+  "protein100": 9.0,
+  "fat100": 6.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "fried-chicken",
+  "kind": "DISH",
+  "name": "Fried Chicken",
+  "name_ua": "Смажена курка",
+  "aliases": [
+   "Southern fried chicken",
+   "crispy chicken",
+   "deep fried chicken",
+   "KFC"
+  ],
+  "aliases_ua": [
+   "курка фрі",
+   "хрустка курка",
+   "панірована курка"
+  ],
+  "kcal100": 250.0,
+  "protein100": 21.0,
+  "fat100": 15.0,
+  "carbs100": 8.0
+ },
+ {
+  "id": "chicken-pot-pie",
+  "kind": "DISH",
+  "name": "Chicken Pot Pie",
+  "name_ua": "Курячий пиріг",
+  "aliases": [
+   "pot pie",
+   "chicken pie",
+   "American chicken pie"
+  ],
+  "aliases_ua": [
+   "пот пай",
+   "курячий пиріг з овочами"
+  ],
+  "kcal100": 230.0,
+  "protein100": 9.0,
+  "fat100": 14.0,
+  "carbs100": 17.0
+ },
+ {
+  "id": "biscuits-and-gravy",
+  "kind": "DISH",
+  "name": "Biscuits And Gravy",
+  "name_ua": "Бісквіти з підливою",
+  "aliases": [
+   "Southern biscuits",
+   "biscuits & gravy",
+   "B&G",
+   "sausage gravy"
+  ],
+  "aliases_ua": [
+   "бісквіти і грейві",
+   "американські бісквіти"
+  ],
+  "kcal100": 200.0,
+  "protein100": 5.0,
+  "fat100": 10.0,
+  "carbs100": 22.0
+ },
+ {
+  "id": "grits",
+  "kind": "PRODUCT",
+  "name": "Grits",
+  "name_ua": "Кукурудзяна каша",
+  "aliases": [
+   "Southern grits",
+   "corn grits",
+   "hominy grits",
+   "breakfast grits"
+  ],
+  "aliases_ua": [
+   "грітс",
+   "кукурудзяна крупа",
+   "мамалиґа"
+  ],
+  "kcal100": 73.0,
+  "protein100": 1.8,
+  "fat100": 0.5,
+  "carbs100": 16.0
+ },
+ {
+  "id": "chicken-breast-raw",
+  "kind": "PRODUCT",
+  "name": "Chicken Breast (Raw)",
+  "name_ua": "Куряча грудка (сира)",
+  "aliases": [
+   "raw chicken breast",
+   "skinless chicken breast",
+   "chicken fillet",
+   "boneless chicken"
+  ],
+  "aliases_ua": [
+   "грудинка куряча",
+   "філе куряче",
+   "куряче філе сире"
+  ],
+  "kcal100": 120.0,
+  "protein100": 23.0,
+  "fat100": 2.6,
+  "carbs100": 0.0
+ },
+ {
+  "id": "chicken-breast-cooked",
+  "kind": "PRODUCT",
+  "name": "Chicken Breast (Cooked)",
+  "name_ua": "Куряча грудка (готова)",
+  "aliases": [
+   "grilled chicken breast",
+   "baked chicken breast",
+   "cooked chicken",
+   "pan-fried chicken"
+  ],
+  "aliases_ua": [
+   "грудка запечена",
+   "куряче філе готове",
+   "грудка гриль"
+  ],
+  "kcal100": 165.0,
+  "protein100": 31.0,
+  "fat100": 3.6,
+  "carbs100": 0.0
+ },
+ {
+  "id": "chicken-thigh-raw",
+  "kind": "PRODUCT",
+  "name": "Chicken Thigh (Raw)",
+  "name_ua": "Куряче стегно (сире)",
+  "aliases": [
+   "raw chicken thigh",
+   "bone-in thigh",
+   "dark meat chicken",
+   "chicken leg"
+  ],
+  "aliases_ua": [
+   "стегенце куряче",
+   "куряча ніжка",
+   "темне м'ясо"
+  ],
+  "kcal100": 177.0,
+  "protein100": 20.0,
+  "fat100": 10.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "turkey-breast-cooked",
+  "kind": "PRODUCT",
+  "name": "Turkey Breast (Cooked)",
+  "name_ua": "Індича грудка (готова)",
+  "aliases": [
+   "cooked turkey",
+   "roast turkey breast",
+   "deli turkey",
+   "sliced turkey"
+  ],
+  "aliases_ua": [
+   "індичка відварна",
+   "індиче філе",
+   "грудка індички"
+  ],
+  "kcal100": 135.0,
+  "protein100": 30.0,
+  "fat100": 1.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "beef-mince-raw-15",
+  "kind": "PRODUCT",
+  "name": "Beef Mince (Raw 15%)",
+  "name_ua": "Яловичий фарш (сирий 15%)",
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "hamburger meat",
+   "beef mince 15% fat"
+  ],
+  "aliases_ua": [
+   "мелена яловичина",
+   "фарш яловичий",
+   "м'ясний фарш"
+  ],
+  "kcal100": 215.0,
+  "protein100": 19.0,
+  "fat100": 15.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "beef-steak-raw",
+  "kind": "PRODUCT",
+  "name": "Beef Steak (Raw)",
+  "name_ua": "Яловичий стейк (сирий)",
+  "aliases": [
+   "sirloin",
+   "ribeye",
+   "steak",
+   "beef sirloin",
+   "rump steak",
+   "fillet steak"
+  ],
+  "aliases_ua": [
+   "стейк",
+   "яловичина",
+   "філе яловичини",
+   "вирізка"
+  ],
+  "kcal100": 200.0,
+  "protein100": 26.0,
+  "fat100": 10.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "pork-chop-cooked",
+  "kind": "PRODUCT",
+  "name": "Pork Chop (Cooked)",
+  "name_ua": "Свиняча відбивна (готова)",
+  "aliases": [
+   "cooked pork chop",
+   "grilled pork chop",
+   "pork loin chop"
+  ],
+  "aliases_ua": [
+   "відбивна",
+   "свиняча котлета",
+   "свиняча корейка"
+  ],
+  "kcal100": 231.0,
+  "protein100": 27.0,
+  "fat100": 13.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "lamb-cooked",
+  "kind": "PRODUCT",
+  "name": "Lamb (Cooked)",
+  "name_ua": "Баранина (готова)",
+  "aliases": [
+   "roast lamb",
+   "grilled lamb",
+   "lamb leg",
+   "lamb shoulder"
+  ],
+  "aliases_ua": [
+   "ягнятина",
+   "баранина запечена",
+   "баранина гриль"
+  ],
+  "kcal100": 258.0,
+  "protein100": 25.0,
+  "fat100": 17.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "bacon-cooked",
+  "kind": "PRODUCT",
+  "name": "Bacon (Cooked)",
+  "name_ua": "Бекон (смажений)",
+  "aliases": [
+   "fried bacon",
+   "crispy bacon",
+   "streaky bacon",
+   "rashers",
+   "back bacon"
+  ],
+  "aliases_ua": [
+   "бекон",
+   "шпик смажений",
+   "бекон хрусткий"
+  ],
+  "kcal100": 541.0,
+  "protein100": 37.0,
+  "fat100": 42.0,
+  "carbs100": 1.4
+ },
+ {
+  "id": "pork-sausage",
+  "kind": "PRODUCT",
+  "name": "Pork Sausage",
+  "name_ua": "Свиняча ковбаска",
+  "aliases": [
+   "breakfast sausage",
+   "pork link",
+   "banger",
+   "Cumberland sausage"
+  ],
+  "aliases_ua": [
+   "ковбаски",
+   "сардельки",
+   "ковбаска для сніданку"
+  ],
+  "kcal100": 301.0,
+  "protein100": 13.0,
+  "fat100": 25.0,
+  "carbs100": 5.0
+ },
+ {
+  "id": "salmon-raw",
+  "kind": "PRODUCT",
+  "name": "Salmon (Raw)",
+  "name_ua": "Лосось (сирий)",
+  "aliases": [
+   "raw salmon",
+   "Atlantic salmon",
+   "salmon fillet",
+   "fresh salmon"
+  ],
+  "aliases_ua": [
+   "сьомга",
+   "лосось філе",
+   "червона риба",
+   "форель"
+  ],
+  "kcal100": 208.0,
+  "protein100": 20.0,
+  "fat100": 13.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "tuna-canned-in-water",
+  "kind": "PRODUCT",
+  "name": "Tuna (Canned In Water)",
+  "name_ua": "Тунець (консервований)",
+  "aliases": [
+   "tinned tuna",
+   "canned tuna",
+   "tuna in spring water",
+   "chunk tuna"
+  ],
+  "aliases_ua": [
+   "тунець у воді",
+   "консерва тунець",
+   "баночний тунець"
+  ],
+  "kcal100": 116.0,
+  "protein100": 26.0,
+  "fat100": 0.8,
+  "carbs100": 0.0
+ },
+ {
+  "id": "cod-cooked",
+  "kind": "PRODUCT",
+  "name": "Cod (Cooked)",
+  "name_ua": "Тріска (готова)",
+  "aliases": [
+   "white fish",
+   "baked cod",
+   "grilled cod",
+   "haddock",
+   "pollock"
+  ],
+  "aliases_ua": [
+   "біла риба",
+   "тріска запечена",
+   "хек",
+   "минтай"
+  ],
+  "kcal100": 82.0,
+  "protein100": 18.0,
+  "fat100": 0.7,
+  "carbs100": 0.0
+ },
+ {
+  "id": "shrimp-cooked",
+  "kind": "PRODUCT",
+  "name": "Shrimp (Cooked)",
+  "name_ua": "Креветки (готові)",
+  "aliases": [
+   "prawns",
+   "cooked prawns",
+   "king prawns",
+   "shrimp boiled"
+  ],
+  "aliases_ua": [
+   "креветки відварні",
+   "морські креветки",
+   "гарнели"
+  ],
+  "kcal100": 99.0,
+  "protein100": 24.0,
+  "fat100": 0.3,
+  "carbs100": 0.2
+ },
+ {
+  "id": "eggs-whole",
+  "kind": "PRODUCT",
+  "name": "Eggs (Whole)",
+  "name_ua": "Яйця (цілі)",
+  "aliases": [
+   "egg",
+   "chicken egg",
+   "raw egg",
+   "whole egg",
+   "boiled egg"
+  ],
+  "aliases_ua": [
+   "яйце",
+   "куряче яйце",
+   "варене яйце",
+   "сире яйце"
+  ],
+  "kcal100": 155.0,
+  "protein100": 13.0,
+  "fat100": 11.0,
+  "carbs100": 1.1
+ },
+ {
+  "id": "egg-whites",
+  "kind": "PRODUCT",
+  "name": "Egg Whites",
+  "name_ua": "Яєчні білки",
+  "aliases": [
+   "egg white",
+   "albumen",
+   "liquid egg whites",
+   "egg whites only"
+  ],
+  "aliases_ua": [
+   "білок яєчний",
+   "рідкий білок",
+   "білки"
+  ],
+  "kcal100": 52.0,
+  "protein100": 11.0,
+  "fat100": 0.2,
+  "carbs100": 0.7
+ },
+ {
+  "id": "tofu",
+  "kind": "PRODUCT",
+  "name": "Tofu",
+  "name_ua": "Тофу",
+  "aliases": [
+   "bean curd",
+   "soybean curd",
+   "firm tofu",
+   "silken tofu"
+  ],
+  "aliases_ua": [
+   "соєвий сир",
+   "бобовий сир",
+   "тверде тофу"
+  ],
+  "kcal100": 76.0,
+  "protein100": 8.0,
+  "fat100": 4.8,
+  "carbs100": 1.9
+ },
+ {
+  "id": "white-rice-cooked",
+  "kind": "PRODUCT",
+  "name": "White Rice (Cooked)",
+  "name_ua": "Білий рис (варений)",
+  "aliases": [
+   "cooked rice",
+   "steamed rice",
+   "boiled rice",
+   "jasmine rice",
+   "basmati cooked"
+  ],
+  "aliases_ua": [
+   "рис відварний",
+   "рис на пару",
+   "жасминовий рис"
+  ],
+  "kcal100": 130.0,
+  "protein100": 2.7,
+  "fat100": 0.3,
+  "carbs100": 28.0
+ },
+ {
+  "id": "brown-rice-cooked",
+  "kind": "PRODUCT",
+  "name": "Brown Rice (Cooked)",
+  "name_ua": "Коричневий рис (варений)",
+  "aliases": [
+   "cooked brown rice",
+   "whole grain rice",
+   "wholegrain rice",
+   "brown basmati"
+  ],
+  "aliases_ua": [
+   "бурий рис",
+   "цільнозерновий рис",
+   "нешліфований рис"
+  ],
+  "kcal100": 123.0,
+  "protein100": 2.7,
+  "fat100": 1.0,
+  "carbs100": 26.0
+ },
+ {
+  "id": "oats-dry",
+  "kind": "PRODUCT",
+  "name": "Oats (Dry)",
+  "name_ua": "Вівсянка (суха)",
+  "aliases": [
+   "oatmeal",
+   "porridge oats",
+   "rolled oats",
+   "dry oats",
+   "steel cut oats"
+  ],
+  "aliases_ua": [
+   "вівсяні пластівці",
+   "геркулес",
+   "вівсяна каша суха"
+  ],
+  "kcal100": 379.0,
+  "protein100": 13.0,
+  "fat100": 7.0,
+  "carbs100": 66.0
+ },
+ {
+  "id": "pasta-cooked",
+  "kind": "PRODUCT",
+  "name": "Pasta (Cooked)",
+  "name_ua": "Макарони (варені)",
+  "aliases": [
+   "cooked pasta",
+   "boiled spaghetti",
+   "cooked penne",
+   "noodles",
+   "fusilli"
+  ],
+  "aliases_ua": [
+   "паста",
+   "спагеті",
+   "пене",
+   "вермішель",
+   "локшина"
+  ],
+  "kcal100": 131.0,
+  "protein100": 5.0,
+  "fat100": 1.1,
+  "carbs100": 25.0
+ },
+ {
+  "id": "white-bread",
+  "kind": "PRODUCT",
+  "name": "White Bread",
+  "name_ua": "Білий хліб",
+  "aliases": [
+   "bread",
+   "sliced white bread",
+   "sandwich bread",
+   "toast bread",
+   "loaf"
+  ],
+  "aliases_ua": [
+   "хліб",
+   "батон",
+   "білий батон",
+   "тостовий хліб",
+   "нарізний"
+  ],
+  "kcal100": 265.0,
+  "protein100": 9.0,
+  "fat100": 3.2,
+  "carbs100": 49.0
+ },
+ {
+  "id": "whole-wheat-bread",
+  "kind": "PRODUCT",
+  "name": "Whole Wheat Bread",
+  "name_ua": "Цільнозерновий хліб",
+  "aliases": [
+   "wholemeal bread",
+   "brown bread",
+   "whole grain bread",
+   "granary bread"
+  ],
+  "aliases_ua": [
+   "чорний хліб",
+   "житній хліб",
+   "хліб з висівками"
+  ],
+  "kcal100": 252.0,
+  "protein100": 12.0,
+  "fat100": 3.4,
+  "carbs100": 43.0
+ },
+ {
+  "id": "potato-boiled",
+  "kind": "PRODUCT",
+  "name": "Potato (Boiled)",
+  "name_ua": "Картопля (варена)",
+  "aliases": [
+   "boiled potato",
+   "mashed potato base",
+   "cooked potato",
+   "jacket potato plain"
+  ],
+  "aliases_ua": [
+   "бульба",
+   "відварна картопля",
+   "картопляне пюре"
+  ],
+  "kcal100": 87.0,
+  "protein100": 1.9,
+  "fat100": 0.1,
+  "carbs100": 20.0
+ },
+ {
+  "id": "sweet-potato-baked",
+  "kind": "PRODUCT",
+  "name": "Sweet Potato (Baked)",
+  "name_ua": "Батат (печений)",
+  "aliases": [
+   "baked sweet potato",
+   "yam",
+   "roasted sweet potato",
+   "sweet potato fries base"
+  ],
+  "aliases_ua": [
+   "солодка картопля",
+   "ямс",
+   "батат запечений"
+  ],
+  "kcal100": 90.0,
+  "protein100": 2.0,
+  "fat100": 0.1,
+  "carbs100": 21.0
+ },
+ {
+  "id": "quinoa-cooked",
+  "kind": "PRODUCT",
+  "name": "Quinoa (Cooked)",
+  "name_ua": "Кіноа (варена)",
+  "aliases": [
+   "cooked quinoa",
+   "boiled quinoa",
+   "quinoa grain",
+   "quinoa salad base"
+  ],
+  "aliases_ua": [
+   "кіноа",
+   "квіноа",
+   "кінва"
+  ],
+  "kcal100": 120.0,
+  "protein100": 4.4,
+  "fat100": 1.9,
+  "carbs100": 21.0
+ },
+ {
+  "id": "lentils-cooked",
+  "kind": "PRODUCT",
+  "name": "Lentils (Cooked)",
+  "name_ua": "Сочевиця (варена)",
+  "aliases": [
+   "cooked lentils",
+   "boiled lentils",
+   "red lentils",
+   "dal",
+   "green lentils"
+  ],
+  "aliases_ua": [
+   "червона сочевиця",
+   "зелена сочевиця",
+   "дал"
+  ],
+  "kcal100": 116.0,
+  "protein100": 9.0,
+  "fat100": 0.4,
+  "carbs100": 20.0
+ },
+ {
+  "id": "chickpeas-cooked",
+  "kind": "PRODUCT",
+  "name": "Chickpeas (Cooked)",
+  "name_ua": "Нут (варений)",
+  "aliases": [
+   "garbanzo beans",
+   "cooked chickpeas",
+   "canned chickpeas",
+   "hummus base"
+  ],
+  "aliases_ua": [
+   "хумус основа",
+   "турецький горох",
+   "нут відварний"
+  ],
+  "kcal100": 164.0,
+  "protein100": 9.0,
+  "fat100": 2.6,
+  "carbs100": 27.0
+ },
+ {
+  "id": "couscous-cooked",
+  "kind": "PRODUCT",
+  "name": "Couscous (Cooked)",
+  "name_ua": "Кускус (варений)",
+  "aliases": [
+   "cooked couscous",
+   "steamed couscous",
+   "pearl couscous"
+  ],
+  "aliases_ua": [
+   "кус-кус",
+   "перлинний кускус"
+  ],
+  "kcal100": 112.0,
+  "protein100": 3.8,
+  "fat100": 0.2,
+  "carbs100": 23.0
+ },
+ {
+  "id": "whole-milk",
+  "kind": "PRODUCT",
+  "name": "Whole Milk",
+  "name_ua": "Молоко незбиране",
+  "aliases": [
+   "full fat milk",
+   "full cream milk",
+   "cow's milk 3.5%",
+   "regular milk"
+  ],
+  "aliases_ua": [
+   "молоко 3.5%",
+   "домашнє молоко",
+   "коров'яче молоко"
+  ],
+  "kcal100": 61.0,
+  "protein100": 3.2,
+  "fat100": 3.3,
+  "carbs100": 4.8
+ },
+ {
+  "id": "skimmed-milk",
+  "kind": "PRODUCT",
+  "name": "Skimmed Milk",
+  "name_ua": "Знежирене молоко",
+  "aliases": [
+   "skim milk",
+   "fat-free milk",
+   "non-fat milk",
+   "0% milk",
+   "skimmed"
+  ],
+  "aliases_ua": [
+   "молоко 0%",
+   "обезжирене молоко",
+   "нежирне молоко"
+  ],
+  "kcal100": 34.0,
+  "protein100": 3.4,
+  "fat100": 0.1,
+  "carbs100": 5.0
+ },
+ {
+  "id": "greek-yogurt-full-fat",
+  "kind": "PRODUCT",
+  "name": "Greek Yogurt (Full Fat)",
+  "name_ua": "Грецький йогурт (жирний)",
+  "aliases": [
+   "full fat Greek yogurt",
+   "Greek style yogurt",
+   "strained yogurt"
+  ],
+  "aliases_ua": [
+   "грецький йогурт",
+   "густий йогурт",
+   "страчателла"
+  ],
+  "kcal100": 97.0,
+  "protein100": 9.0,
+  "fat100": 5.0,
+  "carbs100": 3.6
+ },
+ {
+  "id": "greek-yogurt-0-fat",
+  "kind": "PRODUCT",
+  "name": "Greek Yogurt (0% Fat)",
+  "name_ua": "Грецький йогурт (0% жиру)",
+  "aliases": [
+   "fat-free Greek yogurt",
+   "non-fat Greek yogurt",
+   "0% Greek",
+   "diet yogurt"
+  ],
+  "aliases_ua": [
+   "нежирний йогурт",
+   "дієтичний йогурт",
+   "йогурт 0%"
+  ],
+  "kcal100": 59.0,
+  "protein100": 10.0,
+  "fat100": 0.4,
+  "carbs100": 3.6
+ },
+ {
+  "id": "cottage-cheese-low-fat",
+  "kind": "PRODUCT",
+  "name": "Cottage Cheese (Low Fat)",
+  "name_ua": "Сир кисломолочний (нежирний)",
+  "aliases": [
+   "low fat cottage cheese",
+   "diet cottage cheese",
+   "2% cottage cheese"
+  ],
+  "aliases_ua": [
+   "нежирний сир",
+   "дієтичний сир",
+   "сир 2%"
+  ],
+  "kcal100": 84.0,
+  "protein100": 11.0,
+  "fat100": 2.3,
+  "carbs100": 4.3
+ },
+ {
+  "id": "cheddar-cheese",
+  "kind": "PRODUCT",
+  "name": "Cheddar Cheese",
+  "name_ua": "Сир Чеддер",
+  "aliases": [
+   "cheddar",
+   "mature cheddar",
+   "mild cheddar",
+   "hard cheese",
+   "block cheese"
+  ],
+  "aliases_ua": [
+   "чеддер",
+   "твердий сир",
+   "зрілий сир"
+  ],
+  "kcal100": 403.0,
+  "protein100": 25.0,
+  "fat100": 33.0,
+  "carbs100": 1.3
+ },
+ {
+  "id": "mozzarella",
+  "kind": "PRODUCT",
+  "name": "Mozzarella",
+  "name_ua": "Моцарела",
+  "aliases": [
+   "mozzarella cheese",
+   "pizza cheese",
+   "fresh mozzarella",
+   "buffalo mozzarella"
+  ],
+  "aliases_ua": [
+   "моцарела",
+   "сир для піци",
+   "буффало моцарела"
+  ],
+  "kcal100": 280.0,
+  "protein100": 28.0,
+  "fat100": 17.0,
+  "carbs100": 3.1
+ },
+ {
+  "id": "butter",
+  "kind": "PRODUCT",
+  "name": "Butter",
+  "name_ua": "Вершкове масло",
+  "aliases": [
+   "salted butter",
+   "unsalted butter",
+   "dairy butter",
+   "block butter"
+  ],
+  "aliases_ua": [
+   "масло",
+   "солоне масло",
+   "несолоне масло"
+  ],
+  "kcal100": 717.0,
+  "protein100": 0.9,
+  "fat100": 81.0,
+  "carbs100": 0.1
+ },
+ {
+  "id": "cream-cheese",
+  "kind": "PRODUCT",
+  "name": "Cream Cheese",
+  "name_ua": "Вершковий сир",
+  "aliases": [
+   "Philadelphia",
+   "soft cheese",
+   "cream cheese spread",
+   "philly"
+  ],
+  "aliases_ua": [
+   "філадельфія",
+   "м'який сир",
+   "крем-сир"
+  ],
+  "kcal100": 342.0,
+  "protein100": 6.0,
+  "fat100": 34.0,
+  "carbs100": 4.0
+ },
+ {
+  "id": "banana",
+  "kind": "PRODUCT",
+  "name": "Banana",
+  "name_ua": "Банан",
+  "aliases": [
+   "bananas",
+   "ripe banana",
+   "yellow banana",
+   "plantain (ripe)"
+  ],
+  "aliases_ua": [
+   "банани",
+   "жовтий банан",
+   "стиглий банан"
+  ],
+  "kcal100": 89.0,
+  "protein100": 1.1,
+  "fat100": 0.3,
+  "carbs100": 23.0
+ },
+ {
+  "id": "apple",
+  "kind": "PRODUCT",
+  "name": "Apple",
+  "name_ua": "Яблуко",
+  "aliases": [
+   "apples",
+   "green apple",
+   "red apple",
+   "Granny Smith",
+   "Gala apple"
+  ],
+  "aliases_ua": [
+   "яблука",
+   "зелене яблуко",
+   "червоне яблуко"
+  ],
+  "kcal100": 52.0,
+  "protein100": 0.3,
+  "fat100": 0.2,
+  "carbs100": 14.0
+ },
+ {
+  "id": "avocado",
+  "kind": "PRODUCT",
+  "name": "Avocado",
+  "name_ua": "Авокадо",
+  "aliases": [
+   "avocados",
+   "Hass avocado",
+   "avocado flesh",
+   "guac base"
+  ],
+  "aliases_ua": [
+   "авокадо",
+   "гуакамоле основа"
+  ],
+  "kcal100": 160.0,
+  "protein100": 2.0,
+  "fat100": 15.0,
+  "carbs100": 9.0
+ },
+ {
+  "id": "strawberries",
+  "kind": "PRODUCT",
+  "name": "Strawberries",
+  "name_ua": "Полуниця",
+  "aliases": [
+   "strawberry",
+   "fresh strawberries",
+   "berries",
+   "garden strawberry"
+  ],
+  "aliases_ua": [
+   "полуничка",
+   "суниця",
+   "свіжа полуниця"
+  ],
+  "kcal100": 32.0,
+  "protein100": 0.7,
+  "fat100": 0.3,
+  "carbs100": 8.0
+ },
+ {
+  "id": "watermelon",
+  "kind": "PRODUCT",
+  "name": "Watermelon",
+  "name_ua": "Кавун",
+  "aliases": [
+   "water melon",
+   "melon",
+   "summer melon",
+   "red melon"
+  ],
+  "aliases_ua": [
+   "кавуни",
+   "літній кавун",
+   "арбуз"
+  ],
+  "kcal100": 30.0,
+  "protein100": 0.6,
+  "fat100": 0.2,
+  "carbs100": 8.0
+ },
+ {
+  "id": "grapefruit",
+  "kind": "PRODUCT",
+  "name": "Grapefruit",
+  "name_ua": "Грейпфрут",
+  "aliases": [
+   "pink grapefruit",
+   "ruby grapefruit",
+   "citrus grapefruit"
+  ],
+  "aliases_ua": [
+   "грейпфрути",
+   "рожевий грейпфрут",
+   "цитрус"
+  ],
+  "kcal100": 42.0,
+  "protein100": 0.8,
+  "fat100": 0.1,
+  "carbs100": 11.0
+ },
+ {
+  "id": "blueberries",
+  "kind": "PRODUCT",
+  "name": "Blueberries",
+  "name_ua": "Чорниця",
+  "aliases": [
+   "blueberry",
+   "fresh blueberries",
+   "wild blueberries",
+   "bilberry"
+  ],
+  "aliases_ua": [
+   "лохина",
+   "свіжа чорниця",
+   "ягоди чорниці"
+  ],
+  "kcal100": 57.0,
+  "protein100": 0.7,
+  "fat100": 0.3,
+  "carbs100": 14.0
+ },
+ {
+  "id": "orange",
+  "kind": "PRODUCT",
+  "name": "Orange",
+  "name_ua": "Апельсин",
+  "aliases": [
+   "oranges",
+   "navel orange",
+   "citrus orange",
+   "mandarin"
+  ],
+  "aliases_ua": [
+   "апельсини",
+   "цитрус",
+   "мандарин"
+  ],
+  "kcal100": 47.0,
+  "protein100": 0.9,
+  "fat100": 0.1,
+  "carbs100": 12.0
+ },
+ {
+  "id": "broccoli-cooked",
+  "kind": "PRODUCT",
+  "name": "Broccoli (Cooked)",
+  "name_ua": "Брокколі (варене)",
+  "aliases": [
+   "steamed broccoli",
+   "boiled broccoli",
+   "broccoli florets"
+  ],
+  "aliases_ua": [
+   "брокколі на пару",
+   "брокколі відварне"
+  ],
+  "kcal100": 35.0,
+  "protein100": 2.4,
+  "fat100": 0.4,
+  "carbs100": 7.0
+ },
+ {
+  "id": "spinach-raw",
+  "kind": "PRODUCT",
+  "name": "Spinach (Raw)",
+  "name_ua": "Шпинат (сирий)",
+  "aliases": [
+   "baby spinach",
+   "fresh spinach",
+   "spinach leaves",
+   "salad spinach"
+  ],
+  "aliases_ua": [
+   "свіжий шпинат",
+   "листя шпинату",
+   "бебі шпинат"
+  ],
+  "kcal100": 23.0,
+  "protein100": 2.9,
+  "fat100": 0.4,
+  "carbs100": 3.6
+ },
+ {
+  "id": "cauliflower-rice",
+  "kind": "PRODUCT",
+  "name": "Cauliflower Rice",
+  "name_ua": "Рис з цвітної капусти",
+  "aliases": [
+   "riced cauliflower",
+   "cauliflower couscous",
+   "cauli rice",
+   "low-carb rice"
+  ],
+  "aliases_ua": [
+   "рис із цвітної капусти",
+   "кето рис",
+   "замінник рису"
+  ],
+  "kcal100": 25.0,
+  "protein100": 2.0,
+  "fat100": 0.3,
+  "carbs100": 5.0
+ },
+ {
+  "id": "zucchini",
+  "kind": "PRODUCT",
+  "name": "Zucchini",
+  "name_ua": "Кабачок",
+  "aliases": [
+   "courgette",
+   "zucchini squash",
+   "summer squash",
+   "marrow"
+  ],
+  "aliases_ua": [
+   "цукіні",
+   "кабачки",
+   "літній кабачок"
+  ],
+  "kcal100": 17.0,
+  "protein100": 1.2,
+  "fat100": 0.3,
+  "carbs100": 3.1
+ },
+ {
+  "id": "tomato",
+  "kind": "PRODUCT",
+  "name": "Tomato",
+  "name_ua": "Помідор",
+  "aliases": [
+   "tomatoes",
+   "fresh tomato",
+   "raw tomato",
+   "vine tomato",
+   "cherry tomato"
+  ],
+  "aliases_ua": [
+   "томат",
+   "помідори",
+   "помідорка",
+   "черрі"
+  ],
+  "kcal100": 18.0,
+  "protein100": 0.9,
+  "fat100": 0.2,
+  "carbs100": 3.9
+ },
+ {
+  "id": "cucumber",
+  "kind": "PRODUCT",
+  "name": "Cucumber",
+  "name_ua": "Огірок",
+  "aliases": [
+   "cucumbers",
+   "English cucumber",
+   "salad cucumber",
+   "baby cucumber"
+  ],
+  "aliases_ua": [
+   "огірки",
+   "свіжий огірок",
+   "малосольний огірок"
+  ],
+  "kcal100": 15.0,
+  "protein100": 0.7,
+  "fat100": 0.1,
+  "carbs100": 3.6
+ },
+ {
+  "id": "celery",
+  "kind": "PRODUCT",
+  "name": "Celery",
+  "name_ua": "Селера",
+  "aliases": [
+   "celery stalks",
+   "celery sticks",
+   "raw celery",
+   "celery hearts"
+  ],
+  "aliases_ua": [
+   "стеблова селера",
+   "селера стебла",
+   "свіжа селера"
+  ],
+  "kcal100": 14.0,
+  "protein100": 0.7,
+  "fat100": 0.2,
+  "carbs100": 3.0
+ },
+ {
+  "id": "mixed-greens",
+  "kind": "PRODUCT",
+  "name": "Mixed Greens",
+  "name_ua": "Мікс зелені",
+  "aliases": [
+   "salad mix",
+   "lettuce",
+   "mixed salad leaves",
+   "mesclun",
+   "rocket"
+  ],
+  "aliases_ua": [
+   "салат",
+   "салатне листя",
+   "руккола",
+   "мікс салат"
+  ],
+  "kcal100": 20.0,
+  "protein100": 1.5,
+  "fat100": 0.3,
+  "carbs100": 3.3
+ },
+ {
+  "id": "bell-pepper",
+  "kind": "PRODUCT",
+  "name": "Bell Pepper",
+  "name_ua": "Солодкий перець",
+  "aliases": [
+   "capsicum",
+   "sweet pepper",
+   "red pepper",
+   "green pepper",
+   "paprika fresh"
+  ],
+  "aliases_ua": [
+   "болгарський перець",
+   "паприка",
+   "червоний перець"
+  ],
+  "kcal100": 26.0,
+  "protein100": 1.0,
+  "fat100": 0.2,
+  "carbs100": 6.0
+ },
+ {
+  "id": "carrots-raw",
+  "kind": "PRODUCT",
+  "name": "Carrots (Raw)",
+  "name_ua": "Морква (сира)",
+  "aliases": [
+   "raw carrots",
+   "carrot sticks",
+   "baby carrots",
+   "grated carrot"
+  ],
+  "aliases_ua": [
+   "морквина",
+   "сира морква",
+   "морква тертая",
+   "бебі морква"
+  ],
+  "kcal100": 41.0,
+  "protein100": 0.9,
+  "fat100": 0.2,
+  "carbs100": 10.0
+ },
+ {
+  "id": "whey-protein-powder",
+  "kind": "PRODUCT",
+  "name": "Whey Protein Powder",
+  "name_ua": "Сироватковий протеїн",
+  "aliases": [
+   "whey protein",
+   "protein powder",
+   "whey isolate",
+   "protein shake powder",
+   "WPI"
+  ],
+  "aliases_ua": [
+   "вей протеїн",
+   "протеїновий порошок",
+   "ізолят",
+   "WPI"
+  ],
+  "kcal100": 400.0,
+  "protein100": 80.0,
+  "fat100": 5.0,
+  "carbs100": 8.0
+ },
+ {
+  "id": "mass-gainer-powder",
+  "kind": "PRODUCT",
+  "name": "Mass Gainer Powder",
+  "name_ua": "Гейнер",
+  "aliases": [
+   "mass gainer",
+   "weight gainer",
+   "mass gainer shake",
+   "bulking powder",
+   "serious mass"
+  ],
+  "aliases_ua": [
+   "мас гейнер",
+   "порошок для набору",
+   "гейнер для маси"
+  ],
+  "kcal100": 380.0,
+  "protein100": 20.0,
+  "fat100": 5.0,
+  "carbs100": 70.0
+ },
+ {
+  "id": "peanut-butter",
+  "kind": "PRODUCT",
+  "name": "Peanut Butter",
+  "name_ua": "Арахісова паста",
+  "aliases": [
+   "PB",
+   "peanut spread",
+   "crunchy peanut butter",
+   "smooth peanut butter",
+   "nut butter"
+  ],
+  "aliases_ua": [
+   "арахісове масло",
+   "горіхова паста",
+   "паста арахіс"
+  ],
+  "kcal100": 588.0,
+  "protein100": 25.0,
+  "fat100": 50.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "almond-butter",
+  "kind": "PRODUCT",
+  "name": "Almond Butter",
+  "name_ua": "Мигдальна паста",
+  "aliases": [
+   "almond spread",
+   "almond nut butter",
+   "almond paste"
+  ],
+  "aliases_ua": [
+   "мигдальне масло",
+   "паста з мигдалю"
+  ],
+  "kcal100": 614.0,
+  "protein100": 21.0,
+  "fat100": 56.0,
+  "carbs100": 19.0
+ },
+ {
+  "id": "granola",
+  "kind": "PRODUCT",
+  "name": "Granola",
+  "name_ua": "Гранола",
+  "aliases": [
+   "granola cereal",
+   "crunchy granola",
+   "granola clusters",
+   "muesli crunchy"
+  ],
+  "aliases_ua": [
+   "мюслі хрусткі",
+   "гранола з горіхами",
+   "кранчі"
+  ],
+  "kcal100": 489.0,
+  "protein100": 10.0,
+  "fat100": 20.0,
+  "carbs100": 66.0
+ },
+ {
+  "id": "trail-mix",
+  "kind": "PRODUCT",
+  "name": "Trail Mix",
+  "name_ua": "Горіхово-фруктова суміш",
+  "aliases": [
+   "nut mix",
+   "trail mix nuts",
+   "GORP",
+   "mixed nuts and dried fruit",
+   "snack mix"
+  ],
+  "aliases_ua": [
+   "трейл мікс",
+   "суміш горіхів",
+   "горіхи з сухофруктами"
+  ],
+  "kcal100": 462.0,
+  "protein100": 13.0,
+  "fat100": 29.0,
+  "carbs100": 45.0
+ },
+ {
+  "id": "dates-dried",
+  "kind": "PRODUCT",
+  "name": "Dates (Dried)",
+  "name_ua": "Фініки (сушені)",
+  "aliases": [
+   "medjool dates",
+   "dried dates",
+   "deglet noor",
+   "date fruit",
+   "date snack"
+  ],
+  "aliases_ua": [
+   "фінік",
+   "сушений фінік",
+   "меджул",
+   "деглет"
+  ],
+  "kcal100": 277.0,
+  "protein100": 1.8,
+  "fat100": 0.2,
+  "carbs100": 75.0
+ },
+ {
+  "id": "dark-chocolate-70",
+  "kind": "PRODUCT",
+  "name": "Dark Chocolate 70%",
+  "name_ua": "Чорний шоколад 70%",
+  "aliases": [
+   "dark choc",
+   "70% cocoa chocolate",
+   "plain chocolate",
+   "bittersweet"
+  ],
+  "aliases_ua": [
+   "темний шоколад",
+   "гіркий шоколад",
+   "шоколад 70%"
+  ],
+  "kcal100": 598.0,
+  "protein100": 8.0,
+  "fat100": 43.0,
+  "carbs100": 46.0
+ },
+ {
+  "id": "cashews",
+  "kind": "PRODUCT",
+  "name": "Cashews",
+  "name_ua": "Кеш'ю",
+  "aliases": [
+   "cashew nuts",
+   "raw cashews",
+   "roasted cashews",
+   "salted cashews"
+  ],
+  "aliases_ua": [
+   "кешʼю",
+   "горіх кеш'ю",
+   "смажений кеш'ю"
+  ],
+  "kcal100": 553.0,
+  "protein100": 18.0,
+  "fat100": 44.0,
+  "carbs100": 30.0
+ },
+ {
+  "id": "walnuts",
+  "kind": "PRODUCT",
+  "name": "Walnuts",
+  "name_ua": "Волоські горіхи",
+  "aliases": [
+   "walnut halves",
+   "English walnuts",
+   "chopped walnuts"
+  ],
+  "aliases_ua": [
+   "грецькі горіхи",
+   "горіх волоський"
+  ],
+  "kcal100": 654.0,
+  "protein100": 15.0,
+  "fat100": 65.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "olive-oil",
+  "kind": "PRODUCT",
+  "name": "Olive Oil",
+  "name_ua": "Оливкова олія",
+  "aliases": [
+   "extra virgin olive oil",
+   "EVOO",
+   "cooking oil olive",
+   "salad oil"
+  ],
+  "aliases_ua": [
+   "олія оливкова",
+   "EVOO",
+   "олія для салату"
+  ],
+  "kcal100": 884.0,
+  "protein100": 0.0,
+  "fat100": 100.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "coconut-oil",
+  "kind": "PRODUCT",
+  "name": "Coconut Oil",
+  "name_ua": "Кокосова олія",
+  "aliases": [
+   "virgin coconut oil",
+   "cooking coconut oil",
+   "coconut fat"
+  ],
+  "aliases_ua": [
+   "олія кокосова",
+   "кокосовий жир"
+  ],
+  "kcal100": 862.0,
+  "protein100": 0.0,
+  "fat100": 100.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "honey",
+  "kind": "PRODUCT",
+  "name": "Honey",
+  "name_ua": "Мед",
+  "aliases": [
+   "raw honey",
+   "pure honey",
+   "natural honey",
+   "bee honey",
+   "manuka honey"
+  ],
+  "aliases_ua": [
+   "натуральний мед",
+   "бджолиний мед",
+   "квітковий мед"
+  ],
+  "kcal100": 304.0,
+  "protein100": 0.3,
+  "fat100": 0.0,
+  "carbs100": 82.0
+ },
+ {
+  "id": "protein-bar",
+  "kind": "PRODUCT",
+  "name": "Protein Bar",
+  "name_ua": "Протеїновий батончик",
+  "aliases": [
+   "protein bar",
+   "energy bar",
+   "protein snack bar",
+   "sports bar",
+   "quest bar"
+  ],
+  "aliases_ua": [
+   "протеїн бар",
+   "енергетичний батончик",
+   "спортивний батончик"
+  ],
+  "kcal100": 350.0,
+  "protein100": 30.0,
+  "fat100": 10.0,
+  "carbs100": 35.0
+ },
+ {
+  "id": "rice-cakes",
+  "kind": "PRODUCT",
+  "name": "Rice Cakes",
+  "name_ua": "Рисові хлібці",
+  "aliases": [
+   "rice cake",
+   "puffed rice cake",
+   "rice crackers",
+   "diet snack rice"
+  ],
+  "aliases_ua": [
+   "рисовий хлібець",
+   "дієтичні хлібці",
+   "хлібець рисовий"
+  ],
+  "kcal100": 387.0,
+  "protein100": 8.0,
+  "fat100": 2.8,
+  "carbs100": 82.0
+ },
+ {
+  "id": "zucchini-noodles",
+  "kind": "PRODUCT",
+  "name": "Zucchini Noodles",
+  "name_ua": "Локшина з кабачків",
+  "aliases": [
+   "zoodles",
+   "courgette noodles",
+   "spiralized zucchini",
+   "zucchini pasta"
+  ],
+  "aliases_ua": [
+   "зудлз",
+   "спіралізований кабачок",
+   "кабачкова локшина"
+  ],
+  "kcal100": 17.0,
+  "protein100": 1.2,
+  "fat100": 0.3,
+  "carbs100": 3.1
+ },
+ {
+  "id": "green-tea",
+  "kind": "PRODUCT",
+  "name": "Green Tea",
+  "name_ua": "Зелений чай",
+  "aliases": [
+   "matcha",
+   "green tea brewed",
+   "sencha",
+   "diet tea",
+   "calorie-free tea"
+  ],
+  "aliases_ua": [
+   "матча",
+   "зелений чай листовий",
+   "сенча"
+  ],
+  "kcal100": 1.0,
+  "protein100": 0.0,
+  "fat100": 0.0,
+  "carbs100": 0.2
+ },
+ {
+  "id": "black-coffee",
+  "kind": "PRODUCT",
+  "name": "Black Coffee",
+  "name_ua": "Чорна кава",
+  "aliases": [
+   "coffee",
+   "espresso",
+   "Americano",
+   "drip coffee",
+   "long black"
+  ],
+  "aliases_ua": [
+   "кава",
+   "еспресо",
+   "американо",
+   "крапельна кава"
+  ],
+  "kcal100": 2.0,
+  "protein100": 0.3,
+  "fat100": 0.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "berries-mix",
+  "kind": "PRODUCT",
+  "name": "Berries Mix",
+  "name_ua": "Ягідний мікс",
+  "aliases": [
+   "mixed berries",
+   "berry blend",
+   "strawberry blueberry mix",
+   "antioxidant berries"
+  ],
+  "aliases_ua": [
+   "мікс ягід",
+   "суміш ягід",
+   "полуниця-чорниця"
+  ],
+  "kcal100": 40.0,
+  "protein100": 0.8,
+  "fat100": 0.3,
+  "carbs100": 10.0
+ },
+ {
+  "id": "tempeh",
+  "kind": "PRODUCT",
+  "name": "Tempeh",
+  "name_ua": "Темпе",
+  "aliases": [
+   "fermented soybean",
+   "soy tempeh",
+   "plant protein block"
+  ],
+  "aliases_ua": [
+   "соєвий темпе",
+   "ферментована соя",
+   "рослинний білок"
+  ],
+  "kcal100": 192.0,
+  "protein100": 20.0,
+  "fat100": 11.0,
+  "carbs100": 8.0
+ },
+ {
+  "id": "seitan",
+  "kind": "PRODUCT",
+  "name": "Seitan",
+  "name_ua": "Сейтан",
+  "aliases": [
+   "wheat gluten",
+   "wheat meat",
+   "mock duck",
+   "vital wheat gluten"
+  ],
+  "aliases_ua": [
+   "пшеничний глютен",
+   "рослинне м'ясо",
+   "сейтан білковий"
+  ],
+  "kcal100": 370.0,
+  "protein100": 75.0,
+  "fat100": 2.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "sardines-canned",
+  "kind": "PRODUCT",
+  "name": "Sardines (Canned)",
+  "name_ua": "Сардини (консервовані)",
+  "aliases": [
+   "tinned sardines",
+   "canned sardines in oil",
+   "pilchards"
+  ],
+  "aliases_ua": [
+   "сардинки",
+   "консерва сардини",
+   "шпроти"
+  ],
+  "kcal100": 208.0,
+  "protein100": 25.0,
+  "fat100": 11.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "mackerel-canned",
+  "kind": "PRODUCT",
+  "name": "Mackerel (Canned)",
+  "name_ua": "Скумбрія (консервована)",
+  "aliases": [
+   "tinned mackerel",
+   "canned mackerel",
+   "smoked mackerel"
+  ],
+  "aliases_ua": [
+   "скумбрія консерва",
+   "макрель",
+   "копчена скумбрія"
+  ],
+  "kcal100": 205.0,
+  "protein100": 24.0,
+  "fat100": 12.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "herring-smoked",
+  "kind": "PRODUCT",
+  "name": "Herring (Smoked)",
+  "name_ua": "Оселедець (копчений)",
+  "aliases": [
+   "smoked herring",
+   "kipper",
+   "bloater",
+   "pickled herring"
+  ],
+  "aliases_ua": [
+   "оселедець",
+   "кіпер",
+   "копчений оселедець",
+   "солоний оселедець"
+  ],
+  "kcal100": 217.0,
+  "protein100": 22.0,
+  "fat100": 14.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "duck-breast-cooked",
+  "kind": "PRODUCT",
+  "name": "Duck Breast (Cooked)",
+  "name_ua": "Качина грудка (готова)",
+  "aliases": [
+   "roast duck",
+   "duck fillet",
+   "pan-seared duck breast"
+  ],
+  "aliases_ua": [
+   "качка запечена",
+   "філе качки",
+   "качина грудка гриль"
+  ],
+  "kcal100": 201.0,
+  "protein100": 24.0,
+  "fat100": 11.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "bison-ground-cooked",
+  "kind": "PRODUCT",
+  "name": "Bison (Ground Cooked)",
+  "name_ua": "Бізон (фарш готовий)",
+  "aliases": [
+   "buffalo meat",
+   "ground bison",
+   "bison mince"
+  ],
+  "aliases_ua": [
+   "м'ясо бізона",
+   "фарш бізона",
+   "буйволове м'ясо"
+  ],
+  "kcal100": 143.0,
+  "protein100": 28.0,
+  "fat100": 3.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "venison-cooked",
+  "kind": "PRODUCT",
+  "name": "Venison (Cooked)",
+  "name_ua": "Оленина (готова)",
+  "aliases": [
+   "deer meat",
+   "cooked venison",
+   "venison steak"
+  ],
+  "aliases_ua": [
+   "оленяче м'ясо",
+   "оленина запечена",
+   "стейк з оленини"
+  ],
+  "kcal100": 158.0,
+  "protein100": 30.0,
+  "fat100": 3.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "tortilla-flour",
+  "kind": "PRODUCT",
+  "name": "Tortilla (Flour)",
+  "name_ua": "Тортилья (пшенична)",
+  "aliases": [
+   "flour tortilla",
+   "wrap",
+   "burrito shell",
+   "soft tortilla"
+  ],
+  "aliases_ua": [
+   "лаваш",
+   "тортилья",
+   "рол обгортка"
+  ],
+  "kcal100": 312.0,
+  "protein100": 8.0,
+  "fat100": 8.0,
+  "carbs100": 50.0
+ },
+ {
+  "id": "bagel-plain",
+  "kind": "PRODUCT",
+  "name": "Bagel (Plain)",
+  "name_ua": "Бейгл (простий)",
+  "aliases": [
+   "plain bagel",
+   "bread bagel",
+   "breakfast bagel"
+  ],
+  "aliases_ua": [
+   "бейгл",
+   "бублик",
+   "хлібний бейгл"
+  ],
+  "kcal100": 270.0,
+  "protein100": 10.0,
+  "fat100": 1.5,
+  "carbs100": 53.0
+ },
+ {
+  "id": "muesli-no-added-sugar",
+  "kind": "PRODUCT",
+  "name": "Muesli (No Added Sugar)",
+  "name_ua": "Мюслі (без цукру)",
+  "aliases": [
+   "unsweetened muesli",
+   "bircher muesli base",
+   "rolled oat muesli"
+  ],
+  "aliases_ua": [
+   "мюслі без цукру",
+   "натуральні мюслі",
+   "вівсяні мюслі"
+  ],
+  "kcal100": 340.0,
+  "protein100": 10.0,
+  "fat100": 6.0,
+  "carbs100": 60.0
+ },
+ {
+  "id": "parmesan-cheese",
+  "kind": "PRODUCT",
+  "name": "Parmesan Cheese",
+  "name_ua": "Пармезан",
+  "aliases": [
+   "parmigiano",
+   "grated parmesan",
+   "hard Italian cheese"
+  ],
+  "aliases_ua": [
+   "пармезан",
+   "пармезано",
+   "тертий пармезан"
+  ],
+  "kcal100": 431.0,
+  "protein100": 38.0,
+  "fat100": 29.0,
+  "carbs100": 4.0
+ },
+ {
+  "id": "feta-cheese",
+  "kind": "PRODUCT",
+  "name": "Feta Cheese",
+  "name_ua": "Сир фета",
+  "aliases": [
+   "feta",
+   "Greek feta",
+   "sheep feta",
+   "salad cheese"
+  ],
+  "aliases_ua": [
+   "фета",
+   "грецький сир",
+   "овечий сир",
+   "сир для салату"
+  ],
+  "kcal100": 264.0,
+  "protein100": 14.0,
+  "fat100": 21.0,
+  "carbs100": 4.0
+ },
+ {
+  "id": "ricotta-cheese",
+  "kind": "PRODUCT",
+  "name": "Ricotta Cheese",
+  "name_ua": "Рікотта",
+  "aliases": [
+   "ricotta",
+   "Italian soft cheese",
+   "whey cheese"
+  ],
+  "aliases_ua": [
+   "рікотта",
+   "м'який італійський сир",
+   "сирковий сир"
+  ],
+  "kcal100": 174.0,
+  "protein100": 11.0,
+  "fat100": 13.0,
+  "carbs100": 3.0
+ },
+ {
+  "id": "almonds",
+  "kind": "PRODUCT",
+  "name": "Almonds",
+  "name_ua": "Мигдаль",
+  "aliases": [
+   "raw almonds",
+   "roasted almonds",
+   "whole almonds",
+   "almond nuts"
+  ],
+  "aliases_ua": [
+   "мигдаль",
+   "смажений мигдаль",
+   "горіх мигдаль"
+  ],
+  "kcal100": 579.0,
+  "protein100": 21.0,
+  "fat100": 50.0,
+  "carbs100": 22.0
+ },
+ {
+  "id": "pistachios",
+  "kind": "PRODUCT",
+  "name": "Pistachios",
+  "name_ua": "Фісташки",
+  "aliases": [
+   "pistachio nuts",
+   "roasted pistachios",
+   "salted pistachios"
+  ],
+  "aliases_ua": [
+   "фісташки",
+   "смажені фісташки",
+   "горіхи фісташки"
+  ],
+  "kcal100": 560.0,
+  "protein100": 20.0,
+  "fat100": 45.0,
+  "carbs100": 28.0
+ },
+ {
+  "id": "pecans",
+  "kind": "PRODUCT",
+  "name": "Pecans",
+  "name_ua": "Пекан",
+  "aliases": [
+   "pecan nuts",
+   "raw pecans",
+   "halved pecans"
+  ],
+  "aliases_ua": [
+   "пекан",
+   "горіх пекан",
+   "сирий пекан"
+  ],
+  "kcal100": 691.0,
+  "protein100": 9.0,
+  "fat100": 72.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "macadamia-nuts",
+  "kind": "PRODUCT",
+  "name": "Macadamia Nuts",
+  "name_ua": "Макадамія",
+  "aliases": [
+   "macadamia",
+   "raw macadamia",
+   "roasted macadamia"
+  ],
+  "aliases_ua": [
+   "горіх макадамія",
+   "макадамія смажена"
+  ],
+  "kcal100": 718.0,
+  "protein100": 8.0,
+  "fat100": 76.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "hazelnuts",
+  "kind": "PRODUCT",
+  "name": "Hazelnuts",
+  "name_ua": "Фундук",
+  "aliases": [
+   "hazels",
+   "filberts",
+   "cobnut",
+   "roasted hazelnuts"
+  ],
+  "aliases_ua": [
+   "ліщина",
+   "лісовий горіх",
+   "смажений фундук"
+  ],
+  "kcal100": 628.0,
+  "protein100": 15.0,
+  "fat100": 61.0,
+  "carbs100": 17.0
+ },
+ {
+  "id": "chia-seeds",
+  "kind": "PRODUCT",
+  "name": "Chia Seeds",
+  "name_ua": "Насіння чіа",
+  "aliases": [
+   "chia",
+   "chia seed",
+   "chia pudding base"
+  ],
+  "aliases_ua": [
+   "чіа",
+   "чіа насіння",
+   "основа для чіа пудингу"
+  ],
+  "kcal100": 486.0,
+  "protein100": 17.0,
+  "fat100": 31.0,
+  "carbs100": 42.0
+ },
+ {
+  "id": "flaxseeds",
+  "kind": "PRODUCT",
+  "name": "Flaxseeds",
+  "name_ua": "Насіння льону",
+  "aliases": [
+   "linseed",
+   "flax seed",
+   "ground flaxseed",
+   "milled linseed"
+  ],
+  "aliases_ua": [
+   "лляне насіння",
+   "насіння льону",
+   "мелене лляне"
+  ],
+  "kcal100": 534.0,
+  "protein100": 18.0,
+  "fat100": 42.0,
+  "carbs100": 29.0
+ },
+ {
+  "id": "sunflower-seeds",
+  "kind": "PRODUCT",
+  "name": "Sunflower Seeds",
+  "name_ua": "Насіння соняшнику",
+  "aliases": [
+   "sunflower kernels",
+   "shelled sunflower seeds",
+   "roasted seeds"
+  ],
+  "aliases_ua": [
+   "сім'ячки",
+   "насіння соняху",
+   "лущені сім'ячки"
+  ],
+  "kcal100": 584.0,
+  "protein100": 21.0,
+  "fat100": 51.0,
+  "carbs100": 20.0
+ },
+ {
+  "id": "pumpkin-seeds",
+  "kind": "PRODUCT",
+  "name": "Pumpkin Seeds",
+  "name_ua": "Гарбузове насіння",
+  "aliases": [
+   "pepitas",
+   "pumpkin kernels",
+   "roasted pumpkin seeds"
+  ],
+  "aliases_ua": [
+   "гарбузове насіння",
+   "пепітас",
+   "смажене гарбузове"
+  ],
+  "kcal100": 559.0,
+  "protein100": 30.0,
+  "fat100": 49.0,
+  "carbs100": 11.0
+ },
+ {
+  "id": "hemp-seeds",
+  "kind": "PRODUCT",
+  "name": "Hemp Seeds",
+  "name_ua": "Насіння конопель",
+  "aliases": [
+   "hemp hearts",
+   "shelled hemp seed",
+   "hemp protein source"
+  ],
+  "aliases_ua": [
+   "конопляне насіння",
+   "конопляні серця"
+  ],
+  "kcal100": 553.0,
+  "protein100": 32.0,
+  "fat100": 49.0,
+  "carbs100": 9.0
+ },
+ {
+  "id": "coconut-desiccated",
+  "kind": "PRODUCT",
+  "name": "Coconut (Desiccated)",
+  "name_ua": "Кокос (сушений)",
+  "aliases": [
+   "dried coconut",
+   "shredded coconut",
+   "coconut flakes"
+  ],
+  "aliases_ua": [
+   "сушений кокос",
+   "кокосова стружка",
+   "кокосові пластівці"
+  ],
+  "kcal100": 660.0,
+  "protein100": 7.0,
+  "fat100": 65.0,
+  "carbs100": 24.0
+ },
+ {
+  "id": "raisins",
+  "kind": "PRODUCT",
+  "name": "Raisins",
+  "name_ua": "Родзинки",
+  "aliases": [
+   "dried grapes",
+   "sultanas",
+   "currants",
+   "golden raisins"
+  ],
+  "aliases_ua": [
+   "ізюм",
+   "сушений виноград",
+   "кишмиш"
+  ],
+  "kcal100": 299.0,
+  "protein100": 3.0,
+  "fat100": 0.5,
+  "carbs100": 79.0
+ },
+ {
+  "id": "dried-apricots",
+  "kind": "PRODUCT",
+  "name": "Dried Apricots",
+  "name_ua": "Курага",
+  "aliases": [
+   "apricot dried",
+   "dried apricot halves",
+   "Turkish apricots"
+  ],
+  "aliases_ua": [
+   "курага",
+   "сушений абрикос",
+   "абрикоси сушені"
+  ],
+  "kcal100": 241.0,
+  "protein100": 3.0,
+  "fat100": 0.5,
+  "carbs100": 63.0
+ },
+ {
+  "id": "dried-cranberries",
+  "kind": "PRODUCT",
+  "name": "Dried Cranberries",
+  "name_ua": "Журавлина сушена",
+  "aliases": [
+   "craisins",
+   "dried cranberry",
+   "cranberry raisins"
+  ],
+  "aliases_ua": [
+   "журавлина",
+   "сушена журавлина",
+   "крейзінс"
+  ],
+  "kcal100": 325.0,
+  "protein100": 0.1,
+  "fat100": 1.0,
+  "carbs100": 82.0
+ },
+ {
+  "id": "tilapia-cooked",
+  "kind": "PRODUCT",
+  "name": "Tilapia (Cooked)",
+  "name_ua": "Тілапія (готова)",
+  "aliases": [
+   "white tilapia",
+   "baked tilapia",
+   "grilled tilapia",
+   "tilapia fillet"
+  ],
+  "aliases_ua": [
+   "тілапія запечена",
+   "тілапія гриль",
+   "філе тілапії"
+  ],
+  "kcal100": 128.0,
+  "protein100": 26.0,
+  "fat100": 3.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "haddock-cooked",
+  "kind": "PRODUCT",
+  "name": "Haddock (Cooked)",
+  "name_ua": "Пікша (готова)",
+  "aliases": [
+   "smoked haddock",
+   "baked haddock",
+   "finnan haddie"
+  ],
+  "aliases_ua": [
+   "копчена пікша",
+   "запечена пікша",
+   "пікша філе"
+  ],
+  "kcal100": 90.0,
+  "protein100": 21.0,
+  "fat100": 0.6,
+  "carbs100": 0.0
+ },
+ {
+  "id": "turkey-mince-cooked",
+  "kind": "PRODUCT",
+  "name": "Turkey Mince (Cooked)",
+  "name_ua": "Індичий фарш (готовий)",
+  "aliases": [
+   "ground turkey",
+   "minced turkey",
+   "lean turkey mince"
+  ],
+  "aliases_ua": [
+   "фарш індичий",
+   "мелена індичка",
+   "пісний фарш індички"
+  ],
+  "kcal100": 170.0,
+  "protein100": 24.0,
+  "fat100": 8.0,
+  "carbs100": 0.0
+ },
+ {
+  "id": "crab-meat-cooked",
+  "kind": "PRODUCT",
+  "name": "Crab Meat (Cooked)",
+  "name_ua": "Крабове м'ясо (готове)",
+  "aliases": [
+   "crabmeat",
+   "crab",
+   "dressed crab",
+   "white crab meat"
+  ],
+  "aliases_ua": [
+   "крабове м'ясо",
+   "краб",
+   "біле м'ясо краба"
+  ],
+  "kcal100": 97.0,
+  "protein100": 19.0,
+  "fat100": 1.5,
+  "carbs100": 0.0
+ },
+ {
+  "id": "scallops-cooked",
+  "kind": "PRODUCT",
+  "name": "Scallops (Cooked)",
+  "name_ua": "Гребінці (готові)",
+  "aliases": [
+   "sea scallops",
+   "pan-seared scallops",
+   "king scallops"
+  ],
+  "aliases_ua": [
+   "морські гребінці",
+   "смажені гребінці"
+  ],
+  "kcal100": 111.0,
+  "protein100": 21.0,
+  "fat100": 1.0,
+  "carbs100": 5.0
+ },
+ {
+  "id": "mussels-cooked",
+  "kind": "PRODUCT",
+  "name": "Mussels (Cooked)",
+  "name_ua": "Мідії (готові)",
+  "aliases": [
+   "steamed mussels",
+   "blue mussels",
+   "mussel meat"
+  ],
+  "aliases_ua": [
+   "мідії на пару",
+   "мідії варені",
+   "м'ясо мідій"
+  ],
+  "kcal100": 172.0,
+  "protein100": 24.0,
+  "fat100": 4.5,
+  "carbs100": 7.0
+ },
+ {
+  "id": "edamame",
+  "kind": "PRODUCT",
+  "name": "Edamame",
+  "name_ua": "Едамаме",
+  "aliases": [
+   "soy beans",
+   "green soybeans",
+   "boiled edamame",
+   "shelled edamame"
+  ],
+  "aliases_ua": [
+   "соєві боби",
+   "зелена соя",
+   "варені едамаме"
+  ],
+  "kcal100": 121.0,
+  "protein100": 12.0,
+  "fat100": 5.0,
+  "carbs100": 9.0
+ },
+ {
+  "id": "black-beans-cooked",
+  "kind": "PRODUCT",
+  "name": "Black Beans (Cooked)",
+  "name_ua": "Чорна квасоля (варена)",
+  "aliases": [
+   "cooked black beans",
+   "frijoles negros",
+   "black turtle beans"
+  ],
+  "aliases_ua": [
+   "чорна квасоля",
+   "фрихолес",
+   "варена квасоля чорна"
+  ],
+  "kcal100": 132.0,
+  "protein100": 9.0,
+  "fat100": 0.5,
+  "carbs100": 24.0
+ },
+ {
+  "id": "kidney-beans-cooked",
+  "kind": "PRODUCT",
+  "name": "Kidney Beans (Cooked)",
+  "name_ua": "Червона квасоля (варена)",
+  "aliases": [
+   "cooked kidney beans",
+   "red beans",
+   "rajma"
+  ],
+  "aliases_ua": [
+   "червона квасоля варена",
+   "раджма",
+   "квасоля"
+  ],
+  "kcal100": 127.0,
+  "protein100": 9.0,
+  "fat100": 0.5,
+  "carbs100": 22.0
+ },
+ {
+  "id": "asparagus-cooked",
+  "kind": "PRODUCT",
+  "name": "Asparagus (Cooked)",
+  "name_ua": "Спаржа (варена)",
+  "aliases": [
+   "steamed asparagus",
+   "grilled asparagus",
+   "asparagus tips"
+  ],
+  "aliases_ua": [
+   "спаржа на пару",
+   "спаржа гриль",
+   "верхівки спаржі"
+  ],
+  "kcal100": 22.0,
+  "protein100": 2.4,
+  "fat100": 0.2,
+  "carbs100": 4.0
+ },
+ {
+  "id": "kale-raw",
+  "kind": "PRODUCT",
+  "name": "Kale (Raw)",
+  "name_ua": "Капуста кейл (сира)",
+  "aliases": [
+   "kale",
+   "curly kale",
+   "lacinato kale",
+   "dinosaur kale"
+  ],
+  "aliases_ua": [
+   "кейл",
+   "кудрява капуста",
+   "лацинато кейл"
+  ],
+  "kcal100": 35.0,
+  "protein100": 2.9,
+  "fat100": 0.9,
+  "carbs100": 4.4
+ },
+ {
+  "id": "mushrooms-raw",
+  "kind": "PRODUCT",
+  "name": "Mushrooms (Raw)",
+  "name_ua": "Гриби (сирі)",
+  "aliases": [
+   "white mushroom",
+   "button mushroom",
+   "cremini",
+   "champignon"
+  ],
+  "aliases_ua": [
+   "печериці",
+   "шампіньйони",
+   "білі гриби",
+   "кремні"
+  ],
+  "kcal100": 22.0,
+  "protein100": 3.1,
+  "fat100": 0.3,
+  "carbs100": 3.3
+ },
+ {
+  "id": "green-beans-cooked",
+  "kind": "PRODUCT",
+  "name": "Green Beans (Cooked)",
+  "name_ua": "Зелена квасоля (варена)",
+  "aliases": [
+   "string beans",
+   "French beans",
+   "runner beans",
+   "haricots verts"
+  ],
+  "aliases_ua": [
+   "стручкова квасоля",
+   "зелена квасоля",
+   "спаржева квасоля"
+  ],
+  "kcal100": 35.0,
+  "protein100": 1.8,
+  "fat100": 0.2,
+  "carbs100": 8.0
+ },
+ {
+  "id": "cabbage-raw",
+  "kind": "PRODUCT",
+  "name": "Cabbage (Raw)",
+  "name_ua": "Капуста (сира)",
+  "aliases": [
+   "white cabbage",
+   "green cabbage",
+   "raw cabbage",
+   "shredded cabbage"
+  ],
+  "aliases_ua": [
+   "білокачанна капуста",
+   "зелена капуста",
+   "нашинкована капуста"
+  ],
+  "kcal100": 25.0,
+  "protein100": 1.3,
+  "fat100": 0.1,
+  "carbs100": 6.0
+ },
+ {
+  "id": "brussels-sprouts-cooked",
+  "kind": "PRODUCT",
+  "name": "Brussels Sprouts (Cooked)",
+  "name_ua": "Брюссельська капуста (варена)",
+  "aliases": [
+   "steamed Brussels sprouts",
+   "roasted sprouts",
+   "baby cabbages"
+  ],
+  "aliases_ua": [
+   "брюссельська капуста",
+   "капуста варена",
+   "ростки"
+  ],
+  "kcal100": 36.0,
+  "protein100": 2.6,
+  "fat100": 0.5,
+  "carbs100": 7.0
+ },
+ {
+  "id": "pear",
+  "kind": "PRODUCT",
+  "name": "Pear",
+  "name_ua": "Груша",
+  "aliases": [
+   "pears",
+   "green pear",
+   "conference pear",
+   "Bartlett pear"
+  ],
+  "aliases_ua": [
+   "груші",
+   "зелена груша",
+   "конференція"
+  ],
+  "kcal100": 57.0,
+  "protein100": 0.4,
+  "fat100": 0.1,
+  "carbs100": 15.0
+ },
+ {
+  "id": "kiwi",
+  "kind": "PRODUCT",
+  "name": "Kiwi",
+  "name_ua": "Ківі",
+  "aliases": [
+   "kiwi fruit",
+   "green kiwi",
+   "gold kiwi",
+   "Chinese gooseberry"
+  ],
+  "aliases_ua": [
+   "ківі",
+   "зелений ківі",
+   "золотий ківі"
+  ],
+  "kcal100": 61.0,
+  "protein100": 1.1,
+  "fat100": 0.5,
+  "carbs100": 15.0
+ },
+ {
+  "id": "mango",
+  "kind": "PRODUCT",
+  "name": "Mango",
+  "name_ua": "Манго",
+  "aliases": [
+   "mangoes",
+   "fresh mango",
+   "mango flesh",
+   "ripe mango"
+  ],
+  "aliases_ua": [
+   "манго",
+   "свіже манго",
+   "стигле манго"
+  ],
+  "kcal100": 60.0,
+  "protein100": 0.8,
+  "fat100": 0.4,
+  "carbs100": 15.0
+ },
+ {
+  "id": "pineapple",
+  "kind": "PRODUCT",
+  "name": "Pineapple",
+  "name_ua": "Ананас",
+  "aliases": [
+   "fresh pineapple",
+   "pineapple chunks",
+   "pineapple rings"
+  ],
+  "aliases_ua": [
+   "ананас свіжий",
+   "шматочки ананасу"
+  ],
+  "kcal100": 50.0,
+  "protein100": 0.5,
+  "fat100": 0.1,
+  "carbs100": 13.0
+ },
+ {
+  "id": "peach",
+  "kind": "PRODUCT",
+  "name": "Peach",
+  "name_ua": "Персик",
+  "aliases": [
+   "peaches",
+   "nectarine",
+   "fresh peach",
+   "stone fruit"
+  ],
+  "aliases_ua": [
+   "персики",
+   "нектарин",
+   "свіжий персик"
+  ],
+  "kcal100": 39.0,
+  "protein100": 0.9,
+  "fat100": 0.3,
+  "carbs100": 10.0
+ },
+ {
+  "id": "hummus",
+  "kind": "PRODUCT",
+  "name": "Hummus",
+  "name_ua": "Хумус",
+  "aliases": [
+   "chickpea hummus",
+   "tahini dip",
+   "hummus classic"
+  ],
+  "aliases_ua": [
+   "хумус класичний",
+   "нутова паста",
+   "тахіні дип"
+  ],
+  "kcal100": 166.0,
+  "protein100": 8.0,
+  "fat100": 10.0,
+  "carbs100": 14.0
+ },
+ {
+  "id": "tahini",
+  "kind": "PRODUCT",
+  "name": "Tahini",
+  "name_ua": "Тахіні",
+  "aliases": [
+   "sesame paste",
+   "tahini sauce",
+   "raw tahini"
+  ],
+  "aliases_ua": [
+   "кунжутна паста",
+   "тахіні соус",
+   "сирий тахіні"
+  ],
+  "kcal100": 595.0,
+  "protein100": 17.0,
+  "fat100": 54.0,
+  "carbs100": 21.0
+ },
+ {
+  "id": "oat-milk",
+  "kind": "PRODUCT",
+  "name": "Oat Milk",
+  "name_ua": "Вівсяне молоко",
+  "aliases": [
+   "oat drink",
+   "plant milk oat",
+   "oatly",
+   "oat beverage"
+  ],
+  "aliases_ua": [
+   "вівсяне молоко",
+   "рослинне молоко",
+   "оатлі"
+  ],
+  "kcal100": 43.0,
+  "protein100": 1.0,
+  "fat100": 1.5,
+  "carbs100": 7.0
+ },
+ {
+  "id": "almond-milk-unsweetened",
+  "kind": "PRODUCT",
+  "name": "Almond Milk (Unsweetened)",
+  "name_ua": "Мигдальне молоко (без цукру)",
+  "aliases": [
+   "almond drink",
+   "unsweetened almond milk",
+   "plant milk almond"
+  ],
+  "aliases_ua": [
+   "мигдальне молоко",
+   "рослинне молоко мигдальне"
+  ],
+  "kcal100": 15.0,
+  "protein100": 0.6,
+  "fat100": 1.1,
+  "carbs100": 0.3
+ },
+ {
+  "id": "soy-milk",
+  "kind": "PRODUCT",
+  "name": "Soy Milk",
+  "name_ua": "Соєве молоко",
+  "aliases": [
+   "soya milk",
+   "soy drink",
+   "plant milk soy"
+  ],
+  "aliases_ua": [
+   "соєве молоко",
+   "соя молоко",
+   "рослинне молоко соєве"
+  ],
+  "kcal100": 33.0,
+  "protein100": 2.8,
+  "fat100": 1.8,
+  "carbs100": 1.2
+ },
+ {
+  "id": "casein-protein-powder",
+  "kind": "PRODUCT",
+  "name": "Casein Protein Powder",
+  "name_ua": "Казеїн протеїн",
+  "aliases": [
+   "micellar casein",
+   "slow release protein",
+   "night protein powder"
+  ],
+  "aliases_ua": [
+   "казеїн",
+   "повільний протеїн",
+   "нічний протеїн"
+  ],
+  "kcal100": 370.0,
+  "protein100": 80.0,
+  "fat100": 2.0,
+  "carbs100": 4.0
+ },
+ {
+  "id": "creatine-monohydrate",
+  "kind": "PRODUCT",
+  "name": "Creatine Monohydrate",
+  "name_ua": "Креатин моногідрат",
+  "aliases": [
+   "creatine",
+   "creatine powder",
+   "creatine supplement"
+  ],
+  "aliases_ua": [
+   "креатин",
+   "креатин порошок",
+   "креатинова добавка"
+  ],
+  "kcal100": 0.0,
+  "protein100": 0.0,
+  "fat100": 0.0,
+  "carbs100": 0.0
+ }
+]

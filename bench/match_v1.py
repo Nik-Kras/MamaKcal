@@ -1,0 +1,92 @@
+"""FROZEN v1 (used for the 150-plate test score). Map a free-text food name ("Roasted squash cubes") onto a food in our list.
+
+Exact name/alias matches win; otherwise the food sharing the most words wins,
+with cooking/shape words worth less than the food itself. A plain generic word
+("rice", "fish") falls back to the everyday default in GENERIC. Returns None
+when nothing shares a food word — the app then asks her to pick.
+"""
+import json
+import re
+
+# Words that describe form or cooking, not the food: they break ties only.
+MINOR = {
+    "cooked", "raw", "fresh", "sliced", "slices", "slice", "cubes", "cube", "cubed", "chunks", "chunk",
+    "pieces", "piece", "florets", "floret", "wedges", "wedge", "strips", "strip", "diced", "chopped",
+    "roasted", "grilled", "fried", "baked", "boiled", "steamed", "sauteed", "mashed", "scrambled",
+    "whole", "plain", "small", "large", "mixed", "baby", "cherry", "red", "yellow",
+    "white", "brown", "of", "and", "with", "in", "a", "the", "style", "patty", "fries",
+}
+# A bare generic word → the everyday food it most likely is.
+GENERIC = {
+    "rice": "white-rice-cooked", "potato": "potato-boiled", "chicken": "chicken-breast-cooked",
+    "fish": "cod-cooked", "egg": "eggs-whole", "bread": "white-bread", "cheese": "cheddar-cheese",
+    "salad": "mixed-greens", "greens": "mixed-greens", "green": "mixed-greens", "lettuce": "mixed-greens", "squash": "zucchini",
+    "beef": "beef-steak-raw", "pork": "pork-chop-cooked", "berries": "berries-mix", "berry": "berries-mix",
+    "yogurt": "greek-yogurt-full-fat", "milk": "whole-milk", "beans": "kidney-beans-cooked", "bean": "kidney-beans-cooked",
+    "oil": "olive-oil", "sausage": "pork-sausage", "noodles": "pasta-cooked", "spaghetti": "pasta-cooked",
+    "melon": "watermelon", "cantaloupe": "watermelon", "turkey": "turkey-breast-cooked", "pepper": "bell-pepper",
+    "peppers": "bell-pepper", "tomatoes": "tomato", "carrot": "carrots-raw", "nuts": "almonds",
+    "varenyky": "varenyky-potato", "dumplings": "varenyky-potato", "pancakes": "mlyntsi",
+}
+
+
+def stem(w: str) -> str:
+    for suf, rep in (("ies", "y"), ("oes", "o"), ("es", "e"), ("s", "")):
+        if len(w) > 3 and w.endswith(suf) and not w.endswith("ss"):
+            return w[: -len(suf)] + rep
+    return w
+
+
+def words(s: str) -> list[str]:
+    return [stem(w) for w in re.findall(r"[a-z]+", s.lower())]
+
+
+class Matcher:
+    def __init__(self, foods: list[dict]):
+        self.ids = {f["id"] for f in foods}
+        self.exact: dict[str, str] = {}
+        self.cands: list[tuple[str, set[str], set[str]]] = []  # id, food words, minor words
+        for f in foods:
+            for label in [f["name"], f["id"].replace("-", " "), *f.get("aliases", [])]:
+                key = " ".join(words(label))
+                self.exact.setdefault(key, f["id"])
+                ws = set(words(label))
+                self.cands.append((f["id"], ws - {stem(m) for m in MINOR}, ws & {stem(m) for m in MINOR}))
+        self.minor = {stem(m) for m in MINOR}
+        self.generic = {stem(k): v for k, v in GENERIC.items()}
+
+    def __call__(self, name: str) -> str | None:
+        if name.strip().lower().replace(" ", "-") in self.ids:
+            return name.strip().lower().replace(" ", "-")
+        ws = words(name)
+        key = " ".join(ws)
+        if key in self.exact:
+            return self.exact[key]
+        core = {w for w in ws if w not in self.minor}
+        if not core:
+            return None
+        # A name that is just one generic word ("cheese", "rice") means the everyday
+        # food, not whichever dish happens to contain the word. "Varenyky with
+        # cherries" is not just one word, so it goes on to the full match.
+        content = [w for w in ws if w not in {"of", "and", "with", "in", "a", "the"}]
+        if len(content) == 1 and content[0] in self.generic:
+            return self.generic[content[0]]
+        best, best_score = None, 0.0
+        for fid, fcore, fminor in self.cands:
+            shared = len(core & fcore)
+            if not shared:
+                continue
+            # Share of both sides' food words, plus a little for matching form words.
+            score = shared / len(core | fcore) + 0.1 * len(set(ws) & fminor)
+            if score > best_score:
+                best, best_score = fid, score
+        if best and best_score >= 0.5:
+            return best
+        for w in core:
+            if w in self.generic:
+                return self.generic[w]
+        return best
+
+
+def load(foods_path: str) -> Matcher:
+    return Matcher(json.load(open(foods_path)))
