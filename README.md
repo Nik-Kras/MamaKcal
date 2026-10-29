@@ -5,6 +5,33 @@ A calorie tracker in Ukrainian for one person: photograph the plate, a model **o
 - Product scope: [docs/PRD.md](docs/PRD.md) · decisions: [docs/decisions.md](docs/decisions.md)
 - Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
+## Install on the phone (about 5 minutes)
+
+<img src="docs/install-qr.png" width="200" alt="QR code: download MamaKcal.apk">
+
+**1. The app.** Scan the QR with the phone camera (or open
+[MamaKcal.apk](https://github.com/Nik-Kras/MamaKcal/releases/latest/download/MamaKcal.apk) on the phone), open the
+downloaded file and tap **Install**. If Samsung blocks it: allow **Install unknown apps** for Chrome, or switch off
+**Auto Blocker** (Settings → Security and privacy). Then **open the app once**, so its folder exists.
+
+**2. The photo model (once, 3.7 GB, over a USB cable).** The model is too big for the APK.
+- On the phone: Settings → About phone → Software information → tap **Build number** 7 times; then
+  Settings → Developer options → **USB debugging** on.
+- Plug the phone into the computer and tap **Allow** on the phone.
+- On the computer (`adb` comes with the Android SDK platform-tools):
+
+```bash
+adb -d push gemma-3n-E2B-it-int4.litertlm /sdcard/Android/data/com.nikkras.mamakcal/files/models/
+```
+
+The file is `gemma-3n-E2B-it-int4.litertlm` from [google/gemma-3n-E2B-it-litert-lm](https://huggingface.co/google/gemma-3n-E2B-it-litert-lm)
+on Hugging Face (accept Google's licence there first). Here it is already at `bench/data/models/`.
+
+**3. Use it.** Open «Калорії», tap **Сфотографувати їжу**, photograph the plate from above. The first photo also loads
+the model, so it takes longer. Without the model the app still works with manual entry («Без фото»).
+
+Updates: install the new `MamaKcal.apk` the same way, over the old one. Her meals stay; the model doesn't need copying again.
+
 ## Layout
 
 ```
@@ -60,11 +87,7 @@ flow can be tried; a release build says recognition isn't installed and offers m
 image step stops with "Can not find OpenCL library on this device", and the app shows «Не вдалося розпізнати». Test
 recognition on the S21 itself (Samsung ships OpenCL); check `adb logcat | grep -iE "litert|LiteRtLm"` if it fails.
 
-## Install on her phone
-
-<img src="docs/install-qr.png" width="200" alt="QR code: download MamaKcal.apk">
-
-Scan with the phone camera to download `MamaKcal.apk` from the [latest release](https://github.com/Nik-Kras/MamaKcal/releases/latest), then open it and tap Install. The photo model is not in the APK: copy it over USB once (see [The photo model](#the-photo-model)).
+## Release builds
 
 Release builds are signed by `plugins/withReleaseSigning.js` with the keystore at `~/.android/mamakcal-release.jks`; its passwords are in `~/.gradle/gradle.properties` (`MAMAKCAL_*`). **Back up both.** Without them no update can ever be installed over her copy.
 

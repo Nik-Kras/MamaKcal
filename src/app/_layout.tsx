@@ -5,7 +5,7 @@ import { ActivityIndicator, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { PrimaryButton, T } from "../components/ui";
-import { reportError, Sentry, startDiagnostics } from "../diag/diagnostics";
+import { reportError, Sentry, sentryEnabled, startDiagnostics } from "../diag/diagnostics";
 import { StoreProvider, useStore } from "../store/store";
 import { C } from "../theme";
 
@@ -83,4 +83,5 @@ function RootLayout() {
   );
 }
 
-export default Sentry.wrap(RootLayout);
+// Without a DSN (development) Sentry isn't started, and wrapping would only warn.
+export default sentryEnabled() ? Sentry.wrap(RootLayout) : RootLayout;

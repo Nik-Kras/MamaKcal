@@ -34,6 +34,11 @@ export const blackbox = createBlackBox(diskKeyValue(), "mamakcal");
 let enabled = false;
 let started = false;
 
+/** Whether Sentry is running (release builds with a DSN). */
+export function sentryEnabled(): boolean {
+  return enabled;
+}
+
 export function record(stage: string, data?: Crumb["d"]) {
   blackbox.record(stage, data);
   if (enabled) Sentry.addBreadcrumb({ category: "app", message: stage, data: data ?? undefined, level: "info" });
