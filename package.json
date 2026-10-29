@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "icons": "node scripts/render-icons.mjs",
+    "qr": "node scripts/make-install-qr.mjs",
     "lint": "expo lint",
     "ios": "expo run:ios",
     "foods": "bench/.venv/bin/python -I bench/foods_from_xlsx.py \"$HOME/Repos/MacroTrack/data/samples/Macros App - Product Nutrition Database.xlsx\" src/data/foods.json"
@@ -42,7 +43,8 @@
     "eslint": "^9.39.5",
     "eslint-config-expo": "~10.0.0",
     "typescript": "~5.9.2",
-    "vitest": "^3.2.7"
+    "vitest": "^3.2.7",
+    "zxing-wasm": "3.1.6"
   },
   "private": true
 }

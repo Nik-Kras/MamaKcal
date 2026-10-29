@@ -62,12 +62,23 @@ recognition on the S21 itself (Samsung ships OpenCL); check `adb logcat | grep -
 
 ## Install on her phone
 
+<img src="docs/install-qr.png" width="200" alt="QR code: download MamaKcal.apk">
+
+Scan to download `MamaKcal.apk` from the [latest release](https://github.com/Nik-Kras/MamaKcal/releases/latest). The repo is private, so the phone's browser must be signed in to GitHub (or send her the file, see below). The photo model is not in the APK: copy it over USB once (see [The photo model](#the-photo-model)).
+
 Release builds are signed by `plugins/withReleaseSigning.js` with the keystore at `~/.android/mamakcal-release.jks`; its passwords are in `~/.gradle/gradle.properties` (`MAMAKCAL_*`). **Back up both.** Without them no update can ever be installed over her copy.
 
 ```bash
 pnpm release:android   # prebuild + arm64 release APK, source maps uploaded to Sentry
 # → android/app/build/outputs/apk/release/app-release.apk
 adb install -r android/app/build/outputs/apk/release/app-release.apk   # over USB
+```
+
+New version: bump `version` and `android.versionCode` in `app.json`, build, then attach the APK to a release under the fixed name `MamaKcal.apk`, so the QR keeps working (`pnpm qr` redraws it):
+
+```bash
+cp android/app/build/outputs/apk/release/app-release.apk /tmp/MamaKcal.apk
+GH_TOKEN=$(gh auth token --user Nik-Kras) gh release create v1.0.1 /tmp/MamaKcal.apk --repo Nik-Kras/MamaKcal --target main
 ```
 
 Or send her the APK file. On the S21: allow **Install unknown apps** for the app that opens the file, and switch off **Auto Blocker** (Settings → Security and privacy) for the install. Always sign with the same keystore, or an update will refuse to install over the old version and her data would be lost.
