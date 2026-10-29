@@ -4,7 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { Image, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
+import { LiteRtLm } from "../../modules/litert-lm";
 import { CameraIcon, CheckIcon, PencilIcon } from "../components/icons";
+import { ModelCard } from "../components/ModelCard";
+import { UpdateBanner } from "../components/UpdateBanner";
 import { NormSheet } from "../components/NormSheet";
 import { PrimaryButton, T, Tap } from "../components/ui";
 import { dayLabel, fmt, mealTitle, todayISO } from "../lib/format";
@@ -74,6 +77,14 @@ export default function Home() {
   const { meals, settings, toast, dismissToast, openMeal } = useStore();
   const now = useToday();
   const [normOpen, setNormOpen] = useState(false);
+  // The photo model isn't on the phone yet: offer the download (the card then shows its progress).
+  const [modelMissing] = useState(() => {
+    try {
+      return !!LiteRtLm && !LiteRtLm.modelInfo().exists;
+    } catch {
+      return false;
+    }
+  });
   const scroll = useRef<ScrollView>(null);
 
   const today = dayMeals(meals, todayISO(now));
@@ -101,6 +112,7 @@ export default function Home() {
       </View>
 
       <ScrollView ref={scroll} contentContainerStyle={{ padding: 16, paddingTop: 14, gap: 12 }}>
+        <UpdateBanner />
         <View
           accessible
           accessibilityLabel={`${left >= 0 ? "Залишилось" : "Понад норму"} ${fmt(Math.abs(left))} ккал. З’їдено ${fmt(eaten)} з ${fmt(settings.norm)}.`}
@@ -138,6 +150,8 @@ export default function Home() {
             </T>
           </Tap>
         </View>
+
+        {modelMissing && <ModelCard />}
 
         <T w="sb" size={21} accessibilityRole="header" style={{ marginTop: 8, marginHorizontal: 4 }}>
           Що з’їдено

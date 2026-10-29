@@ -11,16 +11,20 @@ import com.google.ai.edge.litertlm.SamplerConfig
 import expo.modules.kotlin.exception.CodedException
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
+import expo.modules.kotlin.records.Field
+import expo.modules.kotlin.records.Record
 import java.io.File
 import java.util.Collections
 import java.util.concurrent.Executors
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.cancel
 
 /**
  * The on-device photo model: Gemma 3n E2B through LiteRT-LM, as benchmarked in
- * bench/. The model file is copied onto the phone once (adb push, see README)
+ * bench/. The model file is downloaded once (ModelDownload, or adb push, see README)
  * into the app's own storage. One engine stays loaded while the app runs.
  *
  * Loading and describing run on this module's own thread, one at a time: they
@@ -30,6 +34,9 @@ import kotlinx.coroutines.cancel
 class LiteRtLmModule : Module() {
   private val executor = Executors.newSingleThreadExecutor { r -> Thread(r, "litert-lm") }
   private val modelScope = CoroutineScope(executor.asCoroutineDispatcher())
+  /** Downloading and joining the model file: disk and network, never the model thread. */
+  private val ioScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+  private var download: ModelDownload? = null
 
   // Lock order: runLock, then engineLock.
   private val runLock = Any()
@@ -40,10 +47,15 @@ class LiteRtLmModule : Module() {
   @Volatile private var current: Pair<Int, Conversation>? = null
   private val cancelled = Collections.synchronizedSet(HashSet<Int>())
 
-  private fun modelFile(): File {
+  private fun modelDir(): File {
     val context = appContext.reactContext ?: throw CodedException("NO_CONTEXT", "App is not ready", null)
-    val dir = context.getExternalFilesDir("models") ?: throw CodedException("NO_STORAGE", "No app storage", null)
-    return File(dir, MODEL_FILE)
+    return context.getExternalFilesDir("models") ?: throw CodedException("NO_STORAGE", "No app storage", null)
+  }
+
+  private fun modelFile(): File = File(modelDir(), MODEL_FILE)
+
+  private fun downloads(): ModelDownload = synchronized(this) {
+    download ?: ModelDownload(appContext.reactContext!!.applicationContext, modelDir(), MODEL_FILE).also { download = it }
   }
 
   /** Load the model once (several seconds). The image encoder only runs on the GPU. */
@@ -126,6 +138,20 @@ class LiteRtLmModule : Module() {
       if (running != null && running.first == requestId) runCatching { running.second.cancelProcess() }
     }
 
+    /** Start (or pick up) downloading the model. Returns the bytes of free space still needed, 0 when started. */
+    AsyncFunction("startModelDownload") { parts: List<ModelPart>, sha256: String ->
+      downloads().start(parts.map { ModelDownload.Part(it.url, it.bytes.toLong()) }, sha256)
+    }.runOnQueue(ioScope)
+
+    AsyncFunction("modelDownloadStatus") {
+      downloads().status()
+    }.runOnQueue(ioScope)
+
+    /** Join the downloaded parts into the model file and check its SHA-256 (takes a little while). */
+    AsyncFunction("finishModelDownload") {
+      downloads().assemble()
+    }.runOnQueue(ioScope)
+
     AsyncFunction("unload") {
       synchronized(runLock) {
         synchronized(engineLock) {
@@ -145,8 +171,14 @@ class LiteRtLmModule : Module() {
         }
       }
       modelScope.cancel()
+      ioScope.cancel()
       executor.shutdown()
     }
+  }
+
+  class ModelPart : Record {
+    @Field val url: String = ""
+    @Field val bytes: Double = 0.0
   }
 
   companion object {

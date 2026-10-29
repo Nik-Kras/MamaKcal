@@ -1,11 +1,11 @@
 # Калорії (MamaKcal)
 
-A calorie tracker in Ukrainian for one person: photograph the plate, a model **on the phone** lists what's on it with guessed amounts, re-weigh each item on a kitchen scale, fix what it got wrong (swap, remove, add a food), tap **Записати**. Built for a Samsung Galaxy S21. Nothing leaves the phone.
+A calorie tracker in Ukrainian for one person: photograph the plate, a model **on the phone** lists what's on it with guessed amounts, re-weigh each item on a kitchen scale, fix what it got wrong (swap, remove, add a food), tap **Записати**. Built for a Samsung Galaxy S21. Photos and meals never leave the phone.
 
 - Product scope: [docs/PRD.md](docs/PRD.md) · decisions: [docs/decisions.md](docs/decisions.md)
 - Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
-## Install on the phone (about 5 minutes)
+## Install on the phone
 
 <img src="docs/install-qr.png" width="200" alt="QR code: download MamaKcal.apk">
 
@@ -14,23 +14,17 @@ A calorie tracker in Ukrainian for one person: photograph the plate, a model **o
 downloaded file and tap **Install**. If Samsung blocks it: allow **Install unknown apps** for Chrome, or switch off
 **Auto Blocker** (Settings → Security and privacy). Then **open the app once**, so its folder exists.
 
-**2. The photo model (once, 3.7 GB, over a USB cable).** The model is too big for the APK.
-- On the phone: Settings → About phone → Software information → tap **Build number** 7 times; then
-  Settings → Developer options → **USB debugging** on.
-- Plug the phone into the computer and tap **Allow** on the phone.
-- On the computer (`adb` comes with the Android SDK platform-tools):
-
-```bash
-adb -d push gemma-3n-E2B-it-int4.litertlm /sdcard/Android/data/com.nikkras.mamakcal/files/models/
-```
-
-The file is `gemma-3n-E2B-it-int4.litertlm` from [google/gemma-3n-E2B-it-litert-lm](https://huggingface.co/google/gemma-3n-E2B-it-litert-lm)
-on Hugging Face (accept Google's licence there first). Here it is already at `bench/data/models/`.
+**2. The photo model (once, 3.7 GB, over Wi‑Fi).** On the home screen tap **Завантажити** in the card
+«Розпізнавання їжі на фото». Android downloads it in the background (a notification shows the progress; the app can be
+closed), then the app joins and checks the file and says «Готово». It comes from the
+[model release](https://github.com/Nik-Kras/MamaKcal/releases/tag/model-gemma-3n-e2b-int4) of this repo: Google's
+unmodified `gemma-3n-E2B-it-int4.litertlm`, split in two because GitHub limits files to 2 GiB. Gemma is provided under
+and subject to the Gemma Terms of Use found at [ai.google.dev/gemma/terms](https://ai.google.dev/gemma/terms).
 
 **3. Use it.** Open «Калорії», tap **Сфотографувати їжу**, photograph the plate from above. The first photo also loads
 the model, so it takes longer. Without the model the app still works with manual entry («Без фото»).
 
-Updates: install the new `MamaKcal.apk` the same way, over the old one. Her meals stay; the model doesn't need copying again.
+Updates: when a newer release exists, the home screen shows «Є нова версія Калорій · Оновити». Оновити opens the new `MamaKcal.apk` in the browser; open it and tap **Install**. Her meals and the model stay.
 
 ## Layout
 
@@ -71,7 +65,9 @@ LiteRT-LM, image encoder on the GPU. The model names the foods in English (`food
 maps the names onto the food list; her corrections are remembered (after the same correction twice). Why this
 model and this approach: `bench/README.md`.
 
-The model file is not in the APK. Copy it onto the phone once, over USB, into the app's own folder:
+The model file is not in the APK. The app downloads it itself (the **Завантажити** card on the home screen,
+`modules/litert-lm/…/ModelDownload.kt` + `src/components/ModelCard.tsx`; URLs and SHA-256 in `src/lib/modelFiles.ts`).
+For development it can also be copied over USB into the app's own folder:
 
 ```bash
 adb push bench/data/models/gemma-3n-E2B-it-int4.litertlm \
@@ -97,7 +93,7 @@ pnpm release:android   # prebuild + arm64 release APK, source maps uploaded to S
 adb install -r android/app/build/outputs/apk/release/app-release.apk   # over USB
 ```
 
-New version: bump `version` and `android.versionCode` in `app.json`, build, then attach the APK to a release under the fixed name `MamaKcal.apk`, so the QR keeps working (`pnpm qr` redraws it):
+New version: bump `version` and `android.versionCode` in `app.json`, build, then attach the APK to a release tagged `vX.Y.Z` under the fixed name `MamaKcal.apk`. The QR (`pnpm qr` redraws it) and the in-app «Є нова версія» banner both use the latest release. The model release (`model-gemma-3n-e2b-int4`) must never become "latest" (`--latest=false`).
 
 ```bash
 cp android/app/build/outputs/apk/release/app-release.apk /tmp/MamaKcal.apk
