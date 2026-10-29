@@ -64,7 +64,7 @@ recognition on the S21 itself (Samsung ships OpenCL); check `adb logcat | grep -
 
 <img src="docs/install-qr.png" width="200" alt="QR code: download MamaKcal.apk">
 
-Scan to download `MamaKcal.apk` from the [latest release](https://github.com/Nik-Kras/MamaKcal/releases/latest). The repo is private, so the phone's browser must be signed in to GitHub (or send her the file, see below). The photo model is not in the APK: copy it over USB once (see [The photo model](#the-photo-model)).
+Scan with the phone camera to download `MamaKcal.apk` from the [latest release](https://github.com/Nik-Kras/MamaKcal/releases/latest), then open it and tap Install. The photo model is not in the APK: copy it over USB once (see [The photo model](#the-photo-model)).
 
 Release builds are signed by `plugins/withReleaseSigning.js` with the keystore at `~/.android/mamakcal-release.jks`; its passwords are in `~/.gradle/gradle.properties` (`MAMAKCAL_*`). **Back up both.** Without them no update can ever be installed over her copy.
 
