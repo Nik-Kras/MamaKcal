@@ -23,7 +23,7 @@ function MealRow({ meal, onPress }: { meal: Meal; onPress: () => void }) {
   return (
     <Tap
       onPress={onPress}
-      accessibilityLabel={`Відкрити запис: ${title}, ${meal.time}, ${kcal} ккал`}
+      accessibilityLabel={`Відкрити запис: ${title}, ${meal.time}, ${meal.dishName}, ${kcal} ккал`}
       style={{
         flexDirection: "row",
         alignItems: "center",
@@ -135,19 +135,20 @@ export default function Home() {
           <Tap
             onPress={() => setNormOpen(true)}
             accessibilityLabel={`Денна норма ${fmt(settings.norm)} ккал. Змінити`}
-            style={{ minHeight: 44, justifyContent: "center", alignSelf: "flex-start", borderRadius: 8 }}
+            style={{ minHeight: 48, flexDirection: "row", alignItems: "center", gap: 8, alignSelf: "flex-start", borderRadius: 12, paddingRight: 8 }}
           >
-            <T size={17} color={C.muted}>
+            <T size={17} color={C.muted} style={{ flexShrink: 1 }}>
               З’їдено{" "}
               <T w="m" size={17}>
                 {fmt(eaten)}
               </T>{" "}
               з{" "}
-              <T size={17} color={C.muted} style={{ textDecorationLine: "underline" }}>
+              <T w="m" size={17} color={C.accent}>
                 {fmt(settings.norm)}
               </T>{" "}
               ккал
             </T>
+            <PencilIcon size={20} color={C.accent} />
           </Tap>
         </View>
 

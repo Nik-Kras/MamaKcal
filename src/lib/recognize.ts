@@ -18,7 +18,15 @@ export class RecognizeFailure extends Error {
 }
 
 /** Generous: the first photo also loads the model (several seconds on a phone). */
-const TIMEOUT_MS = 120_000;
+const TIMEOUT_MS = 90_000;
+
+/** Set once the model file failed to load this session: later photos fail at once instead of waiting for the timeout. */
+let loadFailed = false;
+
+function isLoadFailure(e: unknown): boolean {
+  const x = e as { code?: unknown; message?: unknown } | null;
+  return x?.code === "LOAD_FAILED" || (typeof x?.message === "string" && x.message.includes("LOAD_FAILED"));
+}
 
 function modelReady(): boolean {
   try {
@@ -38,9 +46,12 @@ const DEMO = "Fried potatoes | 200g\nFried eggs | 100g\nPork chop | 150g\nCucumb
 export function warmUp(): void {
   const native = LiteRtLm;
   if (!native || !modelReady()) return;
-  void risky("model.load", () => span("model.load", "ai.load", () => native.warmUp())).catch((e) =>
-    reportError(e, "model.load"),
-  );
+  // Each camera visit tries the load again: a failure may have been memory pressure, not the file.
+  loadFailed = false;
+  void risky("model.load", () => span("model.load", "ai.load", () => native.warmUp())).catch((e) => {
+    if (isLoadFailure(e)) loadFailed = true;
+    reportError(e, "model.load");
+  });
 }
 
 let keySeq = 0;
@@ -55,6 +66,8 @@ export async function recognizeMeal(photoUri: string, foods: Food[], matcher: Ma
   }
   const native = LiteRtLm;
   if (!native || !modelReady()) throw new RecognizeFailure("nomodel");
+
+  if (loadFailed) throw new RecognizeFailure("failed");
 
   const requestId = ++requestSeq;
   const started = Date.now();
@@ -86,6 +99,7 @@ export async function recognizeMeal(photoUri: string, foods: Food[], matcher: Ma
     return r;
   } catch (e) {
     if (e instanceof RecognizeFailure) throw e;
+    if (isLoadFailure(e)) loadFailed = true;
     if (signal.aborted) {
       record("model.describe.cancelled");
     } else {

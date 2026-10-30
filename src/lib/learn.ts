@@ -11,8 +11,9 @@ export interface Correction {
 /**
  * A correction takes effect after she makes it in two logged meals in a row: the
  * model calls real chicken "chicken" too, so one swap of "chicken" → pork must not
- * turn every chicken into pork. Naming an unrecognised food applies at once
- * (nothing else would match it anyway).
+ * turn every chicken into pork. The same goes for naming an unrecognised food
+ * (D21): her first pick from the list is often a guess and must not decide
+ * every later plate.
  */
 export const LEARN_AFTER = 2;
 
@@ -25,10 +26,8 @@ export function learnFromMeal(learned: Record<string, Correction>, items: Item[]
     if (!key) continue;
     const prev = next[key];
     const again = prev?.id === it.foodId ? prev.n + 1 : 1;
-    if (!it.aiFoodId) {
-      // The name matched nothing and she said what it is.
-      next[key] = { id: it.foodId, n: Math.max(again, LEARN_AFTER) };
-    } else if (it.foodId !== it.aiFoodId) {
+    if (!it.aiFoodId || it.foodId !== it.aiFoodId) {
+      // She changed the model's match, or named a food that matched nothing.
       next[key] = { id: it.foodId, n: again };
     } else if (prev && prev.id !== it.foodId) {
       // She kept the model's match: a different correction is no longer "in a row".

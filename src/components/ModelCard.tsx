@@ -10,6 +10,9 @@ import { PrimaryButton, T } from "./ui";
 
 const POLL_MS = 1500;
 
+/** "3,7 ГБ" with a non-breaking space, so the unit never wraps onto its own line. */
+const gbu = (bytes: number) => `${gb(bytes)}\u00A0ГБ`;
+
 /**
  * Home-screen card while the photo model isn't on the phone: one button downloads it
  * (Android's DownloadManager, Wi-Fi only, carries on with the app closed), then the app
@@ -128,7 +131,7 @@ export function ModelCard() {
           ) : (
             <>
               <T w="m" size={18}>
-                {state === "waiting" ? "Чекаю на Wi‑Fi" : "Завантажується"}: {gb(status.done)} з {gb(total)} ГБ
+                {state === "waiting" ? "Чекаю на Wi‑Fi" : "Завантажується"}: {gb(status.done)} з {gbu(total)}
               </T>
               <T size={16} color={C.muted}>
                 {state === "waiting"
@@ -142,12 +145,12 @@ export function ModelCard() {
         <>
           <T size={17} color={state === "failed" || needBytes > 0 ? C.ink : C.muted}>
             {needBytes > 0
-              ? `Замало місця на телефоні. Звільніть ще ${gb(needBytes)} ГБ (наприклад, видаліть старі відео) і натисніть ще раз.`
+              ? `Замало місця на телефоні. Звільніть ще ${gbu(needBytes)} (наприклад, видаліть старі відео) і натисніть ще раз.`
               : state === "failed"
                 ? status.reason === "corrupt"
                   ? "Файл пошкодився під час завантаження. Спробуйте ще раз."
                   : "Не вдалося завантажити. Перевірте Wi‑Fi і спробуйте ще раз."
-                : `Завантажте його один раз: ${gb(MODEL_BYTES)} ГБ, тільки через Wi‑Fi. Поки його немає, продукти можна вписати вручну.`}
+                : `Завантажте його один раз: ${gbu(MODEL_BYTES)}, тільки через Wi‑Fi. Поки його немає, продукти можна вписати вручну.`}
           </T>
           <PrimaryButton
             label={state === "failed" || needBytes > 0 ? "Спробувати ще раз" : "Завантажити"}

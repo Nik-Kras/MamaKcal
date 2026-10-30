@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { FOODS } from "../data/foods";
 import { dayLabel, fmt, mealTitle, plural, todayISO } from "./format";
-import { cleanAmount, convertAmount, itemKcal, mealKcal, stepPieces } from "./nutrition";
+import { cleanAmount, convertAmount, itemKcal, mealKcal, parseAmount, stepPieces } from "./nutrition";
 import { searchFoods } from "./search";
 
 describe("format", () => {
@@ -50,6 +50,32 @@ describe("nutrition", () => {
     expect(cleanAmount("1 000")).toBe("1000");
     expect(cleanAmount("123456")).toBe("1234");
     expect(cleanAmount("")).toBe("");
+  });
+  it("keeps one decimal separator and one decimal digit", () => {
+    expect(cleanAmount("1,5")).toBe("1,5");
+    expect(cleanAmount("1.5")).toBe("1,5");
+    expect(cleanAmount("0,5")).toBe("0,5");
+    expect(cleanAmount(",5")).toBe("0,5");
+    expect(cleanAmount("12,34")).toBe("12,3");
+    expect(cleanAmount("150")).toBe("150");
+    expect(cleanAmount("0150")).toBe("150");
+    expect(cleanAmount("-5")).toBe("5");
+    expect(cleanAmount("1,2,3")).toBe("1,2");
+    expect(cleanAmount("12345,6")).toBe("1234,6");
+  });
+  it("reads decimals and counts them", () => {
+    expect(parseAmount("1,5")).toBe(1.5);
+    expect(parseAmount("0,5")).toBe(0.5);
+    expect(parseAmount("150")).toBe(150);
+    expect(parseAmount("")).toBe(0);
+    expect(itemKcal({ unit: "g", amount: "12,5", kcal100: 100 })).toBe(13);
+    expect(itemKcal({ unit: "pcs", amount: "1,5", kcal100: 196, pcGrams: 46 })).toBe(135);
+  });
+  it("steps from a fractional count to the next whole number", () => {
+    expect(stepPieces("1,5", 1)).toBe("2");
+    expect(stepPieces("1,5", -1)).toBe("1");
+    expect(stepPieces("0,5", -1)).toBe("1");
+    expect(stepPieces("", 1)).toBe("1");
   });
   it("steps pieces within 1…30", () => {
     expect(stepPieces("1", -1)).toBe("1");

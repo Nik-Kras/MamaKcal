@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { FlatList, TextInput, View } from "react-native";
+import { FlatList, Keyboard, TextInput, View } from "react-native";
 
 import { fmt } from "../lib/format";
 import { cleanAmount, parseAmount } from "../lib/nutrition";
@@ -9,7 +9,11 @@ import { C, F } from "../theme";
 import type { Food, Item } from "../types";
 import { CheckIcon, PlusIcon, SearchIcon } from "./icons";
 import { Sheet, useFocusWhenShown } from "./Sheet";
-import { PrimaryButton, T, Tap } from "./ui";
+import { OUTLINE, PrimaryButton, T, Tap } from "./ui";
+
+/** kcal per 100 g she can give a new product (pure fat is ~900). */
+const KCAL_MIN = 1;
+const KCAL_MAX = 900;
 
 type Row = { kind: "header"; key: string; title: string } | { kind: "food"; key: string; food: Food; current: boolean };
 
@@ -20,8 +24,9 @@ function sub(f: Food): string {
 /**
  * Pick a food: to fix a line ("Що це за продукт?") or to add one the photo model
  * missed. With nothing typed, a fix starts with the foods closest to what the
- * model saw, then her recent foods; adding starts with her recent foods. A name
- * that isn't in the list can be added with its kcal per 100 g.
+ * model saw ("Схожі"), then her recent foods; adding starts with her recent
+ * foods. The model's English name is never shown. A name that isn't in the list
+ * can be added with its kcal per 100 g.
  */
 export function PickSheet({
   visible,
@@ -82,18 +87,14 @@ export function PickSheet({
 
   const typed = query.trim();
   const exact = !!typed && foods.some((f) => norm(f.name) === norm(typed));
-  const kcalOk = newKcal !== null && parseAmount(newKcal) > 0 && parseAmount(newKcal) <= 900;
+  const kcal = newKcal ? parseAmount(newKcal) : 0;
+  const kcalOk = kcal >= KCAL_MIN && kcal <= KCAL_MAX;
   const title = !replacing ? "Додати продукт" : replacing.unknown ? "Що це за продукт?" : "Замінити продукт";
 
   return (
     <Sheet visible={visible} onClose={onClose} title={title} tall>
       {newKcal === null ? (
         <>
-          {replacing?.aiName && (
-            <T size={15} color={C.muted} style={{ marginHorizontal: 4, marginTop: -4, marginBottom: 10 }}>
-              На фото, схоже: «{replacing.aiName}»
-            </T>
-          )}
           <View
             style={{
               flexDirection: "row",
@@ -102,7 +103,7 @@ export function PickSheet({
               minHeight: 56,
               paddingHorizontal: 14,
               borderWidth: 2,
-              borderColor: "#CFCBC2",
+              borderColor: OUTLINE,
               borderRadius: 16,
               backgroundColor: C.bg,
             }}
@@ -112,11 +113,11 @@ export function PickSheet({
               value={query}
               onChangeText={setQuery}
               placeholder="Пошук, наприклад: гречка"
-              placeholderTextColor="#7A7E85"
+              placeholderTextColor="#62666D"
               accessibilityLabel="Пошук продукту"
               autoCorrect={false}
               returnKeyType="search"
-              style={{ flex: 1, fontFamily: F.r, fontSize: 18, color: C.ink, paddingVertical: 8 }}
+              style={{ flex: 1, minHeight: 52, fontFamily: F.r, fontSize: 18, color: C.ink, paddingVertical: 8 }}
             />
           </View>
           <FlatList
@@ -197,10 +198,14 @@ export function PickSheet({
           <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
             <TextInput
               value={newKcal}
-              onChangeText={(t) => setNewKcal(cleanAmount(t).slice(0, 3))}
+              onChangeText={(t) => setNewKcal(cleanAmount(t))}
               ref={kcalInput}
-              keyboardType="number-pad"
+              inputMode="decimal"
+              returnKeyType="done"
+              onSubmitEditing={() => Keyboard.dismiss()}
+              maxLength={6}
               accessibilityLabel="Калорій у 100 грамах"
+              accessibilityHint={`Від ${KCAL_MIN} до ${KCAL_MAX}`}
               style={{
                 minWidth: 120,
                 minHeight: 60,
@@ -216,7 +221,12 @@ export function PickSheet({
             />
             <T size={20}>ккал у 100 г</T>
           </View>
-          <PrimaryButton label="Додати" disabled={!kcalOk} onPress={() => onPick(addCustomFood(typed, parseAmount(newKcal ?? "")))} />
+          <T size={16} color={newKcal && !kcalOk ? C.ink : C.muted}>
+            {newKcal && !kcalOk
+              ? `Впишіть число від ${KCAL_MIN} до ${KCAL_MAX}.`
+              : `Від ${KCAL_MIN} до ${KCAL_MAX} ккал у 100 г.`}
+          </T>
+          <PrimaryButton label="Додати" disabled={!kcalOk} onPress={() => onPick(addCustomFood(typed, kcal))} />
           <Tap onPress={() => setNewKcal(null)} style={{ minHeight: 48, alignItems: "center", justifyContent: "center", borderRadius: 12 }}>
             <T w="m" size={17} color={C.accent}>
               Назад до пошуку

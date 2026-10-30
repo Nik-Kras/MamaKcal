@@ -22,7 +22,7 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 1. **Головна (Today)**: kcal left (or "Понад норму"), one progress bar, "З’їдено X з N ккал" (tap N to change the daily target), today's meals (photo, meal name by time, dish, kcal), the big **Сфотографувати їжу** button, and the toast.
 2. **Фото**: live camera, shutter, **Галерея**, **Без фото** (type it in).
 3. **Розпізнавання**: the photo, "Дивлюся, що на тарілці…", Скасувати. Errors (no internet, no food seen, failed) offer **Спробувати ще раз** and **Вписати вручну**.
-4. **Перевірка ваги**: photo, dish name, one card per product. AI guesses are yellow "≈ на око"; typing a weight or tapping −/+ turns the card "зважено". Tap a name to swap the product, × to remove (undo for a few seconds), **Додати продукт**, and **Записати · N ккал**. Unrecognised lines block logging until she picks a food or removes them. Lines left at 0 are not saved.
+4. **Перевірка ваги**: photo, dish name, one card per product. AI guesses are yellow "≈ на око"; typing a weight or tapping −/+ turns the card "зважено". Tap a name to swap the product, × to remove (undo for a few seconds), **Додати продукт**, and **Записати · N ккал**. Unrecognised lines are listed first and block logging until she picks a food or removes them (the button then reads «Оберіть продукт» and opens the picker); so do lines with no weight («Впишіть вагу»). Weights may have one decimal («1,5»).
 5. **Заміна / додавання продукту** (sheet): search, the AI's look-alikes and same-kind foods first; a name not in the list can be added with its kcal per 100 g.
 6. Opening a logged meal shows the same check screen with **Зберегти** and **Видалити запис**.
 

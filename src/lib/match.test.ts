@@ -33,6 +33,24 @@ describe("matcher", () => {
     expect(matcher.similar("Pork chop")).toContain("pork-sausage");
     expect(matcher.similar("zzz")).toEqual([]);
   });
+
+  it("does not send a plain food word to a dish that only lists it as an alias", () => {
+    expect(matcher.match("Fried potatoes")).toBe("potato-boiled");
+    expect(matcher.match("Potatoes")).toBe("potato-boiled");
+  });
+
+  it("suggests pork foods before unrelated dishes for pork", () => {
+    const s = matcher.similar("Pork chop");
+    expect(s[0]).toBe("pork-chop-cooked");
+    expect(s.slice(0, 3).every((id) => id.includes("pork"))).toBe(true);
+  });
+
+  it("falls back to foods sharing any word for an unknown name", () => {
+    const s = matcher.similar("Mixed vegetables");
+    expect(s).toContain("mixed-greens");
+    expect(s.length).toBeGreaterThanOrEqual(3);
+    expect(matcher.similar("Fried potatoes")[0]).toBe("potato-boiled");
+  });
 });
 
 describe("parseLines", () => {
@@ -133,8 +151,13 @@ describe("learning from her corrections", () => {
     expect(activeCorrections(learned)).toEqual({});
   });
 
-  it("applies a name for an unrecognised food at once, and keeps an applied correction she accepts", () => {
-    let learned = learnFromMeal({}, [line("Mixed vegetables", undefined, "mixed-greens")]);
+  it("treats naming an unrecognised food like any other correction, and keeps an applied one she accepts", () => {
+    let learned = learnFromMeal({}, [line("Mixed vegetables", undefined, "borscht")]);
+    expect(activeCorrections(learned)).toEqual({});
+    // A different pick the next time starts over.
+    learned = learnFromMeal(learned, [line("Mixed vegetables", undefined, "mixed-greens")]);
+    expect(activeCorrections(learned)).toEqual({});
+    learned = learnFromMeal(learned, [line("Mixed vegetables", undefined, "mixed-greens")]);
     expect(activeCorrections(learned)).toEqual({ "mixed vegetable": "mixed-greens" });
     // Next time the matcher already gives mixed-greens; she keeps it.
     learned = learnFromMeal(learned, [line("Mixed vegetables", "mixed-greens", "mixed-greens")]);

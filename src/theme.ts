@@ -10,6 +10,8 @@ export const C = {
   track: "#E6E4DE",
   soft: "#F0EEE9",
   dashed: "#C9C6BE",
+  // Borders of inputs and outlined controls: 3.7:1 on white, 3.3:1 on bg (WCAG 1.4.11). Hairlines/dividers keep `line`.
+  border: "#8A857B",
   accent: "#1650B8",
   // "на око" — the AI's guess, not yet weighed
   estBg: "#FFF3BF",

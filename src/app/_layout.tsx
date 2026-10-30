@@ -1,5 +1,5 @@
 import { Rubik_400Regular, Rubik_500Medium, Rubik_600SemiBold, useFonts } from "@expo-google-fonts/rubik";
-import { Stack, type ErrorBoundaryProps } from "expo-router";
+import { router, Stack, useRootNavigationState, type ErrorBoundaryProps } from "expo-router";
 import React, { useEffect } from "react";
 import { ActivityIndicator, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -29,7 +29,14 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
 }
 
 function Gate({ children }: { children: React.ReactNode }) {
-  const { hydrated, loadFailed, retryLoad } = useStore();
+  const { hydrated, loadFailed, retryLoad, resumedDraft, ackResumedDraft } = useStore();
+  const navReady = !!useRootNavigationState()?.key;
+  // A draft survived the app being killed: reopen the check screen, once.
+  useEffect(() => {
+    if (!hydrated || !resumedDraft || !navReady) return;
+    ackResumedDraft();
+    router.push("/review");
+  }, [hydrated, resumedDraft, navReady, ackResumedDraft]);
   if (hydrated) return <>{children}</>;
   if (loadFailed) {
     // Her saved meals exist but couldn't be read. Never continue with an empty day

@@ -4,7 +4,8 @@ Exact name/alias matches win; otherwise the food sharing the most words wins,
 with cooking/shape words worth less than the food itself. A plain generic word
 ("rice", "fish") falls back to the everyday default in GENERIC. Returns None
 when nothing shares a food word — the app then asks her to pick — and IGNORE
-for seasonings and herbs. v2: berries, arugula, seasonings, cooked over raw.
+for seasonings and herbs. v2: berries, arugula, seasonings, cooked over raw. v3: a single food word
+never lands on a dish with extra food words when it has a generic default.
 """
 import json
 import re
@@ -52,15 +53,15 @@ class Matcher:
     def __init__(self, foods: list[dict]):
         self.ids = {f["id"] for f in foods}
         self.exact: dict[str, str] = {}
-        self.cands: list[tuple[str, set[str], set[str]]] = []  # id, food words, minor words
+        self.cands: list[tuple[str, set[str], set[str], bool]] = []  # id, food words, minor words, name (not alias)
         for f in foods:
-            for label in [f["name"], f["id"].replace("-", " "), *f.get("aliases", [])]:
+            for li, label in enumerate([f["name"], f["id"].replace("-", " "), *f.get("aliases", [])]):
                 key = " ".join(words(label))
                 # Food on a plate is cooked: when raw and cooked share a name, cooked wins.
                 if key not in self.exact or (self.exact[key].endswith("-raw") and "cooked" in f["id"]):
                     self.exact[key] = f["id"]
                 ws = set(words(label))
-                self.cands.append((f["id"], ws - {stem(m) for m in MINOR}, ws & {stem(m) for m in MINOR}))
+                self.cands.append((f["id"], ws - {stem(m) for m in MINOR}, ws & {stem(m) for m in MINOR}, li < 2))
         self.minor = {stem(m) for m in MINOR}
         self.generic = {stem(k): v for k, v in GENERIC.items()}
         self.ignore = {stem(w) for w in SEASONING}
@@ -86,8 +87,8 @@ class Matcher:
         content = [w for w in ws if w not in {"of", "and", "with", "in", "a", "the"}]
         if len(content) == 1 and content[0] in self.generic:
             return self.generic[content[0]]
-        best, best_score = None, 0.0
-        for fid, fcore, fminor in self.cands:
+        best, best_score, best_core, best_primary = None, 0.0, set(), False
+        for fid, fcore, fminor, primary in self.cands:
             shared = len(core & fcore)
             if not shared:
                 continue
@@ -95,7 +96,14 @@ class Matcher:
             # raw versions lose ties against cooked ones.
             score = shared / len(core | fcore) + 0.1 * len(set(ws) & fminor) - (0.05 if fid.endswith("-raw") else 0)
             if score > best_score:
-                best, best_score = fid, score
+                best, best_score, best_core, best_primary = fid, score, fcore, primary
+        # One food word with a generic default ("fried potatoes") must not land on a
+        # dish that has more food words than the name, or only lists it as an alias
+        # ("potato with beans", whose alias is "baked potato").
+        if len(core) == 1 and (best_core != core or not best_primary):
+            w = next(iter(core))
+            if w in self.generic:
+                return self.generic[w]
         if best and best_score >= 0.5:
             return best
         # In word order (a set's order changes between runs).

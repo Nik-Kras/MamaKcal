@@ -1,7 +1,7 @@
 import * as SQLite from "expo-sqlite";
 
 import type { Correction } from "../lib/learn";
-import type { Food, Meal, Settings } from "../types";
+import type { Draft, Food, Meal, Settings } from "../types";
 
 /** What is saved on the phone. Screen state is not. */
 export interface PersistShape {
@@ -19,6 +19,7 @@ const DB_NAME = "mamakcal.db";
 const K_STATE = "state";
 const K_BACKUP = "state_backup";
 const K_CORRUPT = "state_corrupt";
+const K_DRAFT = "draft";
 
 let dbPromise: Promise<SQLite.SQLiteDatabase> | null = null;
 
@@ -105,4 +106,43 @@ export async function saveState(data: PersistShape): Promise<void> {
     }
     await db.runAsync("INSERT OR REPLACE INTO kv (key, value) VALUES (?, ?);", [K_STATE, value]);
   });
+}
+
+/** Is this draft worth keeping through a kill? One with no lines and no photo is not. */
+export function draftWorthSaving(d: Draft | null): d is Draft {
+  if (!d) return false;
+  // An opened logged meal she has not touched is still safe in the meal itself.
+  if (d.mealId && !d.dirty) return false;
+  return d.items.length > 0 || !!d.photo;
+}
+
+/** Save the review draft in its own row (or remove it), so a kill mid-check doesn't lose it. Throws on failure. */
+export async function saveDraft(d: Draft | null): Promise<void> {
+  const db = await getDb();
+  if (draftWorthSaving(d)) {
+    await db.runAsync("INSERT OR REPLACE INTO kv (key, value) VALUES (?, ?);", [K_DRAFT, JSON.stringify(d)]);
+  } else {
+    await db.runAsync("DELETE FROM kv WHERE key = ?;", [K_DRAFT]);
+  }
+}
+
+/** The draft left behind by a kill, or null (also when it can't be read: it is only a draft). */
+export async function loadDraft(): Promise<Draft | null> {
+  try {
+    const db = await getDb();
+    const raw = await readRow(db, K_DRAFT);
+    if (!raw) return null;
+    const d = JSON.parse(raw) as Partial<Draft>;
+    if (!d || typeof d !== "object" || typeof d.id !== "string" || !Array.isArray(d.items)) return null;
+    return {
+      id: d.id,
+      mealId: typeof d.mealId === "string" ? d.mealId : undefined,
+      photo: typeof d.photo === "string" ? d.photo : undefined,
+      dishName: typeof d.dishName === "string" ? d.dishName : "",
+      items: d.items,
+      dirty: !!d.dirty,
+    };
+  } catch {
+    return null;
+  }
 }

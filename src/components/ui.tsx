@@ -5,6 +5,9 @@ import { C, F } from "../theme";
 
 type W = keyof typeof F;
 
+/** Outline of a field or an outlined button (C.dashed is 1.5:1, too faint to see the edge). */
+export const OUTLINE = C.border;
+
 /** Text in Rubik. `w` picks the weight (one font family per weight on Android). */
 export function T({
   w = "r",

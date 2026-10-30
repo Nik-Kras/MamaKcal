@@ -13,9 +13,24 @@ import { warmUp } from "../lib/recognize";
 import { useStore } from "../store/store";
 import { C } from "../theme";
 
-function SideButton({ label, icon, onPress }: { label: string; icon: React.ReactNode; onPress: () => void }) {
+function SideButton({
+  label,
+  icon,
+  onPress,
+  disabled,
+}: {
+  label: string;
+  icon: React.ReactNode;
+  onPress: () => void;
+  disabled?: boolean;
+}) {
   return (
-    <Tap onPress={onPress} ripple="rgba(255,255,255,0.15)" style={{ width: 84, alignItems: "center", gap: 6, paddingVertical: 4, borderRadius: 16 }}>
+    <Tap
+      onPress={onPress}
+      disabled={disabled}
+      ripple="rgba(255,255,255,0.15)"
+      style={{ width: 84, alignItems: "center", gap: 6, paddingVertical: 4, borderRadius: 16, opacity: disabled ? 0.4 : 1 }}
+    >
       <View style={{ width: 56, height: 56, borderRadius: 28, backgroundColor: "rgba(255,255,255,0.16)", alignItems: "center", justifyContent: "center" }}>
         {icon}
       </View>
@@ -61,8 +76,22 @@ export default function Camera() {
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
 
-  // Load the photo model while she frames the shot (several seconds the first time).
-  useEffect(() => warmUp(), []);
+  // False once this screen is gone: a late photo result must not navigate from a closed camera.
+  const alive = useRef(true);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+    };
+  }, []);
+
+  // Load the photo model while she frames the shot (several seconds the first time),
+  // but only after the camera is up, so the camera gets the memory/GPU first.
+  useEffect(() => {
+    if (!ready) return;
+    const t = setTimeout(() => warmUp(), 400);
+    return () => clearTimeout(t);
+  }, [ready]);
 
   // First time: go straight to Android's own question instead of our explanation screen.
   useEffect(() => {
@@ -75,45 +104,66 @@ export default function Camera() {
     return () => sub.remove();
   }, [getPermission]);
 
+  // Not through navOnce: its global 700 ms lock could swallow this and leave the shutter dead.
+  // `busy` (a ref plus state) already stops double taps.
+  const locked = useRef(false);
+  const lock = () => {
+    locked.current = true;
+    setBusy(true);
+  };
+  const unlock = () => {
+    locked.current = false;
+    if (alive.current) setBusy(false);
+  };
+
   const analyze = (uri: string, width: number, height: number) => {
-    navOnce(() => {
-      startAnalysis(uri, width, height);
-      router.replace("/analyzing");
-    });
+    if (!alive.current) return;
+    startAnalysis(uri, width, height);
+    router.replace("/analyzing");
   };
 
   const shoot = async () => {
-    if (!camera.current || !ready || busy) return;
-    setBusy(true);
+    if (!camera.current || !ready || locked.current) return;
+    lock();
     try {
       const pic = await camera.current.takePictureAsync({ quality: 0.8 });
-      if (pic) analyze(pic.uri, pic.width, pic.height);
-      else setBusy(false);
+      if (pic && alive.current) analyze(pic.uri, pic.width, pic.height);
+      else unlock();
     } catch {
-      setBusy(false);
+      unlock();
     }
   };
 
   const fromGallery = async () => {
-    if (busy) return;
-    const res = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], quality: 1 });
-    const a = res.canceled ? undefined : res.assets?.[0];
-    if (a) analyze(a.uri, a.width, a.height);
+    if (locked.current) return;
+    lock();
+    try {
+      const res = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], quality: 1 });
+      const a = res.canceled ? undefined : res.assets?.[0];
+      if (a && alive.current) {
+        analyze(a.uri, a.width, a.height);
+        return;
+      }
+    } catch {
+      // picker failed: fall through and re-enable the buttons
+    }
+    unlock();
   };
 
   const noPhoto = () => {
-    navOnce(() => {
-      startManual();
-      router.replace({ pathname: "/review", params: { add: "1" } });
-    });
+    if (locked.current) return;
+    lock();
+    startManual();
+    router.replace({ pathname: "/review", params: { add: "1" } });
   };
 
   const close = (
     <Tap
       onPress={() => navOnce(() => router.back())}
+      disabled={busy}
       accessibilityLabel="Закрити"
       ripple="rgba(255,255,255,0.15)"
-      style={{ width: 52, height: 52, alignItems: "center", justifyContent: "center", borderRadius: 26 }}
+      style={{ width: 52, height: 52, alignItems: "center", justifyContent: "center", borderRadius: 26, opacity: busy ? 0.4 : 1 }}
     >
       <CloseIcon size={28} color="#FFFFFF" />
     </Tap>
@@ -141,8 +191,8 @@ export default function Camera() {
         <CameraView ref={camera} style={{ flex: 1 }} facing="back" onCameraReady={() => setReady(true)} />
         <View pointerEvents="none" style={{ position: "absolute", top: 14, left: 0, right: 0, alignItems: "center" }}>
           <View style={{ paddingVertical: 8, paddingHorizontal: 16, borderRadius: 20, backgroundColor: "rgba(15,16,18,0.72)" }}>
-            <T size={17} color="#FFFFFF">
-              Сфотографуйте тарілку зверху
+            <T size={17} color="#FFFFFF" accessibilityLiveRegion="polite">
+              {busy ? "Роблю фото…" : !ready ? "Камера готується…" : "Сфотографуйте тарілку зверху"}
             </T>
           </View>
         </View>
@@ -173,7 +223,7 @@ export default function Camera() {
           paddingBottom: insets.bottom + 24,
         }}
       >
-        <SideButton label="Галерея" icon={<GalleryIcon size={26} color="#FFFFFF" />} onPress={fromGallery} />
+        <SideButton label="Галерея" icon={<GalleryIcon size={26} color="#FFFFFF" />} onPress={fromGallery} disabled={busy} />
         <Tap
           testID="shutter"
           onPress={shoot}
@@ -188,13 +238,13 @@ export default function Camera() {
             borderColor: "#FFFFFF",
             alignItems: "center",
             justifyContent: "center",
-            opacity: permission?.granted && ready ? 1 : 0.4,
+            opacity: permission?.granted && ready ? 1 : 0.5,
           }}
         >
           {busy ? <ActivityIndicator color={C.ink} /> : null}
           <View style={{ position: "absolute", width: 66, height: 66, borderRadius: 33, backgroundColor: "#FFFFFF", opacity: busy ? 0.6 : 1 }} />
         </Tap>
-        <SideButton label="Без фото" icon={<PencilIcon size={26} color="#FFFFFF" />} onPress={noPhoto} />
+        <SideButton label="Без фото" icon={<PencilIcon size={26} color="#FFFFFF" />} onPress={noPhoto} disabled={busy} />
       </View>
     </View>
   );

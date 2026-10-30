@@ -11,7 +11,8 @@ import { cleanAmount, listNames, mealKcal, parseAmount } from "../lib/nutrition"
 import { preparePhoto, removeUnusedPhotos, type PreparedPhoto } from "../lib/photo";
 import { recognizeMeal, RecognizeFailure, type RecognizeError } from "../lib/recognize";
 import type { Draft, Food, Meal, Settings } from "../types";
-import { DEFAULT_SETTINGS, loadState, saveState, type PersistShape } from "./persistence";
+import { LiteRtLm } from "../../modules/litert-lm";
+import { DEFAULT_SETTINGS, loadDraft, loadState, saveDraft, saveState, type PersistShape } from "./persistence";
 
 interface Data {
   meals: Meal[];
@@ -42,6 +43,9 @@ interface Store {
   /** Saved data exists but couldn't be read. Nothing is saved until a retry succeeds. */
   loadFailed: boolean;
   retryLoad: () => void;
+  /** A draft left by a kill was restored at start-up; the layout reopens the review, then calls ackResumedDraft. */
+  resumedDraft: boolean;
+  ackResumedDraft: () => void;
   meals: Meal[];
   settings: Settings;
   /** Built-in foods plus the ones she added. */
@@ -83,6 +87,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const [draft, setDraft] = useState<Draft | null>(null);
   const [analysis, setAnalysis] = useState<Analysis | null>(null);
   const [toast, setToast] = useState<Toast | null>(null);
+  const [resumedDraft, setResumedDraft] = useState(false);
+  const ackResumedDraft = useCallback(() => setResumedDraft(false), []);
 
   const dataRef = useRef(data);
   dataRef.current = data;
@@ -121,8 +127,18 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     if (res.kind === "ok") {
       setData({ meals, customFoods: res.data.customFoods, settings: res.data.settings, learned: res.data.learned });
     }
-    await removeUnusedPhotos(meals.map((m) => m.photo).filter((p): p is string => !!p));
+    // A draft left by a kill (its meal, if it edited one, must still exist).
+    const saved = await loadDraft();
+    const restored = saved && (!saved.mealId || meals.some((m) => m.id === saved.mealId)) ? saved : null;
+    if (restored) {
+      setDraft(restored);
+      setResumedDraft(true);
+    }
     setHydrated(true);
+    // After the first screen is up: tidying files must not hold it back.
+    const used = meals.map((m) => m.photo).filter((p): p is string => !!p);
+    if (restored?.photo) used.push(restored.photo);
+    void removeUnusedPhotos(used);
   }, []);
   useEffect(() => {
     void load();
@@ -146,6 +162,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           reportError(e2 || e, "store.save");
         }
       }
+      // Right after the meals: a logged meal and its cleared draft are written together, so
+      // a kill can't leave the logged meal behind as a draft to log twice.
+      await saveDraft(draftRef.current).catch((e) => reportError(e, "store.saveDraft"));
     });
     return saveChain.current;
   }, []);
@@ -159,12 +178,40 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     };
   }, [hydrated, data, flush]);
 
+  // The review draft has its own row, saved the same way (and removed when it is cleared or logged).
+  const flushDraft = useCallback(() => {
+    saveChain.current = saveChain.current.then(async () => {
+      try {
+        await saveDraft(draftRef.current);
+      } catch (e) {
+        reportError(e, "store.saveDraft");
+      }
+    });
+    return saveChain.current;
+  }, []);
+  useEffect(() => {
+    if (!hydrated) return;
+    const t = setTimeout(() => void flushDraft(), 300);
+    return () => clearTimeout(t);
+  }, [hydrated, draft, flushDraft]);
+
+  // Recognition running right now; the model is freed when it ends if the app is in the background by then.
+  const analyzing = useRef(0);
+  const unloadModel = useCallback(() => {
+    if (!LiteRtLm || analyzing.current > 0) return;
+    // 3.7 GB resident makes the app the first thing Android kills; it reloads on the next photo.
+    LiteRtLm.unload().catch((e) => reportError(e, "model.unload"));
+  }, []);
+
   useEffect(() => {
     const sub = AppState.addEventListener("change", (s) => {
-      if (s !== "active" && hydrated) void flush();
+      if (s === "active" || !hydrated) return;
+      void flush();
+      void flushDraft();
+      if (s === "background") void saveChain.current.then(unloadModel);
     });
     return () => sub.remove();
-  }, [hydrated, flush]);
+  }, [hydrated, flush, flushDraft, unloadModel]);
 
   // ---- toast: one at a time, gone after 10 s (long enough to notice and reach Скасувати)
   const toastSeq = useRef(0);
@@ -185,6 +232,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const recognize = useCallback(async (id: number, abort: AbortController) => {
     const photo = prepared.current;
     if (!photo) return;
+    analyzing.current++;
     try {
       const r = await recognizeMeal(photo.uri, foodsRef.current, matcherRef.current, abort.signal);
       if (run.current?.id !== id) return; // cancelled or superseded
@@ -192,14 +240,18 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         setAnalysis((a) => (a?.id === id ? { ...a, status: "nofood" } : a));
         return;
       }
-      setDraft({ id: newId("d"), photo: photo.uri, dishName: "", items: r.items, dirty: false });
+      // Dirty from the start: Back must not silently throw the recognition away.
+      setDraft({ id: newId("d"), photo: photo.uri, dishName: "", items: r.items, dirty: true });
       setAnalysis((a) => (a?.id === id ? { ...a, status: "done" } : a));
     } catch (e) {
       if (run.current?.id !== id) return;
       const kind: RecognizeError = e instanceof RecognizeFailure ? e.kind : "failed";
       setAnalysis((a) => (a?.id === id ? { ...a, status: kind } : a));
+    } finally {
+      analyzing.current--;
+      if (AppState.currentState === "background") unloadModel();
     }
-  }, []);
+  }, [unloadModel]);
 
   const startAnalysis = useCallback(
     (src: string, width: number, height: number) => {
@@ -268,7 +320,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       mealId: m.id,
       photo: m.photo,
       dishName: m.dishName,
-      items: m.items.map((it) => ({ ...it, weighed: true })),
+      items: m.items.map((it) => ({ ...it })),
       dirty: false,
     });
     return true;
@@ -365,6 +417,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     hydrated,
     loadFailed,
     retryLoad: () => void load(),
+    resumedDraft,
+    ackResumedDraft,
     meals: data.meals,
     settings: data.settings,
     foods,

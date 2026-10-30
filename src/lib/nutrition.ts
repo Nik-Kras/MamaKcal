@@ -4,14 +4,23 @@ import type { Item, Meal, Unit } from "../types";
 export const MAX_DIGITS = 4;
 export const MAX_PCS = 30;
 
-/** Digits only, at most 4, no leading zeros ("0150" → "150"). */
+/**
+ * What she types in the amount field: digits with at most one decimal separator
+ * ("," or ".", shown as ","), up to 4 whole digits and 1 decimal, no leading
+ * zeros ("0150" → "150"), a leading separator becomes "0," (",5" → "0,5").
+ */
 export function cleanAmount(text: string): string {
-  return text.replace(/\D/g, "").replace(/^0+(?=\d)/, "").slice(0, MAX_DIGITS);
+  const sep = text.search(/[.,]/);
+  const whole = (sep < 0 ? text : text.slice(0, sep)).replace(/\D/g, "").replace(/^0+(?=\d)/, "").slice(0, MAX_DIGITS);
+  if (sep < 0) return whole;
+  const frac = text.slice(sep + 1).replace(/\D/g, "").slice(0, 1);
+  return `${whole || "0"},${frac}`;
 }
 
+/** "1,5" → 1.5; empty or unreadable → 0. */
 export function parseAmount(text: string): number {
-  const digits = text.replace(/\D/g, "");
-  return digits ? parseInt(digits, 10) : 0;
+  const n = parseFloat(cleanAmount(text).replace(",", "."));
+  return Number.isFinite(n) ? n : 0;
 }
 
 export function itemGrams(it: Pick<Item, "unit" | "amount" | "pcGrams">): number {
@@ -39,10 +48,11 @@ export function dayMeals(meals: Meal[], date: string): Meal[] {
     .sort((a, b) => (a.time === b.time ? a.createdAt - b.createdAt : a.time < b.time ? -1 : 1));
 }
 
-/** Step a piece count by ±1, staying within 1…MAX_PCS. */
+/** Step a piece count by ±1 from the whole number she has, staying within 1…MAX_PCS. A fraction steps to the next whole number. */
 export function stepPieces(amount: string, delta: number): string {
-  const next = Math.min(MAX_PCS, Math.max(1, parseAmount(amount) + delta));
-  return String(next);
+  const n = parseAmount(amount);
+  const base = Number.isInteger(n) ? n + delta : delta > 0 ? Math.floor(n) + delta : Math.ceil(n) + delta;
+  return String(Math.min(MAX_PCS, Math.max(1, base)));
 }
 
 /** Convert an amount when a line switches between grams and pieces. */

@@ -4,7 +4,7 @@ import { TextInput, View } from "react-native";
 import { cleanAmount, parseAmount } from "../lib/nutrition";
 import { useStore } from "../store/store";
 import { C, F } from "../theme";
-import { Sheet, useFocusWhenShown } from "./Sheet";
+import { Sheet } from "./Sheet";
 import { PrimaryButton, T } from "./ui";
 
 const MIN = 1000;
@@ -15,7 +15,19 @@ export function NormSheet({ visible, onClose }: { visible: boolean; onClose: () 
   const { settings, setNorm } = useStore();
   const [text, setText] = useState(String(settings.norm));
   const input = useRef<TextInput>(null);
-  useFocusWhenShown(input, visible);
+
+  // Focus after the sheet's slide-in; try again once if the keyboard didn't come up.
+  useEffect(() => {
+    if (!visible) return;
+    const t1 = setTimeout(() => input.current?.focus(), 400);
+    const t2 = setTimeout(() => {
+      if (!input.current?.isFocused()) input.current?.focus();
+    }, 900);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+  }, [visible]);
 
   useEffect(() => {
     if (visible) setText(String(settings.norm));
@@ -36,13 +48,14 @@ export function NormSheet({ visible, onClose }: { visible: boolean; onClose: () 
             selectTextOnFocus
             maxLength={4}
             accessibilityLabel="Денна норма, кілокалорій"
+            accessibilityHint={ok ? "Від 1 000 до 4 000 ккал." : "Впишіть число від 1 000 до 4 000."}
             style={{
               minWidth: 140,
               minHeight: 60,
               paddingVertical: 4,
               borderRadius: 14,
               borderWidth: 2,
-              borderColor: C.accent,
+              borderColor: ok ? C.accent : C.ink,
               textAlign: "center",
               fontFamily: F.sb,
               fontSize: 28,
