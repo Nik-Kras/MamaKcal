@@ -2,10 +2,10 @@ import * as Haptics from "expo-haptics";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { AppState } from "react-native";
 
-import { FOODS } from "../data/foods";
+import { FOODS, RENAMED } from "../data/foods";
 import { record, reportError } from "../diag/diagnostics";
 import { timeHM, todayISO, fmt } from "../lib/format";
-import { activeCorrections, learnFromMeal, type Correction } from "../lib/learn";
+import { activeCorrections, learnFromMeal, migrateLearned, type Correction } from "../lib/learn";
 import { Matcher } from "../lib/match";
 import { cleanAmount, listNames, mealKcal, parseAmount } from "../lib/nutrition";
 import { preparePhoto, removeUnusedPhotos, type PreparedPhoto } from "../lib/photo";
@@ -103,13 +103,18 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   matcherRef.current = matcher;
 
   const recentFoodIds = useMemo(() => {
+    const known = new Set(foods.map((f) => f.id));
     const out: string[] = [];
     for (const m of [...data.meals].sort((a, b) => b.createdAt - a.createdAt)) {
-      for (const it of m.items) if (it.foodId && !out.includes(it.foodId)) out.push(it.foodId);
+      for (const it of m.items) {
+        // Logged under an older food list: offer the food it became, if any.
+        const id = it.foodId && it.foodId in RENAMED ? RENAMED[it.foodId] : it.foodId;
+        if (id && known.has(id) && !out.includes(id)) out.push(id);
+      }
       if (out.length >= 10) break;
     }
     return out.slice(0, 10);
-  }, [data.meals]);
+  }, [data.meals, foods]);
 
   // ---- load, then tidy photos nothing uses any more. Saving starts only after a
   // good load (or a new install): a failed load must never be saved over her data.
@@ -125,7 +130,10 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     record("store.loaded", { kind: res.kind, meals: res.kind === "ok" ? res.data.meals.length : 0 });
     const meals = res.kind === "ok" ? res.data.meals : [];
     if (res.kind === "ok") {
-      setData({ meals, customFoods: res.data.customFoods, settings: res.data.settings, learned: res.data.learned });
+      // The food list may have changed since the last start: corrections follow renamed foods.
+      const known = new Set([...res.data.customFoods, ...FOODS].map((f) => f.id));
+      const learned = migrateLearned(res.data.learned, RENAMED, known);
+      setData({ meals, customFoods: res.data.customFoods, settings: res.data.settings, learned });
     }
     // A draft left by a kill (its meal, if it edited one, must still exist).
     const saved = await loadDraft();

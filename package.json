@@ -12,7 +12,7 @@
     "qr": "node scripts/make-install-qr.mjs",
     "lint": "expo lint",
     "ios": "expo run:ios",
-    "foods": "bench/.venv/bin/python -I bench/foods_from_xlsx.py \"$HOME/Repos/MacroTrack/data/samples/Macros App - Product Nutrition Database.xlsx\" src/data/foods.json"
+    "foods": "python3 -I bench/catalogue/items.py && python3 -I bench/catalogue/build.py"
   },
   "dependencies": {
     "@expo-google-fonts/rubik": "^0.4.2",

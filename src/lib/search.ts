@@ -19,7 +19,9 @@ function score(food: Food, q: string): number {
   let best = Infinity;
   for (const [i, n] of names.entries()) {
     const alias = i > 0 ? 3 : 0;
-    if (n.startsWith(q)) best = Math.min(best, 0 + alias);
+    // Her exact word ("борщ") beats foods that only start with it ("Борщ пісний").
+    if (n === q) best = Math.min(best, -1);
+    else if (n.startsWith(q)) best = Math.min(best, 0 + alias);
     else if (n.split(" ").some((w) => w.startsWith(q))) best = Math.min(best, 1 + alias);
     else if (n.includes(q)) best = Math.min(best, 2 + alias);
   }

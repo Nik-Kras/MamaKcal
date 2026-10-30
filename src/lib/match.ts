@@ -24,15 +24,15 @@ const MINOR = [
 // A bare generic word → the everyday food it most likely is.
 const GENERIC: Record<string, string> = {
   rice: "white-rice-cooked", potato: "potato-boiled", chicken: "chicken-breast-cooked",
-  fish: "cod-cooked", egg: "eggs-whole", bread: "white-bread", cheese: "cheddar-cheese",
+  fish: "hake-cooked", egg: "eggs-whole", bread: "white-bread", cheese: "hard-cheese",
   salad: "mixed-greens", greens: "mixed-greens", green: "mixed-greens", lettuce: "mixed-greens", squash: "zucchini",
-  beef: "beef-steak-raw", pork: "pork-chop-cooked", berries: "berries-mix", berry: "berries-mix",
-  yogurt: "greek-yogurt-full-fat", milk: "whole-milk", beans: "kidney-beans-cooked", bean: "kidney-beans-cooked",
-  oil: "olive-oil", sausage: "pork-sausage", noodles: "pasta-cooked", spaghetti: "pasta-cooked",
-  melon: "watermelon", cantaloupe: "watermelon", turkey: "turkey-breast-cooked", pepper: "bell-pepper",
-  peppers: "bell-pepper", tomatoes: "tomato", carrot: "carrots-raw", nuts: "almonds",
+  beef: "beef-cooked", pork: "pork-roast", berries: "berries-mix", berry: "berries-mix",
+  yogurt: "yogurt-natural", milk: "milk-2-5", beans: "kidney-beans-cooked", bean: "kidney-beans-cooked",
+  oil: "sunflower-oil", sausage: "kovbasa", noodles: "pasta-cooked", spaghetti: "pasta-cooked",
+  melon: "melon", cantaloupe: "melon", turkey: "turkey-breast-cooked", pepper: "bell-pepper",
+  peppers: "bell-pepper", tomatoes: "tomato", carrot: "carrots-raw", nuts: "walnuts",
   varenyky: "varenyky-potato", dumplings: "varenyky-potato", pancakes: "mlyntsi",
-  raspberry: "berries-mix", raspberries: "berries-mix", blackberry: "berries-mix", blackberries: "berries-mix",
+  raspberry: "raspberries", raspberries: "raspberries", blackberry: "berries-mix", blackberries: "berries-mix",
   arugula: "mixed-greens", rocket: "mixed-greens",
 };
 // Not logged: seasonings and herbs. A name made only of these maps to IGNORE.
@@ -73,6 +73,8 @@ export class Matcher {
   private minor = new Set(MINOR.map(stem));
   private generic = new Map(Object.entries(GENERIC).map(([k, v]) => [stem(k), v]));
   private ignore = new Set(SEASONING.map(stem));
+  /** The everyday foods: on a tie they win over dishes that happen to share the word. */
+  private defaults = new Set(Object.values(GENERIC));
 
   constructor(
     foods: Pick<Food, "id" | "nameEn" | "aliases">[],
@@ -106,16 +108,18 @@ export class Matcher {
   match(name: string): string | null {
     const learned = this.learned[nameKey(name)];
     if (learned && this.ids.has(learned)) return learned;
+    const ws = words(name);
+    const core = new Set(ws.filter((w) => !this.minor.has(w)));
+    // Seasonings and garnish are not logged, even where the list has the food
+    // (onion and lemon are there as recipe ingredients).
+    if (core.size && [...core].every((w) => this.ignore.has(w))) return IGNORE;
     const asId = name.trim().toLowerCase().replace(/ /g, "-");
     if (this.ids.has(asId)) return asId;
-    const ws = words(name);
     // No English words at all ("Борщ", "123", a table rule): nothing to match.
     if (!ws.length) return null;
     const exact = this.exact.get(ws.join(" "));
     if (exact !== undefined) return exact;
-    const core = new Set(ws.filter((w) => !this.minor.has(w)));
     if (core.size === 0) return null;
-    if ([...core].every((w) => this.ignore.has(w))) return IGNORE;
     // A name that is just one generic word means the everyday food, not
     // whichever dish happens to contain the word.
     const content = ws.filter((w) => !STOP.has(w));
@@ -175,7 +179,9 @@ export class Matcher {
       const score = shared / union + 0.1 * minor - (c.id.endsWith("-raw") ? 0.05 : 0);
       scored.push({ id: c.id, score, order, core: c.core, primary: c.primary });
     });
-    // Highest score first; on a tie the earlier candidate wins, as in the Python original.
-    return scored.sort((a, b) => b.score - a.score || a.order - b.order);
+    // Highest score first; on a tie an everyday food wins, then the earlier candidate
+    // ("potato cubes": boiled potatoes, not fried), as in the Python original.
+    const dflt = (id: string) => (this.defaults.has(id) ? 1 : 0);
+    return scored.sort((a, b) => b.score - a.score || dflt(b.id) - dflt(a.id) || a.order - b.order);
   }
 }

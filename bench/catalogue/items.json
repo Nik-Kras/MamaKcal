@@ -1,0 +1,2783 @@
+[
+ {
+  "id": "borscht",
+  "source": "recipe",
+  "name": "Борщ червоний (з м'ясом)",
+  "nameEn": "Borscht",
+  "aliases": [
+   "beet soup",
+   "red borscht",
+   "borshch",
+   "beetroot soup",
+   "ukrainian borscht"
+  ],
+  "aliasesUa": [
+   "борщ",
+   "червоний борщ",
+   "борщик"
+  ],
+  "hint": "pork or beef, potato, cabbage, beet, carrot, onion, tomato, sunflower oil; without sour cream"
+ },
+ {
+  "id": "borscht-lenten",
+  "source": "recipe",
+  "name": "Борщ пісний",
+  "nameEn": "Lenten borscht",
+  "aliases": [
+   "vegetarian borscht",
+   "vegan borscht",
+   "meatless borscht"
+  ],
+  "aliasesUa": [
+   "пісний борщ",
+   "борщ без м'яса"
+  ],
+  "hint": "no meat, vegetables and oil only"
+ },
+ {
+  "id": "green-borscht",
+  "source": "recipe",
+  "name": "Зелений борщ (щавлевий)",
+  "nameEn": "Green borscht",
+  "aliases": [
+   "sorrel soup",
+   "green soup",
+   "spring borscht"
+  ],
+  "aliasesUa": [
+   "щавлевий борщ",
+   "зелений суп"
+  ],
+  "hint": "sorrel, potato, egg, without sour cream"
+ },
+ {
+  "id": "kapusniak",
+  "source": "recipe",
+  "name": "Капусняк",
+  "nameEn": "Kapusniak",
+  "aliases": [
+   "sauerkraut soup",
+   "cabbage soup"
+  ],
+  "aliasesUa": [
+   "капусняк з квашеною капустою"
+  ],
+  "hint": "sauerkraut, pork, potato, millet or rice"
+ },
+ {
+  "id": "chicken-noodle-soup",
+  "source": "recipe",
+  "name": "Курячий суп з локшиною",
+  "nameEn": "Chicken noodle soup",
+  "aliases": [
+   "chicken soup",
+   "chicken broth with noodles"
+  ],
+  "aliasesUa": [
+   "курячий бульйон",
+   "суп з локшиною"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "meatball-soup",
+  "source": "recipe",
+  "name": "Суп з фрикадельками",
+  "nameEn": "Meatball soup",
+  "aliases": [
+   "soup with meatballs"
+  ],
+  "aliasesUa": [
+   "фрикадельки в бульйоні"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "pea-soup",
+  "source": "recipe",
+  "name": "Гороховий суп",
+  "nameEn": "Pea soup",
+  "aliases": [
+   "split pea soup"
+  ],
+  "aliasesUa": [
+   "суп гороховий"
+  ],
+  "hint": "with smoked pork"
+ },
+ {
+  "id": "mushroom-soup",
+  "source": "recipe",
+  "name": "Грибна юшка",
+  "nameEn": "Mushroom soup",
+  "aliases": [
+   "mushroom broth"
+  ],
+  "aliasesUa": [
+   "грибний суп"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "fish-soup",
+  "source": "recipe",
+  "name": "Юшка рибна",
+  "nameEn": "Fish soup",
+  "aliases": [
+   "ukha"
+  ],
+  "aliasesUa": [
+   "рибний суп",
+   "уха"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "rassolnyk",
+  "source": "recipe",
+  "name": "Розсольник",
+  "nameEn": "Rassolnik",
+  "aliases": [
+   "pickle soup",
+   "pickled cucumber soup"
+  ],
+  "aliasesUa": [
+   "суп з солоними огірками"
+  ],
+  "hint": "pearl barley, pickles"
+ },
+ {
+  "id": "solyanka",
+  "source": "recipe",
+  "name": "Солянка",
+  "nameEn": "Solyanka",
+  "aliases": [
+   "meat solyanka"
+  ],
+  "aliasesUa": [
+   "солянка м'ясна збірна"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "okroshka",
+  "source": "recipe",
+  "name": "Окрошка на кефірі",
+  "nameEn": "Okroshka",
+  "aliases": [
+   "cold kefir soup"
+  ],
+  "aliasesUa": [
+   "окрошка"
+  ],
+  "hint": "kefir base"
+ },
+ {
+  "id": "kulish",
+  "source": "recipe",
+  "name": "Куліш",
+  "nameEn": "Kulish",
+  "aliases": [
+   "millet soup with salo"
+  ],
+  "aliasesUa": [
+   "куліш з пшоном"
+  ],
+  "hint": "millet, potato, salo"
+ },
+ {
+  "id": "milk-noodle-soup",
+  "source": "recipe",
+  "name": "Молочний суп з вермішеллю",
+  "nameEn": "Milk noodle soup",
+  "aliases": [
+   "noodles in milk"
+  ],
+  "aliasesUa": [
+   "молочна вермішель"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "varenyky-potato",
+  "source": "recipe",
+  "name": "Вареники з картоплею",
+  "nameEn": "Varenyky with potato",
+  "aliases": [
+   "pierogi",
+   "potato dumplings",
+   "potato pierogi",
+   "dumplings",
+   "pyrohy"
+  ],
+  "aliasesUa": [
+   "вареники картопляні",
+   "пироги з картоплею"
+  ],
+  "pcGrams": 25,
+  "hint": "served with fried onion"
+ },
+ {
+  "id": "varenyky-cabbage",
+  "source": "recipe",
+  "name": "Вареники з капустою",
+  "nameEn": "Varenyky with cabbage",
+  "aliases": [
+   "cabbage pierogi",
+   "sauerkraut dumplings"
+  ],
+  "aliasesUa": [
+   "вареники з капустою"
+  ],
+  "pcGrams": 25,
+  "hint": ""
+ },
+ {
+  "id": "varenyky-cottage-cheese",
+  "source": "recipe",
+  "name": "Вареники з сиром",
+  "nameEn": "Varenyky with cottage cheese",
+  "aliases": [
+   "cheese pierogi",
+   "sweet cheese dumplings",
+   "farmer cheese dumplings"
+  ],
+  "aliasesUa": [
+   "вареники з сиром"
+  ],
+  "pcGrams": 25,
+  "hint": "without sour cream"
+ },
+ {
+  "id": "varenyky-cherry",
+  "source": "recipe",
+  "name": "Вареники з вишнями",
+  "nameEn": "Varenyky with cherries",
+  "aliases": [
+   "cherry pierogi",
+   "cherry dumplings"
+  ],
+  "aliasesUa": [
+   "вареники з вишнею"
+  ],
+  "pcGrams": 25,
+  "hint": ""
+ },
+ {
+  "id": "lazy-varenyky",
+  "source": "recipe",
+  "name": "Ліниві вареники",
+  "nameEn": "Lazy varenyky",
+  "aliases": [
+   "lazy dumplings",
+   "cottage cheese gnocchi"
+  ],
+  "aliasesUa": [
+   "ліниві галушки"
+  ],
+  "pcGrams": 15,
+  "hint": ""
+ },
+ {
+  "id": "pelmeni",
+  "source": "recipe",
+  "name": "Пельмені",
+  "nameEn": "Pelmeni",
+  "aliases": [
+   "meat dumplings",
+   "meat pierogi"
+  ],
+  "aliasesUa": [
+   "пельмені з м'ясом"
+  ],
+  "pcGrams": 12,
+  "hint": ""
+ },
+ {
+  "id": "deruny",
+  "source": "recipe",
+  "name": "Деруни",
+  "nameEn": "Deruny",
+  "aliases": [
+   "potato pancakes",
+   "latkes",
+   "potato fritters",
+   "hash brown"
+  ],
+  "aliasesUa": [
+   "картопляні млинці",
+   "деруни картопляні"
+  ],
+  "pcGrams": 60,
+  "hint": "fried in sunflower oil, without sour cream"
+ },
+ {
+  "id": "syrnyky",
+  "source": "recipe",
+  "name": "Сирники",
+  "nameEn": "Syrnyky",
+  "aliases": [
+   "cottage cheese pancakes",
+   "farmer cheese pancakes",
+   "cheese fritters"
+  ],
+  "aliasesUa": [
+   "сирники з сиру"
+  ],
+  "pcGrams": 50,
+  "hint": "fried, without sour cream"
+ },
+ {
+  "id": "mlyntsi",
+  "source": "recipe",
+  "name": "Млинці",
+  "nameEn": "Crepes",
+  "aliases": [
+   "thin pancakes",
+   "blini",
+   "crepe",
+   "pancakes"
+  ],
+  "aliasesUa": [
+   "млинчики",
+   "налисники без начинки"
+  ],
+  "pcGrams": 45,
+  "hint": "plain, milk batter"
+ },
+ {
+  "id": "nalysnyky-cottage-cheese",
+  "source": "recipe",
+  "name": "Налисники з сиром",
+  "nameEn": "Crepes with cottage cheese",
+  "aliases": [
+   "cheese crepes",
+   "blintzes",
+   "cheese blintz"
+  ],
+  "aliasesUa": [
+   "млинці з сиром"
+  ],
+  "pcGrams": 90,
+  "hint": ""
+ },
+ {
+  "id": "nalysnyky-meat",
+  "source": "recipe",
+  "name": "Млинці з м'ясом",
+  "nameEn": "Crepes with meat",
+  "aliases": [
+   "meat crepes",
+   "meat blintzes"
+  ],
+  "aliasesUa": [
+   "налисники з м'ясом"
+  ],
+  "pcGrams": 90,
+  "hint": ""
+ },
+ {
+  "id": "oladky",
+  "source": "recipe",
+  "name": "Оладки",
+  "nameEn": "Oladky",
+  "aliases": [
+   "fluffy pancakes",
+   "kefir pancakes",
+   "fritters"
+  ],
+  "aliasesUa": [
+   "оладі",
+   "оладки на кефірі"
+  ],
+  "pcGrams": 35,
+  "hint": "fried"
+ },
+ {
+  "id": "holubtsi",
+  "source": "recipe",
+  "name": "Голубці",
+  "nameEn": "Holubtsi",
+  "aliases": [
+   "cabbage rolls",
+   "stuffed cabbage"
+  ],
+  "aliasesUa": [
+   "голубці з м'ясом і рисом"
+  ],
+  "pcGrams": 150,
+  "hint": "meat and rice, stewed in tomato-sour cream sauce"
+ },
+ {
+  "id": "halushky",
+  "source": "recipe",
+  "name": "Галушки",
+  "nameEn": "Halushky",
+  "aliases": [
+   "dough dumplings"
+  ],
+  "aliasesUa": [
+   "галушки з борошна"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "banosh",
+  "source": "recipe",
+  "name": "Банош (з бринзою і шкварками)",
+  "nameEn": "Banosh",
+  "aliases": [
+   "cornmeal porridge with cheese",
+   "polenta with sour cream",
+   "hutsul polenta"
+  ],
+  "aliasesUa": [
+   "банош",
+   "мамалига на сметані"
+  ],
+  "hint": "corn grits cooked in sour cream (+milk), topped with bryndza and shkvarky"
+ },
+ {
+  "id": "kotlety",
+  "source": "recipe",
+  "name": "Котлети (свинина з яловичиною)",
+  "nameEn": "Cutlets",
+  "aliases": [
+   "meat patties",
+   "meatballs",
+   "patty",
+   "cutlet",
+   "burger patty"
+  ],
+  "aliasesUa": [
+   "котлети м'ясні",
+   "котлета"
+  ],
+  "pcGrams": 80,
+  "hint": "fried, with bread and egg"
+ },
+ {
+  "id": "chicken-cutlets",
+  "source": "recipe",
+  "name": "Котлети курячі",
+  "nameEn": "Chicken cutlets",
+  "aliases": [
+   "chicken patties",
+   "chicken meatballs"
+  ],
+  "aliasesUa": [
+   "курячі котлети"
+  ],
+  "pcGrams": 70,
+  "hint": ""
+ },
+ {
+  "id": "chicken-kyiv",
+  "source": "recipe",
+  "name": "Котлета по-київськи",
+  "nameEn": "Chicken Kyiv",
+  "aliases": [
+   "chicken kiev",
+   "breaded chicken with butter"
+  ],
+  "aliasesUa": [
+   "котлета по-київськи"
+  ],
+  "pcGrams": 160,
+  "hint": "deep-fried"
+ },
+ {
+  "id": "pork-chop-breaded",
+  "source": "recipe",
+  "name": "Відбивна свиняча",
+  "nameEn": "Pork schnitzel",
+  "aliases": [
+   "breaded pork chop",
+   "schnitzel",
+   "pork cutlet"
+  ],
+  "aliasesUa": [
+   "відбивна",
+   "шніцель"
+  ],
+  "pcGrams": 120,
+  "hint": "breaded, fried in oil"
+ },
+ {
+  "id": "pechenia",
+  "source": "recipe",
+  "name": "Печеня (свинина з картоплею)",
+  "nameEn": "Pechenia",
+  "aliases": [
+   "pork and potato stew",
+   "roast with potatoes"
+  ],
+  "aliasesUa": [
+   "печеня по-домашньому"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "stewed-cabbage",
+  "source": "recipe",
+  "name": "Тушкована капуста з м'ясом",
+  "nameEn": "Stewed cabbage with meat",
+  "aliases": [
+   "bigos",
+   "braised cabbage",
+   "braised sauerkraut"
+  ],
+  "aliasesUa": [
+   "бігос",
+   "тушкована капуста"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "goulash",
+  "source": "recipe",
+  "name": "Гуляш",
+  "nameEn": "Goulash",
+  "aliases": [
+   "beef stew",
+   "meat stew",
+   "stew"
+  ],
+  "aliasesUa": [
+   "гуляш з яловичини"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "makaroni-po-flotsky",
+  "source": "recipe",
+  "name": "Макарони по-флотськи",
+  "nameEn": "Pasta with minced meat",
+  "aliases": [
+   "navy pasta",
+   "macaroni with ground beef"
+  ],
+  "aliasesUa": [
+   "макарони з фаршем"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "plov",
+  "source": "recipe",
+  "name": "Плов зі свининою",
+  "nameEn": "Plov",
+  "aliases": [
+   "pilaf with meat",
+   "plov with pork"
+  ],
+  "aliasesUa": [
+   "плов"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "fried-potatoes",
+  "source": "recipe",
+  "name": "Картопля смажена",
+  "nameEn": "Fried potatoes",
+  "aliases": [
+   "home fries",
+   "pan-fried potatoes",
+   "roasted potatoes",
+   "potato wedges"
+  ],
+  "aliasesUa": [
+   "смажена картопля"
+  ],
+  "hint": "sunflower oil"
+ },
+ {
+  "id": "stewed-potatoes",
+  "source": "recipe",
+  "name": "Картопля тушкована з м'ясом",
+  "nameEn": "Potato stew",
+  "aliases": [
+   "braised potatoes with meat"
+  ],
+  "aliasesUa": [
+   "тушкована картопля"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "fried-fish",
+  "source": "recipe",
+  "name": "Риба смажена в борошні",
+  "nameEn": "Fried fish",
+  "aliases": [
+   "pan-fried fish",
+   "breaded fish"
+  ],
+  "aliasesUa": [
+   "смажена риба",
+   "хек смажений"
+  ],
+  "hint": "hake or pollock, flour, sunflower oil"
+ },
+ {
+  "id": "fried-mushrooms",
+  "source": "recipe",
+  "name": "Гриби смажені з цибулею",
+  "nameEn": "Fried mushrooms",
+  "aliases": [
+   "sauteed mushrooms"
+  ],
+  "aliasesUa": [
+   "смажені печериці"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "fried-liver",
+  "source": "recipe",
+  "name": "Печінка смажена з цибулею",
+  "nameEn": "Fried liver",
+  "aliases": [
+   "liver and onions",
+   "chicken liver"
+  ],
+  "aliasesUa": [
+   "печінка смажена"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "omelette",
+  "source": "recipe",
+  "name": "Омлет з молоком",
+  "nameEn": "Omelette",
+  "aliases": [
+   "omelet",
+   "scrambled eggs"
+  ],
+  "aliasesUa": [
+   "омлет"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "fried-eggs",
+  "source": "usda",
+  "name": "Яєчня (смажені яйця)",
+  "nameEn": "Fried eggs",
+  "aliases": [
+   "fried egg",
+   "sunny side up eggs"
+  ],
+  "aliasesUa": [
+   "яєчня",
+   "глазунья"
+  ],
+  "pcGrams": 50,
+  "hint": "Egg, whole, cooked, fried"
+ },
+ {
+  "id": "pyrizhky-potato",
+  "source": "recipe",
+  "name": "Пиріжки смажені з картоплею",
+  "nameEn": "Fried pirozhki with potato",
+  "aliases": [
+   "fried hand pies",
+   "pirozhki",
+   "fried buns"
+  ],
+  "aliasesUa": [
+   "пиріжки з картоплею"
+  ],
+  "pcGrams": 70,
+  "hint": ""
+ },
+ {
+  "id": "pyrizhky-cabbage",
+  "source": "recipe",
+  "name": "Пиріжки печені з капустою",
+  "nameEn": "Baked pirozhki with cabbage",
+  "aliases": [
+   "baked hand pies",
+   "cabbage buns"
+  ],
+  "aliasesUa": [
+   "пиріжки з капустою"
+  ],
+  "pcGrams": 60,
+  "hint": ""
+ },
+ {
+  "id": "pyrizhky-cherry",
+  "source": "recipe",
+  "name": "Пиріжки з вишнями",
+  "nameEn": "Cherry pirozhki",
+  "aliases": [
+   "cherry buns",
+   "cherry hand pies"
+  ],
+  "aliasesUa": [
+   "пиріжки з вишнею"
+  ],
+  "pcGrams": 60,
+  "hint": ""
+ },
+ {
+  "id": "pampushky",
+  "source": "recipe",
+  "name": "Пампушки з часником",
+  "nameEn": "Pampushky",
+  "aliases": [
+   "garlic buns",
+   "garlic rolls"
+  ],
+  "aliasesUa": [
+   "пампушки"
+  ],
+  "pcGrams": 40,
+  "hint": ""
+ },
+ {
+  "id": "holodets",
+  "source": "recipe",
+  "name": "Холодець",
+  "nameEn": "Kholodets",
+  "aliases": [
+   "meat jelly",
+   "aspic"
+  ],
+  "aliasesUa": [
+   "холодець зі свинини",
+   "студень"
+  ],
+  "hint": "pork + beef, home style"
+ },
+ {
+  "id": "kutia",
+  "source": "recipe",
+  "name": "Кутя",
+  "nameEn": "Kutia",
+  "aliases": [
+   "wheat berry pudding",
+   "christmas kutia"
+  ],
+  "aliasesUa": [
+   "кутя з маком"
+  ],
+  "hint": "wheat, poppy seeds, honey, nuts"
+ },
+ {
+  "id": "buckwheat-cooked",
+  "source": "usda",
+  "name": "Гречка варена",
+  "nameEn": "Buckwheat",
+  "aliases": [
+   "buckwheat groats",
+   "kasha",
+   "buckwheat porridge"
+  ],
+  "aliasesUa": [
+   "гречана каша",
+   "гречка"
+  ],
+  "hint": "Buckwheat groats, roasted, cooked"
+ },
+ {
+  "id": "white-rice-cooked",
+  "source": "usda",
+  "name": "Рис варений",
+  "nameEn": "Rice",
+  "aliases": [
+   "white rice",
+   "boiled rice",
+   "steamed rice"
+  ],
+  "aliasesUa": [
+   "рис"
+  ],
+  "hint": "Rice, white, long-grain, regular, cooked"
+ },
+ {
+  "id": "millet-porridge",
+  "source": "usda",
+  "name": "Пшоняна каша на воді",
+  "nameEn": "Millet porridge",
+  "aliases": [
+   "millet"
+  ],
+  "aliasesUa": [
+   "пшоно",
+   "пшонка"
+  ],
+  "hint": "Millet, cooked"
+ },
+ {
+  "id": "pearl-barley-cooked",
+  "source": "usda",
+  "name": "Перлова каша",
+  "nameEn": "Pearl barley",
+  "aliases": [
+   "barley"
+  ],
+  "aliasesUa": [
+   "перловка"
+  ],
+  "hint": "Barley, pearled, cooked"
+ },
+ {
+  "id": "oatmeal-water",
+  "source": "usda",
+  "name": "Вівсянка на воді",
+  "nameEn": "Oatmeal",
+  "aliases": [
+   "porridge",
+   "oat porridge"
+  ],
+  "aliasesUa": [
+   "вівсяна каша на воді"
+  ],
+  "hint": "Cereals, oats, regular and quick, cooked with water, without salt"
+ },
+ {
+  "id": "oatmeal-milk",
+  "source": "recipe",
+  "name": "Вівсянка на молоці",
+  "nameEn": "Oatmeal with milk",
+  "aliases": [
+   "milk porridge",
+   "oats with milk"
+  ],
+  "aliasesUa": [
+   "вівсяна каша на молоці"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "semolina-porridge",
+  "source": "recipe",
+  "name": "Манна каша на молоці",
+  "nameEn": "Semolina porridge",
+  "aliases": [
+   "cream of wheat",
+   "semolina"
+  ],
+  "aliasesUa": [
+   "манка"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "corn-porridge",
+  "source": "usda",
+  "name": "Кукурудзяна каша на воді (мамалига)",
+  "nameEn": "Corn porridge",
+  "aliases": [
+   "polenta",
+   "grits",
+   "cornmeal mush"
+  ],
+  "aliasesUa": [
+   "мамалига",
+   "кукурудзяна каша"
+  ],
+  "hint": "Cornmeal / grits cooked with water"
+ },
+ {
+  "id": "pasta-cooked",
+  "source": "usda",
+  "name": "Макарони варені",
+  "nameEn": "Pasta",
+  "aliases": [
+   "noodles",
+   "spaghetti",
+   "macaroni",
+   "vermicelli"
+  ],
+  "aliasesUa": [
+   "макарони",
+   "вермішель",
+   "спагеті"
+  ],
+  "hint": "Pasta, cooked, enriched"
+ },
+ {
+  "id": "potato-boiled",
+  "source": "usda",
+  "name": "Картопля варена",
+  "nameEn": "Boiled potatoes",
+  "aliases": [
+   "potatoes",
+   "potato",
+   "jacket potatoes"
+  ],
+  "aliasesUa": [
+   "картопля",
+   "бульба",
+   "картопля в мундирі"
+  ],
+  "hint": "Potatoes, boiled, cooked without skin, flesh, without salt"
+ },
+ {
+  "id": "mashed-potatoes",
+  "source": "usda",
+  "name": "Картопляне пюре",
+  "nameEn": "Mashed potatoes",
+  "aliases": [
+   "potato puree"
+  ],
+  "aliasesUa": [
+   "пюре",
+   "товчена картопля"
+  ],
+  "hint": "Potatoes, mashed, home-prepared, whole milk and butter added"
+ },
+ {
+  "id": "baked-potatoes",
+  "source": "usda",
+  "name": "Картопля запечена",
+  "nameEn": "Baked potatoes",
+  "aliases": [
+   "oven potatoes"
+  ],
+  "aliasesUa": [
+   "печена картопля"
+  ],
+  "hint": "Potatoes, baked, flesh and skin"
+ },
+ {
+  "id": "olivier-salad",
+  "source": "recipe",
+  "name": "Олів'є",
+  "nameEn": "Olivier salad",
+  "aliases": [
+   "russian salad",
+   "potato salad with mayonnaise"
+  ],
+  "aliasesUa": [
+   "салат олів'є",
+   "олів'є з ковбасою"
+  ],
+  "hint": "boiled sausage, mayonnaise"
+ },
+ {
+  "id": "vinaigrette-salad",
+  "source": "recipe",
+  "name": "Вінегрет",
+  "nameEn": "Vinaigrette salad",
+  "aliases": [
+   "beet salad with sauerkraut"
+  ],
+  "aliasesUa": [
+   "вінегрет з олією"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "shuba",
+  "source": "recipe",
+  "name": "Оселедець під шубою",
+  "nameEn": "Herring under a fur coat",
+  "aliases": [
+   "layered herring salad"
+  ],
+  "aliasesUa": [
+   "шуба"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "cabbage-salad",
+  "source": "recipe",
+  "name": "Салат з капусти з олією",
+  "nameEn": "Cabbage salad",
+  "aliases": [
+   "coleslaw",
+   "slaw"
+  ],
+  "aliasesUa": [
+   "капустяний салат"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "cucumber-tomato-salad",
+  "source": "recipe",
+  "name": "Салат з огірків і помідорів з олією",
+  "nameEn": "Cucumber tomato salad",
+  "aliases": [
+   "tomato cucumber salad",
+   "summer salad"
+  ],
+  "aliasesUa": [
+   "овочевий салат"
+  ],
+  "hint": "sunflower oil"
+ },
+ {
+  "id": "cucumber-tomato-salad-smetana",
+  "source": "recipe",
+  "name": "Салат з огірків і помідорів зі сметаною",
+  "nameEn": "Cucumber tomato salad with sour cream",
+  "aliases": [
+   "salad with sour cream"
+  ],
+  "aliasesUa": [
+   "салат зі сметаною"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "crab-salad",
+  "source": "recipe",
+  "name": "Крабовий салат",
+  "nameEn": "Crab stick salad",
+  "aliases": [
+   "crab salad"
+  ],
+  "aliasesUa": [
+   "салат з крабовими паличками"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "beet-salad",
+  "source": "recipe",
+  "name": "Буряк з часником і майонезом",
+  "nameEn": "Beet salad",
+  "aliases": [
+   "beetroot salad"
+  ],
+  "aliasesUa": [
+   "салат з буряка"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "korean-carrot",
+  "source": "recipe",
+  "name": "Морква по-корейськи",
+  "nameEn": "Korean carrot salad",
+  "aliases": [
+   "spicy carrot salad"
+  ],
+  "aliasesUa": [
+   "корейська морква"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "squash-caviar",
+  "source": "label",
+  "name": "Кабачкова ікра",
+  "nameEn": "Squash caviar",
+  "aliases": [
+   "zucchini spread"
+  ],
+  "aliasesUa": [
+   "ікра кабачкова"
+  ],
+  "hint": "Ukrainian canned, label"
+ },
+ {
+  "id": "chicken-breast-cooked",
+  "source": "usda",
+  "name": "Куряче філе (варене/запечене)",
+  "nameEn": "Chicken breast",
+  "aliases": [
+   "grilled chicken",
+   "chicken fillet",
+   "boiled chicken"
+  ],
+  "aliasesUa": [
+   "куряча грудка",
+   "філе"
+  ],
+  "hint": "Chicken, broilers or fryers, breast, meat only, cooked, roasted"
+ },
+ {
+  "id": "chicken-leg-cooked",
+  "source": "usda",
+  "name": "Курячі стегна/гомілки запечені (зі шкірою)",
+  "nameEn": "Chicken leg",
+  "aliases": [
+   "chicken thigh",
+   "drumstick",
+   "chicken legs"
+  ],
+  "aliasesUa": [
+   "курячі ніжки",
+   "стегно",
+   "гомілка"
+  ],
+  "hint": "Chicken, thigh / drumstick, meat and skin, cooked, roasted"
+ },
+ {
+  "id": "roast-chicken",
+  "source": "usda",
+  "name": "Курка запечена (зі шкірою)",
+  "nameEn": "Roast chicken",
+  "aliases": [
+   "roasted chicken",
+   "baked chicken",
+   "rotisserie chicken"
+  ],
+  "aliasesUa": [
+   "запечена курка"
+  ],
+  "hint": "Chicken, broilers or fryers, meat and skin, cooked, roasted"
+ },
+ {
+  "id": "turkey-breast-cooked",
+  "source": "usda",
+  "name": "Індичка (філе, запечене)",
+  "nameEn": "Turkey",
+  "aliases": [
+   "turkey breast",
+   "roast turkey"
+  ],
+  "aliasesUa": [
+   "індиче філе"
+  ],
+  "hint": "Turkey, breast, meat only, roasted"
+ },
+ {
+  "id": "pork-roast",
+  "source": "usda",
+  "name": "Свинина запечена",
+  "nameEn": "Roast pork",
+  "aliases": [
+   "pork",
+   "pork loin",
+   "baked pork"
+  ],
+  "aliasesUa": [
+   "свинина",
+   "буженина"
+  ],
+  "hint": "Pork, fresh, loin, whole, separable lean and fat, cooked, roasted"
+ },
+ {
+  "id": "pork-chop-cooked",
+  "source": "usda",
+  "name": "Свиняча відбивна без паніровки",
+  "nameEn": "Pork chop",
+  "aliases": [
+   "grilled pork chop",
+   "pan-fried pork"
+  ],
+  "aliasesUa": [
+   "свиняча відбивна",
+   "свинина смажена"
+  ],
+  "pcGrams": 120,
+  "hint": "Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, pan-fried"
+ },
+ {
+  "id": "beef-cooked",
+  "source": "usda",
+  "name": "Яловичина варена/тушкована",
+  "nameEn": "Beef",
+  "aliases": [
+   "boiled beef",
+   "braised beef",
+   "beef steak",
+   "steak"
+  ],
+  "aliasesUa": [
+   "яловичина"
+  ],
+  "hint": "Beef, chuck, separable lean and fat, cooked, braised"
+ },
+ {
+  "id": "beef-liver-fried",
+  "source": "usda",
+  "name": "Печінка яловича смажена",
+  "nameEn": "Beef liver",
+  "aliases": [
+   "liver"
+  ],
+  "aliasesUa": [
+   "печінка"
+  ],
+  "hint": "Beef, variety meats and by-products, liver, cooked, pan-fried"
+ },
+ {
+  "id": "salo",
+  "source": "usda",
+  "name": "Сало солоне",
+  "nameEn": "Salo",
+  "aliases": [
+   "pork fat",
+   "lard",
+   "fatback",
+   "cured pork fat"
+  ],
+  "aliasesUa": [
+   "сало",
+   "солоне сало"
+  ],
+  "hint": "Pork, fresh, backfat, raw"
+ },
+ {
+  "id": "shkvarky",
+  "source": "recipe",
+  "name": "Шкварки",
+  "nameEn": "Shkvarky",
+  "aliases": [
+   "pork cracklings",
+   "cracklings",
+   "fried pork fat"
+  ],
+  "aliasesUa": [
+   "шкварки зі сала"
+  ],
+  "hint": "rendered salo"
+ },
+ {
+  "id": "bacon-cooked",
+  "source": "usda",
+  "name": "Бекон смажений",
+  "nameEn": "Bacon",
+  "aliases": [
+   "fried bacon"
+  ],
+  "aliasesUa": [
+   "бекон"
+  ],
+  "hint": "Pork, cured, bacon, cooked, pan-fried"
+ },
+ {
+  "id": "kovbasa-boiled",
+  "source": "label",
+  "name": "Ковбаса варена (Лікарська, Молочна)",
+  "nameEn": "Bologna",
+  "aliases": [
+   "boiled sausage",
+   "doctor's sausage",
+   "baloney"
+  ],
+  "aliasesUa": [
+   "варена ковбаса",
+   "лікарська"
+  ],
+  "hint": "DSTU 4436, label"
+ },
+ {
+  "id": "kovbasa-smoked",
+  "source": "label",
+  "name": "Ковбаса напівкопчена",
+  "nameEn": "Smoked sausage",
+  "aliases": [
+   "salami",
+   "kielbasa",
+   "smoked kielbasa"
+  ],
+  "aliasesUa": [
+   "копчена ковбаса",
+   "салямі"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "kovbasa",
+  "source": "usda",
+  "name": "Ковбаса домашня (смажена)",
+  "nameEn": "Homemade sausage",
+  "aliases": [
+   "pork sausage",
+   "sausage",
+   "polish sausage"
+  ],
+  "aliasesUa": [
+   "домашня ковбаса",
+   "ковбаса"
+  ],
+  "hint": "Polish sausage, pork / kielbasa"
+ },
+ {
+  "id": "sosysky",
+  "source": "label",
+  "name": "Сосиски",
+  "nameEn": "Frankfurters",
+  "aliases": [
+   "hot dogs",
+   "wieners",
+   "sausages"
+  ],
+  "aliasesUa": [
+   "сосиски молочні",
+   "сардельки"
+  ],
+  "pcGrams": 50,
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "ham",
+  "source": "label",
+  "name": "Шинка варена",
+  "nameEn": "Ham",
+  "aliases": [
+   "sliced ham",
+   "boiled ham"
+  ],
+  "aliasesUa": [
+   "шинка"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "krovianka",
+  "source": "label",
+  "name": "Кров'янка",
+  "nameEn": "Blood sausage",
+  "aliases": [
+   "black pudding",
+   "blood pudding"
+  ],
+  "aliasesUa": [
+   "кров'яна ковбаса"
+  ],
+  "hint": "Ukrainian label, with groats"
+ },
+ {
+  "id": "hake-cooked",
+  "source": "usda",
+  "name": "Хек / минтай (варений, запечений)",
+  "nameEn": "White fish",
+  "aliases": [
+   "hake",
+   "pollock",
+   "cod",
+   "fish"
+  ],
+  "aliasesUa": [
+   "хек",
+   "минтай",
+   "тріска"
+  ],
+  "hint": "Fish, pollock, Alaska, cooked, dry heat"
+ },
+ {
+  "id": "salmon-cooked",
+  "source": "usda",
+  "name": "Лосось запечений",
+  "nameEn": "Salmon",
+  "aliases": [
+   "baked salmon",
+   "salmon fillet",
+   "trout"
+  ],
+  "aliasesUa": [
+   "лосось",
+   "сьомга",
+   "форель"
+  ],
+  "hint": "Fish, salmon, Atlantic, farmed, cooked, dry heat"
+ },
+ {
+  "id": "mackerel-smoked",
+  "source": "usda",
+  "name": "Скумбрія копчена",
+  "nameEn": "Smoked mackerel",
+  "aliases": [
+   "mackerel"
+  ],
+  "aliasesUa": [
+   "скумбрія"
+  ],
+  "hint": "Fish, mackerel, Atlantic, cooked, dry heat (smoked ~ cooked)"
+ },
+ {
+  "id": "herring-salted",
+  "source": "label",
+  "name": "Оселедець солоний",
+  "nameEn": "Herring",
+  "aliases": [
+   "pickled herring",
+   "salted herring"
+  ],
+  "aliasesUa": [
+   "оселедець",
+   "селедка"
+  ],
+  "hint": "Ukrainian label, fillet in oil/salted"
+ },
+ {
+  "id": "carp-fried",
+  "source": "recipe",
+  "name": "Короп / карась смажений",
+  "nameEn": "Fried carp",
+  "aliases": [
+   "carp"
+  ],
+  "aliasesUa": [
+   "короп",
+   "карась"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "sprats",
+  "source": "label",
+  "name": "Шпроти в олії",
+  "nameEn": "Sprats",
+  "aliases": [
+   "smoked sprats"
+  ],
+  "aliasesUa": [
+   "шпроти"
+  ],
+  "hint": "Ukrainian/Latvian label"
+ },
+ {
+  "id": "tuna-canned",
+  "source": "usda",
+  "name": "Тунець консервований у власному соку",
+  "nameEn": "Tuna",
+  "aliases": [
+   "canned tuna"
+  ],
+  "aliasesUa": [
+   "тунець"
+  ],
+  "hint": "Fish, tuna, light, canned in water, drained solids"
+ },
+ {
+  "id": "crab-sticks",
+  "source": "label",
+  "name": "Крабові палички",
+  "nameEn": "Crab sticks",
+  "aliases": [
+   "imitation crab",
+   "surimi"
+  ],
+  "aliasesUa": [
+   "крабове м'ясо"
+  ],
+  "pcGrams": 25,
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "shrimp-cooked",
+  "source": "usda",
+  "name": "Креветки варені",
+  "nameEn": "Shrimp",
+  "aliases": [
+   "prawns"
+  ],
+  "aliasesUa": [
+   "креветки"
+  ],
+  "hint": "Crustaceans, shrimp, cooked"
+ },
+ {
+  "id": "eggs-whole",
+  "source": "usda",
+  "name": "Яйця варені",
+  "nameEn": "Eggs",
+  "aliases": [
+   "boiled eggs",
+   "hard boiled egg",
+   "egg"
+  ],
+  "aliasesUa": [
+   "яйце",
+   "яйця"
+  ],
+  "pcGrams": 50,
+  "hint": "Egg, whole, cooked, hard-boiled"
+ },
+ {
+  "id": "milk-2-5",
+  "source": "label",
+  "name": "Молоко 2,5%",
+  "nameEn": "Milk",
+  "aliases": [
+   "low fat milk"
+  ],
+  "aliasesUa": [
+   "молоко"
+  ],
+  "hint": "Ukrainian label 2.5%"
+ },
+ {
+  "id": "whole-milk",
+  "source": "usda",
+  "name": "Молоко 3,2%",
+  "nameEn": "Whole milk",
+  "aliases": [
+   "full fat milk"
+  ],
+  "aliasesUa": [
+   "молоко домашнє"
+  ],
+  "hint": "Milk, whole, 3.25% milkfat"
+ },
+ {
+  "id": "kefir",
+  "source": "label",
+  "name": "Кефір 2,5%",
+  "nameEn": "Kefir",
+  "aliases": [
+   "buttermilk"
+  ],
+  "aliasesUa": [
+   "кефір"
+  ],
+  "hint": "Ukrainian label 2.5%"
+ },
+ {
+  "id": "ryazhenka",
+  "source": "label",
+  "name": "Ряжанка 4%",
+  "nameEn": "Ryazhenka",
+  "aliases": [
+   "baked milk yogurt"
+  ],
+  "aliasesUa": [
+   "ряжанка"
+  ],
+  "hint": "Ukrainian label 4%"
+ },
+ {
+  "id": "yogurt-natural",
+  "source": "usda",
+  "name": "Йогурт натуральний",
+  "nameEn": "Yogurt",
+  "aliases": [
+   "plain yogurt",
+   "greek yogurt"
+  ],
+  "aliasesUa": [
+   "йогурт"
+  ],
+  "hint": "Yogurt, plain, whole milk"
+ },
+ {
+  "id": "smetana-15",
+  "source": "label",
+  "name": "Сметана 15%",
+  "nameEn": "Sour cream",
+  "aliases": [
+   "smetana"
+  ],
+  "aliasesUa": [
+   "сметана",
+   "сметанка"
+  ],
+  "hint": "Ukrainian label 15%"
+ },
+ {
+  "id": "smetana-20",
+  "source": "label",
+  "name": "Сметана 20%",
+  "nameEn": "Sour cream 20%",
+  "aliases": [
+   "thick sour cream"
+  ],
+  "aliasesUa": [
+   "сметана жирна"
+  ],
+  "hint": "Ukrainian label 20%"
+ },
+ {
+  "id": "tvorog-5",
+  "source": "label",
+  "name": "Сир кисломолочний 5%",
+  "nameEn": "Cottage cheese",
+  "aliases": [
+   "farmer cheese",
+   "quark",
+   "tvorog"
+  ],
+  "aliasesUa": [
+   "сир",
+   "творог",
+   "кисломолочний сир"
+  ],
+  "hint": "Ukrainian label 5%"
+ },
+ {
+  "id": "tvorog-9",
+  "source": "label",
+  "name": "Сир кисломолочний 9%",
+  "nameEn": "Cottage cheese 9%",
+  "aliases": [
+   "full fat farmer cheese"
+  ],
+  "aliasesUa": [
+   "сир жирний",
+   "домашній сир"
+  ],
+  "hint": "Ukrainian label 9%"
+ },
+ {
+  "id": "bryndza",
+  "source": "label",
+  "name": "Бринза",
+  "nameEn": "Bryndza",
+  "aliases": [
+   "sheep cheese",
+   "brine cheese",
+   "feta"
+  ],
+  "aliasesUa": [
+   "бринза",
+   "фета"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "hard-cheese",
+  "source": "usda",
+  "name": "Сир твердий (Голландський, Гауда)",
+  "nameEn": "Cheese",
+  "aliases": [
+   "hard cheese",
+   "gouda",
+   "cheddar",
+   "sliced cheese"
+  ],
+  "aliasesUa": [
+   "твердий сир",
+   "сир голландський"
+  ],
+  "hint": "Cheese, gouda"
+ },
+ {
+  "id": "processed-cheese",
+  "source": "label",
+  "name": "Сирок плавлений",
+  "nameEn": "Processed cheese",
+  "aliases": [
+   "cheese spread"
+  ],
+  "aliasesUa": [
+   "плавлений сир"
+  ],
+  "pcGrams": 70,
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "butter",
+  "source": "label",
+  "name": "Масло вершкове 82%",
+  "nameEn": "Butter",
+  "aliases": [],
+  "aliasesUa": [
+   "масло",
+   "вершкове масло"
+  ],
+  "hint": "Ukrainian label 82.5%"
+ },
+ {
+  "id": "white-bread",
+  "source": "usda",
+  "name": "Хліб пшеничний, батон",
+  "nameEn": "Bread",
+  "aliases": [
+   "white bread",
+   "baton",
+   "toast",
+   "loaf"
+  ],
+  "aliasesUa": [
+   "хліб",
+   "батон",
+   "булка"
+  ],
+  "pcGrams": 30,
+  "hint": "Bread, white, commercially prepared"
+ },
+ {
+  "id": "rye-bread",
+  "source": "label",
+  "name": "Хліб житній",
+  "nameEn": "Rye bread",
+  "aliases": [
+   "dark bread",
+   "black bread",
+   "borodinsky"
+  ],
+  "aliasesUa": [
+   "чорний хліб",
+   "житній хліб",
+   "бородинський"
+  ],
+  "pcGrams": 30,
+  "hint": "Ukrainian label (Дарницький / житній)"
+ },
+ {
+  "id": "lavash",
+  "source": "usda",
+  "name": "Лаваш",
+  "nameEn": "Lavash",
+  "aliases": [
+   "flatbread",
+   "pita"
+  ],
+  "aliasesUa": [
+   "лаваш"
+  ],
+  "hint": "Bread, pita, white"
+ },
+ {
+  "id": "oats-dry",
+  "source": "usda",
+  "name": "Вівсяні пластівці (сухі)",
+  "nameEn": "Oat flakes",
+  "aliases": [
+   "rolled oats",
+   "oats"
+  ],
+  "aliasesUa": [
+   "вівсяні пластівці",
+   "геркулес"
+  ],
+  "hint": "Cereals, oats, regular and quick, not fortified, dry"
+ },
+ {
+  "id": "cookies",
+  "source": "label",
+  "name": "Печиво (цукрове)",
+  "nameEn": "Cookies",
+  "aliases": [
+   "biscuits",
+   "cookie"
+  ],
+  "aliasesUa": [
+   "печиво"
+  ],
+  "pcGrams": 10,
+  "hint": "Ukrainian label, sugar cookies"
+ },
+ {
+  "id": "gingerbread",
+  "source": "label",
+  "name": "Пряник",
+  "nameEn": "Gingerbread",
+  "aliases": [
+   "honey cake cookie"
+  ],
+  "aliasesUa": [
+   "пряники"
+  ],
+  "pcGrams": 40,
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "medivnyk",
+  "source": "recipe",
+  "name": "Медівник",
+  "nameEn": "Honey cake",
+  "aliases": [
+   "medovik",
+   "layered honey cake"
+  ],
+  "aliasesUa": [
+   "медовик",
+   "медовий торт"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "napoleon-cake",
+  "source": "recipe",
+  "name": "Торт Наполеон",
+  "nameEn": "Napoleon cake",
+  "aliases": [
+   "mille-feuille",
+   "puff pastry cake"
+  ],
+  "aliasesUa": [
+   "наполеон"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "kyiv-cake",
+  "source": "label",
+  "name": "Київський торт",
+  "nameEn": "Kyiv cake",
+  "aliases": [
+   "kiev cake",
+   "meringue cake"
+  ],
+  "aliasesUa": [
+   "київський торт"
+  ],
+  "hint": "Roshen label"
+ },
+ {
+  "id": "apple-pie",
+  "source": "recipe",
+  "name": "Шарлотка (пиріг з яблуками)",
+  "nameEn": "Apple pie",
+  "aliases": [
+   "apple cake",
+   "charlotte"
+  ],
+  "aliasesUa": [
+   "шарлотка",
+   "яблучний пиріг"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "paska",
+  "source": "recipe",
+  "name": "Паска",
+  "nameEn": "Easter bread",
+  "aliases": [
+   "paska",
+   "kulich"
+  ],
+  "aliasesUa": [
+   "паска великодня"
+  ],
+  "hint": ""
+ },
+ {
+  "id": "sugar",
+  "source": "usda",
+  "name": "Цукор",
+  "nameEn": "Sugar",
+  "aliases": [
+   "white sugar"
+  ],
+  "aliasesUa": [
+   "цукор"
+  ],
+  "hint": "Sugars, granulated"
+ },
+ {
+  "id": "honey",
+  "source": "usda",
+  "name": "Мед",
+  "nameEn": "Honey",
+  "aliases": [],
+  "aliasesUa": [
+   "мед"
+  ],
+  "hint": "Honey"
+ },
+ {
+  "id": "jam",
+  "source": "label",
+  "name": "Варення",
+  "nameEn": "Jam",
+  "aliases": [
+   "preserves",
+   "jelly"
+  ],
+  "aliasesUa": [
+   "варення",
+   "джем",
+   "повидло"
+  ],
+  "hint": "Ukrainian label / home preserves"
+ },
+ {
+  "id": "halva",
+  "source": "label",
+  "name": "Халва соняшникова",
+  "nameEn": "Halva",
+  "aliases": [
+   "sunflower halva"
+  ],
+  "aliasesUa": [
+   "халва"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "milk-chocolate",
+  "source": "usda",
+  "name": "Шоколад молочний",
+  "nameEn": "Milk chocolate",
+  "aliases": [
+   "chocolate"
+  ],
+  "aliasesUa": [
+   "шоколад"
+  ],
+  "hint": "Candies, milk chocolate"
+ },
+ {
+  "id": "dark-chocolate-70",
+  "source": "usda",
+  "name": "Шоколад чорний 70%",
+  "nameEn": "Dark chocolate",
+  "aliases": [
+   "bitter chocolate"
+  ],
+  "aliasesUa": [
+   "чорний шоколад",
+   "гіркий шоколад"
+  ],
+  "hint": "Chocolate, dark, 70-85% cacao solids"
+ },
+ {
+  "id": "chocolate-candies",
+  "source": "label",
+  "name": "Цукерки шоколадні",
+  "nameEn": "Chocolate candies",
+  "aliases": [
+   "candy",
+   "bonbons",
+   "chocolates"
+  ],
+  "aliasesUa": [
+   "цукерки"
+  ],
+  "pcGrams": 12,
+  "hint": "Ukrainian label (Roshen)"
+ },
+ {
+  "id": "condensed-milk",
+  "source": "label",
+  "name": "Згущене молоко",
+  "nameEn": "Condensed milk",
+  "aliases": [
+   "sweetened condensed milk"
+  ],
+  "aliasesUa": [
+   "згущенка"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "ice-cream",
+  "source": "label",
+  "name": "Морозиво пломбір",
+  "nameEn": "Ice cream",
+  "aliases": [
+   "vanilla ice cream"
+  ],
+  "aliasesUa": [
+   "пломбір",
+   "морозиво"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "cabbage-raw",
+  "source": "usda",
+  "name": "Капуста білокачанна",
+  "nameEn": "Cabbage",
+  "aliases": [
+   "white cabbage",
+   "green cabbage",
+   "brussels sprouts",
+   "savoy cabbage"
+  ],
+  "aliasesUa": [
+   "капуста"
+  ],
+  "hint": "Cabbage, raw"
+ },
+ {
+  "id": "sauerkraut",
+  "source": "usda",
+  "name": "Капуста квашена",
+  "nameEn": "Sauerkraut",
+  "aliases": [
+   "pickled cabbage"
+  ],
+  "aliasesUa": [
+   "квашена капуста"
+  ],
+  "hint": "Sauerkraut, canned, solids and liquids"
+ },
+ {
+  "id": "beet-boiled",
+  "source": "usda",
+  "name": "Буряк варений",
+  "nameEn": "Beets",
+  "aliases": [
+   "beetroot",
+   "boiled beets"
+  ],
+  "aliasesUa": [
+   "буряк",
+   "бурячок"
+  ],
+  "hint": "Beets, cooked, boiled, drained"
+ },
+ {
+  "id": "carrots-raw",
+  "source": "usda",
+  "name": "Морква",
+  "nameEn": "Carrot",
+  "aliases": [
+   "carrots"
+  ],
+  "aliasesUa": [
+   "морква"
+  ],
+  "hint": "Carrots, raw"
+ },
+ {
+  "id": "onion",
+  "source": "usda",
+  "name": "Цибуля",
+  "nameEn": "Onion",
+  "aliases": [],
+  "aliasesUa": [
+   "цибуля"
+  ],
+  "hint": "Onions, raw"
+ },
+ {
+  "id": "cucumber",
+  "source": "usda",
+  "name": "Огірок свіжий",
+  "nameEn": "Cucumber",
+  "aliases": [
+   "fresh cucumber"
+  ],
+  "aliasesUa": [
+   "огірок",
+   "огірочки"
+  ],
+  "hint": "Cucumber, with peel, raw"
+ },
+ {
+  "id": "pickled-cucumber",
+  "source": "usda",
+  "name": "Огірок солоний / маринований",
+  "nameEn": "Pickles",
+  "aliases": [
+   "pickled cucumber",
+   "dill pickle",
+   "gherkins"
+  ],
+  "aliasesUa": [
+   "солоні огірки",
+   "мариновані огірки"
+  ],
+  "hint": "Pickles, cucumber, dill or kosher dill"
+ },
+ {
+  "id": "tomato",
+  "source": "usda",
+  "name": "Помідор",
+  "nameEn": "Tomato",
+  "aliases": [
+   "tomatoes",
+   "cherry tomatoes"
+  ],
+  "aliasesUa": [
+   "помідори",
+   "томат"
+  ],
+  "hint": "Tomatoes, red, ripe, raw"
+ },
+ {
+  "id": "bell-pepper",
+  "source": "usda",
+  "name": "Перець солодкий",
+  "nameEn": "Bell pepper",
+  "aliases": [
+   "sweet pepper",
+   "red pepper"
+  ],
+  "aliasesUa": [
+   "болгарський перець"
+  ],
+  "hint": "Peppers, sweet, red, raw"
+ },
+ {
+  "id": "zucchini",
+  "source": "usda",
+  "name": "Кабачок",
+  "nameEn": "Zucchini",
+  "aliases": [
+   "courgette",
+   "squash"
+  ],
+  "aliasesUa": [
+   "кабачки"
+  ],
+  "hint": "Squash, summer, zucchini, raw"
+ },
+ {
+  "id": "eggplant",
+  "source": "usda",
+  "name": "Баклажан",
+  "nameEn": "Eggplant",
+  "aliases": [
+   "aubergine"
+  ],
+  "aliasesUa": [
+   "синенькі"
+  ],
+  "hint": "Eggplant, raw"
+ },
+ {
+  "id": "mushrooms-raw",
+  "source": "usda",
+  "name": "Печериці",
+  "nameEn": "Mushrooms",
+  "aliases": [
+   "champignons"
+  ],
+  "aliasesUa": [
+   "гриби"
+  ],
+  "hint": "Mushrooms, white, raw"
+ },
+ {
+  "id": "mixed-greens",
+  "source": "usda",
+  "name": "Листя салату, зелень",
+  "nameEn": "Lettuce",
+  "aliases": [
+   "salad greens",
+   "leafy greens",
+   "mixed greens",
+   "spinach",
+   "baby spinach",
+   "kale",
+   "arugula"
+  ],
+  "aliasesUa": [
+   "салат",
+   "зелень",
+   "кріп",
+   "петрушка"
+  ],
+  "hint": "Lettuce, green leaf, raw"
+ },
+ {
+  "id": "radish",
+  "source": "usda",
+  "name": "Редиска",
+  "nameEn": "Radishes",
+  "aliases": [
+   "radish"
+  ],
+  "aliasesUa": [
+   "редиска"
+  ],
+  "hint": "Radishes, raw"
+ },
+ {
+  "id": "green-peas",
+  "source": "usda",
+  "name": "Горошок консервований",
+  "nameEn": "Green peas",
+  "aliases": [
+   "peas"
+  ],
+  "aliasesUa": [
+   "горошок"
+  ],
+  "hint": "Peas, green, canned, drained"
+ },
+ {
+  "id": "corn-canned",
+  "source": "usda",
+  "name": "Кукурудза консервована",
+  "nameEn": "Sweet corn",
+  "aliases": [
+   "corn"
+  ],
+  "aliasesUa": [
+   "кукурудза"
+  ],
+  "hint": "Corn, sweet, yellow, canned, drained"
+ },
+ {
+  "id": "kidney-beans-cooked",
+  "source": "usda",
+  "name": "Квасоля варена",
+  "nameEn": "Beans",
+  "aliases": [
+   "kidney beans",
+   "white beans"
+  ],
+  "aliasesUa": [
+   "квасоля"
+  ],
+  "hint": "Beans, kidney, cooked, boiled"
+ },
+ {
+  "id": "green-beans",
+  "source": "usda",
+  "name": "Квасоля стручкова",
+  "nameEn": "Green beans",
+  "aliases": [
+   "string beans"
+  ],
+  "aliasesUa": [
+   "стручкова квасоля"
+  ],
+  "hint": "Beans, snap, green, cooked, boiled"
+ },
+ {
+  "id": "pumpkin",
+  "source": "usda",
+  "name": "Гарбуз",
+  "nameEn": "Pumpkin",
+  "aliases": [
+   "squash"
+  ],
+  "aliasesUa": [
+   "гарбуз"
+  ],
+  "hint": "Pumpkin, raw"
+ },
+ {
+  "id": "cauliflower",
+  "source": "usda",
+  "name": "Цвітна капуста",
+  "nameEn": "Cauliflower",
+  "aliases": [],
+  "aliasesUa": [
+   "цвітна капуста"
+  ],
+  "hint": "Cauliflower, cooked, boiled"
+ },
+ {
+  "id": "broccoli-cooked",
+  "source": "usda",
+  "name": "Броколі",
+  "nameEn": "Broccoli",
+  "aliases": [],
+  "aliasesUa": [
+   "броколі"
+  ],
+  "hint": "Broccoli, cooked, boiled"
+ },
+ {
+  "id": "apple",
+  "source": "usda",
+  "name": "Яблуко",
+  "nameEn": "Apple",
+  "aliases": [
+   "apples",
+   "green apple",
+   "red apple"
+  ],
+  "aliasesUa": [
+   "яблука"
+  ],
+  "pcGrams": 170,
+  "hint": "Apples, raw, with skin"
+ },
+ {
+  "id": "pear",
+  "source": "usda",
+  "name": "Груша",
+  "nameEn": "Pear",
+  "aliases": [
+   "pears"
+  ],
+  "aliasesUa": [
+   "груші"
+  ],
+  "pcGrams": 170,
+  "hint": "Pears, raw"
+ },
+ {
+  "id": "plum",
+  "source": "usda",
+  "name": "Слива",
+  "nameEn": "Plum",
+  "aliases": [
+   "plums"
+  ],
+  "aliasesUa": [
+   "сливи"
+  ],
+  "pcGrams": 30,
+  "hint": "Plums, raw"
+ },
+ {
+  "id": "apricot",
+  "source": "usda",
+  "name": "Абрикос",
+  "nameEn": "Apricot",
+  "aliases": [
+   "apricots"
+  ],
+  "aliasesUa": [
+   "абрикоси"
+  ],
+  "pcGrams": 35,
+  "hint": "Apricots, raw"
+ },
+ {
+  "id": "peach",
+  "source": "usda",
+  "name": "Персик",
+  "nameEn": "Peach",
+  "aliases": [
+   "peaches",
+   "nectarine"
+  ],
+  "aliasesUa": [
+   "персики",
+   "нектарин"
+  ],
+  "pcGrams": 150,
+  "hint": "Peaches, raw"
+ },
+ {
+  "id": "cherries-sour",
+  "source": "usda",
+  "name": "Вишні",
+  "nameEn": "Cherries",
+  "aliases": [
+   "sour cherries"
+  ],
+  "aliasesUa": [
+   "вишня"
+  ],
+  "hint": "Cherries, sour, red, raw"
+ },
+ {
+  "id": "sweet-cherries",
+  "source": "usda",
+  "name": "Черешні",
+  "nameEn": "Sweet cherries",
+  "aliases": [],
+  "aliasesUa": [
+   "черешня"
+  ],
+  "hint": "Cherries, sweet, raw"
+ },
+ {
+  "id": "strawberries",
+  "source": "usda",
+  "name": "Полуниці",
+  "nameEn": "Strawberries",
+  "aliases": [
+   "strawberry"
+  ],
+  "aliasesUa": [
+   "полуниця",
+   "суниці"
+  ],
+  "hint": "Strawberries, raw"
+ },
+ {
+  "id": "raspberries",
+  "source": "usda",
+  "name": "Малина",
+  "nameEn": "Raspberries",
+  "aliases": [
+   "raspberry"
+  ],
+  "aliasesUa": [
+   "малина"
+  ],
+  "hint": "Raspberries, raw"
+ },
+ {
+  "id": "blueberries",
+  "source": "usda",
+  "name": "Чорниці / лохина",
+  "nameEn": "Blueberries",
+  "aliases": [
+   "bilberries"
+  ],
+  "aliasesUa": [
+   "чорниця",
+   "лохина"
+  ],
+  "hint": "Blueberries, raw"
+ },
+ {
+  "id": "currants",
+  "source": "usda",
+  "name": "Смородина",
+  "nameEn": "Currants",
+  "aliases": [
+   "black currants",
+   "red currants"
+  ],
+  "aliasesUa": [
+   "смородина"
+  ],
+  "hint": "Currants, european black, raw"
+ },
+ {
+  "id": "berries-mix",
+  "source": "usda",
+  "name": "Ягоди (мікс)",
+  "nameEn": "Berries",
+  "aliases": [
+   "mixed berries",
+   "blackberries"
+  ],
+  "aliasesUa": [
+   "ягоди"
+  ],
+  "hint": "average of strawberries/raspberries/blueberries"
+ },
+ {
+  "id": "grapes",
+  "source": "usda",
+  "name": "Виноград",
+  "nameEn": "Grapes",
+  "aliases": [],
+  "aliasesUa": [
+   "виноград"
+  ],
+  "hint": "Grapes, red or green, raw"
+ },
+ {
+  "id": "watermelon",
+  "source": "usda",
+  "name": "Кавун",
+  "nameEn": "Watermelon",
+  "aliases": [],
+  "aliasesUa": [
+   "кавун"
+  ],
+  "hint": "Watermelon, raw"
+ },
+ {
+  "id": "melon",
+  "source": "usda",
+  "name": "Диня",
+  "nameEn": "Melon",
+  "aliases": [
+   "cantaloupe",
+   "honeydew"
+  ],
+  "aliasesUa": [
+   "диня"
+  ],
+  "hint": "Melons, cantaloupe, raw"
+ },
+ {
+  "id": "banana",
+  "source": "usda",
+  "name": "Банан",
+  "nameEn": "Banana",
+  "aliases": [
+   "bananas"
+  ],
+  "aliasesUa": [
+   "банани"
+  ],
+  "pcGrams": 120,
+  "hint": "Bananas, raw"
+ },
+ {
+  "id": "orange",
+  "source": "usda",
+  "name": "Апельсин",
+  "nameEn": "Orange",
+  "aliases": [
+   "oranges"
+  ],
+  "aliasesUa": [
+   "апельсини"
+  ],
+  "pcGrams": 160,
+  "hint": "Oranges, raw, all commercial varieties"
+ },
+ {
+  "id": "mandarin",
+  "source": "usda",
+  "name": "Мандарин",
+  "nameEn": "Tangerine",
+  "aliases": [
+   "mandarin",
+   "clementine"
+  ],
+  "aliasesUa": [
+   "мандарини"
+  ],
+  "pcGrams": 80,
+  "hint": "Tangerines (mandarin oranges), raw"
+ },
+ {
+  "id": "lemon",
+  "source": "usda",
+  "name": "Лимон",
+  "nameEn": "Lemon",
+  "aliases": [],
+  "aliasesUa": [
+   "лимон"
+  ],
+  "hint": "Lemons, raw, without peel"
+ },
+ {
+  "id": "kiwi",
+  "source": "usda",
+  "name": "Ківі",
+  "nameEn": "Kiwi",
+  "aliases": [
+   "kiwifruit"
+  ],
+  "aliasesUa": [
+   "ківі"
+  ],
+  "pcGrams": 75,
+  "hint": "Kiwifruit, green, raw"
+ },
+ {
+  "id": "persimmon",
+  "source": "usda",
+  "name": "Хурма",
+  "nameEn": "Persimmon",
+  "aliases": [],
+  "aliasesUa": [
+   "хурма"
+  ],
+  "pcGrams": 170,
+  "hint": "Persimmons, japanese, raw"
+ },
+ {
+  "id": "raisins",
+  "source": "usda",
+  "name": "Родзинки",
+  "nameEn": "Raisins",
+  "aliases": [],
+  "aliasesUa": [
+   "ізюм"
+  ],
+  "hint": "Raisins, seedless"
+ },
+ {
+  "id": "prunes",
+  "source": "usda",
+  "name": "Чорнослив",
+  "nameEn": "Prunes",
+  "aliases": [
+   "dried plums"
+  ],
+  "aliasesUa": [
+   "чорнослив"
+  ],
+  "hint": "Plums, dried (prunes), uncooked"
+ },
+ {
+  "id": "dried-apricots",
+  "source": "usda",
+  "name": "Курага",
+  "nameEn": "Dried apricots",
+  "aliases": [],
+  "aliasesUa": [
+   "курага"
+  ],
+  "hint": "Apricots, dried, sulfured, uncooked"
+ },
+ {
+  "id": "walnuts",
+  "source": "usda",
+  "name": "Волоські горіхи",
+  "nameEn": "Walnuts",
+  "aliases": [
+   "nuts"
+  ],
+  "aliasesUa": [
+   "горіхи"
+  ],
+  "hint": "Nuts, walnuts, english"
+ },
+ {
+  "id": "hazelnuts",
+  "source": "usda",
+  "name": "Фундук",
+  "nameEn": "Hazelnuts",
+  "aliases": [],
+  "aliasesUa": [
+   "лісові горіхи"
+  ],
+  "hint": "Nuts, hazelnuts or filberts"
+ },
+ {
+  "id": "almonds",
+  "source": "usda",
+  "name": "Мигдаль",
+  "nameEn": "Almonds",
+  "aliases": [],
+  "aliasesUa": [
+   "мигдаль"
+  ],
+  "hint": "Nuts, almonds"
+ },
+ {
+  "id": "peanuts",
+  "source": "usda",
+  "name": "Арахіс",
+  "nameEn": "Peanuts",
+  "aliases": [],
+  "aliasesUa": [
+   "арахіс"
+  ],
+  "hint": "Peanuts, all types, dry-roasted"
+ },
+ {
+  "id": "sunflower-seeds",
+  "source": "usda",
+  "name": "Насіння соняшника",
+  "nameEn": "Sunflower seeds",
+  "aliases": [
+   "seeds"
+  ],
+  "aliasesUa": [
+   "насіння",
+   "соняшникове насіння"
+  ],
+  "hint": "Seeds, sunflower seed kernels, dry roasted"
+ },
+ {
+  "id": "pumpkin-seeds",
+  "source": "usda",
+  "name": "Гарбузове насіння",
+  "nameEn": "Pumpkin seeds",
+  "aliases": [],
+  "aliasesUa": [
+   "гарбузове насіння"
+  ],
+  "hint": "Seeds, pumpkin and squash seed kernels, roasted"
+ },
+ {
+  "id": "sunflower-oil",
+  "source": "usda",
+  "name": "Олія соняшникова",
+  "nameEn": "Sunflower oil",
+  "aliases": [
+   "oil"
+  ],
+  "aliasesUa": [
+   "олія"
+  ],
+  "hint": "Oil, sunflower"
+ },
+ {
+  "id": "olive-oil",
+  "source": "usda",
+  "name": "Олія оливкова",
+  "nameEn": "Olive oil",
+  "aliases": [],
+  "aliasesUa": [
+   "оливкова олія"
+  ],
+  "hint": "Oil, olive, salad or cooking"
+ },
+ {
+  "id": "mayonnaise",
+  "source": "label",
+  "name": "Майонез 67%",
+  "nameEn": "Mayonnaise",
+  "aliases": [
+   "mayo"
+  ],
+  "aliasesUa": [
+   "майонез"
+  ],
+  "hint": "Ukrainian label, Provansal 67%"
+ },
+ {
+  "id": "ketchup",
+  "source": "label",
+  "name": "Кетчуп",
+  "nameEn": "Ketchup",
+  "aliases": [
+   "tomato sauce"
+  ],
+  "aliasesUa": [
+   "кетчуп",
+   "томатний соус"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "mustard",
+  "source": "label",
+  "name": "Гірчиця",
+  "nameEn": "Mustard",
+  "aliases": [],
+  "aliasesUa": [
+   "гірчиця"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "uzvar",
+  "source": "recipe",
+  "name": "Узвар",
+  "nameEn": "Uzvar",
+  "aliases": [
+   "uzvar drink"
+  ],
+  "aliasesUa": [
+   "узвар"
+  ],
+  "hint": "with sugar"
+ },
+ {
+  "id": "kompot",
+  "source": "recipe",
+  "name": "Компот",
+  "nameEn": "Kompot",
+  "aliases": [
+   "compote"
+  ],
+  "aliasesUa": [
+   "компот"
+  ],
+  "hint": "with sugar"
+ },
+ {
+  "id": "kvass",
+  "source": "label",
+  "name": "Квас",
+  "nameEn": "Kvass",
+  "aliases": [],
+  "aliasesUa": [
+   "квас хлібний"
+  ],
+  "hint": "Ukrainian label"
+ },
+ {
+  "id": "juice",
+  "source": "usda",
+  "name": "Сік (яблучний, апельсиновий)",
+  "nameEn": "Juice",
+  "aliases": [
+   "apple juice",
+   "orange juice"
+  ],
+  "aliasesUa": [
+   "сік"
+  ],
+  "hint": "Apple juice, canned or bottled, unsweetened"
+ },
+ {
+  "id": "black-coffee",
+  "source": "usda",
+  "name": "Кава без цукру",
+  "nameEn": "Coffee",
+  "aliases": [
+   "black coffee"
+  ],
+  "aliasesUa": [
+   "кава"
+  ],
+  "hint": "Beverages, coffee, brewed"
+ },
+ {
+  "id": "green-tea",
+  "source": "usda",
+  "name": "Чай без цукру",
+  "nameEn": "Tea",
+  "aliases": [
+   "green tea",
+   "black tea"
+  ],
+  "aliasesUa": [
+   "чай"
+  ],
+  "hint": "Beverages, tea, brewed"
+ }
+]

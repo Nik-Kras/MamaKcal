@@ -37,6 +37,24 @@ export function learnFromMeal(learned: Record<string, Correction>, items: Item[]
   return next;
 }
 
+/**
+ * Point her corrections at the current food list: a food whose id changed follows it
+ * (`renamed`), one that no longer exists is forgotten.
+ */
+export function migrateLearned(
+  learned: Record<string, Correction>,
+  renamed: Record<string, string | null>,
+  known: Set<string>,
+): Record<string, Correction> {
+  const out: Record<string, Correction> = {};
+  for (const [key, c] of Object.entries(learned)) {
+    if (!c || typeof c.id !== "string") continue;
+    const id = c.id in renamed ? renamed[c.id] : c.id;
+    if (id && known.has(id)) out[key] = { id, n: c.n };
+  }
+  return out;
+}
+
 /** The corrections strong enough to change matching. */
 export function activeCorrections(learned: Record<string, Correction>): Record<string, string> {
   const out: Record<string, string> = {};

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { FOODS } from "../data/foods";
 import vectors from "./__fixtures__/match-vectors.json";
-import { activeCorrections, learnFromMeal } from "./learn";
+import { activeCorrections, learnFromMeal, migrateLearned } from "./learn";
 import { IGNORE, Matcher, nameKey } from "./match";
 import { parseLines, toItems } from "./recognition";
 
@@ -30,13 +30,22 @@ describe("matcher", () => {
 
   it("suggests similar foods for a swap", () => {
     expect(matcher.similar("Pork chop")).toContain("pork-chop-cooked");
-    expect(matcher.similar("Pork chop")).toContain("pork-sausage");
+    expect(matcher.similar("Pork chop")).toContain("pork-roast");
     expect(matcher.similar("zzz")).toEqual([]);
   });
 
-  it("does not send a plain food word to a dish that only lists it as an alias", () => {
-    expect(matcher.match("Fried potatoes")).toBe("potato-boiled");
+  it("sends a plain food word to the everyday food, and a named dish to the dish", () => {
     expect(matcher.match("Potatoes")).toBe("potato-boiled");
+    // A tie between boiled and fried potatoes goes to the everyday food.
+    expect(matcher.match("Potato cubes")).toBe("potato-boiled");
+    expect(matcher.match("Fried potatoes")).toBe("fried-potatoes");
+  });
+
+  it("does not log garnish, even where the list has the food", () => {
+    for (const n of ["Onion", "Lemon", "Lemon wedge", "Parsley"]) expect(matcher.match(n)).toBe(IGNORE);
+    // A word shared with an alias must not land on an unrelated food.
+    expect(matcher.match("Vegetables")).toBeNull();
+    expect(matcher.match("Fruit")).toBeNull();
   });
 
   it("suggests pork foods before unrelated dishes for pork", () => {
@@ -48,8 +57,8 @@ describe("matcher", () => {
   it("falls back to foods sharing any word for an unknown name", () => {
     const s = matcher.similar("Mixed vegetables");
     expect(s).toContain("mixed-greens");
-    expect(s.length).toBeGreaterThanOrEqual(3);
-    expect(matcher.similar("Fried potatoes")[0]).toBe("potato-boiled");
+    expect(s.length).toBeGreaterThanOrEqual(2);
+    expect(matcher.similar("Potatoes")[0]).toBe("potato-boiled");
   });
 });
 
@@ -66,14 +75,14 @@ describe("parseLines", () => {
 
 describe("toItems", () => {
   it("maps names onto the list, in the food's own unit", () => {
-    const r = toItems("Rice | 150g\nScrambled eggs | 100g\nBorscht | 300", FOODS, matcher, key);
+    const r = toItems("Rice | 150g\nBoiled eggs | 100g\nBorscht | 300", FOODS, matcher, key);
     expect(r.isFood).toBe(true);
     expect(r.items.map((i) => [i.foodId, i.unit, i.amount, i.weighed, i.aiName])).toEqual([
       ["white-rice-cooked", "g", "150", false, "Rice"],
-      ["eggs-whole", "pcs", "2", false, "Scrambled eggs"],
+      ["eggs-whole", "pcs", "2", false, "Boiled eggs"],
       ["borscht", "g", "300", false, "Borscht"],
     ]);
-    expect(r.items[0].name).toBe("Білий рис (варений)");
+    expect(r.items[0].name).toBe("Рис варений");
   });
 
   it("keeps a name it can't place as a line she has to resolve", () => {
@@ -87,7 +96,7 @@ describe("toItems", () => {
     expect(matcher.match("Red onion")).toBe(IGNORE);
     expect(r.items.map((i) => [i.foodId, i.amount])).toEqual([
       ["strawberries", "30"],
-      ["berries-mix", "20"],
+      ["raspberries", "20"],
       ["blueberries", "10"],
     ]);
     const merged = toItems("Rice | 100\nWhite rice | 50", FOODS, matcher, key);
@@ -95,7 +104,7 @@ describe("toItems", () => {
   });
 
   it("rounds grams to 5, clamps them, and reports no food for an empty answer", () => {
-    const r = toItems("Rice | 99999\nBread | 2", FOODS, matcher, key);
+    const r = toItems("Rice | 99999\nCucumber | 2", FOODS, matcher, key);
     expect(r.items.map((i) => i.amount)).toEqual(["2000", "5"]);
     expect(toItems("I can't see any food here.", FOODS, matcher, key)).toEqual({ isFood: false, items: [] });
   });
@@ -122,7 +131,7 @@ describe("review fixes", () => {
   });
 
   it("adds grams before converting merged lines to pieces", () => {
-    const r = toItems("Fried eggs | 10g\nEgg | 10g", FOODS, matcher, key);
+    const r = toItems("Boiled eggs | 10g\nEgg | 10g", FOODS, matcher, key);
     expect(r.items.map((i) => [i.foodId, i.unit, i.amount])).toEqual([["eggs-whole", "pcs", "1"]]);
   });
 
@@ -166,5 +175,18 @@ describe("learning from her corrections", () => {
 
   it("ignores lines she added herself", () => {
     expect(learnFromMeal({}, [{ key: "x", foodId: "apple", name: "", kcal100: 0, unit: "g", amount: "1", weighed: true }])).toEqual({});
+  });
+});
+
+describe("food list changes", () => {
+  it("moves corrections to renamed foods and forgets removed ones", () => {
+    const learned = {
+      "pork chop": { id: "pork-chop-cooked", n: 2 },
+      cheese: { id: "cheddar-cheese", n: 2 },
+      avocado: { id: "avocado", n: 3 },
+      mine: { id: "custom-1", n: 2 },
+    };
+    const out = migrateLearned(learned, { "cheddar-cheese": "hard-cheese", avocado: null }, new Set(["pork-chop-cooked", "hard-cheese", "custom-1"]));
+    expect(out).toEqual({ "pork chop": { id: "pork-chop-cooked", n: 2 }, cheese: { id: "hard-cheese", n: 2 }, mine: { id: "custom-1", n: 2 } });
   });
 });

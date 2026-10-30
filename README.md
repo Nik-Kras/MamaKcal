@@ -34,7 +34,7 @@ src/components/     Sheet, PickSheet (add / fix a food), NormSheet (daily target
 src/store/          store.tsx (state + actions), persistence.ts (SQLite)
 src/lib/            match (model name → food, port of bench/match.py), recognition (parse the model's answer),
                     recognize (calls the on-device model), format, nutrition, search, photo
-src/data/           foods.json (from the MacroTrack spreadsheet: `pnpm foods`), foods.ts (pieces, Ukrainian names)
+src/data/           foods.json (Ukrainian home food, sourced kcal: bench/catalogue, `pnpm foods`), foods.ts
 modules/litert-lm/  Expo native module: Gemma 3n E2B through LiteRT-LM, on the phone's GPU
 bench/              the food-photo benchmark that chose the model and the approach (bench/README.md)
 ```
@@ -45,7 +45,7 @@ bench/              the food-photo benchmark that chose the model and the approa
 pnpm install
 pnpm test          # unit tests, incl. the matcher agreeing with the benchmarked Python one
 pnpm typecheck
-pnpm foods         # regenerate src/data/foods.json after editing the MacroTrack spreadsheet
+pnpm foods         # regenerate src/data/foods.json after editing bench/catalogue (see its README)
 ```
 
 Gradle needs JDK 17 and the SDK path:

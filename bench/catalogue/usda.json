@@ -1,0 +1,867 @@
+{
+ "fried-eggs": {
+  "fdcId": 173423,
+  "description": "Egg, whole, cooked, fried",
+  "kcal100": 196,
+  "dataset": "sr_legacy"
+ },
+ "buckwheat-cooked": {
+  "fdcId": 170686,
+  "description": "Buckwheat groats, roasted, cooked",
+  "kcal100": 92,
+  "dataset": "sr_legacy"
+ },
+ "white-rice-cooked": {
+  "fdcId": 169757,
+  "description": "Rice, white, long-grain, regular, unenriched, cooked without salt",
+  "kcal100": 130,
+  "dataset": "sr_legacy"
+ },
+ "millet-porridge": {
+  "fdcId": 168871,
+  "description": "Millet, cooked",
+  "kcal100": 119,
+  "dataset": "sr_legacy"
+ },
+ "pearl-barley-cooked": {
+  "fdcId": 170285,
+  "description": "Barley, pearled, cooked",
+  "kcal100": 123,
+  "dataset": "sr_legacy"
+ },
+ "oatmeal-water": {
+  "fdcId": 173905,
+  "description": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+  "kcal100": 71,
+  "dataset": "sr_legacy"
+ },
+ "corn-porridge": {
+  "fdcId": 171672,
+  "description": "Cereals, corn grits, yellow, regular and quick, enriched, cooked with water, without salt",
+  "kcal100": 65,
+  "dataset": "sr_legacy",
+  "note": "Yellow grits (Ukrainian corn grits are yellow; white grits 171655 = 71 kcal). US grits are cooked thinner than a thick mamalyga, so a stiff Ukrainian porridge will be denser than this; SR Legacy has no thicker cooked form."
+ },
+ "pasta-cooked": {
+  "fdcId": 168928,
+  "description": "Pasta, cooked, unenriched, without added salt",
+  "kcal100": 158,
+  "dataset": "sr_legacy",
+  "note": "Hint named the enriched entry; Ukrainian pasta is not enriched. Same energy: enriched 169737 is also 158 kcal."
+ },
+ "potato-boiled": {
+  "fdcId": 170440,
+  "description": "Potatoes, boiled, cooked without skin, flesh, without salt",
+  "kcal100": 86,
+  "dataset": "sr_legacy"
+ },
+ "mashed-potatoes": {
+  "fdcId": 168555,
+  "description": "Potatoes, mashed, home-prepared, whole milk and butter added",
+  "kcal100": 113,
+  "dataset": "sr_legacy"
+ },
+ "baked-potatoes": {
+  "fdcId": 170093,
+  "description": "Potatoes, baked, flesh and skin, without salt",
+  "kcal100": 93,
+  "dataset": "sr_legacy"
+ },
+ "chicken-breast-cooked": {
+  "fdcId": 171477,
+  "description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+  "kcal100": 165,
+  "dataset": "sr_legacy"
+ },
+ "chicken-leg-cooked": {
+  "fdcId": 173617,
+  "description": "Chicken, broilers or fryers, leg, meat and skin, cooked, roasted",
+  "kcal100": 184,
+  "dataset": "sr_legacy",
+  "note": "USDA 'leg' = thigh + drumstick together. Thigh alone 173625 = 232 kcal, drumstick alone 173612 = 191 kcal."
+ },
+ "roast-chicken": {
+  "fdcId": 171450,
+  "description": "Chicken, broilers or fryers, meat and skin, cooked, roasted",
+  "kcal100": 239,
+  "dataset": "sr_legacy"
+ },
+ "turkey-breast-cooked": {
+  "fdcId": 174516,
+  "description": "Turkey, retail parts, breast, meat only, cooked, roasted",
+  "kcal100": 136,
+  "dataset": "sr_legacy",
+  "note": "Retail breast fillet without added solution (how it is bought in Ukraine). Breast from a whole bird, roasted (171496) = 147 kcal."
+ },
+ "pork-roast": {
+  "fdcId": 167821,
+  "description": "Pork, fresh, loin, whole, separable lean and fat, cooked, roasted",
+  "kcal100": 248,
+  "dataset": "sr_legacy"
+ },
+ "pork-chop-cooked": {
+  "fdcId": 168292,
+  "description": "Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, pan-fried",
+  "kcal100": 238,
+  "dataset": "sr_legacy"
+ },
+ "beef-cooked": {
+  "fdcId": 170626,
+  "description": "Beef, round, bottom round, steak, separable lean and fat, trimmed to 0\" fat, all grades, cooked, braised",
+  "kcal100": 223,
+  "dataset": "sr_legacy",
+  "note": "Boiled/stewed beef as served in Ukraine is mostly lean round or shoulder; braised chuck pot roast (168667) is 302 kcal, lean-only stew beef 191. Bottom round lean and fat (223) sits between them."
+ },
+ "beef-liver-fried": {
+  "fdcId": 168627,
+  "description": "Beef, variety meats and by-products, liver, cooked, pan-fried",
+  "kcal100": 175,
+  "dataset": "sr_legacy"
+ },
+ "salo": {
+  "fdcId": 167811,
+  "description": "Pork, fresh, backfat, raw",
+  "kcal100": 812,
+  "dataset": "sr_legacy",
+  "note": "Fresh backfat. Salted salo carries a few % salt, so its energy is slightly lower (a few %). SR 'salt pork' (168287, 748) is belly-type, not backfat."
+ },
+ "bacon-cooked": {
+  "fdcId": 168322,
+  "description": "Pork, cured, bacon, pre-sliced, cooked, pan-fried",
+  "kcal100": 468,
+  "dataset": "sr_legacy",
+  "note": "SR Legacy's only pan-fried bacon entry (the hint's description without 'pre-sliced' does not exist)."
+ },
+ "kovbasa": {
+  "fdcId": 173878,
+  "description": "Kielbasa, fully cooked, pan-fried",
+  "kcal100": 333,
+  "dataset": "sr_legacy",
+  "note": "Fried form chosen because the row is 'домашня (смажена)'. Hint's 'Polish sausage, pork' (174577, as sold) = 326 kcal, within 2 %."
+ },
+ "hake-cooked": {
+  "fdcId": 173726,
+  "description": "Fish, pollock, Alaska, cooked",
+  "kcal100": 86.6164,
+  "dataset": "sr_legacy",
+  "note": "Pollock stands for hake. This entry is analytical (3 samples, no additives) and pairs with ing-pollock-raw (173725). The hint's 'cooked, dry heat (may contain additives to retain moisture)' (173681, 111 kcal) is a recipe-approximated value (derivation RA) from additive-treated fish. True hake is slightly fattier: SR 'Fish, whiting, mixed species, cooked, dry heat' (175161, silver hake) = 116 kcal."
+ },
+ "salmon-cooked": {
+  "fdcId": 175168,
+  "description": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+  "kcal100": 206,
+  "dataset": "sr_legacy"
+ },
+ "mackerel-smoked": {
+  "fdcId": 175120,
+  "description": "Fish, mackerel, Atlantic, cooked, dry heat",
+  "kcal100": 262,
+  "dataset": "sr_legacy",
+  "note": "SR Legacy has no smoked mackerel; cooked Atlantic mackerel used as the hint says. Hot-smoked is close to this; cold-smoked is wetter and lower."
+ },
+ "tuna-canned": {
+  "fdcId": 173709,
+  "description": "Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)",
+  "kcal100": 86,
+  "dataset": "sr_legacy",
+  "note": "Ukrainian canned tuna contains salt, so the regular entry. The 'without salt' entry (171986, 116 kcal) is an older, separate analysis, not just salt-free."
+ },
+ "shrimp-cooked": {
+  "fdcId": 175180,
+  "description": "Crustaceans, shrimp, cooked",
+  "kcal100": 99,
+  "dataset": "sr_legacy"
+ },
+ "eggs-whole": {
+  "fdcId": 173424,
+  "description": "Egg, whole, cooked, hard-boiled",
+  "kcal100": 155,
+  "dataset": "sr_legacy"
+ },
+ "whole-milk": {
+  "fdcId": 172217,
+  "description": "Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",
+  "kcal100": 61,
+  "dataset": "sr_legacy"
+ },
+ "yogurt-natural": {
+  "fdcId": 171284,
+  "description": "Yogurt, plain, whole milk",
+  "kcal100": 61,
+  "dataset": "sr_legacy"
+ },
+ "hard-cheese": {
+  "fdcId": 171241,
+  "description": "Cheese, gouda",
+  "kcal100": 356,
+  "dataset": "sr_legacy"
+ },
+ "white-bread": {
+  "fdcId": 174924,
+  "description": "Bread, white, commercially prepared (includes soft bread crumbs)",
+  "kcal100": 266,
+  "dataset": "sr_legacy"
+ },
+ "lavash": {
+  "fdcId": 172816,
+  "description": "Bread, pita, white, unenriched",
+  "kcal100": 275,
+  "dataset": "sr_legacy",
+  "note": "SR Legacy has no lavash; white pita is the closest flatbread. Enriched pita (174915) is also 275 kcal."
+ },
+ "oats-dry": {
+  "fdcId": 173904,
+  "description": "Cereals, oats, regular and quick, not fortified, dry",
+  "kcal100": 379,
+  "dataset": "sr_legacy"
+ },
+ "sugar": {
+  "fdcId": 169655,
+  "description": "Sugars, granulated",
+  "kcal100": 387,
+  "dataset": "sr_legacy"
+ },
+ "honey": {
+  "fdcId": 169640,
+  "description": "Honey",
+  "kcal100": 304,
+  "dataset": "sr_legacy"
+ },
+ "milk-chocolate": {
+  "fdcId": 167587,
+  "description": "Candies, milk chocolate",
+  "kcal100": 535,
+  "dataset": "sr_legacy"
+ },
+ "dark-chocolate-70": {
+  "fdcId": 170273,
+  "description": "Chocolate, dark, 70-85% cacao solids",
+  "kcal100": 598,
+  "dataset": "sr_legacy"
+ },
+ "cabbage-raw": {
+  "fdcId": 169975,
+  "description": "Cabbage, raw",
+  "kcal100": 25,
+  "dataset": "sr_legacy"
+ },
+ "sauerkraut": {
+  "fdcId": 169279,
+  "description": "Sauerkraut, canned, solids and liquids",
+  "kcal100": 19,
+  "dataset": "sr_legacy"
+ },
+ "beet-boiled": {
+  "fdcId": 169146,
+  "description": "Beets, cooked, boiled, drained",
+  "kcal100": 44,
+  "dataset": "sr_legacy"
+ },
+ "carrots-raw": {
+  "fdcId": 170393,
+  "description": "Carrots, raw",
+  "kcal100": 41,
+  "dataset": "sr_legacy"
+ },
+ "onion": {
+  "fdcId": 170000,
+  "description": "Onions, raw",
+  "kcal100": 40,
+  "dataset": "sr_legacy"
+ },
+ "cucumber": {
+  "fdcId": 168409,
+  "description": "Cucumber, with peel, raw",
+  "kcal100": 15,
+  "dataset": "sr_legacy"
+ },
+ "pickled-cucumber": {
+  "fdcId": 168558,
+  "description": "Pickles, cucumber, dill or kosher dill",
+  "kcal100": 12,
+  "dataset": "sr_legacy",
+  "note": "Brine-fermented 'sour' pickles (169379) = 11 kcal; same within 1 kcal."
+ },
+ "tomato": {
+  "fdcId": 170457,
+  "description": "Tomatoes, red, ripe, raw, year round average",
+  "kcal100": 18,
+  "dataset": "sr_legacy"
+ },
+ "bell-pepper": {
+  "fdcId": 170108,
+  "description": "Peppers, sweet, red, raw",
+  "kcal100": 26,
+  "dataset": "sr_legacy"
+ },
+ "zucchini": {
+  "fdcId": 169291,
+  "description": "Squash, summer, zucchini, includes skin, raw",
+  "kcal100": 17,
+  "dataset": "sr_legacy"
+ },
+ "eggplant": {
+  "fdcId": 169228,
+  "description": "Eggplant, raw",
+  "kcal100": 25,
+  "dataset": "sr_legacy"
+ },
+ "mushrooms-raw": {
+  "fdcId": 169251,
+  "description": "Mushrooms, white, raw",
+  "kcal100": 22,
+  "dataset": "sr_legacy"
+ },
+ "mixed-greens": {
+  "fdcId": 169249,
+  "description": "Lettuce, green leaf, raw",
+  "kcal100": 15,
+  "dataset": "sr_legacy",
+  "note": "Row also covers herbs: dill (172233) = 43, parsley (170416) = 36 kcal; lettuce value used."
+ },
+ "radish": {
+  "fdcId": 169276,
+  "description": "Radishes, raw",
+  "kcal100": 16,
+  "dataset": "sr_legacy"
+ },
+ "green-peas": {
+  "fdcId": 170013,
+  "description": "Peas, green (includes baby and lesuer types), canned, drained solids, unprepared",
+  "kcal100": 68,
+  "dataset": "sr_legacy"
+ },
+ "corn-canned": {
+  "fdcId": 169214,
+  "description": "Corn, sweet, yellow, canned, whole kernel, drained solids",
+  "kcal100": 67,
+  "dataset": "sr_legacy"
+ },
+ "kidney-beans-cooked": {
+  "fdcId": 173740,
+  "description": "Beans, kidney, all types, mature seeds, cooked, boiled, without salt",
+  "kcal100": 127,
+  "dataset": "sr_legacy"
+ },
+ "green-beans": {
+  "fdcId": 169141,
+  "description": "Beans, snap, green, cooked, boiled, drained, without salt",
+  "kcal100": 35,
+  "dataset": "sr_legacy"
+ },
+ "pumpkin": {
+  "fdcId": 168448,
+  "description": "Pumpkin, raw",
+  "kcal100": 26,
+  "dataset": "sr_legacy"
+ },
+ "cauliflower": {
+  "fdcId": 170397,
+  "description": "Cauliflower, cooked, boiled, drained, without salt",
+  "kcal100": 23,
+  "dataset": "sr_legacy"
+ },
+ "broccoli-cooked": {
+  "fdcId": 169967,
+  "description": "Broccoli, cooked, boiled, drained, without salt",
+  "kcal100": 35,
+  "dataset": "sr_legacy"
+ },
+ "apple": {
+  "fdcId": 171688,
+  "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+  "kcal100": 52,
+  "dataset": "sr_legacy"
+ },
+ "pear": {
+  "fdcId": 169118,
+  "description": "Pears, raw",
+  "kcal100": 57,
+  "dataset": "sr_legacy"
+ },
+ "plum": {
+  "fdcId": 169949,
+  "description": "Plums, raw",
+  "kcal100": 46,
+  "dataset": "sr_legacy"
+ },
+ "apricot": {
+  "fdcId": 171697,
+  "description": "Apricots, raw",
+  "kcal100": 48,
+  "dataset": "sr_legacy"
+ },
+ "peach": {
+  "fdcId": 169928,
+  "description": "Peaches, yellow, raw",
+  "kcal100": 39,
+  "dataset": "sr_legacy"
+ },
+ "cherries-sour": {
+  "fdcId": 173954,
+  "description": "Cherries, sour, red, raw",
+  "kcal100": 50,
+  "dataset": "sr_legacy"
+ },
+ "sweet-cherries": {
+  "fdcId": 171719,
+  "description": "Cherries, sweet, raw",
+  "kcal100": 63,
+  "dataset": "sr_legacy"
+ },
+ "strawberries": {
+  "fdcId": 167762,
+  "description": "Strawberries, raw",
+  "kcal100": 32,
+  "dataset": "sr_legacy"
+ },
+ "raspberries": {
+  "fdcId": 167755,
+  "description": "Raspberries, raw",
+  "kcal100": 52,
+  "dataset": "sr_legacy"
+ },
+ "blueberries": {
+  "fdcId": 171711,
+  "description": "Blueberries, raw",
+  "kcal100": 57,
+  "dataset": "sr_legacy"
+ },
+ "currants": {
+  "fdcId": 173963,
+  "description": "Currants, european black, raw",
+  "kcal100": 63,
+  "dataset": "sr_legacy",
+  "note": "Red and white currants (173964) = 56 kcal. Ukrainian/Soviet tables list black currant near 44 kcal because they count only available sugars; USDA uses carbohydrate by difference (15.4 g), hence 63."
+ },
+ "berries-mix": {
+  "fdcId": null,
+  "fdcIds": [
+   167762,
+   167755,
+   171711
+  ],
+  "description": "Mean of: Strawberries, raw; Raspberries, raw; Blueberries, raw",
+  "kcal100": 47.0,
+  "dataset": "sr_legacy",
+  "note": "Unweighted mean of three SR Legacy foods: 167762 Strawberries, raw; 167755 Raspberries, raw; 171711 Blueberries, raw. Values: 167762 = 32, 167755 = 52, 171711 = 57 kcal."
+ },
+ "grapes": {
+  "fdcId": 174683,
+  "description": "Grapes, red or green (European type, such as Thompson seedless), raw",
+  "kcal100": 69,
+  "dataset": "sr_legacy"
+ },
+ "watermelon": {
+  "fdcId": 167765,
+  "description": "Watermelon, raw",
+  "kcal100": 30,
+  "dataset": "sr_legacy"
+ },
+ "melon": {
+  "fdcId": 169092,
+  "description": "Melons, cantaloupe, raw",
+  "kcal100": 34,
+  "dataset": "sr_legacy",
+  "note": "Ukrainian melons are mostly honeydew-like; honeydew (169911) = 36 kcal."
+ },
+ "banana": {
+  "fdcId": 173944,
+  "description": "Bananas, raw",
+  "kcal100": 89,
+  "dataset": "sr_legacy"
+ },
+ "orange": {
+  "fdcId": 169097,
+  "description": "Oranges, raw, all commercial varieties",
+  "kcal100": 47,
+  "dataset": "sr_legacy"
+ },
+ "mandarin": {
+  "fdcId": 169105,
+  "description": "Tangerines, (mandarin oranges), raw",
+  "kcal100": 53,
+  "dataset": "sr_legacy"
+ },
+ "lemon": {
+  "fdcId": 167746,
+  "description": "Lemons, raw, without peel",
+  "kcal100": 29,
+  "dataset": "sr_legacy"
+ },
+ "kiwi": {
+  "fdcId": 168153,
+  "description": "Kiwifruit, green, raw",
+  "kcal100": 61,
+  "dataset": "sr_legacy"
+ },
+ "persimmon": {
+  "fdcId": 169941,
+  "description": "Persimmons, japanese, raw",
+  "kcal100": 70,
+  "dataset": "sr_legacy"
+ },
+ "raisins": {
+  "fdcId": 168165,
+  "description": "Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",
+  "kcal100": 299,
+  "dataset": "sr_legacy",
+  "note": "SR Legacy has no generic 'Raisins, seedless'; dark used. Golden (168164) = 301 kcal."
+ },
+ "prunes": {
+  "fdcId": 168162,
+  "description": "Plums, dried (prunes), uncooked",
+  "kcal100": 240,
+  "dataset": "sr_legacy"
+ },
+ "dried-apricots": {
+  "fdcId": 173941,
+  "description": "Apricots, dried, sulfured, uncooked",
+  "kcal100": 241,
+  "dataset": "sr_legacy"
+ },
+ "walnuts": {
+  "fdcId": 170187,
+  "description": "Nuts, walnuts, english",
+  "kcal100": 654,
+  "dataset": "sr_legacy"
+ },
+ "hazelnuts": {
+  "fdcId": 170581,
+  "description": "Nuts, hazelnuts or filberts",
+  "kcal100": 628,
+  "dataset": "sr_legacy"
+ },
+ "almonds": {
+  "fdcId": 170567,
+  "description": "Nuts, almonds",
+  "kcal100": 579,
+  "dataset": "sr_legacy"
+ },
+ "peanuts": {
+  "fdcId": 173806,
+  "description": "Peanuts, all types, dry-roasted, without salt",
+  "kcal100": 587,
+  "dataset": "sr_legacy"
+ },
+ "sunflower-seeds": {
+  "fdcId": 170563,
+  "description": "Seeds, sunflower seed kernels, dry roasted, without salt",
+  "kcal100": 582,
+  "dataset": "sr_legacy"
+ },
+ "pumpkin-seeds": {
+  "fdcId": 170557,
+  "description": "Seeds, pumpkin and squash seed kernels, roasted, without salt",
+  "kcal100": 574,
+  "dataset": "sr_legacy"
+ },
+ "sunflower-oil": {
+  "fdcId": 171025,
+  "description": "Oil, sunflower, linoleic, (approx. 65%)",
+  "kcal100": 884,
+  "dataset": "sr_legacy",
+  "note": "High-linoleic type (Ukrainian sunflower oil); every sunflower oil entry is 884 kcal."
+ },
+ "olive-oil": {
+  "fdcId": 171413,
+  "description": "Oil, olive, salad or cooking",
+  "kcal100": 884,
+  "dataset": "sr_legacy"
+ },
+ "juice": {
+  "fdcId": 173933,
+  "description": "Apple juice, canned or bottled, unsweetened, without added ascorbic acid",
+  "kcal100": 46,
+  "dataset": "sr_legacy"
+ },
+ "black-coffee": {
+  "fdcId": 171890,
+  "description": "Beverages, coffee, brewed, prepared with tap water",
+  "kcal100": 1,
+  "dataset": "sr_legacy"
+ },
+ "green-tea": {
+  "fdcId": 173227,
+  "description": "Beverages, tea, black, brewed, prepared with tap water",
+  "kcal100": 1,
+  "dataset": "sr_legacy",
+  "note": "Row is 'Чай без цукру' (any tea); black tea is the usual one in Ukraine. Green tea (171917) is also 1 kcal."
+ },
+ "ing-potato-raw": {
+  "fdcId": 170026,
+  "description": "Potatoes, flesh and skin, raw",
+  "kcal100": 77,
+  "dataset": "sr_legacy"
+ },
+ "ing-pork-shoulder-raw": {
+  "fdcId": 167843,
+  "description": "Pork, fresh, shoulder, whole, separable lean and fat, raw",
+  "kcal100": 236,
+  "dataset": "sr_legacy"
+ },
+ "ing-pork-loin-raw": {
+  "fdcId": 167818,
+  "description": "Pork, fresh, loin, whole, separable lean and fat, raw",
+  "kcal100": 198,
+  "dataset": "sr_legacy"
+ },
+ "ing-pork-belly-raw": {
+  "fdcId": 167812,
+  "description": "Pork, fresh, belly, raw",
+  "kcal100": 518,
+  "dataset": "sr_legacy"
+ },
+ "ing-pork-ground-raw": {
+  "fdcId": 167902,
+  "description": "Pork, fresh, ground, raw",
+  "kcal100": 263,
+  "dataset": "sr_legacy"
+ },
+ "ing-beef-chuck-raw": {
+  "fdcId": 169491,
+  "description": "Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8\" fat, all grades, raw",
+  "kcal100": 244,
+  "dataset": "sr_legacy",
+  "note": "Lean-and-fat chuck (18 % fat). Fat-trimmed 'chuck for stew' raw (171206) is 128 kcal."
+ },
+ "ing-beef-ground-raw": {
+  "fdcId": 174036,
+  "description": "Beef, ground, 80% lean meat / 20% fat, raw",
+  "kcal100": 254,
+  "dataset": "sr_legacy"
+ },
+ "ing-chicken-whole-raw": {
+  "fdcId": 171447,
+  "description": "Chicken, broilers or fryers, meat and skin, raw",
+  "kcal100": 215,
+  "dataset": "sr_legacy",
+  "note": "Per 100 g meat and skin (bones excluded)."
+ },
+ "ing-chicken-breast-raw": {
+  "fdcId": 171077,
+  "description": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
+  "kcal100": 120,
+  "dataset": "sr_legacy"
+ },
+ "ing-chicken-liver-raw": {
+  "fdcId": 171060,
+  "description": "Chicken, liver, all classes, raw",
+  "kcal100": 119,
+  "dataset": "sr_legacy"
+ },
+ "ing-beef-liver-raw": {
+  "fdcId": 169451,
+  "description": "Beef, variety meats and by-products, liver, raw",
+  "kcal100": 135,
+  "dataset": "sr_legacy"
+ },
+ "ing-pork-hock-raw": {
+  "fdcId": 167859,
+  "description": "Pork, fresh, variety meats and by-products, feet, raw",
+  "kcal100": 212,
+  "dataset": "sr_legacy",
+  "note": "SR Legacy has no fresh hock; pork feet are the classic kholodets cut. Leg shank half, lean and fat, raw (168226) = 193 kcal. Per 100 g edible portion (bones excluded)."
+ },
+ "ing-smoked-pork-ribs": {
+  "fdcId": 168288,
+  "description": "Pork, cured, shoulder, blade roll, separable lean and fat, unheated",
+  "kcal100": 269,
+  "dataset": "sr_legacy",
+  "note": "SR Legacy has no smoked ribs. Blade roll is cured and smoked pork shoulder with a rib-like fat level (22 % fat); fresh spareribs, raw (167853) = 277 kcal. Per 100 g edible portion (bones excluded)."
+ },
+ "ing-pollock-raw": {
+  "fdcId": 173725,
+  "description": "Fish, pollock, Alaska, raw",
+  "kcal100": 76,
+  "dataset": "sr_legacy",
+  "note": "Stands for hake. Analytical, no additives. Hake is slightly fattier: 'Fish, whiting, mixed species, raw' (173713) = 90 kcal."
+ },
+ "ing-carp-raw": {
+  "fdcId": 171952,
+  "description": "Fish, carp, raw",
+  "kcal100": 127,
+  "dataset": "sr_legacy"
+ },
+ "ing-wheat-flour": {
+  "fdcId": 168936,
+  "description": "Wheat flour, white, all-purpose, enriched, unbleached",
+  "kcal100": 364,
+  "dataset": "sr_legacy",
+  "note": "Unbleached, like Ukrainian flour. Bleached (168894) and unenriched (169761) are also 364 kcal."
+ },
+ "ing-semolina-dry": {
+  "fdcId": 168933,
+  "description": "Semolina, unenriched",
+  "kcal100": 360,
+  "dataset": "sr_legacy",
+  "note": "Ukrainian 'манка М' is soft-wheat, closer to farina: 'Cereals, farina, unenriched, dry' (173916) = 369 kcal."
+ },
+ "ing-corn-grits-dry": {
+  "fdcId": 171670,
+  "description": "Cereals, corn grits, yellow, regular and quick, unenriched, dry",
+  "kcal100": 371,
+  "dataset": "sr_legacy"
+ },
+ "ing-millet-dry": {
+  "fdcId": 169702,
+  "description": "Millet, raw",
+  "kcal100": 378,
+  "dataset": "sr_legacy"
+ },
+ "ing-rice-dry": {
+  "fdcId": 169756,
+  "description": "Rice, white, long-grain, regular, raw, unenriched",
+  "kcal100": 365,
+  "dataset": "sr_legacy"
+ },
+ "ing-buckwheat-dry": {
+  "fdcId": 170685,
+  "description": "Buckwheat groats, roasted, dry",
+  "kcal100": 346,
+  "dataset": "sr_legacy"
+ },
+ "ing-pearl-barley-dry": {
+  "fdcId": 170284,
+  "description": "Barley, pearled, raw",
+  "kcal100": 352,
+  "dataset": "sr_legacy"
+ },
+ "ing-wheat-berries-dry": {
+  "fdcId": 168890,
+  "description": "Wheat, hard red winter",
+  "kcal100": 327,
+  "dataset": "sr_legacy",
+  "note": "Hard red winter is Ukraine's main wheat. Other classes range 327-342 kcal (hard white 169719 = 342, durum 169721 = 339)."
+ },
+ "ing-split-peas-dry": {
+  "fdcId": 172428,
+  "description": "Peas, green, split, mature seeds, raw",
+  "kcal100": 364,
+  "dataset": "sr_legacy"
+ },
+ "ing-pasta-dry": {
+  "fdcId": 168927,
+  "description": "Pasta, dry, unenriched",
+  "kcal100": 371,
+  "dataset": "sr_legacy"
+ },
+ "ing-egg-noodles-dry": {
+  "fdcId": 169755,
+  "description": "Noodles, egg, dry, unenriched",
+  "kcal100": 384,
+  "dataset": "sr_legacy"
+ },
+ "ing-beet-raw": {
+  "fdcId": 169145,
+  "description": "Beets, raw",
+  "kcal100": 43,
+  "dataset": "sr_legacy"
+ },
+ "ing-garlic-raw": {
+  "fdcId": 169230,
+  "description": "Garlic, raw",
+  "kcal100": 149,
+  "dataset": "sr_legacy"
+ },
+ "ing-tomato-paste": {
+  "fdcId": 170459,
+  "description": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
+  "kcal100": 82,
+  "dataset": "sr_legacy"
+ },
+ "ing-sorrel-raw": {
+  "fdcId": 170076,
+  "description": "Dock, raw",
+  "kcal100": 22,
+  "dataset": "sr_legacy",
+  "note": "Dock = Rumex species, the genus of garden sorrel; SR Legacy has no separate sorrel."
+ },
+ "ing-egg-raw": {
+  "fdcId": 171287,
+  "description": "Egg, whole, raw, fresh",
+  "kcal100": 143,
+  "dataset": "sr_legacy"
+ },
+ "ing-poppy-seeds": {
+  "fdcId": 171330,
+  "description": "Spices, poppy seed",
+  "kcal100": 525,
+  "dataset": "sr_legacy"
+ },
+ "ing-yeast-dry": {
+  "fdcId": 175043,
+  "description": "Leavening agents, yeast, baker's, active dry",
+  "kcal100": 325,
+  "dataset": "sr_legacy"
+ },
+ "ing-breadcrumbs": {
+  "fdcId": 174928,
+  "description": "Bread, crumbs, dry, grated, plain",
+  "kcal100": 395,
+  "dataset": "sr_legacy"
+ },
+ "ing-dried-apples": {
+  "fdcId": 171691,
+  "description": "Apples, dried, sulfured, uncooked",
+  "kcal100": 243,
+  "dataset": "sr_legacy",
+  "note": "Only uncooked dried-apple entry (sulfuring does not change energy); home-dried apples vary with moisture."
+ },
+ "ing-dried-pears": {
+  "fdcId": 169121,
+  "description": "Pears, dried, sulfured, uncooked",
+  "kcal100": 262,
+  "dataset": "sr_legacy"
+ },
+ "ing-potato-starch": {
+  "fdcId": 169698,
+  "description": "Cornstarch",
+  "kcal100": 381,
+  "dataset": "sr_legacy",
+  "note": "No potato starch in SR Legacy or Foundation Foods (2026-04-30). Cornstarch is the closest pure starch, but it is drier (~8 % water) than potato starch (~16-20 % water), so real potato starch is about 330 kcal, ~13 % lower. 'Potato flour' (168446, 357 kcal) is whole dried potato, not starch."
+ },
+ "ing-gelatin": {
+  "fdcId": 169599,
+  "description": "Gelatins, dry powder, unsweetened",
+  "kcal100": 335,
+  "dataset": "sr_legacy"
+ },
+ "ing-lard": {
+  "fdcId": 171401,
+  "description": "Lard",
+  "kcal100": 902,
+  "dataset": "sr_legacy",
+  "note": "The fat poured off when salo is rendered into shkvarky (entered as a negative amount)."
+ },
+ "ing-egg-white-raw": {
+  "fdcId": 172183,
+  "description": "Egg, white, raw, fresh",
+  "kcal100": 52,
+  "dataset": "sr_legacy"
+ },
+ "ing-powdered-sugar": {
+  "fdcId": 169656,
+  "description": "Sugars, powdered",
+  "kcal100": 389,
+  "dataset": "sr_legacy"
+ },
+ "ing-olives": {
+  "fdcId": 169094,
+  "description": "Olives, ripe, canned (small-extra large)",
+  "kcal100": 116,
+  "dataset": "sr_legacy"
+ },
+ "ing-vinegar": {
+  "fdcId": 172237,
+  "description": "Vinegar, distilled",
+  "kcal100": 18,
+  "dataset": "sr_legacy"
+ },
+ "ing-baking-soda": {
+  "fdcId": 175040,
+  "description": "Leavening agents, baking soda",
+  "kcal100": 0,
+  "dataset": "sr_legacy"
+ }
+}

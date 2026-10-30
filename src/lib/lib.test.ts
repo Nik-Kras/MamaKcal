@@ -93,8 +93,10 @@ describe("search", () => {
   it("finds by Ukrainian name, Ukrainian alias and English name", () => {
     expect(searchFoods(FOODS, "гречк")[0].id).toBe("buckwheat-cooked");
     expect(searchFoods(FOODS, "борщ")[0].id).toBe("borscht");
-    expect(searchFoods(FOODS, "творог").map((f) => f.id)).toContain("tvorog-9");
+    expect(searchFoods(FOODS, "творог").map((f) => f.id)).toContain("tvorog-5");
     expect(searchFoods(FOODS, "olivier")[0].id).toBe("olivier-salad");
-    expect(new Set(searchFoods(FOODS, "вареники").map((f) => f.id).slice(0, 3))).toEqual(new Set(["varenyky-potato", "varenyky-cottage-cheese", "varenyky-cherry"]));
+    expect(new Set(searchFoods(FOODS, "вареники").map((f) => f.id).slice(0, 4))).toEqual(
+      new Set(["varenyky-potato", "varenyky-cabbage", "varenyky-cottage-cheese", "varenyky-cherry"]),
+    );
   });
 });

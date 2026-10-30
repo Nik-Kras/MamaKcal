@@ -1,4185 +1,3368 @@
 [
  {
   "id": "borscht",
-  "kind": "DISH",
-  "name": "Borscht",
-  "name_ua": "Борщ",
+  "name": "Борщ червоний (з м'ясом)",
+  "nameEn": "Borscht",
   "aliases": [
-   "borshch",
-   "borsch",
    "beet soup",
    "red borscht",
-   "Ukrainian beet soup"
+   "borshch",
+   "beetroot soup",
+   "ukrainian borscht"
   ],
-  "aliases_ua": [
-   "борщик",
+  "aliasesUa": [
+   "борщ",
    "червоний борщ",
-   "буряковий суп"
+   "борщик"
   ],
-  "kcal100": 49.0,
-  "protein100": 2.5,
-  "fat100": 1.5,
-  "carbs100": 6.0
+  "kcal100": 46,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged typical home version of: https://klopotenko.com/naysmachnishyy-borshch-simeynyy-retsept-yevhena-klopotenka/ (Клопотенко, «Найсмачніший борщ. Сімейний рецепт»: 300 г свинячих реберець, 3 л води, 2 картоплини, 1 буряк, 1 морква, 1 цибуля, 1/4 капустини, 1 ст. л. томатної пасти, 2 ст. л. олії); https://klopotenko.com/shvydko-ale-tradyczijno-smachno-klasychnyj-borshh-z-tomatno-buryakovoyu-zapravkoyu/ (350–400 г свинини-лопатки, 400 г капусти, 4–5 картоплин, 3 цибулини, 2–3 ст. л. олії, 2,5–3 л води); https://www.unian.ua/recipes/first-courses/borscht/yak-prigotuvati-borshch-tradiciyniy-i-originalni-recepti-10471887.html (УНІАН класичний: 400 г м'яса на кістці, 2 буряки, 3 цибулини, 2 ст. л. томатної пасти, 4–5 ст. л. олії, 300 г капусти, 4 картоплини) and https://www.unian.ua/recipes/first-courses/borscht/nastoyashchiy-slobozhanskiy-borshch-recept-kak-prigotovit-pervoe-blyudo-13384962.html (Слобожанський: 500–700 г м'яса на кістці, ~3 л води, 2 буряки, 4–5 картоплин, 300–400 г капусти, 2–3 ст. л. томатної пасти)."
+  }
+ },
+ {
+  "id": "borscht-lenten",
+  "name": "Борщ пісний",
+  "nameEn": "Lenten borscht",
+  "aliases": [
+   "vegetarian borscht",
+   "vegan borscht",
+   "meatless borscht"
+  ],
+  "aliasesUa": [
+   "пісний борщ",
+   "борщ без м'яса"
+  ],
+  "kcal100": 31,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home version derived from the meat borscht above with the meat removed, cross-checked with https://klopotenko.com/pisnyj-borshh-polissya/ (Клопотенко, «Пісний борщ Полісся»: 2–2,5 л води, 1 буряк, 1 цибуля, 3–4 картоплини, 1/2 моркви, 1/2 перцю, 2 ст. л. томатної пасти, 1 ст. л. олії, 200 г квашеної капусти, 1–2 ст. л. меду), the lenten recipes in https://klopotenko.com/yak-prigotuvati-borshh-5-najsmachnishih-retseptiv/ (2 л води, 2 буряки, 3–4 картоплі) and the school tech card ТК № 2.2 «Борщ з картоплею» (znaimo.gov.ua, 1000 г: картопля 250, буряк 160, морква 30, цибуля 30, томатна паста 30, олія 20, чорнослив 20, цукор 6, вода 700)."
+  }
  },
  {
   "id": "green-borscht",
-  "kind": "DISH",
-  "name": "Green Borscht",
-  "name_ua": "Зелений борщ",
+  "name": "Зелений борщ (щавлевий)",
+  "nameEn": "Green borscht",
   "aliases": [
    "sorrel soup",
-   "shchavel soup",
-   "green borshch",
+   "green soup",
    "spring borscht"
   ],
-  "aliases_ua": [
+  "aliasesUa": [
    "щавлевий борщ",
-   "зелений суп",
-   "щавлевий суп"
+   "зелений суп"
   ],
-  "kcal100": 40.0,
-  "protein100": 3.0,
-  "fat100": 1.5,
-  "carbs100": 4.0
- },
- {
-  "id": "varenyky-potato",
-  "kind": "DISH",
-  "name": "Varenyky (Potato)",
-  "name_ua": "Вареники (з картоплею)",
-  "aliases": [
-   "pierogi",
-   "pyrohy",
-   "potato dumplings",
-   "varenyky z kartoplieiu"
-  ],
-  "aliases_ua": [
-   "вареники з бульбою",
-   "пироги з картоплею",
-   "вареники картопляні"
-  ],
-  "kcal100": 190.0,
-  "protein100": 5.0,
-  "fat100": 4.0,
-  "carbs100": 33.0
- },
- {
-  "id": "varenyky-cottage-cheese",
-  "kind": "DISH",
-  "name": "Varenyky (Cottage Cheese)",
-  "name_ua": "Вареники (з сиром)",
-  "aliases": [
-   "pierogi",
-   "pyrohy",
-   "varenyky z syrom",
-   "cheese dumplings"
-  ],
-  "aliases_ua": [
-   "вареники з творогом",
-   "вареники сирні"
-  ],
-  "kcal100": 200.0,
-  "protein100": 9.0,
-  "fat100": 5.0,
-  "carbs100": 30.0
- },
- {
-  "id": "varenyky-cherry",
-  "kind": "DISH",
-  "name": "Varenyky (Cherry)",
-  "name_ua": "Вареники (з вишнею)",
-  "aliases": [
-   "pierogi",
-   "pyrohy",
-   "varenyky z vyshneiu",
-   "cherry dumplings"
-  ],
-  "aliases_ua": [
-   "вареники з вишнями",
-   "вареники вишневі",
-   "солодкі вареники"
-  ],
-  "kcal100": 180.0,
-  "protein100": 4.0,
-  "fat100": 3.0,
-  "carbs100": 34.0
- },
- {
-  "id": "salo",
-  "kind": "PRODUCT",
-  "name": "Salo",
-  "name_ua": "Сало",
-  "aliases": [
-   "cured pork fat",
-   "pork fatback",
-   "Ukrainian lard",
-   "smoked salo"
-  ],
-  "aliases_ua": [
-   "шпик",
-   "сальце",
-   "смалець",
-   "копчене сало",
-   "солоне сало"
-  ],
-  "kcal100": 797.0,
-  "protein100": 1.4,
-  "fat100": 89.0,
-  "carbs100": 0.0
- },
- {
-  "id": "holubtsi",
-  "kind": "DISH",
-  "name": "Holubtsi",
-  "name_ua": "Голубці",
-  "aliases": [
-   "stuffed cabbage rolls",
-   "golubtsi",
-   "cabbage rolls",
-   "holubci"
-  ],
-  "aliases_ua": [
-   "голубчики",
-   "капустяні рулети",
-   "фаршировані голубці"
-  ],
-  "kcal100": 95.0,
-  "protein100": 6.0,
-  "fat100": 4.0,
-  "carbs100": 9.0
- },
- {
-  "id": "deruny",
-  "kind": "DISH",
-  "name": "Deruny",
-  "name_ua": "Деруни",
-  "aliases": [
-   "potato pancakes",
-   "draniki",
-   "kartoplianyky",
-   "hash browns UA"
-  ],
-  "aliases_ua": [
-   "картопляники",
-   "картопляні млинці",
-   "дерунчики"
-  ],
-  "kcal100": 180.0,
-  "protein100": 3.0,
-  "fat100": 8.0,
-  "carbs100": 24.0
- },
- {
-  "id": "syrnyky",
-  "kind": "DISH",
-  "name": "Syrnyky",
-  "name_ua": "Сирники",
-  "aliases": [
-   "cottage cheese pancakes",
-   "tvorozhniki",
-   "curd fritters",
-   "cheese fritters"
-  ],
-  "aliases_ua": [
-   "сирнички",
-   "творожники",
-   "сирні оладки"
-  ],
-  "kcal100": 200.0,
-  "protein100": 12.0,
-  "fat100": 7.0,
-  "carbs100": 22.0
- },
- {
-  "id": "chicken-kyiv",
-  "kind": "DISH",
-  "name": "Chicken Kyiv",
-  "name_ua": "Котлета по-київськи",
-  "aliases": [
-   "chicken kiev",
-   "kiev cutlet",
-   "kotleta po-kyivsky"
-  ],
-  "aliases_ua": [
-   "курка по-київськи",
-   "київська котлета"
-  ],
-  "kcal100": 250.0,
-  "protein100": 18.0,
-  "fat100": 16.0,
-  "carbs100": 10.0
- },
- {
-  "id": "pampushky",
-  "kind": "DISH",
-  "name": "Pampushky",
-  "name_ua": "Пампушки",
-  "aliases": [
-   "garlic bread rolls",
-   "Ukrainian garlic buns",
-   "garlic pampushky"
-  ],
-  "aliases_ua": [
-   "пампушечки",
-   "часникові пампушки",
-   "булочки з часником"
-  ],
-  "kcal100": 300.0,
-  "protein100": 7.0,
-  "fat100": 8.0,
-  "carbs100": 50.0
- },
- {
-  "id": "kutia",
-  "kind": "DISH",
-  "name": "Kutia",
-  "name_ua": "Кутя",
-  "aliases": [
-   "wheat berry pudding",
-   "kutya",
-   "Christmas wheat",
-   "kolivo"
-  ],
-  "aliases_ua": [
-   "кутя різдвяна",
-   "коливо",
-   "кутя з маком"
-  ],
-  "kcal100": 150.0,
-  "protein100": 4.0,
-  "fat100": 3.0,
-  "carbs100": 27.0
- },
- {
-  "id": "okroshka",
-  "kind": "DISH",
-  "name": "Okroshka",
-  "name_ua": "Окрошка",
-  "aliases": [
-   "cold soup",
-   "kvas soup",
-   "summer cold soup"
-  ],
-  "aliases_ua": [
-   "холодний суп",
-   "квасний суп",
-   "літня окрошка"
-  ],
-  "kcal100": 60.0,
-  "protein100": 3.0,
-  "fat100": 2.5,
-  "carbs100": 5.0
- },
- {
-  "id": "solyanka",
-  "kind": "DISH",
-  "name": "Solyanka",
-  "name_ua": "Солянка",
-  "aliases": [
-   "solianka",
-   "sour soup",
-   "mixed meat soup"
-  ],
-  "aliases_ua": [
-   "солянка м'ясна",
-   "кисла солянка",
-   "суп солянка"
-  ],
-  "kcal100": 70.0,
-  "protein100": 5.0,
-  "fat100": 4.0,
-  "carbs100": 3.0
+  "kcal100": 46,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://klopotenko.com/zelenyj-borshh-klasychnyj-reczept-vid-yevgena-klopotenka/ (Клопотенко, «Зелений борщ. Класичний рецепт»: 300 г свинини, 300 г листя щавлю, 4 картоплі, 20 г кропу, 1 цибуля, 1 морква, 3 л води, 3 варені яйця) and https://tsn.ua/lady/kukhnya/recepty/recept-zelenogo-borschu-zi-schavlem-2563482.html (ТСН «Зелений борщ зі щавлем»: ребра свинячі 500 г, картопля 3 шт., цибуля 1, морква 1, щавель 150 г, яйця 4, вода 2,5 л, олія 2 ст. л.); compared with https://klopotenko.com/iz-shchavlem-i-kropyvoyu-hotuyemo-spravzhniy-zelenyy-borshch/ (on chicken: 2 стегна, 3 л води, 3–4 картоплини, щавель + кропива, 3–4 яйця, 3 ст. л. олії)."
+  }
  },
  {
   "id": "kapusniak",
-  "kind": "DISH",
-  "name": "Kapusniak",
-  "name_ua": "Капусняк",
+  "name": "Капусняк",
+  "nameEn": "Kapusniak",
   "aliases": [
-   "cabbage soup",
    "sauerkraut soup",
-   "kapustniak"
+   "cabbage soup"
   ],
-  "aliases_ua": [
-   "капустяний суп",
-   "суп з кислою капустою"
+  "aliasesUa": [
+   "капусняк з квашеною капустою"
   ],
-  "kcal100": 35.0,
-  "protein100": 2.0,
-  "fat100": 1.0,
-  "carbs100": 5.0
+  "kcal100": 48,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://tsn.ua/food/pershi-stravy/yak-zvariti-smachnyi-kapusnyak-z-kvashenoyu-kapustoyu-2468668.html (ТСН «капусняк з квашеною капустою»: свинина 400 г, квашена капуста 400 г, пшоно 1/2 склянки, картопля 4, морква 1, цибуля 2, часник, олія для смаження); https://klopotenko.com/spravzhnye-ukrayinske-reczept-kapusnyaku-z-pshenyczeyu/ (Клопотенко: 300 г свинини-лопатки, 500 г квашеної капусти, 3–4 картоплини, морква, цибуля, 100 г пшениці, 2 ст. л. олії, 3–3,5 л води); https://klopotenko.com/avtentychnyj-reczept-z-cherkashhyny-kapusnyak-zi-svynyachymy-rebramy-vid-yevgena-klopotenka/ (Черкащина: 500 г ребер, 100 г пшона, 4–5 картоплин, 500 г квашеної капусти, 2,5–3 л води)."
+  }
  },
  {
-  "id": "olivier-salad",
-  "kind": "DISH",
-  "name": "Olivier Salad",
-  "name_ua": "Салат Олів'є",
+  "id": "chicken-noodle-soup",
+  "name": "Курячий суп з локшиною",
+  "nameEn": "Chicken noodle soup",
   "aliases": [
-   "olivie",
-   "Russian salad",
-   "potato salad with mayo",
-   "stolichny"
+   "chicken soup",
+   "chicken broth with noodles"
   ],
-  "aliases_ua": [
-   "олів'є",
-   "столичний салат",
-   "зимовий салат"
+  "aliasesUa": [
+   "курячий бульйон",
+   "суп з локшиною"
   ],
-  "kcal100": 150.0,
-  "protein100": 5.0,
-  "fat100": 10.0,
-  "carbs100": 10.0
+  "kcal100": 51,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://www.unian.net/recipes/first-courses/dishes-meat/sup-s-vermishelyu-recept-kak-gotovit-sup-s-vermishelyu-11296877.html (УНІАН «Суп з вермішеллю і куркою»: вода 2 л, куряче філе 500 г, картопля 250 г, вермішель 100 г, цибуля 120 г, морква 100 г, засмажка на олії); https://novyny.live/recepti/kuriachii-sup-rizhik-vermishel-ne-nabukhaie-navit-nastupnogo-dnia-249446.html (Smachnenke «Рижик»: 2 курячі стегна, картопля 400 г, цибуля, морква, вермішель 70 г, вода 2 л); https://klopotenko.com/legko-ta-smachno-kuryachyj-sup-z-domashnou-lokshynou/ (350 г філе стегна, 2 картоплини, цибуля, морква, 2 ст. л. олії, 2 л води, локшина з 200 г борошна + 2 яйця)."
+  }
  },
  {
-  "id": "shuba",
-  "kind": "DISH",
-  "name": "Shuba",
-  "name_ua": "Шуба",
+  "id": "meatball-soup",
+  "name": "Суп з фрикадельками",
+  "nameEn": "Meatball soup",
   "aliases": [
-   "herring under fur coat",
-   "dressed herring",
-   "seledka pod shuboi"
+   "soup with meatballs"
   ],
-  "aliases_ua": [
-   "оселедець під шубою",
-   "селедка під шубою"
+  "aliasesUa": [
+   "фрикадельки в бульйоні"
   ],
-  "kcal100": 180.0,
-  "protein100": 6.0,
-  "fat100": 12.0,
-  "carbs100": 12.0
+  "kcal100": 55,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://tsn.ua/lady/kukhnya/recepty/sup-iz-frykadelkamy-ta-rysom-prostyy-retsept-universalnoyi-pershoyi-stravy-3096224.html (ТСН «Суп із фрикадельками та рисом»: фарш свинячий 400 г, рис 100 г, яйце 1, картопля 3, цибуля 1, морква 1, часник, олія 2 ст. л., вода 2 л); https://tsn.ua/ru/lady/kukhnya/recepty/sup-s-frikadelkami-ochen-bystryy-recept-1918738.html (ТСН: фарш 0,5 кг, картопля 0,5 кг, цибуля 2, морква 2, вода 3 л, олія); https://tsn.ua/ru/lady/kukhnya/recepty/sup-s-frikadelkami-recept-lyubimogo-blyuda-vzroslyh-i-detey-2745447.html (курячий фарш 300 г, яйце, картопля 3–4, цибуля 2, морква 1); https://klopotenko.com/navarystyj-ta-nasychenyj-smakom-sup-z-frykadelkamy-vid-yevgena-klopotenka/ (300 г курячого фаршу + жовток, 2–3 картоплини, морква, цибуля, 2–2,5 л води)."
+  }
  },
  {
-  "id": "vinaigrette-salad",
-  "kind": "DISH",
-  "name": "Vinaigrette Salad",
-  "name_ua": "Вінегрет",
+  "id": "pea-soup",
+  "name": "Гороховий суп",
+  "nameEn": "Pea soup",
   "aliases": [
-   "vinegret",
-   "beet salad",
-   "Ukrainian vinaigrette"
+   "split pea soup"
   ],
-  "aliases_ua": [
-   "буряковий салат",
-   "овочевий вінегрет"
+  "aliasesUa": [
+   "суп гороховий"
   ],
-  "kcal100": 130.0,
-  "protein100": 2.0,
-  "fat100": 8.0,
-  "carbs100": 13.0
+  "kcal100": 72,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenimi-rebrami-prostiy-recept-2565924.html (ТСН «Гороховий суп із копченими ребрами»: горох сухий 1 склянка, вода 2–2,5 л, свинячі ребра копчені 500 г, картопля 3–4, морква 1, цибуля 1, олія), averaged with https://klopotenko.com/goroxovyj-sup-z-rebercyamu/ (Клопотенко: 350 г свинячих реберець, 300 г сухого гороху, 3 картоплини, морква, цибуля, корінь селери/петрушки, 2 ст. л. олії, 3 л води) and https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenostyami-1950970.html (3 л води, 0,5 кг копчених реберець, 400 г гороху, 300 г бекону — richer variant, not used for the bacon)."
+  }
+ },
+ {
+  "id": "mushroom-soup",
+  "name": "Грибна юшка",
+  "nameEn": "Mushroom soup",
+  "aliases": [
+   "mushroom broth"
+  ],
+  "aliasesUa": [
+   "грибний суп"
+  ],
+  "kcal100": 27,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged home version. Main: https://klopotenko.com/nadzvychajno-smachna-ta-prosta-grybna-yushka-vid-yevgena-klopotenka/ (Грибна юшка з шампіньйонів, Клопотенко: 200 г печериць, 3 картоплини, морква, цибуля, 1 ст. л. олії + 20 г масла, 4-5 ст. л. сметани, 1 ст. л. борошна, 1,5-2 л води). Compared: https://klopotenko.com/gribna-yushka-z-selerou/ (200 г білих грибів, цибуля, 3 картоплі, 1 ст. л. олії, 1 л води); https://vkusvill.ru/media/recipes/sup-iz-sushyenykh-gribov.html (30 г сушених грибів, 2 картоплі, морква, цибуля, 1 ст. л. олії, 2 л води); https://recepty.24tv.ua/recipe/pisna-hrybna-yushka-retsept-pryhotuvannia-pokrokovyi_id625 (100 г сушених білих, 4 картоплі, 2 цибулі, 2 моркви, олія)."
+  }
+ },
+ {
+  "id": "fish-soup",
+  "name": "Юшка рибна",
+  "nameEn": "Fish soup",
+  "aliases": [
+   "ukha"
+  ],
+  "aliasesUa": [
+   "рибний суп",
+   "уха"
+  ],
+  "kcal100": 35,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged home version. Main: https://www.unian.ua/recipes/first-courses/other-soups/samaya-vkusnaya-uha-recept-i-glavnye-sekrety-prigotovleniya-12324570.html (Юшка з карасями: 600 г карася, 400 г картоплі, цибуля, морква, 3 ст. л. олії, 1,5 л води). Compared: https://www.unian.ua/recipes/first-courses/other-soups/yushka-z-chervonoji-ribi-recept-uhi-z-somgi-gorbushi-abo-lososya-11377516.html (2 л води, 350 г риби, 100 г пшона, 2 картоплини, морква, цибуля); https://vkusvill.ru/media/recipes/ukha-iz-shchuki.html (1 кг щуки, 2 картоплини, 200 г моркви, цибуля, 2 л води, без олії); МОЗ/Знаїмо шкільна ТК 2.37 «Рибна юшка» (хек 115 г, картопля 150, цибуля 40, морква 60, олія 10, вода 800 на 1000 г)."
+  }
+ },
+ {
+  "id": "rassolnyk",
+  "name": "Розсольник",
+  "nameEn": "Rassolnik",
+  "aliases": [
+   "pickle soup",
+   "pickled cucumber soup"
+  ],
+  "aliasesUa": [
+   "суп з солоними огірками"
+  ],
+  "kcal100": 49,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: https://klopotenko.com/rozsolnyk-z-perlovkoyu-po-domashnomu-za-retseptom-yevhena-lopotenka/ (Розсольник з перловкою по-домашньому: 300 г свинини, 3 л води, 400 г картоплі, 150 г перловки, цибуля, морква, 3 солоних огірки, 3 ст. л. олії, 100 мл розсолу; 6 порцій), averaged with https://klopotenko.com/rozsolnik-na-rebrah/ (яловичі ребра, ½ склянки перловки, 3 картоплі, 3 огірки, 100-150 мл розсолу, 2 ст. л. олії) and https://vkusvill.ru/media/recipes/rassolnik.html (250 г яловичини, 400 г солоних огірків, ½ склянки перловки, 3 картоплі, морква, цибуля, 3 л води)."
+  }
+ },
+ {
+  "id": "solyanka",
+  "name": "Солянка",
+  "nameEn": "Solyanka",
+  "aliases": [
+   "meat solyanka"
+  ],
+  "aliasesUa": [
+   "солянка м'ясна збірна"
+  ],
+  "kcal100": 74,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged home version of 3 recipes: https://tsn.ua/lady/astrologiya/solyanka-m-yasna-klasichniy-recept-1914919.html (3 л води, 1 кг яловичини на кістці, по 200 г копченої ковбаси, шинки, сосисок, копченої грудинки, мисливських ковбасок, 4-5 солоних огірків, 2 ст. л. томатної пасти, цибуля, морква, олія, оливки, лимон, склянка розсолу); https://www.unian.ua/recipes/first-courses/dishes-meat/zbirna-solyanka-naykrashchi-recepti-z-m-yasom-10929278.html (400 г яловичини, 4 сосиски, 200 г вареної ковбаси, 200 г шинки, 3 огірки, цибуля, 2 ст. л. томатної пасти, оливки); https://vkusvill.ru/media/recipes/solyanka-klassicheskaya.html (3 л води, 400 г яловичих ребер, 220 г копчених ковбас, 400 г огірків, цибуля, 1 ст. л. томатної пасти, 100 г оливок, 2 ст. л. олії)."
+  }
+ },
+ {
+  "id": "okroshka",
+  "name": "Окрошка на кефірі",
+  "nameEn": "Okroshka",
+  "aliases": [
+   "cold kefir soup"
+  ],
+  "aliasesUa": [
+   "окрошка"
+  ],
+  "kcal100": 73,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://vkusvill.ru/media/recipes/okroshka-na-kefire.html (1 л кефіру 2,5 % + 0,5 л газованої води, 300 г вареної ковбаси, 4 яйця, 5 картоплин, 3 огірки, 125 г редиски, зелена цибуля, кріп); https://tsn.ua/ru/lady/kukhnya/recepty/okroshka-na-kefire-s-mineralnoy-vodoy-klassicheskiy-recept-2341105.html (1 л кефіру + 400 мл мінералки, 300 г картоплі, 5 яєць, 250 г вареної ковбаси, 300 г огірків, 200 г редиски, 150 г сметани, гірчиця); https://24tv.ua/smachnonews24/ru/prigotovit-okroshku-kefire-recept-okroshki-kvase_n3074317 (900 г кефіру + 2 л мінералки, 600 г картоплі, 500 г ковбаси, 250 г редиски, 5-6 яєць, огірок, 200 г майонезу)."
+  }
+ },
+ {
+  "id": "kulish",
+  "name": "Куліш",
+  "nameEn": "Kulish",
+  "aliases": [
+   "millet soup with salo"
+  ],
+  "aliasesUa": [
+   "куліш з пшоном"
+  ],
+  "kcal100": 84,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: https://24tv.ua/smachnonews24/den-nezalezhnosti-ukrayini-2025-yaki-stravi-varto-prigotuvati-24-serpnya_n2898777 (Козацький куліш: 150 г сала, 100 г пшона, 6 картоплин, 2 цибулини, 2 л води). Compared: https://klopotenko.com/klasychnyj-reczept-kulish-zi-svynynoyu-vid-yevgena-klopotenka/ (300 г ошийка, 200 г пшона, 2 цибулини, 2 моркви, 3 яйця, 2-2,5 л води); https://klopotenko.com/spravzhnya-kozaczka-kasha-reczept-kulisha-iz-kvashenymy-tomatamy-ta-moczareloyu/ (100 г сала, 150 г пшона, 3-4 картоплі, цибуля, морква); https://novyny.live/yizha/kozatskii-kulish-iak-gotuiut-na-poltavshchini-ukrayinska-kukhnia-119934.html (Полтавський: пшоно 300 г, сало 300+200 г копченого, свинина 1 кг, картопля 500 г, 2,5 л води, 5 яєць)."
+  }
+ },
+ {
+  "id": "milk-noodle-soup",
+  "name": "Молочний суп з вермішеллю",
+  "nameEn": "Milk noodle soup",
+  "aliases": [
+   "noodles in milk"
+  ],
+  "aliasesUa": [
+   "молочна вермішель"
+  ],
+  "kcal100": 83,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://tsn.ua/other/lokshyna-z-molokom-iak-v-dytynstvi-prostyy-retsept-shchob-makarony-ne-rozvarylysia-3139661.html (500 г молока + 250 мл води, 6 ст. л. тонкої вермішелі, цукор, сіль, масло; 4 порції); https://poradu.pp.ua/recepti/print:page,1,5297-molochniy-sup-z-vermshellyu-recept-dlya-ledarv.html (0,5 л молока, ~50 г вермішелі, цукор, масло за смаком); https://vkusvill.ru/media/recipes/molochnyy-sup-s-vermishelyu.html (600 мл молока, 125 г вермішелі, 2 ч. л. цукру)."
+  }
+ },
+ {
+  "id": "varenyky-potato",
+  "name": "Вареники з картоплею",
+  "nameEn": "Varenyky with potato",
+  "aliases": [
+   "pierogi",
+   "potato dumplings",
+   "potato pierogi",
+   "dumplings",
+   "pyrohy"
+  ],
+  "aliasesUa": [
+   "вареники картопляні",
+   "пироги з картоплею"
+  ],
+  "kcal100": 176,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, tech cards «Тісто для вареників (прісне)», «Начинка картопляна з шкварками й цибулею», «Вареники з картоплею і шкварками» (dough 82 g + filling 103 g → 185 g raw → 200 g boiled per portion, 7–8 pcs, topped with onion sautéed in salo). Compared: https://klopotenko.com/klasychni-varenyky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 360 г борошна, 180 мл води, 2 ст. л. олії; 300 г картоплі, 2 цибулини на 3 ст. л. олії — половина в начинку, половина зверху); https://24tv.ua/vareniki-kartopleyu-rizdvo-klasichniy-retsept_n2711978 (ТСН/24 канал: 500 г борошна, 200 мл води, 2 ст. л. олії, 800 г картоплі, 2 цибулини). Averaged into one home version."
+  },
+  "pcGrams": 25
+ },
+ {
+  "id": "varenyky-cabbage",
+  "name": "Вареники з капустою",
+  "nameEn": "Varenyky with cabbage",
+  "aliases": [
+   "cabbage pierogi",
+   "sauerkraut dumplings"
+  ],
+  "aliasesUa": [
+   "вареники з капустою"
+  ],
+  "kcal100": 172,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка з квашеної капусти» (sauerkraut 1112 g net + fat 60 g + onion 80 g + sugar 15 g → 945 g stewed cabbage, ~15 % loss) and «Вареники» standard (dough 82 / filling 103 per portion; cabbage varenyky 'поливають олією з підсмаженою цибулею'). Compared: https://klopotenko.com/zavarne-tisto-ta-nachynka-z-kvashenoyi-kapusty-reczept-pisnyh-varenykiv/ (Клопотенко, пісні вареники з квашеною капустою: 350 г борошна, 200 мл води, 3 ст. л. олії; 400 г квашеної капусти, 1 цибуля, 2 ст. л. олії; 2 ст. л. олії зверху) and https://klopotenko.com/puhki-ta-smachni-varenyky-z-kapustoyu-vid-yevgena-klopotenka/ (свіжа капуста: 360 г борошна, 180 мл кефіру; 400 г капусти + морква + цибуля на 4 ст. л. олії; цибуля на 2 ст. л. олії для подачі)."
+  },
+  "pcGrams": 25
+ },
+ {
+  "id": "varenyky-cottage-cheese",
+  "name": "Вареники з сиром",
+  "nameEn": "Varenyky with cottage cheese",
+  "aliases": [
+   "cheese pierogi",
+   "sweet cheese dumplings",
+   "farmer cheese dumplings"
+  ],
+  "aliasesUa": [
+   "вареники з сиром"
+  ],
+  "kcal100": 205,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка з сиру» II спосіб (сир 900 g, яйця 36 g, цукор 90 g per 1000 g) and «Вареники» standard (dough 82 / filling 103; 'із сиру — поливають вершковим маслом'). Compared: https://klopotenko.com/solodki-varenyky-z-syrom-vid-yevgena-klopotenka/ (Клопотенко, солодкі: 400 г борошна, 200 мл води, 2 ст. л. олії; 300 г сиру, 1 ст. л. цукру, 1 жовток; 50 г масла для подачі) and https://klopotenko.com/z-solonoyu-nachynkoyu-varenyky-z-syrom-ta-zelennyu-vid-yevgena-klopotenka/ (солоні: 320 г борошна, 180 мл окропу, 3 ст. л. олії; 300 г сиру 9 % із зеленню; 20 г масла)."
+  },
+  "pcGrams": 25
+ },
+ {
+  "id": "varenyky-cherry",
+  "name": "Вареники з вишнями",
+  "nameEn": "Varenyky with cherries",
+  "aliases": [
+   "cherry pierogi",
+   "cherry dumplings"
+  ],
+  "aliasesUa": [
+   "вареники з вишнею"
+  ],
+  "kcal100": 177,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка вишнева» I спосіб (pitted cherries 1240 g + sugar 150 g, juice drained → 1000 g) and II спосіб (cherries 810 g, sugar 190 g, semolina 70 g); 'вареники … з вишнями подають зі сметаною або сиропом, цукром'. Compared: https://klopotenko.com/vareniki-z-vishneu/ (Клопотенко: 500 г борошна, 250 мл молока, 1 яйце, 1 ст. л. олії; 400 г вишні без кісточок, 1–2 ст. л. цукру, 1 ст. л. манки; готові присипати цукром) and https://vkusvill.ru/media/recipes/vareniki-s-vishney.html (400 г борошна; 500 г вишні, 2 ст. л. цукру, 1 ст. л. крохмалю)."
+  },
+  "pcGrams": 25
+ },
+ {
+  "id": "lazy-varenyky",
+  "name": "Ліниві вареники",
+  "nameEn": "Lazy varenyky",
+  "aliases": [
+   "lazy dumplings",
+   "cottage cheese gnocchi"
+  ],
+  "aliasesUa": [
+   "ліниві галушки"
+  ],
+  "kcal100": 188,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Сирні галушки» (= ліниві вареники): сир 156 g, яйця 12 g, борошно 22 g, цукор 11 g → 190 g semi-product → 200 g boiled. Compared: https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf (ТК 6.1 «Вареники ліниві»: сир 740 g, борошно 150 g, яйця 60 g, цукор 50 g → 960 g → 1000 g boiled) and https://klopotenko.com/sprava-y-souss-yak-prygotyvaty-smachni-linivi-varenyky/ (Клопотенко: 300 г сиру 9 %, 1 яйце, 1 ст. л. цукру, 4 ст. л. борошна + 2 для підпилу) and https://klopotenko.com/lenuvi-vareniki-z-jogurtovym-sousom/ (300 г сиру, 1 яйце, 2 ст. л. цукру, 4 ст. л. борошна)."
+  },
+  "pcGrams": 15
+ },
+ {
+  "id": "pelmeni",
+  "name": "Пельмені",
+  "nameEn": "Pelmeni",
+  "aliases": [
+   "meat dumplings",
+   "meat pierogi"
+  ],
+  "aliasesUa": [
+   "пельмені з м'ясом"
+  ],
+  "kcal100": 220,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/pelmeni-zi-svynynou/ (Клопотенко: тісто 500 г борошна, 220–250 мл гарячої води, 3 ст. л. олії; фарш 500 г свинини, ½ цибулини, 3 зубчики часнику, 50 мл крижаної води; кружечки 4–5 см, ½ ч. л. фаршу) averaged with the common home pork+beef mince version (дріжджів немає; тісто на воді з яйцем; фарш свинина+яловичина 1:1, цибуля, холодна вода) and the Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org standard dough (flour 695, egg 53, water 270 per 1000 g) — https://archive.org/details/ukrainskakuhnya1998."
+  },
+  "pcGrams": 12
+ },
+ {
+  "id": "deruny",
+  "name": "Деруни",
+  "nameEn": "Deruny",
+  "aliases": [
+   "potato pancakes",
+   "latkes",
+   "potato fritters",
+   "hash brown"
+  ],
+  "aliasesUa": [
+   "картопляні млинці",
+   "деруни картопляні"
+  ],
+  "kcal100": 185,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Деруни»: дерунна маса = картопля 1240/930 g, борошно 43 g, яйця 36 g → 1000 g; «Деруни зі сметаною»: маса 275 g + олія 10 g → 220 g fried. Compared: https://klopotenko.com/kartoplyani-deruny-u-blenderi-reczept-vid-yevgena-klopotenka/ (Клопотенко: ~300 г картоплі, 1 цибуля, 1 яйце, 1 ст. л. борошна, 5 ст. л. олії для смаження) and https://klopotenko.com/zolotavi-ta-hrustki-deruny-na-krupnij-tertczi-vid-yevgena-klopotenka/ (4 картоплини, 1 цибуля, 1 яйце, 1 зубчик часнику, 3 ст. л. олії). Averaged."
+  },
+  "pcGrams": 60
+ },
+ {
+  "id": "syrnyky",
+  "name": "Сирники",
+  "nameEn": "Syrnyky",
+  "aliases": [
+   "cottage cheese pancakes",
+   "farmer cheese pancakes",
+   "cheese fritters"
+  ],
+  "aliasesUa": [
+   "сирники з сиру"
+  ],
+  "kcal100": 257,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Сирники»: сир 150 g, борошно 20 g, яйця 5 g, цукор ~15 g, маргарин 5 g → 170 g semi-product → 150 g fried (3 pcs). Compared: https://klopotenko.com/puhki-ta-nizhni-syrnyky-z-mankoyu-bez-boroshna-vid-yevgena-klopotenka/ (Клопотенко: 400 г сиру 9 %, 1 яйце, 3 ст. л. манки, 3 ст. л. цукру, 10 г ванільного цукру; ~4 ст. л. олії на смаження) and https://klopotenko.com/avtentychnyj-poltavskyj-reczept-nizhni-syrnyky-vid-yevgena-klopotenka/ (400 г сиру 9 %, 1 яйце, 1 ст. л. цукру, 10 г ванільного цукру, 2+1 ст. л. борошна, 1 ст. л. масла), and https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf ТК 6.10."
+  },
+  "pcGrams": 50
  },
  {
   "id": "mlyntsi",
-  "kind": "DISH",
-  "name": "Mlyntsi",
-  "name_ua": "Млинці",
+  "name": "Млинці",
+  "nameEn": "Crepes",
   "aliases": [
-   "crepes",
-   "bliny",
    "thin pancakes",
-   "nalysnyky"
+   "blini",
+   "crepe",
+   "pancakes"
   ],
-  "aliases_ua": [
+  "aliasesUa": [
    "млинчики",
-   "налисники",
-   "тонкі млинці",
-   "блинчики"
+   "налисники без начинки"
   ],
-  "kcal100": 190.0,
-  "protein100": 5.5,
-  "fat100": 5.0,
-  "carbs100": 30.0
+  "kcal100": 229,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/idealna-tekstura-tonki-mlynczi-na-moloczi-i-vodi-vid-yevgena-klopotenka/ (Клопотенко: 2 яйця, 2 ст. л. цукру, 30 мл олії, 200 г борошна, 300 мл молока + 200 мл окропу) and https://klopotenko.com/lyubov-ta-turbota-u-kozhnomu-shmatochku-solodki-mlynczi-z-syrom-vid-mamy-yevgena-klopotenka/ (млинці мами Клопотенка: 250 г борошна, 500 мл молока 2,5 %, 3 яйця, 50 мл олії, 1 ст. л. цукру), averaged with Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Налисники (млинчики) смажені»: борошно 416, молоко 1040, яйця 83, цукор 25 → тісто 1538 g → 1000 g (https://archive.org/details/ukrainskakuhnya1998)."
+  },
+  "pcGrams": 45
+ },
+ {
+  "id": "nalysnyky-cottage-cheese",
+  "name": "Налисники з сиром",
+  "nameEn": "Crepes with cottage cheese",
+  "aliases": [
+   "cheese crepes",
+   "blintzes",
+   "cheese blintz"
+  ],
+  "aliasesUa": [
+   "млинці з сиром"
+  ],
+  "kcal100": 245,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/ukrayinska-lyubov-nalysnyky-z-syrom-vid-yevgena-klopotenka/ (Клопотенко: 250 г борошна, 650 мл молока, 3 яйця, 2 ст. л. цукру, 50 мл олії; начинка 400 г сиру, 50 г родзинок, 1 яйце, 2 ст. л. цукру; запікати з 60 г масла) and https://klopotenko.com/lyubov-ta-turbota-u-kozhnomu-shmatochku-solodki-mlynczi-z-syrom-vid-mamy-yevgena-klopotenka/ (400 г сиру 9 %, жовток, 1 ст. л. цукру; запікати з маслом); Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Налисники з начинкою із сиру…»: налисники 100 g + начинка 94 g, жир 10 g → 175 g fried (2 pcs) (https://archive.org/details/ukrainskakuhnya1998)."
+  },
+  "pcGrams": 90
+ },
+ {
+  "id": "nalysnyky-meat",
+  "name": "Млинці з м'ясом",
+  "nameEn": "Crepes with meat",
+  "aliases": [
+   "meat crepes",
+   "meat blintzes"
+  ],
+  "aliasesUa": [
+   "налисники з м'ясом"
+  ],
+  "kcal100": 330,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/nalysnyky-z-myasom-vid-yevgena-klopotenka/ (Клопотенко: млинці 200 г борошна, 500 мл сироватки, 2 ст. л. олії, 2 ст. л. цукру; начинка 500 г вареної свинини, 1 цибуля на 2 ст. л. олії, 50 мл бульйону) and https://klopotenko.com/smakuyut-i-holodnymy-nalysnyky-z-myasom-vid-yevgena-klopotenka/ (350 мл молока, 150 г борошна, 2 яйця, 2 ст. л. олії; 600 г вареного м'яса, цибуля; конвертики обсмажити); Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Начинка м'ясна з цибулею» (варене м'ясо + пасерована цибуля) and «Налисники з начинкою з м'яса»: 100 g crepes + 94 g filling + 10 g fat → 175 g fried (https://archive.org/details/ukrainskakuhnya1998)."
+  },
+  "pcGrams": 90
+ },
+ {
+  "id": "oladky",
+  "name": "Оладки",
+  "nameEn": "Oladky",
+  "aliases": [
+   "fluffy pancakes",
+   "kefir pancakes",
+   "fritters"
+  ],
+  "aliasesUa": [
+   "оладі",
+   "оладки на кефірі"
+  ],
+  "kcal100": 271,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Млинці на кислому молоці» (= оладки на кефірі): борошно 70 g, яйця 5 g, кефір 120 g, цукор 5 g, сода 0,5 g → тісто 195 g; маргарин 5 g → 150 g fried (3 pcs). Compared: https://klopotenko.com/oladky-na-kefiri-ta-czilnozernovomu-boroshni-vid-yevgena-klopotenka/ (Клопотенко: 300 мл кефіру, 1 яйце, 1 ст. л. цукру, 10 г ванільного цукру, ½ ч. л. розпушувача/соди, 200 г борошна, 5 ст. л. олії на смаження) and the common home ratio 500 ml kefir : ~2 cups (≈ 300 g) flour : 1 egg : 2 tbsp sugar : ½ tsp soda."
+  },
+  "pcGrams": 35
+ },
+ {
+  "id": "holubtsi",
+  "name": "Голубці",
+  "nameEn": "Holubtsi",
+  "aliases": [
+   "cabbage rolls",
+   "stuffed cabbage"
+  ],
+  "aliasesUa": [
+   "голубці з м'ясом і рисом"
+  ],
+  "kcal100": 116,
+  "source": {
+   "type": "recipe",
+   "ref": "https://www.unian.ua/recipes/second-courses/meat-dishes/golubci-recept-yak-prigotuvati-smachni-golubci-vdoma-11076662.html (УНІАН, «Голубці з фаршем і рисом»: 1 head cabbage, 600 g mince, 0.5 cup rice, 1 egg, 1–2 onions, 1–2 carrots, 30 g oil, 150–200 g sour cream + 0.5 L water, tomato paste). Compared: https://klopotenko.com/farsh-rys-ta-hrumki-lystochky-golubczi-z-kvashenoyi-kapusty/ (Клопотенко: 500 g pork mince, 200 g rice, onion, carrot, 2 tbsp oil; sauce 1 tbsp tomato paste + 1 tbsp sour cream 20% + 500 ml water; 12 portions) and school tech card 8.8 «Ліниві голубці з яловичиною»."
+  },
+  "pcGrams": 150
  },
  {
   "id": "halushky",
-  "kind": "DISH",
-  "name": "Halushky",
-  "name_ua": "Галушки",
+  "name": "Галушки",
+  "nameEn": "Halushky",
   "aliases": [
-   "Ukrainian dumplings",
-   "dough dumplings",
-   "flour dumplings"
+   "dough dumplings"
   ],
-  "aliases_ua": [
-   "галушечки",
-   "кльоцки",
-   "борошняні галушки"
+  "aliasesUa": [
+   "галушки з борошна"
   ],
-  "kcal100": 130.0,
-  "protein100": 4.0,
-  "fat100": 3.0,
-  "carbs100": 22.0
+  "kcal100": 236,
+  "source": {
+   "type": "recipe",
+   "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Галушки в'язкі (напівфабрикат)»: flour 640 (incl. 40 dusting), egg 40, milk or water 320 per 1000 g; «Галушки з маслом…»: 150 g semi-product → 200 g boiled; 'варені галушки можна відпускати з підсмаженою на салі або олії цибулею … з підсмаженим салом'; ethnographic note: Poltava halushky 'заправляли засмажкою з цибулі на олії або салі'. Compared: https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf (ТК 14.20 «Галушки»: борошно 630, яйця 60, вода 315, сода 6 → 980 g boiled + 20 g butter) and the common home Poltava version on kefir with soda (https://klopotenko.com/spravzhni-poltavski-galushky-vid-inny-popershnyuk/ is a yeast/steamed restaurant variant served with chicken — not used)."
+  }
  },
  {
   "id": "banosh",
-  "kind": "DISH",
-  "name": "Banosh",
-  "name_ua": "Банош",
+  "name": "Банош (з бринзою і шкварками)",
+  "nameEn": "Banosh",
   "aliases": [
-   "cornmeal with smetana",
-   "Hutsul cornmeal",
-   "banush"
+   "cornmeal porridge with cheese",
+   "polenta with sour cream",
+   "hutsul polenta"
   ],
-  "aliases_ua": [
-   "кулеша",
-   "гуцульський банош",
-   "каша зі сметаною"
+  "aliasesUa": [
+   "банош",
+   "мамалига на сметані"
   ],
-  "kcal100": 150.0,
-  "protein100": 4.0,
-  "fat100": 6.0,
-  "carbs100": 20.0
- },
- {
-  "id": "kovbasa",
-  "kind": "PRODUCT",
-  "name": "Kovbasa",
-  "name_ua": "Ковбаса",
-  "aliases": [
-   "Ukrainian sausage",
-   "kolbasa",
-   "kielbasa",
-   "smoked sausage UA"
-  ],
-  "aliases_ua": [
-   "домашня ковбаса",
-   "копчена ковбаса",
-   "українська ковбаса"
-  ],
-  "kcal100": 280.0,
-  "protein100": 14.0,
-  "fat100": 24.0,
-  "carbs100": 2.0
+  "kcal100": 263,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged home version. Compared: https://klopotenko.com/dusha-zakarpattya-banosh-z-brynzoyu-i-shkvarkamy-vid-yevgena-klopotenka/ (180 г кукурудзяної крупи, 500 мл сметани 15 % + 500 мл вершків 20 %, 100 г бринзи, 300 г сала на шкварки; 2 порції); https://klopotenko.com/avtentychnyj-karpatskyj-banosh-na-smetani/ (1 л сметани 20 %, 140 г крупи, 150 г бринзи, шкварки за бажанням); https://www.unian.ua/recipes/banosh-recept-banosh-v-gorshchikah-recept-z-foto-11069726.html (а: 450 мл жирної сметани + 450 мл води, 250 г крупи, 100 г сала + 100 г бекону, 100 г бринзи; б: 400 мл молока + 500 мл сметани, 200 г крупи, 100 г бринзи); https://klopotenko.com/banosh-u-multyvarczi-vid-yevgena-klopotenka/ (100 г крупи, 300 г сметани, 250 мл молока)."
+  }
  },
  {
   "id": "kotlety",
-  "kind": "DISH",
-  "name": "Kotlety",
-  "name_ua": "Котлети",
+  "name": "Котлети (свинина з яловичиною)",
+  "nameEn": "Cutlets",
   "aliases": [
    "meat patties",
-   "cutlets",
    "meatballs",
-   "kotleta"
+   "patty",
+   "cutlet",
+   "burger patty"
   ],
-  "aliases_ua": [
-   "котлетки",
-   "м'ясні котлети",
-   "биточки",
-   "зрази"
+  "aliasesUa": [
+   "котлети м'ясні",
+   "котлета"
   ],
-  "kcal100": 220.0,
-  "protein100": 16.0,
-  "fat100": 14.0,
-  "carbs100": 8.0
+  "kcal100": 299,
+  "source": {
+   "type": "recipe",
+   "ref": "https://tsn.ua/lady/kukhnya/recepty/kotleti-domashni-perevireniy-recept-1906084.html (ТСН «Котлети домашні»: 0.5 kg beef + 0.5 kg pork, 200 g батон soaked in milk, 2 onions, 2 cloves garlic, breadcrumbs, fried in oil). Compared: https://klopotenko.com/myasni-kotlety-v-aerogryli-prostyj-reczept-vid-yevgena-klopotenka/ (Клопотенко: 300 g pork + 300 g beef mince, 1 egg, 3 slices white bread + 100 ml water, onion, 2 garlic, breadcrumbs for coating; 12 cutlets) and https://klopotenko.com/z-garnirom-iz-sokovytyh-yabluk-kotlety-zi-svynyny-vid-yevgena-klopotenka/ (pork cutlets 80–90 g raw)."
+  },
+  "pcGrams": 80
  },
  {
-  "id": "holodets",
-  "kind": "DISH",
-  "name": "Holodets",
-  "name_ua": "Холодець",
+  "id": "chicken-cutlets",
+  "name": "Котлети курячі",
+  "nameEn": "Chicken cutlets",
   "aliases": [
-   "meat jelly",
-   "aspic",
-   "kholodets",
-   "studen",
-   "cold meat jelly"
+   "chicken patties",
+   "chicken meatballs"
   ],
-  "aliases_ua": [
-   "студень",
-   "холодне",
-   "м'ясне желе",
-   "драглі"
+  "aliasesUa": [
+   "курячі котлети"
   ],
-  "kcal100": 80.0,
-  "protein100": 8.0,
-  "fat100": 5.0,
-  "carbs100": 0.5
+  "kcal100": 222,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/idealni-kotlety-z-kuryachogo-farshu-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 500 g chicken thigh mince, 50 g salo, 1 onion, 1 garlic, 1 egg, 3 slices white bread + 100 ml milk; 7 cutlets × 100 g raw; fried in 3–4 tbsp oil). Compared: school tech card 9.54 «Січеники з м'яса птиці» (860 g fillet, 230 g onion, 90 g flour, 80 g egg) and https://klopotenko.com/strava-na-kozhen-den-rubleni-kotlety-z-kurky-vid-yevgena-klopotenka/."
+  },
+  "pcGrams": 70
+ },
+ {
+  "id": "chicken-kyiv",
+  "name": "Котлета по-київськи",
+  "nameEn": "Chicken Kyiv",
+  "aliases": [
+   "chicken kiev",
+   "breaded chicken with butter"
+  ],
+  "aliasesUa": [
+   "котлета по-київськи"
+  ],
+  "kcal100": 320,
+  "source": {
+   "type": "recipe",
+   "ref": "https://www.unian.ua/recipes/second-courses/meat-dishes/kotleta-po-kijivski-recept-yak-gotuvati-kotletu-po-kijivski-11224268.html (УНІАН «Класична котлета по-київськи»: chicken 1.2 kg, butter 140 g + parsley, 2 eggs, 100 ml milk, 60 g flour, 140 g breadcrumbs; deep-fried ~5 min, then 10 min in oven). Compared: https://klopotenko.com/na-kistochczi-sokovyta-kotleta-po-kyyivsky-vid-yevgena-klopotenka/ (Клопотенко: breast on the bone, butter, 100 g flour, 2 eggs, 150 g breadcrumbs, 700 ml oil in a saucepan, oven finish) and https://klopotenko.com/kotleta-po-kyyivsky-z-kuryachogo-farshu-vid-yevgena-klopotenka/ (double breading flour–egg–crumbs–egg–crumbs)."
+  },
+  "pcGrams": 160
+ },
+ {
+  "id": "pork-chop-breaded",
+  "name": "Відбивна свиняча",
+  "nameEn": "Pork schnitzel",
+  "aliases": [
+   "breaded pork chop",
+   "schnitzel",
+   "pork cutlet"
+  ],
+  "aliasesUa": [
+   "відбивна",
+   "шніцель"
+  ],
+  "kcal100": 312,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/svynyachi-vidbyvni-v-paniruvalnyh-suharyah-vid-yevgena-klopotenka/ (Клопотенко «Свинячі відбивні в панірувальних сухарях»: 300 g pork antrecote, 2 eggs, 50 g breadcrumbs, 3 tbsp oil, fried 3–4 min per side; 2 portions). Compared: school tech card 8.59 «М'ясні відбивні в сухарях» (meat 690 g net, flour 46 g, eggs 153 g, breadcrumbs 153 g, oil 26 g → 1000 g) and https://klopotenko.com/svynyachi-vidbyvni-vid-yevgena-klopotenka/ (flour–egg version)."
+  },
+  "pcGrams": 120
+ },
+ {
+  "id": "pechenia",
+  "name": "Печеня (свинина з картоплею)",
+  "nameEn": "Pechenia",
+  "aliases": [
+   "pork and potato stew",
+   "roast with potatoes"
+  ],
+  "aliasesUa": [
+   "печеня по-домашньому"
+  ],
+  "kcal100": 139,
+  "source": {
+   "type": "recipe",
+   "ref": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf (school tech card 8.2 «Печеня по-домашньому зі свининою»: pork 470 g net, potato 520 g, onion 100 g, carrot 150 g, oil 20 g, tomato paste 50 g, water 250 g → 1000 g). Compared: https://klopotenko.com/zharkoe-so-svininoj/ (Клопотенко: 400 g pork, 3 potatoes, 3 carrots, 1 onion, 100 g tomato paste, 2 tbsp cream, 3 tbsp oil, garlic) and https://klopotenko.com/svynyna-ta-ovochi-prostyj-reczept-smachnoyi-pecheni/ (470 g pork, 6 potatoes, 100 g carrot, 100 g onion, 20 ml oil, 10 g butter, 200 ml water)."
+  }
+ },
+ {
+  "id": "stewed-cabbage",
+  "name": "Тушкована капуста з м'ясом",
+  "nameEn": "Stewed cabbage with meat",
+  "aliases": [
+   "bigos",
+   "braised cabbage",
+   "braised sauerkraut"
+  ],
+  "aliasesUa": [
+   "бігос",
+   "тушкована капуста"
+  ],
+  "kcal100": 97,
+  "source": {
+   "type": "recipe",
+   "ref": "https://tsn.ua/lady/kukhnya/recepty/kapusta-tushkovana-z-svininoyu-1860877.html (ТСН «Капуста тушкована зі свининою»: 1 kg cabbage, 0.5 kg pork, 0.5 kg tomatoes, 200 g onion, 200 g carrot, oil). Compared: https://www.unian.ua/recipes/appetizer/tushkovana-kapusta-klasichniy-i-originalni-recepti-10463508.html (УНІАН: ¼ large head, 300–400 g pork, 1 onion, 1 carrot, 2 tbsp tomato paste) and https://klopotenko.com/sokovytyj-bigos-zi-slyvamy-j-tomatamy-v-duhovczi-vid-yevgena-klopotenka/ (бігос, fresh + sauerkraut)."
+  }
+ },
+ {
+  "id": "goulash",
+  "name": "Гуляш",
+  "nameEn": "Goulash",
+  "aliases": [
+   "beef stew",
+   "meat stew",
+   "stew"
+  ],
+  "aliasesUa": [
+   "гуляш з яловичини"
+  ],
+  "kcal100": 188,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/gulyash-zi-svynynoyu-ta-nizhne-kartoplyane-pyure-vid-yevgena-klopotenka/ (Клопотенко гуляш: 600 g meat, 1 carrot, 1 onion, 2 tbsp paprika, 3 tbsp oil, 2 tbsp tomato paste, 200 ml water, 1 tbsp flour) adapted to beef. Compared: school tech card 8.9 «Гуляш з вареної яловичини» (beef 1000 g net → 620 g cooked, onion 120, carrot 120, tomato 100, butter 30, flour 20, water 300 → 1000 g) and Estonian TKA 85646 recipe (beef 630, onion 120, flour 30, tomato purée 95, oil 40, water 250, sour cream 120 → 1000 g)."
+  }
+ },
+ {
+  "id": "makaroni-po-flotsky",
+  "name": "Макарони по-флотськи",
+  "nameEn": "Pasta with minced meat",
+  "aliases": [
+   "navy pasta",
+   "macaroni with ground beef"
+  ],
+  "aliasesUa": [
+   "макарони з фаршем"
+  ],
+  "kcal100": 223,
+  "source": {
+   "type": "recipe",
+   "ref": "https://www.unian.ua/recipes/second-courses/meat-dishes/makaroni-po-flotski-smachniy-narodniy-recept-11531020.html (УНІАН: 0.5 kg home mince, 250 g pasta, onion, carrot, garlic, 2 tbsp oil, 2 tbsp tomato paste, 1 glass water). Compared: https://smachno.ua/ua/recepty/osnovnye-blyuda/makarony-po-flotski/ (300–400 g pasta, 600 g beef mince, 2 tbsp tomato paste; ingredient list via search snippet, page returns 403) and https://tsn.ua/food/druhi-stravy/makaroni-po-flotski-ukrayinska-versiya-italiyskogo-bolonyeze-2450818.html (500 g boiled beef, 350 g pasta, onion, 1 tbsp oil, 50 g butter)."
+  }
  },
  {
   "id": "plov",
-  "kind": "DISH",
-  "name": "Plov",
-  "name_ua": "Плов",
+  "name": "Плов зі свининою",
+  "nameEn": "Plov",
   "aliases": [
-   "pilaf",
-   "rice pilaf",
-   "Ukrainian pilaf",
+   "pilaf with meat",
    "plov with pork"
   ],
-  "aliases_ua": [
-   "плов з м'ясом",
-   "рисова каша з м'ясом"
+  "aliasesUa": [
+   "плов"
   ],
-  "kcal100": 150.0,
-  "protein100": 7.0,
-  "fat100": 5.0,
-  "carbs100": 20.0
+  "kcal100": 196,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/plov-zi-svynyny-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 1 kg pork neck, 400 g rice, 2 carrots, 1 onion, 2 heads garlic, 800 ml water, 100 ml oil; 5 portions). Compared: https://www.unian.ua/recipes/second-courses/meat-dishes/smachniy-plov-recept-na-skovorodi-v-multivarci-i-kazani-11701381.html (УНІАН quick pork plov: 600 g pork, 1.5 cups rice, 1 carrot, 2 onions, 30 g oil, water 2–2.5 cm over rice) and https://smachno.ua/ua/recepty/osnovnye-blyuda/retsept-plova-so-svininoj/ (300 g pork, 200 g rice, 150 g carrot, 150 g onion, 50 ml oil; via search snippet)."
+  }
+ },
+ {
+  "id": "fried-potatoes",
+  "name": "Картопля смажена",
+  "nameEn": "Fried potatoes",
+  "aliases": [
+   "home fries",
+   "pan-fried potatoes",
+   "roasted potatoes",
+   "potato wedges"
+  ],
+  "aliasesUa": [
+   "смажена картопля"
+  ],
+  "kcal100": 182,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: Доцяк В.С. «Українська кухня. Підручник» (Львів: Оріяна-Нова, 1998), «Картопля смажена (з сирої)»: картопля 483/362 г (брутто/нетто), кулінарний жир 25 г → маса смаженої картоплі 250 г; https://archive.org/details/ukrainskakuhnya1998 (OCR text: https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt). Compared with home recipes on focus.ua https://focus.ua/uk/lifestyle/514202-zharenaya-kartoshka-s-korochkoy-samye-vkusnye-i-prostye-recepty (картопля 650 г + олія 2–3 ст. л. (30–45 мл); картопля 500 г + цибуля 80 г + олія 40 мл). Averaged into one typical home version."
+  }
+ },
+ {
+  "id": "stewed-potatoes",
+  "name": "Картопля тушкована з м'ясом",
+  "nameEn": "Potato stew",
+  "aliases": [
+   "braised potatoes with meat"
+  ],
+  "aliasesUa": [
+   "тушкована картопля"
+  ],
+  "kcal100": 95,
+  "source": {
+   "type": "recipe",
+   "ref": "https://tsn.ua/lady/kukhnya/recepty/tushkovana-kartoplia-z-miasom-retsept-znayomyy-z-dytynstva-2909738.html (ТСН «Тушкована картопля з м'ясом»: 1.7 kg potato, 700 g meat (chicken, pork or beef), 150 g onion, 250 g carrot, 3–4 garlic, 30 ml oil, 2 tbsp tomato paste, 1.5 L water). Compared: https://smachno.ua/ua/recepty/osnovnye-blyuda/tushenaya-kartoshka-s-myasom/ (1 kg potato, 600 g pork, 2 onions, 1 carrot; via search snippet) and https://klopotenko.com/tushkovana-molodka-kartoplya-z-myasom-vid-yevgena-klopotenka/ (500 g young potato, 200 g pork, 1 onion, 300 ml water)."
+  }
+ },
+ {
+  "id": "fried-fish",
+  "name": "Риба смажена в борошні",
+  "nameEn": "Fried fish",
+  "aliases": [
+   "pan-fried fish",
+   "breaded fish"
+  ],
+  "aliasesUa": [
+   "смажена риба",
+   "хек смажений"
+  ],
+  "kcal100": 168,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: Доцяк В.С. «Українська кухня» (1998), «Риба смажена порціонними шматочками»: тріска/мерланг 155/119 г (філе зі шкірою без кісток), борошно 6 г, олія 6 г → маса смаженої риби 100 г; https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt. Compared with home recipe https://netfreedom.org.ua/yak-prygotuvaty-hek-na-skovorodi/ (хек 800–1000 г, борошно 2 ст. л., олія 50 мл у сковороді) and the method on 24tv.ua https://24tv.ua/smachnonews24/yak-smazhiti-heka-yak-legko-smachno-prigotuvati-heka_n2939039/amp (pieces 1.5–2 cm, rolled in flour, 3–5 min per side)."
+  }
+ },
+ {
+  "id": "fried-mushrooms",
+  "name": "Гриби смажені з цибулею",
+  "nameEn": "Fried mushrooms",
+  "aliases": [
+   "sauteed mushrooms"
+  ],
+  "aliasesUa": [
+   "смажені печериці"
+  ],
+  "kcal100": 153,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home version averaged from: 24tv.ua https://24tv.ua/smachnonews24/yak-prigotuvati-shampinyoni-smetani-pokrokoviy-retsept_n3048326/amp (печериці 300 г, 1 цибулина, олія; smetana variant); Доцяк В.С. «Українська кухня» (1998) yields for fried champignons: печериці 164/125 г + олія 5 г → маса смажених грибів 50 г; печериці 247/188 + маргарин 10 → 75 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); Estonian NutriData recipe 443169 (champignons 2000 g + oil 140 g → 1000 g)."
+  }
+ },
+ {
+  "id": "fried-liver",
+  "name": "Печінка смажена з цибулею",
+  "nameEn": "Fried liver",
+  "aliases": [
+   "liver and onions",
+   "chicken liver"
+  ],
+  "aliasesUa": [
+   "печінка смажена"
+  ],
+  "kcal100": 223,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home version averaged from: Доцяк В.С. «Українська кухня» (1998), «Печінка смажена з жиром або цибулею»: печінка 127/105 г, борошно 5 г, жир 10 г → маса смаженої печінки 75 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); poradu.pp.ua https://poradu.pp.ua/recepti/print:page,1,21597-yak-gotuvati-svinyachu-pechnku-poradi-po-prigotuvannyu-recepti.html (печінка ~500 г, олія 40 мл, 1 велика цибулина, морква); УНІАН https://www.unian.ua/recipes/second-courses/meat-dishes/kuryacha-pechinka-recept-yak-prigotuvati-kuryachu-pechinku-recepti-11197796.html (куряча печінка 450–500 г, 2–3 цибулини)."
+  }
+ },
+ {
+  "id": "omelette",
+  "name": "Омлет з молоком",
+  "nameEn": "Omelette",
+  "aliases": [
+   "omelet",
+   "scrambled eggs"
+  ],
+  "aliasesUa": [
+   "омлет"
+  ],
+  "kcal100": 144,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home version averaged from: Доцяк В.С. «Українська кухня» (1998), «Омлет натуральний»: яйця 80 г, молоко 30 г, маргарин/масло 5 г → маса готового омлету 105 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); poradu.pp.ua kindergarten-style omelette (4 яйця, 150 мл молока, 20 г вершкового масла) https://poradu.pp.ua/recepti/print:page,1,54128-yak-v-dityachomu-sadu-kuharka-na-pensyi-rozkrila-sekret-omletu-yakiy-obozhnyuvali-vs-dti-90-h.html; МОН/«Знаїмо» school tech card ТК 5.9 «Омлет з куркумою» (яйця 890 г, молоко 190 г, олія 10 г → 1000 г) https://znaimo.gov.ua/media/Документи/Техкарти/Категорія страви з яєць ТК5.1-5.24.pdf"
+  }
+ },
+ {
+  "id": "fried-eggs",
+  "name": "Яєчня (смажені яйця)",
+  "nameEn": "Fried eggs",
+  "aliases": [
+   "fried egg",
+   "sunny side up eggs"
+  ],
+  "aliasesUa": [
+   "яєчня",
+   "глазунья"
+  ],
+  "kcal100": 196,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173423: Egg, whole, cooked, fried"
+  },
+  "pcGrams": 50
+ },
+ {
+  "id": "pyrizhky-potato",
+  "name": "Пиріжки смажені з картоплею",
+  "nameEn": "Fried pirozhki with potato",
+  "aliases": [
+   "fried hand pies",
+   "pirozhki",
+   "fried buns"
+  ],
+  "aliasesUa": [
+   "пиріжки з картоплею"
+  ],
+  "kcal100": 266,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/smazheni-pyrizhky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/ (Смажені пиріжки з картоплею, Є. Клопотенко: 500 г борошна, 200 мл води, 50 г сметани, 15 г живих дріжджів, 50 мл олії; 500 г картоплі, цибулина, 2 ст. л. олії; 12 шт.) — averaged with https://24tv.ua/smachnonews24/pirizhki-kartopleyu-retsept-yak-zrobiti-smachni-pirizhki-kartopleyu_n2942897/amp (базарні смажені пиріжки: 800 г борошна, 500 мл води, 10 г сухих дріжджів, 1 ст. л. цукру, 3 ст. л. олії; картопля з кропом і маслом; олія до половини висоти пиріжків) and the potato filling of https://www.unian.ua/recipes/desserts/pies/neveroyatno-vozdushnye-pirozhki-v-duhovke-samyy-udachnyy-recept-testa-12738591.html (500 г картоплі, цибулина, 30 г масла, 20 мл олії, кріп)"
+  },
+  "pcGrams": 70
+ },
+ {
+  "id": "pyrizhky-cabbage",
+  "name": "Пиріжки печені з капустою",
+  "nameEn": "Baked pirozhki with cabbage",
+  "aliases": [
+   "baked hand pies",
+   "cabbage buns"
+  ],
+  "aliasesUa": [
+   "пиріжки з капустою"
+  ],
+  "kcal100": 225,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/puhki-ta-sokovyti-pyrizhky-z-kapustoyu-v-duhovczi-vid-yevgena-klopotenka/ (Пиріжки з капустою в духовці, Є. Клопотенко: 500 г борошна, 1 яйце, 100 мл води + 100 мл молока 2,5 %, 25 г живих дріжджів, 3 ст. л. олії, 1 ч. л. цукру; капуста + цибуля + 2 ст. л. олії; жовток) — averaged with https://www.unian.ua/recipes/desserts/pies/neveroyatno-vozdushnye-pirozhki-v-duhovke-samyy-udachnyy-recept-testa-12738591.html (450 г борошна, 270 мл води, 50 г олії, 8 г дріжджів, 25 г цукру; капусти ≤400 г + цибуля, 30 г масла, 20 мл олії) and the filling of https://klopotenko.com/puhke-tisto-ta-sokovyta-nachynka-drizhdzhovyj-pyrig-z-kapustoyu-za-reczeptom-yevgena-klopotenka/ (500 г капусти, морква, цибуля, 3 ст. л. олії, 1 ст. л. томатної пасти)"
+  },
+  "pcGrams": 60
+ },
+ {
+  "id": "pyrizhky-cherry",
+  "name": "Пиріжки з вишнями",
+  "nameEn": "Cherry pirozhki",
+  "aliases": [
+   "cherry buns",
+   "cherry hand pies"
+  ],
+  "aliasesUa": [
+   "пиріжки з вишнею"
+  ],
+  "kcal100": 249,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/smak-lita-v-babusi-pyrizhky-z-vyshneyu-vid-yevgena-klopotenka/ (Пиріжки з вишнею в духовці, Є. Клопотенко: 500 г борошна, 100 мл води + 100 мл молока, 1 яйце, 3 ст. л. олії, 25 г живих дріжджів, 1 ст. л. цукру; 400 г вишні без кісточок, цукор, 1,5 ст. л. крохмалю; жовток; ≈18 шт.) — averaged with https://duflu.org.ua/?p=15098 (сдобніший домашній варіант: 500 г борошна, 250 мл молока, 25 г дріжджів, 1 яйце, 100 г масла або 3 ст. л. олії, 100 г цукру; 500–600 г вишні, 80–100 г цукру, 1,5–2 ст. л. крохмалю; 18–20 шт.)"
+  },
+  "pcGrams": 60
+ },
+ {
+  "id": "pampushky",
+  "name": "Пампушки з часником",
+  "nameEn": "Pampushky",
+  "aliases": [
+   "garlic buns",
+   "garlic rolls"
+  ],
+  "aliasesUa": [
+   "пампушки"
+  ],
+  "kcal100": 311,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/pampushky-z-chasnykom/ (Пампушки з часником, Є. Клопотенко: 450 г борошна, 250 мл молока, 100 г масла або олії, 10 г сухих дріжджів, 1 ст. л. цукру; заправка 3 зубчики часнику, 6 гілочок кропу, 2 ст. л. олії, 1 ст. л. оцту; 12 шт.) — compared with https://klopotenko.com/idealni-pampushky-do-borshhu-reczept-na-suhyh-drizhdzhah-ta-moloczi-vid-yevgena-klopotenka/ (600 г борошна, 200 мл молока, 2 ст. л. олії, жовток для змащування; заправка 2 ст. л. олії + 2 зубчики часнику + кріп). Used a typical home version between the two (oil in the dough instead of 100 g butter, a fuller garlic dressing)."
+  },
+  "pcGrams": 40
+ },
+ {
+  "id": "holodets",
+  "name": "Холодець",
+  "nameEn": "Kholodets",
+  "aliases": [
+   "meat jelly",
+   "aspic"
+  ],
+  "aliasesUa": [
+   "холодець зі свинини",
+   "студень"
+  ],
+  "kcal100": 139,
+  "source": {
+   "type": "recipe",
+   "ref": "https://tsn.ua/lady/kukhnya/recepty/holodec-tradiciyniy-recept-1915348.html (ТСН «Холодець: традиційний рецепт»: 3 pig trotters + 1 hock (рулька), onion, carrot, garlic, 3 L water, simmer ~6 h). Compared: https://www.unian.ua/recipes/navaristiy-i-sitniy-holodec-recept-ulyublenoji-stravi-12144762.html (УНІАН: 4 trotters + 1.5 kg pork, 5 h uncovered; beef version 1 kg beef shank, 5–6 h) and https://smachno.ua/ua/posts/vse-bude-smachno/holodets-iz-svinyh-nozhek-ot-ally-kovalchuk/ (700 g pork trotters + 1.4 kg beef, 2 L water per kg meat with bones; via search snippet)."
+  }
+ },
+ {
+  "id": "kutia",
+  "name": "Кутя",
+  "nameEn": "Kutia",
+  "aliases": [
+   "wheat berry pudding",
+   "christmas kutia"
+  ],
+  "aliasesUa": [
+   "кутя з маком"
+  ],
+  "kcal100": 196,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home version averaged from: netfreedom.org.ua «Кутя рецепт українською» https://netfreedom.org.ua/kutia-retsept-ukrainskoiu-iak-zvaryty-spravzhniu-rizdvianu-kashu-z-pshenytsi-maku-i-medu/ (пшениця 250–300 г, мак 80–100 г, мед 60–80 г, горіхи 60–80 г, родзинки 50 г, курага 50 г, узвар 100–150 мл); УНІАН https://www.unian.ua/lite/advice/yak-variti-kutyu-pravilno-golovni-sekreti-stravi-amp-12853776.html (пшениця 1 склянка, мак 100 г, горіхи 100 г, мед 100 г + цукор 100 г, кілька ложок узвару); УНІАН top-3 https://www.unian.ua/society/10397220-yak-prigotuvati-kutyu-na-rizdvo-top-3-recepti.html (пшениця 2 склянки, мак 1 склянка, горіхи 0.5 склянки, родзинки 180 г, мед 150–180 г); Клопотенко via gordonua.com (350 г пшениці, по 50 г горіхів, родзинок, маку, мед, 3 ополоники узвару)."
+  }
  },
  {
   "id": "buckwheat-cooked",
-  "kind": "PRODUCT",
-  "name": "Buckwheat (Cooked)",
-  "name_ua": "Гречка (варена)",
+  "name": "Гречка варена",
+  "nameEn": "Buckwheat",
   "aliases": [
-   "grechka",
+   "buckwheat groats",
    "kasha",
-   "buckwheat porridge",
-   "cooked buckwheat"
+   "buckwheat porridge"
   ],
-  "aliases_ua": [
+  "aliasesUa": [
    "гречана каша",
-   "каша гречана",
-   "відварна гречка"
-  ],
-  "kcal100": 92.0,
-  "protein100": 3.4,
-  "fat100": 0.6,
-  "carbs100": 19.9
- },
- {
-  "id": "smetana-20",
-  "kind": "PRODUCT",
-  "name": "Smetana 20%",
-  "name_ua": "Сметана 20%",
-  "aliases": [
-   "sour cream",
-   "smetana",
-   "sour cream 20% fat"
-  ],
-  "aliases_ua": [
-   "сметанка",
-   "кисла сметана",
-   "домашня сметана"
-  ],
-  "kcal100": 206.0,
-  "protein100": 2.8,
-  "fat100": 20.0,
-  "carbs100": 3.2
- },
- {
-  "id": "tvorog-9",
-  "kind": "PRODUCT",
-  "name": "Tvorog 9%",
-  "name_ua": "Сир кисломолочний 9%",
-  "aliases": [
-   "cottage cheese",
-   "syr kyslomolochnyi",
-   "farmer cheese",
-   "quark"
-  ],
-  "aliases_ua": [
-   "домашній сир",
-   "творог",
-   "кисляк",
-   "селянський сир"
-  ],
-  "kcal100": 159.0,
-  "protein100": 16.7,
-  "fat100": 9.0,
-  "carbs100": 2.0
- },
- {
-  "id": "kvass",
-  "kind": "PRODUCT",
-  "name": "Kvass",
-  "name_ua": "Квас",
-  "aliases": [
-   "kvas",
-   "bread drink",
-   "fermented rye drink",
-   "homemade kvass"
-  ],
-  "aliases_ua": [
-   "хлібний квас",
-   "домашній квас",
-   "живий квас"
-  ],
-  "kcal100": 27.0,
-  "protein100": 0.2,
-  "fat100": 0.0,
-  "carbs100": 5.0
- },
- {
-  "id": "uzvar",
-  "kind": "DISH",
-  "name": "Uzvar",
-  "name_ua": "Узвар",
-  "aliases": [
-   "dried fruit compote",
-   "kompot",
-   "stewed fruit drink",
-   "uzvar"
-  ],
-  "aliases_ua": [
-   "компот з сухофруктів",
-   "різдвяний узвар",
-   "компот"
-  ],
-  "kcal100": 30.0,
-  "protein100": 0.2,
-  "fat100": 0.0,
-  "carbs100": 7.0
- },
- {
-  "id": "kefir",
-  "kind": "PRODUCT",
-  "name": "Kefir",
-  "name_ua": "Кефір",
-  "aliases": [
-   "fermented milk",
-   "kefir drink",
-   "kefir 2.5%"
-  ],
-  "aliases_ua": [
-   "кефірчик",
-   "кисляк",
-   "кефір 2.5%"
-  ],
-  "kcal100": 56.0,
-  "protein100": 3.3,
-  "fat100": 2.0,
-  "carbs100": 4.7
- },
- {
-  "id": "ryazhenka",
-  "kind": "PRODUCT",
-  "name": "Ryazhenka",
-  "name_ua": "Ряжанка",
-  "aliases": [
-   "baked fermented milk",
-   "ryazhanka",
-   "fermented baked milk"
-  ],
-  "aliases_ua": [
-   "ряженка",
-   "топлене молоко кисле",
-   "ряжаночка"
-  ],
-  "kcal100": 67.0,
-  "protein100": 2.8,
-  "fat100": 4.0,
-  "carbs100": 4.2
- },
- {
-  "id": "fish-and-chips",
-  "kind": "DISH",
-  "name": "Fish And Chips",
-  "name_ua": "Риба з картоплею фрі",
-  "aliases": [
-   "fish & chips",
-   "chippy",
-   "battered cod and chips",
-   "chippy tea"
-  ],
-  "aliases_ua": [
-   "фіш енд чіпс",
-   "смажена риба з картоплею"
-  ],
-  "kcal100": 230.0,
-  "protein100": 12.0,
-  "fat100": 12.0,
-  "carbs100": 20.0
- },
- {
-  "id": "full-english-breakfast",
-  "kind": "DISH",
-  "name": "Full English Breakfast",
-  "name_ua": "Повний англійський сніданок",
-  "aliases": [
-   "fry-up",
-   "English breakfast",
-   "cooked breakfast",
-   "full English",
-   "fry up"
-  ],
-  "aliases_ua": [
-   "англійський сніданок",
-   "фрай-ап",
-   "повний сніданок"
-  ],
-  "kcal100": 180.0,
-  "protein100": 12.0,
-  "fat100": 11.0,
-  "carbs100": 8.0
- },
- {
-  "id": "shepherd-s-pie",
-  "kind": "DISH",
-  "name": "Shepherd's Pie",
-  "name_ua": "Пастуший пиріг",
-  "aliases": [
-   "cottage pie",
-   "shepherds pie",
-   "lamb mince pie"
-  ],
-  "aliases_ua": [
-   "котедж пай",
-   "пиріг з бараниною",
-   "картопляна запіканка"
-  ],
-  "kcal100": 120.0,
-  "protein100": 8.0,
-  "fat100": 5.0,
-  "carbs100": 11.0
- },
- {
-  "id": "bangers-and-mash",
-  "kind": "DISH",
-  "name": "Bangers And Mash",
-  "name_ua": "Сосиски з пюре",
-  "aliases": [
-   "sausage and mash",
-   "sausages with mashed potato",
-   "bangers & mash"
-  ],
-  "aliases_ua": [
-   "бенгерс енд меш",
-   "ковбаски з картопляним пюре"
-  ],
-  "kcal100": 140.0,
-  "protein100": 7.0,
-  "fat100": 7.0,
-  "carbs100": 12.0
- },
- {
-  "id": "cornish-pasty",
-  "kind": "DISH",
-  "name": "Cornish Pasty",
-  "name_ua": "Корнуельський пиріжок",
-  "aliases": [
-   "pasty",
-   "meat pasty",
-   "Cornish pastie"
-  ],
-  "aliases_ua": [
-   "пасті",
-   "м'ясний пиріжок",
-   "корніш пасті"
-  ],
-  "kcal100": 265.0,
-  "protein100": 8.0,
-  "fat100": 14.0,
-  "carbs100": 28.0
- },
- {
-  "id": "scotch-egg",
-  "kind": "DISH",
-  "name": "Scotch Egg",
-  "name_ua": "Шотландське яйце",
-  "aliases": [
-   "scotch eggs",
-   "breaded egg",
-   "picnic egg"
-  ],
-  "aliases_ua": [
-   "яйце в м'ясі",
-   "скотч ег",
-   "паніроване яйце"
-  ],
-  "kcal100": 240.0,
-  "protein100": 13.0,
-  "fat100": 15.0,
-  "carbs100": 14.0
- },
- {
-  "id": "yorkshire-pudding",
-  "kind": "DISH",
-  "name": "Yorkshire Pudding",
-  "name_ua": "Йоркширський пудинг",
-  "aliases": [
-   "yorkie pud",
-   "Yorkshire pud",
-   "batter pudding"
-  ],
-  "aliases_ua": [
-   "йоркшир пуд",
-   "тісто-пудинг"
-  ],
-  "kcal100": 180.0,
-  "protein100": 6.0,
-  "fat100": 5.0,
-  "carbs100": 26.0
- },
- {
-  "id": "beef-wellington",
-  "kind": "DISH",
-  "name": "Beef Wellington",
-  "name_ua": "Біф Веллінгтон",
-  "aliases": [
-   "Wellington",
-   "beef en croute",
-   "beef in pastry"
-  ],
-  "aliases_ua": [
-   "яловичина у тісті",
-   "м'ясо Веллінгтон"
-  ],
-  "kcal100": 260.0,
-  "protein100": 15.0,
-  "fat100": 16.0,
-  "carbs100": 14.0
- },
- {
-  "id": "toad-in-the-hole",
-  "kind": "DISH",
-  "name": "Toad In The Hole",
-  "name_ua": "Сосиски в тісті",
-  "aliases": [
-   "sausage in batter",
-   "toad-in-the-hole"
-  ],
-  "aliases_ua": [
-   "тоуд ін зе хоул",
-   "ковбаски в тісті"
-  ],
-  "kcal100": 190.0,
-  "protein100": 8.0,
-  "fat100": 10.0,
-  "carbs100": 16.0
- },
- {
-  "id": "beans-on-toast",
-  "kind": "DISH",
-  "name": "Beans On Toast",
-  "name_ua": "Квасоля на тості",
-  "aliases": [
-   "baked beans on toast",
-   "beans & toast",
-   "beans on bread"
-  ],
-  "aliases_ua": [
-   "бінс он тоуст",
-   "квасоля з хлібом"
-  ],
-  "kcal100": 130.0,
-  "protein100": 6.0,
-  "fat100": 2.0,
-  "carbs100": 22.0
- },
- {
-  "id": "jacket-potato-with-beans",
-  "kind": "DISH",
-  "name": "Jacket Potato With Beans",
-  "name_ua": "Печена картопля з квасолею",
-  "aliases": [
-   "baked potato with beans",
-   "jacket spud",
-   "baked potato"
-  ],
-  "aliases_ua": [
-   "жакет потейто",
-   "картопля в мундирі",
-   "печена бульба"
-  ],
-  "kcal100": 100.0,
-  "protein100": 4.0,
-  "fat100": 0.5,
-  "carbs100": 20.0
- },
- {
-  "id": "chicken-tikka-masala",
-  "kind": "DISH",
-  "name": "Chicken Tikka Masala",
-  "name_ua": "Курка тікка масала",
-  "aliases": [
-   "tikka masala",
-   "CTM",
-   "chicken tikka",
-   "curry chicken"
-  ],
-  "aliases_ua": [
-   "тікка масала",
-   "курячий каррі",
-   "індійська курка"
-  ],
-  "kcal100": 150.0,
-  "protein100": 13.0,
-  "fat100": 8.0,
-  "carbs100": 6.0
- },
- {
-  "id": "sunday-roast",
-  "kind": "DISH",
-  "name": "Sunday Roast",
-  "name_ua": "Недільний обід",
-  "aliases": [
-   "roast dinner",
-   "Sunday lunch",
-   "roast carvery",
-   "Sunday roast dinner"
-  ],
-  "aliases_ua": [
-   "ростбіф",
-   "недільне запечене",
-   "роздінер"
-  ],
-  "kcal100": 170.0,
-  "protein100": 15.0,
-  "fat100": 8.0,
-  "carbs100": 10.0
- },
- {
-  "id": "pork-pie",
-  "kind": "DISH",
-  "name": "Pork Pie",
-  "name_ua": "Свинячий пиріг",
-  "aliases": [
-   "pork pie",
-   "Melton Mowbray",
-   "raised pork pie"
-  ],
-  "aliases_ua": [
-   "порк пай",
-   "пиріг зі свининою"
-  ],
-  "kcal100": 350.0,
-  "protein100": 10.0,
-  "fat100": 24.0,
-  "carbs100": 24.0
- },
- {
-  "id": "haggis",
-  "kind": "DISH",
-  "name": "Haggis",
-  "name_ua": "Хагіс",
-  "aliases": [
-   "Scottish haggis",
-   "haggis neeps and tatties"
-  ],
-  "aliases_ua": [
-   "шотландський хагіс",
-   "хагіс з ріпою"
-  ],
-  "kcal100": 180.0,
-  "protein100": 10.0,
-  "fat100": 11.0,
-  "carbs100": 9.0
- },
- {
-  "id": "black-pudding",
-  "kind": "PRODUCT",
-  "name": "Black Pudding",
-  "name_ua": "Кров'яна ковбаса",
-  "aliases": [
-   "blood sausage",
-   "blood pudding",
-   "black pud"
-  ],
-  "aliases_ua": [
-   "кров'янка",
-   "блад пудинг",
-   "чорний пудинг"
-  ],
-  "kcal100": 297.0,
-  "protein100": 13.0,
-  "fat100": 22.0,
-  "carbs100": 12.0
- },
- {
-  "id": "sticky-toffee-pudding",
-  "kind": "DISH",
-  "name": "Sticky Toffee Pudding",
-  "name_ua": "Тофі пудинг",
-  "aliases": [
-   "toffee pudding",
-   "sticky toffee",
-   "STP",
-   "toffee cake"
-  ],
-  "aliases_ua": [
-   "стікі тофі пудинг",
-   "карамельний пудинг"
-  ],
-  "kcal100": 340.0,
-  "protein100": 3.0,
-  "fat100": 12.0,
-  "carbs100": 55.0
- },
- {
-  "id": "scones",
-  "kind": "DISH",
-  "name": "Scones",
-  "name_ua": "Сконси",
-  "aliases": [
-   "scone",
-   "English scone",
-   "cream tea scone",
-   "fruit scone"
-  ],
-  "aliases_ua": [
-   "англійські сконси",
-   "сконс",
-   "булочки до чаю"
-  ],
-  "kcal100": 360.0,
-  "protein100": 7.0,
-  "fat100": 14.0,
-  "carbs100": 52.0
- },
- {
-  "id": "crumpets",
-  "kind": "PRODUCT",
-  "name": "Crumpets",
-  "name_ua": "Крампети",
-  "aliases": [
-   "crumpet",
-   "English crumpet",
-   "pikelets",
-   "toasting crumpet"
-  ],
-  "aliases_ua": [
-   "англійські крампети",
-   "крампет",
-   "тостові крампети"
-  ],
-  "kcal100": 190.0,
-  "protein100": 6.0,
-  "fat100": 1.0,
-  "carbs100": 38.0
- },
- {
-  "id": "ploughman-s-lunch",
-  "kind": "DISH",
-  "name": "Ploughman's Lunch",
-  "name_ua": "Фермерський обід",
-  "aliases": [
-   "ploughmans",
-   "cheese and pickle",
-   "ploughman's"
-  ],
-  "aliases_ua": [
-   "плаумен",
-   "сир з маринованими овочами"
-  ],
-  "kcal100": 200.0,
-  "protein100": 10.0,
-  "fat100": 12.0,
-  "carbs100": 12.0
- },
- {
-  "id": "cheeseburger",
-  "kind": "DISH",
-  "name": "Cheeseburger",
-  "name_ua": "Чізбургер",
-  "aliases": [
-   "burger",
-   "hamburger with cheese",
-   "cheese burger",
-   "quarter pounder"
-  ],
-  "aliases_ua": [
-   "бургер з сиром",
-   "гамбургер з сиром",
-   "бургер"
-  ],
-  "kcal100": 270.0,
-  "protein100": 15.0,
-  "fat100": 14.0,
-  "carbs100": 22.0
- },
- {
-  "id": "hot-dog",
-  "kind": "DISH",
-  "name": "Hot Dog",
-  "name_ua": "Хот-дог",
-  "aliases": [
-   "hotdog",
-   "frankfurter",
-   "wiener",
-   "frank",
-   "sausage in bun"
-  ],
-  "aliases_ua": [
-   "сосиска в булці",
-   "хот дог",
-   "гарячий пес"
-  ],
-  "kcal100": 250.0,
-  "protein100": 10.0,
-  "fat100": 15.0,
-  "carbs100": 20.0
- },
- {
-  "id": "mac-and-cheese",
-  "kind": "DISH",
-  "name": "Mac And Cheese",
-  "name_ua": "Макарони з сиром",
-  "aliases": [
-   "macaroni and cheese",
-   "mac n cheese",
-   "mac & cheese"
-  ],
-  "aliases_ua": [
-   "мак енд чіз",
-   "сирні макарони",
-   "паста з сиром"
-  ],
-  "kcal100": 160.0,
-  "protein100": 7.0,
-  "fat100": 7.0,
-  "carbs100": 17.0
- },
- {
-  "id": "bbq-pulled-pork",
-  "kind": "DISH",
-  "name": "BBQ Pulled Pork",
-  "name_ua": "Тушена свинина BBQ",
-  "aliases": [
-   "pulled pork",
-   "BBQ pork",
-   "barbecue pulled pork",
-   "slow cooked pork"
-  ],
-  "aliases_ua": [
-   "тягнута свинина",
-   "барбекю свинина",
-   "пулд порк"
-  ],
-  "kcal100": 210.0,
-  "protein100": 20.0,
-  "fat100": 10.0,
-  "carbs100": 10.0
- },
- {
-  "id": "buffalo-wings",
-  "kind": "DISH",
-  "name": "Buffalo Wings",
-  "name_ua": "Крильця Баффало",
-  "aliases": [
-   "buffalo chicken wings",
-   "hot wings",
-   "chicken wings",
-   "wing night"
-  ],
-  "aliases_ua": [
-   "гострі крильця",
-   "курячі крильця",
-   "крильця у соусі"
-  ],
-  "kcal100": 190.0,
-  "protein100": 17.0,
-  "fat100": 13.0,
-  "carbs100": 1.0
- },
- {
-  "id": "clam-chowder",
-  "kind": "DISH",
-  "name": "Clam Chowder",
-  "name_ua": "Суп з молюсками",
-  "aliases": [
-   "New England clam chowder",
-   "chowder",
-   "cream clam soup"
-  ],
-  "aliases_ua": [
-   "клем чаудер",
-   "вершковий суп з молюсками"
-  ],
-  "kcal100": 90.0,
-  "protein100": 4.0,
-  "fat100": 5.0,
-  "carbs100": 8.0
- },
- {
-  "id": "american-pancakes",
-  "kind": "DISH",
-  "name": "American Pancakes",
-  "name_ua": "Американські млинці",
-  "aliases": [
-   "pancakes",
-   "flapjacks",
-   "hotcakes",
-   "griddle cakes",
-   "stack"
-  ],
-  "aliases_ua": [
-   "панкейки",
-   "товсті млинці",
-   "оладки американські"
-  ],
-  "kcal100": 230.0,
-  "protein100": 6.0,
-  "fat100": 5.0,
-  "carbs100": 40.0
- },
- {
-  "id": "pb-j-sandwich",
-  "kind": "DISH",
-  "name": "PB&J Sandwich",
-  "name_ua": "Сендвіч з арахісовою пастою",
-  "aliases": [
-   "peanut butter and jelly",
-   "PBJ",
-   "peanut butter sandwich"
-  ],
-  "aliases_ua": [
-   "PBJ сендвіч",
-   "сендвіч з джемом і арахісом"
-  ],
-  "kcal100": 340.0,
-  "protein100": 10.0,
-  "fat100": 14.0,
-  "carbs100": 45.0
- },
- {
-  "id": "meatloaf",
-  "kind": "DISH",
-  "name": "Meatloaf",
-  "name_ua": "М'ясний рулет",
-  "aliases": [
-   "meat loaf",
-   "American meatloaf",
-   "ground beef loaf"
-  ],
-  "aliases_ua": [
-   "мітлоуф",
-   "запечений фарш",
-   "м'ясна буханка"
-  ],
-  "kcal100": 170.0,
-  "protein100": 14.0,
-  "fat100": 10.0,
-  "carbs100": 6.0
- },
- {
-  "id": "caesar-salad",
-  "kind": "DISH",
-  "name": "Caesar Salad",
-  "name_ua": "Салат Цезар",
-  "aliases": [
-   "caesar",
-   "chicken caesar salad",
-   "Caesar with croutons"
-  ],
-  "aliases_ua": [
-   "цезар",
-   "курячий цезар",
-   "салат з крутонами"
-  ],
-  "kcal100": 120.0,
-  "protein100": 7.0,
-  "fat100": 8.0,
-  "carbs100": 5.0
- },
- {
-  "id": "roast-turkey",
-  "kind": "DISH",
-  "name": "Roast Turkey",
-  "name_ua": "Запечена індичка",
-  "aliases": [
-   "turkey",
-   "Thanksgiving turkey",
-   "roasted turkey breast",
-   "turkey breast"
-  ],
-  "aliases_ua": [
-   "індичка",
-   "різдвяна індичка",
-   "індича грудка"
-  ],
-  "kcal100": 170.0,
-  "protein100": 29.0,
-  "fat100": 5.0,
-  "carbs100": 0.0
- },
- {
-  "id": "cornbread",
-  "kind": "DISH",
-  "name": "Cornbread",
-  "name_ua": "Кукурудзяний хліб",
-  "aliases": [
-   "corn bread",
-   "Southern cornbread",
-   "johnnycake",
-   "corn muffin"
-  ],
-  "aliases_ua": [
-   "корнбред",
-   "кукурудзяна булка",
-   "кукурудзяний мафін"
-  ],
-  "kcal100": 250.0,
-  "protein100": 5.0,
-  "fat100": 8.0,
-  "carbs100": 38.0
- },
- {
-  "id": "cobb-salad",
-  "kind": "DISH",
-  "name": "Cobb Salad",
-  "name_ua": "Салат Кобб",
-  "aliases": [
-   "cobb",
-   "Cobb salad with chicken",
-   "American Cobb"
-  ],
-  "aliases_ua": [
-   "кобб",
-   "американський кобб",
-   "салат з куркою та беконом"
-  ],
-  "kcal100": 130.0,
-  "protein100": 10.0,
-  "fat100": 9.0,
-  "carbs100": 3.0
- },
- {
-  "id": "philly-cheesesteak",
-  "kind": "DISH",
-  "name": "Philly Cheesesteak",
-  "name_ua": "Філадельфійський чізстейк",
-  "aliases": [
-   "cheesesteak",
-   "Philly steak",
-   "cheese steak sandwich",
-   "Philly"
-  ],
-  "aliases_ua": [
-   "чізстейк",
-   "філлі стейк",
-   "стейк сендвіч"
-  ],
-  "kcal100": 230.0,
-  "protein100": 15.0,
-  "fat100": 12.0,
-  "carbs100": 16.0
- },
- {
-  "id": "jambalaya",
-  "kind": "DISH",
-  "name": "Jambalaya",
-  "name_ua": "Джамбалайя",
-  "aliases": [
-   "Cajun jambalaya",
-   "Creole jambalaya",
-   "Louisiana rice dish"
-  ],
-  "aliases_ua": [
-   "каджунська джамбалайя",
-   "креольський рис"
-  ],
-  "kcal100": 130.0,
-  "protein100": 8.0,
-  "fat100": 4.0,
-  "carbs100": 16.0
- },
- {
-  "id": "burrito",
-  "kind": "DISH",
-  "name": "Burrito",
-  "name_ua": "Буріто",
-  "aliases": [
-   "Mexican burrito",
-   "beef burrito",
-   "bean burrito",
-   "wrap burrito"
-  ],
-  "aliases_ua": [
-   "мексиканське буріто",
-   "рол з квасолею"
-  ],
-  "kcal100": 165.0,
-  "protein100": 9.0,
-  "fat100": 6.0,
-  "carbs100": 20.0
- },
- {
-  "id": "fried-chicken",
-  "kind": "DISH",
-  "name": "Fried Chicken",
-  "name_ua": "Смажена курка",
-  "aliases": [
-   "Southern fried chicken",
-   "crispy chicken",
-   "deep fried chicken",
-   "KFC"
-  ],
-  "aliases_ua": [
-   "курка фрі",
-   "хрустка курка",
-   "панірована курка"
-  ],
-  "kcal100": 250.0,
-  "protein100": 21.0,
-  "fat100": 15.0,
-  "carbs100": 8.0
- },
- {
-  "id": "chicken-pot-pie",
-  "kind": "DISH",
-  "name": "Chicken Pot Pie",
-  "name_ua": "Курячий пиріг",
-  "aliases": [
-   "pot pie",
-   "chicken pie",
-   "American chicken pie"
-  ],
-  "aliases_ua": [
-   "пот пай",
-   "курячий пиріг з овочами"
-  ],
-  "kcal100": 230.0,
-  "protein100": 9.0,
-  "fat100": 14.0,
-  "carbs100": 17.0
- },
- {
-  "id": "biscuits-and-gravy",
-  "kind": "DISH",
-  "name": "Biscuits And Gravy",
-  "name_ua": "Бісквіти з підливою",
-  "aliases": [
-   "Southern biscuits",
-   "biscuits & gravy",
-   "B&G",
-   "sausage gravy"
-  ],
-  "aliases_ua": [
-   "бісквіти і грейві",
-   "американські бісквіти"
-  ],
-  "kcal100": 200.0,
-  "protein100": 5.0,
-  "fat100": 10.0,
-  "carbs100": 22.0
- },
- {
-  "id": "grits",
-  "kind": "PRODUCT",
-  "name": "Grits",
-  "name_ua": "Кукурудзяна каша",
-  "aliases": [
-   "Southern grits",
-   "corn grits",
-   "hominy grits",
-   "breakfast grits"
-  ],
-  "aliases_ua": [
-   "грітс",
-   "кукурудзяна крупа",
-   "мамалиґа"
-  ],
-  "kcal100": 73.0,
-  "protein100": 1.8,
-  "fat100": 0.5,
-  "carbs100": 16.0
- },
- {
-  "id": "chicken-breast-raw",
-  "kind": "PRODUCT",
-  "name": "Chicken Breast (Raw)",
-  "name_ua": "Куряча грудка (сира)",
-  "aliases": [
-   "raw chicken breast",
-   "skinless chicken breast",
-   "chicken fillet",
-   "boneless chicken"
-  ],
-  "aliases_ua": [
-   "грудинка куряча",
-   "філе куряче",
-   "куряче філе сире"
-  ],
-  "kcal100": 120.0,
-  "protein100": 23.0,
-  "fat100": 2.6,
-  "carbs100": 0.0
- },
- {
-  "id": "chicken-breast-cooked",
-  "kind": "PRODUCT",
-  "name": "Chicken Breast (Cooked)",
-  "name_ua": "Куряча грудка (готова)",
-  "aliases": [
-   "grilled chicken breast",
-   "baked chicken breast",
-   "cooked chicken",
-   "pan-fried chicken"
-  ],
-  "aliases_ua": [
-   "грудка запечена",
-   "куряче філе готове",
-   "грудка гриль"
-  ],
-  "kcal100": 165.0,
-  "protein100": 31.0,
-  "fat100": 3.6,
-  "carbs100": 0.0
- },
- {
-  "id": "chicken-thigh-raw",
-  "kind": "PRODUCT",
-  "name": "Chicken Thigh (Raw)",
-  "name_ua": "Куряче стегно (сире)",
-  "aliases": [
-   "raw chicken thigh",
-   "bone-in thigh",
-   "dark meat chicken",
-   "chicken leg"
-  ],
-  "aliases_ua": [
-   "стегенце куряче",
-   "куряча ніжка",
-   "темне м'ясо"
-  ],
-  "kcal100": 177.0,
-  "protein100": 20.0,
-  "fat100": 10.0,
-  "carbs100": 0.0
- },
- {
-  "id": "turkey-breast-cooked",
-  "kind": "PRODUCT",
-  "name": "Turkey Breast (Cooked)",
-  "name_ua": "Індича грудка (готова)",
-  "aliases": [
-   "cooked turkey",
-   "roast turkey breast",
-   "deli turkey",
-   "sliced turkey"
-  ],
-  "aliases_ua": [
-   "індичка відварна",
-   "індиче філе",
-   "грудка індички"
-  ],
-  "kcal100": 135.0,
-  "protein100": 30.0,
-  "fat100": 1.0,
-  "carbs100": 0.0
- },
- {
-  "id": "beef-mince-raw-15",
-  "kind": "PRODUCT",
-  "name": "Beef Mince (Raw 15%)",
-  "name_ua": "Яловичий фарш (сирий 15%)",
-  "aliases": [
-   "ground beef",
-   "minced beef",
-   "hamburger meat",
-   "beef mince 15% fat"
-  ],
-  "aliases_ua": [
-   "мелена яловичина",
-   "фарш яловичий",
-   "м'ясний фарш"
-  ],
-  "kcal100": 215.0,
-  "protein100": 19.0,
-  "fat100": 15.0,
-  "carbs100": 0.0
- },
- {
-  "id": "beef-steak-raw",
-  "kind": "PRODUCT",
-  "name": "Beef Steak (Raw)",
-  "name_ua": "Яловичий стейк (сирий)",
-  "aliases": [
-   "sirloin",
-   "ribeye",
-   "steak",
-   "beef sirloin",
-   "rump steak",
-   "fillet steak"
-  ],
-  "aliases_ua": [
-   "стейк",
-   "яловичина",
-   "філе яловичини",
-   "вирізка"
-  ],
-  "kcal100": 200.0,
-  "protein100": 26.0,
-  "fat100": 10.0,
-  "carbs100": 0.0
- },
- {
-  "id": "pork-chop-cooked",
-  "kind": "PRODUCT",
-  "name": "Pork Chop (Cooked)",
-  "name_ua": "Свиняча відбивна (готова)",
-  "aliases": [
-   "cooked pork chop",
-   "grilled pork chop",
-   "pork loin chop"
-  ],
-  "aliases_ua": [
-   "відбивна",
-   "свиняча котлета",
-   "свиняча корейка"
-  ],
-  "kcal100": 231.0,
-  "protein100": 27.0,
-  "fat100": 13.0,
-  "carbs100": 0.0
- },
- {
-  "id": "lamb-cooked",
-  "kind": "PRODUCT",
-  "name": "Lamb (Cooked)",
-  "name_ua": "Баранина (готова)",
-  "aliases": [
-   "roast lamb",
-   "grilled lamb",
-   "lamb leg",
-   "lamb shoulder"
-  ],
-  "aliases_ua": [
-   "ягнятина",
-   "баранина запечена",
-   "баранина гриль"
-  ],
-  "kcal100": 258.0,
-  "protein100": 25.0,
-  "fat100": 17.0,
-  "carbs100": 0.0
- },
- {
-  "id": "bacon-cooked",
-  "kind": "PRODUCT",
-  "name": "Bacon (Cooked)",
-  "name_ua": "Бекон (смажений)",
-  "aliases": [
-   "fried bacon",
-   "crispy bacon",
-   "streaky bacon",
-   "rashers",
-   "back bacon"
-  ],
-  "aliases_ua": [
-   "бекон",
-   "шпик смажений",
-   "бекон хрусткий"
-  ],
-  "kcal100": 541.0,
-  "protein100": 37.0,
-  "fat100": 42.0,
-  "carbs100": 1.4
- },
- {
-  "id": "pork-sausage",
-  "kind": "PRODUCT",
-  "name": "Pork Sausage",
-  "name_ua": "Свиняча ковбаска",
-  "aliases": [
-   "breakfast sausage",
-   "pork link",
-   "banger",
-   "Cumberland sausage"
-  ],
-  "aliases_ua": [
-   "ковбаски",
-   "сардельки",
-   "ковбаска для сніданку"
-  ],
-  "kcal100": 301.0,
-  "protein100": 13.0,
-  "fat100": 25.0,
-  "carbs100": 5.0
- },
- {
-  "id": "salmon-raw",
-  "kind": "PRODUCT",
-  "name": "Salmon (Raw)",
-  "name_ua": "Лосось (сирий)",
-  "aliases": [
-   "raw salmon",
-   "Atlantic salmon",
-   "salmon fillet",
-   "fresh salmon"
-  ],
-  "aliases_ua": [
-   "сьомга",
-   "лосось філе",
-   "червона риба",
-   "форель"
-  ],
-  "kcal100": 208.0,
-  "protein100": 20.0,
-  "fat100": 13.0,
-  "carbs100": 0.0
- },
- {
-  "id": "tuna-canned-in-water",
-  "kind": "PRODUCT",
-  "name": "Tuna (Canned In Water)",
-  "name_ua": "Тунець (консервований)",
-  "aliases": [
-   "tinned tuna",
-   "canned tuna",
-   "tuna in spring water",
-   "chunk tuna"
-  ],
-  "aliases_ua": [
-   "тунець у воді",
-   "консерва тунець",
-   "баночний тунець"
-  ],
-  "kcal100": 116.0,
-  "protein100": 26.0,
-  "fat100": 0.8,
-  "carbs100": 0.0
- },
- {
-  "id": "cod-cooked",
-  "kind": "PRODUCT",
-  "name": "Cod (Cooked)",
-  "name_ua": "Тріска (готова)",
-  "aliases": [
-   "white fish",
-   "baked cod",
-   "grilled cod",
-   "haddock",
-   "pollock"
-  ],
-  "aliases_ua": [
-   "біла риба",
-   "тріска запечена",
-   "хек",
-   "минтай"
-  ],
-  "kcal100": 82.0,
-  "protein100": 18.0,
-  "fat100": 0.7,
-  "carbs100": 0.0
- },
- {
-  "id": "shrimp-cooked",
-  "kind": "PRODUCT",
-  "name": "Shrimp (Cooked)",
-  "name_ua": "Креветки (готові)",
-  "aliases": [
-   "prawns",
-   "cooked prawns",
-   "king prawns",
-   "shrimp boiled"
-  ],
-  "aliases_ua": [
-   "креветки відварні",
-   "морські креветки",
-   "гарнели"
-  ],
-  "kcal100": 99.0,
-  "protein100": 24.0,
-  "fat100": 0.3,
-  "carbs100": 0.2
- },
- {
-  "id": "eggs-whole",
-  "kind": "PRODUCT",
-  "name": "Eggs (Whole)",
-  "name_ua": "Яйця (цілі)",
-  "aliases": [
-   "egg",
-   "chicken egg",
-   "raw egg",
-   "whole egg",
-   "boiled egg"
-  ],
-  "aliases_ua": [
-   "яйце",
-   "куряче яйце",
-   "варене яйце",
-   "сире яйце"
-  ],
-  "kcal100": 155.0,
-  "protein100": 13.0,
-  "fat100": 11.0,
-  "carbs100": 1.1
- },
- {
-  "id": "egg-whites",
-  "kind": "PRODUCT",
-  "name": "Egg Whites",
-  "name_ua": "Яєчні білки",
-  "aliases": [
-   "egg white",
-   "albumen",
-   "liquid egg whites",
-   "egg whites only"
-  ],
-  "aliases_ua": [
-   "білок яєчний",
-   "рідкий білок",
-   "білки"
-  ],
-  "kcal100": 52.0,
-  "protein100": 11.0,
-  "fat100": 0.2,
-  "carbs100": 0.7
- },
- {
-  "id": "tofu",
-  "kind": "PRODUCT",
-  "name": "Tofu",
-  "name_ua": "Тофу",
-  "aliases": [
-   "bean curd",
-   "soybean curd",
-   "firm tofu",
-   "silken tofu"
-  ],
-  "aliases_ua": [
-   "соєвий сир",
-   "бобовий сир",
-   "тверде тофу"
-  ],
-  "kcal100": 76.0,
-  "protein100": 8.0,
-  "fat100": 4.8,
-  "carbs100": 1.9
+   "гречка"
+  ],
+  "kcal100": 92,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170686: Buckwheat groats, roasted, cooked"
+  }
  },
  {
   "id": "white-rice-cooked",
-  "kind": "PRODUCT",
-  "name": "White Rice (Cooked)",
-  "name_ua": "Білий рис (варений)",
+  "name": "Рис варений",
+  "nameEn": "Rice",
   "aliases": [
-   "cooked rice",
-   "steamed rice",
+   "white rice",
    "boiled rice",
-   "jasmine rice",
-   "basmati cooked"
+   "steamed rice"
   ],
-  "aliases_ua": [
-   "рис відварний",
-   "рис на пару",
-   "жасминовий рис"
+  "aliasesUa": [
+   "рис"
   ],
-  "kcal100": 130.0,
-  "protein100": 2.7,
-  "fat100": 0.3,
-  "carbs100": 28.0
+  "kcal100": 130,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169757: Rice, white, long-grain, regular, unenriched, cooked without salt"
+  }
  },
  {
-  "id": "brown-rice-cooked",
-  "kind": "PRODUCT",
-  "name": "Brown Rice (Cooked)",
-  "name_ua": "Коричневий рис (варений)",
+  "id": "millet-porridge",
+  "name": "Пшоняна каша на воді",
+  "nameEn": "Millet porridge",
   "aliases": [
-   "cooked brown rice",
-   "whole grain rice",
-   "wholegrain rice",
-   "brown basmati"
+   "millet"
   ],
-  "aliases_ua": [
-   "бурий рис",
-   "цільнозерновий рис",
-   "нешліфований рис"
+  "aliasesUa": [
+   "пшоно",
+   "пшонка"
   ],
-  "kcal100": 123.0,
-  "protein100": 2.7,
-  "fat100": 1.0,
-  "carbs100": 26.0
+  "kcal100": 119,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168871: Millet, cooked"
+  }
  },
  {
-  "id": "oats-dry",
-  "kind": "PRODUCT",
-  "name": "Oats (Dry)",
-  "name_ua": "Вівсянка (суха)",
+  "id": "pearl-barley-cooked",
+  "name": "Перлова каша",
+  "nameEn": "Pearl barley",
   "aliases": [
-   "oatmeal",
-   "porridge oats",
-   "rolled oats",
-   "dry oats",
-   "steel cut oats"
+   "barley"
   ],
-  "aliases_ua": [
-   "вівсяні пластівці",
-   "геркулес",
-   "вівсяна каша суха"
+  "aliasesUa": [
+   "перловка"
   ],
-  "kcal100": 379.0,
-  "protein100": 13.0,
-  "fat100": 7.0,
-  "carbs100": 66.0
+  "kcal100": 123,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170285: Barley, pearled, cooked"
+  }
+ },
+ {
+  "id": "oatmeal-water",
+  "name": "Вівсянка на воді",
+  "nameEn": "Oatmeal",
+  "aliases": [
+   "porridge",
+   "oat porridge"
+  ],
+  "aliasesUa": [
+   "вівсяна каша на воді"
+  ],
+  "kcal100": 71,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173905: Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt"
+  }
+ },
+ {
+  "id": "oatmeal-milk",
+  "name": "Вівсянка на молоці",
+  "nameEn": "Oatmeal with milk",
+  "aliases": [
+   "milk porridge",
+   "oats with milk"
+  ],
+  "aliasesUa": [
+   "вівсяна каша на молоці"
+  ],
+  "kcal100": 117,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: https://www.unian.ua/recipes/second-courses/side-dishes/yak-variti-vivsyanku-recept-vivsyanoji-kashi-na-vodi-ta-moloci-proporciji-11379634.html (пластівці 1 склянка, молоко 2,5 склянки, дрібка солі, 1 ст. л. цукру, вершкове масло в готову кашу). Compared: https://klopotenko.com/vse-shho-potribno-znaty-pro-vivsyanku-vydy-sposib-ta-chas-prygotuvannya/ (1 частина пластівців : 2,5 частини молока, 5-7 хв); https://vkusvill.ru/media/recipes/gerkulesovaya-kasha-v-multivarke.html (200 г пластівців, 500 мл молока + 300 мл води, 2,5 ст. л. цукру, 25 г масла)."
+  }
+ },
+ {
+  "id": "semolina-porridge",
+  "name": "Манна каша на молоці",
+  "nameEn": "Semolina porridge",
+  "aliases": [
+   "cream of wheat",
+   "semolina"
+  ],
+  "aliasesUa": [
+   "манка"
+  ],
+  "kcal100": 122,
+  "source": {
+   "type": "recipe",
+   "ref": "Averaged: https://klopotenko.com/na-moloczi-na-vodi-ta-na-yihnij-sumishi-yak-varyty-manku-ta-yaku-obyraty/ (4 ст. л. з гіркою манки на 400 мл молока, ¼ ч. л. цукру, шматочок масла; 2 порції); https://recepty.24tv.ua/recipe/manna-kasha-retsept-na-molotsi-z-foto_id460 (300 мл молока, 25 мл води, 50 г манки, 10 г масла, цукор за смаком; 1 порція); https://www.unian.ua/recipes/second-courses/side-dishes/yak-variti-mannu-kashu-na-vodi-na-moloci-i-dlya-ditini-11489089.html (600 мл молока, 3 ст. л. манки, 2 ст. л. цукру, 30 г масла)."
+  }
+ },
+ {
+  "id": "corn-porridge",
+  "name": "Кукурудзяна каша на воді (мамалига)",
+  "nameEn": "Corn porridge",
+  "aliases": [
+   "polenta",
+   "grits",
+   "cornmeal mush"
+  ],
+  "aliasesUa": [
+   "мамалига",
+   "кукурудзяна каша"
+  ],
+  "kcal100": 65,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171672: Cereals, corn grits, yellow, regular and quick, enriched, cooked with water, without salt"
+  }
  },
  {
   "id": "pasta-cooked",
-  "kind": "PRODUCT",
-  "name": "Pasta (Cooked)",
-  "name_ua": "Макарони (варені)",
+  "name": "Макарони варені",
+  "nameEn": "Pasta",
   "aliases": [
-   "cooked pasta",
-   "boiled spaghetti",
-   "cooked penne",
    "noodles",
-   "fusilli"
+   "spaghetti",
+   "macaroni",
+   "vermicelli"
   ],
-  "aliases_ua": [
-   "паста",
-   "спагеті",
-   "пене",
+  "aliasesUa": [
+   "макарони",
    "вермішель",
-   "локшина"
+   "спагеті"
   ],
-  "kcal100": 131.0,
-  "protein100": 5.0,
-  "fat100": 1.1,
-  "carbs100": 25.0
- },
- {
-  "id": "white-bread",
-  "kind": "PRODUCT",
-  "name": "White Bread",
-  "name_ua": "Білий хліб",
-  "aliases": [
-   "bread",
-   "sliced white bread",
-   "sandwich bread",
-   "toast bread",
-   "loaf"
-  ],
-  "aliases_ua": [
-   "хліб",
-   "батон",
-   "білий батон",
-   "тостовий хліб",
-   "нарізний"
-  ],
-  "kcal100": 265.0,
-  "protein100": 9.0,
-  "fat100": 3.2,
-  "carbs100": 49.0
- },
- {
-  "id": "whole-wheat-bread",
-  "kind": "PRODUCT",
-  "name": "Whole Wheat Bread",
-  "name_ua": "Цільнозерновий хліб",
-  "aliases": [
-   "wholemeal bread",
-   "brown bread",
-   "whole grain bread",
-   "granary bread"
-  ],
-  "aliases_ua": [
-   "чорний хліб",
-   "житній хліб",
-   "хліб з висівками"
-  ],
-  "kcal100": 252.0,
-  "protein100": 12.0,
-  "fat100": 3.4,
-  "carbs100": 43.0
+  "kcal100": 158,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168928: Pasta, cooked, unenriched, without added salt"
+  }
  },
  {
   "id": "potato-boiled",
-  "kind": "PRODUCT",
-  "name": "Potato (Boiled)",
-  "name_ua": "Картопля (варена)",
+  "name": "Картопля варена",
+  "nameEn": "Boiled potatoes",
   "aliases": [
-   "boiled potato",
-   "mashed potato base",
-   "cooked potato",
-   "jacket potato plain"
+   "potatoes",
+   "potato",
+   "jacket potatoes"
   ],
-  "aliases_ua": [
+  "aliasesUa": [
+   "картопля",
    "бульба",
-   "відварна картопля",
-   "картопляне пюре"
+   "картопля в мундирі"
   ],
-  "kcal100": 87.0,
-  "protein100": 1.9,
-  "fat100": 0.1,
-  "carbs100": 20.0
+  "kcal100": 86,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170440: Potatoes, boiled, cooked without skin, flesh, without salt"
+  }
  },
  {
-  "id": "sweet-potato-baked",
-  "kind": "PRODUCT",
-  "name": "Sweet Potato (Baked)",
-  "name_ua": "Батат (печений)",
+  "id": "mashed-potatoes",
+  "name": "Картопляне пюре",
+  "nameEn": "Mashed potatoes",
   "aliases": [
-   "baked sweet potato",
-   "yam",
-   "roasted sweet potato",
-   "sweet potato fries base"
+   "potato puree"
   ],
-  "aliases_ua": [
-   "солодка картопля",
-   "ямс",
-   "батат запечений"
+  "aliasesUa": [
+   "пюре",
+   "товчена картопля"
   ],
-  "kcal100": 90.0,
-  "protein100": 2.0,
-  "fat100": 0.1,
-  "carbs100": 21.0
+  "kcal100": 113,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168555: Potatoes, mashed, home-prepared, whole milk and butter added"
+  }
  },
  {
-  "id": "quinoa-cooked",
-  "kind": "PRODUCT",
-  "name": "Quinoa (Cooked)",
-  "name_ua": "Кіноа (варена)",
+  "id": "baked-potatoes",
+  "name": "Картопля запечена",
+  "nameEn": "Baked potatoes",
   "aliases": [
-   "cooked quinoa",
-   "boiled quinoa",
-   "quinoa grain",
-   "quinoa salad base"
+   "oven potatoes"
   ],
-  "aliases_ua": [
-   "кіноа",
-   "квіноа",
-   "кінва"
+  "aliasesUa": [
+   "печена картопля"
   ],
-  "kcal100": 120.0,
-  "protein100": 4.4,
-  "fat100": 1.9,
-  "carbs100": 21.0
+  "kcal100": 93,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170093: Potatoes, baked, flesh and skin, without salt"
+  }
  },
  {
-  "id": "lentils-cooked",
-  "kind": "PRODUCT",
-  "name": "Lentils (Cooked)",
-  "name_ua": "Сочевиця (варена)",
+  "id": "olivier-salad",
+  "name": "Олів'є",
+  "nameEn": "Olivier salad",
   "aliases": [
-   "cooked lentils",
-   "boiled lentils",
-   "red lentils",
-   "dal",
-   "green lentils"
+   "russian salad",
+   "potato salad with mayonnaise"
   ],
-  "aliases_ua": [
-   "червона сочевиця",
-   "зелена сочевиця",
-   "дал"
+  "aliasesUa": [
+   "салат олів'є",
+   "олів'є з ковбасою"
   ],
-  "kcal100": 116.0,
-  "protein100": 9.0,
-  "fat100": 0.4,
-  "carbs100": 20.0
+  "kcal100": 170,
+  "source": {
+   "type": "recipe",
+   "ref": "Average of two classic Ukrainian recipes with weights: Fakty ICTV 'Індекс олів'є' classic recipe (potato 600 g, carrot 250, onion 200, boiled sausage 600, 8 eggs, pickles 500, 1 can peas 425 g, mayonnaise 300; ~3 kg) https://fakty.com.ua/ua/ukraine/20191220-skilky-koshtuye-oliv-ye-na-novyj-rik-2020/ and Smachno24 (24tv) recipe quoted by Telegraf (boiled sausage 500, potato 580, carrot 280, onion 230, 6 eggs, peas 1 can, pickles 200, mayonnaise 350) https://news.telegraf.com.ua/ukr/dengi/5929287-na-olive-ta-shubi-mozhna-zekonomiti-skilki-koshtuyut-kultovi-salati-noviy-rik-2026-infografika-retsepti . Compared: Focus.ua beef variant (same vegetable proportions)."
+  }
  },
  {
-  "id": "chickpeas-cooked",
-  "kind": "PRODUCT",
-  "name": "Chickpeas (Cooked)",
-  "name_ua": "Нут (варений)",
+  "id": "vinaigrette-salad",
+  "name": "Вінегрет",
+  "nameEn": "Vinaigrette salad",
   "aliases": [
-   "garbanzo beans",
-   "cooked chickpeas",
-   "canned chickpeas",
-   "hummus base"
+   "beet salad with sauerkraut"
   ],
-  "aliases_ua": [
-   "хумус основа",
-   "турецький горох",
-   "нут відварний"
+  "aliasesUa": [
+   "вінегрет з олією"
   ],
-  "kcal100": 164.0,
-  "protein100": 9.0,
-  "fat100": 2.6,
-  "carbs100": 27.0
+  "kcal100": 87,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: klopotenko.com 'Класичний рецепт вінегрету' (2 medium beets, 2 large carrots, 4 medium potatoes, 2 pickles, 150 g sauerkraut, 250 g beans, 4 tbsp oil, 1 tbsp vinegar; 6 portions) https://klopotenko.com/klasychnyj-reczept-vinegretu-gotuyemo-z-kvasoleyu-ta-zapravkoyu-z-vynnogo-ocztu/ , with onion and green peas instead of beans as in the school tech card ТК 1.45 Вінегрет (potato 310, carrot 200, beet 200, peas 100, sauerkraut 70, onion 70, sauce 40 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf . Compared: Klopotenko 'Вінегрет з запечених овочів' (potato 400, carrot 300, beet 300, peas 200, pickles 200-300, 3 tbsp oil) https://klopotenko.com/vinegret-z-zapechenyh-ovochiv/"
+  }
  },
  {
-  "id": "couscous-cooked",
-  "kind": "PRODUCT",
-  "name": "Couscous (Cooked)",
-  "name_ua": "Кускус (варений)",
+  "id": "shuba",
+  "name": "Оселедець під шубою",
+  "nameEn": "Herring under a fur coat",
   "aliases": [
-   "cooked couscous",
-   "steamed couscous",
-   "pearl couscous"
+   "layered herring salad"
   ],
-  "aliases_ua": [
-   "кус-кус",
-   "перлинний кускус"
+  "aliasesUa": [
+   "шуба"
   ],
-  "kcal100": 112.0,
-  "protein100": 3.8,
-  "fat100": 0.2,
-  "carbs100": 23.0
+  "kcal100": 149,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: UNIAN classic 'Оселедець під шубою' (herring fillet 500 g, potatoes 5, onion 1, carrots 3, eggs 5, beets 4, mayonnaise 250 g) https://www.unian.ua/recipes/salads/salads-with-fish-and-seafood/oseledec-pid-shuboyu-yak-prigotuvati-oseledec-pid-shuboyu-11264060.html ; averaged with Redpost classic (herring 300, carrot 200, beet 300, potato 200, onion 150, mayonnaise 150, 3 eggs) https://redpost.com.ua/news/1252989-print-view and the 1000.menu recipe quoted by Telegraf (herring 500, 3-4 potatoes, 2-3 carrots, 2-3 beets, 1 onion, 3-4 eggs, mayonnaise 180-200) https://news.telegraf.com.ua/ukr/dengi/5929287-na-olive-ta-shubi-mozhna-zekonomiti-skilki-koshtuyut-kultovi-salati-noviy-rik-2026-infografika-retsepti . All three scaled to 400 g herring and averaged."
+  }
+ },
+ {
+  "id": "cabbage-salad",
+  "name": "Салат з капусти з олією",
+  "nameEn": "Cabbage salad",
+  "aliases": [
+   "coleslaw",
+   "slaw"
+  ],
+  "aliasesUa": [
+   "капустяний салат"
+  ],
+  "kcal100": 77,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home 'вітамінний' salad built from: school tech card ТК 1.27 'Салат з капусти та моркви' (cabbage 620, carrot 350, oil 30, lemon juice 10 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf ; 24tv cabbage salad (400 g cabbage, 25 ml oil, 2 tbsp sugar, lemon juice) https://24tv.ua/salati-kapusti-sprobuyte-perevireni-retsepti_n3088875 ; composition confirmed by NOVUS own-kitchen 'Салат з білокачанної капусти' (капуста, морква, олія, цукор, сіль, зелень, лимонна кислота) https://novus.zakaz.ua/uk/products/salat-kulinariia-maistri-smaku--novus02855941000000/ . Home proportions: 1/4 head cabbage (500 g) + 1 carrot + 2 tbsp oil + 1 tsp sugar + 1 tbsp 9% vinegar."
+  }
+ },
+ {
+  "id": "cucumber-tomato-salad",
+  "name": "Салат з огірків і помідорів з олією",
+  "nameEn": "Cucumber tomato salad",
+  "aliases": [
+   "tomato cucumber salad",
+   "summer salad"
+  ],
+  "aliasesUa": [
+   "овочевий салат"
+  ],
+  "kcal100": 65,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home summer salad following UNIAN 'Салат з овочами й бринзою' base (2 tomatoes, 2 cucumbers, 1 onion, dill, oil; pepper and brynza left out) https://www.unian.ua/recipes/salads/vegetable-salads/salat-zi-svizhih-ovochiv-recept-yak-prigotuvati-vitaminniy-ovocheviy-salat-11372434.html ; compared with school tech card ТК 1.13 'Салат зелений з огірків та томатів' (cucumber 360, tomato 300, lettuce 320, oil 30 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf and TKA 872688 tomato-cucumber-pepper salad (3% oil)."
+  }
+ },
+ {
+  "id": "cucumber-tomato-salad-smetana",
+  "name": "Салат з огірків і помідорів зі сметаною",
+  "nameEn": "Cucumber tomato salad with sour cream",
+  "aliases": [
+   "salad with sour cream"
+  ],
+  "aliasesUa": [
+   "салат зі сметаною"
+  ],
+  "kcal100": 40,
+  "source": {
+   "type": "recipe",
+   "ref": "Same home base as the oil version (UNIAN vegetable salad base: 2 tomatoes, 2 cucumbers, onion, dill) https://www.unian.ua/recipes/salads/vegetable-salads/salat-zi-svizhih-ovochiv-recept-yak-prigotuvati-vitaminniy-ovocheviy-salat-11372434.html , dressed with 4 tbsp sour cream (typical '3-4 ст. л. сметани'); compared with TKA 1161 'Tomati-kurgisalat, hapukoorega' (tomato 465, cucumber 445, dill 20, sour cream 20% 70 per 1 kg) and engage.org.ua note that the classic Ukrainian version uses tomatoes, dill and sunflower oil or sour cream https://engage.org.ua/salat-z-ohirkom-retsepty-sekrety-ta-idei/"
+  }
+ },
+ {
+  "id": "crab-salad",
+  "name": "Крабовий салат",
+  "nameEn": "Crab stick salad",
+  "aliases": [
+   "crab salad"
+  ],
+  "aliasesUa": [
+   "салат з крабовими паличками"
+  ],
+  "kcal100": 164,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: netfreedom.org.ua 'Класичний салат з крабових паличок' (crab sticks 250 g, 4 boiled eggs, 1 can corn 340 g drained, 1-2 fresh cucumbers, mayonnaise 100-120 g; rice variation +80-100 g raw rice) https://netfreedom.org.ua/klasychnyi-salat-z-krabovykh-palychok-povnyi-hid-z-retseptom-istoriieiu-ta-sekretamy-idealnoho-smaku/ ; compared poradu.pp.ua rice version (equal volumes rice : corn : crab sticks : eggs) https://poradu.pp.ua/recepti/print:page,1,11722-salati-z-krabovih-palichok-recepti-rekomendacyi.html and UNIAN crab salad with cucumber (10 sticks, 70 g corn, 2 eggs, 1 cucumber, 3 tbsp mayo) https://www.unian.ua/recipes/salads/salads-with-fish-and-seafood/recepti-salativ-z-krabovimi-palichkami-svyatkovi-novorichni-salati-z-krabovimi-palichkami-11238425.html"
+  }
+ },
+ {
+  "id": "beet-salad",
+  "name": "Буряк з часником і майонезом",
+  "nameEn": "Beet salad",
+  "aliases": [
+   "beetroot salad"
+  ],
+  "aliasesUa": [
+   "салат з буряка"
+  ],
+  "kcal100": 120,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: engage.org.ua 'Класичний рецепт салату з вареного буряка з часником' (2 medium beets 400-500 g, 2-3 garlic cloves, 2-3 tbsp mayonnaise) https://engage.org.ua/salat-z-varenogo-buryaka-reczepty-koryst-ta-sekrety/ ; compared Klopotenko beet salad with mayonnaise (1 large beet, 1-2 tbsp garlic mayonnaise, prunes, cranberries; chef twist) https://klopotenko.com/salat-iz-buryakom-chornosluvom-zuravlynou-i-majonezom-zi-smazenogo-chasnyku/ and school card ТК 1.38 'Салат з буряка зі сметаною' (beet 850 + sour cream 160 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+  }
+ },
+ {
+  "id": "korean-carrot",
+  "name": "Морква по-корейськи",
+  "nameEn": "Korean carrot salad",
+  "aliases": [
+   "spicy carrot salad"
+  ],
+  "aliasesUa": [
+   "корейська морква"
+  ],
+  "kcal100": 114,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: klopotenko.com 'Вдома смачніше. Морква по-корейськи' (1 kg carrot, 100 ml sunflower oil heated, 2 tsp sugar, 2 tsp salt, 1 tsp coriander, 6 garlic cloves, 2 tbsp 9% vinegar, 1 tsp hot pepper; 10 portions; no draining) https://klopotenko.com/vdoma-smachnishe-morkva-po-korejsky-za-reczeptom-yevgena-klopotenka/ ; compared Klopotenko 'Швидка та хрумка' (1 kg carrot, 100 ml oil, lemon juice, garlic) https://klopotenko.com/shvydka-ta-hrumka-strava-morkva-po-korejsky-za-reczeptom-yevgena-klopotenka/ and TKA 4043 (carrot 830, oil 40, sugar 30, fried onion 70, garlic 12 per 1 kg)."
+  }
+ },
+ {
+  "id": "squash-caviar",
+  "name": "Кабачкова ікра",
+  "nameEn": "Squash caviar",
+  "aliases": [
+   "zucchini spread"
+  ],
+  "aliasesUa": [
+   "ікра кабачкова"
+  ],
+  "kcal100": 97,
+  "source": {
+   "type": "label",
+   "ref": "Ікра кабачкова консервована (класична, не «Літня»)"
+  }
+ },
+ {
+  "id": "chicken-breast-cooked",
+  "name": "Куряче філе (варене/запечене)",
+  "nameEn": "Chicken breast",
+  "aliases": [
+   "grilled chicken",
+   "chicken fillet",
+   "boiled chicken"
+  ],
+  "aliasesUa": [
+   "куряча грудка",
+   "філе"
+  ],
+  "kcal100": 165,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171477: Chicken, broilers or fryers, breast, meat only, cooked, roasted"
+  }
+ },
+ {
+  "id": "chicken-leg-cooked",
+  "name": "Курячі стегна/гомілки запечені (зі шкірою)",
+  "nameEn": "Chicken leg",
+  "aliases": [
+   "chicken thigh",
+   "drumstick",
+   "chicken legs"
+  ],
+  "aliasesUa": [
+   "курячі ніжки",
+   "стегно",
+   "гомілка"
+  ],
+  "kcal100": 184,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173617: Chicken, broilers or fryers, leg, meat and skin, cooked, roasted"
+  }
+ },
+ {
+  "id": "roast-chicken",
+  "name": "Курка запечена (зі шкірою)",
+  "nameEn": "Roast chicken",
+  "aliases": [
+   "roasted chicken",
+   "baked chicken",
+   "rotisserie chicken"
+  ],
+  "aliasesUa": [
+   "запечена курка"
+  ],
+  "kcal100": 239,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171450: Chicken, broilers or fryers, meat and skin, cooked, roasted"
+  }
+ },
+ {
+  "id": "turkey-breast-cooked",
+  "name": "Індичка (філе, запечене)",
+  "nameEn": "Turkey",
+  "aliases": [
+   "turkey breast",
+   "roast turkey"
+  ],
+  "aliasesUa": [
+   "індиче філе"
+  ],
+  "kcal100": 136,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 174516: Turkey, retail parts, breast, meat only, cooked, roasted"
+  }
+ },
+ {
+  "id": "pork-roast",
+  "name": "Свинина запечена",
+  "nameEn": "Roast pork",
+  "aliases": [
+   "pork",
+   "pork loin",
+   "baked pork"
+  ],
+  "aliasesUa": [
+   "свинина",
+   "буженина"
+  ],
+  "kcal100": 248,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167821: Pork, fresh, loin, whole, separable lean and fat, cooked, roasted"
+  }
+ },
+ {
+  "id": "pork-chop-cooked",
+  "name": "Свиняча відбивна без паніровки",
+  "nameEn": "Pork chop",
+  "aliases": [
+   "grilled pork chop",
+   "pan-fried pork"
+  ],
+  "aliasesUa": [
+   "свиняча відбивна",
+   "свинина смажена"
+  ],
+  "kcal100": 238,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168292: Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, pan-fried"
+  },
+  "pcGrams": 120
+ },
+ {
+  "id": "beef-cooked",
+  "name": "Яловичина варена/тушкована",
+  "nameEn": "Beef",
+  "aliases": [
+   "boiled beef",
+   "braised beef",
+   "beef steak",
+   "steak"
+  ],
+  "aliasesUa": [
+   "яловичина"
+  ],
+  "kcal100": 223,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170626: Beef, round, bottom round, steak, separable lean and fat, trimmed to 0\" fat, all grades, cooked, braised"
+  }
+ },
+ {
+  "id": "beef-liver-fried",
+  "name": "Печінка яловича смажена",
+  "nameEn": "Beef liver",
+  "aliases": [
+   "liver"
+  ],
+  "aliasesUa": [
+   "печінка"
+  ],
+  "kcal100": 175,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168627: Beef, variety meats and by-products, liver, cooked, pan-fried"
+  }
+ },
+ {
+  "id": "salo",
+  "name": "Сало солоне",
+  "nameEn": "Salo",
+  "aliases": [
+   "pork fat",
+   "lard",
+   "fatback",
+   "cured pork fat"
+  ],
+  "aliasesUa": [
+   "сало",
+   "солоне сало"
+  ],
+  "kcal100": 812,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167811: Pork, fresh, backfat, raw"
+  }
+ },
+ {
+  "id": "shkvarky",
+  "name": "Шкварки",
+  "nameEn": "Shkvarky",
+  "aliases": [
+   "pork cracklings",
+   "cracklings",
+   "fried pork fat"
+  ],
+  "aliasesUa": [
+   "шкварки зі сала"
+  ],
+  "kcal100": 795,
+  "source": {
+   "type": "recipe",
+   "ref": "Home practice: salo (pork back fat, skin removed) cut in ~1 cm cubes and rendered slowly in a dry pan until golden; the cracklings are lifted out, the liquid fat (smalets) is poured off into a jar. Yield sources: netfreedom.org.ua «Як приготувати здір» https://netfreedom.org.ua/yak-prigotuvati-zdir/ («Вихід: 550–650 мл смальцю + 300–400 г шкварок» from 1 kg); secondary, seen only in search snippets (pages not openable): a Polish home-rendering guide (650–800 g lard per 1 kg raw fat, i.e. ≤200–350 g cracklings + evaporated water) and the Brockhaus–Efron encyclopedia text on booksite.ru https://booksite.ru/fulltext/1/001/007/040/40072.htm (rendering fat trimmings in pieces: 57.7 % fat + 34 % cracklings; minced: 82.5 % fat + 12.5 % cracklings). Доцяк «Українська кухня» (1998) uses shkvarky as a topping (сало 34 г → смажене сало зі шкварками 30 г – that figure INCLUDES the fat, so not used here)."
+  }
+ },
+ {
+  "id": "bacon-cooked",
+  "name": "Бекон смажений",
+  "nameEn": "Bacon",
+  "aliases": [
+   "fried bacon"
+  ],
+  "aliasesUa": [
+   "бекон"
+  ],
+  "kcal100": 468,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168322: Pork, cured, bacon, pre-sliced, cooked, pan-fried"
+  }
+ },
+ {
+  "id": "kovbasa-boiled",
+  "name": "Ковбаса варена (Лікарська, Молочна)",
+  "nameEn": "Bologna",
+  "aliases": [
+   "boiled sausage",
+   "doctor's sausage",
+   "baloney"
+  ],
+  "aliasesUa": [
+   "варена ковбаса",
+   "лікарська"
+  ],
+  "kcal100": 248,
+  "source": {
+   "type": "label",
+   "ref": "Ковбаса варена вищий/перший сорт («Лікарська», «Молочна», ДСТУ 4436)"
+  }
+ },
+ {
+  "id": "kovbasa-smoked",
+  "name": "Ковбаса напівкопчена",
+  "nameEn": "Smoked sausage",
+  "aliases": [
+   "salami",
+   "kielbasa",
+   "smoked kielbasa"
+  ],
+  "aliasesUa": [
+   "копчена ковбаса",
+   "салямі"
+  ],
+  "kcal100": 346,
+  "source": {
+   "type": "label",
+   "ref": "Ковбаса напівкопчена свиняча/змішана (Дрогобицька, Краківська, салямі) вищий/перший сорт"
+  }
+ },
+ {
+  "id": "kovbasa",
+  "name": "Ковбаса домашня (смажена)",
+  "nameEn": "Homemade sausage",
+  "aliases": [
+   "pork sausage",
+   "sausage",
+   "polish sausage"
+  ],
+  "aliasesUa": [
+   "домашня ковбаса",
+   "ковбаса"
+  ],
+  "kcal100": 333,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173878: Kielbasa, fully cooked, pan-fried"
+  }
+ },
+ {
+  "id": "sosysky",
+  "name": "Сосиски",
+  "nameEn": "Frankfurters",
+  "aliases": [
+   "hot dogs",
+   "wieners",
+   "sausages"
+  ],
+  "aliasesUa": [
+   "сосиски молочні",
+   "сардельки"
+  ],
+  "kcal100": 284,
+  "source": {
+   "type": "label",
+   "ref": "Сосиски «Молочні» (ДСТУ 4436, перший/вищий сорт)"
+  },
+  "pcGrams": 50
+ },
+ {
+  "id": "ham",
+  "name": "Шинка варена",
+  "nameEn": "Ham",
+  "aliases": [
+   "sliced ham",
+   "boiled ham"
+  ],
+  "aliasesUa": [
+   "шинка"
+  ],
+  "kcal100": 128,
+  "source": {
+   "type": "label",
+   "ref": "Шинка свиняча варена / варено-копчена нарізна (не куряча)"
+  }
+ },
+ {
+  "id": "krovianka",
+  "name": "Кров'янка",
+  "nameEn": "Blood sausage",
+  "aliases": [
+   "black pudding",
+   "blood pudding"
+  ],
+  "aliasesUa": [
+   "кров'яна ковбаса"
+  ],
+  "kcal100": 274,
+  "source": {
+   "type": "label",
+   "ref": "Кров'янка / ковбаса кров'яна домашня з гречкою або рисом (варена, українські виробники)"
+  }
+ },
+ {
+  "id": "hake-cooked",
+  "name": "Хек / минтай (варений, запечений)",
+  "nameEn": "White fish",
+  "aliases": [
+   "hake",
+   "pollock",
+   "cod",
+   "fish"
+  ],
+  "aliasesUa": [
+   "хек",
+   "минтай",
+   "тріска"
+  ],
+  "kcal100": 87,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173726: Fish, pollock, Alaska, cooked"
+  }
+ },
+ {
+  "id": "salmon-cooked",
+  "name": "Лосось запечений",
+  "nameEn": "Salmon",
+  "aliases": [
+   "baked salmon",
+   "salmon fillet",
+   "trout"
+  ],
+  "aliasesUa": [
+   "лосось",
+   "сьомга",
+   "форель"
+  ],
+  "kcal100": 206,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 175168: Fish, salmon, Atlantic, farmed, cooked, dry heat"
+  }
+ },
+ {
+  "id": "mackerel-smoked",
+  "name": "Скумбрія копчена",
+  "nameEn": "Smoked mackerel",
+  "aliases": [
+   "mackerel"
+  ],
+  "aliasesUa": [
+   "скумбрія"
+  ],
+  "kcal100": 262,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 175120: Fish, mackerel, Atlantic, cooked, dry heat"
+  }
+ },
+ {
+  "id": "herring-salted",
+  "name": "Оселедець солоний",
+  "nameEn": "Herring",
+  "aliases": [
+   "pickled herring",
+   "salted herring"
+  ],
+  "aliasesUa": [
+   "оселедець",
+   "селедка"
+  ],
+  "kcal100": 194,
+  "source": {
+   "type": "label",
+   "ref": "Оселедець атлантичний солоний/слабосолоний (цілий або філе без олії)"
+  }
+ },
+ {
+  "id": "carp-fried",
+  "name": "Короп / карась смажений",
+  "nameEn": "Fried carp",
+  "aliases": [
+   "carp"
+  ],
+  "aliasesUa": [
+   "короп",
+   "карась"
+  ],
+  "kcal100": 252,
+  "source": {
+   "type": "recipe",
+   "ref": "Main: Доцяк В.С. «Українська кухня» (1998), «Карасі (коропи) запечені під сметанним соусом», frying step: карась або короп 117/89 г, борошно 5 г, олія 5 г → маса смаженої риби 73 г; also «Короп фарширований (смажений)» (борошно 6 г, олія 6 г на порцію); https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt. Compared with home recipe https://poradu.pp.ua/recepti/print:page,1,4258-yak-prigotuvati-karasya-smazheniy-karas-zapecheniy-v-smetan-recepti-foto.html (карась 2 кг, борошно 200 г для обвалювання, олія 100–200 г у сковороді)."
+  }
+ },
+ {
+  "id": "sprats",
+  "name": "Шпроти в олії",
+  "nameEn": "Sprats",
+  "aliases": [
+   "smoked sprats"
+  ],
+  "aliasesUa": [
+   "шпроти"
+  ],
+  "kcal100": 356,
+  "source": {
+   "type": "label",
+   "ref": "Шпроти копчені в олії (Ризькі), консерви"
+  }
+ },
+ {
+  "id": "tuna-canned",
+  "name": "Тунець консервований у власному соку",
+  "nameEn": "Tuna",
+  "aliases": [
+   "canned tuna"
+  ],
+  "aliasesUa": [
+   "тунець"
+  ],
+  "kcal100": 86,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173709: Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)"
+  }
+ },
+ {
+  "id": "crab-sticks",
+  "name": "Крабові палички",
+  "nameEn": "Crab sticks",
+  "aliases": [
+   "imitation crab",
+   "surimi"
+  ],
+  "aliasesUa": [
+   "крабове м'ясо"
+  ],
+  "kcal100": 113,
+  "source": {
+   "type": "label",
+   "ref": "Крабові палички із сурімі (охолоджені/заморожені)"
+  },
+  "pcGrams": 25
+ },
+ {
+  "id": "shrimp-cooked",
+  "name": "Креветки варені",
+  "nameEn": "Shrimp",
+  "aliases": [
+   "prawns"
+  ],
+  "aliasesUa": [
+   "креветки"
+  ],
+  "kcal100": 99,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 175180: Crustaceans, shrimp, cooked"
+  }
+ },
+ {
+  "id": "eggs-whole",
+  "name": "Яйця варені",
+  "nameEn": "Eggs",
+  "aliases": [
+   "boiled eggs",
+   "hard boiled egg",
+   "egg"
+  ],
+  "aliasesUa": [
+   "яйце",
+   "яйця"
+  ],
+  "kcal100": 155,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173424: Egg, whole, cooked, hard-boiled"
+  },
+  "pcGrams": 50
+ },
+ {
+  "id": "milk-2-5",
+  "name": "Молоко 2,5%",
+  "nameEn": "Milk",
+  "aliases": [
+   "low fat milk"
+  ],
+  "aliasesUa": [
+   "молоко"
+  ],
+  "kcal100": 53,
+  "source": {
+   "type": "label",
+   "ref": "Молоко коров'яче 2,5 % (пастеризоване/ультрапастеризоване)"
+  }
  },
  {
   "id": "whole-milk",
-  "kind": "PRODUCT",
-  "name": "Whole Milk",
-  "name_ua": "Молоко незбиране",
+  "name": "Молоко 3,2%",
+  "nameEn": "Whole milk",
   "aliases": [
-   "full fat milk",
-   "full cream milk",
-   "cow's milk 3.5%",
-   "regular milk"
+   "full fat milk"
   ],
-  "aliases_ua": [
-   "молоко 3.5%",
-   "домашнє молоко",
-   "коров'яче молоко"
+  "aliasesUa": [
+   "молоко домашнє"
   ],
-  "kcal100": 61.0,
-  "protein100": 3.2,
-  "fat100": 3.3,
-  "carbs100": 4.8
+  "kcal100": 61,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 172217: Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D"
+  }
  },
  {
-  "id": "skimmed-milk",
-  "kind": "PRODUCT",
-  "name": "Skimmed Milk",
-  "name_ua": "Знежирене молоко",
+  "id": "kefir",
+  "name": "Кефір 2,5%",
+  "nameEn": "Kefir",
   "aliases": [
-   "skim milk",
-   "fat-free milk",
-   "non-fat milk",
-   "0% milk",
-   "skimmed"
+   "buttermilk"
   ],
-  "aliases_ua": [
-   "молоко 0%",
-   "обезжирене молоко",
-   "нежирне молоко"
+  "aliasesUa": [
+   "кефір"
   ],
-  "kcal100": 34.0,
-  "protein100": 3.4,
-  "fat100": 0.1,
-  "carbs100": 5.0
+  "kcal100": 50,
+  "source": {
+   "type": "label",
+   "ref": "Кефір 2,5 % жиру"
+  }
  },
  {
-  "id": "greek-yogurt-full-fat",
-  "kind": "PRODUCT",
-  "name": "Greek Yogurt (Full Fat)",
-  "name_ua": "Грецький йогурт (жирний)",
+  "id": "ryazhenka",
+  "name": "Ряжанка 4%",
+  "nameEn": "Ryazhenka",
   "aliases": [
-   "full fat Greek yogurt",
-   "Greek style yogurt",
-   "strained yogurt"
+   "baked milk yogurt"
   ],
-  "aliases_ua": [
-   "грецький йогурт",
-   "густий йогурт",
-   "страчателла"
+  "aliasesUa": [
+   "ряжанка"
   ],
-  "kcal100": 97.0,
-  "protein100": 9.0,
-  "fat100": 5.0,
-  "carbs100": 3.6
+  "kcal100": 63,
+  "source": {
+   "type": "label",
+   "ref": "Ряжанка 4 % жиру"
+  }
  },
  {
-  "id": "greek-yogurt-0-fat",
-  "kind": "PRODUCT",
-  "name": "Greek Yogurt (0% Fat)",
-  "name_ua": "Грецький йогурт (0% жиру)",
+  "id": "yogurt-natural",
+  "name": "Йогурт натуральний",
+  "nameEn": "Yogurt",
   "aliases": [
-   "fat-free Greek yogurt",
-   "non-fat Greek yogurt",
-   "0% Greek",
-   "diet yogurt"
+   "plain yogurt",
+   "greek yogurt"
   ],
-  "aliases_ua": [
-   "нежирний йогурт",
-   "дієтичний йогурт",
-   "йогурт 0%"
+  "aliasesUa": [
+   "йогурт"
   ],
-  "kcal100": 59.0,
-  "protein100": 10.0,
-  "fat100": 0.4,
-  "carbs100": 3.6
+  "kcal100": 61,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171284: Yogurt, plain, whole milk"
+  }
  },
  {
-  "id": "cottage-cheese-low-fat",
-  "kind": "PRODUCT",
-  "name": "Cottage Cheese (Low Fat)",
-  "name_ua": "Сир кисломолочний (нежирний)",
+  "id": "smetana-15",
+  "name": "Сметана 15%",
+  "nameEn": "Sour cream",
   "aliases": [
-   "low fat cottage cheese",
-   "diet cottage cheese",
-   "2% cottage cheese"
+   "smetana"
   ],
-  "aliases_ua": [
-   "нежирний сир",
-   "дієтичний сир",
-   "сир 2%"
+  "aliasesUa": [
+   "сметана",
+   "сметанка"
   ],
-  "kcal100": 84.0,
-  "protein100": 11.0,
-  "fat100": 2.3,
-  "carbs100": 4.3
+  "kcal100": 159,
+  "source": {
+   "type": "label",
+   "ref": "Сметана 15 % жиру (ДСТУ 4418 / ТУ), основні українські бренди"
+  }
  },
  {
-  "id": "cheddar-cheese",
-  "kind": "PRODUCT",
-  "name": "Cheddar Cheese",
-  "name_ua": "Сир Чеддер",
+  "id": "smetana-20",
+  "name": "Сметана 20%",
+  "nameEn": "Sour cream 20%",
   "aliases": [
-   "cheddar",
-   "mature cheddar",
-   "mild cheddar",
+   "thick sour cream"
+  ],
+  "aliasesUa": [
+   "сметана жирна"
+  ],
+  "kcal100": 203,
+  "source": {
+   "type": "label",
+   "ref": "Сметана 20 % жиру (ДСТУ 4418 / ТУ), основні українські бренди"
+  }
+ },
+ {
+  "id": "tvorog-5",
+  "name": "Сир кисломолочний 5%",
+  "nameEn": "Cottage cheese",
+  "aliases": [
+   "farmer cheese",
+   "quark",
+   "tvorog"
+  ],
+  "aliasesUa": [
+   "сир",
+   "творог",
+   "кисломолочний сир"
+  ],
+  "kcal100": 117,
+  "source": {
+   "type": "label",
+   "ref": "Сир кисломолочний 5 % жиру (класичний, без наповнювачів)"
+  }
+ },
+ {
+  "id": "tvorog-9",
+  "name": "Сир кисломолочний 9%",
+  "nameEn": "Cottage cheese 9%",
+  "aliases": [
+   "full fat farmer cheese"
+  ],
+  "aliasesUa": [
+   "сир жирний",
+   "домашній сир"
+  ],
+  "kcal100": 152,
+  "source": {
+   "type": "label",
+   "ref": "Сир кисломолочний 9 % жиру (класичний, без наповнювачів)"
+  }
+ },
+ {
+  "id": "bryndza",
+  "name": "Бринза",
+  "nameEn": "Bryndza",
+  "aliases": [
+   "sheep cheese",
+   "brine cheese",
+   "feta"
+  ],
+  "aliasesUa": [
+   "бринза",
+   "фета"
+  ],
+  "kcal100": 236,
+  "source": {
+   "type": "label",
+   "ref": "Бринза (м'який розсільний сир), українські виробники, різні типи"
+  }
+ },
+ {
+  "id": "hard-cheese",
+  "name": "Сир твердий (Голландський, Гауда)",
+  "nameEn": "Cheese",
+  "aliases": [
    "hard cheese",
-   "block cheese"
+   "gouda",
+   "cheddar",
+   "sliced cheese"
   ],
-  "aliases_ua": [
-   "чеддер",
+  "aliasesUa": [
    "твердий сир",
-   "зрілий сир"
+   "сир голландський"
   ],
-  "kcal100": 403.0,
-  "protein100": 25.0,
-  "fat100": 33.0,
-  "carbs100": 1.3
+  "kcal100": 356,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171241: Cheese, gouda"
+  }
  },
  {
-  "id": "mozzarella",
-  "kind": "PRODUCT",
-  "name": "Mozzarella",
-  "name_ua": "Моцарела",
+  "id": "processed-cheese",
+  "name": "Сирок плавлений",
+  "nameEn": "Processed cheese",
   "aliases": [
-   "mozzarella cheese",
-   "pizza cheese",
-   "fresh mozzarella",
-   "buffalo mozzarella"
+   "cheese spread"
   ],
-  "aliases_ua": [
-   "моцарела",
-   "сир для піци",
-   "буффало моцарела"
+  "aliasesUa": [
+   "плавлений сир"
   ],
-  "kcal100": 280.0,
-  "protein100": 28.0,
-  "fat100": 17.0,
-  "carbs100": 3.1
+  "kcal100": 202,
+  "source": {
+   "type": "label",
+   "ref": "Сирок плавлений брикет 70–75 г («Вершковий», «Дружба»), 35–40 % жиру в сухій речовині"
+  },
+  "pcGrams": 70
  },
  {
   "id": "butter",
-  "kind": "PRODUCT",
-  "name": "Butter",
-  "name_ua": "Вершкове масло",
-  "aliases": [
-   "salted butter",
-   "unsalted butter",
-   "dairy butter",
-   "block butter"
-  ],
-  "aliases_ua": [
+  "name": "Масло вершкове 82%",
+  "nameEn": "Butter",
+  "aliases": [],
+  "aliasesUa": [
    "масло",
-   "солоне масло",
-   "несолоне масло"
+   "вершкове масло"
   ],
-  "kcal100": 717.0,
-  "protein100": 0.9,
-  "fat100": 81.0,
-  "carbs100": 0.1
+  "kcal100": 748,
+  "source": {
+   "type": "label",
+   "ref": "Масло вершкове солодковершкове «Екстра» 82,5 % (ДСТУ 4399)"
+  }
  },
  {
-  "id": "cream-cheese",
-  "kind": "PRODUCT",
-  "name": "Cream Cheese",
-  "name_ua": "Вершковий сир",
+  "id": "white-bread",
+  "name": "Хліб пшеничний, батон",
+  "nameEn": "Bread",
   "aliases": [
-   "Philadelphia",
-   "soft cheese",
-   "cream cheese spread",
-   "philly"
+   "white bread",
+   "baton",
+   "toast",
+   "loaf"
   ],
-  "aliases_ua": [
-   "філадельфія",
-   "м'який сир",
-   "крем-сир"
+  "aliasesUa": [
+   "хліб",
+   "батон",
+   "булка"
   ],
-  "kcal100": 342.0,
-  "protein100": 6.0,
-  "fat100": 34.0,
-  "carbs100": 4.0
+  "kcal100": 266,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 174924: Bread, white, commercially prepared (includes soft bread crumbs)"
+  },
+  "pcGrams": 30
  },
  {
-  "id": "banana",
-  "kind": "PRODUCT",
-  "name": "Banana",
-  "name_ua": "Банан",
+  "id": "rye-bread",
+  "name": "Хліб житній",
+  "nameEn": "Rye bread",
   "aliases": [
-   "bananas",
-   "ripe banana",
-   "yellow banana",
-   "plantain (ripe)"
+   "dark bread",
+   "black bread",
+   "borodinsky"
   ],
-  "aliases_ua": [
-   "банани",
-   "жовтий банан",
-   "стиглий банан"
+  "aliasesUa": [
+   "чорний хліб",
+   "житній хліб",
+   "бородинський"
   ],
-  "kcal100": 89.0,
-  "protein100": 1.1,
-  "fat100": 0.3,
-  "carbs100": 23.0
+  "kcal100": 225,
+  "source": {
+   "type": "label",
+   "ref": "Хліб житній / житньо-пшеничний темний («Дарницький», «Столичний житній», «Житній»)"
+  },
+  "pcGrams": 30
  },
  {
-  "id": "apple",
-  "kind": "PRODUCT",
-  "name": "Apple",
-  "name_ua": "Яблуко",
+  "id": "lavash",
+  "name": "Лаваш",
+  "nameEn": "Lavash",
   "aliases": [
-   "apples",
-   "green apple",
-   "red apple",
-   "Granny Smith",
-   "Gala apple"
+   "flatbread",
+   "pita"
   ],
-  "aliases_ua": [
-   "яблука",
-   "зелене яблуко",
-   "червоне яблуко"
+  "aliasesUa": [
+   "лаваш"
   ],
-  "kcal100": 52.0,
-  "protein100": 0.3,
-  "fat100": 0.2,
-  "carbs100": 14.0
+  "kcal100": 275,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 172816: Bread, pita, white, unenriched"
+  }
  },
  {
-  "id": "avocado",
-  "kind": "PRODUCT",
-  "name": "Avocado",
-  "name_ua": "Авокадо",
+  "id": "oats-dry",
+  "name": "Вівсяні пластівці (сухі)",
+  "nameEn": "Oat flakes",
   "aliases": [
-   "avocados",
-   "Hass avocado",
-   "avocado flesh",
-   "guac base"
+   "rolled oats",
+   "oats"
   ],
-  "aliases_ua": [
-   "авокадо",
-   "гуакамоле основа"
+  "aliasesUa": [
+   "вівсяні пластівці",
+   "геркулес"
   ],
-  "kcal100": 160.0,
-  "protein100": 2.0,
-  "fat100": 15.0,
-  "carbs100": 9.0
+  "kcal100": 379,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173904: Cereals, oats, regular and quick, not fortified, dry"
+  }
  },
  {
-  "id": "strawberries",
-  "kind": "PRODUCT",
-  "name": "Strawberries",
-  "name_ua": "Полуниця",
+  "id": "cookies",
+  "name": "Печиво (цукрове)",
+  "nameEn": "Cookies",
   "aliases": [
-   "strawberry",
-   "fresh strawberries",
-   "berries",
-   "garden strawberry"
+   "biscuits",
+   "cookie"
   ],
-  "aliases_ua": [
-   "полуничка",
-   "суниця",
-   "свіжа полуниця"
+  "aliasesUa": [
+   "печиво"
   ],
-  "kcal100": 32.0,
-  "protein100": 0.7,
-  "fat100": 0.3,
-  "carbs100": 8.0
+  "kcal100": 444,
+  "source": {
+   "type": "label",
+   "ref": "Печиво цукрове (без глазурі/начинки)"
+  },
+  "pcGrams": 10
  },
  {
-  "id": "watermelon",
-  "kind": "PRODUCT",
-  "name": "Watermelon",
-  "name_ua": "Кавун",
+  "id": "gingerbread",
+  "name": "Пряник",
+  "nameEn": "Gingerbread",
   "aliases": [
-   "water melon",
-   "melon",
-   "summer melon",
-   "red melon"
+   "honey cake cookie"
   ],
-  "aliases_ua": [
-   "кавуни",
-   "літній кавун",
-   "арбуз"
+  "aliasesUa": [
+   "пряники"
   ],
-  "kcal100": 30.0,
-  "protein100": 0.6,
-  "fat100": 0.2,
-  "carbs100": 8.0
+  "kcal100": 361,
+  "source": {
+   "type": "label",
+   "ref": "Пряники заварні глазуровані (класичні, без шоколаду)"
+  },
+  "pcGrams": 40
  },
  {
-  "id": "grapefruit",
-  "kind": "PRODUCT",
-  "name": "Grapefruit",
-  "name_ua": "Грейпфрут",
+  "id": "medivnyk",
+  "name": "Медівник",
+  "nameEn": "Honey cake",
   "aliases": [
-   "pink grapefruit",
-   "ruby grapefruit",
-   "citrus grapefruit"
+   "medovik",
+   "layered honey cake"
   ],
-  "aliases_ua": [
-   "грейпфрути",
-   "рожевий грейпфрут",
-   "цитрус"
+  "aliasesUa": [
+   "медовик",
+   "медовий торт"
   ],
-  "kcal100": 42.0,
-  "protein100": 0.8,
-  "fat100": 0.1,
-  "carbs100": 11.0
+  "kcal100": 320,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/desert-mrij-reczept-medivnyka-vid-yevgena-klopotenka/ (Торт медівник, класичний рецепт, Є. Клопотенко: 450 г борошна, 3 ст. л. меду, 100 г цукру, 100 г масла, 3 яйця, 1 ч. л. соди; крем 1 л сметани 20 %, 200 г цукрової пудри, 10 г ванільного цукру; 8 коржів) — averaged with https://klopotenko.com/idealnyj-domashnij-tort-medivnyk-vid-yevgena-klopotenka/ (500 г борошна, 150 г меду, 100 г цукру, 100 г масла, 2 яйця, 1 ч. л. соди; крем 800 г сметани, 100 г пудри, 50 г меду) and the common home proportion of ~1 склянка цукру in the dough"
+  }
  },
  {
-  "id": "blueberries",
-  "kind": "PRODUCT",
-  "name": "Blueberries",
-  "name_ua": "Чорниця",
+  "id": "napoleon-cake",
+  "name": "Торт Наполеон",
+  "nameEn": "Napoleon cake",
   "aliases": [
-   "blueberry",
-   "fresh blueberries",
-   "wild blueberries",
-   "bilberry"
+   "mille-feuille",
+   "puff pastry cake"
   ],
-  "aliases_ua": [
-   "лохина",
-   "свіжа чорниця",
-   "ягоди чорниці"
+  "aliasesUa": [
+   "наполеон"
   ],
-  "kcal100": 57.0,
-  "protein100": 0.7,
-  "fat100": 0.3,
-  "carbs100": 14.0
+  "kcal100": 336,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/klasychnyj-tort-napoleon-vid-yevgena-klopotenka/ (Класичний торт Наполеон, Є. Клопотенко: коржі 700 г борошна, 360 г масла, 2 яйця, 150 мл води, 1 ст. л. оцту, коньяк; крем 1 л молока, 4 яйця, 300 г цукру, 100 г борошна, 300 г масла, 10 г ванільного цукру; 12 коржів) — averaged with https://engage.org.ua/?p=20211 (Торт «Наполеон» по-домашньому: 500–600 г борошна, 400–450 г масла або маргарину, 1 яйце, 150–180 мл води, оцет; крем 1 л молока, 4–5 жовтків, 200–250 г цукру, 4–5 ст. л. борошна, 200–250 г масла; 10–12 коржів) and https://www.unian.ua/recipes/baking/dessert-pastries/tort-napoleon-s-neobychnym-kremom-proverennyy-recept-12847734.html (300–400 г борошна, 200 г масла, 1 яйце, 120 мл води)"
+  }
  },
  {
-  "id": "orange",
-  "kind": "PRODUCT",
-  "name": "Orange",
-  "name_ua": "Апельсин",
+  "id": "kyiv-cake",
+  "name": "Київський торт",
+  "nameEn": "Kyiv cake",
   "aliases": [
-   "oranges",
-   "navel orange",
-   "citrus orange",
-   "mandarin"
+   "kiev cake",
+   "meringue cake"
   ],
-  "aliases_ua": [
-   "апельсини",
-   "цитрус",
-   "мандарин"
+  "aliasesUa": [
+   "київський торт"
   ],
-  "kcal100": 47.0,
-  "protein100": 0.9,
-  "fat100": 0.1,
-  "carbs100": 12.0
+  "kcal100": 484,
+  "source": {
+   "type": "label",
+   "ref": "Торт «Київський» Roshen (оригінальна торгова марка)"
+  }
  },
  {
-  "id": "broccoli-cooked",
-  "kind": "PRODUCT",
-  "name": "Broccoli (Cooked)",
-  "name_ua": "Брокколі (варене)",
+  "id": "apple-pie",
+  "name": "Шарлотка (пиріг з яблуками)",
+  "nameEn": "Apple pie",
   "aliases": [
-   "steamed broccoli",
-   "boiled broccoli",
-   "broccoli florets"
+   "apple cake",
+   "charlotte"
   ],
-  "aliases_ua": [
-   "брокколі на пару",
-   "брокколі відварне"
+  "aliasesUa": [
+   "шарлотка",
+   "яблучний пиріг"
   ],
-  "kcal100": 35.0,
-  "protein100": 2.4,
-  "fat100": 0.4,
-  "carbs100": 7.0
+  "kcal100": 205,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/sharlotka-antonivskyj-mist-prysvyachuyetsya-zsu/ (Шарлотка з яблуками «Антонівський міст», Є. Клопотенко: 4 яйця, 150 г цукру, 160 г борошна, 4 яблука, 20 г масла для форми) — averaged with https://www.unian.ua/recipes/desserts/pies/sharlotka-z-yablukami-yaki-yabluka-naykrashche-brati-dlya-piroga-13453566.html (простий мамин рецепт: 1 склянка борошна, 1 склянка цукру, 3 яйця, 4 яблука) and https://klopotenko.com/sharlotka-prostuj-retsept/ (5 яєць, 200 г цукру, 200 г борошна, 2–3 яблука)"
+  }
  },
  {
-  "id": "spinach-raw",
-  "kind": "PRODUCT",
-  "name": "Spinach (Raw)",
-  "name_ua": "Шпинат (сирий)",
+  "id": "paska",
+  "name": "Паска",
+  "nameEn": "Easter bread",
   "aliases": [
-   "baby spinach",
-   "fresh spinach",
-   "spinach leaves",
-   "salad spinach"
+   "paska",
+   "kulich"
   ],
-  "aliases_ua": [
-   "свіжий шпинат",
-   "листя шпинату",
-   "бебі шпинат"
+  "aliasesUa": [
+   "паска великодня"
   ],
-  "kcal100": 23.0,
-  "protein100": 2.9,
-  "fat100": 0.4,
-  "carbs100": 3.6
+  "kcal100": 353,
+  "source": {
+   "type": "recipe",
+   "ref": "https://klopotenko.com/z-bilkovoyu-glazuryu-ta-czukatamy-puhka-paska-do-velykodnya-vid-yevgena-klopotenka/ (Пухка паска з білковою глазур'ю, Є. Клопотенко: 1500 г борошна, 500 мл молока, 6 яєць + 4 жовтки, 300 г цукру, 20 г ванільного цукру, 200 г масла, 50 мл олії, 200 г цукатів, 50 г живих дріжджів; глазур 1 білок + 150 г цукрової пудри) — averaged with https://klopotenko.com/klassichna-paska/ (Класична паска: 750–800 г борошна, 220 мл молока, 1 яйце + 1 жовток, 225 г цукру, 100 г масла, 2 ст. л. сметани, 100 г родзинок; глазур 200 г пудри + апельсиновий сік); scaled to typical home proportions per 1 kg flour"
+  }
  },
  {
-  "id": "cauliflower-rice",
-  "kind": "PRODUCT",
-  "name": "Cauliflower Rice",
-  "name_ua": "Рис з цвітної капусти",
+  "id": "sugar",
+  "name": "Цукор",
+  "nameEn": "Sugar",
   "aliases": [
-   "riced cauliflower",
-   "cauliflower couscous",
-   "cauli rice",
-   "low-carb rice"
+   "white sugar"
   ],
-  "aliases_ua": [
-   "рис із цвітної капусти",
-   "кето рис",
-   "замінник рису"
+  "aliasesUa": [
+   "цукор"
   ],
-  "kcal100": 25.0,
-  "protein100": 2.0,
-  "fat100": 0.3,
-  "carbs100": 5.0
- },
- {
-  "id": "zucchini",
-  "kind": "PRODUCT",
-  "name": "Zucchini",
-  "name_ua": "Кабачок",
-  "aliases": [
-   "courgette",
-   "zucchini squash",
-   "summer squash",
-   "marrow"
-  ],
-  "aliases_ua": [
-   "цукіні",
-   "кабачки",
-   "літній кабачок"
-  ],
-  "kcal100": 17.0,
-  "protein100": 1.2,
-  "fat100": 0.3,
-  "carbs100": 3.1
- },
- {
-  "id": "tomato",
-  "kind": "PRODUCT",
-  "name": "Tomato",
-  "name_ua": "Помідор",
-  "aliases": [
-   "tomatoes",
-   "fresh tomato",
-   "raw tomato",
-   "vine tomato",
-   "cherry tomato"
-  ],
-  "aliases_ua": [
-   "томат",
-   "помідори",
-   "помідорка",
-   "черрі"
-  ],
-  "kcal100": 18.0,
-  "protein100": 0.9,
-  "fat100": 0.2,
-  "carbs100": 3.9
- },
- {
-  "id": "cucumber",
-  "kind": "PRODUCT",
-  "name": "Cucumber",
-  "name_ua": "Огірок",
-  "aliases": [
-   "cucumbers",
-   "English cucumber",
-   "salad cucumber",
-   "baby cucumber"
-  ],
-  "aliases_ua": [
-   "огірки",
-   "свіжий огірок",
-   "малосольний огірок"
-  ],
-  "kcal100": 15.0,
-  "protein100": 0.7,
-  "fat100": 0.1,
-  "carbs100": 3.6
- },
- {
-  "id": "celery",
-  "kind": "PRODUCT",
-  "name": "Celery",
-  "name_ua": "Селера",
-  "aliases": [
-   "celery stalks",
-   "celery sticks",
-   "raw celery",
-   "celery hearts"
-  ],
-  "aliases_ua": [
-   "стеблова селера",
-   "селера стебла",
-   "свіжа селера"
-  ],
-  "kcal100": 14.0,
-  "protein100": 0.7,
-  "fat100": 0.2,
-  "carbs100": 3.0
- },
- {
-  "id": "mixed-greens",
-  "kind": "PRODUCT",
-  "name": "Mixed Greens",
-  "name_ua": "Мікс зелені",
-  "aliases": [
-   "salad mix",
-   "lettuce",
-   "mixed salad leaves",
-   "mesclun",
-   "rocket"
-  ],
-  "aliases_ua": [
-   "салат",
-   "салатне листя",
-   "руккола",
-   "мікс салат"
-  ],
-  "kcal100": 20.0,
-  "protein100": 1.5,
-  "fat100": 0.3,
-  "carbs100": 3.3
- },
- {
-  "id": "bell-pepper",
-  "kind": "PRODUCT",
-  "name": "Bell Pepper",
-  "name_ua": "Солодкий перець",
-  "aliases": [
-   "capsicum",
-   "sweet pepper",
-   "red pepper",
-   "green pepper",
-   "paprika fresh"
-  ],
-  "aliases_ua": [
-   "болгарський перець",
-   "паприка",
-   "червоний перець"
-  ],
-  "kcal100": 26.0,
-  "protein100": 1.0,
-  "fat100": 0.2,
-  "carbs100": 6.0
- },
- {
-  "id": "carrots-raw",
-  "kind": "PRODUCT",
-  "name": "Carrots (Raw)",
-  "name_ua": "Морква (сира)",
-  "aliases": [
-   "raw carrots",
-   "carrot sticks",
-   "baby carrots",
-   "grated carrot"
-  ],
-  "aliases_ua": [
-   "морквина",
-   "сира морква",
-   "морква тертая",
-   "бебі морква"
-  ],
-  "kcal100": 41.0,
-  "protein100": 0.9,
-  "fat100": 0.2,
-  "carbs100": 10.0
- },
- {
-  "id": "whey-protein-powder",
-  "kind": "PRODUCT",
-  "name": "Whey Protein Powder",
-  "name_ua": "Сироватковий протеїн",
-  "aliases": [
-   "whey protein",
-   "protein powder",
-   "whey isolate",
-   "protein shake powder",
-   "WPI"
-  ],
-  "aliases_ua": [
-   "вей протеїн",
-   "протеїновий порошок",
-   "ізолят",
-   "WPI"
-  ],
-  "kcal100": 400.0,
-  "protein100": 80.0,
-  "fat100": 5.0,
-  "carbs100": 8.0
- },
- {
-  "id": "mass-gainer-powder",
-  "kind": "PRODUCT",
-  "name": "Mass Gainer Powder",
-  "name_ua": "Гейнер",
-  "aliases": [
-   "mass gainer",
-   "weight gainer",
-   "mass gainer shake",
-   "bulking powder",
-   "serious mass"
-  ],
-  "aliases_ua": [
-   "мас гейнер",
-   "порошок для набору",
-   "гейнер для маси"
-  ],
-  "kcal100": 380.0,
-  "protein100": 20.0,
-  "fat100": 5.0,
-  "carbs100": 70.0
- },
- {
-  "id": "peanut-butter",
-  "kind": "PRODUCT",
-  "name": "Peanut Butter",
-  "name_ua": "Арахісова паста",
-  "aliases": [
-   "PB",
-   "peanut spread",
-   "crunchy peanut butter",
-   "smooth peanut butter",
-   "nut butter"
-  ],
-  "aliases_ua": [
-   "арахісове масло",
-   "горіхова паста",
-   "паста арахіс"
-  ],
-  "kcal100": 588.0,
-  "protein100": 25.0,
-  "fat100": 50.0,
-  "carbs100": 20.0
- },
- {
-  "id": "almond-butter",
-  "kind": "PRODUCT",
-  "name": "Almond Butter",
-  "name_ua": "Мигдальна паста",
-  "aliases": [
-   "almond spread",
-   "almond nut butter",
-   "almond paste"
-  ],
-  "aliases_ua": [
-   "мигдальне масло",
-   "паста з мигдалю"
-  ],
-  "kcal100": 614.0,
-  "protein100": 21.0,
-  "fat100": 56.0,
-  "carbs100": 19.0
- },
- {
-  "id": "granola",
-  "kind": "PRODUCT",
-  "name": "Granola",
-  "name_ua": "Гранола",
-  "aliases": [
-   "granola cereal",
-   "crunchy granola",
-   "granola clusters",
-   "muesli crunchy"
-  ],
-  "aliases_ua": [
-   "мюслі хрусткі",
-   "гранола з горіхами",
-   "кранчі"
-  ],
-  "kcal100": 489.0,
-  "protein100": 10.0,
-  "fat100": 20.0,
-  "carbs100": 66.0
- },
- {
-  "id": "trail-mix",
-  "kind": "PRODUCT",
-  "name": "Trail Mix",
-  "name_ua": "Горіхово-фруктова суміш",
-  "aliases": [
-   "nut mix",
-   "trail mix nuts",
-   "GORP",
-   "mixed nuts and dried fruit",
-   "snack mix"
-  ],
-  "aliases_ua": [
-   "трейл мікс",
-   "суміш горіхів",
-   "горіхи з сухофруктами"
-  ],
-  "kcal100": 462.0,
-  "protein100": 13.0,
-  "fat100": 29.0,
-  "carbs100": 45.0
- },
- {
-  "id": "dates-dried",
-  "kind": "PRODUCT",
-  "name": "Dates (Dried)",
-  "name_ua": "Фініки (сушені)",
-  "aliases": [
-   "medjool dates",
-   "dried dates",
-   "deglet noor",
-   "date fruit",
-   "date snack"
-  ],
-  "aliases_ua": [
-   "фінік",
-   "сушений фінік",
-   "меджул",
-   "деглет"
-  ],
-  "kcal100": 277.0,
-  "protein100": 1.8,
-  "fat100": 0.2,
-  "carbs100": 75.0
- },
- {
-  "id": "dark-chocolate-70",
-  "kind": "PRODUCT",
-  "name": "Dark Chocolate 70%",
-  "name_ua": "Чорний шоколад 70%",
-  "aliases": [
-   "dark choc",
-   "70% cocoa chocolate",
-   "plain chocolate",
-   "bittersweet"
-  ],
-  "aliases_ua": [
-   "темний шоколад",
-   "гіркий шоколад",
-   "шоколад 70%"
-  ],
-  "kcal100": 598.0,
-  "protein100": 8.0,
-  "fat100": 43.0,
-  "carbs100": 46.0
- },
- {
-  "id": "cashews",
-  "kind": "PRODUCT",
-  "name": "Cashews",
-  "name_ua": "Кеш'ю",
-  "aliases": [
-   "cashew nuts",
-   "raw cashews",
-   "roasted cashews",
-   "salted cashews"
-  ],
-  "aliases_ua": [
-   "кешʼю",
-   "горіх кеш'ю",
-   "смажений кеш'ю"
-  ],
-  "kcal100": 553.0,
-  "protein100": 18.0,
-  "fat100": 44.0,
-  "carbs100": 30.0
- },
- {
-  "id": "walnuts",
-  "kind": "PRODUCT",
-  "name": "Walnuts",
-  "name_ua": "Волоські горіхи",
-  "aliases": [
-   "walnut halves",
-   "English walnuts",
-   "chopped walnuts"
-  ],
-  "aliases_ua": [
-   "грецькі горіхи",
-   "горіх волоський"
-  ],
-  "kcal100": 654.0,
-  "protein100": 15.0,
-  "fat100": 65.0,
-  "carbs100": 14.0
- },
- {
-  "id": "olive-oil",
-  "kind": "PRODUCT",
-  "name": "Olive Oil",
-  "name_ua": "Оливкова олія",
-  "aliases": [
-   "extra virgin olive oil",
-   "EVOO",
-   "cooking oil olive",
-   "salad oil"
-  ],
-  "aliases_ua": [
-   "олія оливкова",
-   "EVOO",
-   "олія для салату"
-  ],
-  "kcal100": 884.0,
-  "protein100": 0.0,
-  "fat100": 100.0,
-  "carbs100": 0.0
- },
- {
-  "id": "coconut-oil",
-  "kind": "PRODUCT",
-  "name": "Coconut Oil",
-  "name_ua": "Кокосова олія",
-  "aliases": [
-   "virgin coconut oil",
-   "cooking coconut oil",
-   "coconut fat"
-  ],
-  "aliases_ua": [
-   "олія кокосова",
-   "кокосовий жир"
-  ],
-  "kcal100": 862.0,
-  "protein100": 0.0,
-  "fat100": 100.0,
-  "carbs100": 0.0
+  "kcal100": 387,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169655: Sugars, granulated"
+  }
  },
  {
   "id": "honey",
-  "kind": "PRODUCT",
-  "name": "Honey",
-  "name_ua": "Мед",
-  "aliases": [
-   "raw honey",
-   "pure honey",
-   "natural honey",
-   "bee honey",
-   "manuka honey"
+  "name": "Мед",
+  "nameEn": "Honey",
+  "aliases": [],
+  "aliasesUa": [
+   "мед"
   ],
-  "aliases_ua": [
-   "натуральний мед",
-   "бджолиний мед",
-   "квітковий мед"
-  ],
-  "kcal100": 304.0,
-  "protein100": 0.3,
-  "fat100": 0.0,
-  "carbs100": 82.0
+  "kcal100": 304,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169640: Honey"
+  }
  },
  {
-  "id": "protein-bar",
-  "kind": "PRODUCT",
-  "name": "Protein Bar",
-  "name_ua": "Протеїновий батончик",
+  "id": "jam",
+  "name": "Варення",
+  "nameEn": "Jam",
   "aliases": [
-   "protein bar",
-   "energy bar",
-   "protein snack bar",
-   "sports bar",
-   "quest bar"
+   "preserves",
+   "jelly"
   ],
-  "aliases_ua": [
-   "протеїн бар",
-   "енергетичний батончик",
-   "спортивний батончик"
+  "aliasesUa": [
+   "варення",
+   "джем",
+   "повидло"
   ],
-  "kcal100": 350.0,
-  "protein100": 30.0,
-  "fat100": 10.0,
-  "carbs100": 35.0
+  "kcal100": 248,
+  "source": {
+   "type": "label",
+   "ref": "Варення/джем фруктовий промисловий (≈62 г вуглеводів)"
+  }
  },
  {
-  "id": "rice-cakes",
-  "kind": "PRODUCT",
-  "name": "Rice Cakes",
-  "name_ua": "Рисові хлібці",
+  "id": "halva",
+  "name": "Халва соняшникова",
+  "nameEn": "Halva",
   "aliases": [
-   "rice cake",
-   "puffed rice cake",
-   "rice crackers",
-   "diet snack rice"
+   "sunflower halva"
   ],
-  "aliases_ua": [
-   "рисовий хлібець",
-   "дієтичні хлібці",
-   "хлібець рисовий"
+  "aliasesUa": [
+   "халва"
   ],
-  "kcal100": 387.0,
-  "protein100": 8.0,
-  "fat100": 2.8,
-  "carbs100": 82.0
+  "kcal100": 540,
+  "source": {
+   "type": "label",
+   "ref": "Халва соняшникова ванільна/класична (без глазурі)"
+  }
  },
  {
-  "id": "zucchini-noodles",
-  "kind": "PRODUCT",
-  "name": "Zucchini Noodles",
-  "name_ua": "Локшина з кабачків",
+  "id": "milk-chocolate",
+  "name": "Шоколад молочний",
+  "nameEn": "Milk chocolate",
   "aliases": [
-   "zoodles",
-   "courgette noodles",
-   "spiralized zucchini",
-   "zucchini pasta"
+   "chocolate"
   ],
-  "aliases_ua": [
-   "зудлз",
-   "спіралізований кабачок",
-   "кабачкова локшина"
+  "aliasesUa": [
+   "шоколад"
   ],
-  "kcal100": 17.0,
-  "protein100": 1.2,
-  "fat100": 0.3,
-  "carbs100": 3.1
+  "kcal100": 535,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167587: Candies, milk chocolate"
+  }
  },
  {
-  "id": "green-tea",
-  "kind": "PRODUCT",
-  "name": "Green Tea",
-  "name_ua": "Зелений чай",
+  "id": "dark-chocolate-70",
+  "name": "Шоколад чорний 70%",
+  "nameEn": "Dark chocolate",
   "aliases": [
-   "matcha",
-   "green tea brewed",
-   "sencha",
-   "diet tea",
-   "calorie-free tea"
+   "bitter chocolate"
   ],
-  "aliases_ua": [
-   "матча",
-   "зелений чай листовий",
-   "сенча"
+  "aliasesUa": [
+   "чорний шоколад",
+   "гіркий шоколад"
   ],
-  "kcal100": 1.0,
-  "protein100": 0.0,
-  "fat100": 0.0,
-  "carbs100": 0.2
+  "kcal100": 598,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170273: Chocolate, dark, 70-85% cacao solids"
+  }
  },
  {
-  "id": "black-coffee",
-  "kind": "PRODUCT",
-  "name": "Black Coffee",
-  "name_ua": "Чорна кава",
+  "id": "chocolate-candies",
+  "name": "Цукерки шоколадні",
+  "nameEn": "Chocolate candies",
   "aliases": [
-   "coffee",
-   "espresso",
-   "Americano",
-   "drip coffee",
-   "long black"
+   "candy",
+   "bonbons",
+   "chocolates"
   ],
-  "aliases_ua": [
-   "кава",
-   "еспресо",
-   "американо",
-   "крапельна кава"
+  "aliasesUa": [
+   "цукерки"
   ],
-  "kcal100": 2.0,
-  "protein100": 0.3,
-  "fat100": 0.0,
-  "carbs100": 0.0
+  "kcal100": 531,
+  "source": {
+   "type": "label",
+   "ref": "Цукерки шоколадні Roshen (глазуровані, з начинкою; класичні вагові)"
+  },
+  "pcGrams": 12
  },
  {
-  "id": "berries-mix",
-  "kind": "PRODUCT",
-  "name": "Berries Mix",
-  "name_ua": "Ягідний мікс",
+  "id": "condensed-milk",
+  "name": "Згущене молоко",
+  "nameEn": "Condensed milk",
   "aliases": [
-   "mixed berries",
-   "berry blend",
-   "strawberry blueberry mix",
-   "antioxidant berries"
+   "sweetened condensed milk"
   ],
-  "aliases_ua": [
-   "мікс ягід",
-   "суміш ягід",
-   "полуниця-чорниця"
+  "aliasesUa": [
+   "згущенка"
   ],
-  "kcal100": 40.0,
-  "protein100": 0.8,
-  "fat100": 0.3,
-  "carbs100": 10.0
+  "kcal100": 339,
+  "source": {
+   "type": "label",
+   "ref": "Молоко згущене незбиране з цукром 8,5 % (ДСТУ 4274)"
+  }
  },
  {
-  "id": "tempeh",
-  "kind": "PRODUCT",
-  "name": "Tempeh",
-  "name_ua": "Темпе",
+  "id": "ice-cream",
+  "name": "Морозиво пломбір",
+  "nameEn": "Ice cream",
   "aliases": [
-   "fermented soybean",
-   "soy tempeh",
-   "plant protein block"
-  ],
-  "aliases_ua": [
-   "соєвий темпе",
-   "ферментована соя",
-   "рослинний білок"
-  ],
-  "kcal100": 192.0,
-  "protein100": 20.0,
-  "fat100": 11.0,
-  "carbs100": 8.0
- },
- {
-  "id": "seitan",
-  "kind": "PRODUCT",
-  "name": "Seitan",
-  "name_ua": "Сейтан",
-  "aliases": [
-   "wheat gluten",
-   "wheat meat",
-   "mock duck",
-   "vital wheat gluten"
-  ],
-  "aliases_ua": [
-   "пшеничний глютен",
-   "рослинне м'ясо",
-   "сейтан білковий"
-  ],
-  "kcal100": 370.0,
-  "protein100": 75.0,
-  "fat100": 2.0,
-  "carbs100": 14.0
- },
- {
-  "id": "sardines-canned",
-  "kind": "PRODUCT",
-  "name": "Sardines (Canned)",
-  "name_ua": "Сардини (консервовані)",
-  "aliases": [
-   "tinned sardines",
-   "canned sardines in oil",
-   "pilchards"
-  ],
-  "aliases_ua": [
-   "сардинки",
-   "консерва сардини",
-   "шпроти"
-  ],
-  "kcal100": 208.0,
-  "protein100": 25.0,
-  "fat100": 11.0,
-  "carbs100": 0.0
- },
- {
-  "id": "mackerel-canned",
-  "kind": "PRODUCT",
-  "name": "Mackerel (Canned)",
-  "name_ua": "Скумбрія (консервована)",
-  "aliases": [
-   "tinned mackerel",
-   "canned mackerel",
-   "smoked mackerel"
-  ],
-  "aliases_ua": [
-   "скумбрія консерва",
-   "макрель",
-   "копчена скумбрія"
-  ],
-  "kcal100": 205.0,
-  "protein100": 24.0,
-  "fat100": 12.0,
-  "carbs100": 0.0
- },
- {
-  "id": "herring-smoked",
-  "kind": "PRODUCT",
-  "name": "Herring (Smoked)",
-  "name_ua": "Оселедець (копчений)",
-  "aliases": [
-   "smoked herring",
-   "kipper",
-   "bloater",
-   "pickled herring"
-  ],
-  "aliases_ua": [
-   "оселедець",
-   "кіпер",
-   "копчений оселедець",
-   "солоний оселедець"
-  ],
-  "kcal100": 217.0,
-  "protein100": 22.0,
-  "fat100": 14.0,
-  "carbs100": 0.0
- },
- {
-  "id": "duck-breast-cooked",
-  "kind": "PRODUCT",
-  "name": "Duck Breast (Cooked)",
-  "name_ua": "Качина грудка (готова)",
-  "aliases": [
-   "roast duck",
-   "duck fillet",
-   "pan-seared duck breast"
-  ],
-  "aliases_ua": [
-   "качка запечена",
-   "філе качки",
-   "качина грудка гриль"
-  ],
-  "kcal100": 201.0,
-  "protein100": 24.0,
-  "fat100": 11.0,
-  "carbs100": 0.0
- },
- {
-  "id": "bison-ground-cooked",
-  "kind": "PRODUCT",
-  "name": "Bison (Ground Cooked)",
-  "name_ua": "Бізон (фарш готовий)",
-  "aliases": [
-   "buffalo meat",
-   "ground bison",
-   "bison mince"
-  ],
-  "aliases_ua": [
-   "м'ясо бізона",
-   "фарш бізона",
-   "буйволове м'ясо"
-  ],
-  "kcal100": 143.0,
-  "protein100": 28.0,
-  "fat100": 3.0,
-  "carbs100": 0.0
- },
- {
-  "id": "venison-cooked",
-  "kind": "PRODUCT",
-  "name": "Venison (Cooked)",
-  "name_ua": "Оленина (готова)",
-  "aliases": [
-   "deer meat",
-   "cooked venison",
-   "venison steak"
-  ],
-  "aliases_ua": [
-   "оленяче м'ясо",
-   "оленина запечена",
-   "стейк з оленини"
-  ],
-  "kcal100": 158.0,
-  "protein100": 30.0,
-  "fat100": 3.0,
-  "carbs100": 0.0
- },
- {
-  "id": "tortilla-flour",
-  "kind": "PRODUCT",
-  "name": "Tortilla (Flour)",
-  "name_ua": "Тортилья (пшенична)",
-  "aliases": [
-   "flour tortilla",
-   "wrap",
-   "burrito shell",
-   "soft tortilla"
-  ],
-  "aliases_ua": [
-   "лаваш",
-   "тортилья",
-   "рол обгортка"
-  ],
-  "kcal100": 312.0,
-  "protein100": 8.0,
-  "fat100": 8.0,
-  "carbs100": 50.0
- },
- {
-  "id": "bagel-plain",
-  "kind": "PRODUCT",
-  "name": "Bagel (Plain)",
-  "name_ua": "Бейгл (простий)",
-  "aliases": [
-   "plain bagel",
-   "bread bagel",
-   "breakfast bagel"
-  ],
-  "aliases_ua": [
-   "бейгл",
-   "бублик",
-   "хлібний бейгл"
-  ],
-  "kcal100": 270.0,
-  "protein100": 10.0,
-  "fat100": 1.5,
-  "carbs100": 53.0
- },
- {
-  "id": "muesli-no-added-sugar",
-  "kind": "PRODUCT",
-  "name": "Muesli (No Added Sugar)",
-  "name_ua": "Мюслі (без цукру)",
-  "aliases": [
-   "unsweetened muesli",
-   "bircher muesli base",
-   "rolled oat muesli"
-  ],
-  "aliases_ua": [
-   "мюслі без цукру",
-   "натуральні мюслі",
-   "вівсяні мюслі"
-  ],
-  "kcal100": 340.0,
-  "protein100": 10.0,
-  "fat100": 6.0,
-  "carbs100": 60.0
- },
- {
-  "id": "parmesan-cheese",
-  "kind": "PRODUCT",
-  "name": "Parmesan Cheese",
-  "name_ua": "Пармезан",
-  "aliases": [
-   "parmigiano",
-   "grated parmesan",
-   "hard Italian cheese"
-  ],
-  "aliases_ua": [
-   "пармезан",
-   "пармезано",
-   "тертий пармезан"
-  ],
-  "kcal100": 431.0,
-  "protein100": 38.0,
-  "fat100": 29.0,
-  "carbs100": 4.0
- },
- {
-  "id": "feta-cheese",
-  "kind": "PRODUCT",
-  "name": "Feta Cheese",
-  "name_ua": "Сир фета",
-  "aliases": [
-   "feta",
-   "Greek feta",
-   "sheep feta",
-   "salad cheese"
-  ],
-  "aliases_ua": [
-   "фета",
-   "грецький сир",
-   "овечий сир",
-   "сир для салату"
-  ],
-  "kcal100": 264.0,
-  "protein100": 14.0,
-  "fat100": 21.0,
-  "carbs100": 4.0
- },
- {
-  "id": "ricotta-cheese",
-  "kind": "PRODUCT",
-  "name": "Ricotta Cheese",
-  "name_ua": "Рікотта",
-  "aliases": [
-   "ricotta",
-   "Italian soft cheese",
-   "whey cheese"
-  ],
-  "aliases_ua": [
-   "рікотта",
-   "м'який італійський сир",
-   "сирковий сир"
-  ],
-  "kcal100": 174.0,
-  "protein100": 11.0,
-  "fat100": 13.0,
-  "carbs100": 3.0
- },
- {
-  "id": "almonds",
-  "kind": "PRODUCT",
-  "name": "Almonds",
-  "name_ua": "Мигдаль",
-  "aliases": [
-   "raw almonds",
-   "roasted almonds",
-   "whole almonds",
-   "almond nuts"
-  ],
-  "aliases_ua": [
-   "мигдаль",
-   "смажений мигдаль",
-   "горіх мигдаль"
-  ],
-  "kcal100": 579.0,
-  "protein100": 21.0,
-  "fat100": 50.0,
-  "carbs100": 22.0
- },
- {
-  "id": "pistachios",
-  "kind": "PRODUCT",
-  "name": "Pistachios",
-  "name_ua": "Фісташки",
-  "aliases": [
-   "pistachio nuts",
-   "roasted pistachios",
-   "salted pistachios"
-  ],
-  "aliases_ua": [
-   "фісташки",
-   "смажені фісташки",
-   "горіхи фісташки"
-  ],
-  "kcal100": 560.0,
-  "protein100": 20.0,
-  "fat100": 45.0,
-  "carbs100": 28.0
- },
- {
-  "id": "pecans",
-  "kind": "PRODUCT",
-  "name": "Pecans",
-  "name_ua": "Пекан",
-  "aliases": [
-   "pecan nuts",
-   "raw pecans",
-   "halved pecans"
-  ],
-  "aliases_ua": [
-   "пекан",
-   "горіх пекан",
-   "сирий пекан"
-  ],
-  "kcal100": 691.0,
-  "protein100": 9.0,
-  "fat100": 72.0,
-  "carbs100": 14.0
- },
- {
-  "id": "macadamia-nuts",
-  "kind": "PRODUCT",
-  "name": "Macadamia Nuts",
-  "name_ua": "Макадамія",
-  "aliases": [
-   "macadamia",
-   "raw macadamia",
-   "roasted macadamia"
-  ],
-  "aliases_ua": [
-   "горіх макадамія",
-   "макадамія смажена"
-  ],
-  "kcal100": 718.0,
-  "protein100": 8.0,
-  "fat100": 76.0,
-  "carbs100": 14.0
- },
- {
-  "id": "hazelnuts",
-  "kind": "PRODUCT",
-  "name": "Hazelnuts",
-  "name_ua": "Фундук",
-  "aliases": [
-   "hazels",
-   "filberts",
-   "cobnut",
-   "roasted hazelnuts"
-  ],
-  "aliases_ua": [
-   "ліщина",
-   "лісовий горіх",
-   "смажений фундук"
-  ],
-  "kcal100": 628.0,
-  "protein100": 15.0,
-  "fat100": 61.0,
-  "carbs100": 17.0
- },
- {
-  "id": "chia-seeds",
-  "kind": "PRODUCT",
-  "name": "Chia Seeds",
-  "name_ua": "Насіння чіа",
-  "aliases": [
-   "chia",
-   "chia seed",
-   "chia pudding base"
-  ],
-  "aliases_ua": [
-   "чіа",
-   "чіа насіння",
-   "основа для чіа пудингу"
-  ],
-  "kcal100": 486.0,
-  "protein100": 17.0,
-  "fat100": 31.0,
-  "carbs100": 42.0
- },
- {
-  "id": "flaxseeds",
-  "kind": "PRODUCT",
-  "name": "Flaxseeds",
-  "name_ua": "Насіння льону",
-  "aliases": [
-   "linseed",
-   "flax seed",
-   "ground flaxseed",
-   "milled linseed"
-  ],
-  "aliases_ua": [
-   "лляне насіння",
-   "насіння льону",
-   "мелене лляне"
-  ],
-  "kcal100": 534.0,
-  "protein100": 18.0,
-  "fat100": 42.0,
-  "carbs100": 29.0
- },
- {
-  "id": "sunflower-seeds",
-  "kind": "PRODUCT",
-  "name": "Sunflower Seeds",
-  "name_ua": "Насіння соняшнику",
-  "aliases": [
-   "sunflower kernels",
-   "shelled sunflower seeds",
-   "roasted seeds"
-  ],
-  "aliases_ua": [
-   "сім'ячки",
-   "насіння соняху",
-   "лущені сім'ячки"
-  ],
-  "kcal100": 584.0,
-  "protein100": 21.0,
-  "fat100": 51.0,
-  "carbs100": 20.0
- },
- {
-  "id": "pumpkin-seeds",
-  "kind": "PRODUCT",
-  "name": "Pumpkin Seeds",
-  "name_ua": "Гарбузове насіння",
-  "aliases": [
-   "pepitas",
-   "pumpkin kernels",
-   "roasted pumpkin seeds"
-  ],
-  "aliases_ua": [
-   "гарбузове насіння",
-   "пепітас",
-   "смажене гарбузове"
-  ],
-  "kcal100": 559.0,
-  "protein100": 30.0,
-  "fat100": 49.0,
-  "carbs100": 11.0
- },
- {
-  "id": "hemp-seeds",
-  "kind": "PRODUCT",
-  "name": "Hemp Seeds",
-  "name_ua": "Насіння конопель",
-  "aliases": [
-   "hemp hearts",
-   "shelled hemp seed",
-   "hemp protein source"
-  ],
-  "aliases_ua": [
-   "конопляне насіння",
-   "конопляні серця"
-  ],
-  "kcal100": 553.0,
-  "protein100": 32.0,
-  "fat100": 49.0,
-  "carbs100": 9.0
- },
- {
-  "id": "coconut-desiccated",
-  "kind": "PRODUCT",
-  "name": "Coconut (Desiccated)",
-  "name_ua": "Кокос (сушений)",
-  "aliases": [
-   "dried coconut",
-   "shredded coconut",
-   "coconut flakes"
-  ],
-  "aliases_ua": [
-   "сушений кокос",
-   "кокосова стружка",
-   "кокосові пластівці"
-  ],
-  "kcal100": 660.0,
-  "protein100": 7.0,
-  "fat100": 65.0,
-  "carbs100": 24.0
- },
- {
-  "id": "raisins",
-  "kind": "PRODUCT",
-  "name": "Raisins",
-  "name_ua": "Родзинки",
-  "aliases": [
-   "dried grapes",
-   "sultanas",
-   "currants",
-   "golden raisins"
-  ],
-  "aliases_ua": [
-   "ізюм",
-   "сушений виноград",
-   "кишмиш"
-  ],
-  "kcal100": 299.0,
-  "protein100": 3.0,
-  "fat100": 0.5,
-  "carbs100": 79.0
- },
- {
-  "id": "dried-apricots",
-  "kind": "PRODUCT",
-  "name": "Dried Apricots",
-  "name_ua": "Курага",
-  "aliases": [
-   "apricot dried",
-   "dried apricot halves",
-   "Turkish apricots"
-  ],
-  "aliases_ua": [
-   "курага",
-   "сушений абрикос",
-   "абрикоси сушені"
-  ],
-  "kcal100": 241.0,
-  "protein100": 3.0,
-  "fat100": 0.5,
-  "carbs100": 63.0
- },
- {
-  "id": "dried-cranberries",
-  "kind": "PRODUCT",
-  "name": "Dried Cranberries",
-  "name_ua": "Журавлина сушена",
-  "aliases": [
-   "craisins",
-   "dried cranberry",
-   "cranberry raisins"
-  ],
-  "aliases_ua": [
-   "журавлина",
-   "сушена журавлина",
-   "крейзінс"
-  ],
-  "kcal100": 325.0,
-  "protein100": 0.1,
-  "fat100": 1.0,
-  "carbs100": 82.0
- },
- {
-  "id": "tilapia-cooked",
-  "kind": "PRODUCT",
-  "name": "Tilapia (Cooked)",
-  "name_ua": "Тілапія (готова)",
-  "aliases": [
-   "white tilapia",
-   "baked tilapia",
-   "grilled tilapia",
-   "tilapia fillet"
-  ],
-  "aliases_ua": [
-   "тілапія запечена",
-   "тілапія гриль",
-   "філе тілапії"
-  ],
-  "kcal100": 128.0,
-  "protein100": 26.0,
-  "fat100": 3.0,
-  "carbs100": 0.0
- },
- {
-  "id": "haddock-cooked",
-  "kind": "PRODUCT",
-  "name": "Haddock (Cooked)",
-  "name_ua": "Пікша (готова)",
-  "aliases": [
-   "smoked haddock",
-   "baked haddock",
-   "finnan haddie"
-  ],
-  "aliases_ua": [
-   "копчена пікша",
-   "запечена пікша",
-   "пікша філе"
-  ],
-  "kcal100": 90.0,
-  "protein100": 21.0,
-  "fat100": 0.6,
-  "carbs100": 0.0
- },
- {
-  "id": "turkey-mince-cooked",
-  "kind": "PRODUCT",
-  "name": "Turkey Mince (Cooked)",
-  "name_ua": "Індичий фарш (готовий)",
-  "aliases": [
-   "ground turkey",
-   "minced turkey",
-   "lean turkey mince"
-  ],
-  "aliases_ua": [
-   "фарш індичий",
-   "мелена індичка",
-   "пісний фарш індички"
-  ],
-  "kcal100": 170.0,
-  "protein100": 24.0,
-  "fat100": 8.0,
-  "carbs100": 0.0
- },
- {
-  "id": "crab-meat-cooked",
-  "kind": "PRODUCT",
-  "name": "Crab Meat (Cooked)",
-  "name_ua": "Крабове м'ясо (готове)",
-  "aliases": [
-   "crabmeat",
-   "crab",
-   "dressed crab",
-   "white crab meat"
-  ],
-  "aliases_ua": [
-   "крабове м'ясо",
-   "краб",
-   "біле м'ясо краба"
-  ],
-  "kcal100": 97.0,
-  "protein100": 19.0,
-  "fat100": 1.5,
-  "carbs100": 0.0
- },
- {
-  "id": "scallops-cooked",
-  "kind": "PRODUCT",
-  "name": "Scallops (Cooked)",
-  "name_ua": "Гребінці (готові)",
-  "aliases": [
-   "sea scallops",
-   "pan-seared scallops",
-   "king scallops"
-  ],
-  "aliases_ua": [
-   "морські гребінці",
-   "смажені гребінці"
-  ],
-  "kcal100": 111.0,
-  "protein100": 21.0,
-  "fat100": 1.0,
-  "carbs100": 5.0
- },
- {
-  "id": "mussels-cooked",
-  "kind": "PRODUCT",
-  "name": "Mussels (Cooked)",
-  "name_ua": "Мідії (готові)",
-  "aliases": [
-   "steamed mussels",
-   "blue mussels",
-   "mussel meat"
-  ],
-  "aliases_ua": [
-   "мідії на пару",
-   "мідії варені",
-   "м'ясо мідій"
-  ],
-  "kcal100": 172.0,
-  "protein100": 24.0,
-  "fat100": 4.5,
-  "carbs100": 7.0
- },
- {
-  "id": "edamame",
-  "kind": "PRODUCT",
-  "name": "Edamame",
-  "name_ua": "Едамаме",
-  "aliases": [
-   "soy beans",
-   "green soybeans",
-   "boiled edamame",
-   "shelled edamame"
-  ],
-  "aliases_ua": [
-   "соєві боби",
-   "зелена соя",
-   "варені едамаме"
-  ],
-  "kcal100": 121.0,
-  "protein100": 12.0,
-  "fat100": 5.0,
-  "carbs100": 9.0
- },
- {
-  "id": "black-beans-cooked",
-  "kind": "PRODUCT",
-  "name": "Black Beans (Cooked)",
-  "name_ua": "Чорна квасоля (варена)",
-  "aliases": [
-   "cooked black beans",
-   "frijoles negros",
-   "black turtle beans"
-  ],
-  "aliases_ua": [
-   "чорна квасоля",
-   "фрихолес",
-   "варена квасоля чорна"
-  ],
-  "kcal100": 132.0,
-  "protein100": 9.0,
-  "fat100": 0.5,
-  "carbs100": 24.0
- },
- {
-  "id": "kidney-beans-cooked",
-  "kind": "PRODUCT",
-  "name": "Kidney Beans (Cooked)",
-  "name_ua": "Червона квасоля (варена)",
-  "aliases": [
-   "cooked kidney beans",
-   "red beans",
-   "rajma"
-  ],
-  "aliases_ua": [
-   "червона квасоля варена",
-   "раджма",
-   "квасоля"
-  ],
-  "kcal100": 127.0,
-  "protein100": 9.0,
-  "fat100": 0.5,
-  "carbs100": 22.0
- },
- {
-  "id": "asparagus-cooked",
-  "kind": "PRODUCT",
-  "name": "Asparagus (Cooked)",
-  "name_ua": "Спаржа (варена)",
-  "aliases": [
-   "steamed asparagus",
-   "grilled asparagus",
-   "asparagus tips"
-  ],
-  "aliases_ua": [
-   "спаржа на пару",
-   "спаржа гриль",
-   "верхівки спаржі"
-  ],
-  "kcal100": 22.0,
-  "protein100": 2.4,
-  "fat100": 0.2,
-  "carbs100": 4.0
- },
- {
-  "id": "kale-raw",
-  "kind": "PRODUCT",
-  "name": "Kale (Raw)",
-  "name_ua": "Капуста кейл (сира)",
-  "aliases": [
-   "kale",
-   "curly kale",
-   "lacinato kale",
-   "dinosaur kale"
-  ],
-  "aliases_ua": [
-   "кейл",
-   "кудрява капуста",
-   "лацинато кейл"
-  ],
-  "kcal100": 35.0,
-  "protein100": 2.9,
-  "fat100": 0.9,
-  "carbs100": 4.4
- },
- {
-  "id": "mushrooms-raw",
-  "kind": "PRODUCT",
-  "name": "Mushrooms (Raw)",
-  "name_ua": "Гриби (сирі)",
-  "aliases": [
-   "white mushroom",
-   "button mushroom",
-   "cremini",
-   "champignon"
-  ],
-  "aliases_ua": [
-   "печериці",
-   "шампіньйони",
-   "білі гриби",
-   "кремні"
-  ],
-  "kcal100": 22.0,
-  "protein100": 3.1,
-  "fat100": 0.3,
-  "carbs100": 3.3
- },
- {
-  "id": "green-beans-cooked",
-  "kind": "PRODUCT",
-  "name": "Green Beans (Cooked)",
-  "name_ua": "Зелена квасоля (варена)",
-  "aliases": [
-   "string beans",
-   "French beans",
-   "runner beans",
-   "haricots verts"
-  ],
-  "aliases_ua": [
-   "стручкова квасоля",
-   "зелена квасоля",
-   "спаржева квасоля"
-  ],
-  "kcal100": 35.0,
-  "protein100": 1.8,
-  "fat100": 0.2,
-  "carbs100": 8.0
+   "vanilla ice cream"
+  ],
+  "aliasesUa": [
+   "пломбір",
+   "морозиво"
+  ],
+  "kcal100": 232,
+  "source": {
+   "type": "label",
+   "ref": "Морозиво пломбір ванільний 12–15 %, без глазурі (брикет/відерце/стаканчик)"
+  }
  },
  {
   "id": "cabbage-raw",
-  "kind": "PRODUCT",
-  "name": "Cabbage (Raw)",
-  "name_ua": "Капуста (сира)",
+  "name": "Капуста білокачанна",
+  "nameEn": "Cabbage",
   "aliases": [
    "white cabbage",
    "green cabbage",
-   "raw cabbage",
-   "shredded cabbage"
+   "brussels sprouts",
+   "savoy cabbage"
   ],
-  "aliases_ua": [
-   "білокачанна капуста",
-   "зелена капуста",
-   "нашинкована капуста"
+  "aliasesUa": [
+   "капуста"
   ],
-  "kcal100": 25.0,
-  "protein100": 1.3,
-  "fat100": 0.1,
-  "carbs100": 6.0
+  "kcal100": 25,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169975: Cabbage, raw"
+  }
  },
  {
-  "id": "brussels-sprouts-cooked",
-  "kind": "PRODUCT",
-  "name": "Brussels Sprouts (Cooked)",
-  "name_ua": "Брюссельська капуста (варена)",
+  "id": "sauerkraut",
+  "name": "Капуста квашена",
+  "nameEn": "Sauerkraut",
   "aliases": [
-   "steamed Brussels sprouts",
-   "roasted sprouts",
-   "baby cabbages"
+   "pickled cabbage"
   ],
-  "aliases_ua": [
-   "брюссельська капуста",
-   "капуста варена",
-   "ростки"
+  "aliasesUa": [
+   "квашена капуста"
   ],
-  "kcal100": 36.0,
-  "protein100": 2.6,
-  "fat100": 0.5,
-  "carbs100": 7.0
+  "kcal100": 19,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169279: Sauerkraut, canned, solids and liquids"
+  }
+ },
+ {
+  "id": "beet-boiled",
+  "name": "Буряк варений",
+  "nameEn": "Beets",
+  "aliases": [
+   "beetroot",
+   "boiled beets"
+  ],
+  "aliasesUa": [
+   "буряк",
+   "бурячок"
+  ],
+  "kcal100": 44,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169146: Beets, cooked, boiled, drained"
+  }
+ },
+ {
+  "id": "carrots-raw",
+  "name": "Морква",
+  "nameEn": "Carrot",
+  "aliases": [
+   "carrots"
+  ],
+  "aliasesUa": [
+   "морква"
+  ],
+  "kcal100": 41,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170393: Carrots, raw"
+  }
+ },
+ {
+  "id": "onion",
+  "name": "Цибуля",
+  "nameEn": "Onion",
+  "aliases": [],
+  "aliasesUa": [
+   "цибуля"
+  ],
+  "kcal100": 40,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170000: Onions, raw"
+  }
+ },
+ {
+  "id": "cucumber",
+  "name": "Огірок свіжий",
+  "nameEn": "Cucumber",
+  "aliases": [
+   "fresh cucumber"
+  ],
+  "aliasesUa": [
+   "огірок",
+   "огірочки"
+  ],
+  "kcal100": 15,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168409: Cucumber, with peel, raw"
+  }
+ },
+ {
+  "id": "pickled-cucumber",
+  "name": "Огірок солоний / маринований",
+  "nameEn": "Pickles",
+  "aliases": [
+   "pickled cucumber",
+   "dill pickle",
+   "gherkins"
+  ],
+  "aliasesUa": [
+   "солоні огірки",
+   "мариновані огірки"
+  ],
+  "kcal100": 12,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168558: Pickles, cucumber, dill or kosher dill"
+  }
+ },
+ {
+  "id": "tomato",
+  "name": "Помідор",
+  "nameEn": "Tomato",
+  "aliases": [
+   "tomatoes",
+   "cherry tomatoes"
+  ],
+  "aliasesUa": [
+   "помідори",
+   "томат"
+  ],
+  "kcal100": 18,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170457: Tomatoes, red, ripe, raw, year round average"
+  }
+ },
+ {
+  "id": "bell-pepper",
+  "name": "Перець солодкий",
+  "nameEn": "Bell pepper",
+  "aliases": [
+   "sweet pepper",
+   "red pepper"
+  ],
+  "aliasesUa": [
+   "болгарський перець"
+  ],
+  "kcal100": 26,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170108: Peppers, sweet, red, raw"
+  }
+ },
+ {
+  "id": "zucchini",
+  "name": "Кабачок",
+  "nameEn": "Zucchini",
+  "aliases": [
+   "courgette",
+   "squash"
+  ],
+  "aliasesUa": [
+   "кабачки"
+  ],
+  "kcal100": 17,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169291: Squash, summer, zucchini, includes skin, raw"
+  }
+ },
+ {
+  "id": "eggplant",
+  "name": "Баклажан",
+  "nameEn": "Eggplant",
+  "aliases": [
+   "aubergine"
+  ],
+  "aliasesUa": [
+   "синенькі"
+  ],
+  "kcal100": 25,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169228: Eggplant, raw"
+  }
+ },
+ {
+  "id": "mushrooms-raw",
+  "name": "Печериці",
+  "nameEn": "Mushrooms",
+  "aliases": [
+   "champignons"
+  ],
+  "aliasesUa": [
+   "гриби"
+  ],
+  "kcal100": 22,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169251: Mushrooms, white, raw"
+  }
+ },
+ {
+  "id": "mixed-greens",
+  "name": "Листя салату, зелень",
+  "nameEn": "Lettuce",
+  "aliases": [
+   "salad greens",
+   "leafy greens",
+   "mixed greens",
+   "spinach",
+   "baby spinach",
+   "kale",
+   "arugula"
+  ],
+  "aliasesUa": [
+   "салат",
+   "зелень",
+   "кріп",
+   "петрушка"
+  ],
+  "kcal100": 15,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169249: Lettuce, green leaf, raw"
+  }
+ },
+ {
+  "id": "radish",
+  "name": "Редиска",
+  "nameEn": "Radishes",
+  "aliases": [
+   "radish"
+  ],
+  "aliasesUa": [
+   "редиска"
+  ],
+  "kcal100": 16,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169276: Radishes, raw"
+  }
+ },
+ {
+  "id": "green-peas",
+  "name": "Горошок консервований",
+  "nameEn": "Green peas",
+  "aliases": [
+   "peas"
+  ],
+  "aliasesUa": [
+   "горошок"
+  ],
+  "kcal100": 68,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170013: Peas, green (includes baby and lesuer types), canned, drained solids, unprepared"
+  }
+ },
+ {
+  "id": "corn-canned",
+  "name": "Кукурудза консервована",
+  "nameEn": "Sweet corn",
+  "aliases": [
+   "corn"
+  ],
+  "aliasesUa": [
+   "кукурудза"
+  ],
+  "kcal100": 67,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169214: Corn, sweet, yellow, canned, whole kernel, drained solids"
+  }
+ },
+ {
+  "id": "kidney-beans-cooked",
+  "name": "Квасоля варена",
+  "nameEn": "Beans",
+  "aliases": [
+   "kidney beans",
+   "white beans"
+  ],
+  "aliasesUa": [
+   "квасоля"
+  ],
+  "kcal100": 127,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173740: Beans, kidney, all types, mature seeds, cooked, boiled, without salt"
+  }
+ },
+ {
+  "id": "green-beans",
+  "name": "Квасоля стручкова",
+  "nameEn": "Green beans",
+  "aliases": [
+   "string beans"
+  ],
+  "aliasesUa": [
+   "стручкова квасоля"
+  ],
+  "kcal100": 35,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169141: Beans, snap, green, cooked, boiled, drained, without salt"
+  }
+ },
+ {
+  "id": "pumpkin",
+  "name": "Гарбуз",
+  "nameEn": "Pumpkin",
+  "aliases": [
+   "squash"
+  ],
+  "aliasesUa": [
+   "гарбуз"
+  ],
+  "kcal100": 26,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168448: Pumpkin, raw"
+  }
+ },
+ {
+  "id": "cauliflower",
+  "name": "Цвітна капуста",
+  "nameEn": "Cauliflower",
+  "aliases": [],
+  "aliasesUa": [
+   "цвітна капуста"
+  ],
+  "kcal100": 23,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170397: Cauliflower, cooked, boiled, drained, without salt"
+  }
+ },
+ {
+  "id": "broccoli-cooked",
+  "name": "Броколі",
+  "nameEn": "Broccoli",
+  "aliases": [],
+  "aliasesUa": [
+   "броколі"
+  ],
+  "kcal100": 35,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169967: Broccoli, cooked, boiled, drained, without salt"
+  }
+ },
+ {
+  "id": "apple",
+  "name": "Яблуко",
+  "nameEn": "Apple",
+  "aliases": [
+   "apples",
+   "green apple",
+   "red apple"
+  ],
+  "aliasesUa": [
+   "яблука"
+  ],
+  "kcal100": 52,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171688: Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)"
+  },
+  "pcGrams": 170
  },
  {
   "id": "pear",
-  "kind": "PRODUCT",
-  "name": "Pear",
-  "name_ua": "Груша",
+  "name": "Груша",
+  "nameEn": "Pear",
   "aliases": [
-   "pears",
-   "green pear",
-   "conference pear",
-   "Bartlett pear"
+   "pears"
   ],
-  "aliases_ua": [
-   "груші",
-   "зелена груша",
-   "конференція"
+  "aliasesUa": [
+   "груші"
   ],
-  "kcal100": 57.0,
-  "protein100": 0.4,
-  "fat100": 0.1,
-  "carbs100": 15.0
+  "kcal100": 57,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169118: Pears, raw"
+  },
+  "pcGrams": 170
  },
  {
-  "id": "kiwi",
-  "kind": "PRODUCT",
-  "name": "Kiwi",
-  "name_ua": "Ківі",
+  "id": "plum",
+  "name": "Слива",
+  "nameEn": "Plum",
   "aliases": [
-   "kiwi fruit",
-   "green kiwi",
-   "gold kiwi",
-   "Chinese gooseberry"
+   "plums"
   ],
-  "aliases_ua": [
-   "ківі",
-   "зелений ківі",
-   "золотий ківі"
+  "aliasesUa": [
+   "сливи"
   ],
-  "kcal100": 61.0,
-  "protein100": 1.1,
-  "fat100": 0.5,
-  "carbs100": 15.0
+  "kcal100": 46,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169949: Plums, raw"
+  },
+  "pcGrams": 30
  },
  {
-  "id": "mango",
-  "kind": "PRODUCT",
-  "name": "Mango",
-  "name_ua": "Манго",
+  "id": "apricot",
+  "name": "Абрикос",
+  "nameEn": "Apricot",
   "aliases": [
-   "mangoes",
-   "fresh mango",
-   "mango flesh",
-   "ripe mango"
+   "apricots"
   ],
-  "aliases_ua": [
-   "манго",
-   "свіже манго",
-   "стигле манго"
+  "aliasesUa": [
+   "абрикоси"
   ],
-  "kcal100": 60.0,
-  "protein100": 0.8,
-  "fat100": 0.4,
-  "carbs100": 15.0
- },
- {
-  "id": "pineapple",
-  "kind": "PRODUCT",
-  "name": "Pineapple",
-  "name_ua": "Ананас",
-  "aliases": [
-   "fresh pineapple",
-   "pineapple chunks",
-   "pineapple rings"
-  ],
-  "aliases_ua": [
-   "ананас свіжий",
-   "шматочки ананасу"
-  ],
-  "kcal100": 50.0,
-  "protein100": 0.5,
-  "fat100": 0.1,
-  "carbs100": 13.0
+  "kcal100": 48,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171697: Apricots, raw"
+  },
+  "pcGrams": 35
  },
  {
   "id": "peach",
-  "kind": "PRODUCT",
-  "name": "Peach",
-  "name_ua": "Персик",
+  "name": "Персик",
+  "nameEn": "Peach",
   "aliases": [
    "peaches",
-   "nectarine",
-   "fresh peach",
-   "stone fruit"
+   "nectarine"
   ],
-  "aliases_ua": [
+  "aliasesUa": [
    "персики",
-   "нектарин",
-   "свіжий персик"
+   "нектарин"
   ],
-  "kcal100": 39.0,
-  "protein100": 0.9,
-  "fat100": 0.3,
-  "carbs100": 10.0
+  "kcal100": 39,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169928: Peaches, yellow, raw"
+  },
+  "pcGrams": 150
  },
  {
-  "id": "hummus",
-  "kind": "PRODUCT",
-  "name": "Hummus",
-  "name_ua": "Хумус",
+  "id": "cherries-sour",
+  "name": "Вишні",
+  "nameEn": "Cherries",
   "aliases": [
-   "chickpea hummus",
-   "tahini dip",
-   "hummus classic"
+   "sour cherries"
   ],
-  "aliases_ua": [
-   "хумус класичний",
-   "нутова паста",
-   "тахіні дип"
+  "aliasesUa": [
+   "вишня"
   ],
-  "kcal100": 166.0,
-  "protein100": 8.0,
-  "fat100": 10.0,
-  "carbs100": 14.0
+  "kcal100": 50,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173954: Cherries, sour, red, raw"
+  }
  },
  {
-  "id": "tahini",
-  "kind": "PRODUCT",
-  "name": "Tahini",
-  "name_ua": "Тахіні",
-  "aliases": [
-   "sesame paste",
-   "tahini sauce",
-   "raw tahini"
+  "id": "sweet-cherries",
+  "name": "Черешні",
+  "nameEn": "Sweet cherries",
+  "aliases": [],
+  "aliasesUa": [
+   "черешня"
   ],
-  "aliases_ua": [
-   "кунжутна паста",
-   "тахіні соус",
-   "сирий тахіні"
-  ],
-  "kcal100": 595.0,
-  "protein100": 17.0,
-  "fat100": 54.0,
-  "carbs100": 21.0
+  "kcal100": 63,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171719: Cherries, sweet, raw"
+  }
  },
  {
-  "id": "oat-milk",
-  "kind": "PRODUCT",
-  "name": "Oat Milk",
-  "name_ua": "Вівсяне молоко",
+  "id": "strawberries",
+  "name": "Полуниці",
+  "nameEn": "Strawberries",
   "aliases": [
-   "oat drink",
-   "plant milk oat",
-   "oatly",
-   "oat beverage"
+   "strawberry"
   ],
-  "aliases_ua": [
-   "вівсяне молоко",
-   "рослинне молоко",
-   "оатлі"
+  "aliasesUa": [
+   "полуниця",
+   "суниці"
   ],
-  "kcal100": 43.0,
-  "protein100": 1.0,
-  "fat100": 1.5,
-  "carbs100": 7.0
+  "kcal100": 32,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167762: Strawberries, raw"
+  }
  },
  {
-  "id": "almond-milk-unsweetened",
-  "kind": "PRODUCT",
-  "name": "Almond Milk (Unsweetened)",
-  "name_ua": "Мигдальне молоко (без цукру)",
+  "id": "raspberries",
+  "name": "Малина",
+  "nameEn": "Raspberries",
   "aliases": [
-   "almond drink",
-   "unsweetened almond milk",
-   "plant milk almond"
+   "raspberry"
   ],
-  "aliases_ua": [
-   "мигдальне молоко",
-   "рослинне молоко мигдальне"
+  "aliasesUa": [
+   "малина"
   ],
-  "kcal100": 15.0,
-  "protein100": 0.6,
-  "fat100": 1.1,
-  "carbs100": 0.3
+  "kcal100": 52,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167755: Raspberries, raw"
+  }
  },
  {
-  "id": "soy-milk",
-  "kind": "PRODUCT",
-  "name": "Soy Milk",
-  "name_ua": "Соєве молоко",
+  "id": "blueberries",
+  "name": "Чорниці / лохина",
+  "nameEn": "Blueberries",
   "aliases": [
-   "soya milk",
-   "soy drink",
-   "plant milk soy"
+   "bilberries"
   ],
-  "aliases_ua": [
-   "соєве молоко",
-   "соя молоко",
-   "рослинне молоко соєве"
+  "aliasesUa": [
+   "чорниця",
+   "лохина"
   ],
-  "kcal100": 33.0,
-  "protein100": 2.8,
-  "fat100": 1.8,
-  "carbs100": 1.2
+  "kcal100": 57,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171711: Blueberries, raw"
+  }
  },
  {
-  "id": "casein-protein-powder",
-  "kind": "PRODUCT",
-  "name": "Casein Protein Powder",
-  "name_ua": "Казеїн протеїн",
+  "id": "currants",
+  "name": "Смородина",
+  "nameEn": "Currants",
   "aliases": [
-   "micellar casein",
-   "slow release protein",
-   "night protein powder"
+   "black currants",
+   "red currants"
   ],
-  "aliases_ua": [
-   "казеїн",
-   "повільний протеїн",
-   "нічний протеїн"
+  "aliasesUa": [
+   "смородина"
   ],
-  "kcal100": 370.0,
-  "protein100": 80.0,
-  "fat100": 2.0,
-  "carbs100": 4.0
+  "kcal100": 63,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173963: Currants, european black, raw"
+  }
  },
  {
-  "id": "creatine-monohydrate",
-  "kind": "PRODUCT",
-  "name": "Creatine Monohydrate",
-  "name_ua": "Креатин моногідрат",
+  "id": "berries-mix",
+  "name": "Ягоди (мікс)",
+  "nameEn": "Berries",
   "aliases": [
-   "creatine",
-   "creatine powder",
-   "creatine supplement"
+   "mixed berries",
+   "blackberries"
   ],
-  "aliases_ua": [
-   "креатин",
-   "креатин порошок",
-   "креатинова добавка"
+  "aliasesUa": [
+   "ягоди"
   ],
-  "kcal100": 0.0,
-  "protein100": 0.0,
-  "fat100": 0.0,
-  "carbs100": 0.0
+  "kcal100": 47,
+  "source": {
+   "type": "usda",
+   "ref": "FDC None: Mean of: Strawberries, raw; Raspberries, raw; Blueberries, raw"
+  }
+ },
+ {
+  "id": "grapes",
+  "name": "Виноград",
+  "nameEn": "Grapes",
+  "aliases": [],
+  "aliasesUa": [
+   "виноград"
+  ],
+  "kcal100": 69,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 174683: Grapes, red or green (European type, such as Thompson seedless), raw"
+  }
+ },
+ {
+  "id": "watermelon",
+  "name": "Кавун",
+  "nameEn": "Watermelon",
+  "aliases": [],
+  "aliasesUa": [
+   "кавун"
+  ],
+  "kcal100": 30,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167765: Watermelon, raw"
+  }
+ },
+ {
+  "id": "melon",
+  "name": "Диня",
+  "nameEn": "Melon",
+  "aliases": [
+   "cantaloupe",
+   "honeydew"
+  ],
+  "aliasesUa": [
+   "диня"
+  ],
+  "kcal100": 34,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169092: Melons, cantaloupe, raw"
+  }
+ },
+ {
+  "id": "banana",
+  "name": "Банан",
+  "nameEn": "Banana",
+  "aliases": [
+   "bananas"
+  ],
+  "aliasesUa": [
+   "банани"
+  ],
+  "kcal100": 89,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173944: Bananas, raw"
+  },
+  "pcGrams": 120
+ },
+ {
+  "id": "orange",
+  "name": "Апельсин",
+  "nameEn": "Orange",
+  "aliases": [
+   "oranges"
+  ],
+  "aliasesUa": [
+   "апельсини"
+  ],
+  "kcal100": 47,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169097: Oranges, raw, all commercial varieties"
+  },
+  "pcGrams": 160
+ },
+ {
+  "id": "mandarin",
+  "name": "Мандарин",
+  "nameEn": "Tangerine",
+  "aliases": [
+   "mandarin",
+   "clementine"
+  ],
+  "aliasesUa": [
+   "мандарини"
+  ],
+  "kcal100": 53,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169105: Tangerines, (mandarin oranges), raw"
+  },
+  "pcGrams": 80
+ },
+ {
+  "id": "lemon",
+  "name": "Лимон",
+  "nameEn": "Lemon",
+  "aliases": [],
+  "aliasesUa": [
+   "лимон"
+  ],
+  "kcal100": 29,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 167746: Lemons, raw, without peel"
+  }
+ },
+ {
+  "id": "kiwi",
+  "name": "Ківі",
+  "nameEn": "Kiwi",
+  "aliases": [
+   "kiwifruit"
+  ],
+  "aliasesUa": [
+   "ківі"
+  ],
+  "kcal100": 61,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168153: Kiwifruit, green, raw"
+  },
+  "pcGrams": 75
+ },
+ {
+  "id": "persimmon",
+  "name": "Хурма",
+  "nameEn": "Persimmon",
+  "aliases": [],
+  "aliasesUa": [
+   "хурма"
+  ],
+  "kcal100": 70,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 169941: Persimmons, japanese, raw"
+  },
+  "pcGrams": 170
+ },
+ {
+  "id": "raisins",
+  "name": "Родзинки",
+  "nameEn": "Raisins",
+  "aliases": [],
+  "aliasesUa": [
+   "ізюм"
+  ],
+  "kcal100": 299,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168165: Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)"
+  }
+ },
+ {
+  "id": "prunes",
+  "name": "Чорнослив",
+  "nameEn": "Prunes",
+  "aliases": [
+   "dried plums"
+  ],
+  "aliasesUa": [
+   "чорнослив"
+  ],
+  "kcal100": 240,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 168162: Plums, dried (prunes), uncooked"
+  }
+ },
+ {
+  "id": "dried-apricots",
+  "name": "Курага",
+  "nameEn": "Dried apricots",
+  "aliases": [],
+  "aliasesUa": [
+   "курага"
+  ],
+  "kcal100": 241,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173941: Apricots, dried, sulfured, uncooked"
+  }
+ },
+ {
+  "id": "walnuts",
+  "name": "Волоські горіхи",
+  "nameEn": "Walnuts",
+  "aliases": [
+   "nuts"
+  ],
+  "aliasesUa": [
+   "горіхи"
+  ],
+  "kcal100": 654,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170187: Nuts, walnuts, english"
+  }
+ },
+ {
+  "id": "hazelnuts",
+  "name": "Фундук",
+  "nameEn": "Hazelnuts",
+  "aliases": [],
+  "aliasesUa": [
+   "лісові горіхи"
+  ],
+  "kcal100": 628,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170581: Nuts, hazelnuts or filberts"
+  }
+ },
+ {
+  "id": "almonds",
+  "name": "Мигдаль",
+  "nameEn": "Almonds",
+  "aliases": [],
+  "aliasesUa": [
+   "мигдаль"
+  ],
+  "kcal100": 579,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170567: Nuts, almonds"
+  }
+ },
+ {
+  "id": "peanuts",
+  "name": "Арахіс",
+  "nameEn": "Peanuts",
+  "aliases": [],
+  "aliasesUa": [
+   "арахіс"
+  ],
+  "kcal100": 587,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173806: Peanuts, all types, dry-roasted, without salt"
+  }
+ },
+ {
+  "id": "sunflower-seeds",
+  "name": "Насіння соняшника",
+  "nameEn": "Sunflower seeds",
+  "aliases": [
+   "seeds"
+  ],
+  "aliasesUa": [
+   "насіння",
+   "соняшникове насіння"
+  ],
+  "kcal100": 582,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170563: Seeds, sunflower seed kernels, dry roasted, without salt"
+  }
+ },
+ {
+  "id": "pumpkin-seeds",
+  "name": "Гарбузове насіння",
+  "nameEn": "Pumpkin seeds",
+  "aliases": [],
+  "aliasesUa": [
+   "гарбузове насіння"
+  ],
+  "kcal100": 574,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 170557: Seeds, pumpkin and squash seed kernels, roasted, without salt"
+  }
+ },
+ {
+  "id": "sunflower-oil",
+  "name": "Олія соняшникова",
+  "nameEn": "Sunflower oil",
+  "aliases": [
+   "oil"
+  ],
+  "aliasesUa": [
+   "олія"
+  ],
+  "kcal100": 884,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171025: Oil, sunflower, linoleic, (approx. 65%)"
+  }
+ },
+ {
+  "id": "olive-oil",
+  "name": "Олія оливкова",
+  "nameEn": "Olive oil",
+  "aliases": [],
+  "aliasesUa": [
+   "оливкова олія"
+  ],
+  "kcal100": 884,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171413: Oil, olive, salad or cooking"
+  }
+ },
+ {
+  "id": "mayonnaise",
+  "name": "Майонез 67%",
+  "nameEn": "Mayonnaise",
+  "aliases": [
+   "mayo"
+  ],
+  "aliasesUa": [
+   "майонез"
+  ],
+  "kcal100": 617,
+  "source": {
+   "type": "label",
+   "ref": "Майонез «Провансаль» 67 % жиру"
+  }
+ },
+ {
+  "id": "ketchup",
+  "name": "Кетчуп",
+  "nameEn": "Ketchup",
+  "aliases": [
+   "tomato sauce"
+  ],
+  "aliasesUa": [
+   "кетчуп",
+   "томатний соус"
+  ],
+  "kcal100": 96,
+  "source": {
+   "type": "label",
+   "ref": "Кетчуп томатний «Лагідний»/класичний"
+  }
+ },
+ {
+  "id": "mustard",
+  "name": "Гірчиця",
+  "nameEn": "Mustard",
+  "aliases": [],
+  "aliasesUa": [
+   "гірчиця"
+  ],
+  "kcal100": 165,
+  "source": {
+   "type": "label",
+   "ref": "Гірчиця столова «Міцна»/«Українська»"
+  }
+ },
+ {
+  "id": "uzvar",
+  "name": "Узвар",
+  "nameEn": "Uzvar",
+  "aliases": [
+   "uzvar drink"
+  ],
+  "aliasesUa": [
+   "узвар"
+  ],
+  "kcal100": 53,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home version averaged from: УНІАН https://www.unian.ua/recipes/uzvar-kak-varit-vkusnye-recepty-chto-dobavit-amp-12098481.html (3 л води; сушені яблука 200 г, груші 200 г, чорнослив 100 г, родзинки 100 г, мед 4–5 ст. л.; variant: 600 г сухофруктів + 250 г цукру); Доцяк В.С. «Українська кухня» (1998) «Узвар із сухофруктів»: сухофрукти 100 г, цукор 75 г, мед 25 г, вода 1000 г → вихід 1000 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); nfront.org.ua https://nfront.org.ua/?p=7293 (300–400 г сухофруктів на 3 л, 4–5 ст. л. меду)."
+  }
+ },
+ {
+  "id": "kompot",
+  "name": "Компот",
+  "nameEn": "Kompot",
+  "aliases": [
+   "compote"
+  ],
+  "aliasesUa": [
+   "компот"
+  ],
+  "kcal100": 30,
+  "source": {
+   "type": "recipe",
+   "ref": "Typical home (summer, cooked in a pot) version averaged from: TSN https://tsn.ua/other/iak-varyty-kompot-3111329.html (на 1 л води 300–400 г фруктів, 50–70 г цукру); УНІАН https://www.unian.ua/recipes/drinks/sweet-drinks/kompot-z-vishni-p-yatihvilinka-i-inshi-recepti-11888970.html (на 3-л банку: вишня 800 г, цукор 300 г; summer version boiled in a pot 5–7 min)."
+  }
+ },
+ {
+  "id": "kvass",
+  "name": "Квас",
+  "nameEn": "Kvass",
+  "aliases": [],
+  "aliasesUa": [
+   "квас хлібний"
+  ],
+  "kcal100": 30,
+  "source": {
+   "type": "label",
+   "ref": "Квас хлібний пастеризований/живий (на 100 мл, як на ярлику)"
+  }
+ },
+ {
+  "id": "juice",
+  "name": "Сік (яблучний, апельсиновий)",
+  "nameEn": "Juice",
+  "aliases": [
+   "apple juice",
+   "orange juice"
+  ],
+  "aliasesUa": [
+   "сік"
+  ],
+  "kcal100": 46,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173933: Apple juice, canned or bottled, unsweetened, without added ascorbic acid"
+  }
+ },
+ {
+  "id": "black-coffee",
+  "name": "Кава без цукру",
+  "nameEn": "Coffee",
+  "aliases": [
+   "black coffee"
+  ],
+  "aliasesUa": [
+   "кава"
+  ],
+  "kcal100": 1,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 171890: Beverages, coffee, brewed, prepared with tap water"
+  }
+ },
+ {
+  "id": "green-tea",
+  "name": "Чай без цукру",
+  "nameEn": "Tea",
+  "aliases": [
+   "green tea",
+   "black tea"
+  ],
+  "aliasesUa": [
+   "чай"
+  ],
+  "kcal100": 1,
+  "source": {
+   "type": "usda",
+   "ref": "FDC 173227: Beverages, tea, black, brewed, prepared with tap water"
+  }
  }
 ]

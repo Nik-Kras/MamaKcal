@@ -1,0 +1,3388 @@
+{
+ "borscht": {
+  "recipe_source": "Averaged typical home version of: https://klopotenko.com/naysmachnishyy-borshch-simeynyy-retsept-yevhena-klopotenka/ (Клопотенко, «Найсмачніший борщ. Сімейний рецепт»: 300 г свинячих реберець, 3 л води, 2 картоплини, 1 буряк, 1 морква, 1 цибуля, 1/4 капустини, 1 ст. л. томатної пасти, 2 ст. л. олії); https://klopotenko.com/shvydko-ale-tradyczijno-smachno-klasychnyj-borshh-z-tomatno-buryakovoyu-zapravkoyu/ (350–400 г свинини-лопатки, 400 г капусти, 4–5 картоплин, 3 цибулини, 2–3 ст. л. олії, 2,5–3 л води); https://www.unian.ua/recipes/first-courses/borscht/yak-prigotuvati-borshch-tradiciyniy-i-originalni-recepti-10471887.html (УНІАН класичний: 400 г м'яса на кістці, 2 буряки, 3 цибулини, 2 ст. л. томатної пасти, 4–5 ст. л. олії, 300 г капусти, 4 картоплини) and https://www.unian.ua/recipes/first-courses/borscht/nastoyashchiy-slobozhanskiy-borshch-recept-kak-prigotovit-pervoe-blyudo-13384962.html (Слобожанський: 500–700 г м'яса на кістці, ~3 л води, 2 буряки, 4–5 картоплин, 300–400 г капусти, 2–3 ст. л. томатної пасти).",
+  "version": "Red borscht on pork broth (pork shoulder/ribs, the commonest home choice; beef is the alternative), 3 L water; beet + carrot + onion + garlic sauteed on sunflower oil and stewed with tomato paste and a pinch of sugar (засмажка, oil counted fully); potato and fresh white cabbage boiled in the broth; meat pieces stay in the soup; dill at the end. Without sour cream. Bay leaf, pepper, salt, a dash of vinegar/lemon omitted (~0 kcal).",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 3000
+   },
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 400
+   },
+   {
+    "id": "ing-beet-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 450
+   },
+   {
+    "id": "cabbage-raw",
+    "g": 400
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "onion",
+    "g": 130
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 50
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 45
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 10
+   },
+   {
+    "id": "sugar",
+    "g": 5
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   }
+  ],
+  "cooked_g": 4500,
+  "yield_note": "Raw batch 4890 g. Simmer ~1.5 h in total (broth ~1 h, then vegetables 30–40 min) with the lid ajar: evaporation ~12 % of the 3000 g water ≈ 360 g, plus ~40 g lost while stewing the beet zasmazhka in the pan → cooked ≈ 4490 g, rounded 4500 g (a typical 5 L pot, ~4.5 L of borscht). Water lost by the meat during boiling stays in the broth, so it is not subtracted. Meat given boneless: 400 g ≈ 520–550 g pork on the bone (ribs/shoulder) minus ~25 % bone. Peeled weights: potato, beet, carrot, onion; cabbage without outer leaves/core.",
+  "references": [
+   {
+    "kcal100": 67.8,
+    "source": "Estonian food composition database NutriData/TKA, recipe 1772 'Borš, kapsa ja kartuliga, veiselihaga, õliga' (Borscht with cabbage and potatoes, beef, with oil) — canteen-style recipe, only 550 g water per 1000 g, 120 g beef, 20 g oil",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1772/version/public?tka=true"
+   },
+   {
+    "kcal100": 55.3,
+    "source": "Estonian NutriData/TKA, recipe 445245 'Borš, kapsa ja kartuliga, vähese sealihaga, õliga' (Borscht with cabbage and potatoes, with little pork, with oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/445245/version/public?tka=true"
+   },
+   {
+    "kcal100": 36,
+    "source": "ТСН (tsn.ua), «Український борщ» (Тетяна Мележик), site states «Харчова цінність на 100 г — 36 ккал» (per 100 g; recipe with pork/beef up to 1 kg, beans, 5–6 L pot)",
+    "url": "https://tsn.ua/food/pershi-stravy/naysmachnishiy-ukrayinskiy-borsch-recept-2609316.html"
+   }
+  ]
+ },
+ "borscht-lenten": {
+  "recipe_source": "Typical home version derived from the meat borscht above with the meat removed, cross-checked with https://klopotenko.com/pisnyj-borshh-polissya/ (Клопотенко, «Пісний борщ Полісся»: 2–2,5 л води, 1 буряк, 1 цибуля, 3–4 картоплини, 1/2 моркви, 1/2 перцю, 2 ст. л. томатної пасти, 1 ст. л. олії, 200 г квашеної капусти, 1–2 ст. л. меду), the lenten recipes in https://klopotenko.com/yak-prigotuvati-borshh-5-najsmachnishih-retseptiv/ (2 л води, 2 буряки, 3–4 картоплі) and the school tech card ТК № 2.2 «Борщ з картоплею» (znaimo.gov.ua, 1000 г: картопля 250, буряк 160, морква 30, цибуля 30, томатна паста 30, олія 20, чорнослив 20, цукор 6, вода 700).",
+  "version": "Meatless red borscht on water (no broth stage), 2.5 L water; beet, carrot, onion, garlic sauteed on 3 tbsp sunflower oil with tomato paste and a pinch of sugar (all oil goes into the pot); potato and fresh white cabbage; dill. No beans/mushrooms/prunes (regional extras), no sour cream. Bay leaf, pepper, salt, vinegar omitted.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 2500
+   },
+   {
+    "id": "ing-beet-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 450
+   },
+   {
+    "id": "cabbage-raw",
+    "g": 400
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "onion",
+    "g": 130
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 50
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 50
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 10
+   },
+   {
+    "id": "sugar",
+    "g": 5
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   }
+  ],
+  "cooked_g": 3800,
+  "yield_note": "Raw batch 3995 g. Only ~45–60 min of simmering (no meat broth) with the lid ajar: evaporation ~7 % of 2500 g water ≈ 175 g, plus ~25 g in the pan while stewing the beet zasmazhka → ≈ 3795 g, rounded 3800 g. Peeled vegetable weights.",
+  "references": [
+   {
+    "kcal100": 62.4,
+    "source": "School-menu technological card ТК № 2.2 «Борщ з картоплею» (Збірник рецептур для закладів освіти, znaimo.gov.ua): 159 kcal per portion 250 g borscht + 5 g sour cream → 159/255 g = 62.4 kcal/100 g (as served, incl. 5 g sour cream; meatless, with prunes, dense: 700 g water per 1000 g)",
+    "url": "https://znaimo.gov.ua/media/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8/%D0%A2%D0%B5%D1%85%D0%BA%D0%B0%D1%80%D1%82%D0%B8/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D1%96%D1%8F_%D0%A1%D1%83%D0%BF%D0%B8%20%D0%A2%D0%9A%202.1-2.53.pdf"
+   },
+   {
+    "kcal100": 46.3,
+    "source": "Estonian NutriData/TKA, recipe 2854 'Borš, kapsa ja kartuliga, õliga' (Borscht with cabbage and potatoes, with oil, no meat)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/2854/version/public?tka=true"
+   },
+   {
+    "kcal100": 20,
+    "source": "USDA FNDDS 2021-2023, 75601100 Soup, borscht",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "green-borscht": {
+  "recipe_source": "Averaged: https://klopotenko.com/zelenyj-borshh-klasychnyj-reczept-vid-yevgena-klopotenka/ (Клопотенко, «Зелений борщ. Класичний рецепт»: 300 г свинини, 300 г листя щавлю, 4 картоплі, 20 г кропу, 1 цибуля, 1 морква, 3 л води, 3 варені яйця) and https://tsn.ua/lady/kukhnya/recepty/recept-zelenogo-borschu-zi-schavlem-2563482.html (ТСН «Зелений борщ зі щавлем»: ребра свинячі 500 г, картопля 3 шт., цибуля 1, морква 1, щавель 150 г, яйця 4, вода 2,5 л, олія 2 ст. л.); compared with https://klopotenko.com/iz-shchavlem-i-kropyvoyu-hotuyemo-spravzhniy-zelenyy-borshch/ (on chicken: 2 стегна, 3 л води, 3–4 картоплини, щавель + кропива, 3–4 яйця, 3 ст. л. олії).",
+  "version": "Most typical home version = on PORK broth (chicken broth is the second common variant): pork pieces boiled ~45–60 min, potato, onion + carrot lightly fried on sunflower oil, chopped sorrel and dill added 2–3 min before the end, chopped hard-boiled eggs in the pot / per plate. Without sour cream. Bay leaf, pepper, salt omitted.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 2750
+   },
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 320
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 450
+   },
+   {
+    "id": "onion",
+    "g": 90
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "ing-sorrel-raw",
+    "g": 250
+   },
+   {
+    "id": "mixed-greens",
+    "g": 20
+   },
+   {
+    "id": "eggs-whole",
+    "g": 200
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 30
+   }
+  ],
+  "cooked_g": 3925,
+  "yield_note": "Raw batch 4200 g. Simmer ~1–1.25 h in total (broth 45–60 min + potato 15–20 min; sorrel only 2–3 min), lid ajar: evaporation ~10 % of 2750 g water ≈ 275 g → 3925 g. Pork boneless: 320 g ≈ average of 300 g boneless (Klopotenko) and 500 g ribs minus ~35 % bone (TSN). Eggs: 200 g = ~3.5–4 boiled eggs without shell (recipes use 3–4). Oil 30 g = average of 0, 2 and 3 tbsp in the three recipes (zasmazhka, counted fully). Sorrel = leaves without stems.",
+  "references": [
+   {
+    "kcal100": 51,
+    "source": "ТСН (tsn.ua), «Зелений борщ зі щавлем» (Катерина Труш), site states «Харчова цінність на 100 г — 51 ккал» (per 100 g; pork ribs, sorrel, eggs, oil)",
+    "url": "https://tsn.ua/lady/kukhnya/recepty/recept-zelenogo-borschu-zi-schavlem-2563482.html"
+   },
+   {
+    "kcal100": 57.3,
+    "source": "School-menu technological card ТК № 2.4 «Зелений борщ зі шпинатом» (znaimo.gov.ua): 146 kcal per 250 g + 5 g sour cream → 146/255 g = 57.3 kcal/100 g as served (meatless, spinach instead of sorrel, egg 80 g and oil 20 g per 1000 g, incl. 5 g sour cream)",
+    "url": "https://znaimo.gov.ua/media/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8/%D0%A2%D0%B5%D1%85%D0%BA%D0%B0%D1%80%D1%82%D0%B8/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D1%96%D1%8F_%D0%A1%D1%83%D0%BF%D0%B8%20%D0%A2%D0%9A%202.1-2.53.pdf"
+   },
+   {
+    "kcal100": 78,
+    "source": "klopotenko.com, «Зелений борщ. Класичний рецепт» — recipe JSON-LD nutrition: servingSize 100 g, 78 kcal (the same 78 kcal / 8.2 g protein appears on his chicken-and-nettle green borscht page, so it may be a generic site value)",
+    "url": "https://klopotenko.com/zelenyj-borshh-klasychnyj-reczept-vid-yevgena-klopotenka/"
+   }
+  ]
+ },
+ "kapusniak": {
+  "recipe_source": "Averaged: https://tsn.ua/food/pershi-stravy/yak-zvariti-smachnyi-kapusnyak-z-kvashenoyu-kapustoyu-2468668.html (ТСН «капусняк з квашеною капустою»: свинина 400 г, квашена капуста 400 г, пшоно 1/2 склянки, картопля 4, морква 1, цибуля 2, часник, олія для смаження); https://klopotenko.com/spravzhnye-ukrayinske-reczept-kapusnyaku-z-pshenyczeyu/ (Клопотенко: 300 г свинини-лопатки, 500 г квашеної капусти, 3–4 картоплини, морква, цибуля, 100 г пшениці, 2 ст. л. олії, 3–3,5 л води); https://klopotenko.com/avtentychnyj-reczept-z-cherkashhyny-kapusnyak-zi-svynyachymy-rebramy-vid-yevgena-klopotenka/ (Черкащина: 500 г ребер, 100 г пшона, 4–5 картоплин, 500 г квашеної капусти, 2,5–3 л води).",
+  "version": "Sauerkraut soup on pork broth with millet: pork boiled ~40 min, millet, potato, squeezed sauerkraut simmered ~15 min, onion + carrot + garlic fried on 2 tbsp sunflower oil (counted fully). No tomato, no salo/shkvarky, no sour cream. Bay leaf, pepper, salt omitted.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 3000
+   },
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 350
+   },
+   {
+    "id": "sauerkraut",
+    "g": 450
+   },
+   {
+    "id": "ing-millet-dry",
+    "g": 100
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 450
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "onion",
+    "g": 120
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 34
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 8
+   }
+  ],
+  "cooked_g": 4250,
+  "yield_note": "Raw batch 4602 g. Simmer ~1.5 h in total (meat 40 min, millet 10 min, potato ~15 min, sauerkraut 15 min, zasmazhka 5 min), lid ajar: evaporation ~12 % of 3000 g water ≈ 360 g → ≈ 4240 g, rounded 4250 g. Millet absorbs broth but stays in the batch. Pork boneless 350 g = average of 300–400 g boneless and 500 g ribs minus ~30 % bone. Sauerkraut weighed squeezed of brine. Peeled vegetable weights.",
+  "references": [
+   {
+    "kcal100": 55,
+    "source": "ТСН (tsn.ua), «Рецепт справжнього українського капусняка з м'ясом та квашеною капустою» (Ганна Носова), site states «Харчова цінність на 100 г — 55 ккал» (per 100 g; pork, sauerkraut, millet, potato)",
+    "url": "https://tsn.ua/food/pershi-stravy/yak-zvariti-smachnyi-kapusnyak-z-kvashenoyu-kapustoyu-2468668.html"
+   },
+   {
+    "kcal100": 56.8,
+    "source": "Estonian NutriData/TKA, recipe 1214 'Hapukapsasupp, vähese sealihaga, õliga' (Sauerkraut soup, with little pork, with oil; pearl barley instead of millet)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1214/version/public?tka=true"
+   },
+   {
+    "kcal100": 91.8,
+    "source": "Estonian NutriData/TKA, recipe 1213 'Hapukapsasupp, sealihaga, õliga' (Sauerkraut soup, with pork, with oil — 250 g pork per 1000 g soup, dense canteen recipe)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1213/version/public?tka=true"
+   }
+  ]
+ },
+ "chicken-noodle-soup": {
+  "recipe_source": "Averaged: https://www.unian.net/recipes/first-courses/dishes-meat/sup-s-vermishelyu-recept-kak-gotovit-sup-s-vermishelyu-11296877.html (УНІАН «Суп з вермішеллю і куркою»: вода 2 л, куряче філе 500 г, картопля 250 г, вермішель 100 г, цибуля 120 г, морква 100 г, засмажка на олії); https://novyny.live/recepti/kuriachii-sup-rizhik-vermishel-ne-nabukhaie-navit-nastupnogo-dnia-249446.html (Smachnenke «Рижик»: 2 курячі стегна, картопля 400 г, цибуля, морква, вермішель 70 г, вода 2 л); https://klopotenko.com/legko-ta-smachno-kuryachyj-sup-z-domashnou-lokshynou/ (350 г філе стегна, 2 картоплини, цибуля, морква, 2 ст. л. олії, 2 л води, локшина з 200 г борошна + 2 яйця).",
+  "version": "Home chicken soup: chicken legs/half a chicken boiled ~45 min into broth (meat with skin returned to the pot), potato, onion + carrot lightly fried on 1 tbsp sunflower oil, thin egg noodles (локшина/вермішель) added for the last 5–7 min. Bay leaf, pepper, salt omitted.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 2500
+   },
+   {
+    "id": "ing-chicken-whole-raw",
+    "g": 400
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 400
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "onion",
+    "g": 90
+   },
+   {
+    "id": "ing-egg-noodles-dry",
+    "g": 80
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 17
+   }
+  ],
+  "cooked_g": 3330,
+  "yield_note": "Raw batch 3577 g. Simmer ~1 h in total (broth 40–45 min, potato 15 min, noodles 5–7 min), lid ajar: evaporation ~10 % of 2500 g water ≈ 250 g → ≈ 3327 g, rounded 3330 g. Noodles absorb broth but stay in the batch. Chicken: 400 g meat + skin without bone ≈ 2–3 leg quarters / half a chicken of ~600 g minus ~30 % bone. Peeled vegetables. Some cooks do not fry the onion/carrot (then −17 g oil).",
+  "references": [
+   {
+    "kcal100": 53,
+    "source": "USDA FNDDS 2021-2023, 58403040 Soup, chicken noodle",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 72.9,
+    "source": "Estonian NutriData/TKA, recipe 1774 'Kana-nuudlisupp, õliga' (Chicken-noodle soup, with oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1774/version/public?tka=true"
+   },
+   {
+    "kcal100": 66.4,
+    "source": "Estonian NutriData/TKA, recipe 1227 'Kana-makaronisupp, õliga' (Chicken-pasta soup with potato, with oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1227/version/public?tka=true"
+   }
+  ]
+ },
+ "meatball-soup": {
+  "recipe_source": "Averaged: https://tsn.ua/lady/kukhnya/recepty/sup-iz-frykadelkamy-ta-rysom-prostyy-retsept-universalnoyi-pershoyi-stravy-3096224.html (ТСН «Суп із фрикадельками та рисом»: фарш свинячий 400 г, рис 100 г, яйце 1, картопля 3, цибуля 1, морква 1, часник, олія 2 ст. л., вода 2 л); https://tsn.ua/ru/lady/kukhnya/recepty/sup-s-frikadelkami-ochen-bystryy-recept-1918738.html (ТСН: фарш 0,5 кг, картопля 0,5 кг, цибуля 2, морква 2, вода 3 л, олія); https://tsn.ua/ru/lady/kukhnya/recepty/sup-s-frikadelkami-recept-lyubimogo-blyuda-vzroslyh-i-detey-2745447.html (курячий фарш 300 г, яйце, картопля 3–4, цибуля 2, морква 1); https://klopotenko.com/navarystyj-ta-nasychenyj-smakom-sup-z-frykadelkamy-vid-yevgena-klopotenka/ (300 г курячого фаршу + жовток, 2–3 картоплини, морква, цибуля, 2–2,5 л води).",
+  "version": "Home meatball soup on water: meatballs from mixed pork+beef mince with grated onion and an egg, potato, a little rice, onion + carrot fried on sunflower oil (counted fully), dill. Bay leaf, pepper, salt omitted.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 2500
+   },
+   {
+    "id": "ing-pork-ground-raw",
+    "g": 200
+   },
+   {
+    "id": "ing-beef-ground-raw",
+    "g": 200
+   },
+   {
+    "id": "onion",
+    "g": 130
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 450
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "ing-rice-dry",
+    "g": 50
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 25
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   }
+  ],
+  "cooked_g": 3560,
+  "yield_note": "Raw batch 3710 g. Short cooking: ~35–45 min (potato + rice 10 min, meatballs 15–20 min), lid ajar: evaporation ~6 % of 2500 g water ≈ 150 g → 3560 g. Onion 130 g = 40 g grated into the mince + 90 g for the zasmazhka. Egg raw (binder), 1 egg ≈ 55 g. Rice 50 g ≈ 1/4 glass (recipes: 0–100 g); vermicelli would be similar. Oil 25 g ≈ 1.5 tbsp.",
+  "references": [
+   {
+    "kcal100": 52,
+    "source": "USDA FNDDS 2021-2023, 28310230 Soup, meatball",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 77.5,
+    "source": "Estonian NutriData/TKA, recipe 445020 'Frikadellisupp, segahakklihast, riisiga, õliga' (Meatball soup, mixed minced meat, with rice, with oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/445020/version/public?tka=true"
+   },
+   {
+    "kcal100": 88,
+    "source": "ТСН (tsn.ua), «Суп із фрикадельками та рисом» (Катерина Труш), site states «Харчова цінність на 100 г — 88 ккал» (per 100 g; 400 g pork mince, 100 g rice, 2 L water)",
+    "url": "https://tsn.ua/lady/kukhnya/recepty/sup-iz-frykadelkamy-ta-rysom-prostyy-retsept-universalnoyi-pershoyi-stravy-3096224.html"
+   }
+  ]
+ },
+ "pea-soup": {
+  "recipe_source": "Main: https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenimi-rebrami-prostiy-recept-2565924.html (ТСН «Гороховий суп із копченими ребрами»: горох сухий 1 склянка, вода 2–2,5 л, свинячі ребра копчені 500 г, картопля 3–4, морква 1, цибуля 1, олія), averaged with https://klopotenko.com/goroxovyj-sup-z-rebercyamu/ (Клопотенко: 350 г свинячих реберець, 300 г сухого гороху, 3 картоплини, морква, цибуля, корінь селери/петрушки, 2 ст. л. олії, 3 л води) and https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenostyami-1950970.html (3 л води, 0,5 кг копчених реберець, 400 г гороху, 300 г бекону — richer variant, not used for the bacon).",
+  "version": "Split-pea soup on smoked pork ribs: ribs boiled ~30 min, meat taken off the bone and returned, soaked/split peas cooked until soft (~40–60 min), potato, onion + carrot fried on sunflower oil (counted fully), dill. No bacon/sausage, no croutons. Bay leaf, pepper, salt omitted.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 2500
+   },
+   {
+    "id": "ing-split-peas-dry",
+    "g": 250
+   },
+   {
+    "id": "ing-smoked-pork-ribs",
+    "g": 330
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 400
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "onion",
+    "g": 90
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 25
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   }
+  ],
+  "cooked_g": 3320,
+  "yield_note": "Raw batch 3695 g. Simmer ~1.5 h in total (ribs 30 min + peas 40–60 min + potato 10–15 min), partly uncovered (pea soup foams): evaporation ~15 % of 2500 g water ≈ 375 g → 3320 g. Peas absorb water but stay in the batch. Smoked ribs: 330 g edible meat+fat ≈ 500 g ribs minus ~33 % bone. Peas 250 g ≈ 1 1/4 glass (recipes: 200–400 g per 2–3 L). Peeled vegetables.",
+  "references": [
+   {
+    "kcal100": 80,
+    "source": "USDA FNDDS 2021-2023, 41602030 Soup, split pea, with meat",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 98,
+    "source": "ТСН (tsn.ua), «Гороховий суп із копченими ребрами» (Катерина Труш), site states «Харчова цінність на 100 г — 98 ккал» (per 100 g)",
+    "url": "https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenimi-rebrami-prostiy-recept-2565924.html"
+   },
+   {
+    "kcal100": 119.4,
+    "source": "Estonian NutriData/TKA, recipe 1216 'Hernesupp, sealihaga, õliga' (Pea soup, with pork, with oil — dense: 180 g dried peas + 200 g pork per 1000 g)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1216/version/public?tka=true"
+   }
+  ]
+ },
+ "mushroom-soup": {
+  "recipe_source": "Averaged home version. Main: https://klopotenko.com/nadzvychajno-smachna-ta-prosta-grybna-yushka-vid-yevgena-klopotenka/ (Грибна юшка з шампіньйонів, Клопотенко: 200 г печериць, 3 картоплини, морква, цибуля, 1 ст. л. олії + 20 г масла, 4-5 ст. л. сметани, 1 ст. л. борошна, 1,5-2 л води). Compared: https://klopotenko.com/gribna-yushka-z-selerou/ (200 г білих грибів, цибуля, 3 картоплі, 1 ст. л. олії, 1 л води); https://vkusvill.ru/media/recipes/sup-iz-sushyenykh-gribov.html (30 г сушених грибів, 2 картоплі, морква, цибуля, 1 ст. л. олії, 2 л води); https://recepty.24tv.ua/recipe/pisna-hrybna-yushka-retsept-pryhotuvannia-pokrokovyi_id625 (100 г сушених білих, 4 картоплі, 2 цибулі, 2 моркви, олія).",
+  "version": "Plain home mushroom soup on water: fresh champignons fried with onion and carrot in sunflower oil (засмажка), potatoes, water, dill/parsley. Sour cream is NOT in the pot (only 1 of 4 recipes puts sour cream + flour + butter into the pot; usually a spoon is added in the bowl and should be logged separately).",
+  "ingredients": [
+   {
+    "id": "mushrooms-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 450
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "onion",
+    "g": 90
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 25
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   },
+   {
+    "id": "water",
+    "g": 2000
+   }
+  ],
+  "cooked_g": 2650,
+  "yield_note": "Raw total 2965 g. Losses: champignons fried until their liquid evaporates lose ~35 % (≈110 g), onion/carrot sauté ≈20 g, ~35 min simmer with lid ajar ≈10 % of the 2 L water (≈200 g) → ≈2635 g, rounded 2650 g. Potato weight is peeled; oil of the засмажка counted fully (1.5 tbsp). If dried forest mushrooms are used (~40-50 g dry instead of 300 g fresh) the kcal is almost the same.",
+  "references": [
+   {
+    "kcal100": 27,
+    "source": "USDA FNDDS 2021-2023, 75649110 Soup, vegetable (closest broth-based proxy; FNDDS has no broth-based mushroom soup)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 112,
+    "source": "klopotenko.com, the champignon soup above, states 112 kcal per 100 g (with sour cream + flour + butter in the pot). Looks inconsistent with its own ingredient list (≈900 kcal of ingredients in ≈2.5 kg of soup incl. 1.5-2 L water ≈ 35-40 kcal/100 g) — the site's per-100-g figures for soups seem to leave out most of the water; treat with caution",
+    "url": "https://klopotenko.com/nadzvychajno-smachna-ta-prosta-grybna-yushka-vid-yevgena-klopotenka/"
+   }
+  ]
+ },
+ "fish-soup": {
+  "recipe_source": "Averaged home version. Main: https://www.unian.ua/recipes/first-courses/other-soups/samaya-vkusnaya-uha-recept-i-glavnye-sekrety-prigotovleniya-12324570.html (Юшка з карасями: 600 г карася, 400 г картоплі, цибуля, морква, 3 ст. л. олії, 1,5 л води). Compared: https://www.unian.ua/recipes/first-courses/other-soups/yushka-z-chervonoji-ribi-recept-uhi-z-somgi-gorbushi-abo-lososya-11377516.html (2 л води, 350 г риби, 100 г пшона, 2 картоплини, морква, цибуля); https://vkusvill.ru/media/recipes/ukha-iz-shchuki.html (1 кг щуки, 2 картоплини, 200 г моркви, цибуля, 2 л води, без олії); МОЗ/Знаїмо шкільна ТК 2.37 «Рибна юшка» (хек 115 г, картопля 150, цибуля 40, морква 60, олія 10, вода 800 на 1000 г).",
+  "version": "Home fish soup on water with hake (or river fish), potato, onion, carrot, a little millet, onion/carrot lightly fried in 1 tbsp oil, dill. No butter, no cream.",
+  "ingredients": [
+   {
+    "id": "ing-pollock-raw",
+    "g": 450
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 400
+   },
+   {
+    "id": "onion",
+    "g": 90
+   },
+   {
+    "id": "carrots-raw",
+    "g": 80
+   },
+   {
+    "id": "ing-millet-dry",
+    "g": 40
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 17
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   },
+   {
+    "id": "water",
+    "g": 2000
+   }
+  ],
+  "cooked_g": 2900,
+  "yield_note": "Fish = edible fillet with skin, bones removed (≈500 g gutted headless hake → ≈450 g; for river fish/carp ~45-50 % of whole fish is edible). Raw total 3087 g; ~40 min simmer loses ≈10 % of the water (≈200 g) → ≈2890 g, rounded 2900 g. Millet (2 heaped tbsp) is optional — without it ≈ −5 kcal/100 g. Oil of the засмажка counted fully. If carp (ing-carp-raw) is used instead of hake, ≈ +7 kcal/100 g.",
+  "references": [
+   {
+    "kcal100": 33,
+    "source": "МОЗ/«Знаїмо» school tech card ТК 2.37 «Рибна юшка» (хек, картопля, цибуля, морква, олія 10 г/кг): 66 kcal per 200 g portion → 33 kcal/100 g",
+    "url": "https://znaimo.gov.ua/Contents/ContentItems/4vv2m4k5shjyhxes79cacsnqnq"
+   },
+   {
+    "kcal100": 30,
+    "source": "USDA FNDDS 2021-2023, 28355480 Soup, fish or shrimp",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "rassolnyk": {
+  "recipe_source": "Main: https://klopotenko.com/rozsolnyk-z-perlovkoyu-po-domashnomu-za-retseptom-yevhena-lopotenka/ (Розсольник з перловкою по-домашньому: 300 г свинини, 3 л води, 400 г картоплі, 150 г перловки, цибуля, морква, 3 солоних огірки, 3 ст. л. олії, 100 мл розсолу; 6 порцій), averaged with https://klopotenko.com/rozsolnik-na-rebrah/ (яловичі ребра, ½ склянки перловки, 3 картоплі, 3 огірки, 100-150 мл розсолу, 2 ст. л. олії) and https://vkusvill.ru/media/recipes/rassolnik.html (250 г яловичини, 400 г солоних огірків, ½ склянки перловки, 3 картоплі, морква, цибуля, 3 л води).",
+  "version": "Pickle soup on pork broth: boneless pork pieces left in the soup, pearl barley, potatoes, onion+carrot+grated pickles stewed in oil (засмажка), a little brine. Sour cream for serving NOT included (log separately).",
+  "ingredients": [
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-pearl-barley-dry",
+    "g": 120
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 400
+   },
+   {
+    "id": "onion",
+    "g": 90
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "pickled-cucumber",
+    "g": 250
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 42
+   },
+   {
+    "id": "water",
+    "g": 3100
+   }
+  ],
+  "cooked_g": 3900,
+  "yield_note": "Water 3000 g + 100 g cucumber brine (brine counted as water, ≈0 kcal). Pork boneless (if on the bone, weigh meat only). Raw total ≈4390 g; 40 min broth + ~30 min soup simmer loses ≈15 % of the water (≈450 g) plus ≈30 g in the sauté → ≈3910 g, rounded 3900 g. Oil 2.5 tbsp (recipes: 2-3 tbsp) counted fully.",
+  "references": [
+   {
+    "kcal100": 52.5,
+    "source": "МОЗ/«Знаїмо» school tech card ТК 2.27 «Огірчанка» (meatless pickle soup with pearl barley, potato, 10 g oil and 30 g sour cream per 1000 g): 105 kcal per 200 g → 52.5 kcal/100 g",
+    "url": "https://znaimo.gov.ua/Contents/ContentItems/4vv2m4k5shjyhxes79cacsnqnq"
+   },
+   {
+    "kcal100": 58,
+    "source": "USDA FNDDS 2021-2023, 58401010 Soup, barley (proxy)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "solyanka": {
+  "recipe_source": "Averaged home version of 3 recipes: https://tsn.ua/lady/astrologiya/solyanka-m-yasna-klasichniy-recept-1914919.html (3 л води, 1 кг яловичини на кістці, по 200 г копченої ковбаси, шинки, сосисок, копченої грудинки, мисливських ковбасок, 4-5 солоних огірків, 2 ст. л. томатної пасти, цибуля, морква, олія, оливки, лимон, склянка розсолу); https://www.unian.ua/recipes/first-courses/dishes-meat/zbirna-solyanka-naykrashchi-recepti-z-m-yasom-10929278.html (400 г яловичини, 4 сосиски, 200 г вареної ковбаси, 200 г шинки, 3 огірки, цибуля, 2 ст. л. томатної пасти, оливки); https://vkusvill.ru/media/recipes/solyanka-klassicheskaya.html (3 л води, 400 г яловичих ребер, 220 г копчених ковбас, 400 г огірків, цибуля, 1 ст. л. томатної пасти, 100 г оливок, 2 ст. л. олії).",
+  "version": "Meat solyanka збірна: beef broth (meat cut back into the soup), smoked sausage, boiled ham, sosysky, pickles stewed with onion and tomato paste in oil, brine, olives and lemon slices. No potato. Sour cream for serving not included.",
+  "ingredients": [
+   {
+    "id": "ing-beef-chuck-raw",
+    "g": 300
+   },
+   {
+    "id": "kovbasa-smoked",
+    "g": 200
+   },
+   {
+    "id": "ham",
+    "g": 200
+   },
+   {
+    "id": "sosysky",
+    "g": 200
+   },
+   {
+    "id": "pickled-cucumber",
+    "g": 300
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 40
+   },
+   {
+    "id": "onion",
+    "g": 100
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 34
+   },
+   {
+    "id": "lemon",
+    "g": 30
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   },
+   {
+    "id": "water",
+    "g": 2650
+   },
+   {
+    "id": "ing-olives",
+    "g": 80
+   }
+  ],
+  "cooked_g": 3750,
+  "yield_note": "Beef = meat without bone (~450 g beef ribs/on-bone → ~300 g meat, ~1/3 bone removed). Water 2500 g + 150 g cucumber brine (counted as water). Broth onion is discarded (not counted); 1 onion sautéed. Raw total ≈4144 g; ~1.5 h broth simmer + sauté lose ≈400 g (≈15 % of water) → ≈3745 g, rounded 3750 g. Oil 2 tbsp counted fully. Olives drained (½ jar).",
+  "references": [
+   {
+    "kcal100": 91,
+    "source": "TSN recipe «Як приготувати солянку з копченостями» (with potatoes, smoked + boiled sausage, smoked chicken leg) — site states 91 kcal per 100 g",
+    "url": "https://tsn.ua/food/pershi-stravy/yak-prigotuvati-naysmachnishu-solyanku-pokrokoviy-recept-2396308.html"
+   }
+  ]
+ },
+ "okroshka": {
+  "recipe_source": "Averaged: https://vkusvill.ru/media/recipes/okroshka-na-kefire.html (1 л кефіру 2,5 % + 0,5 л газованої води, 300 г вареної ковбаси, 4 яйця, 5 картоплин, 3 огірки, 125 г редиски, зелена цибуля, кріп); https://tsn.ua/ru/lady/kukhnya/recepty/okroshka-na-kefire-s-mineralnoy-vodoy-klassicheskiy-recept-2341105.html (1 л кефіру + 400 мл мінералки, 300 г картоплі, 5 яєць, 250 г вареної ковбаси, 300 г огірків, 200 г редиски, 150 г сметани, гірчиця); https://24tv.ua/smachnonews24/ru/prigotovit-okroshku-kefire-recept-okroshki-kvase_n3074317 (900 г кефіру + 2 л мінералки, 600 г картоплі, 500 г ковбаси, 250 г редиски, 5-6 яєць, огірок, 200 г майонезу).",
+  "version": "Okroshka on kefir 2.5 % diluted with (mineral) water, boiled potato, hard-boiled eggs, boiled sausage (Лікарська/Докторська), fresh cucumber, radish, green onion + dill, a little sour cream and mustard mixed in.",
+  "ingredients": [
+   {
+    "id": "kefir",
+    "g": 1000
+   },
+   {
+    "id": "water",
+    "g": 500
+   },
+   {
+    "id": "potato-boiled",
+    "g": 400
+   },
+   {
+    "id": "eggs-whole",
+    "g": 220
+   },
+   {
+    "id": "kovbasa-boiled",
+    "g": 300
+   },
+   {
+    "id": "cucumber",
+    "g": 250
+   },
+   {
+    "id": "radish",
+    "g": 150
+   },
+   {
+    "id": "mixed-greens",
+    "g": 60
+   },
+   {
+    "id": "smetana-15",
+    "g": 100
+   },
+   {
+    "id": "mustard",
+    "g": 10
+   }
+  ],
+  "cooked_g": 2990,
+  "yield_note": "Cold dish, nothing evaporates: cooked_g = sum of ingredients. Potato boiled in skin and peeled (≈4 medium), 4 eggs (≈55 g each). Dressing: recipes range from none (VkusVill) to 150 g sour cream (TSN) to 200 g mayonnaise (24tv); 100 g smetana 15 % taken as the typical middle; without it ≈ −4 kcal/100 g, with 200 g mayonnaise instead ≈ +35 kcal/100 g. Mustard 1 tsp-ish kept as the catalogue item.",
+  "references": []
+ },
+ "kulish": {
+  "recipe_source": "Main: https://24tv.ua/smachnonews24/den-nezalezhnosti-ukrayini-2025-yaki-stravi-varto-prigotuvati-24-serpnya_n2898777 (Козацький куліш: 150 г сала, 100 г пшона, 6 картоплин, 2 цибулини, 2 л води). Compared: https://klopotenko.com/klasychnyj-reczept-kulish-zi-svynynoyu-vid-yevgena-klopotenka/ (300 г ошийка, 200 г пшона, 2 цибулини, 2 моркви, 3 яйця, 2-2,5 л води); https://klopotenko.com/spravzhnya-kozaczka-kasha-reczept-kulisha-iz-kvashenymy-tomatamy-ta-moczareloyu/ (100 г сала, 150 г пшона, 3-4 картоплі, цибуля, морква); https://novyny.live/yizha/kozatskii-kulish-iak-gotuiut-na-poltavshchini-ukrayinska-kukhnia-119934.html (Полтавський: пшоно 300 г, сало 300+200 г копченого, свинина 1 кг, картопля 500 г, 2,5 л води, 5 яєць).",
+  "version": "Thick millet-and-potato soup on water; salo diced and rendered with onion (and a carrot), the shkvarky and all their fat go into the pot. No meat, no eggs (eggs stirred in at the end are a common option: +3 eggs ≈ +6 kcal/100 g).",
+  "ingredients": [
+   {
+    "id": "salo",
+    "g": 150
+   },
+   {
+    "id": "ing-millet-dry",
+    "g": 150
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 600
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "carrots-raw",
+    "g": 80
+   },
+   {
+    "id": "water",
+    "g": 2000
+   }
+  ],
+  "cooked_g": 2800,
+  "yield_note": "Raw total 3130 g. Rendering salo + frying onion lose ≈25 g; ~45 min simmer to a thick consistency loses ≈15 % of the water (≈300 g) → ≈2805 g, rounded 2800 g. All rendered fat stays in the dish (counted as raw salo). Potato peeled (5 medium).",
+  "references": [
+   {
+    "kcal100": 112,
+    "source": "klopotenko.com «Класичний рецепт. Куліш зі свининою» (pork-neck version with 3 eggs, 200 g millet, 2-2.5 L water) — site states 112 kcal per 100 g. Different version (pork instead of salo); note the site's soup figures appear to leave out much of the water, treat with caution",
+    "url": "https://klopotenko.com/klasychnyj-reczept-kulish-zi-svynynoyu-vid-yevgena-klopotenka/"
+   }
+  ]
+ },
+ "milk-noodle-soup": {
+  "recipe_source": "Averaged: https://tsn.ua/other/lokshyna-z-molokom-iak-v-dytynstvi-prostyy-retsept-shchob-makarony-ne-rozvarylysia-3139661.html (500 г молока + 250 мл води, 6 ст. л. тонкої вермішелі, цукор, сіль, масло; 4 порції); https://poradu.pp.ua/recepti/print:page,1,5297-molochniy-sup-z-vermshellyu-recept-dlya-ledarv.html (0,5 л молока, ~50 г вермішелі, цукор, масло за смаком); https://vkusvill.ru/media/recipes/molochnyy-sup-s-vermishelyu.html (600 мл молока, 125 г вермішелі, 2 ч. л. цукру).",
+  "version": "Milk 2.5 % with a quarter water, thin vermicelli (павутинка), 1 tbsp sugar, a piece of butter at the end.",
+  "ingredients": [
+   {
+    "id": "milk-2-5",
+    "g": 750
+   },
+   {
+    "id": "water",
+    "g": 250
+   },
+   {
+    "id": "ing-pasta-dry",
+    "g": 80
+   },
+   {
+    "id": "sugar",
+    "g": 20
+   },
+   {
+    "id": "butter",
+    "g": 15
+   }
+  ],
+  "cooked_g": 1065,
+  "yield_note": "Raw total 1115 g; bringing to the boil + ~5 min simmer + standing loses ≈5 % of the liquid (≈50 g) → 1065 g. Vermicelli is plain wheat pasta (no egg).",
+  "references": []
+ },
+ "varenyky-potato": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, tech cards «Тісто для вареників (прісне)», «Начинка картопляна з шкварками й цибулею», «Вареники з картоплею і шкварками» (dough 82 g + filling 103 g → 185 g raw → 200 g boiled per portion, 7–8 pcs, topped with onion sautéed in salo). Compared: https://klopotenko.com/klasychni-varenyky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 360 г борошна, 180 мл води, 2 ст. л. олії; 300 г картоплі, 2 цибулини на 3 ст. л. олії — половина в начинку, половина зверху); https://24tv.ua/vareniki-kartopleyu-rizdvo-klasichniy-retsept_n2711978 (ТСН/24 канал: 500 г борошна, 200 мл води, 2 ст. л. олії, 800 г картоплі, 2 цибулини). Averaged into one home version.",
+  "version": "Home varenyky on water-egg dough; filling = boiled peeled potato mashed with onion fried in sunflower oil; served tossed with a topping of onion fried in sunflower oil (the commonest home topping; Доцяк/old village version uses salo-shkvarky instead, which is fattier). Without sour cream. Pepper/salt omitted. Dough (all four varenyky types): 500 g flour + ~20 g for dusting, 200 g water, 1 egg, 1 tbsp oil — averaged from TSN (500 g flour, 1 egg, 200 ml water), Klopotenko (360 g flour/180 ml water/2 tbsp oil; 400 g flour/200 ml water/2 tbsp oil) and Доцяк 1998 tech card «Тісто для вареників прісне» (flour 695, egg 53, water 270 per 1000 g dough).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 520
+   },
+   {
+    "id": "water",
+    "g": 200
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 102
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 900
+   },
+   {
+    "id": "onion",
+    "g": 300
+   }
+  ],
+  "cooked_g": 2090,
+  "yield_note": "Oil 102 g = 17 g in dough + 34 g (2 tbsp) frying 100 g filling onion + 51 g (3 tbsp) frying 200 g topping onion; all of it ends up on/in the varenyky (the onion is poured over with its oil), so counted fully. Potato is peeled weight (≈1.05 kg as bought); boiled peeled potato keeps ~its raw weight, drained and mashed. Dough ≈ 790 g + filling ≈ 995 g (900 g potato + 100 g onion fried down to ~60 g + 34 g oil) = ~1785 g raw varenyky; boiled gain +8 % per Доцяк tech card (185 g raw → 200 g boiled) → ~1930 g; + topping (200 g onion fried down to ~110 g + 51 g oil ≈ 160 g) → ≈ 2090 g. Dusting flour mostly sticks to the varenyky (small loss to the water ignored).",
+  "references": [
+   {
+    "kcal100": 195,
+    "source": "USDA FNDDS 2021-2023, 58121610 Pierogi (input = 'Dumpling, potato- or cheese-filled, frozen', moisture change 0 %, i.e. frozen-raw basis, no topping)",
+    "url": "https://fdc.nal.usda.gov/food-details/2708720/nutrients"
+   },
+   {
+    "kcal100": 287,
+    "source": "klopotenko.com, «Класичні вареники з картоплею» — site-stated 287 kcal per 100 g (servingSize 100 g in the recipe's nutrition data; dough-heavy recipe incl. fried onion; the site's auto-nutrition is unreliable, e.g. 37 kcal/100 g for crepes)",
+    "url": "https://klopotenko.com/klasychni-varenyky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/"
+   },
+   {
+    "kcal100": 211,
+    "source": "klopotenko.com, «Вареники з картоплею на кефірі» — site-stated 211 kcal per 100 g (kefir dough)",
+    "url": "https://klopotenko.com/varenyky-z-kartopleyu-na-kefiri-za-reczeptom-yevgena-klopotenka/"
+   }
+  ],
+  "pcGrams_note": "~25–27 g per boiled varenyk: Доцяк 1998 tech card — dough piece 10–11 g + filling 12–13 g (≈23–24 g raw), 7–8 pcs per 200 g boiled portion (→ 25–28 g each). Catalogue 25 g is consistent."
+ },
+ "varenyky-cabbage": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка з квашеної капусти» (sauerkraut 1112 g net + fat 60 g + onion 80 g + sugar 15 g → 945 g stewed cabbage, ~15 % loss) and «Вареники» standard (dough 82 / filling 103 per portion; cabbage varenyky 'поливають олією з підсмаженою цибулею'). Compared: https://klopotenko.com/zavarne-tisto-ta-nachynka-z-kvashenoyi-kapusty-reczept-pisnyh-varenykiv/ (Клопотенко, пісні вареники з квашеною капустою: 350 г борошна, 200 мл води, 3 ст. л. олії; 400 г квашеної капусти, 1 цибуля, 2 ст. л. олії; 2 ст. л. олії зверху) and https://klopotenko.com/puhki-ta-smachni-varenyky-z-kapustoyu-vid-yevgena-klopotenka/ (свіжа капуста: 360 г борошна, 180 мл кефіру; 400 г капусти + морква + цибуля на 4 ст. л. олії; цибуля на 2 ст. л. олії для подачі).",
+  "version": "Home varenyky with STEWED SAUERKRAUT filling (squeezed sauerkraut stewed with fried onion in sunflower oil until the liquid evaporates), served with a modest topping of onion fried in oil (as typically served). Without sour cream. Pepper/bay omitted. Dough (all four varenyky types): 500 g flour + ~20 g for dusting, 200 g water, 1 egg, 1 tbsp oil — averaged from TSN (500 g flour, 1 egg, 200 ml water), Klopotenko (360 g flour/180 ml water/2 tbsp oil; 400 g flour/200 ml water/2 tbsp oil) and Доцяк 1998 tech card «Тісто для вареників прісне» (flour 695, egg 53, water 270 per 1000 g dough).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 520
+   },
+   {
+    "id": "water",
+    "g": 200
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 102
+   },
+   {
+    "id": "sauerkraut",
+    "g": 800
+   },
+   {
+    "id": "onion",
+    "g": 250
+   }
+  ],
+  "cooked_g": 1815,
+  "yield_note": "Sauerkraut = squeezed (drained) weight. Oil 102 g = 17 g dough + 51 g (3 tbsp) stewing filling + 34 g (2 tbsp) frying 100 g topping onion — all counted (stays with the dish). Filling: 800 g sauerkraut stewed → ~680 g (−15 %, Доцяк 1112 → 945 g) + 150 g onion fried → ~75 g + 51 g oil ≈ 805 g. Dough ≈ 790 g. Raw varenyky ≈ 1595 g; boiled +8 % (Доцяк 185 → 200 g) → ~1725 g; + topping (100 g onion → ~55 g + 34 g oil ≈ 90 g) → ≈ 1815 g.",
+  "references": [
+   {
+    "kcal100": 185,
+    "source": "klopotenko.com, «Пісні вареники з квашеною капустою» — site-stated 185 kcal per 100 g (servingSize 100 g; lean, no egg; site auto-nutrition)",
+    "url": "https://klopotenko.com/zavarne-tisto-ta-nachynka-z-kvashenoyi-kapusty-reczept-pisnyh-varenykiv/"
+   },
+   {
+    "kcal100": 139,
+    "source": "Estonian food composition database TKA/NutriData, code 11684 'Pelmeenid, köögiviljadega, keedetud, tüüp Vici' (RUS: «Вареники, с овощами, вареные»; commercial vegetable-filled varenyky, boiled; filling not specified as cabbage)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/465087/version/public?tka=true"
+   }
+  ],
+  "pcGrams_note": "~25–27 g per boiled varenyk (same standard size as all varenyky: Доцяк 1998 — 10–11 g dough + 12–13 g filling, 7–8 pcs per 200 g boiled portion). Cabbage filling is lighter than potato, so pieces tend to the lower end (~24–25 g)."
+ },
+ "varenyky-cottage-cheese": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка з сиру» II спосіб (сир 900 g, яйця 36 g, цукор 90 g per 1000 g) and «Вареники» standard (dough 82 / filling 103; 'із сиру — поливають вершковим маслом'). Compared: https://klopotenko.com/solodki-varenyky-z-syrom-vid-yevgena-klopotenka/ (Клопотенко, солодкі: 400 г борошна, 200 мл води, 2 ст. л. олії; 300 г сиру, 1 ст. л. цукру, 1 жовток; 50 г масла для подачі) and https://klopotenko.com/z-solonoyu-nachynkoyu-varenyky-z-syrom-ta-zelennyu-vid-yevgena-klopotenka/ (солоні: 320 г борошна, 180 мл окропу, 3 ст. л. олії; 300 г сиру 9 % із зеленню; 20 г масла).",
+  "version": "LIGHTLY SWEET filling (the commonest home version across Ukraine; the salty version with dill/green onion is typical in the west and differs only by ~40 g sugar per batch): кисломолочний сир 9 % + egg + 2 tbsp sugar. Boiled, tossed with a little melted butter so they don't stick; WITHOUT sour cream. Dough (all four varenyky types): 500 g flour + ~20 g for dusting, 200 g water, 1 egg, 1 tbsp oil — averaged from TSN (500 g flour, 1 egg, 200 ml water), Klopotenko (360 g flour/180 ml water/2 tbsp oil; 400 g flour/200 ml water/2 tbsp oil) and Доцяк 1998 tech card «Тісто для вареників прісне» (flour 695, egg 53, water 270 per 1000 g dough).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 520
+   },
+   {
+    "id": "water",
+    "g": 200
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 110
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 17
+   },
+   {
+    "id": "tvorog-9",
+    "g": 800
+   },
+   {
+    "id": "sugar",
+    "g": 40
+   },
+   {
+    "id": "butter",
+    "g": 30
+   }
+  ],
+  "cooked_g": 1850,
+  "yield_note": "Eggs 110 g = 1 in dough + 1 in filling. Dough ≈ 790 g + filling ≈ 895 g = ~1685 g raw varenyky; boiled +8 % (Доцяк 185 → 200 g) → ~1820 g; + 30 g melted butter → ≈ 1850 g. No frying.",
+  "references": [
+   {
+    "kcal100": 195,
+    "source": "USDA FNDDS 2021-2023, 58121610 Pierogi ('Dumpling, potato- or cheese-filled, frozen'; frozen-raw basis)",
+    "url": "https://fdc.nal.usda.gov/food-details/2708720/nutrients"
+   },
+   {
+    "kcal100": 173,
+    "source": "USDA FNDDS 2021-2023, 58131510 Ravioli, cheese-filled, no sauce (closest US analogue; Italian cheese filling)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 187,
+    "source": "Estonian food composition database TKA/NutriData, code 8659 'Vareenikud, kohupiimatäidisega, külmutatud, tüüp Uvic' (RUS: «Вареники с творогом, замороженные»; commercial, frozen-raw basis)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/344/version/public?tka=true"
+   }
+  ],
+  "pcGrams_note": "~25–27 g per boiled varenyk (Доцяк 1998 standard: 10–11 g dough + 12–13 g filling, 7–8 pcs per 200 g boiled portion)."
+ },
+ "varenyky-cherry": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка вишнева» I спосіб (pitted cherries 1240 g + sugar 150 g, juice drained → 1000 g) and II спосіб (cherries 810 g, sugar 190 g, semolina 70 g); 'вареники … з вишнями подають зі сметаною або сиропом, цукром'. Compared: https://klopotenko.com/vareniki-z-vishneu/ (Клопотенко: 500 г борошна, 250 мл молока, 1 яйце, 1 ст. л. олії; 400 г вишні без кісточок, 1–2 ст. л. цукру, 1 ст. л. манки; готові присипати цукром) and https://vkusvill.ru/media/recipes/vareniki-s-vishney.html (400 г борошна; 500 г вишні, 2 ст. л. цукру, 1 ст. л. крохмалю).",
+  "version": "Home cherry varenyky: water-egg dough; filling = pitted sour cherries (juice that runs out is drained off) with sugar and 1 tbsp semolina to bind the juice; after boiling sprinkled with sugar (typical). Without sour cream. Dough (all four varenyky types): 500 g flour + ~20 g for dusting, 200 g water, 1 egg, 1 tbsp oil — averaged from TSN (500 g flour, 1 egg, 200 ml water), Klopotenko (360 g flour/180 ml water/2 tbsp oil; 400 g flour/200 ml water/2 tbsp oil) and Доцяк 1998 tech card «Тісто для вареників прісне» (flour 695, egg 53, water 270 per 1000 g dough).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 520
+   },
+   {
+    "id": "water",
+    "g": 200
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 17
+   },
+   {
+    "id": "cherries-sour",
+    "g": 650
+   },
+   {
+    "id": "sugar",
+    "g": 100
+   },
+   {
+    "id": "ing-semolina-dry",
+    "g": 15
+   }
+  ],
+  "cooked_g": 1635,
+  "yield_note": "Cherries 650 g = pitted weight after draining the juice that runs out (≈ 850–900 g whole cherries as bought; pits ~10 %, drained juice ~10–15 %, as in Доцяк 'сік відціджують'). Sugar 100 g = ~60 g inside (½ tsp per varenyk) + ~40 g sprinkled on top. Dough ≈ 790 g + filling ≈ 725 g = ~1515 g raw; boiled +5 % (less than the +8 % standard because some juice leaks into the water) → ~1595 g + 40 g sugar on top ≈ 1635 g.",
+  "references": [
+   {
+    "kcal100": 285,
+    "source": "klopotenko.com, «Простий рецепт вареників із вишнею» — site-stated 285 kcal per 100 g (servingSize 100 g; site auto-nutrition, looks templated — several of his varenyky show 285–287)",
+    "url": "https://klopotenko.com/vareniki-z-vishneu/"
+   }
+  ],
+  "pcGrams_note": "~25–27 g per boiled varenyk (Доцяк 1998 standard 10–11 g dough + 12–13 g filling; with 2–3 cherries + sugar inside a varenyk is ~23–26 g)."
+ },
+ "lazy-varenyky": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Сирні галушки» (= ліниві вареники): сир 156 g, яйця 12 g, борошно 22 g, цукор 11 g → 190 g semi-product → 200 g boiled. Compared: https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf (ТК 6.1 «Вареники ліниві»: сир 740 g, борошно 150 g, яйця 60 g, цукор 50 g → 960 g → 1000 g boiled) and https://klopotenko.com/sprava-y-souss-yak-prygotyvaty-smachni-linivi-varenyky/ (Клопотенко: 300 г сиру 9 %, 1 яйце, 1 ст. л. цукру, 4 ст. л. борошна + 2 для підпилу) and https://klopotenko.com/lenuvi-vareniki-z-jogurtovym-sousom/ (300 г сиру, 1 яйце, 2 ст. л. цукру, 4 ст. л. борошна).",
+  "version": "Home lazy varenyky: кисломолочний сир 9 % + 1 egg + 2 tbsp sugar + flour (incl. dusting), rolled into a log, cut, boiled 2–4 min after they float. Plain, without butter or sour cream.",
+  "ingredients": [
+   {
+    "id": "tvorog-9",
+    "g": 500
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "sugar",
+    "g": 40
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 110
+   }
+  ],
+  "cooked_g": 740,
+  "yield_note": "Flour 110 g = ~90 g in the mass + ~20 g for dusting/rolling. Raw mass ≈ 705 g; boiled gain +5 % per Доцяк (190 → 200 g) and school card (960 → 1000 g) → ≈ 740 g.",
+  "references": [
+   {
+    "kcal100": 197,
+    "source": "Збірник рецептур страв для харчування дітей в закладах освіти (МОН/МОЗ, затв. 07.03.2024), znaimo.gov.ua: ТК 6.1 «Вареники ліниві» — 197 kcal per 100 g portion (wholegrain flour, served plain)",
+    "url": "https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 178,
+    "source": "USDA FNDDS 2021-2023, 58122210 Gnocchi, cheese (ricotta-flour boiled dumplings — closest analogue)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ],
+  "pcGrams_note": "~12–15 g per boiled piece: school card cuts a 10–12 mm sheet into 20–25 mm strips and then pieces; Klopotenko slices a ~3 cm log every ~1.5 cm (≈ 11–13 g raw, +5 % boiling). Catalogue 15 g is at the upper end of home pieces."
+ },
+ "pelmeni": {
+  "recipe_source": "https://klopotenko.com/pelmeni-zi-svynynou/ (Клопотенко: тісто 500 г борошна, 220–250 мл гарячої води, 3 ст. л. олії; фарш 500 г свинини, ½ цибулини, 3 зубчики часнику, 50 мл крижаної води; кружечки 4–5 см, ½ ч. л. фаршу) averaged with the common home pork+beef mince version (дріжджів немає; тісто на воді з яйцем; фарш свинина+яловичина 1:1, цибуля, холодна вода) and the Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org standard dough (flour 695, egg 53, water 270 per 1000 g) — https://archive.org/details/ukrainskakuhnya1998.",
+  "version": "Home pelmeni: water-egg dough; filling = pork + beef mince 1:1 with grated onion and a little ice water; boiled ~5 min after floating. Plain (without butter / sour cream / vinegar). Pepper, garlic, bay omitted.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 520
+   },
+   {
+    "id": "water",
+    "g": 270
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "ing-pork-ground-raw",
+    "g": 350
+   },
+   {
+    "id": "ing-beef-ground-raw",
+    "g": 350
+   },
+   {
+    "id": "onion",
+    "g": 150
+   }
+  ],
+  "cooked_g": 1745,
+  "yield_note": "Water 270 g = 200 g in dough + 70 g ice water in the mince. Dough ≈ 775 g (incl. ~20 g dusting flour) + filling ≈ 920 g = ~1695 g raw. Boiling: dough gains water while the meat filling loses some juice/fat → small net gain; Estonian TKA recipe 'Pelmeenid, keskmiselt, keedetud' = 950 g frozen + water → 1000 g (+5 %); used +3 % → ≈ 1745 g.",
+  "references": [
+   {
+    "kcal100": 225,
+    "source": "Estonian food composition database TKA/NutriData, code 10650 'Pelmeenid, keskmiselt, keedetud' (Dumplings/pelmeni, average, boiled)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/12463/version/public?tka=true"
+   },
+   {
+    "kcal100": 228,
+    "source": "Estonian food composition database TKA/NutriData, code 11535 'Pelmeenid, segahakklihaga, keedetud, R 12,8%' (pelmeni with mixed pork-beef mince, boiled)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/451021/version/public?tka=true"
+   },
+   {
+    "kcal100": 190,
+    "source": "USDA FNDDS 2021-2023, 58131310 Ravioli, meat-filled, no sauce (closest US analogue)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ],
+  "pcGrams_note": "~11–14 g per boiled pelmen: Estonian TKA gives 14 g per piece for 'Pelmeenid, keskmiselt, keedetud'; Klopotenko's home size (4–5 cm circles, ½ tsp filling) ≈ 10–12 g. Catalogue 12 g is consistent."
+ },
+ "deruny": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Деруни»: дерунна маса = картопля 1240/930 g, борошно 43 g, яйця 36 g → 1000 g; «Деруни зі сметаною»: маса 275 g + олія 10 g → 220 g fried. Compared: https://klopotenko.com/kartoplyani-deruny-u-blenderi-reczept-vid-yevgena-klopotenka/ (Клопотенко: ~300 г картоплі, 1 цибуля, 1 яйце, 1 ст. л. борошна, 5 ст. л. олії для смаження) and https://klopotenko.com/zolotavi-ta-hrustki-deruny-na-krupnij-tertczi-vid-yevgena-klopotenka/ (4 картоплини, 1 цибуля, 1 яйце, 1 зубчик часнику, 3 ст. л. олії). Averaged.",
+  "version": "Home deruny: raw potato + onion grated, 1 egg, ~3 tbsp flour, salt; spooned into hot sunflower oil and pan-fried on both sides until crisp. Without sour cream. Liquid not squeezed out (Доцяк/most home recipes).",
+  "ingredients": [
+   {
+    "id": "ing-potato-raw",
+    "g": 1000
+   },
+   {
+    "id": "onion",
+    "g": 100
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 45
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 85
+   }
+  ],
+  "cooked_g": 975,
+  "yield_note": "Potato = peeled weight (≈1.2–1.3 kg as bought; Доцяк 1240 → 930 g, ~25 % peel). Oil = ABSORBED only: 85 g ≈ 7 % of the 1200 g batter, basis USDA FNDDS recipe 71701000 'Potato pancake' (28 g oil per ~382 g batter = 7.3 %); the catering card Доцяк uses only 10 g per 275 g (3.6 %), home frying in a generous oil layer is closer to FNDDS. Frying loss: FNDDS moisture change −25 %, Доцяк (275 + 10) → 220 g = −23 %; used −24 %: (1200 + 85) × 0.76 ≈ 975 g.",
+  "references": [
+   {
+    "kcal100": 196,
+    "source": "USDA FNDDS 2021-2023, 71701000 Potato pancake (potato, onion, egg, flour, oil; moisture −25 %)",
+    "url": "https://fdc.nal.usda.gov/food-details/2709552/nutrients"
+   },
+   {
+    "kcal100": 242,
+    "source": "Czech food composition database (Nutridatabáze.cz, ÚZEI), 0002 'Bramborák, modelová receptura' (potato pancake model recipe; more flour, fried in lard)",
+    "url": "https://www.nutridatabaze.cz/potraviny/?id=2"
+   },
+   {
+    "kcal100": 182,
+    "source": "klopotenko.com, «Деруни з молодої картоплі» — site-stated 182 kcal per 100 g (site auto-nutrition)",
+    "url": "https://klopotenko.com/vyhodyat-puhkymy-i-ne-rozvalyuyutsya-deruny-z-molodoyi-kartopli-za-reczeptom-yevgena-klopotenka/"
+   }
+  ],
+  "pcGrams_note": "~50–70 g per fried derun (1 heaped tablespoon of batter ~70–80 g raw): USDA FNDDS portions for potato pancake — medium 70 g, small 25 g, large 130 g; Доцяк catering deruny are big (10 cm, 2 pcs = 220 g). Catalogue 60 g is a reasonable home size."
+ },
+ "syrnyky": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Сирники»: сир 150 g, борошно 20 g, яйця 5 g, цукор ~15 g, маргарин 5 g → 170 g semi-product → 150 g fried (3 pcs). Compared: https://klopotenko.com/puhki-ta-nizhni-syrnyky-z-mankoyu-bez-boroshna-vid-yevgena-klopotenka/ (Клопотенко: 400 г сиру 9 %, 1 яйце, 3 ст. л. манки, 3 ст. л. цукру, 10 г ванільного цукру; ~4 ст. л. олії на смаження) and https://klopotenko.com/avtentychnyj-poltavskyj-reczept-nizhni-syrnyky-vid-yevgena-klopotenka/ (400 г сиру 9 %, 1 яйце, 1 ст. л. цукру, 10 г ванільного цукру, 2+1 ст. л. борошна, 1 ст. л. масла), and https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf ТК 6.10.",
+  "version": "Home sweet syrnyky: кисломолочний сир 9 % + 1 egg + ~2.5 tbsp sugar (incl. vanilla sugar) + flour in the mass and for coating; pan-fried in sunflower oil on both sides. Without sour cream.",
+  "ingredients": [
+   {
+    "id": "tvorog-9",
+    "g": 500
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "sugar",
+    "g": 50
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 80
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 35
+   }
+  ],
+  "cooked_g": 635,
+  "yield_note": "Flour 80 g = ~55 g in the mass + ~25 g for coating. Oil = ABSORBED only: 35 g ≈ 5 % of the 685 g raw mass (pan-frying range 5–15 %; Estonian TKA recipe uses 30 g per 1160 g, Доцяк 5 g per 170 g ≈ 3 %, school card 25 g per 1000 g; home frying in a thin oil layer ≈ 5 %). Frying loss: Доцяк 170 → 150 g (−12 %), Estonian −16 %; used −12 %: (685 + 35) × 0.88 ≈ 635 g.",
+  "references": [
+   {
+    "kcal100": 195,
+    "source": "Збірник рецептур страв для харчування дітей в закладах освіти (МОН/МОЗ, затв. 07.03.2024), znaimo.gov.ua: ТК 6.10 «Сирники класичні» — 156 kcal per 80 g portion = 195 kcal/100 g (semolina, little oil, oven-finished; tvorog fat not stated, values fit ~5 %)",
+    "url": "https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 186,
+    "source": "Estonian food composition database TKA/NutriData, code 84593 'Kohupiimapannkoogid, praetud, õliga (kohupiim R 0,5%)' (syrnyky from 0.5 % quark, fried in oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1527/version/public?tka=true"
+   },
+   {
+    "kcal100": 210,
+    "source": "Estonian food composition database TKA/NutriData, code 10994 'Kohupiimapannkoogid, praetud, õliga (ricotta kohupiim R 8%)' (syrnyky from 8 % quark, fried in oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/439805/version/public?tka=true"
+   }
+  ],
+  "pcGrams_note": "~45–55 g per fried syrnyk: Доцяк 1998 serves 3 pcs per 150 g fried portion (= 50 g each); Klopotenko forms 8 balls from ~520 g mass (~55–60 g raw → ~50 g fried). School card uses smaller ±30 g pieces for children; Estonian TKA lists 90 g per piece (large)."
+ },
+ "mlyntsi": {
+  "recipe_source": "https://klopotenko.com/idealna-tekstura-tonki-mlynczi-na-moloczi-i-vodi-vid-yevgena-klopotenka/ (Клопотенко: 2 яйця, 2 ст. л. цукру, 30 мл олії, 200 г борошна, 300 мл молока + 200 мл окропу) and https://klopotenko.com/lyubov-ta-turbota-u-kozhnomu-shmatochku-solodki-mlynczi-z-syrom-vid-mamy-yevgena-klopotenka/ (млинці мами Клопотенка: 250 г борошна, 500 мл молока 2,5 %, 3 яйця, 50 мл олії, 1 ст. л. цукру), averaged with Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Налисники (млинчики) смажені»: борошно 416, молоко 1040, яйця 83, цукор 25 → тісто 1538 g → 1000 g (https://archive.org/details/ukrainskakuhnya1998).",
+  "version": "Plain thin home crepes: milk 2.5 % + 2 eggs + flour + 1 tbsp sugar + 2 tbsp oil in the batter; pan lightly greased; fried on both sides (22–24 cm pan). Served plain.",
+  "ingredients": [
+   {
+    "id": "milk-2-5",
+    "g": 500
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 110
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 200
+   },
+   {
+    "id": "sugar",
+    "g": 20
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 36
+   }
+  ],
+  "cooked_g": 675,
+  "yield_note": "Oil 36 g = 30 g in the batter + ~6 g brushed on the pan (crepes absorb little; only what's in batter + the greasing). Batter ≈ 866 g. Water loss in the pan: USDA FNDDS 55401000 'Crepe, plain' moisture change −20 %, Estonian TKA 'Pannkoogid (piim R 2,5%)' 1225 → 1000 g (−18 %), Ukrainian catering norm (Доцяк) 1538 → 1000 g (−35 %, crepes rested/handled); used −22 % for thin home crepes fried on both sides → ≈ 675 g (~15 crepes).",
+  "references": [
+   {
+    "kcal100": 224,
+    "source": "USDA FNDDS 2021-2023, 55401000 Crepe, plain (milk, egg, flour, shortening, sugar; moisture −20 %)",
+    "url": "https://fdc.nal.usda.gov/food-details/2708342/nutrients"
+   },
+   {
+    "kcal100": 214,
+    "source": "Estonian food composition database TKA/NutriData, code 856868200 'Pannkoogid, praetud, õliga (piim R 2,5%)' (thin pan-size pancakes on 2.5 % milk, fried in oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1484/version/public?tka=true"
+   }
+  ],
+  "pcGrams_note": "~40–50 g per crepe from a 22–24 cm pan: this batch (500 ml milk) gives ~15 crepes ≈ 45 g each. USDA FNDDS 'Crepe, plain' 1 crepe = 65 g and Estonian TKA pannkook 65 g per piece (larger/thicker). Catalogue 45 g fits thin Ukrainian млинці."
+ },
+ "nalysnyky-cottage-cheese": {
+  "recipe_source": "https://klopotenko.com/ukrayinska-lyubov-nalysnyky-z-syrom-vid-yevgena-klopotenka/ (Клопотенко: 250 г борошна, 650 мл молока, 3 яйця, 2 ст. л. цукру, 50 мл олії; начинка 400 г сиру, 50 г родзинок, 1 яйце, 2 ст. л. цукру; запікати з 60 г масла) and https://klopotenko.com/lyubov-ta-turbota-u-kozhnomu-shmatochku-solodki-mlynczi-z-syrom-vid-mamy-yevgena-klopotenka/ (400 г сиру 9 %, жовток, 1 ст. л. цукру; запікати з маслом); Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Налисники з начинкою із сиру…»: налисники 100 g + начинка 94 g, жир 10 g → 175 g fried (2 pcs) (https://archive.org/details/ukrainskakuhnya1998).",
+  "version": "Crepes (as in mlyntsi) rolled/folded with sweet filling of кисломолочний сир 9 % + egg + sugar + a few raisins, then browned in butter in the pan or baked with butter (both common). Without sour cream.",
+  "ingredients": [
+   {
+    "id": "milk-2-5",
+    "g": 500
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 165
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 200
+   },
+   {
+    "id": "sugar",
+    "g": 70
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 36
+   },
+   {
+    "id": "tvorog-9",
+    "g": 500
+   },
+   {
+    "id": "raisins",
+    "g": 40
+   },
+   {
+    "id": "butter",
+    "g": 40
+   }
+  ],
+  "cooked_g": 1225,
+  "yield_note": "Crepes: same batter as mlyntsi (milk 500, 2 eggs, flour 200, sugar 20, oil 36) → ≈ 675 g crepes (−22 %). Filling: tvorog 500 + 1 egg + sugar 50 + raisins 40 = 645 g. Butter 40 g for frying/baking — fully counted (absorbed/poured over). Final browning/baking loss −10 % (Доцяк: 194 g + 10 g fat → 175 g): (675 + 645 + 40) × 0.9 ≈ 1225 g (~13–14 nalysnyky).",
+  "references": [
+   {
+    "kcal100": 239,
+    "source": "Estonian food composition database TKA/NutriData, code 84610 'Pannkoogid, kohupiimatäidisega, praetud, õliga' (crepes with sweet quark filling, fried in oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1690/version/public?tka=true"
+   }
+  ],
+  "pcGrams_note": "~85–95 g per filled nalysnyk: Доцяк 1998 serves 2 pcs per 175 g fried portion (≈ 88 g each); Estonian TKA lists 100 g per filled pancake. Catalogue 90 g is consistent."
+ },
+ "nalysnyky-meat": {
+  "recipe_source": "https://klopotenko.com/nalysnyky-z-myasom-vid-yevgena-klopotenka/ (Клопотенко: млинці 200 г борошна, 500 мл сироватки, 2 ст. л. олії, 2 ст. л. цукру; начинка 500 г вареної свинини, 1 цибуля на 2 ст. л. олії, 50 мл бульйону) and https://klopotenko.com/smakuyut-i-holodnymy-nalysnyky-z-myasom-vid-yevgena-klopotenka/ (350 мл молока, 150 г борошна, 2 яйця, 2 ст. л. олії; 600 г вареного м'яса, цибуля; конвертики обсмажити); Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Начинка м'ясна з цибулею» (варене м'ясо + пасерована цибуля) and «Налисники з начинкою з м'яса»: 100 g crepes + 94 g filling + 10 g fat → 175 g fried (https://archive.org/details/ukrainskakuhnya1998).",
+  "version": "Crepes on milk (less sugar) filled with boiled pork + beef put through the mincer with onion fried in oil and a little broth, folded into envelopes and pan-fried in sunflower oil. Without sour cream.",
+  "ingredients": [
+   {
+    "id": "milk-2-5",
+    "g": 500
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 110
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 200
+   },
+   {
+    "id": "sugar",
+    "g": 10
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 120
+   },
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-beef-chuck-raw",
+    "g": 300
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "water",
+    "g": 50
+   }
+  ],
+  "cooked_g": 1135,
+  "yield_note": "Meat boneless raw weight. Oil 120 g = 36 g batter/pan greasing + 34 g (2 tbsp) for the filling onion + 50 g ABSORBED when frying the filled nalysnyky (≈ 4 % of 1210 g; Доцяк uses 10 g fat per 194 g = 5 %). Crepes 856 g batter → ≈ 668 g (−22 %, as mlyntsi). Meat 600 g boiled → ≈ 372 g (−38 %, USDA simmered-meat yield ~0.6–0.65); onion 150 g fried → ~85 g + 34 g oil; 50 g broth (= water) → filling ≈ 540 g. Final pan-frying loss −10 % (Доцяк 204 → 175 g ≈ −14 %): (668 + 540 + 50) × 0.9 ≈ 1135 g. Note: some meat fat goes into the discarded broth — not subtracted.",
+  "references": [
+   {
+    "kcal100": 241,
+    "source": "Estonian food composition database TKA/NutriData, code 10582 'Pannkoogid, hakkliha-riisitäidisega, praetud, õliga' (crepes with fried minced meat + rice + a little cheese)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/4212/version/public?tka=true"
+   },
+   {
+    "kcal100": 173,
+    "source": "USDA FNDDS 2021-2023, 58120110 Crepe, with meat (US recipe: chicken/beef/tuna with cream-of-chicken sauce, cheese, mushrooms)",
+    "url": "https://fdc.nal.usda.gov/food-details/2708719/nutrients"
+   }
+  ],
+  "pcGrams_note": "~85–95 g per filled nalysnyk: Доцяк 1998 serves 2 pcs per 175 g fried portion (≈ 88 g each); Estonian TKA lists 100 g per filled pancake. Catalogue 90 g is consistent."
+ },
+ "oladky": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Млинці на кислому молоці» (= оладки на кефірі): борошно 70 g, яйця 5 g, кефір 120 g, цукор 5 g, сода 0,5 g → тісто 195 g; маргарин 5 g → 150 g fried (3 pcs). Compared: https://klopotenko.com/oladky-na-kefiri-ta-czilnozernovomu-boroshni-vid-yevgena-klopotenka/ (Клопотенко: 300 мл кефіру, 1 яйце, 1 ст. л. цукру, 10 г ванільного цукру, ½ ч. л. розпушувача/соди, 200 г борошна, 5 ст. л. олії на смаження) and the common home ratio 500 ml kefir : ~2 cups (≈ 300 g) flour : 1 egg : 2 tbsp sugar : ½ tsp soda.",
+  "version": "Home kefir oladky: kefir 2.5 % + 1 egg + 2 tbsp sugar + flour to thick-sour-cream consistency + ½ tsp soda; spooned into hot sunflower oil, fried on both sides. Served plain.",
+  "ingredients": [
+   {
+    "id": "kefir",
+    "g": 500
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "sugar",
+    "g": 40
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 280
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 60
+   },
+   {
+    "id": "ing-baking-soda",
+    "g": 3
+   }
+  ],
+  "cooked_g": 750,
+  "yield_note": "Oil = ABSORBED only: 60 g ≈ 7 % of the 875 g batter. Thick spongy oladky soak more than crepes: Klopotenko fries 585 g batter in 5 tbsp (85 g) oil, roughly half of which stays in the pan; Estonian TKA kefir pancakes 40 g oil per 1175 g batter (3.4 %) and Доцяк 5 g per 195 g (2.6 %) are leaner catering values. Frying loss: Estonian 1215 → 1000 g (−18 %), Доцяк 200 → 150 g (−25 %); used −20 %: (875 + 60) × 0.8 ≈ 750 g.",
+  "references": [
+   {
+    "kcal100": 201,
+    "source": "Estonian food composition database TKA/NutriData, code 834495050 'Pannkoogid, praetud, õliga (keefir R 2,5%)' (small spoon pancakes on kefir with baking powder, fried in oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1486/version/public?tka=true"
+   },
+   {
+    "kcal100": 282,
+    "source": "USDA FNDDS 2021-2023, 55101000 Pancakes, plain (US home pancakes, baking powder)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 240,
+    "source": "klopotenko.com, «Оладки на дріжджах і молоці» — site-stated 240 kcal per 100 g (yeast oladky; site auto-nutrition)",
+    "url": "https://klopotenko.com/puhki-ta-rumyani-oladky-na-drizhdzhah-i-moloczi-vid-yevgena-klopotenka/"
+   }
+  ],
+  "pcGrams_note": "~30–40 g per fried oladka (1 heaped tablespoon of batter ≈ 40–45 g raw): Доцяк 1998 serves 3 pcs per 150 g (≈ 50 g, larger catering size); Estonian TKA small spoon pancakes 16 g each. Catalogue 35 g is a typical home size."
+ },
+ "holubtsi": {
+  "recipe_source": "https://www.unian.ua/recipes/second-courses/meat-dishes/golubci-recept-yak-prigotuvati-smachni-golubci-vdoma-11076662.html (УНІАН, «Голубці з фаршем і рисом»: 1 head cabbage, 600 g mince, 0.5 cup rice, 1 egg, 1–2 onions, 1–2 carrots, 30 g oil, 150–200 g sour cream + 0.5 L water, tomato paste). Compared: https://klopotenko.com/farsh-rys-ta-hrumki-lystochky-golubczi-z-kvashenoyi-kapusty/ (Клопотенко: 500 g pork mince, 200 g rice, onion, carrot, 2 tbsp oil; sauce 1 tbsp tomato paste + 1 tbsp sour cream 20% + 500 ml water; 12 portions) and school tech card 8.8 «Ліниві голубці з яловичиною».",
+  "version": "Typical home version (UNIAN recipe with Klopotenko's tomato-sour-cream sauce): fresh-cabbage leaves rolled around pork+beef mince with half-cooked rice, egg and a sautéed onion/carrot засмажка; stewed ~1 h covered in sauce of 2 tbsp tomato paste + 200 g sour cream 15 % + 0.5 L water. ~17 rolls. Sauce counted in the batch.",
+  "ingredients": [
+   {
+    "id": "cabbage-raw",
+    "g": 1000
+   },
+   {
+    "id": "ing-pork-ground-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-beef-ground-raw",
+    "g": 300
+   },
+   {
+    "id": "ing-rice-dry",
+    "g": 100
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "carrots-raw",
+    "g": 100
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 30
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 50
+   },
+   {
+    "id": "smetana-15",
+    "g": 200
+   },
+   {
+    "id": "water",
+    "g": 500
+   }
+  ],
+  "cooked_g": 2550,
+  "yield_note": "Cabbage = only the leaves actually used (~1 kg of a 2–2.5 kg head; core and small inner leaves not counted). Raw total 2785 g. Losses: ~40 g water from sautéing onion/carrot, ~200 g evaporation during ~1 h covered stewing (≈8 % of the pot); rice absorbs sauce water inside the rolls and meat juices stay in the sauce, so they are not losses. 2550 g / 17 rolls ≈ 150 g per roll with sauce. Oil is a засмажка, counted fully. Salt, pepper, bay leaf omitted.",
+  "references": [
+   {
+    "kcal100": 114,
+    "source": "USDA FNDDS 2021-2023, 27315250 Stuffed cabbage rolls with beef and rice",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 183,
+    "source": "Estonian NutriData/TKA 84677 'Cabbage rolls, stuffed with rice and mixed minced meat' (Голубцы, с рисом и смешанным мясным фаршем) — Estonian recipe with 23–25 % fat mince and 20 % sour cream, no tomato",
+    "url": "https://tka.nutridata.ee/et/foods/1440"
+   },
+   {
+    "kcal100": 137,
+    "source": "Ukrainian school-menu tech card (Збірник рецептур страв для харчування дітей у закладах освіти, 2024, Стратегія реформування шкільного харчування), ТК 8.8 «Ліниві голубці з яловичиною»: 240 kcal per 175 g portion (beef mince, rice, cabbage, tomato-sour-cream sauce) → 137 kcal/100 g",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   }
+  ],
+  "pcGrams_note": "One home holubets with its sauce ≈ 150 g (this batch: 2550 g / ~17 rolls); raw roll ≈ 110–120 g (60–70 g leaf + ~55 g filling). Estonian TKA gives a piece weight of 160 g for cabbage rolls (84677). Lazy holubtsi in the school card are formed at 70–75 g raw."
+ },
+ "halushky": {
+  "recipe_source": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Галушки в'язкі (напівфабрикат)»: flour 640 (incl. 40 dusting), egg 40, milk or water 320 per 1000 g; «Галушки з маслом…»: 150 g semi-product → 200 g boiled; 'варені галушки можна відпускати з підсмаженою на салі або олії цибулею … з підсмаженим салом'; ethnographic note: Poltava halushky 'заправляли засмажкою з цибулі на олії або салі'. Compared: https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf (ТК 14.20 «Галушки»: борошно 630, яйця 60, вода 315, сода 6 → 980 g boiled + 20 g butter) and the common home Poltava version on kefir with soda (https://klopotenko.com/spravzhni-poltavski-galushky-vid-inny-popershnyuk/ is a yeast/steamed restaurant variant served with chicken — not used).",
+  "version": "Poltava-style boiled halushky: soft dough of flour + kefir + 1 egg + a pinch of soda, cut/pinched into ~10 g pieces, boiled 8–12 min; WITH the typical topping — shkvarky: diced salo rendered with chopped onion, poured over. Without sour cream.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 530
+   },
+   {
+    "id": "kefir",
+    "g": 250
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "salo",
+    "g": 100
+   },
+   {
+    "id": "onion",
+    "g": 200
+   },
+   {
+    "id": "ing-baking-soda",
+    "g": 3
+   }
+  ],
+  "cooked_g": 1280,
+  "yield_note": "Flour 530 g = 500 g in dough + ~30 g dusting. Dough ≈ 835 g; thick boiled dumplings absorb water: Доцяк 150 g semi-product → 200 g boiled (+33 %); used +30 % (some dusting flour washes off) → ~1085 g boiled halushky. Topping: 100 g salo rendered (fat stays in the dish; cracklings + fat ≈ 85 g after slight water loss) with 200 g onion fried down to ~110 g → ≈ 195 g. Total ≈ 1280 g. (Plain halushky without topping would be ≈ 1085 g from the first four ingredients.)",
+  "references": [
+   {
+    "kcal100": 235,
+    "source": "Збірник рецептур страв для харчування дітей в закладах освіти (МОН/МОЗ, затв. 07.03.2024), znaimo.gov.ua: ТК 14.20 «Галушки» — 235 kcal per 100 g portion (wholegrain flour, water, egg, dressed with 2 % butter; card shows no water gain on boiling)",
+    "url": "https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 199,
+    "source": "Estonian food composition database TKA/NutriData, code 11145 'Klimbid, puljongist' (flour-egg dumplings cooked in stock; plain)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/444187/version/public?tka=true"
+   },
+   {
+    "kcal100": 125,
+    "source": "USDA FNDDS 2021-2023, 55610300 Dumpling, no meat (US plain dumpling cooked in liquid; moister)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ],
+  "pcGrams_note": "No catalogue pcGrams. For reference: school card shapes galushky of 10 g raw each (ТК 2.14/14.20), i.e. ~13 g boiled; Доцяк cuts 3×3–4×4 cm squares 0.5–1 cm thick (~8–15 g raw)."
+ },
+ "banosh": {
+  "recipe_source": "Averaged home version. Compared: https://klopotenko.com/dusha-zakarpattya-banosh-z-brynzoyu-i-shkvarkamy-vid-yevgena-klopotenka/ (180 г кукурудзяної крупи, 500 мл сметани 15 % + 500 мл вершків 20 %, 100 г бринзи, 300 г сала на шкварки; 2 порції); https://klopotenko.com/avtentychnyj-karpatskyj-banosh-na-smetani/ (1 л сметани 20 %, 140 г крупи, 150 г бринзи, шкварки за бажанням); https://www.unian.ua/recipes/banosh-recept-banosh-v-gorshchikah-recept-z-foto-11069726.html (а: 450 мл жирної сметани + 450 мл води, 250 г крупи, 100 г сала + 100 г бекону, 100 г бринзи; б: 400 мл молока + 500 мл сметани, 200 г крупи, 100 г бринзи); https://klopotenko.com/banosh-u-multyvarczi-vid-yevgena-klopotenka/ (100 г крупи, 300 г сметани, 250 мл молока).",
+  "version": "Corn grits cooked 10-15 min in sour cream 20 % diluted with milk and a little water until the fat shows, served topped with crumbled bryndza and shkvarky from salo poured over together with their rendered fat (Hutsul way).",
+  "ingredients": [
+   {
+    "id": "ing-corn-grits-dry",
+    "g": 200
+   },
+   {
+    "id": "smetana-20",
+    "g": 500
+   },
+   {
+    "id": "milk-2-5",
+    "g": 300
+   },
+   {
+    "id": "water",
+    "g": 150
+   },
+   {
+    "id": "bryndza",
+    "g": 120
+   },
+   {
+    "id": "salo",
+    "g": 150
+   }
+  ],
+  "cooked_g": 1300,
+  "yield_note": "Porridge: 1150 g of grits + liquids − ≈100 g evaporated in 10-15 min of stirring at a simmer (≈10 % of the liquid) = ≈1050 g. Toppings: bryndza 120 g; 150 g raw salo rendered → ≈45 g cracklings + ≈90 g liquid fat (≈10 % water lost) = ≈135 g, all poured over the dish. Total ≈1305 g → 1300 g. Salo given as RAW salo with ALL rendered fat on the dish; if the fat is drained and only the cracklings go on top, replace salo 150 g with ≈45 g of the catalogue recipe 'shkvarky' (batch loses the ≈90 g of liquid fat, ≈ −800 kcal, ≈ −45 to −50 kcal/100 g).",
+  "references": [
+   {
+    "kcal100": 334,
+    "source": "klopotenko.com «Банош з бринзою та шкварками» (sour cream 15 % + cream 20 %, 300 g salo for 180 g grits) — site states 334 kcal per 100 g",
+    "url": "https://klopotenko.com/dusha-zakarpattya-banosh-z-brynzoyu-i-shkvarkamy-vid-yevgena-klopotenka/"
+   },
+   {
+    "kcal100": 198,
+    "source": "klopotenko.com «Карпатський банош на сметані» (1 L sour cream 20 %, 140 g grits, 150 g bryndza, shkvarky optional) — site states 198 kcal per 100 g",
+    "url": "https://klopotenko.com/avtentychnyj-karpatskyj-banosh-na-smetani/"
+   },
+   {
+    "kcal100": 152,
+    "source": "МОЗ/«Знаїмо» school tech card ТК 10.2 «Банош» — PLAIN school version: corn grits on milk + water with butter only (no sour cream, no bryndza, no shkvarky): 152 kcal per 100 g portion. Lower bound; likely the origin of the old 150 value",
+    "url": "https://znaimo.gov.ua/Contents/ContentItems/45mx5x2512smt1ambhp7y1jw4s"
+   }
+  ]
+ },
+ "kotlety": {
+  "recipe_source": "https://tsn.ua/lady/kukhnya/recepty/kotleti-domashni-perevireniy-recept-1906084.html (ТСН «Котлети домашні»: 0.5 kg beef + 0.5 kg pork, 200 g батон soaked in milk, 2 onions, 2 cloves garlic, breadcrumbs, fried in oil). Compared: https://klopotenko.com/myasni-kotlety-v-aerogryli-prostyj-reczept-vid-yevgena-klopotenka/ (Клопотенко: 300 g pork + 300 g beef mince, 1 egg, 3 slices white bread + 100 ml water, onion, 2 garlic, breadcrumbs for coating; 12 cutlets) and https://klopotenko.com/z-garnirom-iz-sokovytyh-yabluk-kotlety-zi-svynyny-vid-yevgena-klopotenka/ (pork cutlets 80–90 g raw).",
+  "version": "Averaged home version: 1 kg pork+beef mince (1:1), 150 g white bread (батон) soaked in 150 ml milk 2.5 %, 2 onions, 1 egg, 2 garlic cloves; patties rolled in breadcrumbs and pan-fried in sunflower oil, then finished under a lid. ~16 patties.",
+  "ingredients": [
+   {
+    "id": "ing-pork-ground-raw",
+    "g": 500
+   },
+   {
+    "id": "ing-beef-ground-raw",
+    "g": 500
+   },
+   {
+    "id": "white-bread",
+    "g": 150
+   },
+   {
+    "id": "milk-2-5",
+    "g": 150
+   },
+   {
+    "id": "onion",
+    "g": 160
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 55
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 10
+   },
+   {
+    "id": "ing-breadcrumbs",
+    "g": 40
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 78
+   }
+  ],
+  "cooked_g": 1360,
+  "yield_note": "Raw patty mass 1565 g (breadcrumbs = only what sticks, ~2.5 g per patty). Cooking loss ~18 % of raw mass (USDA pan-fried ground-meat patties lose ~25–30 %; bread/milk binder holds water, and the Estonian TKA fried-burger recipe loses 15 % incl. oil) → ~1283 g, plus absorbed oil 78 g = 5 % of raw mass (my estimate, lower end of the 5–15 % pan-frying range because fatty mince also renders its own fat into the pan). The rest of the frying oil stays in the pan. Salt/pepper omitted.",
+  "references": [
+   {
+    "kcal100": 228,
+    "source": "klopotenko.com, «Котлети з фаршу асорті в аерогрилі» — site states 228 kcal per 100 g of finished dish (pork+beef mince, bread, egg, breadcrumb-coated; air-fried, so no frying oil)",
+    "url": "https://klopotenko.com/myasni-kotlety-v-aerogryli-prostyj-reczept-vid-yevgena-klopotenka/"
+   },
+   {
+    "kcal100": 312,
+    "source": "Estonian NutriData/TKA 84556 'Burger, mixed minced meat, fried, with oil' (Котлета, из смешанного фарша, жареная, с маслом; mince 23–25 % fat + soaked white bread)",
+    "url": "https://tka.nutridata.ee/et/foods/1313"
+   },
+   {
+    "kcal100": 344,
+    "source": "Estonian NutriData/TKA 84367 'Cutlet, mixed minced meat, fried, with oil' (Рубленый шницель; mince + white bread, breadcrumb-coated, pan-fried)",
+    "url": "https://tka.nutridata.ee/et/foods/1311"
+   }
+  ],
+  "pcGrams_note": "Raw patty ~90–100 g → ~80–85 g fried (this batch 1360 g / 16). Klopotenko's pork cutlets are formed at 80–90 g raw; TKA lists a fried mixed-mince burger piece at 57 g (smaller Estonian size)."
+ },
+ "chicken-cutlets": {
+  "recipe_source": "https://klopotenko.com/idealni-kotlety-z-kuryachogo-farshu-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 500 g chicken thigh mince, 50 g salo, 1 onion, 1 garlic, 1 egg, 3 slices white bread + 100 ml milk; 7 cutlets × 100 g raw; fried in 3–4 tbsp oil). Compared: school tech card 9.54 «Січеники з м'яса птиці» (860 g fillet, 230 g onion, 90 g flour, 80 g egg) and https://klopotenko.com/strava-na-kozhen-den-rubleni-kotlety-z-kurky-vid-yevgena-klopotenka/.",
+  "version": "Typical home version with store-bought chicken mince (modelled as 60 % breast + 40 % meat-with-skin), bread soaked in milk, onion, 2 eggs, garlic; rolled in flour and pan-fried in sunflower oil, finished under a lid. No salo (Klopotenko's salo is a chef's addition). ~19 cutlets.",
+  "ingredients": [
+   {
+    "id": "ing-chicken-breast-raw",
+    "g": 600
+   },
+   {
+    "id": "ing-chicken-whole-raw",
+    "g": 400
+   },
+   {
+    "id": "onion",
+    "g": 160
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 110
+   },
+   {
+    "id": "white-bread",
+    "g": 120
+   },
+   {
+    "id": "milk-2-5",
+    "g": 120
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 10
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 30
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 78
+   }
+  ],
+  "cooked_g": 1350,
+  "yield_note": "Raw mass 1550 g (flour = only the coating that sticks). Cooking loss ~18 % (same basis as pork/beef cutlets: moist bread-bound mince, pan-fried then steamed under lid) → ~1272 g, plus absorbed oil 78 g ≈ 5 % of raw mass (estimate, lower end of the brief's 5–15 % pan-frying range; Klopotenko uses only 3–4 tbsp for the whole pan). Salt/pepper omitted.",
+  "references": [
+   {
+    "kcal100": 262,
+    "source": "USDA FNDDS 2021-2023, 27246300 Chicken or turkey cake, patty, or croquette",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 190,
+    "source": "Estonian NutriData/TKA 86465 'Burger, minced turkey, fried, with oil' (turkey mince + soaked bread, egg, onion; closest poultry-cutlet entry)",
+    "url": "https://tka.nutridata.ee/et/foods/2335"
+   },
+   {
+    "kcal100": 163,
+    "source": "Ukrainian school-menu tech card (Збірник рецептур страв для харчування дітей у закладах освіти, 2024, Стратегія реформування шкільного харчування), ТК 9.54 «Січеники з м'яса птиці» (oven-baked, chicken fillet, onion, flour, egg): 132 kcal per 81 g portion → 163 kcal/100 g",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   }
+  ],
+  "pcGrams_note": "Raw cutlet ~80–85 g → ~70 g cooked (this batch 1350 g / ~19). Klopotenko forms 100 g raw cutlets (→ ~85 g cooked); school poultry січеники are served 3–4 small pieces per 81–139 g portion."
+ },
+ "chicken-kyiv": {
+  "recipe_source": "https://www.unian.ua/recipes/second-courses/meat-dishes/kotleta-po-kijivski-recept-yak-gotuvati-kotletu-po-kijivski-11224268.html (УНІАН «Класична котлета по-київськи»: chicken 1.2 kg, butter 140 g + parsley, 2 eggs, 100 ml milk, 60 g flour, 140 g breadcrumbs; deep-fried ~5 min, then 10 min in oven). Compared: https://klopotenko.com/na-kistochczi-sokovyta-kotleta-po-kyyivsky-vid-yevgena-klopotenka/ (Клопотенко: breast on the bone, butter, 100 g flour, 2 eggs, 150 g breadcrumbs, 700 ml oil in a saucepan, oven finish) and https://klopotenko.com/kotleta-po-kyyivsky-z-kuryachogo-farshu-vid-yevgena-klopotenka/ (double breading flour–egg–crumbs–egg–crumbs).",
+  "version": "Home classic: 4 beaten chicken breast fillets (~130 g each) rolled around frozen butter with dill (20 g butter each), double-breaded (flour, egg+milk, breadcrumbs ×2), deep-fried ~5 min then finished 10 min in the oven.",
+  "ingredients": [
+   {
+    "id": "ing-chicken-breast-raw",
+    "g": 520
+   },
+   {
+    "id": "butter",
+    "g": 80
+   },
+   {
+    "id": "mixed-greens",
+    "g": 8
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 30
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 80
+   },
+   {
+    "id": "milk-2-5",
+    "g": 20
+   },
+   {
+    "id": "ing-breadcrumbs",
+    "g": 100
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 85
+   }
+  ],
+  "cooked_g": 815,
+  "yield_note": "Coating amounts = what adheres (of 2 eggs ~80 g sticks; ~25 g crumbs and ~8 g flour per cutlet with double breading). Raw breaded mass 838 g. Chicken loses ~15 % under the coating (520 → ~442 g), coating loses ~30 g water (230 → ~200 g), butter assumed to stay sealed (80 g), dill 8 g; absorbed oil 85 g ≈ 10 % of raw breaded mass (brief: deep-fried breaded items ~10–15 %). Cooked ≈ 815 g = 4 cutlets of ~200 g. If butter leaks out, real kcal is slightly lower. 'mixed-greens' stands in for dill/parsley.",
+  "references": [
+   {
+    "kcal100": 280,
+    "source": "USDA FNDDS 2021-2023, 27146400 Chicken kiev",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 301,
+    "source": "Estonian NutriData/TKA 83452 'Chicken Kiev' (Котлета по-киевски; chicken breast with skin, butter + parsley, egg, breadcrumbs, rapeseed oil)",
+    "url": "https://tka.nutridata.ee/et/foods/1307"
+   }
+  ],
+  "pcGrams_note": "Home cutlet from a 120–140 g fillet + 20 g butter ≈ 180–200 g cooked; smaller ones (≈100 g fillet) ≈ 150–160 g, so 160 g is a fair 'one piece'. Estonian TKA gives a piece weight of only 108 g (83452); restaurant Kyiv cutlets are usually 150–200 g."
+ },
+ "pork-chop-breaded": {
+  "recipe_source": "https://klopotenko.com/svynyachi-vidbyvni-v-paniruvalnyh-suharyah-vid-yevgena-klopotenka/ (Клопотенко «Свинячі відбивні в панірувальних сухарях»: 300 g pork antrecote, 2 eggs, 50 g breadcrumbs, 3 tbsp oil, fried 3–4 min per side; 2 portions). Compared: school tech card 8.59 «М'ясні відбивні в сухарях» (meat 690 g net, flour 46 g, eggs 153 g, breadcrumbs 153 g, oil 26 g → 1000 g) and https://klopotenko.com/svynyachi-vidbyvni-vid-yevgena-klopotenka/ (flour–egg version).",
+  "version": "Typical home відбивна: pork loin slices ~120–150 g beaten thin, coated flour → egg → breadcrumbs, pan-fried in sunflower oil ~3–4 min per side. 5 chops.",
+  "ingredients": [
+   {
+    "id": "ing-pork-loin-raw",
+    "g": 600
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 30
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 80
+   },
+   {
+    "id": "ing-breadcrumbs",
+    "g": 60
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 55
+   }
+  ],
+  "cooked_g": 685,
+  "yield_note": "Coating = what adheres (~80 g of 2 eggs, ~12 g crumbs and 6 g flour per chop). Meat loses ~20 % when a thin beaten loin slice is pan-fried (USDA pan-fried pork loin yields ~75–80 %) → 480 g; coating 170 → ~150 g; absorbed oil 55 g ≈ 7 % of raw breaded mass (my estimate within the brief's 5–15 % pan-frying range; Klopotenko uses 3 tbsp ≈ 51 g for the whole pan for 300 g meat, most of which stays in the pan). Salt omitted.",
+  "references": [
+   {
+    "kcal100": 229,
+    "source": "USDA FNDDS 2021-2023, 22101310 Pork, chop, coated, lean and fat eaten",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 255,
+    "source": "Estonian NutriData/TKA 60010 'Pork chops, fried, with oil' (Карбонад: boneless pork, egg + breadcrumbs, fried in rapeseed oil)",
+    "url": "https://tka.nutridata.ee/et/foods/1277"
+   },
+   {
+    "kcal100": 351,
+    "source": "Ukrainian school-menu tech card (Збірник рецептур страв для харчування дітей у закладах освіти, 2024, Стратегія реформування шкільного харчування), ТК 8.17 «Шніцель зі свинини» (pork loin/leg, flour coating only, browned in oil then oven): 214 kcal per 61 g portion → 351 kcal/100 g (school cards use the fatty Ukrainian 'свинина' composition)",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   }
+  ],
+  "pcGrams_note": "One chop from 120–150 g raw loin ≈ 120–140 g cooked with coating (this batch 685 g / 5 = 137 g; 6 thinner chops ≈ 115 g). School card 8.59 portions are 101/145/174 g."
+ },
+ "pechenia": {
+  "recipe_source": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf (school tech card 8.2 «Печеня по-домашньому зі свининою»: pork 470 g net, potato 520 g, onion 100 g, carrot 150 g, oil 20 g, tomato paste 50 g, water 250 g → 1000 g). Compared: https://klopotenko.com/zharkoe-so-svininoj/ (Клопотенко: 400 g pork, 3 potatoes, 3 carrots, 1 onion, 100 g tomato paste, 2 tbsp cream, 3 tbsp oil, garlic) and https://klopotenko.com/svynyna-ta-ovochi-prostyj-reczept-smachnoyi-pecheni/ (470 g pork, 6 potatoes, 100 g carrot, 100 g onion, 20 ml oil, 10 g butter, 200 ml water).",
+  "version": "Home pork-and-potato печеня averaged from the three: pork shoulder cubes browned in oil, onion+carrot sautéed with tomato paste, potato chunks, a little water, stewed covered ~1 h (pot or oven).",
+  "ingredients": [
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 600
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 1000
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "carrots-raw",
+    "g": 150
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 40
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 50
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 10
+   },
+   {
+    "id": "water",
+    "g": 300
+   }
+  ],
+  "cooked_g": 1950,
+  "yield_note": "Potato peeled weight. Raw total 2300 g. Losses: ~90 g steam while browning the meat, ~60 g while sautéing vegetables, ~200 g evaporation over ~1 h covered stewing → ~1950 g (≈15 % loss). The school card (oven, uncovered 'Жар+Пара') loses 36 %, so an oven-dry печеня can be denser. Oil all stays in the dish. Bay leaf/pepper omitted.",
+  "references": [
+   {
+    "kcal100": 218,
+    "source": "Ukrainian school-menu tech card (Збірник рецептур страв для харчування дітей у закладах освіти, 2024, Стратегія реформування шкільного харчування), ТК 8.2 «Печеня по-домашньому зі свининою»: 325 kcal per 149 g portion → 218 kcal/100 g (uses fatty Ukrainian 'свинина' composition and 36 % cooking loss)",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 128,
+    "source": "USDA FNDDS 2021-2023, 27320100 Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; tomato-based sauce",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 150,
+    "source": "Estonian NutriData/TKA 85744 'Stew, with pork and vegetables (with plenty of meat), with oil' (pork 450 g, potato 260 g, carrot, swede, cabbage per 1000 g)",
+    "url": "https://tka.nutridata.ee/et/foods/1437"
+   }
+  ]
+ },
+ "stewed-cabbage": {
+  "recipe_source": "https://tsn.ua/lady/kukhnya/recepty/kapusta-tushkovana-z-svininoyu-1860877.html (ТСН «Капуста тушкована зі свининою»: 1 kg cabbage, 0.5 kg pork, 0.5 kg tomatoes, 200 g onion, 200 g carrot, oil). Compared: https://www.unian.ua/recipes/appetizer/tushkovana-kapusta-klasichniy-i-originalni-recepti-10463508.html (УНІАН: ¼ large head, 300–400 g pork, 1 onion, 1 carrot, 2 tbsp tomato paste) and https://klopotenko.com/sokovytyj-bigos-zi-slyvamy-j-tomatamy-v-duhovczi-vid-yevgena-klopotenka/ (бігос, fresh + sauerkraut).",
+  "version": "Bigos-like home тушкована капуста: pork shoulder browned in oil with onion and carrot, then shredded fresh cabbage plus some sauerkraut, tomato paste and a little water; stewed ~1 h.",
+  "ingredients": [
+   {
+    "id": "cabbage-raw",
+    "g": 1200
+   },
+   {
+    "id": "sauerkraut",
+    "g": 300
+   },
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 500
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "carrots-raw",
+    "g": 150
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 50
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 40
+   },
+   {
+    "id": "water",
+    "g": 150
+   }
+  ],
+  "cooked_g": 2120,
+  "yield_note": "Cabbage = trimmed head. Raw total 2540 g. Losses: ~120 g steam while browning meat and vegetables, ~300 g evaporation during ~1 h stewing with the lid ajar (cabbage releases a lot of water) → 2120 g (≈17 %). Oil all stays in the dish. Bay leaf, pepper and a pinch of sugar omitted.",
+  "references": [
+   {
+    "kcal100": 119,
+    "source": "Estonian NutriData/TKA 84683 'Stew, with pork, cabbage and apple' (pork shoulder 330 g, cabbage 500 g, onion, apple, oil per 1000 g)",
+    "url": "https://tka.nutridata.ee/et/foods/1456"
+   },
+   {
+    "kcal100": 111,
+    "source": "USDA FNDDS 2021-2023, 27420400 Pork and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, tomato-based sauce",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 152,
+    "source": "Estonian NutriData/TKA 84371 'Stew, with mixed minced meat and cabbage' (Рагу, со смешанным фаршем и капустой)",
+    "url": "https://tka.nutridata.ee/et/foods/1454"
+   }
+  ]
+ },
+ "goulash": {
+  "recipe_source": "https://klopotenko.com/gulyash-zi-svynynoyu-ta-nizhne-kartoplyane-pyure-vid-yevgena-klopotenka/ (Клопотенко гуляш: 600 g meat, 1 carrot, 1 onion, 2 tbsp paprika, 3 tbsp oil, 2 tbsp tomato paste, 200 ml water, 1 tbsp flour) adapted to beef. Compared: school tech card 8.9 «Гуляш з вареної яловичини» (beef 1000 g net → 620 g cooked, onion 120, carrot 120, tomato 100, butter 30, flour 20, water 300 → 1000 g) and Estonian TKA 85646 recipe (beef 630, onion 120, flour 30, tomato purée 95, oil 40, water 250, sour cream 120 → 1000 g).",
+  "version": "Soviet/Ukrainian home гуляш з підливою: beef chuck cubes browned in oil, onion + carrot, tomato paste, paprika, water; braised ~1.5–2 h, thickened with flour. Served over mashed potato/buckwheat/pasta (side not included).",
+  "ingredients": [
+   {
+    "id": "ing-beef-chuck-raw",
+    "g": 800
+   },
+   {
+    "id": "onion",
+    "g": 200
+   },
+   {
+    "id": "carrots-raw",
+    "g": 100
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 50
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 20
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 50
+   },
+   {
+    "id": "water",
+    "g": 600
+   }
+  ],
+  "cooked_g": 1400,
+  "yield_note": "Raw total 1820 g. Beef loses ~35–40 % when braised (USDA), but its juices stay in the gravy; real batch losses are steam while browning (~100 g) and evaporation over 1.5–2 h with lid ajar (~320 g) → ~1400 g (≈23 % loss, same as the TKA beef goulash recipe: 1285 → 1000 g). ≈500 g meat + 900 g gravy. Oil all in the dish. Paprika (~2 tbsp, ≈40 kcal per batch), bay leaf and pepper omitted.",
+  "references": [
+   {
+    "kcal100": 160,
+    "source": "Estonian NutriData/TKA 85646 'Goulash, beef' (Гуляш, говядина)",
+    "url": "https://tka.nutridata.ee/et/foods/1599"
+   },
+   {
+    "kcal100": 143,
+    "source": "Ukrainian school-menu tech card (Збірник рецептур страв для харчування дітей у закладах освіти, 2024, Стратегія реформування шкільного харчування), ТК 8.9 «Гуляш з вареної яловичини»: 143 kcal per 100 g portion",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 156,
+    "source": "USDA FNDDS 2021-2023, 27112000 Beef with gravy",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "makaroni-po-flotsky": {
+  "recipe_source": "https://www.unian.ua/recipes/second-courses/meat-dishes/makaroni-po-flotski-smachniy-narodniy-recept-11531020.html (УНІАН: 0.5 kg home mince, 250 g pasta, onion, carrot, garlic, 2 tbsp oil, 2 tbsp tomato paste, 1 glass water). Compared: https://smachno.ua/ua/recepty/osnovnye-blyuda/makarony-po-flotski/ (300–400 g pasta, 600 g beef mince, 2 tbsp tomato paste; ingredient list via search snippet, page returns 403) and https://tsn.ua/food/druhi-stravy/makaroni-po-flotski-ukrayinska-versiya-italiyskogo-bolonyeze-2450818.html (500 g boiled beef, 350 g pasta, onion, 1 tbsp oil, 50 g butter).",
+  "version": "Classic home version (as the hint says, no tomato): 350 g pasta boiled and drained, mixed with 500 g pork+beef mince fried with onion in oil (fat not drained).",
+  "ingredients": [
+   {
+    "id": "ing-pasta-dry",
+    "g": 350
+   },
+   {
+    "id": "ing-pork-ground-raw",
+    "g": 250
+   },
+   {
+    "id": "ing-beef-ground-raw",
+    "g": 250
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 30
+   },
+   {
+    "id": "water",
+    "g": 455
+   }
+  ],
+  "cooked_g": 1310,
+  "yield_note": "Pasta 350 g dry × 2.3 (boiled, drained) = 805 g — absorbed water is in cooked_g, drained water not listed. Mince 500 g fried → ~375 g (≈25 % water loss; rendered fat stays and coats the pasta), onion 150 → ~100 g, oil 30 g counted fully. Total ≈ 1310 g. Salt/pepper omitted. [Coordinator: added \"water\" 455 g = water absorbed by the pasta (805 g cooked − 350 g dry), so the ingredient sum (1485 g) covers cooked_g; it carries 0 kcal and changes nothing in the calculation.]",
+  "references": [
+   {
+    "kcal100": 170,
+    "source": "Estonian NutriData/TKA 86672 'Pasta, with minced meat' (Макароны, с фаршем; 7 %-fat beef mince, more pasta than meat)",
+    "url": "https://tka.nutridata.ee/et/foods/1752"
+   },
+   {
+    "kcal100": 295,
+    "source": "tsn.ua «Макарони по-флотськи» — site states 295 kcal per 100 g (boiled-beef version with 50 g butter; basis of the figure not stated, looks computed on raw weight)",
+    "url": "https://tsn.ua/food/druhi-stravy/makaroni-po-flotski-ukrayinska-versiya-italiyskogo-bolonyeze-2450818.html"
+   }
+  ]
+ },
+ "plov": {
+  "recipe_source": "https://klopotenko.com/plov-zi-svynyny-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 1 kg pork neck, 400 g rice, 2 carrots, 1 onion, 2 heads garlic, 800 ml water, 100 ml oil; 5 portions). Compared: https://www.unian.ua/recipes/second-courses/meat-dishes/smachniy-plov-recept-na-skovorodi-v-multivarci-i-kazani-11701381.html (УНІАН quick pork plov: 600 g pork, 1.5 cups rice, 1 carrot, 2 onions, 30 g oil, water 2–2.5 cm over rice) and https://smachno.ua/ua/recepty/osnovnye-blyuda/retsept-plova-so-svininoj/ (300 g pork, 200 g rice, 150 g carrot, 150 g onion, 50 ml oil; via search snippet).",
+  "version": "Home pork plov in a pot/казан: pork shoulder/neck fried in oil, onion and julienned carrot, a whole head of garlic, long-grain rice on top, water ~2:1, simmered covered until absorbed.",
+  "ingredients": [
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 600
+   },
+   {
+    "id": "ing-rice-dry",
+    "g": 400
+   },
+   {
+    "id": "carrots-raw",
+    "g": 300
+   },
+   {
+    "id": "onion",
+    "g": 200
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 80
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 40
+   },
+   {
+    "id": "water",
+    "g": 800
+   }
+  ],
+  "cooked_g": 1965,
+  "yield_note": "Raw total 2420 g. Rice 400 g → ~1080 g (×2.7, absorbs ~680 g of the 800 g water; rest evaporates); pork 600 → ~420 g (≈30 % loss frying + stewing); carrot+onion 500 → ~350 g after long frying; garlic ~35 g; oil 80 g all in the dish → ≈1965 g. Zira/spice mix and salt omitted.",
+  "references": [
+   {
+    "kcal100": 171,
+    "source": "Estonian NutriData/TKA 84544 'Pilaf, with pork, with oil' (Плов, со свининой, с маслом)",
+    "url": "https://tka.nutridata.ee/et/foods/1393"
+   },
+   {
+    "kcal100": 143,
+    "source": "USDA FNDDS 2021-2023, 27220310 Ham or pork and rice, no sauce",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "fried-potatoes": {
+  "recipe_source": "Main: Доцяк В.С. «Українська кухня. Підручник» (Львів: Оріяна-Нова, 1998), «Картопля смажена (з сирої)»: картопля 483/362 г (брутто/нетто), кулінарний жир 25 г → маса смаженої картоплі 250 г; https://archive.org/details/ukrainskakuhnya1998 (OCR text: https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt). Compared with home recipes on focus.ua https://focus.ua/uk/lifestyle/514202-zharenaya-kartoshka-s-korochkoy-samye-vkusnye-i-prostye-recepty (картопля 650 г + олія 2–3 ст. л. (30–45 мл); картопля 500 г + цибуля 80 г + олія 40 мл). Averaged into one typical home version.",
+  "version": "Peeled raw potatoes cut in slices/sticks, pan-fried in sunflower oil with stirring until golden and soft (no draining), one onion added for the last ~10 min; salt. Without sour cream / butter on top.",
+  "ingredients": [
+   {
+    "id": "ing-potato-raw",
+    "g": 1000
+   },
+   {
+    "id": "onion",
+    "g": 100
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 60
+   }
+  ],
+  "cooked_g": 735,
+  "yield_note": "Potato is peeled weight (≈1150–1200 g as bought, ~15 % peel removed). OIL: 60 g = 6 % of raw potato, counted as absorbed – in home pan-frying of sliced potatoes the oil is not poured off and is soaked up; basis: Dotsiak/Soviet catering norm 25 g fat per 362 g raw potato (6.9 %), home recipes above 4–7.4 %, and Bognár (Grasas y Aceites 1998, 49:250–260: fried potatoes/vegetables take up 2–14 g fat per 100 g raw food). YIELD: Dotsiak norm (362 g potato + 25 g fat → 250 g fried) = 0.646 × (potato+fat) → 1060 g × 0.646 ≈ 685 g, plus fried onion 100 → ~50 g ⇒ ≈735 g.",
+  "references": [
+   {
+    "kcal100": 185,
+    "source": "USDA FNDDS 2021-2023, 71403040 Potato, home fries, from fresh",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 96,
+    "source": "Estonian NutriData (TKA), recipe 1401 «Potatoes (raw), fried, with oil / Картофель (сырой), жареный, с маслом» – NOTE: recipe uses only 10 g oil per 1200 g potato (0.8 %), much leaner than Ukrainian home frying",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1401/version/public?tka=true"
+   }
+  ]
+ },
+ "stewed-potatoes": {
+  "recipe_source": "https://tsn.ua/lady/kukhnya/recepty/tushkovana-kartoplia-z-miasom-retsept-znayomyy-z-dytynstva-2909738.html (ТСН «Тушкована картопля з м'ясом»: 1.7 kg potato, 700 g meat (chicken, pork or beef), 150 g onion, 250 g carrot, 3–4 garlic, 30 ml oil, 2 tbsp tomato paste, 1.5 L water). Compared: https://smachno.ua/ua/recepty/osnovnye-blyuda/tushenaya-kartoshka-s-myasom/ (1 kg potato, 600 g pork, 2 onions, 1 carrot; via search snippet) and https://klopotenko.com/tushkovana-molodka-kartoplya-z-myasom-vid-yevgena-klopotenka/ (500 g young potato, 200 g pork, 1 onion, 300 ml water).",
+  "version": "Home тушкована картопля з м'ясом: pork shoulder browned in oil with onion and carrot, potato chunks, water to about two-thirds of the potatoes, 1 tbsp tomato paste, simmered covered ~1 h until soft with some thick liquid.",
+  "ingredients": [
+   {
+    "id": "ing-potato-raw",
+    "g": 1500
+   },
+   {
+    "id": "ing-pork-shoulder-raw",
+    "g": 600
+   },
+   {
+    "id": "onion",
+    "g": 150
+   },
+   {
+    "id": "carrots-raw",
+    "g": 200
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 30
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 25
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 15
+   },
+   {
+    "id": "water",
+    "g": 1000
+   }
+  ],
+  "cooked_g": 3190,
+  "yield_note": "Potato peeled weight. Raw total 3520 g. Losses: ~80 g steam while browning meat/vegetables, ~250 g evaporation over ~1 h covered simmer → ≈3190 g (≈9 %). Liquid is part of the dish. Bay leaf, pepper omitted. With chicken instead of pork the value would be lower.",
+  "references": [
+   {
+    "kcal100": 95,
+    "source": "tsn.ua «Тушкована картопля з мʼясом» — site states 95 kcal per 100 g for its recipe",
+    "url": "https://tsn.ua/lady/kukhnya/recepty/tushkovana-kartoplia-z-miasom-retsept-znayomyy-z-dytynstva-2909738.html"
+   },
+   {
+    "kcal100": 128,
+    "source": "USDA FNDDS 2021-2023, 27320040 Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; no sauce",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 128,
+    "source": "Estonian NutriData/TKA 84541 'Stew, with pork and vegetables, with oil' (pork 360 g, potato 250 g, carrot, swede, cabbage, tomato per 1000 g)",
+    "url": "https://tka.nutridata.ee/et/foods/1704"
+   }
+  ]
+ },
+ "fried-fish": {
+  "recipe_source": "Main: Доцяк В.С. «Українська кухня» (1998), «Риба смажена порціонними шматочками»: тріска/мерланг 155/119 г (філе зі шкірою без кісток), борошно 6 г, олія 6 г → маса смаженої риби 100 г; https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt. Compared with home recipe https://netfreedom.org.ua/yak-prygotuvaty-hek-na-skovorodi/ (хек 800–1000 г, борошно 2 ст. л., олія 50 мл у сковороді) and the method on 24tv.ua https://24tv.ua/smachnonews24/yak-smazhiti-heka-yak-legko-smachno-prigotuvati-heka_n2939039/amp (pieces 1.5–2 cm, rolled in flour, 3–5 min per side).",
+  "version": "Frozen hake (or pollock) carcass, thawed, cut into 1.5–2 cm pieces, salted, rolled in wheat flour, pan-fried in sunflower oil 3–5 min per side. Values per 100 g of the EDIBLE fried fish (flesh+skin+crust, without bones).",
+  "ingredients": [
+   {
+    "id": "ing-pollock-raw",
+    "g": 750
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 35
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 40
+   }
+  ],
+  "cooked_g": 625,
+  "yield_note": "Fish = edible fillet (flesh + skin, no bones) from 1000 g headless gutted hake carcass (bones/fins/belly flap ≈25 %; Dotsiak gives 155→119 g = 77 % for cod/whiting carcass→fillet). Flour = what adheres (~4.7 % of fish; Dotsiak 6 g per 119 g). OIL absorbed 40 g = 5.3 % of fillet: Dotsiak norm 6 g oil per 119 g fish (5 %); Estonian NutriData pan-fried perch 60 g oil per 1260 g fish (4.8 %); the rest of the ~50 ml in the pan stays behind. YIELD: Dotsiak 119+6+6 = 131 g → 100 g fried (0.76; same 0.76 in NutriData perch recipe) ⇒ 825 g × 0.76 ≈ 625 g. If the user weighs a piece WITH the backbone, ~15–20 % of that weight is bone.",
+  "references": [
+   {
+    "kcal100": 157,
+    "source": "Estonian NutriData (TKA), recipe 1329 «Perch, fried, with oil / Окунь, жареный, с маслом» (lean white fish pan-fried, no flour coating)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1329/version/public?tka=true"
+   },
+   {
+    "kcal100": 227,
+    "source": "USDA FNDDS 2021-2023, 26158130 Fish, white, mixed species, fried (US coated/breaded, more coating and fat than a flour dusting)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 120,
+    "source": "netfreedom.org.ua recipe article states «110–130 ккал» per 100 g for hake fried in flour (midpoint used; site, not a food table)",
+    "url": "https://netfreedom.org.ua/yak-prygotuvaty-hek-na-skovorodi/"
+   }
+  ]
+ },
+ "fried-mushrooms": {
+  "recipe_source": "Typical home version averaged from: 24tv.ua https://24tv.ua/smachnonews24/yak-prigotuvati-shampinyoni-smetani-pokrokoviy-retsept_n3048326/amp (печериці 300 г, 1 цибулина, олія; smetana variant); Доцяк В.С. «Українська кухня» (1998) yields for fried champignons: печериці 164/125 г + олія 5 г → маса смажених грибів 50 г; печериці 247/188 + маргарин 10 → 75 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); Estonian NutriData recipe 443169 (champignons 2000 g + oil 140 g → 1000 g).",
+  "version": "Sliced champignons fried in sunflower oil until their liquid evaporates and they brown, with one chopped onion; salt, pepper. WITHOUT sour cream (the smetana variant – +150 g smetana-15 per 1 kg mushrooms, simmered 3–5 min – comes out at about the same kcal/100 g, ~+3 %).",
+  "ingredients": [
+   {
+    "id": "mushrooms-raw",
+    "g": 1000
+   },
+   {
+    "id": "onion",
+    "g": 200
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 70
+   }
+  ],
+  "cooked_g": 600,
+  "yield_note": "Mushrooms = trimmed, washed champignons. OIL: all 70 g counted (≈4 ст. л. per kg; 7 % of mushrooms) – the mushrooms and onion soak it up and nothing is poured off; NutriData champignon recipe uses 7 %, home recipes 2–3 ст. л. per 500 g. YIELD: champignons lose ~57 % water when fried until browned (Dotsiak 125 g → 50 g incl. 5 g oil; NutriData 2000 g + 140 g oil → 1000 g ⇒ mushrooms 2000 → 860 g, 43 %); onion fried ~50 %. 1000×0.43 + 200×0.5 + 70 oil ≈ 600 g.",
+  "references": [
+   {
+    "kcal100": 169,
+    "source": "Estonian NutriData (TKA), recipe 443169 «Champignons, fried, with oil / Шампиньоны, жареные, с маслом» (2000 g champignons + 140 g oil → 1000 g)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/443169/version/public?tka=true"
+   },
+   {
+    "kcal100": 95,
+    "source": "Estonian NutriData (TKA), recipe 1425 «Mixed mushrooms, fried, with oil / Грибное ассорти, жареные, с маслом» (1230 g mushrooms + 120 g onion + 70 g oil → 1000 g; less oil and less shrinkage)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1425/version/public?tka=true"
+   },
+   {
+    "kcal100": 70,
+    "source": "USDA FNDDS 2021-2023, 75219033 Mushrooms, fresh, cooked with oil (US sautéed, little oil, little shrinkage)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "fried-liver": {
+  "recipe_source": "Typical home version averaged from: Доцяк В.С. «Українська кухня» (1998), «Печінка смажена з жиром або цибулею»: печінка 127/105 г, борошно 5 г, жир 10 г → маса смаженої печінки 75 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); poradu.pp.ua https://poradu.pp.ua/recepti/print:page,1,21597-yak-gotuvati-svinyachu-pechnku-poradi-po-prigotuvannyu-recepti.html (печінка ~500 г, олія 40 мл, 1 велика цибулина, морква); УНІАН https://www.unian.ua/recipes/second-courses/meat-dishes/kuryacha-pechinka-recept-yak-prigotuvati-kuryachu-pechinku-recepti-11197796.html (куряча печінка 450–500 г, 2–3 цибулини).",
+  "version": "CHICKEN liver (the more common home choice today: cheap, quick, no soaking) cut in pieces, lightly dusted in flour, pan-fried in sunflower oil with plenty of onion half-rings. Beef/pork liver version (soaked in milk, sliced, same method) comes out ~5 % higher per 100 g (beef liver 135 vs chicken 119 kcal raw).",
+  "ingredients": [
+   {
+    "id": "ing-chicken-liver-raw",
+    "g": 1000
+   },
+   {
+    "id": "onion",
+    "g": 250
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 30
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 60
+   }
+  ],
+  "cooked_g": 865,
+  "yield_note": "Liver cleaned of membranes/ducts. Flour = what adheres (Dotsiak 5 g per 105 g; many cooks skip it for chicken liver – −10 kcal/100 g). OIL 60 g (≈3.5 ст. л.; 4.8 % of liver+onion) counted fully: it is soaked up by the onion and liver, nothing is poured off (Dotsiak uses 10 g fat per 105 g liver; poradu.pp.ua 40 ml per 500 g liver + onion + carrot). YIELD: liver+flour+fat → 0.68 (Dotsiak 115 g → 75 g ≈ 0.65 for well-done portions; NutriData beef liver 1350 g → 1000 g = 0.74; USDA pan-fried chicken liver ≈0.7) ⇒ 1090 × 0.68 ≈ 740 g; onion 250 g fried → ~125 g ⇒ ≈865 g.",
+  "references": [
+   {
+    "kcal100": 189,
+    "source": "USDA FNDDS 2021-2023, 25110450 Liver, chicken (NFS, cooked; no onion)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 225,
+    "source": "Estonian NutriData (TKA), recipe 1321 «Beef liver, fried, with oil / Говяжая печень, жареная, с маслом» (1300 g liver + 50 g oil → 1000 g; no onion)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1321/version/public?tka=true"
+   },
+   {
+    "kcal100": 210,
+    "source": "netfreedom.org.ua «Як жарити печінку» – states «близько 210 ккал на 100 г для курячої та яловичої» fried liver (recipe site)",
+    "url": "https://netfreedom.org.ua/yak-zharyty-pechinku-sekrety-sokovytoyi-ta-nizhnoyi-stravy/"
+   }
+  ]
+ },
+ "omelette": {
+  "recipe_source": "Typical home version averaged from: Доцяк В.С. «Українська кухня» (1998), «Омлет натуральний»: яйця 80 г, молоко 30 г, маргарин/масло 5 г → маса готового омлету 105 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); poradu.pp.ua kindergarten-style omelette (4 яйця, 150 мл молока, 20 г вершкового масла) https://poradu.pp.ua/recepti/print:page,1,54128-yak-v-dityachomu-sadu-kuharka-na-pensyi-rozkrila-sekret-omletu-yakiy-obozhnyuvali-vs-dti-90-h.html; МОН/«Знаїмо» school tech card ТК 5.9 «Омлет з куркумою» (яйця 890 г, молоко 190 г, олія 10 г → 1000 г) https://znaimo.gov.ua/media/Документи/Техкарти/Категорія страви з яєць ТК5.1-5.24.pdf",
+  "version": "Eggs whisked with milk (2.5 %) and salt, poured onto a pan with melted butter, cooked under a lid until set (fluffy home omelette, no flour). With 1 tsp sunflower oil instead of butter the result is ~the same.",
+  "ingredients": [
+   {
+    "id": "ing-egg-raw",
+    "g": 275
+   },
+   {
+    "id": "milk-2-5",
+    "g": 150
+   },
+   {
+    "id": "butter",
+    "g": 15
+   }
+  ],
+  "cooked_g": 405,
+  "yield_note": "5 eggs C1 × 55 g without shell; milk 150 ml (home recipes 25–40 ml per egg); butter 15 g in the pan – all of it stays in the omelette. YIELD: Dotsiak 110 g mixture + 5 g fat → 105 g (0.91); school card 1095 → 1000 (0.91); NutriData oven omelette 1060 → 1000 (0.94) ⇒ 440 × 0.92 ≈ 405 g.",
+  "references": [
+   {
+    "kcal100": 159,
+    "source": "Ukrainian school-menu tech card ТК 5.9 «Омлет з куркумою» (МОН/МОЗ «Знаїмо» collection): 143 kcal per 90 g portion → 159 kcal/100 g (eggs 890 g, milk 190 g, oil 10 g per 1000 g)",
+    "url": "https://znaimo.gov.ua/media/Документи/Техкарти/Категорія страви з яєць ТК5.1-5.24.pdf"
+   },
+   {
+    "kcal100": 124,
+    "source": "Estonian NutriData (TKA), recipe 1363 «Oven-baked omelette (milk 2.5 % fat) / Омлет в духовке» (egg 590 g, milk 430 g, flour 40 g → 1000 g; more milk than the Ukrainian version)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1363/version/public?tka=true"
+   },
+   {
+    "kcal100": 182,
+    "source": "USDA FNDDS 2021-2023, 32130020 Egg omelet or scrambled egg, made with butter (US: little milk)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "pyrizhky-potato": {
+  "recipe_source": "https://klopotenko.com/smazheni-pyrizhky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/ (Смажені пиріжки з картоплею, Є. Клопотенко: 500 г борошна, 200 мл води, 50 г сметани, 15 г живих дріжджів, 50 мл олії; 500 г картоплі, цибулина, 2 ст. л. олії; 12 шт.) — averaged with https://24tv.ua/smachnonews24/pirizhki-kartopleyu-retsept-yak-zrobiti-smachni-pirizhki-kartopleyu_n2942897/amp (базарні смажені пиріжки: 800 г борошна, 500 мл води, 10 г сухих дріжджів, 1 ст. л. цукру, 3 ст. л. олії; картопля з кропом і маслом; олія до половини висоти пиріжків) and the potato filling of https://www.unian.ua/recipes/desserts/pies/neveroyatno-vozdushnye-pirozhki-v-duhovke-samyy-udachnyy-recept-testa-12738591.html (500 г картоплі, цибулина, 30 г масла, 20 мл олії, кріп)",
+  "version": "Lean yeast dough on water with a little sunflower oil and sugar; filling = boiled mashed potato with onion fried in oil, butter and dill (~1:1 filling to dough); pyrizhky shallow-fried in sunflower oil (oil to half their height), drained on paper.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 500
+   },
+   {
+    "id": "water",
+    "g": 270
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 180
+   },
+   {
+    "id": "sugar",
+    "g": 15
+   },
+   {
+    "id": "ing-yeast-dry",
+    "g": 7
+   },
+   {
+    "id": "ing-potato-raw",
+    "g": 700
+   },
+   {
+    "id": "onion",
+    "g": 100
+   },
+   {
+    "id": "butter",
+    "g": 20
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   }
+  ],
+  "cooked_g": 1590,
+  "yield_note": "Potato weight is peeled; salt omitted. Raw assembled pyrizhky ≈1640 g: dough ≈832 g + filling ≈810 g (700 g potato boiled & mashed ≈690 g, onion 100 g fried down to ≈60 g, 30 g oil, 20 g butter, 10 g dill). Frying: ≈10 % moisture loss from the dough (≈165 g) + absorbed oil 110 g → ≈1590 g ≈ 22–23 pyrizhky × 70 g. sunflower-oil 180 g = 40 g in the dough + 30 g for frying the onion (all goes into the filling) + 110 g absorbed from the pan. Oil-uptake basis: no published figure for pan-fried pyrizhky found; deep-fried doughnuts end up ~24–26 % oil (doughnut frying studies), i.e. ~15 % of dough weight absorbed; with half-depth frying only the dough skin is exposed and the potato filling is sealed, so I used ≈13 % of dough weight ≈ 6.7 % of the raw pyrizhok weight. (Klopotenko fries his 12 pyrizhky in only 50 ml oil in total, so his version absorbs less — this is the 'bazaar' amount of oil.)",
+  "references": [
+   {
+    "kcal100": 248,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished dish for his 'Смажені пиріжки з картоплею' (yeast dough, potato–onion filling, pan-fried)",
+    "url": "https://klopotenko.com/smazheni-pyrizhky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/"
+   },
+   {
+    "kcal100": 310,
+    "source": "USDA FNDDS 2021-2023, 58124500 Samosa (potato-filled fried pastry; closest analog — FNDDS has no pyrizhky/piroshki code)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ],
+  "pcGrams_note": "70 g = a medium home pyrizhok: UNIAN divides the dough into 35–40 g pieces (≈65–75 g finished with filling); 24tv's bazaar version uses 50–60 g dough pieces (≈90–100 g finished); Klopotenko makes 12 from ~1.3 kg (~100 g each). This batch ≈ 22–23 pieces × 70 g."
+ },
+ "pyrizhky-cabbage": {
+  "recipe_source": "https://klopotenko.com/puhki-ta-sokovyti-pyrizhky-z-kapustoyu-v-duhovczi-vid-yevgena-klopotenka/ (Пиріжки з капустою в духовці, Є. Клопотенко: 500 г борошна, 1 яйце, 100 мл води + 100 мл молока 2,5 %, 25 г живих дріжджів, 3 ст. л. олії, 1 ч. л. цукру; капуста + цибуля + 2 ст. л. олії; жовток) — averaged with https://www.unian.ua/recipes/desserts/pies/neveroyatno-vozdushnye-pirozhki-v-duhovke-samyy-udachnyy-recept-testa-12738591.html (450 г борошна, 270 мл води, 50 г олії, 8 г дріжджів, 25 г цукру; капусти ≤400 г + цибуля, 30 г масла, 20 мл олії) and the filling of https://klopotenko.com/puhke-tisto-ta-sokovyta-nachynka-drizhdzhovyj-pyrig-z-kapustoyu-za-reczeptom-yevgena-klopotenka/ (500 г капусти, морква, цибуля, 3 ст. л. олії, 1 ст. л. томатної пасти)",
+  "version": "Yeast dough on milk + water with an egg, sunflower oil and a little sugar; filling = fresh white cabbage stewed with onion, carrot, oil and a spoon of tomato paste; brushed with egg, baked at 180 °C ~25 min.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 500
+   },
+   {
+    "id": "milk-2-5",
+    "g": 150
+   },
+   {
+    "id": "water",
+    "g": 100
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 75
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 90
+   },
+   {
+    "id": "sugar",
+    "g": 20
+   },
+   {
+    "id": "ing-yeast-dry",
+    "g": 8
+   },
+   {
+    "id": "cabbage-raw",
+    "g": 700
+   },
+   {
+    "id": "onion",
+    "g": 100
+   },
+   {
+    "id": "carrots-raw",
+    "g": 90
+   },
+   {
+    "id": "ing-tomato-paste",
+    "g": 25
+   }
+  ],
+  "cooked_g": 1410,
+  "yield_note": "Vegetables weighed cleaned (cabbage cored, onion/carrot peeled); salt, pepper omitted. Egg 75 g = 55 g in the dough + ~20 g for brushing; oil 90 g = 50 g in the dough + 40 g for stewing the filling (all stays in it). Dough ≈883 g; filling 890 g raw veg + 40 g oil + 25 g paste stewed 30–40 min → ≈700 g (≈27 % water loss); + 20 g egg wash → ≈1600 g raw pyrizhky; baking loss ≈12 % (brief: bread/pyrizhky 10–15 %) → ≈1410 g ≈ 23 pyrizhky × 60 g.",
+  "references": [
+   {
+    "kcal100": 246,
+    "source": "Estonian food composition database NutriData/TKA (Tervise Arengu Instituut), food 1575 / code 84731 'Pirukas, kapsaga (pärmitainas)' — Pie, cabbage (yeast dough), baked, ~70 g pieces (dough on margarine, stewed cabbage + egg)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1575/version/public?tka=true"
+   },
+   {
+    "kcal100": 170,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished dish for 'Дріжджовий пиріг з капустою' (lean yeast dough + stewed cabbage/carrot/onion/tomato-paste filling, one big pie). Note: this looks low against its own ingredient list",
+    "url": "https://klopotenko.com/puhke-tisto-ta-sokovyta-nachynka-drizhdzhovyj-pyrig-z-kapustoyu-za-reczeptom-yevgena-klopotenka/"
+   }
+  ],
+  "pcGrams_note": "Estonian TKA cabbage pirukas: dough cut into ~60 g pieces, 70 g per finished piece; UNIAN: 35–40 g dough pieces (≈60–65 g finished). 60 g is a typical small home pyrizhok; this batch ≈ 23 × 60 g."
+ },
+ "pyrizhky-cherry": {
+  "recipe_source": "https://klopotenko.com/smak-lita-v-babusi-pyrizhky-z-vyshneyu-vid-yevgena-klopotenka/ (Пиріжки з вишнею в духовці, Є. Клопотенко: 500 г борошна, 100 мл води + 100 мл молока, 1 яйце, 3 ст. л. олії, 25 г живих дріжджів, 1 ст. л. цукру; 400 г вишні без кісточок, цукор, 1,5 ст. л. крохмалю; жовток; ≈18 шт.) — averaged with https://duflu.org.ua/?p=15098 (сдобніший домашній варіант: 500 г борошна, 250 мл молока, 25 г дріжджів, 1 яйце, 100 г масла або 3 ст. л. олії, 100 г цукру; 500–600 г вишні, 80–100 г цукру, 1,5–2 ст. л. крохмалю; 18–20 шт.)",
+  "version": "Sweet yeast dough on milk with egg, butter and sugar; filling = pitted sour cherries (fresh, or thawed and drained) with sugar and potato starch; brushed with egg; BAKED at 180 °C 25–30 min (baked is the usual home way; fried cherry pyrizhky are rarer).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 500
+   },
+   {
+    "id": "milk-2-5",
+    "g": 250
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 75
+   },
+   {
+    "id": "butter",
+    "g": 50
+   },
+   {
+    "id": "sugar",
+    "g": 150
+   },
+   {
+    "id": "ing-yeast-dry",
+    "g": 8
+   },
+   {
+    "id": "cherries-sour",
+    "g": 500
+   },
+   {
+    "id": "ing-potato-starch",
+    "g": 20
+   }
+  ],
+  "cooked_g": 1350,
+  "yield_note": "Cherries weighed pitted (stones removed; if frozen — thawed and juice drained). Sugar 150 g = 70 g in the dough + 80 g in the filling; egg 75 g = 55 g in the dough + ~20 g for brushing; fresh yeast 25 g ≈ 8 g dry. Dough ≈933 g + filling 600 g + 20 g wash = ≈1553 g raw; baking loss ≈13 % (dough ~12 % + cherry juice escaping/evaporating) → ≈1350 g ≈ 22 pyrizhky × 60 g (or 19 × 70 g).",
+  "references": [
+   {
+    "kcal100": 276,
+    "source": "Estonian NutriData/TKA, food 3403 / code 10079 'Pirukas, õunaviiludega (pärmitainas)' — Pie, apple slices (sweet yeast dough with butter, milk, egg, sugar), baked; closest fruit-filled yeast pie (no cherry pirukas in the database)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/3403/version/public?tka=true"
+   },
+   {
+    "kcal100": 293,
+    "source": "Czech food composition database (nutridatabaze.cz, ÚZEI), FCDB 0794 'Buchty kynuté, plněné tvarohovou náplní, modelová receptura' — baked filled sweet yeast buns (analog; quark filling instead of cherries)",
+    "url": "https://www.nutridatabaze.cz/potraviny/?id=794"
+   }
+  ],
+  "pcGrams_note": "Klopotenko gets ≈18 pyrizhky from a ~1.4 kg batch (≈70–75 g each); duflu: 18–20 per 500 g flour (≈65–75 g). 60 g is a smaller home pyrizhok; 60–75 g is the typical range. This batch ≈ 22 × 60 g."
+ },
+ "pampushky": {
+  "recipe_source": "https://klopotenko.com/pampushky-z-chasnykom/ (Пампушки з часником, Є. Клопотенко: 450 г борошна, 250 мл молока, 100 г масла або олії, 10 г сухих дріжджів, 1 ст. л. цукру; заправка 3 зубчики часнику, 6 гілочок кропу, 2 ст. л. олії, 1 ст. л. оцту; 12 шт.) — compared with https://klopotenko.com/idealni-pampushky-do-borshhu-reczept-na-suhyh-drizhdzhah-ta-moloczi-vid-yevgena-klopotenka/ (600 г борошна, 200 мл молока, 2 ст. л. олії, жовток для змащування; заправка 2 ст. л. олії + 2 зубчики часнику + кріп). Used a typical home version between the two (oil in the dough instead of 100 g butter, a fuller garlic dressing).",
+  "version": "Small yeast buns (dough on milk + water with an egg, sunflower oil, sugar) packed together in a pan, brushed with egg, baked at 180 °C ~25 min; poured over while hot with garlic dressing (garlic crushed with salt, sunflower oil, a little water, dill).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 500
+   },
+   {
+    "id": "milk-2-5",
+    "g": 150
+   },
+   {
+    "id": "water",
+    "g": 180
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 75
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 90
+   },
+   {
+    "id": "sugar",
+    "g": 20
+   },
+   {
+    "id": "ing-yeast-dry",
+    "g": 7
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 25
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   }
+  ],
+  "cooked_g": 945,
+  "yield_note": "Water 180 g = 150 g dough + 30 g dressing; oil 90 g = 40 g dough + 50 g dressing; egg 75 g = 55 g dough + ~20 g wash; garlic = 5 peeled cloves; salt and vinegar (≤1 tbsp) omitted. Dough 922 g + 20 g wash = 942 g; baking loss ≈12 % → ≈829 g of buns; garlic dressing ≈115 g poured over and counted fully (it soaks in) → ≈945 g ≈ 23–24 pampushky × 40 g.",
+  "references": [
+   {
+    "kcal100": 280,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished dish for 'Пампушки з часником' (buns + garlic-oil dressing)",
+    "url": "https://klopotenko.com/pampushky-z-chasnykom/"
+   },
+   {
+    "kcal100": 309,
+    "source": "USDA FNDDS 2021-2023, 51156500 Roll, garlic",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 327,
+    "source": "Estonian NutriData/TKA, food 2170 / code 86968 'Küüslaugusai' — Garlic bread (white bread with garlic butter, baked); analog",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/2170/version/public?tka=true"
+   }
+  ],
+  "pcGrams_note": "Dough from 500 g flour is usually divided into 16–24 balls → baked pampushky of ~35–55 g; Klopotenko makes 12 larger ones (~65–70 g). 40 g is a typical small pampushka served with borscht; this batch ≈ 23–24 × 40 g."
+ },
+ "holodets": {
+  "recipe_source": "https://tsn.ua/lady/kukhnya/recepty/holodec-tradiciyniy-recept-1915348.html (ТСН «Холодець: традиційний рецепт»: 3 pig trotters + 1 hock (рулька), onion, carrot, garlic, 3 L water, simmer ~6 h). Compared: https://www.unian.ua/recipes/navaristiy-i-sitniy-holodec-recept-ulyublenoji-stravi-12144762.html (УНІАН: 4 trotters + 1.5 kg pork, 5 h uncovered; beef version 1 kg beef shank, 5–6 h) and https://smachno.ua/ua/posts/vse-bude-smachno/holodets-iz-svinyh-nozhek-ot-ally-kovalchuk/ (700 g pork trotters + 1.4 kg beef, 2 L water per kg meat with bones; via search snippet).",
+  "version": "Home pork-and-beef холодець without gelatin: ~1.2 kg pig trotters + ~1 kg pork hock + ~1 kg bone-in beef shank simmered 6–7 h in 3.5 L water with onion, carrot and spices (vegetables discarded), meat picked off the bones (skin kept) and set in the strained broth with garlic.",
+  "ingredients": [
+   {
+    "id": "ing-pork-hock-raw",
+    "g": 1420
+   },
+   {
+    "id": "ing-beef-chuck-raw",
+    "g": 750
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 25
+   },
+   {
+    "id": "water",
+    "g": 3500
+   }
+  ],
+  "cooked_g": 3500,
+  "yield_note": "Edible raw weights, bones removed: trotters 1.2 kg × ~60 % + hock 1.0 kg × ~70 % = 1420 g (meat, skin, fat); beef shank 1.0 kg × ~75 % = 750 g (beef-chuck-raw used as the closest allowed id; shank is a bit leaner). Onion/carrot/bay are boiled and discarded, so not counted. 6–7 h open simmer evaporates ~2.2 L; meat loses ~45 % of its weight into the broth (→ ~1.2 kg picked meat + ~2.3 kg broth). Set jelly with meat ≈ 3.5 kg. Fat skimming not deducted (if the white fat layer is removed, kcal is ~10–15 % lower).",
+  "references": [
+   {
+    "kcal100": 210,
+    "source": "Estonian NutriData/TKA 84558 'Meat jelly, pork, 16% fat' (Холодец, из свинины, Ж 16%)",
+    "url": "https://tka.nutridata.ee/et/foods/868"
+   },
+   {
+    "kcal100": 157,
+    "source": "USDA FNDDS 2021-2023, 25220910 Head cheese",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 85,
+    "source": "Estonian NutriData/TKA 6300 'Meat jelly, veal, 2.5% fat' (Холодец, из телятины, Ж 2,5%)",
+    "url": "https://tka.nutridata.ee/et/foods/943"
+   }
+  ]
+ },
+ "kutia": {
+  "recipe_source": "Typical home version averaged from: netfreedom.org.ua «Кутя рецепт українською» https://netfreedom.org.ua/kutia-retsept-ukrainskoiu-iak-zvaryty-spravzhniu-rizdvianu-kashu-z-pshenytsi-maku-i-medu/ (пшениця 250–300 г, мак 80–100 г, мед 60–80 г, горіхи 60–80 г, родзинки 50 г, курага 50 г, узвар 100–150 мл); УНІАН https://www.unian.ua/lite/advice/yak-variti-kutyu-pravilno-golovni-sekreti-stravi-amp-12853776.html (пшениця 1 склянка, мак 100 г, горіхи 100 г, мед 100 г + цукор 100 г, кілька ложок узвару); УНІАН top-3 https://www.unian.ua/society/10397220-yak-prigotuvati-kutyu-na-rizdvo-top-3-recepti.html (пшениця 2 склянки, мак 1 склянка, горіхи 0.5 склянки, родзинки 180 г, мед 150–180 г); Клопотенко via gordonua.com (350 г пшениці, по 50 г горіхів, родзинок, маку, мед, 3 ополоники узвару).",
+  "version": "Christmas-Eve (lenten) kutia: wheat berries soaked overnight and boiled until soft, drained; poppy seeds steamed with boiling water, drained and ground; mixed with honey, chopped walnuts, raisins and a few ladles of uzvar. No butter, no sugar.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-berries-dry",
+    "g": 250
+   },
+   {
+    "id": "water",
+    "g": 592.1
+   },
+   {
+    "id": "ing-poppy-seeds",
+    "g": 100
+   },
+   {
+    "id": "walnuts",
+    "g": 70
+   },
+   {
+    "id": "raisins",
+    "g": 63.0
+   },
+   {
+    "id": "honey",
+    "g": 90
+   },
+   {
+    "id": "ing-dried-apples",
+    "g": 8.6
+   },
+   {
+    "id": "ing-dried-pears",
+    "g": 6.4
+   },
+   {
+    "id": "prunes",
+    "g": 3.4
+   },
+   {
+    "id": "sugar",
+    "g": 6.4
+   }
+  ],
+  "cooked_g": 1190,
+  "yield_note": "'water' = water ABSORBED, not the cooking water (excess is drained): 400 g absorbed by the wheat (dry → boiled ×2.6, like other whole grains: 250 → 650 g) + 70 g held by the steamed, drained poppy (100 → 170 g). 'uzvar' is the dish from this batch used as an ingredient (≈2 ladles). Nothing evaporates after mixing, so cooked_g = 650 + 170 + 70 + 60 + 90 + 150 = 1190 g. [Coordinator: the 150 g of uzvar is expanded into its own recipe scaled by 150/3500 (water net of evaporation, dried apples, dried pears, prunes, raisins added to the kutia raisins, sugar) so this dish does not depend on another recipe dish; same kcal.]",
+  "references": [
+   {
+    "kcal100": 185,
+    "source": "netfreedom.org.ua (recipe article above) states «На 100 г класичної пшеничної куті припадає близько 185 ккал» (recipe site, not a food table)",
+    "url": "https://netfreedom.org.ua/kutia-retsept-ukrainskoiu-iak-zvaryty-spravzhniu-rizdvianu-kashu-z-pshenytsi-maku-i-medu/"
+   }
+  ]
+ },
+ "oatmeal-milk": {
+  "recipe_source": "Main: https://www.unian.ua/recipes/second-courses/side-dishes/yak-variti-vivsyanku-recept-vivsyanoji-kashi-na-vodi-ta-moloci-proporciji-11379634.html (пластівці 1 склянка, молоко 2,5 склянки, дрібка солі, 1 ст. л. цукру, вершкове масло в готову кашу). Compared: https://klopotenko.com/vse-shho-potribno-znaty-pro-vivsyanku-vydy-sposib-ta-chas-prygotuvannya/ (1 частина пластівців : 2,5 частини молока, 5-7 хв); https://vkusvill.ru/media/recipes/gerkulesovaya-kasha-v-multivarke.html (200 г пластівців, 500 мл молока + 300 мл води, 2,5 ст. л. цукру, 25 г масла).",
+  "version": "Rolled oats (геркулес) simmered 5-7 min in milk 2.5 %, 1 tbsp sugar, small piece of butter.",
+  "ingredients": [
+   {
+    "id": "oats-dry",
+    "g": 90
+   },
+   {
+    "id": "milk-2-5",
+    "g": 625
+   },
+   {
+    "id": "sugar",
+    "g": 20
+   },
+   {
+    "id": "butter",
+    "g": 10
+   }
+  ],
+  "cooked_g": 705,
+  "yield_note": "1 склянка (250 ml) rolled oats ≈ 90 g; 2.5 склянки milk = 625 g. Raw total 745 g; heating + 5-7 min simmer loses ≈6 % of the milk (≈40 g) → 705 g.",
+  "references": [
+   {
+    "kcal100": 116,
+    "source": "USDA FNDDS 2021-2023, 56203066 Oatmeal, regular or quick, made with milk, no added fat (no sugar)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 128,
+    "source": "USDA FNDDS 2021-2023, 56203067 Oatmeal, regular or quick, made with milk, fat added (no sugar)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "semolina-porridge": {
+  "recipe_source": "Averaged: https://klopotenko.com/na-moloczi-na-vodi-ta-na-yihnij-sumishi-yak-varyty-manku-ta-yaku-obyraty/ (4 ст. л. з гіркою манки на 400 мл молока, ¼ ч. л. цукру, шматочок масла; 2 порції); https://recepty.24tv.ua/recipe/manna-kasha-retsept-na-molotsi-z-foto_id460 (300 мл молока, 25 мл води, 50 г манки, 10 г масла, цукор за смаком; 1 порція); https://www.unian.ua/recipes/second-courses/side-dishes/yak-variti-mannu-kashu-na-vodi-na-moloci-i-dlya-ditini-11489089.html (600 мл молока, 3 ст. л. манки, 2 ст. л. цукру, 30 г масла).",
+  "version": "Medium-thick semolina porridge on milk 2.5 % (about 1:7 semolina:milk by weight), 1 tbsp sugar, butter on top. 2 portions.",
+  "ingredients": [
+   {
+    "id": "milk-2-5",
+    "g": 500
+   },
+   {
+    "id": "ing-semolina-dry",
+    "g": 70
+   },
+   {
+    "id": "sugar",
+    "g": 20
+   },
+   {
+    "id": "butter",
+    "g": 15
+   }
+  ],
+  "cooked_g": 580,
+  "yield_note": "Raw total 605 g; bringing milk to the boil + ~3-5 min cooking loses ≈5 % of the milk (≈25 g) → 580 g. Heaped tbsp semolina taken as ≈20 g (Klopotenko: 4 heaped tbsp per 400 ml ≈ 80 g).",
+  "references": [
+   {
+    "kcal100": 97,
+    "source": "24tv «Манна каша на молоці» — 359 kcal for its 1 portion (basis not labelled; portion = 300 ml milk + 25 ml water + 50 g semolina + 10 g butter ≈ 370 g) → ≈97 kcal/100 g",
+    "url": "https://recepty.24tv.ua/recipe/manna-kasha-retsept-na-molotsi-z-foto_id460"
+   }
+  ]
+ },
+ "olivier-salad": {
+  "recipe_source": "Average of two classic Ukrainian recipes with weights: Fakty ICTV 'Індекс олів'є' classic recipe (potato 600 g, carrot 250, onion 200, boiled sausage 600, 8 eggs, pickles 500, 1 can peas 425 g, mayonnaise 300; ~3 kg) https://fakty.com.ua/ua/ukraine/20191220-skilky-koshtuye-oliv-ye-na-novyj-rik-2020/ and Smachno24 (24tv) recipe quoted by Telegraf (boiled sausage 500, potato 580, carrot 280, onion 230, 6 eggs, peas 1 can, pickles 200, mayonnaise 350) https://news.telegraf.com.ua/ukr/dengi/5929287-na-olive-ta-shubi-mozhna-zekonomiti-skilki-koshtuyut-kultovi-salati-noviy-rik-2026-infografika-retsepti . Compared: Focus.ua beef variant (same vegetable proportions).",
+  "version": "Classic home Olivier with boiled sausage (Лікарська/Молочна): diced boiled potato, boiled carrot, hard-boiled eggs, pickled cucumbers, canned peas, raw onion, dressed with 67% Provansal mayonnaise.",
+  "ingredients": [
+   {
+    "id": "kovbasa-boiled",
+    "g": 550
+   },
+   {
+    "id": "potato-boiled",
+    "g": 530
+   },
+   {
+    "id": "carrots-raw",
+    "g": 240
+   },
+   {
+    "id": "onion",
+    "g": 200
+   },
+   {
+    "id": "eggs-whole",
+    "g": 385
+   },
+   {
+    "id": "pickled-cucumber",
+    "g": 350
+   },
+   {
+    "id": "green-peas",
+    "g": 260
+   },
+   {
+    "id": "mayonnaise",
+    "g": 325
+   }
+  ],
+  "cooked_g": 2840,
+  "yield_note": "Cold salad, no cooking loss: cooked_g = sum of components. Potato/carrot weights are the recipes' as-bought weights minus ~8-10% peel (boiled in skin, peeled); boiled carrot counted at raw weight (boiled ≈ raw weight). 7 eggs × 55 g. Peas = drained weight of one 420-425 g can (~260 g; brine discarded). Mayonnaise = average of the two recipes (300/350 g scaled).",
+  "references": [
+   {
+    "kcal100": 157,
+    "source": "USDA FNDDS 2021-2023, 71601010 Potato salad with egg, made with mayonnaise (closest analogue; no sausage/peas)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 203.8,
+    "source": "Ukrainian supermarket own-kitchen label: MegaMarket 'Салат Олів'є з ковбасою' (ковбаса варена, картопля, морква, майонез, огірок маринований, горошок, яйця), per 100 g",
+    "url": "https://megamarket.zakaz.ua/uk/products/salat--megamarket00000000146449/"
+   },
+   {
+    "kcal100": 144,
+    "source": "Ukrainian supermarket own-kitchen label: EKO-market 'Салат Олів'є по-домашньому' (картопля, яйця, ковбаса варена, огірки, морква, майонез, горошок, зелена цибуля), per 100 g",
+    "url": "https://eko.zakaz.ua/uk/products/salat--ekomarket00000000534002/"
+   }
+  ]
+ },
+ "vinaigrette-salad": {
+  "recipe_source": "Main: klopotenko.com 'Класичний рецепт вінегрету' (2 medium beets, 2 large carrots, 4 medium potatoes, 2 pickles, 150 g sauerkraut, 250 g beans, 4 tbsp oil, 1 tbsp vinegar; 6 portions) https://klopotenko.com/klasychnyj-reczept-vinegretu-gotuyemo-z-kvasoleyu-ta-zapravkoyu-z-vynnogo-ocztu/ , with onion and green peas instead of beans as in the school tech card ТК 1.45 Вінегрет (potato 310, carrot 200, beet 200, peas 100, sauerkraut 70, onion 70, sauce 40 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf . Compared: Klopotenko 'Вінегрет з запечених овочів' (potato 400, carrot 300, beet 300, peas 200, pickles 200-300, 3 tbsp oil) https://klopotenko.com/vinegret-z-zapechenyh-ovochiv/",
+  "version": "Home vinaigrette: boiled beet, potato, carrot, pickled cucumbers, sauerkraut, raw onion, canned green peas (beans are an equally common alternative), dressed with ~4 tbsp unrefined sunflower oil.",
+  "ingredients": [
+   {
+    "id": "beet-boiled",
+    "g": 370
+   },
+   {
+    "id": "potato-boiled",
+    "g": 480
+   },
+   {
+    "id": "carrots-raw",
+    "g": 230
+   },
+   {
+    "id": "pickled-cucumber",
+    "g": 140
+   },
+   {
+    "id": "sauerkraut",
+    "g": 150
+   },
+   {
+    "id": "onion",
+    "g": 80
+   },
+   {
+    "id": "green-peas",
+    "g": 150
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 68
+   }
+  ],
+  "cooked_g": 1668,
+  "yield_note": "Cold salad, cooked_g = sum of components. Vegetables boiled in skin then peeled (≈10% peel removed from as-bought: 2 beets ~400 g -> 370 g, 4 potatoes ~520 g -> 480 g, 2 large carrots ~250 g -> 230 g; boiled carrot at raw weight). Peas = drained (half a can). Oil 4 tbsp × 17 g as in Klopotenko. 1 tbsp vinegar and salt omitted (≈0 kcal).",
+  "references": [
+   {
+    "kcal100": 104,
+    "source": "klopotenko.com, classic vinaigrette with beans and 4 tbsp olive oil — site states 104 kcal per 100 g of the finished dish",
+    "url": "https://klopotenko.com/klasychnyj-reczept-vinegretu-gotuyemo-z-kvasoleyu-ta-zapravkoyu-z-vynnogo-ocztu/"
+   },
+   {
+    "kcal100": 84,
+    "source": "Ukrainian school tech card ТК 1.45 'Вінегрет' (2024 school-menu collection): 84 kcal per 100 g portion (sauce vinaigrette only 4%)",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 59.1,
+    "source": "Estonian NutriData/TKA 1123 'Vinegrett' (beet, potato, pickles, sauerkraut, carrot; only 1% oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1123/version/public?tka=true"
+   }
+  ]
+ },
+ "shuba": {
+  "recipe_source": "Main: UNIAN classic 'Оселедець під шубою' (herring fillet 500 g, potatoes 5, onion 1, carrots 3, eggs 5, beets 4, mayonnaise 250 g) https://www.unian.ua/recipes/salads/salads-with-fish-and-seafood/oseledec-pid-shuboyu-yak-prigotuvati-oseledec-pid-shuboyu-11264060.html ; averaged with Redpost classic (herring 300, carrot 200, beet 300, potato 200, onion 150, mayonnaise 150, 3 eggs) https://redpost.com.ua/news/1252989-print-view and the 1000.menu recipe quoted by Telegraf (herring 500, 3-4 potatoes, 2-3 carrots, 2-3 beets, 1 onion, 3-4 eggs, mayonnaise 180-200) https://news.telegraf.com.ua/ukr/dengi/5929287-na-olive-ta-shubi-mozhna-zekonomiti-skilki-koshtuyut-kultovi-salati-noviy-rik-2026-infografika-retsepti . All three scaled to 400 g herring and averaged.",
+  "version": "Classic layered herring under fur coat: salted herring fillet, onion, boiled potato, boiled carrot, boiled egg, boiled beet on top; each layer spread with 67% mayonnaise.",
+  "ingredients": [
+   {
+    "id": "herring-salted",
+    "g": 400
+   },
+   {
+    "id": "potato-boiled",
+    "g": 420
+   },
+   {
+    "id": "carrots-raw",
+    "g": 230
+   },
+   {
+    "id": "beet-boiled",
+    "g": 430
+   },
+   {
+    "id": "onion",
+    "g": 100
+   },
+   {
+    "id": "eggs-whole",
+    "g": 200
+   },
+   {
+    "id": "mayonnaise",
+    "g": 190
+   }
+  ],
+  "cooked_g": 1970,
+  "yield_note": "Cold layered salad, cooked_g = sum of components. Herring = boneless skinless fillet weight (recipes give fillet). Vegetables boiled in skin and peeled (as-bought minus ~10% peel); boiled carrot at raw weight. Pieces converted: potato 130 g, carrot 90 g, beet 150-200 g, egg 55 g. Mayonnaise ≈ 9.6% of the salad (recipes range 8-10%).",
+  "references": [
+   {
+    "kcal100": 162,
+    "source": "Estonian NutriData/TKA 440769 'Kasukas, hapukoore ja majoneesiga' (Shuba; dressing 11.5% mayonnaise 65% + 11.5% sour cream 20%; includes pickles)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/440769/version/public?tka=true"
+   },
+   {
+    "kcal100": 199.9,
+    "source": "Ukrainian supermarket own-kitchen label: MegaMarket 'Оселедець під шубою' (філе оселедця, картопля, морква, буряк, майонез), per 100 g",
+    "url": "https://megamarket.zakaz.ua/uk/products/salat--megamarket00000000145534/"
+   },
+   {
+    "kcal100": 187,
+    "source": "Ukrainian supermarket own-kitchen label: Tavria V 'Салат Оселедець під шубою' (картопля, морква, буряк, філе оселедця, майонез), per 100 g",
+    "url": "https://tavriav.zakaz.ua/uk/products/salat-kulinariia-bez-tm-ukrayina--tavriav00000000090432/"
+   }
+  ]
+ },
+ "cabbage-salad": {
+  "recipe_source": "Typical home 'вітамінний' salad built from: school tech card ТК 1.27 'Салат з капусти та моркви' (cabbage 620, carrot 350, oil 30, lemon juice 10 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf ; 24tv cabbage salad (400 g cabbage, 25 ml oil, 2 tbsp sugar, lemon juice) https://24tv.ua/salati-kapusti-sprobuyte-perevireni-retsepti_n3088875 ; composition confirmed by NOVUS own-kitchen 'Салат з білокачанної капусти' (капуста, морква, олія, цукор, сіль, зелень, лимонна кислота) https://novus.zakaz.ua/uk/products/salat-kulinariia-maistri-smaku--novus02855941000000/ . Home proportions: 1/4 head cabbage (500 g) + 1 carrot + 2 tbsp oil + 1 tsp sugar + 1 tbsp 9% vinegar.",
+  "version": "Fresh white cabbage shredded and rubbed with salt, grated raw carrot, dressed with sunflower oil, a little sugar and vinegar.",
+  "ingredients": [
+   {
+    "id": "cabbage-raw",
+    "g": 500
+   },
+   {
+    "id": "carrots-raw",
+    "g": 100
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 34
+   },
+   {
+    "id": "sugar",
+    "g": 7
+   }
+  ],
+  "cooked_g": 641,
+  "yield_note": "Raw salad, cooked_g = sum of components (juice released by salted cabbage stays in the salad). Cabbage weight after removing outer leaves and core; carrot peeled. Oil 2 tbsp × 17 g (school card uses 3%, 24tv ~4%, I use ~5% as a home cook pours); sugar 1 tsp ≈ 7 g. 1 tbsp 9% vinegar (~15 g, ≈0 kcal) and salt omitted from both ingredients and cooked_g.",
+  "references": [
+   {
+    "kcal100": 56,
+    "source": "Ukrainian school tech card ТК 1.27 'Салат з капусти та моркви' (2024 school-menu collection): 56 kcal per 100 g portion (3% oil, 35% carrot)",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 41.3,
+    "source": "Estonian NutriData/TKA 450320 'Porgandi-värskekapsasalat, õliga' (carrot-cabbage salad with 1% oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/450320/version/public?tka=true"
+   },
+   {
+    "kcal100": 45,
+    "source": "Ukrainian supermarket own-kitchen label: Tavria V 'Салат з молодої капусти з кропом' (капуста, кріп, олія, сіль, цукор), per 100 g",
+    "url": "https://tavriav.zakaz.ua/uk/products/salat-kulinariia-bez-tm-ukrayina--tavriav00000000062301/"
+   }
+  ]
+ },
+ "cucumber-tomato-salad": {
+  "recipe_source": "Typical home summer salad following UNIAN 'Салат з овочами й бринзою' base (2 tomatoes, 2 cucumbers, 1 onion, dill, oil; pepper and brynza left out) https://www.unian.ua/recipes/salads/vegetable-salads/salat-zi-svizhih-ovochiv-recept-yak-prigotuvati-vitaminniy-ovocheviy-salat-11372434.html ; compared with school tech card ТК 1.13 'Салат зелений з огірків та томатів' (cucumber 360, tomato 300, lettuce 320, oil 30 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf and TKA 872688 tomato-cucumber-pepper salad (3% oil).",
+  "version": "Sliced fresh tomatoes and cucumbers with onion and dill, salted, dressed with 2 tbsp sunflower oil.",
+  "ingredients": [
+   {
+    "id": "tomato",
+    "g": 300
+   },
+   {
+    "id": "cucumber",
+    "g": 240
+   },
+   {
+    "id": "onion",
+    "g": 60
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 34
+   }
+  ],
+  "cooked_g": 644,
+  "yield_note": "Raw salad, cooked_g = sum of components (juice stays in bowl). 2 tomatoes × 150 g, 2 cucumbers × 120 g, 1 small onion 60 g, dill 10 g (mixed-greens). Oil 2 tbsp × 17 g (~5%; school card 3%). Salt omitted.",
+  "references": [
+   {
+    "kcal100": 62,
+    "source": "Ukrainian school tech card ТК 1.13 'Салат зелений з огірків та томатів' (with lettuce, 3% oil): 62 kcal per 100 g portion",
+    "url": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
+   },
+   {
+    "kcal100": 45.2,
+    "source": "Ukrainian supermarket own-kitchen label: Tavria V 'Салат з помідорів, огірків та цибулі' (огірки, помідори, цибуля, зелень, заправка), per 100 g",
+    "url": "https://tavriav.zakaz.ua/uk/products/salat-kulinariia-bez-tm-ukrayina--tavriav00000000089932/"
+   },
+   {
+    "kcal100": 122,
+    "source": "USDA FNDDS 2021-2023, 74506000 Tomato and cucumber salad made with tomato, cucumber, oil, and vinegar (US oil-and-vinegar dressing, more oil)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "cucumber-tomato-salad-smetana": {
+  "recipe_source": "Same home base as the oil version (UNIAN vegetable salad base: 2 tomatoes, 2 cucumbers, onion, dill) https://www.unian.ua/recipes/salads/vegetable-salads/salat-zi-svizhih-ovochiv-recept-yak-prigotuvati-vitaminniy-ovocheviy-salat-11372434.html , dressed with 4 tbsp sour cream (typical '3-4 ст. л. сметани'); compared with TKA 1161 'Tomati-kurgisalat, hapukoorega' (tomato 465, cucumber 445, dill 20, sour cream 20% 70 per 1 kg) and engage.org.ua note that the classic Ukrainian version uses tomatoes, dill and sunflower oil or sour cream https://engage.org.ua/salat-z-ohirkom-retsepty-sekrety-ta-idei/",
+  "version": "Sliced fresh tomatoes and cucumbers with onion and dill, salted, dressed with 20% sour cream.",
+  "ingredients": [
+   {
+    "id": "tomato",
+    "g": 300
+   },
+   {
+    "id": "cucumber",
+    "g": 240
+   },
+   {
+    "id": "onion",
+    "g": 60
+   },
+   {
+    "id": "mixed-greens",
+    "g": 10
+   },
+   {
+    "id": "smetana-20",
+    "g": 80
+   }
+  ],
+  "cooked_g": 690,
+  "yield_note": "Raw salad, cooked_g = sum of components. Sour cream 4 tbsp × 20 g = 80 g (~12% of salad; TKA uses 7%). Salt omitted.",
+  "references": [
+   {
+    "kcal100": 30.7,
+    "source": "Estonian NutriData/TKA 1161 'Tomati-kurgisalat, hapukoorega' (tomato-cucumber salad with 7% sour cream 20%)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1161/version/public?tka=true"
+   },
+   {
+    "kcal100": 66,
+    "source": "USDA FNDDS 2021-2023, 75142500 Cucumber salad, made with sour cream dressing (cucumber only, US sour-cream dressing)",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "crab-salad": {
+  "recipe_source": "Main: netfreedom.org.ua 'Класичний салат з крабових паличок' (crab sticks 250 g, 4 boiled eggs, 1 can corn 340 g drained, 1-2 fresh cucumbers, mayonnaise 100-120 g; rice variation +80-100 g raw rice) https://netfreedom.org.ua/klasychnyi-salat-z-krabovykh-palychok-povnyi-hid-z-retseptom-istoriieiu-ta-sekretamy-idealnoho-smaku/ ; compared poradu.pp.ua rice version (equal volumes rice : corn : crab sticks : eggs) https://poradu.pp.ua/recepti/print:page,1,11722-salati-z-krabovih-palichok-recepti-rekomendacyi.html and UNIAN crab salad with cucumber (10 sticks, 70 g corn, 2 eggs, 1 cucumber, 3 tbsp mayo) https://www.unian.ua/recipes/salads/salads-with-fish-and-seafood/recepti-salativ-z-krabovimi-palichkami-svyatkovi-novorichni-salati-z-krabovimi-palichkami-11238425.html",
+  "version": "Classic Ukrainian crab-stick salad with boiled rice: diced crab sticks, boiled white rice, hard-boiled eggs, canned sweet corn, fresh cucumber, dressed with 67% mayonnaise (mayo increased to ~150 g because rice absorbs dressing).",
+  "ingredients": [
+   {
+    "id": "crab-sticks",
+    "g": 250
+   },
+   {
+    "id": "white-rice-cooked",
+    "g": 270
+   },
+   {
+    "id": "eggs-whole",
+    "g": 220
+   },
+   {
+    "id": "corn-canned",
+    "g": 220
+   },
+   {
+    "id": "cucumber",
+    "g": 150
+   },
+   {
+    "id": "mayonnaise",
+    "g": 150
+   }
+  ],
+  "cooked_g": 1260,
+  "yield_note": "Cold salad, cooked_g = sum of components. Rice: 90 g dry boiled ×3 ≈ 270 g cooked (white-rice-cooked). Corn = drained weight of one 340 g can (~220 g). 4 eggs × 55 g. Mayonnaise 150 g (recipe 100-120 g without rice; +30 g for the rice). Optional green onion omitted.",
+  "references": [
+   {
+    "kcal100": 197,
+    "source": "USDA FNDDS 2021-2023, 27450130 Crab salad made with imitation crab (no rice, mayo-rich)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 207.6,
+    "source": "Ukrainian supermarket own-kitchen label: MegaMarket 'Салат Крабовий' (крабові палички, яйця, кукурудза, майонез; no rice), per 100 g",
+    "url": "https://megamarket.zakaz.ua/uk/products/salat--megamarket00000000146326/"
+   },
+   {
+    "kcal100": 122,
+    "source": "Estonian NutriData/TKA 1147 'Riisisalat, makraga (paprika, muna)' (rice salad with crab sticks, egg, sweet pepper; dressing sour cream 20% + light 19% mayonnaise)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1147/version/public?tka=true"
+   }
+  ]
+ },
+ "beet-salad": {
+  "recipe_source": "Main: engage.org.ua 'Класичний рецепт салату з вареного буряка з часником' (2 medium beets 400-500 g, 2-3 garlic cloves, 2-3 tbsp mayonnaise) https://engage.org.ua/salat-z-varenogo-buryaka-reczepty-koryst-ta-sekrety/ ; compared Klopotenko beet salad with mayonnaise (1 large beet, 1-2 tbsp garlic mayonnaise, prunes, cranberries; chef twist) https://klopotenko.com/salat-iz-buryakom-chornosluvom-zuravlynou-i-majonezom-zi-smazenogo-chasnyku/ and school card ТК 1.38 'Салат з буряка зі сметаною' (beet 850 + sour cream 160 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf",
+  "version": "Everyday version WITHOUT walnuts or prunes: grated boiled beet with pressed garlic and 67% mayonnaise. (Festive variant adds ~50 g walnuts and/or ~100 g prunes per 400 g beet — not included.)",
+  "ingredients": [
+   {
+    "id": "beet-boiled",
+    "g": 400
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 12
+   },
+   {
+    "id": "mayonnaise",
+    "g": 60
+   }
+  ],
+  "cooked_g": 472,
+  "yield_note": "Cold salad, cooked_g = sum of components. Beet boiled in skin and peeled (2 medium ~440 g as bought -> 400 g). Garlic 2-3 cloves × 5 g. Mayonnaise 3 tbsp × 20 g (upper end of the recipe's 2-3 tbsp). Salt omitted.",
+  "references": [
+   {
+    "kcal100": 54.9,
+    "source": "Estonian NutriData/TKA 444577 'Peedisalat, hapukoore ja majoneesiga' (beet 87% with 7.5% sour cream 10% + 5.5% LIGHT 19% mayonnaise — lighter dressing than the Ukrainian 67% mayo version; lower bound only)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/444577/version/public?tka=true"
+   }
+  ]
+ },
+ "korean-carrot": {
+  "recipe_source": "Main: klopotenko.com 'Вдома смачніше. Морква по-корейськи' (1 kg carrot, 100 ml sunflower oil heated, 2 tsp sugar, 2 tsp salt, 1 tsp coriander, 6 garlic cloves, 2 tbsp 9% vinegar, 1 tsp hot pepper; 10 portions; no draining) https://klopotenko.com/vdoma-smachnishe-morkva-po-korejsky-za-reczeptom-yevgena-klopotenka/ ; compared Klopotenko 'Швидка та хрумка' (1 kg carrot, 100 ml oil, lemon juice, garlic) https://klopotenko.com/shvydka-ta-hrumka-strava-morkva-po-korejsky-za-reczeptom-yevgena-klopotenka/ and TKA 4043 (carrot 830, oil 40, sugar 30, fried onion 70, garlic 12 per 1 kg).",
+  "version": "Home Korean-style carrot: finely grated raw carrot with salt, sugar, ground coriander, chili, pressed garlic, 9% vinegar and hot sunflower oil poured over; marinated 2 h, nothing drained.",
+  "ingredients": [
+   {
+    "id": "carrots-raw",
+    "g": 1000
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 92
+   },
+   {
+    "id": "sugar",
+    "g": 13
+   },
+   {
+    "id": "ing-garlic-raw",
+    "g": 30
+   },
+   {
+    "id": "ing-vinegar",
+    "g": 30
+   }
+  ],
+  "cooked_g": 1165,
+  "yield_note": "Raw marinated salad; carrot weight peeled. Oil 100 ml × 0.92 = 92 g, all retained (heated, not used for frying anything). Sugar 2 tsp ≈ 13 g, garlic 6 cloves × 5 g, vinegar 2 tbsp ≈ 30 g (listed in extra_ingredients). cooked_g = ingredients 1135 g + vinegar 30 g; spices (coriander ~2 g, chili) and salt omitted.",
+  "references": [
+   {
+    "kcal100": 84,
+    "source": "Estonian NutriData/TKA 4043 'Korea porgandisalat' (Korean carrot salad, 4% oil)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/4043/version/public?tka=true"
+   },
+   {
+    "kcal100": 114,
+    "source": "Ukrainian label: 'Морква по-корейськи' ТМ Чудова марка (морква 83%, олія соняшникова, оцет, цукор, часник, спеції), per 100 g",
+    "url": "https://megamarket.zakaz.ua/uk/products/salat-morkva-chudova-marka-400g--04820116702737/"
+   },
+   {
+    "kcal100": 121,
+    "source": "Ukrainian supermarket own-kitchen label: MegaMarket 'Морква по-корейськи' (морква, приправи, олія, часник, оцет, цукор, сіль), per 100 g",
+    "url": "https://megamarket.zakaz.ua/uk/products/morkva--megamarket00000000145282/"
+   }
+  ]
+ },
+ "shkvarky": {
+  "recipe_source": "Home practice: salo (pork back fat, skin removed) cut in ~1 cm cubes and rendered slowly in a dry pan until golden; the cracklings are lifted out, the liquid fat (smalets) is poured off into a jar. Yield sources: netfreedom.org.ua «Як приготувати здір» https://netfreedom.org.ua/yak-prigotuvati-zdir/ («Вихід: 550–650 мл смальцю + 300–400 г шкварок» from 1 kg); secondary, seen only in search snippets (pages not openable): a Polish home-rendering guide (650–800 g lard per 1 kg raw fat, i.e. ≤200–350 g cracklings + evaporated water) and the Brockhaus–Efron encyclopedia text on booksite.ru https://booksite.ru/fulltext/1/001/007/040/40072.htm (rendering fat trimmings in pieces: 57.7 % fat + 34 % cracklings; minced: 82.5 % fat + 12.5 % cracklings). Доцяк «Українська кухня» (1998) uses shkvarky as a topping (сало 34 г → смажене сало зі шкварками 30 г – that figure INCLUDES the fat, so not used here).",
+  "version": "The solid crackling bits only (golden, still slightly soft inside), WITHOUT the rendered fat. The rendered fat (smalets) is poured off and is NOT counted.",
+  "ingredients": [
+   {
+    "id": "salo",
+    "g": 1000
+   },
+   {
+    "id": "ing-lard",
+    "g": -680
+   }
+  ],
+  "cooked_g": 250,
+  "yield_note": "IMPORTANT – fat removal: the rendered fat that is poured off is entered as a NEGATIVE amount of USDA «Lard» (−680 g), the standard recipe-calculation 'fat loss' correction; if the calculator cannot take negative grams, compute kcal = (1000 g × salo − 680 g × Lard) ÷ 250 g. Mass balance for 1000 g backfat (USDA backfat: 88.7 % fat, 7.7 % water, 2.9 % protein): cracklings 250 g (25 % yield) = ~29 g protein + ~208 g fat (≈83 %) + ~12 g water; ~680 g fat poured off; ~65 g water evaporated. Yield basis: 25 % is the middle of the published range for home rendering – 12.5 % (thorough, minced) to 34 % (pieces) in Brockhaus–Efron, 30–40 % for lightly rendered leaf fat (netfreedom), ≤20–35 % implied by the Polish 650–800 g lard per kg. The kcal/100 g is insensitive to the yield chosen (≈770–800 kcal/100 g for 15–35 % yield) because the residue stays mostly fat. Salo with a meat streak gives more protein and fewer kcal.",
+  "references": [
+   {
+    "kcal100": 569,
+    "source": "USDA FNDDS 2021-2023, 22704010 Pork, cracklings (US cracklings are mostly fried pork SKIN – far more protein, less fat than Ukrainian back-fat shkvarky; lower bound)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 527,
+    "source": "Estonian NutriData (TKA), food 777 «Pork, rind, snack / Свиные шкварки, снэк» (61 g protein, 31 g fat – skin-based snack; lower bound, not the same product)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/777/version/public?tka=true"
+   }
+  ]
+ },
+ "carp-fried": {
+  "recipe_source": "Main: Доцяк В.С. «Українська кухня» (1998), «Карасі (коропи) запечені під сметанним соусом», frying step: карась або короп 117/89 г, борошно 5 г, олія 5 г → маса смаженої риби 73 г; also «Короп фарширований (смажений)» (борошно 6 г, олія 6 г на порцію); https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt. Compared with home recipe https://poradu.pp.ua/recepti/print:page,1,4258-yak-prigotuvati-karasya-smazheniy-karas-zapecheniy-v-smetan-recepti-foto.html (карась 2 кг, борошно 200 г для обвалювання, олія 100–200 г у сковороді).",
+  "version": "Carp cut into steaks (or small crucians whole), scaled and gutted, salted, rolled in wheat flour and pan-fried in sunflower oil until crisp on both sides. Values per 100 g of the EDIBLE part (flesh + crisp skin + crust, bones/fins/head removed).",
+  "ingredients": [
+   {
+    "id": "ing-carp-raw",
+    "g": 700
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 40
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 50
+   }
+  ],
+  "cooked_g": 585,
+  "yield_note": "Basis: 1000 g cleaned carp carcass (scaled, gutted, head removed) → ≈700 g edible flesh+skin (≈30 % bones, fins, tail removed at the table; for whole crucians with heads the edible share is only ≈50–55 %). Flour adhering 40 g (Dotsiak 5–6 g per 89 g fish ≈ 6 %). OIL absorbed 50 g ≈ 7 % of edible fish (Dotsiak 5 g per 89 g = 5.6 %; carp skin is fried crisp and takes up a bit more; poradu.pp.ua uses 100–200 g oil in the pan for 2 kg fish, the rest stays in the pan). YIELD: Dotsiak 89 g fish + 5 flour + 5 oil → 73 g fried (0.74) ⇒ 790 g × 0.74 ≈ 585 g. Bone note: a fried carp steak weighed whole is ≈20–25 % bone; a whole fried crucian ≈40 % (head, spine, fins).",
+  "references": [
+   {
+    "kcal100": 213,
+    "source": "USDA FNDDS 2021-2023, 26105110 Fish, carp (the only carp code; unspecified preparation – FNDDS NFS fish codes default to fried/fat added)",
+    "url": "https://fdc.nal.usda.gov/"
+   },
+   {
+    "kcal100": 249,
+    "source": "Older USDA FNDDS entry «Fish, carp, coated, fried» (14.9 g fat) as mirrored on happyforks.com (third-party mirror, release not stated)",
+    "url": "https://happyforks.com/food/carp/10987"
+   }
+  ]
+ },
+ "medivnyk": {
+  "recipe_source": "https://klopotenko.com/desert-mrij-reczept-medivnyka-vid-yevgena-klopotenka/ (Торт медівник, класичний рецепт, Є. Клопотенко: 450 г борошна, 3 ст. л. меду, 100 г цукру, 100 г масла, 3 яйця, 1 ч. л. соди; крем 1 л сметани 20 %, 200 г цукрової пудри, 10 г ванільного цукру; 8 коржів) — averaged with https://klopotenko.com/idealnyj-domashnij-tort-medivnyk-vid-yevgena-klopotenka/ (500 г борошна, 150 г меду, 100 г цукру, 100 г масла, 2 яйця, 1 ч. л. соди; крем 800 г сметани, 100 г пудри, 50 г меду) and the common home proportion of ~1 склянка цукру in the dough",
+  "version": "Classic home medivnyk with sour-cream cream: honey–butter–sugar–egg dough with soda heated on a water bath, 8 thin layers baked at 180 °C; layered with 20 % sour cream whipped with icing sugar; trimmings crumbled on top; soaked overnight in the fridge.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 480
+   },
+   {
+    "id": "honey",
+    "g": 90
+   },
+   {
+    "id": "sugar",
+    "g": 160
+   },
+   {
+    "id": "butter",
+    "g": 100
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 165
+   },
+   {
+    "id": "smetana-20",
+    "g": 900
+   },
+   {
+    "id": "ing-powdered-sugar",
+    "g": 180
+   },
+   {
+    "id": "ing-baking-soda",
+    "g": 5
+   }
+  ],
+  "cooked_g": 1920,
+  "yield_note": "Sugar 160 g = 150 g in the dough + 10 g vanilla sugar in the cream (vanilla sugar counted as sugar); honey 3 heaped tbsp ≈ 90 g; lemon zest/salt omitted. Dough ≈990 g; thin korzhi baked 4–6 min lose ≈16 % (≈215 g water from eggs/butter/honey/flour, down to ~6 % moisture in the baked layers) → ≈830 g incl. trimmings used as crumb; cream = 900 g sour cream + 180 g icing sugar + 10 g vanilla sugar, no loss → whole cake ≈1920 g (22–23 cm, ~10 portions).",
+  "references": [
+   {
+    "kcal100": 308,
+    "source": "Estonian NutriData/TKA, food 1560 / code 83626 'Meekook' (Торт Медовик) — honey layers (butter, eggs, sugar, honey) with 20 % sour-cream cream",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1560/version/public?tka=true"
+   },
+   {
+    "kcal100": 292,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished dish for 'Швидкий медовик на сковороді' (honey layers + sour-cream cream; skillet-baked variant, more cream per dough)",
+    "url": "https://klopotenko.com/bez-rozkochuvannya-korzhiv-shvydkyj-medovyk-na-skovorodi-vid-yevgena-klopotenka/"
+   }
+  ]
+ },
+ "napoleon-cake": {
+  "recipe_source": "https://klopotenko.com/klasychnyj-tort-napoleon-vid-yevgena-klopotenka/ (Класичний торт Наполеон, Є. Клопотенко: коржі 700 г борошна, 360 г масла, 2 яйця, 150 мл води, 1 ст. л. оцту, коньяк; крем 1 л молока, 4 яйця, 300 г цукру, 100 г борошна, 300 г масла, 10 г ванільного цукру; 12 коржів) — averaged with https://engage.org.ua/?p=20211 (Торт «Наполеон» по-домашньому: 500–600 г борошна, 400–450 г масла або маргарину, 1 яйце, 150–180 мл води, оцет; крем 1 л молока, 4–5 жовтків, 200–250 г цукру, 4–5 ст. л. борошна, 200–250 г масла; 10–12 коржів) and https://www.unian.ua/recipes/baking/dessert-pastries/tort-napoleon-s-neobychnym-kremom-proverennyy-recept-12847734.html (300–400 г борошна, 200 г масла, 1 яйце, 120 мл води)",
+  "version": "Home 'quick puff' Napoleon: cold butter (or margarine) chopped into flour with an egg, ice water and a spoon of vinegar; 10–12 thin layers baked crisp; layered with boiled custard (milk, eggs, sugar, flour, vanilla sugar) beaten with butter; trimmings as crumb; soaked overnight.",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 670
+   },
+   {
+    "id": "butter",
+    "g": 560
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 220
+   },
+   {
+    "id": "water",
+    "g": 150
+   },
+   {
+    "id": "milk-2-5",
+    "g": 1000
+   },
+   {
+    "id": "sugar",
+    "g": 260
+   }
+  ],
+  "cooked_g": 2520,
+  "yield_note": "Flour 670 g = 600 g dough + 70 g custard; butter 560 g = 330 g dough + 230 g cream; eggs 220 g = 1 in dough + 3 in custard; sugar includes 10 g vanilla sugar. Vinegar/cognac (≤1 tbsp) and salt omitted; dusting flour (~20–30 g, mostly brushed off) not counted. Dough 1135 g → thin layers baked crisp lose ≈23 % (dough is ~28 % water incl. egg/butter/flour moisture, baked korzhi ~6 %) → ≈870 g incl. crumb; custard 1000 g milk + 165 g eggs + 260 g sugar + 70 g flour ≈1495 g, ≈5 % evaporates while thickening → ≈1420 g, + 230 g butter → ≈1650 g; whole cake ≈2520 g (22 cm, 10–12 layers). Butter used for the dough; with 80 % margarine instead the cake would be only ~2–3 % lower in kcal.",
+  "references": [
+   {
+    "kcal100": 395,
+    "source": "Estonian NutriData/TKA, food 1566 / code 83622 'Napoleoni kook' (Торт 'Napoleon') — puff pastry layers (butter) with pastry cream",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1566/version/public?tka=true"
+   },
+   {
+    "kcal100": 340,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished dish for 'Найпростіший торт Наполеон на сковороді' (butter dough layers + custard with butter)",
+    "url": "https://klopotenko.com/najprostishyj-tort-napoleon-na-skovorodi-reczept-vid-yevgena-klopotenka/"
+   },
+   {
+    "kcal100": 410,
+    "source": "USDA FNDDS 2021-2023, 53452420 Pastry, puff, custard or cream filled, iced or not iced",
+    "url": "https://fdc.nal.usda.gov/"
+   }
+  ]
+ },
+ "apple-pie": {
+  "recipe_source": "https://klopotenko.com/sharlotka-antonivskyj-mist-prysvyachuyetsya-zsu/ (Шарлотка з яблуками «Антонівський міст», Є. Клопотенко: 4 яйця, 150 г цукру, 160 г борошна, 4 яблука, 20 г масла для форми) — averaged with https://www.unian.ua/recipes/desserts/pies/sharlotka-z-yablukami-yaki-yabluka-naykrashche-brati-dlya-piroga-13453566.html (простий мамин рецепт: 1 склянка борошна, 1 склянка цукру, 3 яйця, 4 яблука) and https://klopotenko.com/sharlotka-prostuj-retsept/ (5 яєць, 200 г цукру, 200 г борошна, 2–3 яблука)",
+  "version": "Classic home sharlotka: 4 eggs beaten with ~1 glass sugar, ~1 glass flour folded in (no fat, no milk in the batter), poured over 4 sliced apples in a buttered 24–26 cm form, baked at 180 °C ~40 min.",
+  "ingredients": [
+   {
+    "id": "ing-egg-raw",
+    "g": 220
+   },
+   {
+    "id": "sugar",
+    "g": 200
+   },
+   {
+    "id": "ing-wheat-flour",
+    "g": 170
+   },
+   {
+    "id": "apple",
+    "g": 550
+   },
+   {
+    "id": "butter",
+    "g": 10
+   }
+  ],
+  "cooked_g": 1010,
+  "yield_note": "Apples: 4 medium (~650 g as bought), cored, skin on → 550 g. Butter = greasing the form. Raw ≈1150 g; sponge batter + juicy apples lose ≈12 % in baking → ≈1010 g. Optional vanilla sugar/cinnamon/pinch of soda omitted (~0–40 kcal per cake).",
+  "references": [
+   {
+    "kcal100": 238,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished dish for 'Шарлотка з яблуками та цедрою' (5 eggs, 150 g sugar, 220 g flour, 2 apples — more batter, fewer apples than this version)",
+    "url": "https://klopotenko.com/yevgen-klopotenko-razom-z-druzhynoyu-pokazaly-yak-prygotuvaty-sharlotku-z-yablukamy-ta-czytrusovoyu-czedroyu-pokrokovyj-reczept-z-video/"
+   },
+   {
+    "kcal100": 252,
+    "source": "Estonian NutriData/TKA, food 3331 / code 14157 'Õunakook (õuna tükid taina sees)' — Apple cake, apple pieces in egg–sugar–flour batter (with some sunflower oil), baked",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/3331/version/public?tka=true"
+   }
+  ]
+ },
+ "paska": {
+  "recipe_source": "https://klopotenko.com/z-bilkovoyu-glazuryu-ta-czukatamy-puhka-paska-do-velykodnya-vid-yevgena-klopotenka/ (Пухка паска з білковою глазур'ю, Є. Клопотенко: 1500 г борошна, 500 мл молока, 6 яєць + 4 жовтки, 300 г цукру, 20 г ванільного цукру, 200 г масла, 50 мл олії, 200 г цукатів, 50 г живих дріжджів; глазур 1 білок + 150 г цукрової пудри) — averaged with https://klopotenko.com/klassichna-paska/ (Класична паска: 750–800 г борошна, 220 мл молока, 1 яйце + 1 жовток, 225 г цукру, 100 г масла, 2 ст. л. сметани, 100 г родзинок; глазур 200 г пудри + апельсиновий сік); scaled to typical home proportions per 1 kg flour",
+  "version": "Rich Easter yeast bread: sponge on milk, then eggs, sugar + vanilla sugar, melted butter, a little oil and raisins; baked in tall forms at 180 °C; topped with egg-white icing (білкова глазур).",
+  "ingredients": [
+   {
+    "id": "ing-wheat-flour",
+    "g": 1000
+   },
+   {
+    "id": "milk-2-5",
+    "g": 450
+   },
+   {
+    "id": "ing-egg-raw",
+    "g": 330
+   },
+   {
+    "id": "sugar",
+    "g": 320
+   },
+   {
+    "id": "butter",
+    "g": 200
+   },
+   {
+    "id": "sunflower-oil",
+    "g": 20
+   },
+   {
+    "id": "ing-yeast-dry",
+    "g": 15
+   },
+   {
+    "id": "raisins",
+    "g": 150
+   },
+   {
+    "id": "ing-egg-white-raw",
+    "g": 30
+   },
+   {
+    "id": "ing-powdered-sugar",
+    "g": 150
+   }
+  ],
+  "cooked_g": 2370,
+  "yield_note": "Sugar 320 g = 300 g + 20 g vanilla sugar; eggs = 6 × C1; fresh yeast 45–50 g ≈ 15 g dry; oil for the dough/greasing. Raw dough ≈2485 g; tall loaves lose ≈12 % in baking → ≈2190 g; icing (1 white + 150 g icing sugar) ≈180 g → ≈2370 g (3–4 medium paskas).",
+  "references": [
+   {
+    "kcal100": 348,
+    "source": "Czech food composition database (nutridatabaze.cz, ÚZEI), FCDB 0792 'Mazanec (vánočka), modelová receptura' — Easter/Christmas sweet yeast bread with raisins, model recipe",
+    "url": "https://www.nutridatabaze.cz/potraviny/?id=792"
+   },
+   {
+    "kcal100": 392,
+    "source": "Klopotenko.com — nutrition stated per 100 g of the finished product for 'Пухка паска з білковою глазур'ю та цукатами' (with candied fruit)",
+    "url": "https://klopotenko.com/z-bilkovoyu-glazuryu-ta-czukatamy-puhka-paska-do-velykodnya-vid-yevgena-klopotenka/"
+   },
+   {
+    "kcal100": 389,
+    "source": "Estonian NutriData/TKA, food 1578 / code 85617 'Pirukas, rosinatega (pärmitainas)' — sweet yeast raisin buns (analog, no glaze)",
+    "url": "https://tka.nutridata.ee/api-foods/recipes/1578/version/public?tka=true"
+   }
+  ]
+ },
+ "uzvar": {
+  "recipe_source": "Typical home version averaged from: УНІАН https://www.unian.ua/recipes/uzvar-kak-varit-vkusnye-recepty-chto-dobavit-amp-12098481.html (3 л води; сушені яблука 200 г, груші 200 г, чорнослив 100 г, родзинки 100 г, мед 4–5 ст. л.; variant: 600 г сухофруктів + 250 г цукру); Доцяк В.С. «Українська кухня» (1998) «Узвар із сухофруктів»: сухофрукти 100 г, цукор 75 г, мед 25 г, вода 1000 г → вихід 1000 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); nfront.org.ua https://nfront.org.ua/?p=7293 (300–400 г сухофруктів на 3 л, 4–5 ст. л. меду).",
+  "version": "Dried apples, pears, prunes and raisins simmered ~30 min in water with sugar, left to steep for several hours. Calculated for the WHOLE POT – liquid together with the soaked fruit (NOT strained); a glass of strained liquid is ≈10–20 % lower because the fibre and part of the fruit sugar stay in the fruit.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 3000
+   },
+   {
+    "id": "ing-dried-apples",
+    "g": 200
+   },
+   {
+    "id": "ing-dried-pears",
+    "g": 150
+   },
+   {
+    "id": "prunes",
+    "g": 80
+   },
+   {
+    "id": "raisins",
+    "g": 70
+   },
+   {
+    "id": "sugar",
+    "g": 150
+   }
+  ],
+  "cooked_g": 3500,
+  "yield_note": "Sugar 150 g per 3 L (between the honey-only UNIAN version ~4–5 ст. л. and 250 g in its variant; Dotsiak 75 g sugar + 25 g honey per 1 L is sweeter catering norm). Evaporation ≈150 g (≈5 % of the water in a covered 30-min simmer). 3000 + 500 fruit + 150 sugar − 150 = 3500 g.",
+  "references": [
+   {
+    "kcal100": 31,
+    "source": "UNSWEETENED school version – Ukrainian school-menu tech card ТК 13.11 «Узвар із суміші сухофруктів» (МОН/МОЗ «Знаїмо»): 31 kcal per 100 g portion; only 75 g dried fruit + 50 g raisins per 1100 g water and NO sugar – lower bound, not the same recipe",
+    "url": "https://znaimo.gov.ua/media/Документи/Техкарти/Категорія напої ТК 13.1-13.33.pdf"
+   }
+  ]
+ },
+ "kompot": {
+  "recipe_source": "Typical home (summer, cooked in a pot) version averaged from: TSN https://tsn.ua/other/iak-varyty-kompot-3111329.html (на 1 л води 300–400 г фруктів, 50–70 г цукру); УНІАН https://www.unian.ua/recipes/drinks/sweet-drinks/kompot-z-vishni-p-yatihvilinka-i-inshi-recepti-11888970.html (на 3-л банку: вишня 800 г, цукор 300 г; summer version boiled in a pot 5–7 min).",
+  "version": "Fresh apples and (pitted) sour cherries put into boiling sugared water, simmered 5–10 min, left to cool under a lid. Calculated for the WHOLE POT (liquid + fruit, not strained). A winter compote from a 3-L jar is denser (≈800 g fruit + 300 g sugar per jar) – about 45–55 kcal/100 g.",
+  "ingredients": [
+   {
+    "id": "water",
+    "g": 3000
+   },
+   {
+    "id": "apple",
+    "g": 400
+   },
+   {
+    "id": "cherries-sour",
+    "g": 350
+   },
+   {
+    "id": "sugar",
+    "g": 200
+   }
+  ],
+  "cooked_g": 3890,
+  "yield_note": "Apple cored (≈450 g as bought); cherries pitted weight (≈390 g with stones). Sugar 200 g per 3 L = 67 g/L (TSN 50–70 g/L). Evaporation during a 5–10 min simmer ≈60 g ⇒ 3000 + 750 + 200 − 60 = 3890 g. Strained liquid is only slightly lower (≈5 %): the sugar is dissolved evenly, fresh fruit holds little extra.",
+  "references": [
+   {
+    "kcal100": 22,
+    "source": "UNSWEETENED school version – Ukrainian school-menu tech card ТК 13.8 «Компот з ягід або фруктів (свіжих або заморожених)» (МОН/МОЗ «Знаїмо»): 22 kcal per 100 g portion; 250 g berries + 50 g raisins per 1100 g water and NO sugar – lower bound, not the same recipe",
+    "url": "https://znaimo.gov.ua/media/Документи/Техкарти/Категорія напої ТК 13.1-13.33.pdf"
+   },
+   {
+    "kcal100": 57,
+    "source": "(weak: anonymous calorie counter) fatsecret.pl generic entry «Kompot z jabłek» 57 kcal/100 g (anonymous calorie-counter entry; Polish home compote, sugar level unknown)",
+    "url": "https://www.fatsecret.pl/kalorie-warto%C5%9Bci%C2%A0od%C5%BCywcze/og%C3%B3lny/kompot-z-jab%C5%82ek"
+   }
+  ]
+ }
+}

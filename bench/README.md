@@ -8,7 +8,8 @@ with grams**, well enough to pre-fill the check screen?
 - **Model:** `google/gemma-3n-E2B-it-litert-lm`, file `gemma-3n-E2B-it-int4.litertlm` (3.7 GB), run with
   LiteRT-LM (`litert-lm-api` 0.18.1), the same runtime and file the phone would use. Its image encoder
   only runs on a GPU (LiteRT rejects a CPU vision backend). Greedy decoding.
-- **Food list:** the MacroTrack spreadsheet (`foods_from_xlsx.py` → `data/foods.json`, 202 foods).
+- **Food list:** until 2026-10-30 the MacroTrack spreadsheet (202 foods); since then the Ukrainian list in
+  `catalogue/` (195 foods, sourced values; `data/foods.json` is a copy of `../src/data/foods.json`).
 - **Photos with weighed ground truth:** [Nutrition5k](https://github.com/google-research-datasets/Nutrition5k)
   overhead photos, where every ingredient on the plate was weighed.
   - `n5k_to_list.json` maps each of the 241 Nutrition5k ingredients onto our list. Several ids may count
@@ -46,7 +47,7 @@ top of the list. Free text in a fixed line format reads the same photos well.
 ```bash
 cd bench
 uv venv .venv -p 3.11 && uv pip install --python .venv/bin/python litert-lm-api openpyxl pillow huggingface_hub
-.venv/bin/python -I foods_from_xlsx.py "<MacroTrack>/data/samples/Macros App - Product Nutrition Database.xlsx" data/foods.json
+cp ../src/data/foods.json data/foods.json          # the app's list (catalogue/README.md)
 .venv/bin/python -I list_overhead.py data/n5k/overhead_ids.txt        # after downloading the metadata CSVs
 .venv/bin/python -I n5k_prepare.py data/n5k data/foods.json n5k_to_list.json 150 7 data/n5k/bench.jsonl
 .venv/bin/python -I run_gemma.py --model data/models/gemma-3n-E2B-it-int4.litertlm --bench data/n5k/bench.jsonl \
@@ -81,3 +82,24 @@ Findings:
 - **Common model mistakes:** meat called "meat patty"/"chicken", melon missed, sweet potato read as potato,
   extra tomato/cucumber that is not there.
 - **Not measured yet:** speed and memory on the Galaxy S21 itself, and accuracy on her own food.
+
+## New food list (2026-10-30)
+
+The list became Ukrainian home food (`catalogue/`, decision D22). The same plates and the same saved model answers,
+re-scored on it: `relist.py` rebuilds each set's ground truth for the new list (same plates; quinoa, couscous, bulgur,
+tofu, avocado and other foods no longer in the list are left out of the truth), then `score.py`.
+
+| Set | Foods found | Precision | Edits per plate | Unknown names |
+|---|---:|---:|---:|---:|
+| test (149 plates) | 60 % | 54 % | 2.4 | 28 |
+| holdout (150 plates) | 60 % | 51 % | 2.3 | 28 |
+
+On par with the old list (holdout 58 % found, 2.3 edits) although these are American plates. The matcher now ignores
+garnish even where the list has the food (onion and lemon are recipe ingredients) and, on a tie, prefers the everyday
+food («Potato cubes» → boiled potatoes, not the fried-potato dish).
+
+```bash
+for s in bench holdout dev; do .venv/bin/python -I relist.py data/n5k data/foods.json n5k_to_list.json data/n5k/$s.jsonl data/n5k/ua/$s.jsonl; done
+.venv/bin/python -I score.py data/n5k/ua/holdout.jsonl data/foods.json data/out/holdout_E2B_names.jsonl
+```
+

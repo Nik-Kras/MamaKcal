@@ -36,7 +36,7 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 - **On the phone**: Gemma 3n E2B through LiteRT-LM (decision D13). Photos and meals never leave the phone; only technical crash reports go to Sentry (D18). The model is downloaded once from the app (D19), and the app checks GitHub for a newer version (D20).
 - The model names each food in English with grams (`food | grams` lines); code maps the names onto the
-  food list (the MacroTrack spreadsheet), D14. Chosen by the benchmark in `bench/README.md`: about 55–58 %
+  food list (the Ukrainian food list (bench/catalogue, D22)), D14. Chosen by the benchmark in `bench/README.md`: about 55–58 %
   of foods found, 2–3 fixes per plate, a quarter of plates right first time.
 - Because it is often wrong, fixing is part of the design:
   - **Wrong food** → tap its name: the picker starts with foods close to what the model saw, then her recent foods.
