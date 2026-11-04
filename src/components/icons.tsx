@@ -88,3 +88,18 @@ export const AlertIcon = ({ size = 40, color = "#000", width = 1.8 }: P) => (
     <Path d="M12 7.5v5.5M12 16.5v.01" {...stroke(color, width)} />
   </Svg>
 );
+
+export const ShareIcon = ({ size = 22, color = "#000", width = 2 }: P) => (
+  <Svg {...base(size)}>
+    <Circle cx={18} cy={5} r={3} {...stroke(color, width)} />
+    <Circle cx={6} cy={12} r={3} {...stroke(color, width)} />
+    <Circle cx={18} cy={19} r={3} {...stroke(color, width)} />
+    <Path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" {...stroke(color, width)} />
+  </Svg>
+);
+
+export const SendIcon = ({ size = 26, color = "#fff", width = 2 }: P) => (
+  <Svg {...base(size)}>
+    <Path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" {...stroke(color, width)} />
+  </Svg>
+);

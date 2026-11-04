@@ -79,6 +79,7 @@ function RootLayout() {
               <Stack.Screen name="camera" options={{ animation: "fade", contentStyle: { backgroundColor: C.camera } }} />
               <Stack.Screen name="analyzing" options={{ animation: "fade" }} />
               <Stack.Screen name="review" />
+              <Stack.Screen name="share" />
               <Stack.Screen name="sentry-test" />
             </Stack>
           </Gate>

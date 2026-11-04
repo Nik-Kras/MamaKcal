@@ -1,6 +1,6 @@
 # Калорії (MamaKcal): Product Requirements
 
-Status: **v1 in build** · Last updated: 2026-10-28
+Status: **v1 in build** · Last updated: 2026-11-04
 Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 ## 1. User and goal
@@ -11,7 +11,7 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 ## 2. Principles
 
-- **Fewest buttons.** One big button on the main screen. No settings screen, stats, macros, tabs or onboarding.
+- **Fewest buttons.** One big button on the main screen (plus «Поділитися», D23). No settings screen, stats, macros, tabs or onboarding.
 - **Every number is editable** before saving, and every saved meal can be changed or deleted.
 - **Undo instead of "are you sure"**: logging, editing and deleting show a 10-second toast with Скасувати / Повернути. The one confirmation is leaving the check screen with unsaved changes (that loses work for good).
 - Large text (body 17–20 px, numbers 20–60 px), touch targets ≥ 48 dp, contrast ≥ 4.5:1, follows Android font size.
@@ -19,12 +19,13 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 ## 3. Screens
 
-1. **Головна (Today)**: kcal left (or "Понад норму"), one progress bar, "З’їдено X з N ккал" (tap N to change the daily target), today's meals (photo, meal name by time, dish, kcal), the big **Сфотографувати їжу** button, and the toast.
+1. **Головна (Today)**: kcal left (or "Понад норму"), one progress bar, "З’їдено X з N ккал" (tap N to change the daily target), today's meals (photo, meal name by time, dish, kcal), the big **Сфотографувати їжу** button, the toast, and **Поділитися** at the top.
 2. **Фото**: live camera, shutter, **Галерея**, **Без фото** (type it in).
 3. **Розпізнавання**: the photo, "Дивлюся, що на тарілці…", Скасувати. Errors (no internet, no food seen, failed) offer **Спробувати ще раз** and **Вписати вручну**.
 4. **Перевірка ваги**: photo, dish name, one card per product. AI guesses are yellow "≈ на око"; typing a weight or tapping −/+ turns the card "зважено". Tap a name to swap the product, × to remove (undo for a few seconds), **Додати продукт**, and **Записати · N ккал**. Unrecognised lines are listed first and block logging until she picks a food or removes them (the button then reads «Оберіть продукт» and opens the picker); so do lines with no weight («Впишіть вагу»). Weights may have one decimal («1,5»).
 5. **Заміна / додавання продукту** (sheet): search, the AI's look-alikes and same-kind foods first; a name not in the list can be added with its kcal per 100 g.
 6. Opening a logged meal shows the same check screen with **Зберегти** and **Видалити запис**.
+7. **Поділитися** (D23; design: https://claude.ai/artifact/Qp5JTp3x7whG1r9LcGmWpS): **Сьогодні / Вчора / Тиждень**, a preview of the picture that is sent, and **Надіслати**, which opens Android's share menu (Telegram → her son). The day picture shows the total against her target, then each meal with its photo, time, dish, products with amounts and kcal. The week picture shows the average per day (over the days with records), the days over the target, a bar per day with the target line, and the days with nothing logged. The caption repeats it as text. With nothing logged for the chosen period the button is off.
 
 ## 4. Data
 
@@ -34,7 +35,7 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 ## 5. Recognition
 
-- **On the phone**: Gemma 3n E2B through LiteRT-LM (decision D13). Photos and meals never leave the phone; only technical crash reports go to Sentry (D18). The model is downloaded once from the app (D19), and the app checks GitHub for a newer version (D20).
+- **On the phone**: Gemma 3n E2B through LiteRT-LM (decision D13). Photos and meals never leave the phone unless she sends them herself with «Поділитися» (D23); only technical crash reports go to Sentry (D18). The model is downloaded once from the app (D19), and the app checks GitHub for a newer version (D20).
 - The model names each food in English with grams (`food | grams` lines); code maps the names onto the
   food list (the Ukrainian food list (bench/catalogue, D22)), D14. Chosen by the benchmark in `bench/README.md`: about 55–58 %
   of foods found, 2–3 fixes per plate, a quarter of plates right first time.
@@ -48,7 +49,7 @@ Approved prototype: https://claude.ai/artifact/25VmupG6vUxjJqnvnCeZiZ
 
 ## 6. Out of scope (v1)
 
-History of past days, stats, macros, reminders, backup/export, multiple users, English UI.
+History of past days and stats in the app (only «Поділитися» shows yesterday and the last 7 days), macros, reminders, backup/export, multiple users, English UI.
 
 ## 7. Open questions for her
 

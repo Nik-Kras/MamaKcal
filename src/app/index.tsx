@@ -5,7 +5,7 @@ import { Image, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { LiteRtLm } from "../../modules/litert-lm";
-import { CameraIcon, CheckIcon, PencilIcon } from "../components/icons";
+import { CameraIcon, CheckIcon, PencilIcon, ShareIcon } from "../components/icons";
 import { ModelCard } from "../components/ModelCard";
 import { UpdateBanner } from "../components/UpdateBanner";
 import { NormSheet } from "../components/NormSheet";
@@ -102,10 +102,36 @@ export default function Home() {
   return (
     <View style={{ flex: 1, backgroundColor: C.bg }}>
       <StatusBar style="dark" />
-      <View style={{ paddingTop: insets.top + 12, paddingHorizontal: 20, paddingBottom: 4 }}>
-        <T w="sb" size={32} accessibilityRole="header">
-          Сьогодні
-        </T>
+      <View style={{ paddingTop: insets.top + 12, paddingLeft: 20, paddingRight: 16, paddingBottom: 4 }}>
+        <View
+          style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", columnGap: 12, rowGap: 6 }}
+        >
+          <T w="sb" size={32} accessibilityRole="header">
+            Сьогодні
+          </T>
+          <Tap
+            testID="share-button"
+            onPress={() => navOnce(() => router.push("/share"))}
+            accessibilityLabel="Поділитися: надіслати, що з’їдено"
+            style={{
+              minHeight: 48,
+              paddingLeft: 12,
+              paddingRight: 16,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 8,
+              borderRadius: 24,
+              borderWidth: 2,
+              borderColor: C.accent,
+              backgroundColor: C.surface,
+            }}
+          >
+            <ShareIcon size={22} color={C.accent} />
+            <T w="m" size={17} color={C.accent}>
+              Поділитися
+            </T>
+          </Tap>
+        </View>
         <T size={17} color={C.muted} style={{ marginTop: 2 }}>
           {dayLabel(now)}
         </T>
