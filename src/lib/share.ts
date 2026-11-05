@@ -1,15 +1,19 @@
 import type { Item, Meal } from "../types";
 import { dayLabel, fmt, mealTitle, MONTHS, todayISO, WEEKDAYS } from "./format";
-import { dayMeals, mealKcal } from "./nutrition";
+import { dayMeals, itemGrams, itemKcal, mealKcal } from "./nutrition";
 
 /**
- * What «Поділитися» sends: a day (today or yesterday) or the last 7 days, as a
- * picture (src/components/ShareCard.tsx) with this caption under it.
+ * What «Поділитися» sends (D23, D24). A day (today or yesterday): the meal photos as
+ * an album, then `dayMessage` as a separate text message (Telegram drops the text
+ * when several photos are shared at once). The last 7 days: a picture
+ * (src/components/ShareCard.tsx) with `weekText` as its caption.
  */
 export type SharePeriod = "today" | "yesterday" | "week";
 
 /** Telegram cuts a picture's caption at 1 024 characters. */
 export const CAPTION_MAX = 1024;
+/** Telegram splits a longer text message into several. */
+export const MESSAGE_MAX = 4096;
 
 const SHORT = ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 
@@ -29,17 +33,26 @@ const dayMonth = (d: Date) => `${d.getDate()} ${MONTHS[d.getMonth()]}`;
 
 const NBSP = " ";
 
-/**
- * "Сирники 3 шт · Сметана 15% 30 г". Non-breaking spaces keep the last word, the amount and
- * the unit on one line ("житній 2 шт"), and the dot at the end of a line, not the start.
- */
-export function amountsText(items: Pick<Item, "name" | "amount" | "unit">[]): string {
-  return items.map((it) => `${it.name}${NBSP}${it.amount}${NBSP}${it.unit === "pcs" ? "шт" : "г"}`).join(`${NBSP}· `);
+/** "3 шт (150 г)", "30 г"; "≈" marks the model's guess she didn't weigh. */
+export function amountText(it: Pick<Item, "amount" | "unit" | "pcGrams" | "weighed">): string {
+  const guess = it.weighed ? "" : "≈";
+  if (it.unit === "g") return `${guess}${it.amount}${NBSP}г`;
+  const grams = Math.round(itemGrams(it));
+  return `${guess}${it.amount}${NBSP}шт${grams ? `${NBSP}(${fmt(grams)}${NBSP}г)` : ""}`;
 }
 
 /** Neutral either way: no praise for eating less. */
 export function normLine(eaten: number, norm: number): string {
   return eaten > norm ? `Понад норму: ${fmt(eaten - norm)} ккал` : `До норми: ${fmt(norm - eaten)} ккал`;
+}
+
+export interface SharedItem {
+  name: string;
+  /** "3 шт (150 г)" */
+  amount: string;
+  kcal: number;
+  /** The model's guess, not weighed. */
+  guess: boolean;
 }
 
 export interface SharedMeal {
@@ -48,9 +61,11 @@ export interface SharedMeal {
   title: string;
   time: string;
   dish: string;
-  amounts: string;
+  items: SharedItem[];
   kcal: number;
   photo?: string;
+  /** Its place in the album (1, 2…); only meals with a photo have one. */
+  photoNo?: number;
 }
 
 export interface DayReport {
@@ -62,15 +77,19 @@ export interface DayReport {
 }
 
 export function dayReport(meals: Meal[], date: string, norm: number): DayReport {
-  const list = dayMeals(meals, date).map((m) => ({
-    id: m.id,
-    title: mealTitle(m.time),
-    time: m.time,
-    dish: m.dishName,
-    amounts: amountsText(m.items),
-    kcal: mealKcal(m.items),
-    photo: m.photo,
-  }));
+  let photos = 0;
+  const list = dayMeals(meals, date).map(
+    (m): SharedMeal => ({
+      id: m.id,
+      title: mealTitle(m.time),
+      time: m.time,
+      dish: m.dishName,
+      items: m.items.map((it) => ({ name: it.name, amount: amountText(it), kcal: itemKcal(it), guess: !it.weighed })),
+      kcal: mealKcal(m.items),
+      photo: m.photo,
+      photoNo: m.photo ? ++photos : undefined,
+    }),
+  );
   return { label: dayLabel(fromISO(date)), meals: list, eaten: list.reduce((s, m) => s + m.kcal, 0), norm };
 }
 
@@ -150,11 +169,51 @@ export function clipCaption(text: string, max = CAPTION_MAX): string {
   return `${text.slice(0, cut > 0 ? cut : max - 2)}\n…`;
 }
 
-export function dayText(r: DayReport): string {
-  if (!r.meals.length) return `${r.label}: нічого не записано`;
-  const head = `${r.label}: ${fmt(r.eaten)} з ${fmt(r.norm)} ккал`;
-  const lines = r.meals.map((m) => `${m.title} ${m.time} — ${m.dish}, ${fmt(m.kcal)} ккал`);
-  return clipCaption([head, "", ...lines].join("\n"));
+/** The day's photos in album order (the same order as the meals in `dayMessage`). */
+export function dayPhotos(r: DayReport): string[] {
+  return r.meals.flatMap((m) => (m.photo ? [m.photo] : []));
+}
+
+const MEAL_ICON: Record<string, string> = { Сніданок: "🍳", Обід: "🍲", Вечеря: "🍽️", Перекус: "🍎" };
+const RULE = "━━━━━━━━━━━━━━━━";
+
+/**
+ * Telegram reads **bold**, __italic__, ||spoiler||, ~~strike~~ and `code` in shared
+ * text; a food or dish name she typed must never turn into one of those.
+ */
+export function plain(s: string): string {
+  return s.replace(/\*/g, "").replace(/`/g, "'").replace(/([_|~])\1+/g, "$1");
+}
+
+/**
+ * The day as one Telegram message: the total, then each meal between rules, with its
+ * photo number in the album and a line per product.
+ */
+export function dayMessage(r: DayReport): string {
+  const head = `📅 **${r.label}**`;
+  if (!r.meals.length) return `${head}\nНічого не записано`;
+  const lines = [head, `З’їдено **${fmt(r.eaten)} ккал** з ${fmt(r.norm)}`, normLine(r.eaten, r.norm)];
+  for (const m of r.meals) {
+    lines.push(
+      "",
+      RULE,
+      `${MEAL_ICON[m.title] ?? "🍽️"} **${m.title} · ${m.time}**${m.photoNo ? ` · фото ${m.photoNo}` : ""}`,
+      `**${plain(m.dish)}** — ${fmt(m.kcal)} ккал`,
+      // Non-breaking spaces keep "· 184 ккал" together when a long name wraps.
+      ...m.items.map((it) => `• ${plain(it.name)} — ${it.amount}${NBSP}·${NBSP}${fmt(it.kcal)}${NBSP}ккал`),
+    );
+  }
+  lines.push("", RULE);
+  if (r.meals.some((m) => m.items.some((it) => it.guess))) lines.push("≈ вага на око, не зважено");
+  return clipCaption(lines.join("\n"), MESSAGE_MAX);
+}
+
+/** Split a preview line into plain and **bold** parts, as Telegram will show it. */
+export function boldParts(line: string): { text: string; bold: boolean }[] {
+  return line
+    .split(/\*\*(.+?)\*\*/)
+    .map((text, i) => ({ text, bold: i % 2 === 1 }))
+    .filter((p) => p.text);
 }
 
 export function weekText(r: WeekReport): string {

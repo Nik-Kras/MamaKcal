@@ -30,14 +30,14 @@ Updates: when a newer release exists, the home screen shows «Є нова вер
 
 ```
 src/app/            screens (Expo Router): index · camera · analyzing · review · share
-src/components/     Sheet, PickSheet (add / fix a food), NormSheet (daily target), ShareCard (the shared picture), icons, ui
+src/components/     Sheet, PickSheet (add / fix a food), NormSheet (daily target), ShareCard (the shared week picture), icons, ui
 src/store/          store.tsx (state + actions), persistence.ts (SQLite)
 src/lib/            match (model name → food, port of bench/match.py), recognition (parse the model's answer),
-                    recognize (calls the on-device model), share (day/week summary for «Поділитися»), format, nutrition,
+                    recognize (calls the on-device model), share (day message and week summary for «Поділитися»), format, nutrition,
                     search, photo
 src/data/           foods.json (Ukrainian home food, sourced kcal: bench/catalogue, `pnpm foods`), foods.ts
 modules/litert-lm/  Expo native module: Gemma 3n E2B through LiteRT-LM, on the phone's GPU
-modules/share-image/ Expo native module: Android's share menu with a picture and its caption
+modules/share-image/ Expo native module: Android's share menu with a picture and its caption, or a day's photos as an album
 bench/              the food-photo benchmark that chose the model and the approach (bench/README.md)
 ```
 

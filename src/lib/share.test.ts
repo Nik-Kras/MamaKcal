@@ -3,15 +3,19 @@ import { describe, expect, it } from "vitest";
 import type { Item, Meal } from "../types";
 import {
   addDays,
-  amountsText,
+  amountText,
+  boldParts,
   CAPTION_MAX,
   clipCaption,
+  dayMessage,
+  dayPhotos,
   dayReport,
-  dayText,
   emptyDaysText,
+  MESSAGE_MAX,
   normLine,
   overText,
   weekReport,
+  plain,
   weekText,
 } from "./share";
 
@@ -30,12 +34,13 @@ const item = (name: string, kcal100: number, amount: string, unit: "g" | "pcs" =
 const nb = (s: string) => s.replace(/_/g, "\u00a0");
 
 let n = 0;
-const meal = (date: string, time: string, dishName: string, items: Item[]): Meal => ({
+const meal = (date: string, time: string, dishName: string, items: Item[], photo?: string): Meal => ({
   id: `m${++n}`,
   date,
   time,
   dishName,
   items,
+  photo,
   createdAt: n,
 });
 
@@ -44,43 +49,108 @@ const borshch = [item("Борщ червоний (з м'ясом)", 46, "400"), 
 
 describe("share: a day", () => {
   const meals = [
-    meal("2026-11-04", "13:10", "Борщ з хлібом", borshch),
-    meal("2026-11-04", "08:20", "Сирники зі сметаною", syrnyky),
-    meal("2026-11-03", "19:00", "Вчорашня вечеря", [item("Кефір 2,5%", 50, "250")]),
+    meal("2026-11-04", "13:10", "Борщ з хлібом", borshch, "file:///photos/b.jpg"),
+    meal("2026-11-04", "08:20", "Сирники зі сметаною", syrnyky, "file:///photos/s.jpg"),
+    meal("2026-11-04", "16:30", "Яблуко", [{ ...item("Яблуко", 52, "180"), weighed: false }]),
+    meal("2026-11-04", "19:40", "Кефір", [item("Кефір 2,5%", 50, "250")], "file:///photos/k.jpg"),
+    meal("2026-11-03", "19:00", "Вчорашня вечеря", [item("Кефір 2,5%", 50, "250")], "file:///photos/y.jpg"),
   ];
 
-  it("lists that day's meals in time order with their kcal", () => {
+  it("lists that day's meals in time order, with a line and kcal per product", () => {
     const r = dayReport(meals, "2026-11-04", 1800);
     expect(r.label).toBe("Середа, 4 листопада");
     expect(r.meals.map((m) => [m.title, m.time, m.dish, m.kcal])).toEqual([
       ["Сніданок", "08:20", "Сирники зі сметаною", 434],
       ["Обід", "13:10", "Борщ з хлібом", 319],
+      ["Вечеря", "16:30", "Яблуко", 94],
+      ["Вечеря", "19:40", "Кефір", 125],
     ]);
-    expect(r.meals[0].amounts).toBe(nb("Сирники_3_шт_· Сметана 15%_30_г"));
-    expect(r.eaten).toBe(753);
+    expect(r.meals[0].items).toEqual([
+      { name: "Сирники", amount: nb("3_шт_(150_г)"), kcal: 386, guess: false },
+      { name: "Сметана 15%", amount: nb("30_г"), kcal: 48, guess: false },
+    ]);
+    expect(r.eaten).toBe(972);
   });
 
-  it("writes the caption", () => {
-    expect(dayText(dayReport(meals, "2026-11-04", 1800))).toBe(
-      [
-        "Середа, 4 листопада: 753 з 1 800 ккал",
-        "",
-        "Сніданок 08:20 — Сирники зі сметаною, 434 ккал",
-        "Обід 13:10 — Борщ з хлібом, 319 ккал",
-      ].join("\n"),
+  it("numbers the photos in album order, skipping meals without one", () => {
+    const r = dayReport(meals, "2026-11-04", 1800);
+    expect(r.meals.map((m) => m.photoNo)).toEqual([1, 2, undefined, 3]);
+    expect(dayPhotos(r)).toEqual(["file:///photos/s.jpg", "file:///photos/b.jpg", "file:///photos/k.jpg"]);
+  });
+
+  it("writes the message: a rule between meals and a line per product", () => {
+    expect(dayMessage(dayReport(meals, "2026-11-04", 1800))).toBe(
+      nb(
+        [
+          "📅 **Середа, 4 листопада**",
+          "З’їдено **972 ккал** з 1_800",
+          "До норми: 828 ккал",
+          "",
+          "━━━━━━━━━━━━━━━━",
+          "🍳 **Сніданок · 08:20** · фото 1",
+          "**Сирники зі сметаною** — 434 ккал",
+          "• Сирники — 3_шт_(150_г)_·_386_ккал",
+          "• Сметана 15% — 30_г_·_48_ккал",
+          "",
+          "━━━━━━━━━━━━━━━━",
+          "🍲 **Обід · 13:10** · фото 2",
+          "**Борщ з хлібом** — 319 ккал",
+          "• Борщ червоний (з м'ясом) — 400_г_·_184_ккал",
+          "• Хліб житній — 60_г_·_135_ккал",
+          "",
+          "━━━━━━━━━━━━━━━━",
+          "🍽️ **Вечеря · 16:30**",
+          "**Яблуко** — 94 ккал",
+          "• Яблуко — ≈180_г_·_94_ккал",
+          "",
+          "━━━━━━━━━━━━━━━━",
+          "🍽️ **Вечеря · 19:40** · фото 3",
+          "**Кефір** — 125 ккал",
+          "• Кефір 2,5% — 250_г_·_125_ккал",
+          "",
+          "━━━━━━━━━━━━━━━━",
+          "≈ вага на око, не зважено",
+        ].join("\n"),
+      ),
     );
   });
 
   it("says so when nothing was logged", () => {
     const r = dayReport(meals, "2026-11-02", 1800);
     expect(r.meals).toEqual([]);
-    expect(dayText(r)).toBe("Понеділок, 2 листопада: нічого не записано");
+    expect(dayPhotos(r)).toEqual([]);
+    expect(dayMessage(r)).toBe("📅 **Понеділок, 2 листопада**\nНічого не записано");
   });
 
   it("shows pieces and decimal amounts as she typed them", () => {
-    expect(amountsText([item("Вареники з картоплею", 176, "1,5", "pcs", 25), item("Олія", 884, "10")])).toBe(
-      nb("Вареники з картоплею_1,5_шт_· Олія_10_г"),
+    expect(amountText(item("Вареники з картоплею", 176, "1,5", "pcs", 25))).toBe(nb("1,5_шт_(38_г)"));
+    expect(amountText(item("Яйце", 155, "2", "pcs"))).toBe(nb("2_шт"));
+    expect(amountText({ ...item("Олія", 884, "10"), weighed: false })).toBe(nb("≈10_г"));
+  });
+
+  it("keeps her names from turning into Telegram formatting", () => {
+    expect(plain("Салат **Олів'є** __домашній__ `x` ~~y~~ ||z||")).toBe("Салат Олів'є _домашній_ 'x' ~y~ |z|");
+    const r = dayReport([meal("2026-11-04", "09:00", "**Каша**", [item("Каша__вівсяна", 88, "200")])], "2026-11-04", 1800);
+    expect(dayMessage(r)).toContain("**Каша** — 176 ккал\n• Каша_вівсяна — ");
+  });
+
+  it("keeps a very long day within one Telegram message", () => {
+    const many = Array.from({ length: 60 }, (_, i) =>
+      meal("2026-11-05", `0${i % 10}:00`, `Страва ${i}`, [item("Дуже довга назва продукту номер один", 100, "100"), item("Ще одна довга назва", 100, "50")]),
     );
+    const text = dayMessage(dayReport(many, "2026-11-05", 1800));
+    expect(text.length).toBeLessThanOrEqual(MESSAGE_MAX);
+    expect(text.endsWith("\n…")).toBe(true);
+  });
+
+  it("shows bold parts for the preview", () => {
+    expect(boldParts("📅 **Середа** і **ще**")).toEqual([
+      { text: "📅 ", bold: false },
+      { text: "Середа", bold: true },
+      { text: " і ", bold: false },
+      { text: "ще", bold: true },
+    ]);
+    expect(boldParts("просто")).toEqual([{ text: "просто", bold: false }]);
   });
 
   it("states the gap to the target without judging it", () => {

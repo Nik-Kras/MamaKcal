@@ -1,15 +1,15 @@
 import React from "react";
-import { Image, TextProps, View } from "react-native";
+import { TextProps, View } from "react-native";
 import Svg, { Line } from "react-native-svg";
 
 import { fmt, plural } from "../lib/format";
-import { emptyDaysText, normLine, overText, type DayReport, type WeekReport } from "../lib/share";
+import { emptyDaysText, overText, type WeekReport } from "../lib/share";
 import { C, F } from "../theme";
-import { PencilIcon } from "./icons";
 import { T } from "./ui";
 
 /**
- * The picture «Поділитися» sends (approved design: claude.ai/artifact/Qp5JTp3x7whG1r9LcGmWpS).
+ * The week picture «Поділитися» sends (approved design: claude.ai/artifact/Qp5JTp3x7whG1r9LcGmWpS).
+ * A day is sent as its meal photos and a text message instead (D24).
  * Drawn on screen as the preview and captured as it is, so what she sees is what is sent.
  * Text grows with her font size only up to 1.3×, so the picture keeps its layout.
  */
@@ -25,79 +25,6 @@ function Footer() {
     <CT size={12} color={C.muted} style={{ textAlign: "center", marginTop: 2 }}>
       Записано в застосунку «Калорії»
     </CT>
-  );
-}
-
-export function DayCard({ r, width }: { r: DayReport; width: number }) {
-  const pct = Math.min(100, Math.round((r.eaten / r.norm) * 100));
-  return (
-    <View style={{ width, backgroundColor: C.bg, padding: 14, gap: 10 }}>
-      <View style={{ ...card, gap: 8 }}>
-        <CT size={16} color={C.muted}>
-          {r.label}
-        </CT>
-        <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6, flexWrap: "wrap" }}>
-          <CT w="sb" size={42} style={{ letterSpacing: -1 }}>
-            {fmt(r.eaten)}
-          </CT>
-          <CT w="m" size={18}>
-            ккал
-          </CT>
-          <CT size={16} color={C.muted}>
-            з {fmt(r.norm)}
-          </CT>
-        </View>
-        <View style={{ height: 10, borderRadius: 5, backgroundColor: C.track, overflow: "hidden" }}>
-          <View style={{ height: "100%", width: `${pct}%`, borderRadius: 5, backgroundColor: C.accent }} />
-        </View>
-        <CT size={15} color={C.muted}>
-          {normLine(r.eaten, r.norm)}
-        </CT>
-      </View>
-
-      {r.meals.length === 0 ? (
-        <CT size={17} color={C.muted} style={{ marginHorizontal: 4 }}>
-          Нічого не записано
-        </CT>
-      ) : (
-        r.meals.map((m) => (
-          <View
-            key={m.id}
-            style={{ flexDirection: "row", alignItems: "center", gap: 12, padding: 10, paddingRight: 14, backgroundColor: C.surface, borderRadius: 18 }}
-          >
-            <View
-              style={{ width: 60, height: 60, borderRadius: 12, overflow: "hidden", backgroundColor: C.track, alignItems: "center", justifyContent: "center" }}
-            >
-              {m.photo ? (
-                <Image source={{ uri: m.photo }} style={{ width: 60, height: 60 }} accessibilityIgnoresInvertColors />
-              ) : (
-                <PencilIcon size={24} color={C.muted} />
-              )}
-            </View>
-            <View style={{ flex: 1, minWidth: 0, gap: 2 }}>
-              <CT size={13} color={C.muted}>
-                {m.title} · {m.time}
-              </CT>
-              <CT w="m" size={16}>
-                {m.dish}
-              </CT>
-              <CT size={13} color={C.muted}>
-                {m.amounts}
-              </CT>
-            </View>
-            <View style={{ alignItems: "flex-end" }}>
-              <CT w="sb" size={20}>
-                {fmt(m.kcal)}
-              </CT>
-              <CT size={12} color={C.muted}>
-                ккал
-              </CT>
-            </View>
-          </View>
-        ))
-      )}
-      <Footer />
-    </View>
   );
 }
 
