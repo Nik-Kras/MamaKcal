@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Animated, Easing, Keyboard, Modal, Pressable, TextInput, View, useWindowDimensions, type EmitterSubscription } from "react-native";
+import { Animated, Easing, Keyboard, Modal, Pressable, ScrollView, TextInput, View, useWindowDimensions, type EmitterSubscription } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { C } from "../theme";
@@ -150,7 +150,14 @@ export function Sheet({
               <CloseIcon size={24} color={C.ink} />
             </Tap>
           </View>
-          {tall ? <View style={{ flex: 1 }}>{children}</View> : children}
+          {tall ? (
+            <View style={{ flex: 1 }}>{children}</View>
+          ) : (
+            // Scrolls when the content is taller than the room left above the keyboard.
+            <ScrollView style={{ flexShrink: 1 }} keyboardShouldPersistTaps="handled" bounces={false}>
+              {children}
+            </ScrollView>
+          )}
         </Animated.View>
       </View>
     </Modal>

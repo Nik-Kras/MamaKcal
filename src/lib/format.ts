@@ -5,6 +5,21 @@ export function fmt(n: number): string {
   return String(Math.round(Math.abs(n))).replace(/\B(?=(\d{3})+(?!\d))/g, NBSP);
 }
 
+/** Grams of a macro: whole grams from 10 up, one decimal below ("0,5", "7", "7,4"). */
+export function fmtG(n: number): string {
+  const a = Math.abs(n);
+  if (a >= 10) return fmt(a);
+  const r = Math.round(a * 10) / 10;
+  return Number.isInteger(r) ? String(r) : String(r).replace(".", ",");
+}
+
+/** "Б 24 · Ж 22 · В 34 · Кл 0,5 г" (without fibre: "Б 24 · Ж 22 · В 34 г"). */
+export function macroShort(m: { p: number; f: number; c: number; fib: number }, fibre = true): string {
+  const parts = [`Б${NBSP}${fmtG(m.p)}`, `Ж${NBSP}${fmtG(m.f)}`, `В${NBSP}${fmtG(m.c)}`];
+  if (fibre) parts.push(`Кл${NBSP}${fmtG(m.fib)}`);
+  return `${parts.join(" · ")}${NBSP}г`;
+}
+
 /** Pick the Ukrainian plural form: [1 продукт, 2 продукти, 5 продуктів]. */
 export function plural(n: number, forms: [string, string, string]): string {
   const a = n % 10;

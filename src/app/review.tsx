@@ -8,8 +8,19 @@ import { BackIcon, ChevronDown, CloseIcon, MinusIcon, PlusIcon, SearchIcon, Tras
 import { PickSheet } from "../components/PickSheet";
 import { focusFresh, useKeyboardLift } from "../components/Sheet";
 import { OUTLINE, PrimaryButton, T, Tap } from "../components/ui";
-import { fmt, plural } from "../lib/format";
-import { cleanAmount, convertAmount, itemKcal, listNames, mealKcal, parseAmount, stepPieces } from "../lib/nutrition";
+import { fmt, fmtG, macroShort, plural } from "../lib/format";
+import {
+  cleanAmount,
+  convertAmount,
+  hasMacros,
+  itemKcal,
+  itemMacros,
+  listNames,
+  mealKcal,
+  mealMacros,
+  parseAmount,
+  stepPieces,
+} from "../lib/nutrition";
 import { navOnce } from "../lib/navOnce";
 import {
   blocker,
@@ -192,6 +203,11 @@ function ItemRow({
           </T>
         </View>
       </View>
+      {item.macros100 && state !== "empty" && (
+        <T size={16} color={C.muted} style={{ paddingRight: 10 }}>
+          {macroShort(itemMacros(item))}
+        </T>
+      )}
     </View>
   );
 }
@@ -305,6 +321,7 @@ export default function Review() {
   const items = draft.items;
   const lines = orderLines(items, pinned);
   const total = mealKcal(items);
+  const totalMacros = hasMacros(items) ? mealMacros(items) : null;
   const editing = !!draft.mealId;
   const block = blocker(lines);
   const name = draft.dishName || listNames(items.filter((it) => !it.unknown));
@@ -327,6 +344,7 @@ export default function Review() {
                 foodId: food.id,
                 name: food.name,
                 kcal100: food.kcal100,
+                macros100: food.macros100,
                 pcGrams: food.pcGrams,
                 unit,
                 unknown: false,
@@ -345,6 +363,7 @@ export default function Review() {
         foodId: food.id,
         name: food.name,
         kcal100: food.kcal100,
+        macros100: food.macros100,
         pcGrams: food.pcGrams,
         unit,
         amount: unit === "pcs" ? "1" : "",
@@ -517,6 +536,21 @@ export default function Review() {
                 Повернути
               </T>
             </Tap>
+          </View>
+        )}
+        {/* The meal's macros; hidden while the keyboard is up, the weights need the room then. */}
+        {totalMacros && lift === 0 && (
+          <View
+            accessible
+            accessibilityLabel={`Разом: білки ${fmtG(totalMacros.p)}, жири ${fmtG(totalMacros.f)}, вуглеводи ${fmtG(totalMacros.c)}, клітковина ${fmtG(totalMacros.fib)} грамів`}
+            style={{ paddingHorizontal: 6, marginBottom: 10 }}
+          >
+            <T size={17} color={C.muted}>
+              Разом:{" "}
+              <T w="m" size={17}>
+                {macroShort(totalMacros)}
+              </T>
+            </T>
           </View>
         )}
         <PrimaryButton testID="log-button" label={label} onPress={onMain} />

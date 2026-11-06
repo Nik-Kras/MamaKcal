@@ -24,6 +24,14 @@ export const C = {
   scrim: "rgba(20,22,26,0.48)",
 } as const;
 
+/** Bar colours for білки, жири, вуглеводи, клітковина (macros design: claude.ai/artifact/1uUpgEsMBRdkekSXAjPQao). */
+export const MC = {
+  p: "#2F8A6E",
+  f: "#D98324",
+  c: "#7A62C9",
+  fib: "#8A9A3A",
+} as const;
+
 // Rubik has full Cyrillic. On Android a custom font needs one family per weight.
 export const F = {
   r: "Rubik_400Regular",

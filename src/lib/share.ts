@@ -1,6 +1,6 @@
-import type { Item, Meal } from "../types";
-import { dayLabel, fmt, mealTitle, MONTHS, todayISO, WEEKDAYS } from "./format";
-import { dayMeals, itemGrams, itemKcal, mealKcal } from "./nutrition";
+import type { Item, Macros, Meal } from "../types";
+import { dayLabel, fmt, fmtG, macroShort, mealTitle, MONTHS, todayISO, WEEKDAYS } from "./format";
+import { addMacros, dayMeals, hasMacros, itemGrams, itemKcal, mealKcal, mealMacros, NO_MACROS } from "./nutrition";
 
 /**
  * What «Поділитися» sends (D23, D24). A day (today or yesterday): the meal photos as
@@ -63,6 +63,8 @@ export interface SharedMeal {
   dish: string;
   items: SharedItem[];
   kcal: number;
+  /** null when none of its products has macros. */
+  macros: Macros | null;
   photo?: string;
   /** Its place in the album (1, 2…); only meals with a photo have one. */
   photoNo?: number;
@@ -73,6 +75,8 @@ export interface DayReport {
   label: string;
   meals: SharedMeal[];
   eaten: number;
+  /** The day's protein, fat, carbs and fibre; null when no meal has any. */
+  macros: Macros | null;
   norm: number;
 }
 
@@ -86,11 +90,19 @@ export function dayReport(meals: Meal[], date: string, norm: number): DayReport 
       dish: m.dishName,
       items: m.items.map((it) => ({ name: it.name, amount: amountText(it), kcal: itemKcal(it), guess: !it.weighed })),
       kcal: mealKcal(m.items),
+      macros: hasMacros(m.items) ? mealMacros(m.items) : null,
       photo: m.photo,
       photoNo: m.photo ? ++photos : undefined,
     }),
   );
-  return { label: dayLabel(fromISO(date)), meals: list, eaten: list.reduce((s, m) => s + m.kcal, 0), norm };
+  const withMacros = list.filter((m) => m.macros);
+  return {
+    label: dayLabel(fromISO(date)),
+    meals: list,
+    eaten: list.reduce((s, m) => s + m.kcal, 0),
+    macros: withMacros.length ? withMacros.reduce((s, m) => addMacros(s, m.macros ?? NO_MACROS), NO_MACROS) : null,
+    norm,
+  };
 }
 
 export interface WeekDay {
@@ -193,12 +205,14 @@ export function dayMessage(r: DayReport): string {
   const head = `📅 **${r.label}**`;
   if (!r.meals.length) return `${head}\nНічого не записано`;
   const lines = [head, `З’їдено **${fmt(r.eaten)} ккал** з ${fmt(r.norm)}`, normLine(r.eaten, r.norm)];
+  if (r.macros) lines.push(macroLine(r.macros));
   for (const m of r.meals) {
     lines.push(
       "",
       RULE,
       `${MEAL_ICON[m.title] ?? "🍽️"} **${m.title} · ${m.time}**${m.photoNo ? ` · фото ${m.photoNo}` : ""}`,
       `**${plain(m.dish)}** — ${fmt(m.kcal)} ккал`,
+      ...(m.macros ? [macroShort(m.macros)] : []),
       // Non-breaking spaces keep "· 184 ккал" together when a long name wraps.
       ...m.items.map((it) => `• ${plain(it.name)} — ${it.amount}${NBSP}·${NBSP}${fmt(it.kcal)}${NBSP}ккал`),
     );
@@ -206,6 +220,11 @@ export function dayMessage(r: DayReport): string {
   lines.push("", RULE);
   if (r.meals.some((m) => m.items.some((it) => it.guess))) lines.push("≈ вага на око, не зважено");
   return clipCaption(lines.join("\n"), MESSAGE_MAX);
+}
+
+/** "Білки 58 г · Жири 52 г · Вуглеводи 152 г · Клітковина 14 г" */
+export function macroLine(m: Macros): string {
+  return [`Білки ${fmtG(m.p)}${NBSP}г`, `Жири ${fmtG(m.f)}${NBSP}г`, `Вуглеводи ${fmtG(m.c)}${NBSP}г`, `Клітковина ${fmtG(m.fib)}${NBSP}г`].join(" · ");
 }
 
 /** Split a preview line into plain and **bold** parts, as Telegram will show it. */

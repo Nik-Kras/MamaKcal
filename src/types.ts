@@ -1,5 +1,13 @@
 export type Unit = "g" | "pcs";
 
+/** Grams of protein (білки), fat (жири), carbs (вуглеводи) and fibre (клітковина). */
+export interface Macros {
+  p: number;
+  f: number;
+  c: number;
+  fib: number;
+}
+
 /** A product in the picker: from the MacroTrack spreadsheet, or one she added. */
 export interface Food {
   id: string;
@@ -14,6 +22,8 @@ export interface Food {
   kcal100: number;
   /** Grams in one piece. Set only for foods counted in pieces (eggs, varenyky…). */
   pcGrams?: number;
+  /** Macros per 100 g. Missing for a product she added without them. */
+  macros100?: Macros;
   custom?: boolean;
 }
 
@@ -28,6 +38,8 @@ export interface Item {
   name: string;
   kcal100: number;
   pcGrams?: number;
+  /** Macros per 100 g, snapshotted like kcal100; missing when the food has none. */
+  macros100?: Macros;
   unit: Unit;
   /** Digits only, as typed. Grams for "g", a count for "pcs". */
   amount: string;

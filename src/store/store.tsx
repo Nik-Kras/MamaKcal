@@ -7,10 +7,10 @@ import { record, reportError } from "../diag/diagnostics";
 import { timeHM, todayISO, fmt } from "../lib/format";
 import { activeCorrections, learnFromMeal, migrateLearned, type Correction } from "../lib/learn";
 import { Matcher } from "../lib/match";
-import { cleanAmount, listNames, mealKcal, parseAmount } from "../lib/nutrition";
+import { cleanAmount, fillMacros, listNames, mealKcal, parseAmount } from "../lib/nutrition";
 import { preparePhoto, removeUnusedPhotos, type PreparedPhoto } from "../lib/photo";
 import { recognizeMeal, RecognizeFailure, type RecognizeError } from "../lib/recognize";
-import type { Draft, Food, Meal, Settings } from "../types";
+import type { Draft, Food, Macros, Meal, Settings } from "../types";
 import { LiteRtLm } from "../../modules/litert-lm";
 import { DEFAULT_SETTINGS, loadDraft, loadState, saveDraft, saveState, type PersistShape } from "./persistence";
 
@@ -73,7 +73,7 @@ interface Store {
   deleteDraftMeal: () => void;
   dismissToast: () => void;
   setNorm: (n: number) => void;
-  addCustomFood: (name: string, kcal100: number) => Food;
+  addCustomFood: (name: string, kcal100: number, macros100?: Macros) => Food;
 }
 
 const Ctx = createContext<Store | null>(null);
@@ -128,8 +128,11 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       return;
     }
     record("store.loaded", { kind: res.kind, meals: res.kind === "ok" ? res.data.meals.length : 0 });
-    const meals = res.kind === "ok" ? res.data.meals : [];
+    let meals = res.kind === "ok" ? res.data.meals : [];
     if (res.kind === "ok") {
+      // Meals from before macros (1.6.0) get them from the food list.
+      const macrosById = new Map([...res.data.customFoods, ...FOODS].map((f) => [f.id, f.macros100]));
+      meals = fillMacros(meals, (id) => macrosById.get(id));
       // The food list may have changed since the last start: corrections follow renamed foods.
       const known = new Set([...res.data.customFoods, ...FOODS].map((f) => f.id));
       const learned = migrateLearned(res.data.learned, RENAMED, known);
@@ -415,8 +418,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     setData((s) => ({ ...s, settings: { ...s.settings, norm: n } }));
   }, []);
 
-  const addCustomFood = useCallback((name: string, kcal100: number) => {
-    const food: Food = { id: newId("f"), name, kcal100, custom: true };
+  const addCustomFood = useCallback((name: string, kcal100: number, macros100?: Macros) => {
+    const food: Food = { id: newId("f"), name, kcal100, ...(macros100 ? { macros100 } : {}), custom: true };
     setData((s) => ({ ...s, customFoods: [food, ...s.customFoods] }));
     return food;
   }, []);

@@ -10,7 +10,8 @@ unzip it into its own directory, then:
 
 The picks below are made by hand (fdcId + the exact FDC description, which the script checks against
 food.csv so a typo in an id fails loudly). kcal is read from food_nutrient.csv, nutrient 1008
-(Energy, KCAL). Everything is per 100 g of edible portion (bone/pit/peel refuse excluded).
+(Energy, KCAL); protein, fat, carbohydrate (by difference) and total dietary fibre from 1003, 1004, 1005
+and 1079. Everything is per 100 g of edible portion (bone/pit/peel refuse excluded).
 
 Pick rules: the food that best matches the row's hint and how it is eaten in Ukraine; cooked forms as
 served; "without salt" where SR Legacy has both; unenriched grain products where the request did not
@@ -31,6 +32,9 @@ import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 ENERGY_KCAL = "1008"
+# Macros per 100 g, read alongside energy. A food with no fibre row has none measured: 0 (meat, fish, fat, sugar).
+MACROS = {"1003": ("protein", ("Protein", "G")), "1004": ("fat", ("Total lipid (fat)", "G")),
+          "1005": ("carbs", ("Carbohydrate, by difference", "G")), "1079": ("fiber", ("Fiber, total dietary", "G"))}
 
 # id -> (fdcId, exact FDC description, note or None)
 PICKS = {
@@ -264,15 +268,34 @@ def load(sr_dir):
         sys.exit(f"nutrient {ENERGY_KCAL} is {unit.get(ENERGY_KCAL)}, expected ('Energy', 'KCAL')")
     with open(sr_dir / "food.csv", newline="", encoding="utf-8") as f:
         foods = {int(r["fdc_id"]): (r["description"], r["data_type"]) for r in csv.DictReader(f)}
+    for nid, (_, want) in MACROS.items():
+        if unit.get(nid) != want:
+            sys.exit(f"nutrient {nid} is {unit.get(nid)}, expected {want}")
     kcal = {}
+    macros: dict[int, dict] = {}
     with open(sr_dir / "food_nutrient.csv", newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            if r["nutrient_id"] == ENERGY_KCAL:
+            nid = r["nutrient_id"]
+            if nid == ENERGY_KCAL:
                 fid = int(r["fdc_id"])
                 if fid in kcal:
                     sys.exit(f"two energy rows for fdc_id {fid}")
                 kcal[fid] = number(r["amount"])
-    return foods, kcal
+            elif nid in MACROS:
+                m = macros.setdefault(int(r["fdc_id"]), {})
+                key = MACROS[nid][0]
+                if key in m:
+                    sys.exit(f"two {key} rows for fdc_id {r['fdc_id']}")
+                m[key] = number(r["amount"])
+    return foods, kcal, macros
+
+
+def macros_of(fid, macros, errors, who):
+    m = macros.get(fid, {})
+    for key in ("protein", "fat", "carbs"):
+        if key not in m:
+            errors.append(f"{who}: fdcId {fid} has no {key} value")
+    return {k: m.get(k, 0) for k in ("protein", "fat", "carbs", "fiber")}
 
 
 def lookup(fid, want_desc, foods, kcal, errors, who):
@@ -310,14 +333,15 @@ def main():
     if extra:
         errors.append(f"picks for ids that are neither usda rows nor ingredients: {extra}")
 
-    foods, kcal = load(a.sr_dir)
+    foods, kcal, macros = load(a.sr_dir)
     out = {}
     for i in wanted:
         if i in PICKS:
             fid, want_desc, note = PICKS[i]
             got = lookup(fid, want_desc, foods, kcal, errors, i)
             if got:
-                out[i] = {"fdcId": fid, "description": got[0], "kcal100": got[1], "dataset": "sr_legacy"}
+                out[i] = {"fdcId": fid, "description": got[0], "kcal100": got[1], **macros_of(fid, macros, errors, i),
+                          "dataset": "sr_legacy"}
                 if note:
                     out[i]["note"] = note
         elif i in COMPOSITES:
@@ -325,7 +349,9 @@ def main():
             parts = [lookup(f, None, foods, kcal, errors, i) for f in fids]
             if all(parts):
                 mean = round(sum(p[1] for p in parts) / len(parts), 1)
-                out[i] = {"fdcId": None, "fdcIds": fids, "description": desc, "kcal100": mean, "dataset": "sr_legacy",
+                ms = [macros_of(f, macros, errors, i) for f in fids]
+                avg = {k: round(sum(m[k] for m in ms) / len(ms), 2) for k in ("protein", "fat", "carbs", "fiber")}
+                out[i] = {"fdcId": None, "fdcIds": fids, "description": desc, "kcal100": mean, **avg, "dataset": "sr_legacy",
                           "note": note + " Values: " + ", ".join(f"{f} = {p[1]}" for f, p in zip(fids, parts)) + " kcal."}
     if errors:
         sys.exit("ERRORS:\n  " + "\n  ".join(errors))

@@ -6,7 +6,9 @@
   recipes.json - home-style recipes: ingredient grams and cooked weight
 
 A recipe dish is calculated the way food-composition tables do it: the sum of its
-ingredients' kcal divided by the cooked weight of the batch. Each dish is compared
+ingredients' kcal divided by the cooked weight of the batch. Protein, fat, carbs and fibre
+(g per 100 g) are summed the same way; usda rows take them from FDC, labels from the label
+(fibre from the closest USDA food, see labels.json fiberBasis). Each dish is compared
 with its published reference values; a gap over FLAG is listed in REVIEW.md.
 Run: python -I build.py   (writes ../../src/data/foods.json, renamed.json and REVIEW.md)
 """
@@ -18,6 +20,7 @@ HERE = pathlib.Path(__file__).parent
 OUT = HERE.parent.parent / "src" / "data" / "foods.json"
 FLAG = 0.20
 FREE = {"water", "salt"}
+MACROS = ("protein", "fat", "carbs", "fiber")
 
 
 def load(name: str) -> dict:
@@ -33,12 +36,15 @@ def main() -> None:
         old = {f["id"]: f["kcal100"] for f in json.loads(old_path.read_text())}
 
     kcal: dict[str, float] = {}
+    macros: dict[str, dict[str, float]] = {}
     source: dict[str, dict] = {}
     for k, v in usda.items():
         kcal[k] = v["kcal100"]
+        macros[k] = {m: v[m] for m in MACROS}
         source[k] = {"type": "usda", "ref": f"FDC {v['fdcId']}: {v['description']}"}
     for k, v in labels.items():
         kcal[k] = v["kcal100"]
+        macros[k] = {m: v[m] for m in MACROS}
         source[k] = {"type": "label", "ref": v.get("basis", "")}
 
     missing = [it["id"] for it in items if it["source"] != "recipe" and it["id"] not in kcal]
@@ -53,6 +59,7 @@ def main() -> None:
         if not r:
             raise SystemExit(f"no recipe for {it['id']}")
         total = 0.0
+        sums = {m: 0.0 for m in MACROS}
         for ing in r["ingredients"]:
             iid, g = ing["id"], float(ing["g"])
             if iid in FREE:
@@ -60,8 +67,11 @@ def main() -> None:
             if iid not in kcal:
                 raise SystemExit(f"{it['id']}: unknown ingredient {iid}")
             total += g * kcal[iid] / 100
+            for m in MACROS:
+                sums[m] += g * macros[iid][m] / 100
         per100 = total * 100 / float(r["cooked_g"])
         kcal[it["id"]] = per100
+        macros[it["id"]] = {m: v * 100 / float(r["cooked_g"]) for m, v in sums.items()}
         refs = [x["kcal100"] for x in r.get("references", []) if isinstance(x.get("kcal100"), (int, float))]
         ref = statistics.median(refs) if refs else None
         gap = (per100 - ref) / ref if ref else None
@@ -77,6 +87,7 @@ def main() -> None:
             "aliases": it["aliases"],
             "aliasesUa": it["aliasesUa"],
             "kcal100": round(kcal[it["id"]]),
+            **{f"{m}100": round(macros[it["id"]][m], 1) for m in MACROS},
             "source": source[it["id"]],
         }
         if "pcGrams" in it:

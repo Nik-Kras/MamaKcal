@@ -16,6 +16,10 @@
    "борщик"
   ],
   "kcal100": 46,
+  "protein100": 2.1,
+  "fat100": 2.6,
+  "carbs100": 3.8,
+  "fiber100": 0.8,
   "source": {
    "type": "recipe",
    "ref": "Averaged typical home version of: https://klopotenko.com/naysmachnishyy-borshch-simeynyy-retsept-yevhena-klopotenka/ (Клопотенко, «Найсмачніший борщ. Сімейний рецепт»: 300 г свинячих реберець, 3 л води, 2 картоплини, 1 буряк, 1 морква, 1 цибуля, 1/4 капустини, 1 ст. л. томатної пасти, 2 ст. л. олії); https://klopotenko.com/shvydko-ale-tradyczijno-smachno-klasychnyj-borshh-z-tomatno-buryakovoyu-zapravkoyu/ (350–400 г свинини-лопатки, 400 г капусти, 4–5 картоплин, 3 цибулини, 2–3 ст. л. олії, 2,5–3 л води); https://www.unian.ua/recipes/first-courses/borscht/yak-prigotuvati-borshch-tradiciyniy-i-originalni-recepti-10471887.html (УНІАН класичний: 400 г м'яса на кістці, 2 буряки, 3 цибулини, 2 ст. л. томатної пасти, 4–5 ст. л. олії, 300 г капусти, 4 картоплини) and https://www.unian.ua/recipes/first-courses/borscht/nastoyashchiy-slobozhanskiy-borshch-recept-kak-prigotovit-pervoe-blyudo-13384962.html (Слобожанський: 500–700 г м'яса на кістці, ~3 л води, 2 буряки, 4–5 картоплин, 300–400 г капусти, 2–3 ст. л. томатної пасти)."
@@ -35,6 +39,10 @@
    "борщ без м'яса"
   ],
   "kcal100": 31,
+  "protein100": 0.6,
+  "fat100": 1.4,
+  "carbs100": 4.5,
+  "fiber100": 0.9,
   "source": {
    "type": "recipe",
    "ref": "Typical home version derived from the meat borscht above with the meat removed, cross-checked with https://klopotenko.com/pisnyj-borshh-polissya/ (Клопотенко, «Пісний борщ Полісся»: 2–2,5 л води, 1 буряк, 1 цибуля, 3–4 картоплини, 1/2 моркви, 1/2 перцю, 2 ст. л. томатної пасти, 1 ст. л. олії, 200 г квашеної капусти, 1–2 ст. л. меду), the lenten recipes in https://klopotenko.com/yak-prigotuvati-borshh-5-najsmachnishih-retseptiv/ (2 л води, 2 буряки, 3–4 картоплі) and the school tech card ТК № 2.2 «Борщ з картоплею» (znaimo.gov.ua, 1000 г: картопля 250, буряк 160, морква 30, цибуля 30, томатна паста 30, олія 20, чорнослив 20, цукор 6, вода 700)."
@@ -54,6 +62,10 @@
    "зелений суп"
   ],
   "kcal100": 46,
+  "protein100": 2.5,
+  "fat100": 2.8,
+  "carbs100": 2.7,
+  "fiber100": 0.5,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://klopotenko.com/zelenyj-borshh-klasychnyj-reczept-vid-yevgena-klopotenka/ (Клопотенко, «Зелений борщ. Класичний рецепт»: 300 г свинини, 300 г листя щавлю, 4 картоплі, 20 г кропу, 1 цибуля, 1 морква, 3 л води, 3 варені яйця) and https://tsn.ua/lady/kukhnya/recepty/recept-zelenogo-borschu-zi-schavlem-2563482.html (ТСН «Зелений борщ зі щавлем»: ребра свинячі 500 г, картопля 3 шт., цибуля 1, морква 1, щавель 150 г, яйця 4, вода 2,5 л, олія 2 ст. л.); compared with https://klopotenko.com/iz-shchavlem-i-kropyvoyu-hotuyemo-spravzhniy-zelenyy-borshch/ (on chicken: 2 стегна, 3 л води, 3–4 картоплини, щавель + кропива, 3–4 яйця, 3 ст. л. олії)."
@@ -71,6 +83,10 @@
    "капусняк з квашеною капустою"
   ],
   "kcal100": 48,
+  "protein100": 2.1,
+  "fat100": 2.4,
+  "carbs100": 4.5,
+  "fiber100": 0.8,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://tsn.ua/food/pershi-stravy/yak-zvariti-smachnyi-kapusnyak-z-kvashenoyu-kapustoyu-2468668.html (ТСН «капусняк з квашеною капустою»: свинина 400 г, квашена капуста 400 г, пшоно 1/2 склянки, картопля 4, морква 1, цибуля 2, часник, олія для смаження); https://klopotenko.com/spravzhnye-ukrayinske-reczept-kapusnyaku-z-pshenyczeyu/ (Клопотенко: 300 г свинини-лопатки, 500 г квашеної капусти, 3–4 картоплини, морква, цибуля, 100 г пшениці, 2 ст. л. олії, 3–3,5 л води); https://klopotenko.com/avtentychnyj-reczept-z-cherkashhyny-kapusnyak-zi-svynyachymy-rebramy-vid-yevgena-klopotenka/ (Черкащина: 500 г ребер, 100 г пшона, 4–5 картоплин, 500 г квашеної капусти, 2,5–3 л води)."
@@ -89,6 +105,10 @@
    "суп з локшиною"
   ],
   "kcal100": 51,
+  "protein100": 2.9,
+  "fat100": 2.4,
+  "carbs100": 4.3,
+  "fiber100": 0.5,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://www.unian.net/recipes/first-courses/dishes-meat/sup-s-vermishelyu-recept-kak-gotovit-sup-s-vermishelyu-11296877.html (УНІАН «Суп з вермішеллю і куркою»: вода 2 л, куряче філе 500 г, картопля 250 г, вермішель 100 г, цибуля 120 г, морква 100 г, засмажка на олії); https://novyny.live/recepti/kuriachii-sup-rizhik-vermishel-ne-nabukhaie-navit-nastupnogo-dnia-249446.html (Smachnenke «Рижик»: 2 курячі стегна, картопля 400 г, цибуля, морква, вермішель 70 г, вода 2 л); https://klopotenko.com/legko-ta-smachno-kuryachyj-sup-z-domashnou-lokshynou/ (350 г філе стегна, 2 картоплини, цибуля, морква, 2 ст. л. олії, 2 л води, локшина з 200 г борошна + 2 яйця)."
@@ -105,6 +125,10 @@
    "фрикадельки в бульйоні"
   ],
   "kcal100": 55,
+  "protein100": 2.5,
+  "fat100": 3.2,
+  "carbs100": 3.9,
+  "fiber100": 0.4,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://tsn.ua/lady/kukhnya/recepty/sup-iz-frykadelkamy-ta-rysom-prostyy-retsept-universalnoyi-pershoyi-stravy-3096224.html (ТСН «Суп із фрикадельками та рисом»: фарш свинячий 400 г, рис 100 г, яйце 1, картопля 3, цибуля 1, морква 1, часник, олія 2 ст. л., вода 2 л); https://tsn.ua/ru/lady/kukhnya/recepty/sup-s-frikadelkami-ochen-bystryy-recept-1918738.html (ТСН: фарш 0,5 кг, картопля 0,5 кг, цибуля 2, морква 2, вода 3 л, олія); https://tsn.ua/ru/lady/kukhnya/recepty/sup-s-frikadelkami-recept-lyubimogo-blyuda-vzroslyh-i-detey-2745447.html (курячий фарш 300 г, яйце, картопля 3–4, цибуля 2, морква 1); https://klopotenko.com/navarystyj-ta-nasychenyj-smakom-sup-z-frykadelkamy-vid-yevgena-klopotenka/ (300 г курячого фаршу + жовток, 2–3 картоплини, морква, цибуля, 2–2,5 л води)."
@@ -121,6 +145,10 @@
    "суп гороховий"
   ],
   "kcal100": 72,
+  "protein100": 3.7,
+  "fat100": 3.3,
+  "carbs100": 7.3,
+  "fiber100": 2.1,
   "source": {
    "type": "recipe",
    "ref": "Main: https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenimi-rebrami-prostiy-recept-2565924.html (ТСН «Гороховий суп із копченими ребрами»: горох сухий 1 склянка, вода 2–2,5 л, свинячі ребра копчені 500 г, картопля 3–4, морква 1, цибуля 1, олія), averaged with https://klopotenko.com/goroxovyj-sup-z-rebercyamu/ (Клопотенко: 350 г свинячих реберець, 300 г сухого гороху, 3 картоплини, морква, цибуля, корінь селери/петрушки, 2 ст. л. олії, 3 л води) and https://tsn.ua/lady/kukhnya/recepty/gorohoviy-sup-iz-kopchenostyami-1950970.html (3 л води, 0,5 кг копчених реберець, 400 г гороху, 300 г бекону — richer variant, not used for the bacon)."
@@ -137,6 +165,10 @@
    "грибний суп"
   ],
   "kcal100": 27,
+  "protein100": 0.8,
+  "fat100": 1.0,
+  "carbs100": 4.0,
+  "fiber100": 0.6,
   "source": {
    "type": "recipe",
    "ref": "Averaged home version. Main: https://klopotenko.com/nadzvychajno-smachna-ta-prosta-grybna-yushka-vid-yevgena-klopotenka/ (Грибна юшка з шампіньйонів, Клопотенко: 200 г печериць, 3 картоплини, морква, цибуля, 1 ст. л. олії + 20 г масла, 4-5 ст. л. сметани, 1 ст. л. борошна, 1,5-2 л води). Compared: https://klopotenko.com/gribna-yushka-z-selerou/ (200 г білих грибів, цибуля, 3 картоплі, 1 ст. л. олії, 1 л води); https://vkusvill.ru/media/recipes/sup-iz-sushyenykh-gribov.html (30 г сушених грибів, 2 картоплі, морква, цибуля, 1 ст. л. олії, 2 л води); https://recepty.24tv.ua/recipe/pisna-hrybna-yushka-retsept-pryhotuvannia-pokrokovyi_id625 (100 г сушених білих, 4 картоплі, 2 цибулі, 2 моркви, олія)."
@@ -154,6 +186,10 @@
    "уха"
   ],
   "kcal100": 35,
+  "protein100": 3.2,
+  "fat100": 0.8,
+  "carbs100": 4.0,
+  "fiber100": 0.5,
   "source": {
    "type": "recipe",
    "ref": "Averaged home version. Main: https://www.unian.ua/recipes/first-courses/other-soups/samaya-vkusnaya-uha-recept-i-glavnye-sekrety-prigotovleniya-12324570.html (Юшка з карасями: 600 г карася, 400 г картоплі, цибуля, морква, 3 ст. л. олії, 1,5 л води). Compared: https://www.unian.ua/recipes/first-courses/other-soups/yushka-z-chervonoji-ribi-recept-uhi-z-somgi-gorbushi-abo-lososya-11377516.html (2 л води, 350 г риби, 100 г пшона, 2 картоплини, морква, цибуля); https://vkusvill.ru/media/recipes/ukha-iz-shchuki.html (1 кг щуки, 2 картоплини, 200 г моркви, цибуля, 2 л води, без олії); МОЗ/Знаїмо шкільна ТК 2.37 «Рибна юшка» (хек 115 г, картопля 150, цибуля 40, морква 60, олія 10, вода 800 на 1000 г)."
@@ -171,6 +207,10 @@
    "суп з солоними огірками"
   ],
   "kcal100": 49,
+  "protein100": 1.9,
+  "fat100": 2.5,
+  "carbs100": 4.8,
+  "fiber100": 0.9,
   "source": {
    "type": "recipe",
    "ref": "Main: https://klopotenko.com/rozsolnyk-z-perlovkoyu-po-domashnomu-za-retseptom-yevhena-lopotenka/ (Розсольник з перловкою по-домашньому: 300 г свинини, 3 л води, 400 г картоплі, 150 г перловки, цибуля, морква, 3 солоних огірки, 3 ст. л. олії, 100 мл розсолу; 6 порцій), averaged with https://klopotenko.com/rozsolnik-na-rebrah/ (яловичі ребра, ½ склянки перловки, 3 картоплі, 3 огірки, 100-150 мл розсолу, 2 ст. л. олії) and https://vkusvill.ru/media/recipes/rassolnik.html (250 г яловичини, 400 г солоних огірків, ½ склянки перловки, 3 картоплі, морква, цибуля, 3 л води)."
@@ -187,6 +227,10 @@
    "солянка м'ясна збірна"
   ],
   "kcal100": 74,
+  "protein100": 3.6,
+  "fat100": 6.1,
+  "carbs100": 1.0,
+  "fiber100": 0.2,
   "source": {
    "type": "recipe",
    "ref": "Averaged home version of 3 recipes: https://tsn.ua/lady/astrologiya/solyanka-m-yasna-klasichniy-recept-1914919.html (3 л води, 1 кг яловичини на кістці, по 200 г копченої ковбаси, шинки, сосисок, копченої грудинки, мисливських ковбасок, 4-5 солоних огірків, 2 ст. л. томатної пасти, цибуля, морква, олія, оливки, лимон, склянка розсолу); https://www.unian.ua/recipes/first-courses/dishes-meat/zbirna-solyanka-naykrashchi-recepti-z-m-yasom-10929278.html (400 г яловичини, 4 сосиски, 200 г вареної ковбаси, 200 г шинки, 3 огірки, цибуля, 2 ст. л. томатної пасти, оливки); https://vkusvill.ru/media/recipes/solyanka-klassicheskaya.html (3 л води, 400 г яловичих ребер, 220 г копчених ковбас, 400 г огірків, цибуля, 1 ст. л. томатної пасти, 100 г оливок, 2 ст. л. олії)."
@@ -203,6 +247,10 @@
    "окрошка"
   ],
   "kcal100": 73,
+  "protein100": 3.7,
+  "fat100": 4.4,
+  "carbs100": 4.8,
+  "fiber100": 0.4,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://vkusvill.ru/media/recipes/okroshka-na-kefire.html (1 л кефіру 2,5 % + 0,5 л газованої води, 300 г вареної ковбаси, 4 яйця, 5 картоплин, 3 огірки, 125 г редиски, зелена цибуля, кріп); https://tsn.ua/ru/lady/kukhnya/recepty/okroshka-na-kefire-s-mineralnoy-vodoy-klassicheskiy-recept-2341105.html (1 л кефіру + 400 мл мінералки, 300 г картоплі, 5 яєць, 250 г вареної ковбаси, 300 г огірків, 200 г редиски, 150 г сметани, гірчиця); https://24tv.ua/smachnonews24/ru/prigotovit-okroshku-kefire-recept-okroshki-kvase_n3074317 (900 г кефіру + 2 л мінералки, 600 г картоплі, 500 г ковбаси, 250 г редиски, 5-6 яєць, огірок, 200 г майонезу)."
@@ -219,6 +267,10 @@
    "куліш з пшоном"
   ],
   "kcal100": 84,
+  "protein100": 1.3,
+  "fat100": 5.0,
+  "carbs100": 8.4,
+  "fiber100": 1.1,
   "source": {
    "type": "recipe",
    "ref": "Main: https://24tv.ua/smachnonews24/den-nezalezhnosti-ukrayini-2025-yaki-stravi-varto-prigotuvati-24-serpnya_n2898777 (Козацький куліш: 150 г сала, 100 г пшона, 6 картоплин, 2 цибулини, 2 л води). Compared: https://klopotenko.com/klasychnyj-reczept-kulish-zi-svynynoyu-vid-yevgena-klopotenka/ (300 г ошийка, 200 г пшона, 2 цибулини, 2 моркви, 3 яйця, 2-2,5 л води); https://klopotenko.com/spravzhnya-kozaczka-kasha-reczept-kulisha-iz-kvashenymy-tomatamy-ta-moczareloyu/ (100 г сала, 150 г пшона, 3-4 картоплі, цибуля, морква); https://novyny.live/yizha/kozatskii-kulish-iak-gotuiut-na-poltavshchini-ukrayinska-kukhnia-119934.html (Полтавський: пшоно 300 г, сало 300+200 г копченого, свинина 1 кг, картопля 500 г, 2,5 л води, 5 яєць)."
@@ -235,6 +287,10 @@
    "молочна вермішель"
   ],
   "kcal100": 83,
+  "protein100": 3.0,
+  "fat100": 3.0,
+  "carbs100": 10.8,
+  "fiber100": 0.2,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://tsn.ua/other/lokshyna-z-molokom-iak-v-dytynstvi-prostyy-retsept-shchob-makarony-ne-rozvarylysia-3139661.html (500 г молока + 250 мл води, 6 ст. л. тонкої вермішелі, цукор, сіль, масло; 4 порції); https://poradu.pp.ua/recepti/print:page,1,5297-molochniy-sup-z-vermshellyu-recept-dlya-ledarv.html (0,5 л молока, ~50 г вермішелі, цукор, масло за смаком); https://vkusvill.ru/media/recipes/molochnyy-sup-s-vermishelyu.html (600 мл молока, 125 г вермішелі, 2 ч. л. цукру)."
@@ -256,6 +312,10 @@
    "пироги з картоплею"
   ],
   "kcal100": 176,
+  "protein100": 3.9,
+  "fat100": 5.4,
+  "carbs100": 27.9,
+  "fiber100": 1.8,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, tech cards «Тісто для вареників (прісне)», «Начинка картопляна з шкварками й цибулею», «Вареники з картоплею і шкварками» (dough 82 g + filling 103 g → 185 g raw → 200 g boiled per portion, 7–8 pcs, topped with onion sautéed in salo). Compared: https://klopotenko.com/klasychni-varenyky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 360 г борошна, 180 мл води, 2 ст. л. олії; 300 г картоплі, 2 цибулини на 3 ст. л. олії — половина в начинку, половина зверху); https://24tv.ua/vareniki-kartopleyu-rizdvo-klasichniy-retsept_n2711978 (ТСН/24 канал: 500 г борошна, 200 мл води, 2 ст. л. олії, 800 г картоплі, 2 цибулини). Averaged into one home version."
@@ -274,6 +334,10 @@
    "вареники з капустою"
   ],
   "kcal100": 172,
+  "protein100": 3.9,
+  "fat100": 6.3,
+  "carbs100": 25.1,
+  "fiber100": 2.3,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка з квашеної капусти» (sauerkraut 1112 g net + fat 60 g + onion 80 g + sugar 15 g → 945 g stewed cabbage, ~15 % loss) and «Вареники» standard (dough 82 / filling 103 per portion; cabbage varenyky 'поливають олією з підсмаженою цибулею'). Compared: https://klopotenko.com/zavarne-tisto-ta-nachynka-z-kvashenoyi-kapusty-reczept-pisnyh-varenykiv/ (Клопотенко, пісні вареники з квашеною капустою: 350 г борошна, 200 мл води, 3 ст. л. олії; 400 г квашеної капусти, 1 цибуля, 2 ст. л. олії; 2 ст. л. олії зверху) and https://klopotenko.com/puhki-ta-smachni-varenyky-z-kapustoyu-vid-yevgena-klopotenka/ (свіжа капуста: 360 г борошна, 180 мл кефіру; 400 г капусти + морква + цибуля на 4 ст. л. олії; цибуля на 2 ст. л. олії для подачі)."
@@ -293,6 +357,10 @@
    "вареники з сиром"
   ],
   "kcal100": 205,
+  "protein100": 10.6,
+  "fat100": 7.0,
+  "carbs100": 24.4,
+  "fiber100": 0.8,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка з сиру» II спосіб (сир 900 g, яйця 36 g, цукор 90 g per 1000 g) and «Вареники» standard (dough 82 / filling 103; 'із сиру — поливають вершковим маслом'). Compared: https://klopotenko.com/solodki-varenyky-z-syrom-vid-yevgena-klopotenka/ (Клопотенко, солодкі: 400 г борошна, 200 мл води, 2 ст. л. олії; 300 г сиру, 1 ст. л. цукру, 1 жовток; 50 г масла для подачі) and https://klopotenko.com/z-solonoyu-nachynkoyu-varenyky-z-syrom-ta-zelennyu-vid-yevgena-klopotenka/ (солоні: 320 г борошна, 180 мл окропу, 3 ст. л. олії; 300 г сиру 9 % із зеленню; 20 г масла)."
@@ -311,6 +379,10 @@
    "вареники з вишнею"
   ],
   "kcal100": 177,
+  "protein100": 4.2,
+  "fat100": 1.8,
+  "carbs100": 35.9,
+  "fiber100": 1.5,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Начинка вишнева» I спосіб (pitted cherries 1240 g + sugar 150 g, juice drained → 1000 g) and II спосіб (cherries 810 g, sugar 190 g, semolina 70 g); 'вареники … з вишнями подають зі сметаною або сиропом, цукром'. Compared: https://klopotenko.com/vareniki-z-vishneu/ (Клопотенко: 500 г борошна, 250 мл молока, 1 яйце, 1 ст. л. олії; 400 г вишні без кісточок, 1–2 ст. л. цукру, 1 ст. л. манки; готові присипати цукром) and https://vkusvill.ru/media/recipes/vareniki-s-vishney.html (400 г борошна; 500 г вишні, 2 ст. л. цукру, 1 ст. л. крохмалю)."
@@ -329,6 +401,10 @@
    "ліниві галушки"
   ],
   "kcal100": 188,
+  "protein100": 13.3,
+  "fat100": 6.9,
+  "carbs100": 18.0,
+  "fiber100": 0.4,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Сирні галушки» (= ліниві вареники): сир 156 g, яйця 12 g, борошно 22 g, цукор 11 g → 190 g semi-product → 200 g boiled. Compared: https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf (ТК 6.1 «Вареники ліниві»: сир 740 g, борошно 150 g, яйця 60 g, цукор 50 g → 960 g → 1000 g boiled) and https://klopotenko.com/sprava-y-souss-yak-prygotyvaty-smachni-linivi-varenyky/ (Клопотенко: 300 г сиру 9 %, 1 яйце, 1 ст. л. цукру, 4 ст. л. борошна + 2 для підпилу) and https://klopotenko.com/lenuvi-vareniki-z-jogurtovym-sousom/ (300 г сиру, 1 яйце, 2 ст. л. цукру, 4 ст. л. борошна)."
@@ -347,6 +423,10 @@
    "пельмені з м'ясом"
   ],
   "kcal100": 220,
+  "protein100": 10.4,
+  "fat100": 8.9,
+  "carbs100": 23.6,
+  "fiber100": 1.0,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/pelmeni-zi-svynynou/ (Клопотенко: тісто 500 г борошна, 220–250 мл гарячої води, 3 ст. л. олії; фарш 500 г свинини, ½ цибулини, 3 зубчики часнику, 50 мл крижаної води; кружечки 4–5 см, ½ ч. л. фаршу) averaged with the common home pork+beef mince version (дріжджів немає; тісто на воді з яйцем; фарш свинина+яловичина 1:1, цибуля, холодна вода) and the Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org standard dough (flour 695, egg 53, water 270 per 1000 g) — https://archive.org/details/ukrainskakuhnya1998."
@@ -368,6 +448,10 @@
    "деруни картопляні"
   ],
   "kcal100": 185,
+  "protein100": 3.4,
+  "fat100": 9.4,
+  "carbs100": 22.5,
+  "fiber100": 2.5,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Деруни»: дерунна маса = картопля 1240/930 g, борошно 43 g, яйця 36 g → 1000 g; «Деруни зі сметаною»: маса 275 g + олія 10 g → 220 g fried. Compared: https://klopotenko.com/kartoplyani-deruny-u-blenderi-reczept-vid-yevgena-klopotenka/ (Клопотенко: ~300 г картоплі, 1 цибуля, 1 яйце, 1 ст. л. борошна, 5 ст. л. олії для смаження) and https://klopotenko.com/zolotavi-ta-hrustki-deruny-na-krupnij-tertczi-vid-yevgena-klopotenka/ (4 картоплини, 1 цибуля, 1 яйце, 1 зубчик часнику, 3 ст. л. олії). Averaged."
@@ -387,6 +471,10 @@
    "сирники з сиру"
   ],
   "kcal100": 257,
+  "protein100": 15.0,
+  "fat100": 13.5,
+  "carbs100": 19.0,
+  "fiber100": 0.3,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Сирники»: сир 150 g, борошно 20 g, яйця 5 g, цукор ~15 g, маргарин 5 g → 170 g semi-product → 150 g fried (3 pcs). Compared: https://klopotenko.com/puhki-ta-nizhni-syrnyky-z-mankoyu-bez-boroshna-vid-yevgena-klopotenka/ (Клопотенко: 400 г сиру 9 %, 1 яйце, 3 ст. л. манки, 3 ст. л. цукру, 10 г ванільного цукру; ~4 ст. л. олії на смаження) and https://klopotenko.com/avtentychnyj-poltavskyj-reczept-nizhni-syrnyky-vid-yevgena-klopotenka/ (400 г сиру 9 %, 1 яйце, 1 ст. л. цукру, 10 г ванільного цукру, 2+1 ст. л. борошна, 1 ст. л. масла), and https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf ТК 6.10."
@@ -408,6 +496,10 @@
    "налисники без начинки"
   ],
   "kcal100": 229,
+  "protein100": 7.3,
+  "fat100": 9.0,
+  "carbs100": 29.2,
+  "fiber100": 0.8,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/idealna-tekstura-tonki-mlynczi-na-moloczi-i-vodi-vid-yevgena-klopotenka/ (Клопотенко: 2 яйця, 2 ст. л. цукру, 30 мл олії, 200 г борошна, 300 мл молока + 200 мл окропу) and https://klopotenko.com/lyubov-ta-turbota-u-kozhnomu-shmatochku-solodki-mlynczi-z-syrom-vid-mamy-yevgena-klopotenka/ (млинці мами Клопотенка: 250 г борошна, 500 мл молока 2,5 %, 3 яйця, 50 мл олії, 1 ст. л. цукру), averaged with Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Налисники (млинчики) смажені»: борошно 416, молоко 1040, яйця 83, цукор 25 → тісто 1538 g → 1000 g (https://archive.org/details/ukrainskakuhnya1998)."
@@ -427,6 +519,10 @@
    "млинці з сиром"
   ],
   "kcal100": 245,
+  "protein100": 11.2,
+  "fat100": 11.8,
+  "carbs100": 23.5,
+  "fiber100": 0.6,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/ukrayinska-lyubov-nalysnyky-z-syrom-vid-yevgena-klopotenka/ (Клопотенко: 250 г борошна, 650 мл молока, 3 яйця, 2 ст. л. цукру, 50 мл олії; начинка 400 г сиру, 50 г родзинок, 1 яйце, 2 ст. л. цукру; запікати з 60 г масла) and https://klopotenko.com/lyubov-ta-turbota-u-kozhnomu-shmatochku-solodki-mlynczi-z-syrom-vid-mamy-yevgena-klopotenka/ (400 г сиру 9 %, жовток, 1 ст. л. цукру; запікати з маслом); Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Налисники з начинкою із сиру…»: налисники 100 g + начинка 94 g, жир 10 g → 175 g fried (2 pcs) (https://archive.org/details/ukrainskakuhnya1998)."
@@ -445,6 +541,10 @@
    "налисники з м'ясом"
   ],
   "kcal100": 330,
+  "protein100": 14.1,
+  "fat100": 22.3,
+  "carbs100": 17.7,
+  "fiber100": 0.7,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/nalysnyky-z-myasom-vid-yevgena-klopotenka/ (Клопотенко: млинці 200 г борошна, 500 мл сироватки, 2 ст. л. олії, 2 ст. л. цукру; начинка 500 г вареної свинини, 1 цибуля на 2 ст. л. олії, 50 мл бульйону) and https://klopotenko.com/smakuyut-i-holodnymy-nalysnyky-z-myasom-vid-yevgena-klopotenka/ (350 мл молока, 150 г борошна, 2 яйця, 2 ст. л. олії; 600 г вареного м'яса, цибуля; конвертики обсмажити); Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org «Начинка м'ясна з цибулею» (варене м'ясо + пасерована цибуля) and «Налисники з начинкою з м'яса»: 100 g crepes + 94 g filling + 10 g fat → 175 g fried (https://archive.org/details/ukrainskakuhnya1998)."
@@ -465,6 +565,10 @@
    "оладки на кефірі"
   ],
   "kcal100": 271,
+  "protein100": 6.7,
+  "fat100": 10.7,
+  "carbs100": 36.5,
+  "fiber100": 1.0,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Млинці на кислому молоці» (= оладки на кефірі): борошно 70 g, яйця 5 g, кефір 120 g, цукор 5 g, сода 0,5 g → тісто 195 g; маргарин 5 g → 150 g fried (3 pcs). Compared: https://klopotenko.com/oladky-na-kefiri-ta-czilnozernovomu-boroshni-vid-yevgena-klopotenka/ (Клопотенко: 300 мл кефіру, 1 яйце, 1 ст. л. цукру, 10 г ванільного цукру, ½ ч. л. розпушувача/соди, 200 г борошна, 5 ст. л. олії на смаження) and the common home ratio 500 ml kefir : ~2 cups (≈ 300 g) flour : 1 egg : 2 tbsp sugar : ½ tsp soda."
@@ -483,6 +587,10 @@
    "голубці з м'ясом і рисом"
   ],
   "kcal100": 116,
+  "protein100": 5.5,
+  "fat100": 7.5,
+  "carbs100": 7.0,
+  "fiber100": 1.3,
   "source": {
    "type": "recipe",
    "ref": "https://www.unian.ua/recipes/second-courses/meat-dishes/golubci-recept-yak-prigotuvati-smachni-golubci-vdoma-11076662.html (УНІАН, «Голубці з фаршем і рисом»: 1 head cabbage, 600 g mince, 0.5 cup rice, 1 egg, 1–2 onions, 1–2 carrots, 30 g oil, 150–200 g sour cream + 0.5 L water, tomato paste). Compared: https://klopotenko.com/farsh-rys-ta-hrumki-lystochky-golubczi-z-kvashenoyi-kapusty/ (Клопотенко: 500 g pork mince, 200 g rice, onion, carrot, 2 tbsp oil; sauce 1 tbsp tomato paste + 1 tbsp sour cream 20% + 500 ml water; 12 portions) and school tech card 8.8 «Ліниві голубці з яловичиною»."
@@ -500,6 +608,10 @@
    "галушки з борошна"
   ],
   "kcal100": 236,
+  "protein100": 5.8,
+  "fat100": 8.2,
+  "carbs100": 33.8,
+  "fiber100": 1.4,
   "source": {
    "type": "recipe",
    "ref": "https://archive.org/details/ukrainskakuhnya1998 — Доцяк В.С. «Українська кухня» (підручник, Київ, 1998), archive.org, «Галушки в'язкі (напівфабрикат)»: flour 640 (incl. 40 dusting), egg 40, milk or water 320 per 1000 g; «Галушки з маслом…»: 150 g semi-product → 200 g boiled; 'варені галушки можна відпускати з підсмаженою на салі або олії цибулею … з підсмаженим салом'; ethnographic note: Poltava halushky 'заправляли засмажкою з цибулі на олії або салі'. Compared: https://znaimo.gov.ua/media/icons/12_04_2024_02.pdf (ТК 14.20 «Галушки»: борошно 630, яйця 60, вода 315, сода 6 → 980 g boiled + 20 g butter) and the common home Poltava version on kefir with soda (https://klopotenko.com/spravzhni-poltavski-galushky-vid-inny-popershnyuk/ is a yeast/steamed restaurant variant served with chicken — not used)."
@@ -519,6 +631,10 @@
    "мамалига на сметані"
   ],
   "kcal100": 263,
+  "protein100": 5.7,
+  "fat100": 20.1,
+  "carbs100": 14.5,
+  "fiber100": 0.2,
   "source": {
    "type": "recipe",
    "ref": "Averaged home version. Compared: https://klopotenko.com/dusha-zakarpattya-banosh-z-brynzoyu-i-shkvarkamy-vid-yevgena-klopotenka/ (180 г кукурудзяної крупи, 500 мл сметани 15 % + 500 мл вершків 20 %, 100 г бринзи, 300 г сала на шкварки; 2 порції); https://klopotenko.com/avtentychnyj-karpatskyj-banosh-na-smetani/ (1 л сметани 20 %, 140 г крупи, 150 г бринзи, шкварки за бажанням); https://www.unian.ua/recipes/banosh-recept-banosh-v-gorshchikah-recept-z-foto-11069726.html (а: 450 мл жирної сметани + 450 мл води, 250 г крупи, 100 г сала + 100 г бекону, 100 г бринзи; б: 400 мл молока + 500 мл сметани, 200 г крупи, 100 г бринзи); https://klopotenko.com/banosh-u-multyvarczi-vid-yevgena-klopotenka/ (100 г крупи, 300 г сметани, 250 мл молока)."
@@ -540,6 +656,10 @@
    "котлета"
   ],
   "kcal100": 299,
+  "protein100": 14.9,
+  "fat100": 22.1,
+  "carbs100": 9.5,
+  "fiber100": 0.6,
   "source": {
    "type": "recipe",
    "ref": "https://tsn.ua/lady/kukhnya/recepty/kotleti-domashni-perevireniy-recept-1906084.html (ТСН «Котлети домашні»: 0.5 kg beef + 0.5 kg pork, 200 g батон soaked in milk, 2 onions, 2 cloves garlic, breadcrumbs, fried in oil). Compared: https://klopotenko.com/myasni-kotlety-v-aerogryli-prostyj-reczept-vid-yevgena-klopotenka/ (Клопотенко: 300 g pork + 300 g beef mince, 1 egg, 3 slices white bread + 100 ml water, onion, 2 garlic, breadcrumbs for coating; 12 cutlets) and https://klopotenko.com/z-garnirom-iz-sokovytyh-yabluk-kotlety-zi-svynyny-vid-yevgena-klopotenka/ (pork cutlets 80–90 g raw)."
@@ -558,6 +678,10 @@
    "курячі котлети"
   ],
   "kcal100": 222,
+  "protein100": 18.0,
+  "fat100": 12.7,
+  "carbs100": 7.9,
+  "fiber100": 0.5,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/idealni-kotlety-z-kuryachogo-farshu-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 500 g chicken thigh mince, 50 g salo, 1 onion, 1 garlic, 1 egg, 3 slices white bread + 100 ml milk; 7 cutlets × 100 g raw; fried in 3–4 tbsp oil). Compared: school tech card 9.54 «Січеники з м'яса птиці» (860 g fillet, 230 g onion, 90 g flour, 80 g egg) and https://klopotenko.com/strava-na-kozhen-den-rubleni-kotlety-z-kurky-vid-yevgena-klopotenka/."
@@ -576,6 +700,10 @@
    "котлета по-київськи"
   ],
   "kcal100": 320,
+  "protein100": 17.7,
+  "fat100": 21.9,
+  "carbs100": 11.9,
+  "fiber100": 0.7,
   "source": {
    "type": "recipe",
    "ref": "https://www.unian.ua/recipes/second-courses/meat-dishes/kotleta-po-kijivski-recept-yak-gotuvati-kotletu-po-kijivski-11224268.html (УНІАН «Класична котлета по-київськи»: chicken 1.2 kg, butter 140 g + parsley, 2 eggs, 100 ml milk, 60 g flour, 140 g breadcrumbs; deep-fried ~5 min, then 10 min in oven). Compared: https://klopotenko.com/na-kistochczi-sokovyta-kotleta-po-kyyivsky-vid-yevgena-klopotenka/ (Клопотенко: breast on the bone, butter, 100 g flour, 2 eggs, 150 g breadcrumbs, 700 ml oil in a saucepan, oven finish) and https://klopotenko.com/kotleta-po-kyyivsky-z-kuryachogo-farshu-vid-yevgena-klopotenka/ (double breading flour–egg–crumbs–egg–crumbs)."
@@ -596,6 +724,10 @@
    "шніцель"
   ],
   "kcal100": 312,
+  "protein100": 20.4,
+  "fat100": 20.7,
+  "carbs100": 9.7,
+  "fiber100": 0.5,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/svynyachi-vidbyvni-v-paniruvalnyh-suharyah-vid-yevgena-klopotenka/ (Клопотенко «Свинячі відбивні в панірувальних сухарях»: 300 g pork antrecote, 2 eggs, 50 g breadcrumbs, 3 tbsp oil, fried 3–4 min per side; 2 portions). Compared: school tech card 8.59 «М'ясні відбивні в сухарях» (meat 690 g net, flour 46 g, eggs 153 g, breadcrumbs 153 g, oil 26 g → 1000 g) and https://klopotenko.com/svynyachi-vidbyvni-vid-yevgena-klopotenka/ (flour–egg version)."
@@ -614,6 +746,10 @@
    "печеня по-домашньому"
   ],
   "kcal100": 139,
+  "protein100": 6.6,
+  "fat100": 7.7,
+  "carbs100": 11.1,
+  "fiber100": 1.5,
   "source": {
    "type": "recipe",
    "ref": "https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf (school tech card 8.2 «Печеня по-домашньому зі свининою»: pork 470 g net, potato 520 g, onion 100 g, carrot 150 g, oil 20 g, tomato paste 50 g, water 250 g → 1000 g). Compared: https://klopotenko.com/zharkoe-so-svininoj/ (Клопотенко: 400 g pork, 3 potatoes, 3 carrots, 1 onion, 100 g tomato paste, 2 tbsp cream, 3 tbsp oil, garlic) and https://klopotenko.com/svynyna-ta-ovochi-prostyj-reczept-smachnoyi-pecheni/ (470 g pork, 6 potatoes, 100 g carrot, 100 g onion, 20 ml oil, 10 g butter, 200 ml water)."
@@ -633,6 +769,10 @@
    "тушкована капуста"
   ],
   "kcal100": 97,
+  "protein100": 5.2,
+  "fat100": 6.2,
+  "carbs100": 5.7,
+  "fiber100": 2.2,
   "source": {
    "type": "recipe",
    "ref": "https://tsn.ua/lady/kukhnya/recepty/kapusta-tushkovana-z-svininoyu-1860877.html (ТСН «Капуста тушкована зі свининою»: 1 kg cabbage, 0.5 kg pork, 0.5 kg tomatoes, 200 g onion, 200 g carrot, oil). Compared: https://www.unian.ua/recipes/appetizer/tushkovana-kapusta-klasichniy-i-originalni-recepti-10463508.html (УНІАН: ¼ large head, 300–400 g pork, 1 onion, 1 carrot, 2 tbsp tomato paste) and https://klopotenko.com/sokovytyj-bigos-zi-slyvamy-j-tomatamy-v-duhovczi-vid-yevgena-klopotenka/ (бігос, fresh + sauerkraut)."
@@ -651,6 +791,10 @@
    "гуляш з яловичини"
   ],
   "kcal100": 188,
+  "protein100": 11.5,
+  "fat100": 13.9,
+  "carbs100": 3.8,
+  "fiber100": 0.6,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/gulyash-zi-svynynoyu-ta-nizhne-kartoplyane-pyure-vid-yevgena-klopotenka/ (Клопотенко гуляш: 600 g meat, 1 carrot, 1 onion, 2 tbsp paprika, 3 tbsp oil, 2 tbsp tomato paste, 200 ml water, 1 tbsp flour) adapted to beef. Compared: school tech card 8.9 «Гуляш з вареної яловичини» (beef 1000 g net → 620 g cooked, onion 120, carrot 120, tomato 100, butter 30, flour 20, water 300 → 1000 g) and Estonian TKA 85646 recipe (beef 630, onion 120, flour 30, tomato purée 95, oil 40, water 250, sour cream 120 → 1000 g)."
@@ -668,6 +812,10 @@
    "макарони з фаршем"
   ],
   "kcal100": 223,
+  "protein100": 10.1,
+  "fat100": 10.6,
+  "carbs100": 21.0,
+  "fiber100": 1.0,
   "source": {
    "type": "recipe",
    "ref": "https://www.unian.ua/recipes/second-courses/meat-dishes/makaroni-po-flotski-smachniy-narodniy-recept-11531020.html (УНІАН: 0.5 kg home mince, 250 g pasta, onion, carrot, garlic, 2 tbsp oil, 2 tbsp tomato paste, 1 glass water). Compared: https://smachno.ua/ua/recepty/osnovnye-blyuda/makarony-po-flotski/ (300–400 g pasta, 600 g beef mince, 2 tbsp tomato paste; ingredient list via search snippet, page returns 403) and https://tsn.ua/food/druhi-stravy/makaroni-po-flotski-ukrayinska-versiya-italiyskogo-bolonyeze-2450818.html (500 g boiled beef, 350 g pasta, onion, 1 tbsp oil, 50 g butter)."
@@ -685,6 +833,10 @@
    "плов"
   ],
   "kcal100": 196,
+  "protein100": 7.1,
+  "fat100": 9.8,
+  "carbs100": 19.4,
+  "fiber100": 0.9,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/plov-zi-svynyny-za-reczeptom-yevgena-klopotenka/ (Клопотенко: 1 kg pork neck, 400 g rice, 2 carrots, 1 onion, 2 heads garlic, 800 ml water, 100 ml oil; 5 portions). Compared: https://www.unian.ua/recipes/second-courses/meat-dishes/smachniy-plov-recept-na-skovorodi-v-multivarci-i-kazani-11701381.html (УНІАН quick pork plov: 600 g pork, 1.5 cups rice, 1 carrot, 2 onions, 30 g oil, water 2–2.5 cm over rice) and https://smachno.ua/ua/recepty/osnovnye-blyuda/retsept-plova-so-svininoj/ (300 g pork, 200 g rice, 150 g carrot, 150 g onion, 50 ml oil; via search snippet)."
@@ -704,6 +856,10 @@
    "смажена картопля"
   ],
   "kcal100": 182,
+  "protein100": 2.9,
+  "fat100": 8.3,
+  "carbs100": 25.1,
+  "fiber100": 3.1,
   "source": {
    "type": "recipe",
    "ref": "Main: Доцяк В.С. «Українська кухня. Підручник» (Львів: Оріяна-Нова, 1998), «Картопля смажена (з сирої)»: картопля 483/362 г (брутто/нетто), кулінарний жир 25 г → маса смаженої картоплі 250 г; https://archive.org/details/ukrainskakuhnya1998 (OCR text: https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt). Compared with home recipes on focus.ua https://focus.ua/uk/lifestyle/514202-zharenaya-kartoshka-s-korochkoy-samye-vkusnye-i-prostye-recepty (картопля 650 г + олія 2–3 ст. л. (30–45 мл); картопля 500 г + цибуля 80 г + олія 40 мл). Averaged into one typical home version."
@@ -720,6 +876,10 @@
    "тушкована картопля"
   ],
   "kcal100": 95,
+  "protein100": 4.4,
+  "fat100": 4.4,
+  "carbs100": 9.6,
+  "fiber100": 1.3,
   "source": {
    "type": "recipe",
    "ref": "https://tsn.ua/lady/kukhnya/recepty/tushkovana-kartoplia-z-miasom-retsept-znayomyy-z-dytynstva-2909738.html (ТСН «Тушкована картопля з м'ясом»: 1.7 kg potato, 700 g meat (chicken, pork or beef), 150 g onion, 250 g carrot, 3–4 garlic, 30 ml oil, 2 tbsp tomato paste, 1.5 L water). Compared: https://smachno.ua/ua/recepty/osnovnye-blyuda/tushenaya-kartoshka-s-myasom/ (1 kg potato, 600 g pork, 2 onions, 1 carrot; via search snippet) and https://klopotenko.com/tushkovana-molodka-kartoplya-z-myasom-vid-yevgena-klopotenka/ (500 g young potato, 200 g pork, 1 onion, 300 ml water)."
@@ -738,6 +898,10 @@
    "хек смажений"
   ],
   "kcal100": 168,
+  "protein100": 21.2,
+  "fat100": 7.4,
+  "carbs100": 4.3,
+  "fiber100": 0.2,
   "source": {
    "type": "recipe",
    "ref": "Main: Доцяк В.С. «Українська кухня» (1998), «Риба смажена порціонними шматочками»: тріска/мерланг 155/119 г (філе зі шкірою без кісток), борошно 6 г, олія 6 г → маса смаженої риби 100 г; https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt. Compared with home recipe https://netfreedom.org.ua/yak-prygotuvaty-hek-na-skovorodi/ (хек 800–1000 г, борошно 2 ст. л., олія 50 мл у сковороді) and the method on 24tv.ua https://24tv.ua/smachnonews24/yak-smazhiti-heka-yak-legko-smachno-prigotuvati-heka_n2939039/amp (pieces 1.5–2 cm, rolled in flour, 3–5 min per side)."
@@ -754,6 +918,10 @@
    "смажені печериці"
   ],
   "kcal100": 153,
+  "protein100": 5.5,
+  "fat100": 12.3,
+  "carbs100": 8.5,
+  "fiber100": 2.2,
   "source": {
    "type": "recipe",
    "ref": "Typical home version averaged from: 24tv.ua https://24tv.ua/smachnonews24/yak-prigotuvati-shampinyoni-smetani-pokrokoviy-retsept_n3048326/amp (печериці 300 г, 1 цибулина, олія; smetana variant); Доцяк В.С. «Українська кухня» (1998) yields for fried champignons: печериці 164/125 г + олія 5 г → маса смажених грибів 50 г; печериці 247/188 + маргарин 10 → 75 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); Estonian NutriData recipe 443169 (champignons 2000 g + oil 140 g → 1000 g)."
@@ -771,6 +939,10 @@
    "печінка смажена"
   ],
   "kcal100": 223,
+  "protein100": 20.2,
+  "fat100": 12.6,
+  "carbs100": 6.2,
+  "fiber100": 0.6,
   "source": {
    "type": "recipe",
    "ref": "Typical home version averaged from: Доцяк В.С. «Українська кухня» (1998), «Печінка смажена з жиром або цибулею»: печінка 127/105 г, борошно 5 г, жир 10 г → маса смаженої печінки 75 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); poradu.pp.ua https://poradu.pp.ua/recepti/print:page,1,21597-yak-gotuvati-svinyachu-pechnku-poradi-po-prigotuvannyu-recepti.html (печінка ~500 г, олія 40 мл, 1 велика цибулина, морква); УНІАН https://www.unian.ua/recipes/second-courses/meat-dishes/kuryacha-pechinka-recept-yak-prigotuvati-kuryachu-pechinku-recepti-11197796.html (куряча печінка 450–500 г, 2–3 цибулини)."
@@ -788,6 +960,10 @@
    "омлет"
   ],
   "kcal100": 144,
+  "protein100": 9.6,
+  "fat100": 10.4,
+  "carbs100": 2.3,
+  "fiber100": 0.0,
   "source": {
    "type": "recipe",
    "ref": "Typical home version averaged from: Доцяк В.С. «Українська кухня» (1998), «Омлет натуральний»: яйця 80 г, молоко 30 г, маргарин/масло 5 г → маса готового омлету 105 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); poradu.pp.ua kindergarten-style omelette (4 яйця, 150 мл молока, 20 г вершкового масла) https://poradu.pp.ua/recepti/print:page,1,54128-yak-v-dityachomu-sadu-kuharka-na-pensyi-rozkrila-sekret-omletu-yakiy-obozhnyuvali-vs-dti-90-h.html; МОН/«Знаїмо» school tech card ТК 5.9 «Омлет з куркумою» (яйця 890 г, молоко 190 г, олія 10 г → 1000 г) https://znaimo.gov.ua/media/Документи/Техкарти/Категорія страви з яєць ТК5.1-5.24.pdf"
@@ -806,6 +982,10 @@
    "глазунья"
   ],
   "kcal100": 196,
+  "protein100": 13.6,
+  "fat100": 14.8,
+  "carbs100": 0.8,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173423: Egg, whole, cooked, fried"
@@ -825,6 +1005,10 @@
    "пиріжки з картоплею"
   ],
   "kcal100": 266,
+  "protein100": 4.4,
+  "fat100": 12.7,
+  "carbs100": 33.4,
+  "fiber100": 2.0,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/smazheni-pyrizhky-z-kartopleyu-za-reczeptom-yevgena-klopotenka/ (Смажені пиріжки з картоплею, Є. Клопотенко: 500 г борошна, 200 мл води, 50 г сметани, 15 г живих дріжджів, 50 мл олії; 500 г картоплі, цибулина, 2 ст. л. олії; 12 шт.) — averaged with https://24tv.ua/smachnonews24/pirizhki-kartopleyu-retsept-yak-zrobiti-smachni-pirizhki-kartopleyu_n2942897/amp (базарні смажені пиріжки: 800 г борошна, 500 мл води, 10 г сухих дріжджів, 1 ст. л. цукру, 3 ст. л. олії; картопля з кропом і маслом; олія до половини висоти пиріжків) and the potato filling of https://www.unian.ua/recipes/desserts/pies/neveroyatno-vozdushnye-pirozhki-v-duhovke-samyy-udachnyy-recept-testa-12738591.html (500 г картоплі, цибулина, 30 г масла, 20 мл олії, кріп)"
@@ -843,6 +1027,10 @@
    "пиріжки з капустою"
   ],
   "kcal100": 225,
+  "protein100": 5.7,
+  "fat100": 7.6,
+  "carbs100": 33.7,
+  "fiber100": 2.7,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/puhki-ta-sokovyti-pyrizhky-z-kapustoyu-v-duhovczi-vid-yevgena-klopotenka/ (Пиріжки з капустою в духовці, Є. Клопотенко: 500 г борошна, 1 яйце, 100 мл води + 100 мл молока 2,5 %, 25 г живих дріжджів, 3 ст. л. олії, 1 ч. л. цукру; капуста + цибуля + 2 ст. л. олії; жовток) — averaged with https://www.unian.ua/recipes/desserts/pies/neveroyatno-vozdushnye-pirozhki-v-duhovke-samyy-udachnyy-recept-testa-12738591.html (450 г борошна, 270 мл води, 50 г олії, 8 г дріжджів, 25 г цукру; капусти ≤400 г + цибуля, 30 г масла, 20 мл олії) and the filling of https://klopotenko.com/puhke-tisto-ta-sokovyta-nachynka-drizhdzhovyj-pyrig-z-kapustoyu-za-reczeptom-yevgena-klopotenka/ (500 г капусти, морква, цибуля, 3 ст. л. олії, 1 ст. л. томатної пасти)"
@@ -861,6 +1049,10 @@
    "пиріжки з вишнею"
   ],
   "kcal100": 249,
+  "protein100": 5.7,
+  "fat100": 4.6,
+  "carbs100": 46.4,
+  "fiber100": 1.8,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/smak-lita-v-babusi-pyrizhky-z-vyshneyu-vid-yevgena-klopotenka/ (Пиріжки з вишнею в духовці, Є. Клопотенко: 500 г борошна, 100 мл води + 100 мл молока, 1 яйце, 3 ст. л. олії, 25 г живих дріжджів, 1 ст. л. цукру; 400 г вишні без кісточок, цукор, 1,5 ст. л. крохмалю; жовток; ≈18 шт.) — averaged with https://duflu.org.ua/?p=15098 (сдобніший домашній варіант: 500 г борошна, 250 мл молока, 25 г дріжджів, 1 яйце, 100 г масла або 3 ст. л. олії, 100 г цукру; 500–600 г вишні, 80–100 г цукру, 1,5–2 ст. л. крохмалю; 18–20 шт.)"
@@ -879,6 +1071,10 @@
    "пампушки"
   ],
   "kcal100": 311,
+  "protein100": 7.4,
+  "fat100": 11.3,
+  "carbs100": 44.5,
+  "fiber100": 1.7,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/pampushky-z-chasnykom/ (Пампушки з часником, Є. Клопотенко: 450 г борошна, 250 мл молока, 100 г масла або олії, 10 г сухих дріжджів, 1 ст. л. цукру; заправка 3 зубчики часнику, 6 гілочок кропу, 2 ст. л. олії, 1 ст. л. оцту; 12 шт.) — compared with https://klopotenko.com/idealni-pampushky-do-borshhu-reczept-na-suhyh-drizhdzhah-ta-moloczi-vid-yevgena-klopotenka/ (600 г борошна, 200 мл молока, 2 ст. л. олії, жовток для змащування; заправка 2 ст. л. олії + 2 зубчики часнику + кріп). Used a typical home version between the two (oil in the dough instead of 100 g butter, a fuller garlic dressing)."
@@ -898,6 +1094,10 @@
    "студень"
   ],
   "kcal100": 139,
+  "protein100": 13.6,
+  "fat100": 9.0,
+  "carbs100": 0.2,
+  "fiber100": 0.0,
   "source": {
    "type": "recipe",
    "ref": "https://tsn.ua/lady/kukhnya/recepty/holodec-tradiciyniy-recept-1915348.html (ТСН «Холодець: традиційний рецепт»: 3 pig trotters + 1 hock (рулька), onion, carrot, garlic, 3 L water, simmer ~6 h). Compared: https://www.unian.ua/recipes/navaristiy-i-sitniy-holodec-recept-ulyublenoji-stravi-12144762.html (УНІАН: 4 trotters + 1.5 kg pork, 5 h uncovered; beef version 1 kg beef shank, 5–6 h) and https://smachno.ua/ua/posts/vse-bude-smachno/holodets-iz-svinyh-nozhek-ot-ally-kovalchuk/ (700 g pork trotters + 1.4 kg beef, 2 L water per kg meat with bones; via search snippet)."
@@ -915,6 +1115,10 @@
    "кутя з маком"
   ],
   "kcal100": 196,
+  "protein100": 5.3,
+  "fat100": 7.7,
+  "carbs100": 30.1,
+  "fiber100": 5.0,
   "source": {
    "type": "recipe",
    "ref": "Typical home version averaged from: netfreedom.org.ua «Кутя рецепт українською» https://netfreedom.org.ua/kutia-retsept-ukrainskoiu-iak-zvaryty-spravzhniu-rizdvianu-kashu-z-pshenytsi-maku-i-medu/ (пшениця 250–300 г, мак 80–100 г, мед 60–80 г, горіхи 60–80 г, родзинки 50 г, курага 50 г, узвар 100–150 мл); УНІАН https://www.unian.ua/lite/advice/yak-variti-kutyu-pravilno-golovni-sekreti-stravi-amp-12853776.html (пшениця 1 склянка, мак 100 г, горіхи 100 г, мед 100 г + цукор 100 г, кілька ложок узвару); УНІАН top-3 https://www.unian.ua/society/10397220-yak-prigotuvati-kutyu-na-rizdvo-top-3-recepti.html (пшениця 2 склянки, мак 1 склянка, горіхи 0.5 склянки, родзинки 180 г, мед 150–180 г); Клопотенко via gordonua.com (350 г пшениці, по 50 г горіхів, родзинок, маку, мед, 3 ополоники узвару)."
@@ -934,6 +1138,10 @@
    "гречка"
   ],
   "kcal100": 92,
+  "protein100": 3.4,
+  "fat100": 0.6,
+  "carbs100": 19.9,
+  "fiber100": 2.7,
   "source": {
    "type": "usda",
    "ref": "FDC 170686: Buckwheat groats, roasted, cooked"
@@ -952,6 +1160,10 @@
    "рис"
   ],
   "kcal100": 130,
+  "protein100": 2.7,
+  "fat100": 0.3,
+  "carbs100": 28.2,
+  "fiber100": 0.4,
   "source": {
    "type": "usda",
    "ref": "FDC 169757: Rice, white, long-grain, regular, unenriched, cooked without salt"
@@ -969,6 +1181,10 @@
    "пшонка"
   ],
   "kcal100": 119,
+  "protein100": 3.5,
+  "fat100": 1,
+  "carbs100": 23.7,
+  "fiber100": 1.3,
   "source": {
    "type": "usda",
    "ref": "FDC 168871: Millet, cooked"
@@ -985,6 +1201,10 @@
    "перловка"
   ],
   "kcal100": 123,
+  "protein100": 2.3,
+  "fat100": 0.4,
+  "carbs100": 28.2,
+  "fiber100": 3.8,
   "source": {
    "type": "usda",
    "ref": "FDC 170285: Barley, pearled, cooked"
@@ -1002,6 +1222,10 @@
    "вівсяна каша на воді"
   ],
   "kcal100": 71,
+  "protein100": 2.5,
+  "fat100": 1.5,
+  "carbs100": 12,
+  "fiber100": 1.7,
   "source": {
    "type": "usda",
    "ref": "FDC 173905: Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt"
@@ -1019,6 +1243,10 @@
    "вівсяна каша на молоці"
   ],
   "kcal100": 117,
+  "protein100": 4.3,
+  "fat100": 4.2,
+  "carbs100": 15.7,
+  "fiber100": 1.3,
   "source": {
    "type": "recipe",
    "ref": "Main: https://www.unian.ua/recipes/second-courses/side-dishes/yak-variti-vivsyanku-recept-vivsyanoji-kashi-na-vodi-ta-moloci-proporciji-11379634.html (пластівці 1 склянка, молоко 2,5 склянки, дрібка солі, 1 ст. л. цукру, вершкове масло в готову кашу). Compared: https://klopotenko.com/vse-shho-potribno-znaty-pro-vivsyanku-vydy-sposib-ta-chas-prygotuvannya/ (1 частина пластівців : 2,5 частини молока, 5-7 хв); https://vkusvill.ru/media/recipes/gerkulesovaya-kasha-v-multivarke.html (200 г пластівців, 500 мл молока + 300 мл води, 2,5 ст. л. цукру, 25 г масла)."
@@ -1036,6 +1264,10 @@
    "манка"
   ],
   "kcal100": 122,
+  "protein100": 4.0,
+  "fat100": 4.4,
+  "carbs100": 16.3,
+  "fiber100": 0.5,
   "source": {
    "type": "recipe",
    "ref": "Averaged: https://klopotenko.com/na-moloczi-na-vodi-ta-na-yihnij-sumishi-yak-varyty-manku-ta-yaku-obyraty/ (4 ст. л. з гіркою манки на 400 мл молока, ¼ ч. л. цукру, шматочок масла; 2 порції); https://recepty.24tv.ua/recipe/manna-kasha-retsept-na-molotsi-z-foto_id460 (300 мл молока, 25 мл води, 50 г манки, 10 г масла, цукор за смаком; 1 порція); https://www.unian.ua/recipes/second-courses/side-dishes/yak-variti-mannu-kashu-na-vodi-na-moloci-i-dlya-ditini-11489089.html (600 мл молока, 3 ст. л. манки, 2 ст. л. цукру, 30 г масла)."
@@ -1055,6 +1287,10 @@
    "кукурудзяна каша"
   ],
   "kcal100": 65,
+  "protein100": 1.2,
+  "fat100": 0.4,
+  "carbs100": 13.9,
+  "fiber100": 0.7,
   "source": {
    "type": "usda",
    "ref": "FDC 171672: Cereals, corn grits, yellow, regular and quick, enriched, cooked with water, without salt"
@@ -1076,6 +1312,10 @@
    "спагеті"
   ],
   "kcal100": 158,
+  "protein100": 5.8,
+  "fat100": 0.9,
+  "carbs100": 30.9,
+  "fiber100": 1.8,
   "source": {
    "type": "usda",
    "ref": "FDC 168928: Pasta, cooked, unenriched, without added salt"
@@ -1096,6 +1336,10 @@
    "картопля в мундирі"
   ],
   "kcal100": 86,
+  "protein100": 1.7,
+  "fat100": 0.1,
+  "carbs100": 20.0,
+  "fiber100": 1.8,
   "source": {
    "type": "usda",
    "ref": "FDC 170440: Potatoes, boiled, cooked without skin, flesh, without salt"
@@ -1113,6 +1357,10 @@
    "товчена картопля"
   ],
   "kcal100": 113,
+  "protein100": 1.9,
+  "fat100": 4.2,
+  "carbs100": 16.8,
+  "fiber100": 1.5,
   "source": {
    "type": "usda",
    "ref": "FDC 168555: Potatoes, mashed, home-prepared, whole milk and butter added"
@@ -1129,6 +1377,10 @@
    "печена картопля"
   ],
   "kcal100": 93,
+  "protein100": 2.5,
+  "fat100": 0.1,
+  "carbs100": 21.1,
+  "fiber100": 2.2,
   "source": {
    "type": "usda",
    "ref": "FDC 170093: Potatoes, baked, flesh and skin, without salt"
@@ -1147,6 +1399,10 @@
    "олів'є з ковбасою"
   ],
   "kcal100": 170,
+  "protein100": 5.2,
+  "fat100": 13.5,
+  "carbs100": 7.2,
+  "fiber100": 1.3,
   "source": {
    "type": "recipe",
    "ref": "Average of two classic Ukrainian recipes with weights: Fakty ICTV 'Індекс олів'є' classic recipe (potato 600 g, carrot 250, onion 200, boiled sausage 600, 8 eggs, pickles 500, 1 can peas 425 g, mayonnaise 300; ~3 kg) https://fakty.com.ua/ua/ukraine/20191220-skilky-koshtuye-oliv-ye-na-novyj-rik-2020/ and Smachno24 (24tv) recipe quoted by Telegraf (boiled sausage 500, potato 580, carrot 280, onion 230, 6 eggs, peas 1 can, pickles 200, mayonnaise 350) https://news.telegraf.com.ua/ukr/dengi/5929287-na-olive-ta-shubi-mozhna-zekonomiti-skilki-koshtuyut-kultovi-salati-noviy-rik-2026-infografika-retsepti . Compared: Focus.ua beef variant (same vegetable proportions)."
@@ -1163,6 +1419,10 @@
    "вінегрет з олією"
   ],
   "kcal100": 87,
+  "protein100": 1.6,
+  "fat100": 4.3,
+  "carbs100": 11.3,
+  "fiber100": 2.2,
   "source": {
    "type": "recipe",
    "ref": "Main: klopotenko.com 'Класичний рецепт вінегрету' (2 medium beets, 2 large carrots, 4 medium potatoes, 2 pickles, 150 g sauerkraut, 250 g beans, 4 tbsp oil, 1 tbsp vinegar; 6 portions) https://klopotenko.com/klasychnyj-reczept-vinegretu-gotuyemo-z-kvasoleyu-ta-zapravkoyu-z-vynnogo-ocztu/ , with onion and green peas instead of beans as in the school tech card ТК 1.45 Вінегрет (potato 310, carrot 200, beet 200, peas 100, sauerkraut 70, onion 70, sauce 40 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf . Compared: Klopotenko 'Вінегрет з запечених овочів' (potato 400, carrot 300, beet 300, peas 200, pickles 200-300, 3 tbsp oil) https://klopotenko.com/vinegret-z-zapechenyh-ovochiv/"
@@ -1179,6 +1439,10 @@
    "шуба"
   ],
   "kcal100": 149,
+  "protein100": 5.9,
+  "fat100": 10.3,
+  "carbs100": 8.4,
+  "fiber100": 1.2,
   "source": {
    "type": "recipe",
    "ref": "Main: UNIAN classic 'Оселедець під шубою' (herring fillet 500 g, potatoes 5, onion 1, carrots 3, eggs 5, beets 4, mayonnaise 250 g) https://www.unian.ua/recipes/salads/salads-with-fish-and-seafood/oseledec-pid-shuboyu-yak-prigotuvati-oseledec-pid-shuboyu-11264060.html ; averaged with Redpost classic (herring 300, carrot 200, beet 300, potato 200, onion 150, mayonnaise 150, 3 eggs) https://redpost.com.ua/news/1252989-print-view and the 1000.menu recipe quoted by Telegraf (herring 500, 3-4 potatoes, 2-3 carrots, 2-3 beets, 1 onion, 3-4 eggs, mayonnaise 180-200) https://news.telegraf.com.ua/ukr/dengi/5929287-na-olive-ta-shubi-mozhna-zekonomiti-skilki-koshtuyut-kultovi-salati-noviy-rik-2026-infografika-retsepti . All three scaled to 400 g herring and averaged."
@@ -1196,6 +1460,10 @@
    "капустяний салат"
   ],
   "kcal100": 77,
+  "protein100": 1.1,
+  "fat100": 5.4,
+  "carbs100": 7.1,
+  "fiber100": 2.4,
   "source": {
    "type": "recipe",
    "ref": "Typical home 'вітамінний' salad built from: school tech card ТК 1.27 'Салат з капусти та моркви' (cabbage 620, carrot 350, oil 30, lemon juice 10 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf ; 24tv cabbage salad (400 g cabbage, 25 ml oil, 2 tbsp sugar, lemon juice) https://24tv.ua/salati-kapusti-sprobuyte-perevireni-retsepti_n3088875 ; composition confirmed by NOVUS own-kitchen 'Салат з білокачанної капусти' (капуста, морква, олія, цукор, сіль, зелень, лимонна кислота) https://novus.zakaz.ua/uk/products/salat-kulinariia-maistri-smaku--novus02855941000000/ . Home proportions: 1/4 head cabbage (500 g) + 1 carrot + 2 tbsp oil + 1 tsp sugar + 1 tbsp 9% vinegar."
@@ -1213,6 +1481,10 @@
    "овочевий салат"
   ],
   "kcal100": 65,
+  "protein100": 0.8,
+  "fat100": 5.4,
+  "carbs100": 4.1,
+  "fiber100": 0.9,
   "source": {
    "type": "recipe",
    "ref": "Typical home summer salad following UNIAN 'Салат з овочами й бринзою' base (2 tomatoes, 2 cucumbers, 1 onion, dill, oil; pepper and brynza left out) https://www.unian.ua/recipes/salads/vegetable-salads/salat-zi-svizhih-ovochiv-recept-yak-prigotuvati-vitaminniy-ovocheviy-salat-11372434.html ; compared with school tech card ТК 1.13 'Салат зелений з огірків та томатів' (cucumber 360, tomato 300, lettuce 320, oil 30 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf and TKA 872688 tomato-cucumber-pepper salad (3% oil)."
@@ -1229,6 +1501,10 @@
    "салат зі сметаною"
   ],
   "kcal100": 40,
+  "protein100": 1.0,
+  "fat100": 2.5,
+  "carbs100": 4.2,
+  "fiber100": 0.9,
   "source": {
    "type": "recipe",
    "ref": "Same home base as the oil version (UNIAN vegetable salad base: 2 tomatoes, 2 cucumbers, onion, dill) https://www.unian.ua/recipes/salads/vegetable-salads/salat-zi-svizhih-ovochiv-recept-yak-prigotuvati-vitaminniy-ovocheviy-salat-11372434.html , dressed with 4 tbsp sour cream (typical '3-4 ст. л. сметани'); compared with TKA 1161 'Tomati-kurgisalat, hapukoorega' (tomato 465, cucumber 445, dill 20, sour cream 20% 70 per 1 kg) and engage.org.ua note that the classic Ukrainian version uses tomatoes, dill and sunflower oil or sour cream https://engage.org.ua/salat-z-ohirkom-retsepty-sekrety-ta-idei/"
@@ -1245,6 +1521,10 @@
    "салат з крабовими паличками"
   ],
   "kcal100": 164,
+  "protein100": 4.9,
+  "fat100": 10.7,
+  "carbs100": 12.2,
+  "fiber100": 0.6,
   "source": {
    "type": "recipe",
    "ref": "Main: netfreedom.org.ua 'Класичний салат з крабових паличок' (crab sticks 250 g, 4 boiled eggs, 1 can corn 340 g drained, 1-2 fresh cucumbers, mayonnaise 100-120 g; rice variation +80-100 g raw rice) https://netfreedom.org.ua/klasychnyi-salat-z-krabovykh-palychok-povnyi-hid-z-retseptom-istoriieiu-ta-sekretamy-idealnoho-smaku/ ; compared poradu.pp.ua rice version (equal volumes rice : corn : crab sticks : eggs) https://poradu.pp.ua/recepti/print:page,1,11722-salati-z-krabovih-palichok-recepti-rekomendacyi.html and UNIAN crab salad with cucumber (10 sticks, 70 g corn, 2 eggs, 1 cucumber, 3 tbsp mayo) https://www.unian.ua/recipes/salads/salads-with-fish-and-seafood/recepti-salativ-z-krabovimi-palichkami-svyatkovi-novorichni-salati-z-krabovimi-palichkami-11238425.html"
@@ -1261,6 +1541,10 @@
    "салат з буряка"
   ],
   "kcal100": 120,
+  "protein100": 1.6,
+  "fat100": 8.7,
+  "carbs100": 9.6,
+  "fiber100": 1.7,
   "source": {
    "type": "recipe",
    "ref": "Main: engage.org.ua 'Класичний рецепт салату з вареного буряка з часником' (2 medium beets 400-500 g, 2-3 garlic cloves, 2-3 tbsp mayonnaise) https://engage.org.ua/salat-z-varenogo-buryaka-reczepty-koryst-ta-sekrety/ ; compared Klopotenko beet salad with mayonnaise (1 large beet, 1-2 tbsp garlic mayonnaise, prunes, cranberries; chef twist) https://klopotenko.com/salat-iz-buryakom-chornosluvom-zuravlynou-i-majonezom-zi-smazenogo-chasnyku/ and school card ТК 1.38 'Салат з буряка зі сметаною' (beet 850 + sour cream 160 per 1 kg) https://osvita.ua/doc/files/news/929/92949/12_04_2024_02.pdf"
@@ -1277,6 +1561,10 @@
    "корейська морква"
   ],
   "kcal100": 114,
+  "protein100": 1.0,
+  "fat100": 8.1,
+  "carbs100": 10.2,
+  "fiber100": 2.5,
   "source": {
    "type": "recipe",
    "ref": "Main: klopotenko.com 'Вдома смачніше. Морква по-корейськи' (1 kg carrot, 100 ml sunflower oil heated, 2 tsp sugar, 2 tsp salt, 1 tsp coriander, 6 garlic cloves, 2 tbsp 9% vinegar, 1 tsp hot pepper; 10 portions; no draining) https://klopotenko.com/vdoma-smachnishe-morkva-po-korejsky-za-reczeptom-yevgena-klopotenka/ ; compared Klopotenko 'Швидка та хрумка' (1 kg carrot, 100 ml oil, lemon juice, garlic) https://klopotenko.com/shvydka-ta-hrumka-strava-morkva-po-korejsky-za-reczeptom-yevgena-klopotenka/ and TKA 4043 (carrot 830, oil 40, sugar 30, fried onion 70, garlic 12 per 1 kg)."
@@ -1293,6 +1581,10 @@
    "ікра кабачкова"
   ],
   "kcal100": 97,
+  "protein100": 1.0,
+  "fat100": 7.0,
+  "carbs100": 7.0,
+  "fiber100": 1.2,
   "source": {
    "type": "label",
    "ref": "Ікра кабачкова консервована (класична, не «Літня»)"
@@ -1312,6 +1604,10 @@
    "філе"
   ],
   "kcal100": 165,
+  "protein100": 31.0,
+  "fat100": 3.6,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171477: Chicken, broilers or fryers, breast, meat only, cooked, roasted"
@@ -1332,6 +1628,10 @@
    "гомілка"
   ],
   "kcal100": 184,
+  "protein100": 24.0,
+  "fat100": 9.0,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173617: Chicken, broilers or fryers, leg, meat and skin, cooked, roasted"
@@ -1350,6 +1650,10 @@
    "запечена курка"
   ],
   "kcal100": 239,
+  "protein100": 27.3,
+  "fat100": 13.6,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171450: Chicken, broilers or fryers, meat and skin, cooked, roasted"
@@ -1367,6 +1671,10 @@
    "індиче філе"
   ],
   "kcal100": 136,
+  "protein100": 29.5,
+  "fat100": 2.0,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 174516: Turkey, retail parts, breast, meat only, cooked, roasted"
@@ -1386,6 +1694,10 @@
    "буженина"
   ],
   "kcal100": 248,
+  "protein100": 27.1,
+  "fat100": 14.7,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 167821: Pork, fresh, loin, whole, separable lean and fat, cooked, roasted"
@@ -1404,6 +1716,10 @@
    "свинина смажена"
   ],
   "kcal100": 238,
+  "protein100": 27.6,
+  "fat100": 13.3,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 168292: Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, pan-fried"
@@ -1424,6 +1740,10 @@
    "яловичина"
   ],
   "kcal100": 223,
+  "protein100": 33.6,
+  "fat100": 8.9,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 170626: Beef, round, bottom round, steak, separable lean and fat, trimmed to 0\" fat, all grades, cooked, braised"
@@ -1440,6 +1760,10 @@
    "печінка"
   ],
   "kcal100": 175,
+  "protein100": 26.5,
+  "fat100": 4.7,
+  "carbs100": 5.2,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 168627: Beef, variety meats and by-products, liver, cooked, pan-fried"
@@ -1460,6 +1784,10 @@
    "солоне сало"
   ],
   "kcal100": 812,
+  "protein100": 2.9,
+  "fat100": 88.7,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 167811: Pork, fresh, backfat, raw"
@@ -1478,6 +1806,10 @@
    "шкварки зі сала"
   ],
   "kcal100": 795,
+  "protein100": 11.7,
+  "fat100": 82.8,
+  "carbs100": 0.0,
+  "fiber100": 0.0,
   "source": {
    "type": "recipe",
    "ref": "Home practice: salo (pork back fat, skin removed) cut in ~1 cm cubes and rendered slowly in a dry pan until golden; the cracklings are lifted out, the liquid fat (smalets) is poured off into a jar. Yield sources: netfreedom.org.ua «Як приготувати здір» https://netfreedom.org.ua/yak-prigotuvati-zdir/ («Вихід: 550–650 мл смальцю + 300–400 г шкварок» from 1 kg); secondary, seen only in search snippets (pages not openable): a Polish home-rendering guide (650–800 g lard per 1 kg raw fat, i.e. ≤200–350 g cracklings + evaporated water) and the Brockhaus–Efron encyclopedia text on booksite.ru https://booksite.ru/fulltext/1/001/007/040/40072.htm (rendering fat trimmings in pieces: 57.7 % fat + 34 % cracklings; minced: 82.5 % fat + 12.5 % cracklings). Доцяк «Українська кухня» (1998) uses shkvarky as a topping (сало 34 г → смажене сало зі шкварками 30 г – that figure INCLUDES the fat, so not used here)."
@@ -1494,6 +1826,10 @@
    "бекон"
   ],
   "kcal100": 468,
+  "protein100": 33.9,
+  "fat100": 35.1,
+  "carbs100": 1.7,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 168322: Pork, cured, bacon, pre-sliced, cooked, pan-fried"
@@ -1513,6 +1849,10 @@
    "лікарська"
   ],
   "kcal100": 248,
+  "protein100": 13.0,
+  "fat100": 22.0,
+  "carbs100": 1.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Ковбаса варена вищий/перший сорт («Лікарська», «Молочна», ДСТУ 4436)"
@@ -1532,6 +1872,10 @@
    "салямі"
   ],
   "kcal100": 346,
+  "protein100": 13.0,
+  "fat100": 32.0,
+  "carbs100": 0.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Ковбаса напівкопчена свиняча/змішана (Дрогобицька, Краківська, салямі) вищий/перший сорт"
@@ -1551,6 +1895,10 @@
    "ковбаса"
   ],
   "kcal100": 333,
+  "protein100": 12.4,
+  "fat100": 29.4,
+  "carbs100": 4.8,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173878: Kielbasa, fully cooked, pan-fried"
@@ -1570,6 +1918,10 @@
    "сардельки"
   ],
   "kcal100": 284,
+  "protein100": 13.2,
+  "fat100": 25.2,
+  "carbs100": 1.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Сосиски «Молочні» (ДСТУ 4436, перший/вищий сорт)"
@@ -1588,6 +1940,10 @@
    "шинка"
   ],
   "kcal100": 128,
+  "protein100": 10.0,
+  "fat100": 9.0,
+  "carbs100": 1.8,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Шинка свиняча варена / варено-копчена нарізна (не куряча)"
@@ -1605,6 +1961,10 @@
    "кров'яна ковбаса"
   ],
   "kcal100": 274,
+  "protein100": 9.0,
+  "fat100": 19.5,
+  "carbs100": 14.5,
+  "fiber100": 2.0,
   "source": {
    "type": "label",
    "ref": "Кров'янка / ковбаса кров'яна домашня з гречкою або рисом (варена, українські виробники)"
@@ -1626,6 +1986,10 @@
    "тріска"
   ],
   "kcal100": 87,
+  "protein100": 19.4,
+  "fat100": 1.0,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173726: Fish, pollock, Alaska, cooked"
@@ -1646,6 +2010,10 @@
    "форель"
   ],
   "kcal100": 206,
+  "protein100": 22.1,
+  "fat100": 12.3,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 175168: Fish, salmon, Atlantic, farmed, cooked, dry heat"
@@ -1662,6 +2030,10 @@
    "скумбрія"
   ],
   "kcal100": 262,
+  "protein100": 23.9,
+  "fat100": 17.8,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 175120: Fish, mackerel, Atlantic, cooked, dry heat"
@@ -1680,6 +2052,10 @@
    "селедка"
   ],
   "kcal100": 194,
+  "protein100": 18.1,
+  "fat100": 13.1,
+  "carbs100": 0.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Оселедець атлантичний солоний/слабосолоний (цілий або філе без олії)"
@@ -1697,6 +2073,10 @@
    "карась"
   ],
   "kcal100": 252,
+  "protein100": 22.0,
+  "fat100": 15.3,
+  "carbs100": 5.2,
+  "fiber100": 0.2,
   "source": {
    "type": "recipe",
    "ref": "Main: Доцяк В.С. «Українська кухня» (1998), «Карасі (коропи) запечені під сметанним соусом», frying step: карась або короп 117/89 г, борошно 5 г, олія 5 г → маса смаженої риби 73 г; also «Короп фарширований (смажений)» (борошно 6 г, олія 6 г на порцію); https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt. Compared with home recipe https://poradu.pp.ua/recepti/print:page,1,4258-yak-prigotuvati-karasya-smazheniy-karas-zapecheniy-v-smetan-recepti-foto.html (карась 2 кг, борошно 200 г для обвалювання, олія 100–200 г у сковороді)."
@@ -1713,6 +2093,10 @@
    "шпроти"
   ],
   "kcal100": 356,
+  "protein100": 17.0,
+  "fat100": 32.0,
+  "carbs100": 0.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Шпроти копчені в олії (Ризькі), консерви"
@@ -1729,6 +2113,10 @@
    "тунець"
   ],
   "kcal100": 86,
+  "protein100": 19.4,
+  "fat100": 1.0,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173709: Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)"
@@ -1746,6 +2134,10 @@
    "крабове м'ясо"
   ],
   "kcal100": 113,
+  "protein100": 8.2,
+  "fat100": 3.2,
+  "carbs100": 13.4,
+  "fiber100": 0.5,
   "source": {
    "type": "label",
    "ref": "Крабові палички із сурімі (охолоджені/заморожені)"
@@ -1763,6 +2155,10 @@
    "креветки"
   ],
   "kcal100": 99,
+  "protein100": 24.0,
+  "fat100": 0.3,
+  "carbs100": 0.2,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 175180: Crustaceans, shrimp, cooked"
@@ -1782,6 +2178,10 @@
    "яйця"
   ],
   "kcal100": 155,
+  "protein100": 12.6,
+  "fat100": 10.6,
+  "carbs100": 1.1,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173424: Egg, whole, cooked, hard-boiled"
@@ -1799,6 +2199,10 @@
    "молоко"
   ],
   "kcal100": 53,
+  "protein100": 2.9,
+  "fat100": 2.5,
+  "carbs100": 4.7,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Молоко коров'яче 2,5 % (пастеризоване/ультрапастеризоване)"
@@ -1815,6 +2219,10 @@
    "молоко домашнє"
   ],
   "kcal100": 61,
+  "protein100": 3.1,
+  "fat100": 3.3,
+  "carbs100": 4.8,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 172217: Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D"
@@ -1831,6 +2239,10 @@
    "кефір"
   ],
   "kcal100": 50,
+  "protein100": 2.9,
+  "fat100": 2.5,
+  "carbs100": 3.9,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Кефір 2,5 % жиру"
@@ -1847,6 +2259,10 @@
    "ряжанка"
   ],
   "kcal100": 63,
+  "protein100": 2.7,
+  "fat100": 4.0,
+  "carbs100": 4.1,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Ряжанка 4 % жиру"
@@ -1864,6 +2280,10 @@
    "йогурт"
   ],
   "kcal100": 61,
+  "protein100": 3.5,
+  "fat100": 3.2,
+  "carbs100": 4.7,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171284: Yogurt, plain, whole milk"
@@ -1881,6 +2301,10 @@
    "сметанка"
   ],
   "kcal100": 159,
+  "protein100": 3.0,
+  "fat100": 15.0,
+  "carbs100": 3.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Сметана 15 % жиру (ДСТУ 4418 / ТУ), основні українські бренди"
@@ -1897,6 +2321,10 @@
    "сметана жирна"
   ],
   "kcal100": 203,
+  "protein100": 2.8,
+  "fat100": 20.0,
+  "carbs100": 3.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Сметана 20 % жиру (ДСТУ 4418 / ТУ), основні українські бренди"
@@ -1917,6 +2345,10 @@
    "кисломолочний сир"
   ],
   "kcal100": 117,
+  "protein100": 16.2,
+  "fat100": 5.0,
+  "carbs100": 1.8,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Сир кисломолочний 5 % жиру (класичний, без наповнювачів)"
@@ -1934,6 +2366,10 @@
    "домашній сир"
   ],
   "kcal100": 152,
+  "protein100": 16.0,
+  "fat100": 9.0,
+  "carbs100": 1.8,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Сир кисломолочний 9 % жиру (класичний, без наповнювачів)"
@@ -1953,6 +2389,10 @@
    "фета"
   ],
   "kcal100": 236,
+  "protein100": 24.0,
+  "fat100": 15.6,
+  "carbs100": 0.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Бринза (м'який розсільний сир), українські виробники, різні типи"
@@ -1973,6 +2413,10 @@
    "сир голландський"
   ],
   "kcal100": 356,
+  "protein100": 24.9,
+  "fat100": 27.4,
+  "carbs100": 2.2,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171241: Cheese, gouda"
@@ -1989,6 +2433,10 @@
    "плавлений сир"
   ],
   "kcal100": 202,
+  "protein100": 12.0,
+  "fat100": 14.0,
+  "carbs100": 7.0,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Сирок плавлений брикет 70–75 г («Вершковий», «Дружба»), 35–40 % жиру в сухій речовині"
@@ -2005,6 +2453,10 @@
    "вершкове масло"
   ],
   "kcal100": 748,
+  "protein100": 0.5,
+  "fat100": 82.5,
+  "carbs100": 0.8,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Масло вершкове солодковершкове «Екстра» 82,5 % (ДСТУ 4399)"
@@ -2026,6 +2478,10 @@
    "булка"
   ],
   "kcal100": 266,
+  "protein100": 8.8,
+  "fat100": 3.3,
+  "carbs100": 49.4,
+  "fiber100": 2.7,
   "source": {
    "type": "usda",
    "ref": "FDC 174924: Bread, white, commercially prepared (includes soft bread crumbs)"
@@ -2047,6 +2503,10 @@
    "бородинський"
   ],
   "kcal100": 225,
+  "protein100": 5.7,
+  "fat100": 1.2,
+  "carbs100": 48.0,
+  "fiber100": 5.8,
   "source": {
    "type": "label",
    "ref": "Хліб житній / житньо-пшеничний темний («Дарницький», «Столичний житній», «Житній»)"
@@ -2065,6 +2525,10 @@
    "лаваш"
   ],
   "kcal100": 275,
+  "protein100": 9.1,
+  "fat100": 1.2,
+  "carbs100": 55.7,
+  "fiber100": 2.2,
   "source": {
    "type": "usda",
    "ref": "FDC 172816: Bread, pita, white, unenriched"
@@ -2083,6 +2547,10 @@
    "геркулес"
   ],
   "kcal100": 379,
+  "protein100": 13.2,
+  "fat100": 6.5,
+  "carbs100": 67.7,
+  "fiber100": 10.1,
   "source": {
    "type": "usda",
    "ref": "FDC 173904: Cereals, oats, regular and quick, not fortified, dry"
@@ -2100,6 +2568,10 @@
    "печиво"
   ],
   "kcal100": 444,
+  "protein100": 6.6,
+  "fat100": 14.5,
+  "carbs100": 70.7,
+  "fiber100": 1.3,
   "source": {
    "type": "label",
    "ref": "Печиво цукрове (без глазурі/начинки)"
@@ -2117,6 +2589,10 @@
    "пряники"
   ],
   "kcal100": 361,
+  "protein100": 5.4,
+  "fat100": 4.7,
+  "carbs100": 74.0,
+  "fiber100": 2.2,
   "source": {
    "type": "label",
    "ref": "Пряники заварні глазуровані (класичні, без шоколаду)"
@@ -2136,6 +2612,10 @@
    "медовий торт"
   ],
   "kcal100": 320,
+  "protein100": 5.0,
+  "fat100": 14.7,
+  "carbs100": 42.1,
+  "fiber100": 0.7,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/desert-mrij-reczept-medivnyka-vid-yevgena-klopotenka/ (Торт медівник, класичний рецепт, Є. Клопотенко: 450 г борошна, 3 ст. л. меду, 100 г цукру, 100 г масла, 3 яйця, 1 ч. л. соди; крем 1 л сметани 20 %, 200 г цукрової пудри, 10 г ванільного цукру; 8 коржів) — averaged with https://klopotenko.com/idealnyj-domashnij-tort-medivnyk-vid-yevgena-klopotenka/ (500 г борошна, 150 г меду, 100 г цукру, 100 г масла, 2 яйця, 1 ч. л. соди; крем 800 г сметани, 100 г пудри, 50 г меду) and the common home proportion of ~1 склянка цукру in the dough"
@@ -2153,6 +2633,10 @@
    "наполеон"
   ],
   "kcal100": 336,
+  "protein100": 5.1,
+  "fat100": 20.4,
+  "carbs100": 32.7,
+  "fiber100": 0.7,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/klasychnyj-tort-napoleon-vid-yevgena-klopotenka/ (Класичний торт Наполеон, Є. Клопотенко: коржі 700 г борошна, 360 г масла, 2 яйця, 150 мл води, 1 ст. л. оцту, коньяк; крем 1 л молока, 4 яйця, 300 г цукру, 100 г борошна, 300 г масла, 10 г ванільного цукру; 12 коржів) — averaged with https://engage.org.ua/?p=20211 (Торт «Наполеон» по-домашньому: 500–600 г борошна, 400–450 г масла або маргарину, 1 яйце, 150–180 мл води, оцет; крем 1 л молока, 4–5 жовтків, 200–250 г цукру, 4–5 ст. л. борошна, 200–250 г масла; 10–12 коржів) and https://www.unian.ua/recipes/baking/dessert-pastries/tort-napoleon-s-neobychnym-kremom-proverennyy-recept-12847734.html (300–400 г борошна, 200 г масла, 1 яйце, 120 мл води)"
@@ -2170,6 +2654,10 @@
    "київський торт"
   ],
   "kcal100": 484,
+  "protein100": 5.2,
+  "fat100": 29.2,
+  "carbs100": 48.9,
+  "fiber100": 2.0,
   "source": {
    "type": "label",
    "ref": "Торт «Київський» Roshen (оригінальна торгова марка)"
@@ -2188,6 +2676,10 @@
    "яблучний пиріг"
   ],
   "kcal100": 205,
+  "protein100": 4.6,
+  "fat100": 3.1,
+  "carbs100": 40.3,
+  "fiber100": 1.8,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/sharlotka-antonivskyj-mist-prysvyachuyetsya-zsu/ (Шарлотка з яблуками «Антонівський міст», Є. Клопотенко: 4 яйця, 150 г цукру, 160 г борошна, 4 яблука, 20 г масла для форми) — averaged with https://www.unian.ua/recipes/desserts/pies/sharlotka-z-yablukami-yaki-yabluka-naykrashche-brati-dlya-piroga-13453566.html (простий мамин рецепт: 1 склянка борошна, 1 склянка цукру, 3 яйця, 4 яблука) and https://klopotenko.com/sharlotka-prostuj-retsept/ (5 яєць, 200 г цукру, 200 г борошна, 2–3 яблука)"
@@ -2205,6 +2697,10 @@
    "паска великодня"
   ],
   "kcal100": 353,
+  "protein100": 7.3,
+  "fat100": 10.1,
+  "carbs100": 58.4,
+  "fiber100": 1.6,
   "source": {
    "type": "recipe",
    "ref": "https://klopotenko.com/z-bilkovoyu-glazuryu-ta-czukatamy-puhka-paska-do-velykodnya-vid-yevgena-klopotenka/ (Пухка паска з білковою глазур'ю, Є. Клопотенко: 1500 г борошна, 500 мл молока, 6 яєць + 4 жовтки, 300 г цукру, 20 г ванільного цукру, 200 г масла, 50 мл олії, 200 г цукатів, 50 г живих дріжджів; глазур 1 білок + 150 г цукрової пудри) — averaged with https://klopotenko.com/klassichna-paska/ (Класична паска: 750–800 г борошна, 220 мл молока, 1 яйце + 1 жовток, 225 г цукру, 100 г масла, 2 ст. л. сметани, 100 г родзинок; глазур 200 г пудри + апельсиновий сік); scaled to typical home proportions per 1 kg flour"
@@ -2221,6 +2717,10 @@
    "цукор"
   ],
   "kcal100": 387,
+  "protein100": 0,
+  "fat100": 0,
+  "carbs100": 100.0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 169655: Sugars, granulated"
@@ -2235,6 +2735,10 @@
    "мед"
   ],
   "kcal100": 304,
+  "protein100": 0.3,
+  "fat100": 0,
+  "carbs100": 82.4,
+  "fiber100": 0.2,
   "source": {
    "type": "usda",
    "ref": "FDC 169640: Honey"
@@ -2254,6 +2758,10 @@
    "повидло"
   ],
   "kcal100": 248,
+  "protein100": 0.0,
+  "fat100": 0.0,
+  "carbs100": 62.0,
+  "fiber100": 1.1,
   "source": {
    "type": "label",
    "ref": "Варення/джем фруктовий промисловий (≈62 г вуглеводів)"
@@ -2270,6 +2778,10 @@
    "халва"
   ],
   "kcal100": 540,
+  "protein100": 10.2,
+  "fat100": 37.1,
+  "carbs100": 41.4,
+  "fiber100": 4.5,
   "source": {
    "type": "label",
    "ref": "Халва соняшникова ванільна/класична (без глазурі)"
@@ -2286,6 +2798,10 @@
    "шоколад"
   ],
   "kcal100": 535,
+  "protein100": 7.7,
+  "fat100": 29.7,
+  "carbs100": 59.4,
+  "fiber100": 3.4,
   "source": {
    "type": "usda",
    "ref": "FDC 167587: Candies, milk chocolate"
@@ -2303,6 +2819,10 @@
    "гіркий шоколад"
   ],
   "kcal100": 598,
+  "protein100": 7.8,
+  "fat100": 42.6,
+  "carbs100": 45.9,
+  "fiber100": 10.9,
   "source": {
    "type": "usda",
    "ref": "FDC 170273: Chocolate, dark, 70-85% cacao solids"
@@ -2321,6 +2841,10 @@
    "цукерки"
   ],
   "kcal100": 531,
+  "protein100": 4.7,
+  "fat100": 29.8,
+  "carbs100": 58.3,
+  "fiber100": 3.4,
   "source": {
    "type": "label",
    "ref": "Цукерки шоколадні Roshen (глазуровані, з начинкою; класичні вагові)"
@@ -2338,6 +2862,10 @@
    "згущенка"
   ],
   "kcal100": 339,
+  "protein100": 7.2,
+  "fat100": 8.5,
+  "carbs100": 58.3,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Молоко згущене незбиране з цукром 8,5 % (ДСТУ 4274)"
@@ -2355,6 +2883,10 @@
    "морозиво"
   ],
   "kcal100": 232,
+  "protein100": 3.6,
+  "fat100": 15.4,
+  "carbs100": 20.6,
+  "fiber100": 0.7,
   "source": {
    "type": "label",
    "ref": "Морозиво пломбір ванільний 12–15 %, без глазурі (брикет/відерце/стаканчик)"
@@ -2374,6 +2906,10 @@
    "капуста"
   ],
   "kcal100": 25,
+  "protein100": 1.3,
+  "fat100": 0.1,
+  "carbs100": 5.8,
+  "fiber100": 2.5,
   "source": {
    "type": "usda",
    "ref": "FDC 169975: Cabbage, raw"
@@ -2390,6 +2926,10 @@
    "квашена капуста"
   ],
   "kcal100": 19,
+  "protein100": 0.9,
+  "fat100": 0.1,
+  "carbs100": 4.3,
+  "fiber100": 2.9,
   "source": {
    "type": "usda",
    "ref": "FDC 169279: Sauerkraut, canned, solids and liquids"
@@ -2408,6 +2948,10 @@
    "бурячок"
   ],
   "kcal100": 44,
+  "protein100": 1.7,
+  "fat100": 0.2,
+  "carbs100": 10.0,
+  "fiber100": 2,
   "source": {
    "type": "usda",
    "ref": "FDC 169146: Beets, cooked, boiled, drained"
@@ -2424,6 +2968,10 @@
    "морква"
   ],
   "kcal100": 41,
+  "protein100": 0.9,
+  "fat100": 0.2,
+  "carbs100": 9.6,
+  "fiber100": 2.8,
   "source": {
    "type": "usda",
    "ref": "FDC 170393: Carrots, raw"
@@ -2438,6 +2986,10 @@
    "цибуля"
   ],
   "kcal100": 40,
+  "protein100": 1.1,
+  "fat100": 0.1,
+  "carbs100": 9.3,
+  "fiber100": 1.7,
   "source": {
    "type": "usda",
    "ref": "FDC 170000: Onions, raw"
@@ -2455,6 +3007,10 @@
    "огірочки"
   ],
   "kcal100": 15,
+  "protein100": 0.7,
+  "fat100": 0.1,
+  "carbs100": 3.6,
+  "fiber100": 0.5,
   "source": {
    "type": "usda",
    "ref": "FDC 168409: Cucumber, with peel, raw"
@@ -2474,6 +3030,10 @@
    "мариновані огірки"
   ],
   "kcal100": 12,
+  "protein100": 0.5,
+  "fat100": 0.3,
+  "carbs100": 2.4,
+  "fiber100": 1,
   "source": {
    "type": "usda",
    "ref": "FDC 168558: Pickles, cucumber, dill or kosher dill"
@@ -2492,6 +3052,10 @@
    "томат"
   ],
   "kcal100": 18,
+  "protein100": 0.9,
+  "fat100": 0.2,
+  "carbs100": 3.9,
+  "fiber100": 1.2,
   "source": {
    "type": "usda",
    "ref": "FDC 170457: Tomatoes, red, ripe, raw, year round average"
@@ -2509,6 +3073,10 @@
    "болгарський перець"
   ],
   "kcal100": 26,
+  "protein100": 1.0,
+  "fat100": 0.3,
+  "carbs100": 6.0,
+  "fiber100": 2.1,
   "source": {
    "type": "usda",
    "ref": "FDC 170108: Peppers, sweet, red, raw"
@@ -2526,6 +3094,10 @@
    "кабачки"
   ],
   "kcal100": 17,
+  "protein100": 1.2,
+  "fat100": 0.3,
+  "carbs100": 3.1,
+  "fiber100": 1,
   "source": {
    "type": "usda",
    "ref": "FDC 169291: Squash, summer, zucchini, includes skin, raw"
@@ -2542,6 +3114,10 @@
    "синенькі"
   ],
   "kcal100": 25,
+  "protein100": 1.0,
+  "fat100": 0.2,
+  "carbs100": 5.9,
+  "fiber100": 3,
   "source": {
    "type": "usda",
    "ref": "FDC 169228: Eggplant, raw"
@@ -2558,6 +3134,10 @@
    "гриби"
   ],
   "kcal100": 22,
+  "protein100": 3.1,
+  "fat100": 0.3,
+  "carbs100": 3.3,
+  "fiber100": 1,
   "source": {
    "type": "usda",
    "ref": "FDC 169251: Mushrooms, white, raw"
@@ -2583,6 +3163,10 @@
    "петрушка"
   ],
   "kcal100": 15,
+  "protein100": 1.4,
+  "fat100": 0.1,
+  "carbs100": 2.9,
+  "fiber100": 1.3,
   "source": {
    "type": "usda",
    "ref": "FDC 169249: Lettuce, green leaf, raw"
@@ -2599,6 +3183,10 @@
    "редиска"
   ],
   "kcal100": 16,
+  "protein100": 0.7,
+  "fat100": 0.1,
+  "carbs100": 3.4,
+  "fiber100": 1.6,
   "source": {
    "type": "usda",
    "ref": "FDC 169276: Radishes, raw"
@@ -2615,6 +3203,10 @@
    "горошок"
   ],
   "kcal100": 68,
+  "protein100": 4.5,
+  "fat100": 0.8,
+  "carbs100": 11.4,
+  "fiber100": 4.9,
   "source": {
    "type": "usda",
    "ref": "FDC 170013: Peas, green (includes baby and lesuer types), canned, drained solids, unprepared"
@@ -2631,6 +3223,10 @@
    "кукурудза"
   ],
   "kcal100": 67,
+  "protein100": 2.3,
+  "fat100": 1.2,
+  "carbs100": 14.3,
+  "fiber100": 2,
   "source": {
    "type": "usda",
    "ref": "FDC 169214: Corn, sweet, yellow, canned, whole kernel, drained solids"
@@ -2648,6 +3244,10 @@
    "квасоля"
   ],
   "kcal100": 127,
+  "protein100": 8.7,
+  "fat100": 0.5,
+  "carbs100": 22.8,
+  "fiber100": 6.4,
   "source": {
    "type": "usda",
    "ref": "FDC 173740: Beans, kidney, all types, mature seeds, cooked, boiled, without salt"
@@ -2664,6 +3264,10 @@
    "стручкова квасоля"
   ],
   "kcal100": 35,
+  "protein100": 1.9,
+  "fat100": 0.3,
+  "carbs100": 7.9,
+  "fiber100": 3.2,
   "source": {
    "type": "usda",
    "ref": "FDC 169141: Beans, snap, green, cooked, boiled, drained, without salt"
@@ -2680,6 +3284,10 @@
    "гарбуз"
   ],
   "kcal100": 26,
+  "protein100": 1,
+  "fat100": 0.1,
+  "carbs100": 6.5,
+  "fiber100": 0.5,
   "source": {
    "type": "usda",
    "ref": "FDC 168448: Pumpkin, raw"
@@ -2694,6 +3302,10 @@
    "цвітна капуста"
   ],
   "kcal100": 23,
+  "protein100": 1.8,
+  "fat100": 0.5,
+  "carbs100": 4.1,
+  "fiber100": 2.3,
   "source": {
    "type": "usda",
    "ref": "FDC 170397: Cauliflower, cooked, boiled, drained, without salt"
@@ -2708,6 +3320,10 @@
    "броколі"
   ],
   "kcal100": 35,
+  "protein100": 2.4,
+  "fat100": 0.4,
+  "carbs100": 7.2,
+  "fiber100": 3.3,
   "source": {
    "type": "usda",
    "ref": "FDC 169967: Broccoli, cooked, boiled, drained, without salt"
@@ -2726,6 +3342,10 @@
    "яблука"
   ],
   "kcal100": 52,
+  "protein100": 0.3,
+  "fat100": 0.2,
+  "carbs100": 13.8,
+  "fiber100": 2.4,
   "source": {
    "type": "usda",
    "ref": "FDC 171688: Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)"
@@ -2743,6 +3363,10 @@
    "груші"
   ],
   "kcal100": 57,
+  "protein100": 0.4,
+  "fat100": 0.1,
+  "carbs100": 15.2,
+  "fiber100": 3.1,
   "source": {
    "type": "usda",
    "ref": "FDC 169118: Pears, raw"
@@ -2760,6 +3384,10 @@
    "сливи"
   ],
   "kcal100": 46,
+  "protein100": 0.7,
+  "fat100": 0.3,
+  "carbs100": 11.4,
+  "fiber100": 1.4,
   "source": {
    "type": "usda",
    "ref": "FDC 169949: Plums, raw"
@@ -2777,6 +3405,10 @@
    "абрикоси"
   ],
   "kcal100": 48,
+  "protein100": 1.4,
+  "fat100": 0.4,
+  "carbs100": 11.1,
+  "fiber100": 2,
   "source": {
    "type": "usda",
    "ref": "FDC 171697: Apricots, raw"
@@ -2796,6 +3428,10 @@
    "нектарин"
   ],
   "kcal100": 39,
+  "protein100": 0.9,
+  "fat100": 0.2,
+  "carbs100": 9.5,
+  "fiber100": 1.5,
   "source": {
    "type": "usda",
    "ref": "FDC 169928: Peaches, yellow, raw"
@@ -2813,6 +3449,10 @@
    "вишня"
   ],
   "kcal100": 50,
+  "protein100": 1,
+  "fat100": 0.3,
+  "carbs100": 12.2,
+  "fiber100": 1.6,
   "source": {
    "type": "usda",
    "ref": "FDC 173954: Cherries, sour, red, raw"
@@ -2827,6 +3467,10 @@
    "черешня"
   ],
   "kcal100": 63,
+  "protein100": 1.1,
+  "fat100": 0.2,
+  "carbs100": 16.0,
+  "fiber100": 2.1,
   "source": {
    "type": "usda",
    "ref": "FDC 171719: Cherries, sweet, raw"
@@ -2844,6 +3488,10 @@
    "суниці"
   ],
   "kcal100": 32,
+  "protein100": 0.7,
+  "fat100": 0.3,
+  "carbs100": 7.7,
+  "fiber100": 2,
   "source": {
    "type": "usda",
    "ref": "FDC 167762: Strawberries, raw"
@@ -2860,6 +3508,10 @@
    "малина"
   ],
   "kcal100": 52,
+  "protein100": 1.2,
+  "fat100": 0.7,
+  "carbs100": 11.9,
+  "fiber100": 6.5,
   "source": {
    "type": "usda",
    "ref": "FDC 167755: Raspberries, raw"
@@ -2877,6 +3529,10 @@
    "лохина"
   ],
   "kcal100": 57,
+  "protein100": 0.7,
+  "fat100": 0.3,
+  "carbs100": 14.5,
+  "fiber100": 2.4,
   "source": {
    "type": "usda",
    "ref": "FDC 171711: Blueberries, raw"
@@ -2894,6 +3550,10 @@
    "смородина"
   ],
   "kcal100": 63,
+  "protein100": 1.4,
+  "fat100": 0.4,
+  "carbs100": 15.4,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173963: Currants, european black, raw"
@@ -2911,6 +3571,10 @@
    "ягоди"
   ],
   "kcal100": 47,
+  "protein100": 0.9,
+  "fat100": 0.4,
+  "carbs100": 11.4,
+  "fiber100": 3.6,
   "source": {
    "type": "usda",
    "ref": "FDC None: Mean of: Strawberries, raw; Raspberries, raw; Blueberries, raw"
@@ -2925,6 +3589,10 @@
    "виноград"
   ],
   "kcal100": 69,
+  "protein100": 0.7,
+  "fat100": 0.2,
+  "carbs100": 18.1,
+  "fiber100": 0.9,
   "source": {
    "type": "usda",
    "ref": "FDC 174683: Grapes, red or green (European type, such as Thompson seedless), raw"
@@ -2939,6 +3607,10 @@
    "кавун"
   ],
   "kcal100": 30,
+  "protein100": 0.6,
+  "fat100": 0.1,
+  "carbs100": 7.5,
+  "fiber100": 0.4,
   "source": {
    "type": "usda",
    "ref": "FDC 167765: Watermelon, raw"
@@ -2956,6 +3628,10 @@
    "диня"
   ],
   "kcal100": 34,
+  "protein100": 0.8,
+  "fat100": 0.2,
+  "carbs100": 8.2,
+  "fiber100": 0.9,
   "source": {
    "type": "usda",
    "ref": "FDC 169092: Melons, cantaloupe, raw"
@@ -2972,6 +3648,10 @@
    "банани"
   ],
   "kcal100": 89,
+  "protein100": 1.1,
+  "fat100": 0.3,
+  "carbs100": 22.8,
+  "fiber100": 2.6,
   "source": {
    "type": "usda",
    "ref": "FDC 173944: Bananas, raw"
@@ -2989,6 +3669,10 @@
    "апельсини"
   ],
   "kcal100": 47,
+  "protein100": 0.9,
+  "fat100": 0.1,
+  "carbs100": 11.8,
+  "fiber100": 2.4,
   "source": {
    "type": "usda",
    "ref": "FDC 169097: Oranges, raw, all commercial varieties"
@@ -3007,6 +3691,10 @@
    "мандарини"
   ],
   "kcal100": 53,
+  "protein100": 0.8,
+  "fat100": 0.3,
+  "carbs100": 13.3,
+  "fiber100": 1.8,
   "source": {
    "type": "usda",
    "ref": "FDC 169105: Tangerines, (mandarin oranges), raw"
@@ -3022,6 +3710,10 @@
    "лимон"
   ],
   "kcal100": 29,
+  "protein100": 1.1,
+  "fat100": 0.3,
+  "carbs100": 9.3,
+  "fiber100": 2.8,
   "source": {
    "type": "usda",
    "ref": "FDC 167746: Lemons, raw, without peel"
@@ -3038,6 +3730,10 @@
    "ківі"
   ],
   "kcal100": 61,
+  "protein100": 1.1,
+  "fat100": 0.5,
+  "carbs100": 14.7,
+  "fiber100": 3,
   "source": {
    "type": "usda",
    "ref": "FDC 168153: Kiwifruit, green, raw"
@@ -3053,6 +3749,10 @@
    "хурма"
   ],
   "kcal100": 70,
+  "protein100": 0.6,
+  "fat100": 0.2,
+  "carbs100": 18.6,
+  "fiber100": 3.6,
   "source": {
    "type": "usda",
    "ref": "FDC 169941: Persimmons, japanese, raw"
@@ -3068,6 +3768,10 @@
    "ізюм"
   ],
   "kcal100": 299,
+  "protein100": 3.3,
+  "fat100": 0.2,
+  "carbs100": 79.3,
+  "fiber100": 4.5,
   "source": {
    "type": "usda",
    "ref": "FDC 168165: Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)"
@@ -3084,6 +3788,10 @@
    "чорнослив"
   ],
   "kcal100": 240,
+  "protein100": 2.2,
+  "fat100": 0.4,
+  "carbs100": 63.9,
+  "fiber100": 7.1,
   "source": {
    "type": "usda",
    "ref": "FDC 168162: Plums, dried (prunes), uncooked"
@@ -3098,6 +3806,10 @@
    "курага"
   ],
   "kcal100": 241,
+  "protein100": 3.4,
+  "fat100": 0.5,
+  "carbs100": 62.6,
+  "fiber100": 7.3,
   "source": {
    "type": "usda",
    "ref": "FDC 173941: Apricots, dried, sulfured, uncooked"
@@ -3114,6 +3826,10 @@
    "горіхи"
   ],
   "kcal100": 654,
+  "protein100": 15.2,
+  "fat100": 65.2,
+  "carbs100": 13.7,
+  "fiber100": 6.7,
   "source": {
    "type": "usda",
    "ref": "FDC 170187: Nuts, walnuts, english"
@@ -3128,6 +3844,10 @@
    "лісові горіхи"
   ],
   "kcal100": 628,
+  "protein100": 14.9,
+  "fat100": 60.8,
+  "carbs100": 16.7,
+  "fiber100": 9.7,
   "source": {
    "type": "usda",
    "ref": "FDC 170581: Nuts, hazelnuts or filberts"
@@ -3142,6 +3862,10 @@
    "мигдаль"
   ],
   "kcal100": 579,
+  "protein100": 21.1,
+  "fat100": 49.9,
+  "carbs100": 21.6,
+  "fiber100": 12.5,
   "source": {
    "type": "usda",
    "ref": "FDC 170567: Nuts, almonds"
@@ -3156,6 +3880,10 @@
    "арахіс"
   ],
   "kcal100": 587,
+  "protein100": 24.4,
+  "fat100": 49.7,
+  "carbs100": 21.3,
+  "fiber100": 8.4,
   "source": {
    "type": "usda",
    "ref": "FDC 173806: Peanuts, all types, dry-roasted, without salt"
@@ -3173,6 +3901,10 @@
    "соняшникове насіння"
   ],
   "kcal100": 582,
+  "protein100": 19.3,
+  "fat100": 49.8,
+  "carbs100": 24.1,
+  "fiber100": 11.1,
   "source": {
    "type": "usda",
    "ref": "FDC 170563: Seeds, sunflower seed kernels, dry roasted, without salt"
@@ -3187,6 +3919,10 @@
    "гарбузове насіння"
   ],
   "kcal100": 574,
+  "protein100": 29.8,
+  "fat100": 49.0,
+  "carbs100": 14.7,
+  "fiber100": 6.5,
   "source": {
    "type": "usda",
    "ref": "FDC 170557: Seeds, pumpkin and squash seed kernels, roasted, without salt"
@@ -3203,6 +3939,10 @@
    "олія"
   ],
   "kcal100": 884,
+  "protein100": 0,
+  "fat100": 100,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171025: Oil, sunflower, linoleic, (approx. 65%)"
@@ -3217,6 +3957,10 @@
    "оливкова олія"
   ],
   "kcal100": 884,
+  "protein100": 0,
+  "fat100": 100,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171413: Oil, olive, salad or cooking"
@@ -3233,6 +3977,10 @@
    "майонез"
   ],
   "kcal100": 617,
+  "protein100": 0.5,
+  "fat100": 67.0,
+  "carbs100": 2.9,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Майонез «Провансаль» 67 % жиру"
@@ -3250,6 +3998,10 @@
    "томатний соус"
   ],
   "kcal100": 96,
+  "protein100": 1.2,
+  "fat100": 0.0,
+  "carbs100": 22.8,
+  "fiber100": 0.3,
   "source": {
    "type": "label",
    "ref": "Кетчуп томатний «Лагідний»/класичний"
@@ -3264,6 +4016,10 @@
    "гірчиця"
   ],
   "kcal100": 165,
+  "protein100": 6.9,
+  "fat100": 7.8,
+  "carbs100": 15.6,
+  "fiber100": 4.0,
   "source": {
    "type": "label",
    "ref": "Гірчиця столова «Міцна»/«Українська»"
@@ -3280,6 +4036,10 @@
    "узвар"
   ],
   "kcal100": 53,
+  "protein100": 0.2,
+  "fat100": 0.1,
+  "carbs100": 14.1,
+  "fiber100": 1.1,
   "source": {
    "type": "recipe",
    "ref": "Typical home version averaged from: УНІАН https://www.unian.ua/recipes/uzvar-kak-varit-vkusnye-recepty-chto-dobavit-amp-12098481.html (3 л води; сушені яблука 200 г, груші 200 г, чорнослив 100 г, родзинки 100 г, мед 4–5 ст. л.; variant: 600 г сухофруктів + 250 г цукру); Доцяк В.С. «Українська кухня» (1998) «Узвар із сухофруктів»: сухофрукти 100 г, цукор 75 г, мед 25 г, вода 1000 г → вихід 1000 г (https://archive.org/stream/ukrainskakuhnya1998/ukrainskakuhnya1998_djvu.txt); nfront.org.ua https://nfront.org.ua/?p=7293 (300–400 г сухофруктів на 3 л, 4–5 ст. л. меду)."
@@ -3296,6 +4056,10 @@
    "компот"
   ],
   "kcal100": 30,
+  "protein100": 0.1,
+  "fat100": 0.0,
+  "carbs100": 7.7,
+  "fiber100": 0.4,
   "source": {
    "type": "recipe",
    "ref": "Typical home (summer, cooked in a pot) version averaged from: TSN https://tsn.ua/other/iak-varyty-kompot-3111329.html (на 1 л води 300–400 г фруктів, 50–70 г цукру); УНІАН https://www.unian.ua/recipes/drinks/sweet-drinks/kompot-z-vishni-p-yatihvilinka-i-inshi-recepti-11888970.html (на 3-л банку: вишня 800 г, цукор 300 г; summer version boiled in a pot 5–7 min)."
@@ -3310,6 +4074,10 @@
    "квас хлібний"
   ],
   "kcal100": 30,
+  "protein100": 0.2,
+  "fat100": 0.0,
+  "carbs100": 6.5,
+  "fiber100": 0.0,
   "source": {
    "type": "label",
    "ref": "Квас хлібний пастеризований/живий (на 100 мл, як на ярлику)"
@@ -3327,6 +4095,10 @@
    "сік"
   ],
   "kcal100": 46,
+  "protein100": 0.1,
+  "fat100": 0.1,
+  "carbs100": 11.3,
+  "fiber100": 0.2,
   "source": {
    "type": "usda",
    "ref": "FDC 173933: Apple juice, canned or bottled, unsweetened, without added ascorbic acid"
@@ -3343,6 +4115,10 @@
    "кава"
   ],
   "kcal100": 1,
+  "protein100": 0.1,
+  "fat100": 0.0,
+  "carbs100": 0,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 171890: Beverages, coffee, brewed, prepared with tap water"
@@ -3360,6 +4136,10 @@
    "чай"
   ],
   "kcal100": 1,
+  "protein100": 0,
+  "fat100": 0,
+  "carbs100": 0.3,
+  "fiber100": 0,
   "source": {
    "type": "usda",
    "ref": "FDC 173227: Beverages, tea, black, brewed, prepared with tap water"

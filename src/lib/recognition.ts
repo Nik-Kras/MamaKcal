@@ -85,6 +85,7 @@ export function toItems(raw: string, foods: Food[], matcher: Matcher, makeKey: (
       foodId: food.id,
       name: food.name,
       kcal100: food.kcal100,
+      macros100: food.macros100,
       pcGrams: food.pcGrams,
       unit,
       amount: unit === "pcs" ? convertAmount(String(grams), { unit: "g" }, { unit: "pcs", pcGrams: food.pcGrams }) : String(grams),

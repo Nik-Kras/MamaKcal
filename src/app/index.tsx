@@ -8,10 +8,11 @@ import { LiteRtLm } from "../../modules/litert-lm";
 import { CameraIcon, CheckIcon, PencilIcon, ShareIcon } from "../components/icons";
 import { ModelCard } from "../components/ModelCard";
 import { UpdateBanner } from "../components/UpdateBanner";
+import { MacroBars } from "../components/Macros";
 import { NormSheet } from "../components/NormSheet";
 import { PrimaryButton, T, Tap } from "../components/ui";
-import { dayLabel, fmt, mealTitle, todayISO } from "../lib/format";
-import { dayMeals, mealKcal } from "../lib/nutrition";
+import { dayLabel, fmt, macroShort, mealTitle, todayISO } from "../lib/format";
+import { addMacros, dayMeals, hasMacros, macroTargets, mealKcal, mealMacros, NO_MACROS } from "../lib/nutrition";
 import { navOnce } from "../lib/navOnce";
 import { useStore, useToday } from "../store/store";
 import { C } from "../theme";
@@ -20,10 +21,11 @@ import type { Meal } from "../types";
 function MealRow({ meal, onPress }: { meal: Meal; onPress: () => void }) {
   const kcal = fmt(mealKcal(meal.items));
   const title = mealTitle(meal.time);
+  const macros = hasMacros(meal.items) ? macroShort(mealMacros(meal.items), false) : null;
   return (
     <Tap
       onPress={onPress}
-      accessibilityLabel={`Відкрити запис: ${title}, ${meal.time}, ${meal.dishName}, ${kcal} ккал`}
+      accessibilityLabel={`Відкрити запис: ${title}, ${meal.time}, ${meal.dishName}, ${kcal} ккал${macros ? `, ${macros}` : ""}`}
       style={{
         flexDirection: "row",
         alignItems: "center",
@@ -58,6 +60,11 @@ function MealRow({ meal, onPress }: { meal: Meal; onPress: () => void }) {
         <T w="m" size={18} numberOfLines={2}>
           {meal.dishName}
         </T>
+        {macros && (
+          <T size={15} color={C.muted}>
+            {macros}
+          </T>
+        )}
       </View>
       <View style={{ alignItems: "flex-end" }}>
         <T w="sb" size={21}>
@@ -91,6 +98,7 @@ export default function Home() {
   const eaten = today.reduce((s, m) => s + mealKcal(m.items), 0);
   const left = settings.norm - eaten;
   const pct = Math.min(100, Math.round((eaten / settings.norm) * 100));
+  const eatenMacros = today.reduce((s, m) => addMacros(s, mealMacros(m.items)), NO_MACROS);
 
   // After logging, bring the new meal into view instead of leaving it under the toast.
   const count = useRef(today.length);
@@ -139,24 +147,27 @@ export default function Home() {
 
       <ScrollView ref={scroll} contentContainerStyle={{ padding: 16, paddingTop: 14, gap: 12 }}>
         <UpdateBanner />
-        <View
-          accessible
-          accessibilityLabel={`${left >= 0 ? "Залишилось" : "Понад норму"} ${fmt(Math.abs(left))} ккал. З’їдено ${fmt(eaten)} з ${fmt(settings.norm)}.`}
-          style={{ backgroundColor: C.surface, borderRadius: 24, padding: 20, paddingTop: 18, gap: 10 }}
-        >
-          <T size={17} color={C.muted}>
-            {left >= 0 ? "Залишилось на сьогодні" : "Понад норму"}
-          </T>
-          <View style={{ flexDirection: "row", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
-            <T w="sb" size={60} maxFontSizeMultiplier={1.4} style={{ letterSpacing: -1 }}>
-              {fmt(Math.abs(left))}
+        <View style={{ backgroundColor: C.surface, borderRadius: 24, padding: 20, paddingTop: 18, gap: 10 }}>
+          {/* Read as one by TalkBack; the norm button and each macro row stay separate stops. */}
+          <View
+            accessible
+            accessibilityLabel={`${left >= 0 ? "Залишилось" : "Понад норму"} ${fmt(Math.abs(left))} ккал. З’їдено ${fmt(eaten)} з ${fmt(settings.norm)}.`}
+            style={{ gap: 10 }}
+          >
+            <T size={17} color={C.muted}>
+              {left >= 0 ? "Залишилось на сьогодні" : "Понад норму"}
             </T>
-            <T w="m" size={22}>
-              ккал
-            </T>
-          </View>
-          <View style={{ height: 14, borderRadius: 7, backgroundColor: C.track, overflow: "hidden", marginTop: 4 }}>
-            <View style={{ height: "100%", width: `${pct}%`, borderRadius: 7, backgroundColor: C.accent }} />
+            <View style={{ flexDirection: "row", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
+              <T w="sb" size={60} maxFontSizeMultiplier={1.4} style={{ letterSpacing: -1 }}>
+                {fmt(Math.abs(left))}
+              </T>
+              <T w="m" size={22}>
+                ккал
+              </T>
+            </View>
+            <View style={{ height: 14, borderRadius: 7, backgroundColor: C.track, overflow: "hidden", marginTop: 4 }}>
+              <View style={{ height: "100%", width: `${pct}%`, borderRadius: 7, backgroundColor: C.accent }} />
+            </View>
           </View>
           <Tap
             onPress={() => setNormOpen(true)}
@@ -176,6 +187,8 @@ export default function Home() {
             </T>
             <PencilIcon size={20} color={C.accent} />
           </Tap>
+          <View style={{ height: 1, backgroundColor: C.line, marginTop: 2, marginBottom: 4 }} />
+          <MacroBars eaten={eatenMacros} targets={macroTargets(settings.norm)} />
         </View>
 
         {modelMissing && <ModelCard />}

@@ -30,7 +30,7 @@ Updates: when a newer release exists, the home screen shows «Є нова вер
 
 ```
 src/app/            screens (Expo Router): index · camera · analyzing · review · share
-src/components/     Sheet, PickSheet (add / fix a food), NormSheet (daily target), ShareCard (the shared week picture), icons, ui
+src/components/     Sheet, PickSheet (add / fix a food), NormSheet (daily target and the macro targets from it), Macros (the day's macro bars), ShareCard (the shared week picture), icons, ui
 src/store/          store.tsx (state + actions), persistence.ts (SQLite)
 src/lib/            match (model name → food, port of bench/match.py), recognition (parse the model's answer),
                     recognize (calls the on-device model), share (day message and week summary for «Поділитися»), format, nutrition,

@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { FlatList, Keyboard, TextInput, View } from "react-native";
+import { FlatList, Keyboard, ScrollView, TextInput, View } from "react-native";
 
 import { fmt } from "../lib/format";
-import { cleanAmount, parseAmount } from "../lib/nutrition";
+import { cleanAmount, labelMacros, parseAmount } from "../lib/nutrition";
 import { norm, searchFoods } from "../lib/search";
 import { useStore } from "../store/store";
 import { C, F } from "../theme";
-import type { Food, Item } from "../types";
+import type { Food, Item, Macros } from "../types";
 import { CheckIcon, PlusIcon, SearchIcon } from "./icons";
 import { Sheet, useFocusWhenShown } from "./Sheet";
 import { OUTLINE, PrimaryButton, T, Tap } from "./ui";
@@ -14,6 +14,14 @@ import { OUTLINE, PrimaryButton, T, Tap } from "./ui";
 /** kcal per 100 g she can give a new product (pure fat is ~900). */
 const KCAL_MIN = 1;
 const KCAL_MAX = 900;
+
+const NO_LABEL = { p: "", f: "", c: "", fib: "" };
+const LABEL_FIELDS: { key: keyof Macros; label: string; spoken: string }[] = [
+  { key: "p", label: "Білки, г", spoken: "Білків у 100 грамах" },
+  { key: "f", label: "Жири, г", spoken: "Жирів у 100 грамах" },
+  { key: "c", label: "Вуглеводи, г", spoken: "Вуглеводів у 100 грамах" },
+  { key: "fib", label: "Клітковина, г", spoken: "Клітковини у 100 грамах" },
+];
 
 type Row = { kind: "header"; key: string; title: string } | { kind: "food"; key: string; food: Food; current: boolean };
 
@@ -26,7 +34,7 @@ function sub(f: Food): string {
  * missed. With nothing typed, a fix starts with the foods closest to what the
  * model saw ("Схожі"), then her recent foods; adding starts with her recent
  * foods. The model's English name is never shown. A name that isn't in the list
- * can be added with its kcal per 100 g.
+ * can be added with its kcal per 100 g, and its protein, fat, carbs and fibre if the label has them.
  */
 export function PickSheet({
   visible,
@@ -43,6 +51,7 @@ export function PickSheet({
   const { foods, matcher, recentFoodIds, addCustomFood } = useStore();
   const [query, setQuery] = useState("");
   const [newKcal, setNewKcal] = useState<string | null>(null);
+  const [label, setLabel] = useState(NO_LABEL);
   const kcalInput = useRef<TextInput>(null);
   useFocusWhenShown(kcalInput, newKcal !== null);
 
@@ -50,6 +59,7 @@ export function PickSheet({
     if (visible) {
       setQuery("");
       setNewKcal(null);
+      setLabel(NO_LABEL);
     }
   }, [visible]);
 
@@ -89,6 +99,7 @@ export function PickSheet({
   const exact = !!typed && foods.some((f) => norm(f.name) === norm(typed));
   const kcal = newKcal ? parseAmount(newKcal) : 0;
   const kcalOk = kcal >= KCAL_MIN && kcal <= KCAL_MAX;
+  const macros = labelMacros(label);
   const title = !replacing ? "Додати продукт" : replacing.unknown ? "Що це за продукт?" : "Замінити продукт";
 
   return (
@@ -188,7 +199,7 @@ export function PickSheet({
           />
         </>
       ) : (
-        <View style={{ gap: 14, paddingHorizontal: 4 }}>
+        <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{ gap: 14, paddingHorizontal: 4, paddingBottom: 8 }}>
           <T w="m" size={20}>
             {typed}
           </T>
@@ -226,13 +237,61 @@ export function PickSheet({
               ? `Впишіть число від ${KCAL_MIN} до ${KCAL_MAX}.`
               : `Від ${KCAL_MIN} до ${KCAL_MAX} ккал у 100 г.`}
           </T>
-          <PrimaryButton label="Додати" disabled={!kcalOk} onPress={() => onPick(addCustomFood(typed, kcal))} />
+          <View style={{ gap: 4, marginTop: 4 }}>
+            <T w="m" size={18}>
+              Білки, жири, вуглеводи у 100 г
+            </T>
+            <T size={16} color={C.muted}>
+              Якщо є на етикетці. Можна пропустити.
+            </T>
+          </View>
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12 }}>
+            {LABEL_FIELDS.map((fld) => (
+              <View key={fld.key} style={{ flexGrow: 1, flexBasis: "40%", gap: 4 }}>
+                <T size={16} color={C.muted}>
+                  {fld.label}
+                </T>
+                <TextInput
+                  value={label[fld.key]}
+                  onChangeText={(t) => setLabel((l) => ({ ...l, [fld.key]: cleanAmount(t).slice(0, 5) }))}
+                  inputMode="decimal"
+                  returnKeyType="done"
+                  onSubmitEditing={() => Keyboard.dismiss()}
+                  maxLength={5}
+                  placeholder="—"
+                  placeholderTextColor="#62666D"
+                  accessibilityLabel={`${fld.spoken}, необов’язково`}
+                  style={{
+                    minHeight: 52,
+                    paddingVertical: 4,
+                    borderRadius: 12,
+                    borderWidth: 2,
+                    borderColor: OUTLINE,
+                    textAlign: "center",
+                    fontFamily: F.sb,
+                    fontSize: 22,
+                    color: C.ink,
+                  }}
+                />
+              </View>
+            ))}
+          </View>
+          {macros === null && (
+            <T size={16} color={C.ink}>
+              Білків, жирів і вуглеводів разом не може бути більше 100 г.
+            </T>
+          )}
+          <PrimaryButton
+            label="Додати"
+            disabled={!kcalOk || macros === null}
+            onPress={() => onPick(addCustomFood(typed, kcal, macros ?? undefined))}
+          />
           <Tap onPress={() => setNewKcal(null)} style={{ minHeight: 48, alignItems: "center", justifyContent: "center", borderRadius: 12 }}>
             <T w="m" size={17} color={C.accent}>
               Назад до пошуку
             </T>
           </Tap>
-        </View>
+        </ScrollView>
       )}
     </Sheet>
   );

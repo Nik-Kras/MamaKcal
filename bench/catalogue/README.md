@@ -1,6 +1,6 @@
 # The food list
 
-`src/data/foods.json` — 195 foods of Ukrainian home cooking, kcal per 100 g as eaten. It replaces the MacroTrack
+`src/data/foods.json` — 195 foods of Ukrainian home cooking, kcal, protein, fat, carbs and fibre per 100 g as eaten. It replaces the MacroTrack
 spreadsheet (2026-10-30): that list was made for a UK/US gym user (32 Ukrainian dishes among fish & chips, burritos and
 protein powders), and its values had no sources — its dishes were round guesses (банош 150, when banosh cooked on sour
 cream with bryndza is about 260).
@@ -9,9 +9,9 @@ Every value now names where it comes from (`source` in foods.json):
 
 | Source | Foods | How |
 |---|---:|---|
-| **USDA FoodData Central**, SR Legacy (lab-analysed, public domain) | 94 | By FDC id: `usda.py` reads the official CSV and checks each description and value. Cooked forms as eaten. |
-| **Ukrainian product labels** | 32 | Shop products whose fat levels differ from US food (сметана 15/20 %, сир 5/9 %, масло 82,5 %, майонез 67 %, ковбаси, бринза, халва…): 3–8 Ukrainian brands each from retailer listings (zakaz.ua: Novus, Metro, Auchan…), labels that don't add up by 4/9/4 dropped, median taken. `labels.json` lists every source. |
-| **Recipe calculation** | 69 | Ukrainian dishes, calculated as food-composition tables do: a home-style recipe's ingredients (grams, from the two sources above) ÷ the cooked weight of the batch. Fried food counts only the oil it absorbs. `recipes.json` has each recipe's source, the cooked-weight basis and 1–3 independent published values for comparison (USDA FNDDS, Estonian NutriData, Ukrainian school-menu tables, recipe authors). |
+| **USDA FoodData Central**, SR Legacy (lab-analysed, public domain) | 94 | By FDC id: `usda.py` reads the official CSV and checks each description and value. Cooked forms as eaten. Macros from nutrients 1003 protein, 1004 fat, 1005 carbs by difference (includes fibre), 1079 fibre. |
+| **Ukrainian product labels** | 32 | Shop products whose fat levels differ from US food (сметана 15/20 %, сир 5/9 %, масло 82,5 %, майонез 67 %, ковбаси, бринза, халва…): 3–8 Ukrainian brands each from retailer listings (zakaz.ua: Novus, Metro, Auchan…), labels that don't add up by 4/9/4 dropped, median taken. `labels.json` lists every source. Labels give protein, fat and carbs; fibre (rarely on Ukrainian labels) comes from the closest USDA food, `fiberBasis` says which. |
+| **Recipe calculation** | 69 | Ukrainian dishes, calculated as food-composition tables do: a home-style recipe's ingredients (grams, from the two sources above) ÷ the cooked weight of the batch; macros the same way. Fried food counts only the oil it absorbs. `recipes.json` has each recipe's source, the cooked-weight basis and 1–3 independent published values for comparison (USDA FNDDS, Estonian NutriData, Ukrainian school-menu tables, recipe authors). |
 
 `REVIEW.md` compares every dish with its references and the old value. A gap over 20 % is flagged; most come from the
 references being another version of the dish (oil, fat level, how thick a soup is). Weak spots, by design or for lack
